@@ -1,0 +1,29 @@
+.env
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data / outputs (large files — commit selectively)
+data/raw/*.json
+data/raw/*.pdf
+data/processed/
+outputs/graphs/*.html
+outputs/graphs/*.png
+outputs/graphs/*.json
+
+# OS
+.DS_Store
+Thumbs.db

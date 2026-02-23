@@ -1,0 +1,53 @@
+"""
+athanor.config — centralised configuration via environment variables.
+
+All external knobs live here. Import `cfg` everywhere else.
+"""
+from __future__ import annotations
+
+import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+# Load .env from the project root (two levels up from this file)
+_root = Path(__file__).resolve().parent.parent
+load_dotenv(_root / ".env", override=False)
+
+
+class Config:
+    # ── Anthropic ────────────────────────────────────────────────────────────
+    anthropic_api_key: str = os.environ.get("ANTHROPIC_API_KEY", "")
+    model: str = os.environ.get("ANTHROPIC_MODEL", "claude-opus-4-5")
+
+    # ── arXiv ────────────────────────────────────────────────────────────────
+    arxiv_max_results: int = int(os.environ.get("ARXIV_MAX_RESULTS", "20"))
+    arxiv_sort_by: str = os.environ.get("ARXIV_SORT_BY", "relevance")
+
+    # ── Embedding ────────────────────────────────────────────────────────────
+    embedding_model: str = os.environ.get(
+        "EMBEDDING_MODEL", "all-MiniLM-L6-v2"
+    )
+
+    # ── Paths ────────────────────────────────────────────────────────────────
+    project_root: Path = _root
+    data_raw: Path = _root / "data" / "raw"
+    data_processed: Path = _root / "data" / "processed"
+    outputs_graphs: Path = _root / "outputs" / "graphs"
+
+    def __post_init__(self) -> None:
+        for p in (self.data_raw, self.data_processed, self.outputs_graphs):
+            p.mkdir(parents=True, exist_ok=True)
+
+    def validate(self) -> None:
+        if not self.anthropic_api_key:
+            raise EnvironmentError(
+                "ANTHROPIC_API_KEY is not set. "
+                "Copy .env.example to .env and add your key."
+            )
+
+
+cfg = Config()
+# Create output directories eagerly
+for _p in (cfg.data_raw, cfg.data_processed, cfg.outputs_graphs):
+    _p.mkdir(parents=True, exist_ok=True)
