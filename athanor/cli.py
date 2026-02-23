@@ -77,24 +77,84 @@ def list_domains_cmd() -> None:
 # ── status ────────────────────────────────────────────────────────────────────
 
 @cli.command()
-@click.option("--domain", "-d", required=True, help="Domain name (e.g. information_theory)")
+@click.option("--domain", "-d", default=None, help="Domain name — omit to show all domains")
 def status(domain: str) -> None:
-    """Show pipeline output status for a domain."""
-    paths = _out(domain)
-    g = paths["graphs"] / "concept_graph.json"
-    r = paths["gaps"] / "gap_report.json"
-    h = paths["hyps"] / "hypothesis_report.json"
+    """Show pipeline output status for one or all domains."""
+    from athanor.domains import list_domains
+    from rich.table import Table
 
-    def check(label, path):
-        exists = path.exists()
-        color = "green" if exists else "red"
-        size = f"({path.stat().st_size // 1024}KB)" if exists else "(missing)"
-        console.print(f"  [{color}]{'✓' if exists else '✗'}[/] {label}: {path} {size}")
+    def _stage_info(path):
+        if not path.exists():
+            return "[red]✗[/]", "missing"
+        sz = path.stat().st_size
+        try:
+            import json as _json
+            data = _json.loads(path.read_text())
+        except Exception:
+            return "[yellow]?[/]", f"{sz//1024}KB"
+        # Try to pull a meaningful count from the JSON
+        count = ""
+        if "concepts" in data:
+            count = f"{len(data['concepts'])} concepts, {len(data.get('edges',[]))} edges"
+        elif "analyses" in data:
+            count = f"{len(data['analyses'])} gaps"
+        elif "hypotheses" in data:
+            count = f"{len(data['hypotheses'])} hypotheses"
+        return "[green]✓[/]", count or f"{sz//1024}KB"
 
-    console.print(f"[bold]Pipeline status — {domain}[/]")
-    check("Stage 1 concept graph", g)
-    check("Stage 2 gap report", r)
-    check("Stage 3 hypothesis report", h)
+    domains_to_show = [domain] if domain else list_domains()
+
+    if len(domains_to_show) == 1:
+        # Single-domain detailed view
+        d = domains_to_show[0]
+        paths = _out(d)
+        console.print(f"\n[bold]Pipeline status — {d}[/]")
+        for label, key, fname in [
+            ("Stage 1 — concept graph",   "graphs", "concept_graph.json"),
+            ("Stage 2 — gap report",      "gaps",   "gap_report.json"),
+            ("Stage 3 — hypothesis report","hyps",  "hypothesis_report.json"),
+        ]:
+            p = paths[key] / fname
+            icon, info = _stage_info(p)
+            console.print(f"  {icon} {label}: {info}")
+    else:
+        # Multi-domain table view
+        table = Table(title="Athanor Pipeline Status", show_lines=True)
+        table.add_column("Domain", style="bold cyan", no_wrap=True)
+        table.add_column("Stage 1\nConcept Graph", justify="center")
+        table.add_column("Stage 2\nGap Report", justify="center")
+        table.add_column("Stage 3\nHypotheses", justify="center")
+        table.add_column("Top Score", justify="right")
+
+        for d in sorted(domains_to_show):
+            paths = _out(d)
+            s1_icon, s1_info = _stage_info(paths["graphs"] / "concept_graph.json")
+            s2_icon, s2_info = _stage_info(paths["gaps"] / "gap_report.json")
+            s3_icon, s3_info = _stage_info(paths["hyps"] / "hypothesis_report.json")
+
+            # Pull best composite score if available
+            best_score = ""
+            hyp_path = paths["hyps"] / "hypothesis_report.json"
+            if hyp_path.exists():
+                try:
+                    import json as _json
+                    from athanor.hypotheses.models import HypothesisReport
+                    hr = HypothesisReport.model_validate_json(hyp_path.read_text())
+                    top = hr.top(1)
+                    if top:
+                        best_score = f"{top[0].composite_score:.2f}"
+                except Exception:
+                    pass
+
+            table.add_row(
+                d,
+                f"{s1_icon} {s1_info}",
+                f"{s2_icon} {s2_info}",
+                f"{s3_icon} {s3_info}",
+                best_score,
+            )
+
+        console.print(table)
 
 
 # ── run ───────────────────────────────────────────────────────────────────────

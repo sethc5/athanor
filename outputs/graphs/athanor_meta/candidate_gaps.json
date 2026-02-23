@@ -1,1437 +1,1332 @@
 [
   {
-    "concept_a": "Large Language Model",
-    "concept_b": "large language models",
-    "similarity": 0.8380736112594604,
+    "concept_a": "KG embedding",
+    "concept_b": "Knowledge embedding",
+    "similarity": 0.8108916878700256,
     "graph_distance": 3,
-    "structural_hole_score": 0.8505
+    "structural_hole_score": 0.5093
   },
   {
-    "concept_a": "Information Extraction",
-    "concept_b": "Entity extraction",
-    "similarity": 0.7388074398040771,
+    "concept_a": "Question answering",
+    "concept_b": "Knowledge Base Question Answering",
+    "similarity": 0.7703332901000977,
     "graph_distance": 3,
-    "structural_hole_score": 0.7093
+    "structural_hole_score": 0.3738
   },
   {
-    "concept_a": "Knowledge graph completion",
-    "concept_b": "Plausible knowledge prediction",
-    "similarity": 0.7191206216812134,
+    "concept_a": "Medical LLMs",
+    "concept_b": "biomedical LLMs",
+    "similarity": 0.7686699628829956,
+    "graph_distance": 4,
+    "structural_hole_score": 0.7561
+  },
+  {
+    "concept_a": "Numerical simulations",
+    "concept_b": "Astronomical research",
+    "similarity": 0.7242708206176758,
     "graph_distance": 3,
     "structural_hole_score": 0.0
   },
   {
     "concept_a": "Knowledge Graph",
-    "concept_b": "Knowledge graph reasoning",
-    "similarity": 0.7062573432922363,
+    "concept_b": "Knowledge graphs",
+    "similarity": 0.6806772947311401,
     "graph_distance": 3,
-    "structural_hole_score": 0.6973
+    "structural_hole_score": 0.9245
   },
   {
-    "concept_a": "Knowledge Graph",
-    "concept_b": "Knowledge graph construction",
-    "similarity": 0.6814718842506409,
+    "concept_a": "Large Language Model",
+    "concept_b": "Large language models",
+    "similarity": 0.6335811614990234,
     "graph_distance": 3,
-    "structural_hole_score": 0.4746
-  },
-  {
-    "concept_a": "Knowledge Graph Population",
-    "concept_b": "Knowledge graph construction",
-    "similarity": 0.6609456539154053,
-    "graph_distance": 4,
-    "structural_hole_score": 0.333
-  },
-  {
-    "concept_a": "Question answering",
-    "concept_b": "Knowledge Base Question Answering",
-    "similarity": 0.6572731733322144,
-    "graph_distance": 4,
-    "structural_hole_score": 0.3735
-  },
-  {
-    "concept_a": "biomedical ontologies",
-    "concept_b": "biomedical knowledge",
-    "similarity": 0.6363110542297363,
-    "graph_distance": 6,
-    "structural_hole_score": 0.3137
+    "structural_hole_score": 0.8298
   },
   {
     "concept_a": "Recommendation System",
     "concept_b": "Educational recommendation system",
-    "similarity": 0.6278698444366455,
+    "similarity": 0.6280192732810974,
     "graph_distance": 3,
-    "structural_hole_score": 0.2481
+    "structural_hole_score": 0.0
   },
   {
-    "concept_a": "Knowledge Graph Population",
+    "concept_a": "Entity Embedding",
+    "concept_b": "Knowledge embedding",
+    "similarity": 0.608556866645813,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7076
+  },
+  {
+    "concept_a": "Relation Embedding",
+    "concept_b": "Knowledge embedding",
+    "similarity": 0.6064274311065674,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3331
+  },
+  {
+    "concept_a": "Question understanding",
+    "concept_b": "Natural Language Translation",
+    "similarity": 0.5982850193977356,
+    "graph_distance": 8,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Knowledge graphs",
     "concept_b": "Knowledge graph reasoning",
-    "similarity": 0.6066244840621948,
-    "graph_distance": 4,
-    "structural_hole_score": 0.5557
-  },
-  {
-    "concept_a": "Information Extraction",
-    "concept_b": "Relationship extraction",
-    "similarity": 0.6045357584953308,
+    "similarity": 0.5951570272445679,
     "graph_distance": 3,
-    "structural_hole_score": 0.8178
+    "structural_hole_score": 0.7271
   },
   {
-    "concept_a": "scientific outreach",
-    "concept_b": "scientific communication",
-    "similarity": 0.5999085903167725,
-    "graph_distance": 999,
-    "structural_hole_score": 0.074
+    "concept_a": "Clinical knowledge",
+    "concept_b": "Knowledge sources",
+    "similarity": 0.5905088186264038,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4518
+  },
+  {
+    "concept_a": "Scientific exploration phase",
+    "concept_b": "scientific discovery",
+    "similarity": 0.5892374515533447,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4173
+  },
+  {
+    "concept_a": "Research publications",
+    "concept_b": "Paper metadata",
+    "similarity": 0.5851327180862427,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
   },
   {
     "concept_a": "Ontology",
     "concept_b": "biomedical ontologies",
-    "similarity": 0.5963325500488281,
+    "similarity": 0.5819237232208252,
     "graph_distance": 5,
-    "structural_hole_score": 0.6467
+    "structural_hole_score": 0.4996
   },
   {
-    "concept_a": "journal structure",
-    "concept_b": "institutional change",
-    "similarity": 0.594343900680542,
+    "concept_a": "Knowledge Graph",
+    "concept_b": "Knowledge Graph Population",
+    "similarity": 0.5808491706848145,
+    "graph_distance": 4,
+    "structural_hole_score": 0.8
+  },
+  {
+    "concept_a": "Question answering",
+    "concept_b": "Natural Language Translation",
+    "similarity": 0.5803440809249878,
+    "graph_distance": 4,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Controlled program generation",
+    "concept_b": "question-answer pair generation",
+    "similarity": 0.5763217210769653,
+    "graph_distance": 8,
+    "structural_hole_score": 0.749
+  },
+  {
+    "concept_a": "Message Passing",
+    "concept_b": "Graph Neural Networks",
+    "similarity": 0.5722556710243225,
+    "graph_distance": 6,
+    "structural_hole_score": 0.498
+  },
+  {
+    "concept_a": "Knowledge reasoning",
+    "concept_b": "External knowledge base",
+    "similarity": 0.5700240135192871,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4285
+  },
+  {
+    "concept_a": "Technological advancement",
+    "concept_b": "research productivity",
+    "similarity": 0.5688426494598389,
     "graph_distance": 999,
-    "structural_hole_score": 0.0356
+    "structural_hole_score": 0.25
   },
   {
-    "concept_a": "research policy",
-    "concept_b": "social effort",
-    "similarity": 0.5933637619018555,
+    "concept_a": "scientific community",
+    "concept_b": "scientific research",
+    "similarity": 0.5688346028327942,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4145
+  },
+  {
+    "concept_a": "Knowledge Base Question Answering",
+    "concept_b": "Natural Language Translation",
+    "similarity": 0.568418025970459,
     "graph_distance": 3,
-    "structural_hole_score": 0.0
+    "structural_hole_score": 0.6238
   },
   {
-    "concept_a": "Long-term dependencies",
-    "concept_b": "Paths",
-    "similarity": 0.5791246891021729,
-    "graph_distance": 5,
-    "structural_hole_score": 0.0
+    "concept_a": "scientific community",
+    "concept_b": "institutional structure",
+    "similarity": 0.5581276416778564,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0455
   },
   {
-    "concept_a": "socioeconomic driving forces",
+    "concept_a": "Knowledge Graph",
+    "concept_b": "graph-structured data",
+    "similarity": 0.5523266792297363,
+    "graph_distance": 4,
+    "structural_hole_score": 0.7998
+  },
+  {
+    "concept_a": "Research publications",
     "concept_b": "research policy",
-    "similarity": 0.5786377191543579,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Learner model",
-    "concept_b": "TrueLearn algorithm",
-    "similarity": 0.5778713226318359,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "Medical Knowledge Sources",
-    "concept_b": "biomedical knowledge",
-    "similarity": 0.5605734586715698,
+    "similarity": 0.550285816192627,
     "graph_distance": 7,
     "structural_hole_score": 0.0
   },
   {
-    "concept_a": "Message passing",
-    "concept_b": "graph neural network",
-    "similarity": 0.560280978679657,
-    "graph_distance": 3,
-    "structural_hole_score": 0.4942
-  },
-  {
-    "concept_a": "scientific communication",
-    "concept_b": "scientific research",
-    "similarity": 0.5596065521240234,
-    "graph_distance": 999,
-    "structural_hole_score": 0.4848
-  },
-  {
-    "concept_a": "Clinical Knowledge",
-    "concept_b": "Medical Knowledge Sources",
-    "similarity": 0.5559322834014893,
-    "graph_distance": 3,
-    "structural_hole_score": 0.2493
-  },
-  {
-    "concept_a": "Local neighbors",
-    "concept_b": "Paths",
-    "similarity": 0.5556734800338745,
+    "concept_a": "Knowledge Graph Population",
+    "concept_b": "Knowledge graphs",
+    "similarity": 0.5500971078872681,
     "graph_distance": 5,
-    "structural_hole_score": 0.0
+    "structural_hole_score": 0.791
   },
   {
-    "concept_a": "Knowledge Graph",
-    "concept_b": "Paths",
-    "similarity": 0.5549863576889038,
+    "concept_a": "Scientific exploration phase",
+    "concept_b": "Scientific breakthrough",
+    "similarity": 0.5463935136795044,
     "graph_distance": 4,
-    "structural_hole_score": 0.4746
+    "structural_hole_score": 0.3294
   },
   {
-    "concept_a": "Knowledge graph construction",
-    "concept_b": "Knowledge graph reasoning",
-    "similarity": 0.5498085021972656,
-    "graph_distance": 3,
-    "structural_hole_score": 0.2228
-  },
-  {
-    "concept_a": "wealth creation",
-    "concept_b": "productivity",
-    "similarity": 0.5494108200073242,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0503
-  },
-  {
-    "concept_a": "Clinical Knowledge",
-    "concept_b": "biomedical knowledge",
-    "similarity": 0.5478959679603577,
-    "graph_distance": 6,
-    "structural_hole_score": 0.2493
-  },
-  {
-    "concept_a": "AI Agent",
-    "concept_b": "Multi-agent system",
-    "similarity": 0.5385220050811768,
-    "graph_distance": 3,
-    "structural_hole_score": 0.7082
-  },
-  {
-    "concept_a": "Scene graph",
-    "concept_b": "Graph-structured data",
-    "similarity": 0.531844973564148,
-    "graph_distance": 3,
-    "structural_hole_score": 0.1341
-  },
-  {
-    "concept_a": "Scholarly domain",
-    "concept_b": "research policy",
-    "similarity": 0.5299035310745239,
+    "concept_a": "scientific community",
+    "concept_b": "scientific communication",
+    "similarity": 0.5401147603988647,
     "graph_distance": 999,
-    "structural_hole_score": 0.0
+    "structural_hole_score": 0.0554
   },
   {
-    "concept_a": "Frequency-based extraction",
-    "concept_b": "Text Mining",
-    "similarity": 0.5283485651016235,
-    "graph_distance": 4,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "AI Agent",
-    "concept_b": "AI-augmented reasoning",
-    "similarity": 0.5277420878410339,
-    "graph_distance": 999,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "Scholarly domain",
-    "concept_b": "institutional change",
-    "similarity": 0.5276260375976562,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Local neighbors",
-    "concept_b": "Contextualized representations",
-    "similarity": 0.5253193974494934,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "Question understanding",
-    "concept_b": "Knowledge Base Question Answering",
-    "similarity": 0.5244234800338745,
+    "concept_a": "Interdisciplinary scientific discovery",
+    "concept_b": "scientific discovery",
+    "similarity": 0.5392983555793762,
     "graph_distance": 5,
-    "structural_hole_score": 0.3735
+    "structural_hole_score": 0.5834
   },
   {
-    "concept_a": "science education",
-    "concept_b": "scientific research",
-    "similarity": 0.5215659737586975,
-    "graph_distance": 999,
-    "structural_hole_score": 0.4384
-  },
-  {
-    "concept_a": "Knowledge Graph",
-    "concept_b": "Long-term dependencies",
-    "similarity": 0.5209195017814636,
+    "concept_a": "Ontology",
+    "concept_b": "Ontology Refinement",
+    "similarity": 0.5354552268981934,
     "graph_distance": 3,
-    "structural_hole_score": 0.4746
-  },
-  {
-    "concept_a": "Frequency-based extraction",
-    "concept_b": "Entity extraction",
-    "similarity": 0.5197583436965942,
-    "graph_distance": 4,
-    "structural_hole_score": 0.3095
-  },
-  {
-    "concept_a": "hypothesis chain",
-    "concept_b": "Plausible knowledge prediction",
-    "similarity": 0.5173102021217346,
-    "graph_distance": 4,
-    "structural_hole_score": 0.2481
-  },
-  {
-    "concept_a": "Ontology Creation",
-    "concept_b": "Schema.org",
-    "similarity": 0.514265775680542,
-    "graph_distance": 5,
-    "structural_hole_score": 0.2498
+    "structural_hole_score": 0.4999
   },
   {
     "concept_a": "Knowledge Graph Population",
-    "concept_b": "Paths",
-    "similarity": 0.5114651322364807,
+    "concept_b": "Knowledge graph reasoning",
+    "similarity": 0.5332186222076416,
     "graph_distance": 5,
-    "structural_hole_score": 0.333
+    "structural_hole_score": 0.6026
   },
   {
-    "concept_a": "LLM training data",
-    "concept_b": "model fine-tuning",
-    "similarity": 0.5066455006599426,
+    "concept_a": "science outreach",
+    "concept_b": "scientific community",
+    "similarity": 0.5332092046737671,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3318
+  },
+  {
+    "concept_a": "Technology integration phase",
+    "concept_b": "Technological advancement",
+    "similarity": 0.5310887694358826,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3339
+  },
+  {
+    "concept_a": "science outreach",
+    "concept_b": "scientific communication",
+    "similarity": 0.5290873050689697,
     "graph_distance": 999,
-    "structural_hole_score": 0.1834
+    "structural_hole_score": 0.3871
   },
   {
-    "concept_a": "scientific communication",
-    "concept_b": "social effort",
-    "similarity": 0.506045937538147,
+    "concept_a": "Research publications",
+    "concept_b": "research productivity",
+    "similarity": 0.5278552770614624,
     "graph_distance": 999,
-    "structural_hole_score": 0.0553
-  },
-  {
-    "concept_a": "Knowledge graph construction",
-    "concept_b": "Paths",
-    "similarity": 0.505696177482605,
-    "graph_distance": 5,
     "structural_hole_score": 0.0
   },
   {
-    "concept_a": "LLM-augmented KGs",
-    "concept_b": "\u00c6MP model",
-    "similarity": 0.5047382116317749,
-    "graph_distance": 3,
-    "structural_hole_score": 0.4455
+    "concept_a": "Scientific breakthrough",
+    "concept_b": "Technological advancement",
+    "similarity": 0.5257922410964966,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4955
   },
   {
-    "concept_a": "Deep representation embedding",
-    "concept_b": "Relation embeddings",
-    "similarity": 0.502726137638092,
-    "graph_distance": 3,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "Knowledge graph construction",
-    "concept_b": "Contextualized representations",
-    "similarity": 0.5014843940734863,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "institutional change",
-    "concept_b": "social effort",
-    "similarity": 0.5005312561988831,
+    "concept_a": "Scientific breakthrough",
+    "concept_b": "research productivity",
+    "similarity": 0.5184000730514526,
     "graph_distance": 999,
+    "structural_hole_score": 0.2455
+  },
+  {
+    "concept_a": "Question understanding",
+    "concept_b": "Question answering",
+    "similarity": 0.5118489861488342,
+    "graph_distance": 8,
     "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "socioeconomic driving forces",
+    "concept_b": "research productivity",
+    "similarity": 0.5082516670227051,
+    "graph_distance": 999,
+    "structural_hole_score": 0.1323
   },
   {
     "concept_a": "science education",
     "concept_b": "educational materials",
-    "similarity": 0.49904096126556396,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0089
-  },
-  {
-    "concept_a": "scientific outreach",
-    "concept_b": "scientific research",
-    "similarity": 0.4982158839702606,
-    "graph_distance": 999,
-    "structural_hole_score": 0.4482
-  },
-  {
-    "concept_a": "Knowledge Graph",
-    "concept_b": "Scientific knowledge graph",
-    "similarity": 0.4963175058364868,
-    "graph_distance": 3,
-    "structural_hole_score": 0.8077
-  },
-  {
-    "concept_a": "Question understanding",
-    "concept_b": "Question answering",
-    "similarity": 0.49558284878730774,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "AI-augmented reasoning",
-    "concept_b": "human-AI collaboration",
-    "similarity": 0.49305588006973267,
-    "graph_distance": 999,
-    "structural_hole_score": 0.25
-  },
-  {
-    "concept_a": "Image context perception",
-    "concept_b": "Scene understanding",
-    "similarity": 0.4929806888103485,
-    "graph_distance": 3,
-    "structural_hole_score": 0.2061
-  },
-  {
-    "concept_a": "Knowledge graph construction",
-    "concept_b": "Relation embeddings",
-    "similarity": 0.4928551912307739,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Semantic context",
-    "concept_b": "Semantic relatedness",
-    "similarity": 0.4914984703063965,
+    "similarity": 0.5076271891593933,
     "graph_distance": 4,
-    "structural_hole_score": 0.5828
-  },
-  {
-    "concept_a": "Research publication metadata",
-    "concept_b": "journal structure",
-    "similarity": 0.48882248997688293,
-    "graph_distance": 8,
-    "structural_hole_score": 0.0356
-  },
-  {
-    "concept_a": "technological superiority",
-    "concept_b": "productivity",
-    "similarity": 0.487342894077301,
-    "graph_distance": 3,
     "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "knowledge emergence",
-    "concept_b": "science",
-    "similarity": 0.4869861304759979,
-    "graph_distance": 999,
-    "structural_hole_score": 0.3534
-  },
-  {
-    "concept_a": "numerical simulations",
-    "concept_b": "AI-astronomy intersection",
-    "similarity": 0.48136499524116516,
-    "graph_distance": 3,
-    "structural_hole_score": 0.494
-  },
-  {
-    "concept_a": "hypothesis-driven research",
-    "concept_b": "validation prioritization",
-    "similarity": 0.48131003975868225,
-    "graph_distance": 5,
-    "structural_hole_score": 0.1333
-  },
-  {
-    "concept_a": "Entity extraction",
-    "concept_b": "Text Mining",
-    "similarity": 0.4808785915374756,
-    "graph_distance": 4,
-    "structural_hole_score": 0.5594
-  },
-  {
-    "concept_a": "Ontology Creation",
-    "concept_b": "biomedical ontologies",
-    "similarity": 0.4802406430244446,
-    "graph_distance": 5,
-    "structural_hole_score": 0.5635
-  },
-  {
-    "concept_a": "Large Language Model",
-    "concept_b": "LLM training data",
-    "similarity": 0.47929805517196655,
-    "graph_distance": 3,
-    "structural_hole_score": 0.5844
-  },
-  {
-    "concept_a": "Paths",
-    "concept_b": "hypothesis chain",
-    "similarity": 0.4774899482727051,
-    "graph_distance": 5,
-    "structural_hole_score": 0.2481
   },
   {
     "concept_a": "Knowledge Graph Population",
-    "concept_b": "Knowledge graph embeddings",
-    "similarity": 0.4774779677391052,
-    "graph_distance": 3,
-    "structural_hole_score": 0.7709
-  },
-  {
-    "concept_a": "Knowledge Graph Population",
-    "concept_b": "Local neighbors",
-    "similarity": 0.47624635696411133,
-    "graph_distance": 4,
-    "structural_hole_score": 0.333
-  },
-  {
-    "concept_a": "interdisciplinary research",
-    "concept_b": "scientific research",
-    "similarity": 0.47591209411621094,
-    "graph_distance": 999,
-    "structural_hole_score": 0.6793
-  },
-  {
-    "concept_a": "network analysis",
-    "concept_b": "Graph-structured data",
-    "similarity": 0.4740346670150757,
+    "concept_b": "Knowledge embedding",
+    "similarity": 0.5071874260902405,
     "graph_distance": 7,
-    "structural_hole_score": 0.1341
-  },
-  {
-    "concept_a": "Knowledge graph completion",
-    "concept_b": "Knowledge graph reasoning",
-    "similarity": 0.4735686779022217,
-    "graph_distance": 3,
-    "structural_hole_score": 0.2228
-  },
-  {
-    "concept_a": "Information Extraction",
-    "concept_b": "Frequency-based extraction",
-    "similarity": 0.473273903131485,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3998
-  },
-  {
-    "concept_a": "Ontology Creation",
-    "concept_b": "knowledge-driven framework",
-    "similarity": 0.4723097085952759,
-    "graph_distance": 6,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "Paths",
-    "concept_b": "Wikipedia link graph",
-    "similarity": 0.47164133191108704,
-    "graph_distance": 5,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "cognitive interventions",
-    "concept_b": "Treatment Recommendations",
-    "similarity": 0.4707919955253601,
-    "graph_distance": 999,
-    "structural_hole_score": 0.1355
+    "structural_hole_score": 0.6663
   },
   {
     "concept_a": "KG-enhanced LLMs",
-    "concept_b": "LLM training data",
-    "similarity": 0.4702342748641968,
+    "concept_b": "Bidirectional reasoning",
+    "similarity": 0.5056048631668091,
     "graph_distance": 3,
-    "structural_hole_score": 0.4334
+    "structural_hole_score": 0.1842
   },
   {
-    "concept_a": "scientific outreach",
-    "concept_b": "scientific breakthrough",
-    "similarity": 0.4691884517669678,
-    "graph_distance": 999,
-    "structural_hole_score": 0.435
+    "concept_a": "Scientific exploration phase",
+    "concept_b": "Technological advancement",
+    "similarity": 0.5037434101104736,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3339
   },
   {
-    "concept_a": "citation-reference relationships",
-    "concept_b": "network analysis",
-    "similarity": 0.467204749584198,
-    "graph_distance": 5,
+    "concept_a": "Knowledge Graph",
+    "concept_b": "Knowledge embedding",
+    "similarity": 0.5020935535430908,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7998
+  },
+  {
+    "concept_a": "Schema.org",
+    "concept_b": "Semantic Web",
+    "similarity": 0.5013671517372131,
+    "graph_distance": 7,
     "structural_hole_score": 0.0
   },
   {
-    "concept_a": "Answer distribution balance",
-    "concept_b": "question-answer pairs",
-    "similarity": 0.4669674038887024,
-    "graph_distance": 7,
-    "structural_hole_score": 0.3325
-  },
-  {
-    "concept_a": "Educational recommendation system",
-    "concept_b": "TrueLearn algorithm",
-    "similarity": 0.466012567281723,
-    "graph_distance": 4,
-    "structural_hole_score": 0.2481
-  },
-  {
-    "concept_a": "scientific outreach",
-    "concept_b": "social effort",
-    "similarity": 0.4633411169052124,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0187
-  },
-  {
-    "concept_a": "Data integration",
-    "concept_b": "Multimodal Data Integration",
-    "similarity": 0.46302592754364014,
-    "graph_distance": 5,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "Scene graph",
-    "concept_b": "graph neural network",
-    "similarity": 0.4595610499382019,
-    "graph_distance": 3,
-    "structural_hole_score": 0.2444
-  },
-  {
-    "concept_a": "Long-term dependencies",
-    "concept_b": "Contextualized representations",
-    "similarity": 0.45740407705307007,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "Question answering",
-    "concept_b": "question-answer pairs",
-    "similarity": 0.45598575472831726,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3325
-  },
-  {
-    "concept_a": "AI Agent",
-    "concept_b": "cognitive interventions",
-    "similarity": 0.4559113383293152,
-    "graph_distance": 999,
-    "structural_hole_score": 0.4687
-  },
-  {
-    "concept_a": "Knowledge Graphs",
-    "concept_b": "Medical Knowledge Sources",
-    "similarity": 0.4542389512062073,
-    "graph_distance": 3,
-    "structural_hole_score": 0.4643
+    "concept_a": "Knowledge Graph Population",
+    "concept_b": "KG embedding",
+    "similarity": 0.5009119510650635,
+    "graph_distance": 6,
+    "structural_hole_score": 0.5095
   },
   {
     "concept_a": "Ontology Creation",
     "concept_b": "Semantic mapping",
-    "similarity": 0.45290932059288025,
+    "similarity": 0.49939748644828796,
     "graph_distance": 3,
-    "structural_hole_score": 0.6243
+    "structural_hole_score": 0.6246
   },
   {
-    "concept_a": "fundamental research",
-    "concept_b": "science",
-    "similarity": 0.4523114562034607,
+    "concept_a": "Image perception",
+    "concept_b": "perception",
+    "similarity": 0.4964439868927002,
+    "graph_distance": 7,
+    "structural_hole_score": 0.3944
+  },
+  {
+    "concept_a": "scientific community",
+    "concept_b": "knowledge emergence",
+    "similarity": 0.4959825277328491,
     "graph_distance": 999,
-    "structural_hole_score": 0.0
+    "structural_hole_score": 0.3812
   },
   {
-    "concept_a": "Knowledge Graph",
-    "concept_b": "SPARQL Queries",
-    "similarity": 0.45162832736968994,
-    "graph_distance": 3,
-    "structural_hole_score": 0.8079
-  },
-  {
-    "concept_a": "Medical Knowledge Sources",
-    "concept_b": "biomedical ontologies",
-    "similarity": 0.4515204429626465,
+    "concept_a": "corpus distillation",
+    "concept_b": "scientific corpus",
+    "similarity": 0.49579736590385437,
     "graph_distance": 4,
-    "structural_hole_score": 0.3137
+    "structural_hole_score": 0.2498
   },
   {
-    "concept_a": "Knowledge graph embeddings",
-    "concept_b": "Paths",
-    "similarity": 0.45037299394607544,
+    "concept_a": "institutional structure",
+    "concept_b": "research policy",
+    "similarity": 0.4914557933807373,
+    "graph_distance": 10,
+    "structural_hole_score": 0.0455
+  },
+  {
+    "concept_a": "Data integration",
+    "concept_b": "Multimodal data integration",
+    "similarity": 0.49002605676651,
     "graph_distance": 4,
-    "structural_hole_score": 0.4379
+    "structural_hole_score": 0.3332
   },
   {
-    "concept_a": "Semantic mapping",
-    "concept_b": "Schema.org",
-    "similarity": 0.4500202238559723,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3745
+    "concept_a": "institutional structure",
+    "concept_b": "organized social effort",
+    "similarity": 0.4866546392440796,
+    "graph_distance": 10,
+    "structural_hole_score": 0.0455
   },
   {
-    "concept_a": "Knowledge Graph",
-    "concept_b": "Local neighbors",
-    "similarity": 0.449485719203949,
-    "graph_distance": 3,
-    "structural_hole_score": 0.4746
-  },
-  {
-    "concept_a": "Relation embeddings",
-    "concept_b": "Paths",
-    "similarity": 0.448350191116333,
-    "graph_distance": 4,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Information Extraction",
-    "concept_b": "concept extraction",
-    "similarity": 0.44828444719314575,
-    "graph_distance": 3,
-    "structural_hole_score": 0.73
-  },
-  {
-    "concept_a": "Information Extraction",
-    "concept_b": "PDF document processing",
-    "similarity": 0.4480382204055786,
-    "graph_distance": 4,
-    "structural_hole_score": 0.3998
-  },
-  {
-    "concept_a": "fundamental research",
+    "concept_a": "science outreach",
     "concept_b": "scientific research",
-    "similarity": 0.4469427466392517,
+    "similarity": 0.4861232340335846,
     "graph_distance": 999,
-    "structural_hole_score": 0.4295
+    "structural_hole_score": 0.7463
+  },
+  {
+    "concept_a": "graphical user interface",
+    "concept_b": "Interactive Visualization",
+    "similarity": 0.4856022596359253,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Scientific breakthrough",
+    "concept_b": "scientific discovery",
+    "similarity": 0.48550814390182495,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5789
+  },
+  {
+    "concept_a": "Long-term Dependencies",
+    "concept_b": "graph-structured data",
+    "similarity": 0.4848620593547821,
+    "graph_distance": 5,
+    "structural_hole_score": 0.333
+  },
+  {
+    "concept_a": "literature review automation",
+    "concept_b": "graphical user interface",
+    "similarity": 0.4843895435333252,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4164
+  },
+  {
+    "concept_a": "SciTLDR dataset",
+    "concept_b": "scientific corpus",
+    "similarity": 0.48386281728744507,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Question understanding",
+    "concept_b": "Knowledge Base Question Answering",
+    "similarity": 0.4837750196456909,
+    "graph_distance": 7,
+    "structural_hole_score": 0.3738
+  },
+  {
+    "concept_a": "Knowledge Graph Population",
+    "concept_b": "Local Neighbors",
+    "similarity": 0.4836583435535431,
+    "graph_distance": 7,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Lightweight Models",
+    "concept_b": "Vector computation",
+    "similarity": 0.48134857416152954,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Knowledge Graph Population",
+    "concept_b": "KG construction",
+    "similarity": 0.48008453845977783,
+    "graph_distance": 6,
+    "structural_hole_score": 0.7605
+  },
+  {
+    "concept_a": "scientific communication",
+    "concept_b": "scientific research",
+    "similarity": 0.479440301656723,
+    "graph_distance": 9,
+    "structural_hole_score": 0.4699
+  },
+  {
+    "concept_a": "KG-enhanced LLMs",
+    "concept_b": "KG construction",
+    "similarity": 0.46880799531936646,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6115
+  },
+  {
+    "concept_a": "Question answering",
+    "concept_b": "question-answer pair generation",
+    "similarity": 0.46746453642845154,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3328
+  },
+  {
+    "concept_a": "scientific community",
+    "concept_b": "Research publications",
+    "similarity": 0.4670692980289459,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Knowledge Graph",
+    "concept_b": "Property Coverage",
+    "similarity": 0.46688586473464966,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4668
   },
   {
     "concept_a": "Multi-step reasoning",
     "concept_b": "Bidirectional reasoning",
-    "similarity": 0.44305774569511414,
-    "graph_distance": 4,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "concept extraction",
-    "concept_b": "Frequency-based extraction",
-    "similarity": 0.442229688167572,
-    "graph_distance": 4,
-    "structural_hole_score": 0.3302
-  },
-  {
-    "concept_a": "Knowledge Graph",
-    "concept_b": "Graph-structured data",
-    "similarity": 0.441636860370636,
-    "graph_distance": 3,
-    "structural_hole_score": 0.6086
-  },
-  {
-    "concept_a": "Paths",
-    "concept_b": "Knowledge graph reasoning",
-    "similarity": 0.44007229804992676,
-    "graph_distance": 5,
-    "structural_hole_score": 0.2228
-  },
-  {
-    "concept_a": "Knowledge Graph Population",
-    "concept_b": "Long-term dependencies",
-    "similarity": 0.43955403566360474,
-    "graph_distance": 4,
-    "structural_hole_score": 0.333
-  },
-  {
-    "concept_a": "environmental threats",
-    "concept_b": "research policy",
-    "similarity": 0.43925899267196655,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "institutional change",
-    "concept_b": "research policy",
-    "similarity": 0.43885233998298645,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "scientific outreach",
-    "concept_b": "national interest",
-    "similarity": 0.43875372409820557,
-    "graph_distance": 999,
-    "structural_hole_score": 0.077
-  },
-  {
-    "concept_a": "E-Commerce Platform",
-    "concept_b": "Data interoperability",
-    "similarity": 0.43745142221450806,
-    "graph_distance": 3,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "Learner engagement",
-    "concept_b": "Lifelong learning",
-    "similarity": 0.4372507333755493,
-    "graph_distance": 3,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "scientific outreach",
-    "concept_b": "research policy",
-    "similarity": 0.43721362948417664,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0187
-  },
-  {
-    "concept_a": "Entity extraction",
-    "concept_b": "Entity Disambiguation",
-    "similarity": 0.4367976188659668,
-    "graph_distance": 5,
-    "structural_hole_score": 0.3095
-  },
-  {
-    "concept_a": "scientific communication",
-    "concept_b": "research policy",
-    "similarity": 0.4365704357624054,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0553
-  },
-  {
-    "concept_a": "Relationship extraction",
-    "concept_b": "Text Mining",
-    "similarity": 0.4359322190284729,
-    "graph_distance": 4,
-    "structural_hole_score": 0.6678
-  },
-  {
-    "concept_a": "Knowledge graph construction",
-    "concept_b": "Long-term dependencies",
-    "similarity": 0.435100257396698,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Long-term dependencies",
-    "concept_b": "hypothesis chain",
-    "similarity": 0.432049423456192,
-    "graph_distance": 4,
-    "structural_hole_score": 0.2481
-  },
-  {
-    "concept_a": "large language models",
-    "concept_b": "Transformer model",
-    "similarity": 0.4310508966445923,
-    "graph_distance": 4,
-    "structural_hole_score": 0.4496
-  },
-  {
-    "concept_a": "interdisciplinary research",
-    "concept_b": "research policy",
-    "similarity": 0.4296284019947052,
-    "graph_distance": 999,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "journal structure",
-    "concept_b": "social effort",
-    "similarity": 0.4280428886413574,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0356
-  },
-  {
-    "concept_a": "Relational database",
-    "concept_b": "Table mapping",
-    "similarity": 0.42736056447029114,
-    "graph_distance": 4,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "Knowledge Graph Population",
-    "concept_b": "Contextualized representations",
-    "similarity": 0.4267627000808716,
-    "graph_distance": 3,
-    "structural_hole_score": 0.6662
-  },
-  {
-    "concept_a": "Scholarly domain",
-    "concept_b": "journal structure",
-    "similarity": 0.426011860370636,
-    "graph_distance": 8,
-    "structural_hole_score": 0.0356
-  },
-  {
-    "concept_a": "Model capacity",
-    "concept_b": "Lightweight Models",
-    "similarity": 0.42583751678466797,
+    "similarity": 0.4646041691303253,
     "graph_distance": 7,
     "structural_hole_score": 0.2498
   },
   {
-    "concept_a": "power",
-    "concept_b": "productivity",
-    "similarity": 0.4248945415019989,
+    "concept_a": "TrueLearn algorithm",
+    "concept_b": "Learner engagement",
+    "similarity": 0.46264708042144775,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Medical LLMs",
+    "concept_b": "LLM training data quality",
+    "similarity": 0.46199291944503784,
+    "graph_distance": 6,
+    "structural_hole_score": 0.7561
+  },
+  {
+    "concept_a": "Graph-based framework",
+    "concept_b": "graph-structured data",
+    "similarity": 0.4600602388381958,
+    "graph_distance": 7,
+    "structural_hole_score": 0.333
+  },
+  {
+    "concept_a": "Educational recommendation system",
+    "concept_b": "Learner model",
+    "similarity": 0.4574718177318573,
     "graph_distance": 3,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "Medical LLMs",
+    "concept_b": "Llama3-70B",
+    "similarity": 0.45714622735977173,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4229
+  },
+  {
+    "concept_a": "Research publications",
+    "concept_b": "scientific research",
+    "similarity": 0.4568125009536743,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4145
+  },
+  {
+    "concept_a": "Semantic Coherence",
+    "concept_b": "Semantic relatedness",
+    "similarity": 0.4554117023944855,
+    "graph_distance": 8,
+    "structural_hole_score": 0.583
+  },
+  {
+    "concept_a": "wealth creation",
+    "concept_b": "research productivity",
+    "similarity": 0.4550109803676605,
+    "graph_distance": 999,
+    "structural_hole_score": 0.1131
+  },
+  {
+    "concept_a": "fundamental research",
+    "concept_b": "scientific research",
+    "similarity": 0.45328742265701294,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4145
+  },
+  {
+    "concept_a": "scientific community",
+    "concept_b": "organized social effort",
+    "similarity": 0.45277372002601624,
+    "graph_distance": 999,
     "structural_hole_score": 0.0
   },
   {
-    "concept_a": "Entity extraction",
-    "concept_b": "Hybrid system",
-    "similarity": 0.4246331453323364,
-    "graph_distance": 4,
-    "structural_hole_score": 0.3095
+    "concept_a": "Technological advancement",
+    "concept_b": "Research publications",
+    "similarity": 0.45180544257164,
+    "graph_distance": 5,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "AI Agent",
+    "concept_b": "Multi-agent system",
+    "similarity": 0.45146244764328003,
+    "graph_distance": 5,
+    "structural_hole_score": 0.7082
+  },
+  {
+    "concept_a": "LLM-augmented KGs",
+    "concept_b": "Knowledge embedding",
+    "similarity": 0.4487355351448059,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7399
+  },
+  {
+    "concept_a": "Medical LLMs",
+    "concept_b": "Model capacity",
+    "similarity": 0.4467782974243164,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4229
+  },
+  {
+    "concept_a": "research productivity",
+    "concept_b": "research policy",
+    "similarity": 0.44643735885620117,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Controlled program generation",
+    "concept_b": "Program Synthesis",
+    "similarity": 0.44643300771713257,
+    "graph_distance": 7,
+    "structural_hole_score": 0.7494
+  },
+  {
+    "concept_a": "question-answer pair generation",
+    "concept_b": "Natural Language Translation",
+    "similarity": 0.4462294578552246,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5828
+  },
+  {
+    "concept_a": "Relation Embedding",
+    "concept_b": "Semantic Path",
+    "similarity": 0.4459584951400757,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "fundamental research",
+    "concept_b": "scientific discovery",
+    "similarity": 0.44543778896331787,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3334
+  },
+  {
+    "concept_a": "skill level",
+    "concept_b": "Human Expertise",
+    "similarity": 0.44452720880508423,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Knowledge Graph Population",
+    "concept_b": "graph-structured data",
+    "similarity": 0.4436747133731842,
+    "graph_distance": 6,
+    "structural_hole_score": 0.6662
   },
   {
     "concept_a": "gaze behavior",
     "concept_b": "cognitive immersion",
-    "similarity": 0.42363864183425903,
+    "similarity": 0.44189584255218506,
     "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Schema.org",
-    "concept_b": "Data interoperability",
-    "similarity": 0.4235649108886719,
-    "graph_distance": 4,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "Long-term dependencies",
-    "concept_b": "Wikipedia link graph",
-    "similarity": 0.4222393035888672,
-    "graph_distance": 4,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "citation-reference relationships",
-    "concept_b": "Research publication metadata",
-    "similarity": 0.4221492409706116,
-    "graph_distance": 5,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Knowledge Graphs",
-    "concept_b": "biomedical knowledge",
-    "similarity": 0.4199965000152588,
-    "graph_distance": 5,
-    "structural_hole_score": 0.4643
-  },
-  {
-    "concept_a": "Paths",
-    "concept_b": "\u00c6MP model",
-    "similarity": 0.41952961683273315,
-    "graph_distance": 4,
-    "structural_hole_score": 0.1955
-  },
-  {
-    "concept_a": "temporal phase analysis",
-    "concept_b": "technological superiority",
-    "similarity": 0.41807839274406433,
-    "graph_distance": 999,
     "structural_hole_score": 0.0
   },
   {
     "concept_a": "Bidirectional reasoning",
-    "concept_b": "Symbolic logic",
-    "similarity": 0.4177023768424988,
-    "graph_distance": 4,
-    "structural_hole_score": 0.2985
-  },
-  {
-    "concept_a": "Local neighbors",
-    "concept_b": "Wikipedia link graph",
-    "similarity": 0.41760745644569397,
-    "graph_distance": 4,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Conceptual knowledge",
-    "concept_b": "cognitive foundation",
-    "similarity": 0.4175589382648468,
-    "graph_distance": 11,
-    "structural_hole_score": 0.0413
-  },
-  {
-    "concept_a": "Visual Question Answering",
-    "concept_b": "Knowledge Base Question Answering",
-    "similarity": 0.4162282645702362,
+    "concept_b": "Embedding-based reasoning",
+    "similarity": 0.4405916929244995,
     "graph_distance": 5,
-    "structural_hole_score": 0.3735
+    "structural_hole_score": 0.3265
   },
   {
-    "concept_a": "Ontology Refinement",
-    "concept_b": "Semantic mapping",
-    "similarity": 0.41610395908355713,
-    "graph_distance": 4,
-    "structural_hole_score": 0.3745
-  },
-  {
-    "concept_a": "Bidirectional reasoning",
-    "concept_b": "Knowledge graph reasoning",
-    "similarity": 0.4141661524772644,
-    "graph_distance": 4,
-    "structural_hole_score": 0.2228
-  },
-  {
-    "concept_a": "Ontology",
-    "concept_b": "Semantic mapping",
-    "similarity": 0.41321924328804016,
-    "graph_distance": 3,
-    "structural_hole_score": 0.7075
-  },
-  {
-    "concept_a": "Question answering",
-    "concept_b": "biomedical question-answering",
-    "similarity": 0.4128601849079132,
-    "graph_distance": 3,
+    "concept_a": "Graph-based framework",
+    "concept_b": "Long-term Dependencies",
+    "similarity": 0.43975651264190674,
+    "graph_distance": 10,
     "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Contextualized representations",
-    "concept_b": "Wikipedia link graph",
-    "similarity": 0.41239288449287415,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "Bidirectional reasoning",
-    "concept_b": "Logic-embedding integration",
-    "similarity": 0.41169047355651855,
-    "graph_distance": 4,
-    "structural_hole_score": 0.2644
-  },
-  {
-    "concept_a": "socioeconomic driving forces",
-    "concept_b": "productivity",
-    "similarity": 0.4094849228858948,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Relational database",
-    "concept_b": "Schema.org",
-    "similarity": 0.4094679355621338,
-    "graph_distance": 5,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Medical Datasets",
-    "concept_b": "biomedical knowledge",
-    "similarity": 0.4094645082950592,
-    "graph_distance": 6,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "temporal phase analysis",
-    "concept_b": "institutional change",
-    "similarity": 0.40859466791152954,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "dimensionality reduction",
-    "concept_b": "visual analytics",
-    "similarity": 0.40829893946647644,
-    "graph_distance": 6,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "large language models",
-    "concept_b": "Model capacity",
-    "similarity": 0.40767428278923035,
-    "graph_distance": 5,
-    "structural_hole_score": 0.4496
-  },
-  {
-    "concept_a": "Message passing",
-    "concept_b": "Graph-structured data",
-    "similarity": 0.4075523614883423,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3839
-  },
-  {
-    "concept_a": "Knowledge graph completion",
-    "concept_b": "hypothesis chain",
-    "similarity": 0.4074053168296814,
-    "graph_distance": 4,
-    "structural_hole_score": 0.2481
-  },
-  {
-    "concept_a": "Frequency-based extraction",
-    "concept_b": "Relationship extraction",
-    "similarity": 0.40626561641693115,
-    "graph_distance": 4,
-    "structural_hole_score": 0.418
-  },
-  {
-    "concept_a": "Knowledge Graph Population",
-    "concept_b": "Knowledge graph completion",
-    "similarity": 0.4060507118701935,
-    "graph_distance": 4,
-    "structural_hole_score": 0.333
-  },
-  {
-    "concept_a": "Information Extraction",
-    "concept_b": "Knowledge graph construction",
-    "similarity": 0.40532392263412476,
-    "graph_distance": 5,
-    "structural_hole_score": 0.3998
-  },
-  {
-    "concept_a": "Scholarly domain",
-    "concept_b": "scientific research",
-    "similarity": 0.40503212809562683,
-    "graph_distance": 999,
-    "structural_hole_score": 0.4295
   },
   {
     "concept_a": "Knowledge Graph",
-    "concept_b": "Knowledge graph completion",
-    "similarity": 0.4049164652824402,
-    "graph_distance": 3,
-    "structural_hole_score": 0.4746
+    "concept_b": "Scientific knowledge graphs",
+    "similarity": 0.4393753707408905,
+    "graph_distance": 4,
+    "structural_hole_score": 0.7994
   },
   {
-    "concept_a": "Uncertainty",
-    "concept_b": "Bayesian machine learning",
-    "similarity": 0.40481552481651306,
+    "concept_a": "Bidirectional reasoning",
+    "concept_b": "Knowledge graph reasoning",
+    "similarity": 0.4391532838344574,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2694
+  },
+  {
+    "concept_a": "science outreach",
+    "concept_b": "Scientific breakthrough",
+    "similarity": 0.43833428621292114,
+    "graph_distance": 999,
+    "structural_hole_score": 0.5773
+  },
+  {
+    "concept_a": "Local Neighbors",
+    "concept_b": "Wikipedia link graph",
+    "similarity": 0.4382914900779724,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Model evaluation",
+    "concept_b": "Model capacity",
+    "similarity": 0.4377066493034363,
     "graph_distance": 7,
-    "structural_hole_score": 0.25
+    "structural_hole_score": 0.0
   },
   {
-    "concept_a": "Question understanding",
-    "concept_b": "Problem-solving ability",
-    "similarity": 0.4040728211402893,
+    "concept_a": "Technology integration phase",
+    "concept_b": "Research publications",
+    "similarity": 0.4365139603614807,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0839
+  },
+  {
+    "concept_a": "Research publications",
+    "concept_b": "institutional structure",
+    "similarity": 0.43479791283607483,
+    "graph_distance": 7,
+    "structural_hole_score": 0.0455
+  },
+  {
+    "concept_a": "Semantic Path",
+    "concept_b": "Semantic relatedness",
+    "similarity": 0.4335368871688843,
     "graph_distance": 6,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "Knowledge graph embeddings",
-    "concept_b": "Wikipedia link graph",
-    "similarity": 0.4039073586463928,
-    "graph_distance": 3,
-    "structural_hole_score": 0.4379
-  },
-  {
-    "concept_a": "Scholarly domain",
-    "concept_b": "scientific communication",
-    "similarity": 0.4026225507259369,
-    "graph_distance": 8,
-    "structural_hole_score": 0.0553
-  },
-  {
-    "concept_a": "Frequency-based extraction",
-    "concept_b": "Hybrid system",
-    "similarity": 0.402118980884552,
-    "graph_distance": 4,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Retrieval-Augmented Generation",
-    "concept_b": "Graph-to-text generation",
-    "similarity": 0.40058043599128723,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3701
-  },
-  {
-    "concept_a": "concept extraction",
-    "concept_b": "Text Mining",
-    "similarity": 0.39990031719207764,
-    "graph_distance": 4,
-    "structural_hole_score": 0.58
-  },
-  {
-    "concept_a": "Knowledge Graphs",
-    "concept_b": "Paths",
-    "similarity": 0.3988513946533203,
-    "graph_distance": 4,
-    "structural_hole_score": 0.4643
-  },
-  {
-    "concept_a": "Visual Question Answering",
-    "concept_b": "Question answering",
-    "similarity": 0.39845871925354004,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Semantic layer",
-    "concept_b": "Semantic context",
-    "similarity": 0.3983375132083893,
-    "graph_distance": 5,
-    "structural_hole_score": 0.5
-  },
-  {
-    "concept_a": "Scientific knowledge graph",
-    "concept_b": "Wikipedia link graph",
-    "similarity": 0.39798641204833984,
-    "graph_distance": 4,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "Shortcut learning",
-    "concept_b": "Few-shot Learning",
-    "similarity": 0.3972587585449219,
-    "graph_distance": 5,
-    "structural_hole_score": 0.664
-  },
-  {
-    "concept_a": "Semantic annotation",
-    "concept_b": "Semantic context",
-    "similarity": 0.3969859480857849,
-    "graph_distance": 4,
-    "structural_hole_score": 0.25
-  },
-  {
-    "concept_a": "cognitive immersion",
-    "concept_b": "intrinsic motivation",
-    "similarity": 0.39652925729751587,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Relation embeddings",
-    "concept_b": "Wikipedia link graph",
-    "similarity": 0.3963649570941925,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Question understanding",
-    "concept_b": "biomedical question-answering",
-    "similarity": 0.3961108326911926,
-    "graph_distance": 4,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "scientific breakthrough",
-    "concept_b": "scientific research",
-    "similarity": 0.3947088420391083,
-    "graph_distance": 999,
-    "structural_hole_score": 0.8459
-  },
-  {
-    "concept_a": "citation-reference relationships",
-    "concept_b": "journal structure",
-    "similarity": 0.3944200277328491,
-    "graph_distance": 5,
-    "structural_hole_score": 0.0356
-  },
-  {
-    "concept_a": "Controlled program generation",
-    "concept_b": "Graph-to-text generation",
-    "similarity": 0.393707275390625,
-    "graph_distance": 5,
-    "structural_hole_score": 0.333
-  },
-  {
-    "concept_a": "Relationship extraction",
-    "concept_b": "Hybrid system",
-    "similarity": 0.392907977104187,
-    "graph_distance": 4,
-    "structural_hole_score": 0.418
-  },
-  {
-    "concept_a": "fundamental research",
-    "concept_b": "environmental threats",
-    "similarity": 0.39172738790512085,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "machine learning",
-    "concept_b": "Bayesian machine learning",
-    "similarity": 0.3915465176105499,
-    "graph_distance": 5,
-    "structural_hole_score": 0.3973
-  },
-  {
-    "concept_a": "Knowledge graph completion",
-    "concept_b": "\u00c6MP model",
-    "similarity": 0.3912801742553711,
-    "graph_distance": 3,
-    "structural_hole_score": 0.1955
-  },
-  {
-    "concept_a": "Relation embeddings",
-    "concept_b": "Long-term dependencies",
-    "similarity": 0.3905802369117737,
-    "graph_distance": 3,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "temporal phase analysis",
-    "concept_b": "research policy",
-    "similarity": 0.3904634416103363,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "hypothesis-driven research",
-    "concept_b": "socioeconomic driving forces",
-    "similarity": 0.39038941264152527,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "AI Agent",
-    "concept_b": "human-AI collaboration",
-    "similarity": 0.390036404132843,
-    "graph_distance": 4,
-    "structural_hole_score": 0.5832
-  },
-  {
-    "concept_a": "science education",
-    "concept_b": "science",
-    "similarity": 0.3899763226509094,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0089
-  },
-  {
-    "concept_a": "Deep representation embedding",
-    "concept_b": "Contextualized representations",
-    "similarity": 0.3889552354812622,
-    "graph_distance": 3,
     "structural_hole_score": 0.583
   },
   {
-    "concept_a": "hypothesis-driven research",
-    "concept_b": "scientific research",
-    "similarity": 0.38888663053512573,
-    "graph_distance": 999,
-    "structural_hole_score": 0.4295
-  },
-  {
-    "concept_a": "context-aware augmentation",
-    "concept_b": "Treatment Recommendations",
-    "similarity": 0.3888159394264221,
-    "graph_distance": 999,
-    "structural_hole_score": 0.3234
-  },
-  {
-    "concept_a": "interdisciplinary research",
-    "concept_b": "Scholarly domain",
-    "similarity": 0.38774746656417847,
-    "graph_distance": 5,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "Semantic Coherence",
-    "concept_b": "Semantic context",
-    "similarity": 0.3874382972717285,
-    "graph_distance": 4,
-    "structural_hole_score": 0.25
-  },
-  {
-    "concept_a": "citation-reference relationships",
-    "concept_b": "Scientific knowledge graph",
-    "similarity": 0.38740023970603943,
-    "graph_distance": 4,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "scientific outreach",
-    "concept_b": "socioeconomic driving forces",
-    "similarity": 0.386646032333374,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0187
-  },
-  {
-    "concept_a": "LLM-augmented KGs",
-    "concept_b": "Relation embeddings",
-    "similarity": 0.3865317702293396,
+    "concept_a": "task difficulty",
+    "concept_b": "intervention timing",
+    "similarity": 0.4333537220954895,
     "graph_distance": 3,
-    "structural_hole_score": 0.25
+    "structural_hole_score": 0.0
   },
   {
-    "concept_a": "SciTLDR dataset",
-    "concept_b": "Text summarization",
-    "similarity": 0.38652122020721436,
+    "concept_a": "Technology integration phase",
+    "concept_b": "scientific research",
+    "similarity": 0.43315619230270386,
     "graph_distance": 4,
-    "structural_hole_score": 0.3489
+    "structural_hole_score": 0.4984
   },
   {
-    "concept_a": "technology integration",
-    "concept_b": "technological superiority",
-    "similarity": 0.38617968559265137,
-    "graph_distance": 999,
-    "structural_hole_score": 0.25
-  },
-  {
-    "concept_a": "Shortcut learning",
-    "concept_b": "Zero-shot Learning",
-    "similarity": 0.38546210527420044,
-    "graph_distance": 6,
+    "concept_a": "Knowledge Graph Population",
+    "concept_b": "SPARQL Queries",
+    "similarity": 0.43250635266304016,
+    "graph_distance": 7,
     "structural_hole_score": 0.3332
   },
   {
-    "concept_a": "hypothesis chain",
-    "concept_b": "Knowledge graph reasoning",
-    "similarity": 0.3850375711917877,
+    "concept_a": "Semantic mapping",
+    "concept_b": "semantic codification",
+    "similarity": 0.4324966073036194,
+    "graph_distance": 7,
+    "structural_hole_score": 0.6245
+  },
+  {
+    "concept_a": "TrueLearn algorithm",
+    "concept_b": "Learner model",
+    "similarity": 0.4323102831840515,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "KG embedding",
+    "concept_b": "Local Neighbors",
+    "similarity": 0.4303419589996338,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1763
+  },
+  {
+    "concept_a": "scientific communication",
+    "concept_b": "research policy",
+    "similarity": 0.42996013164520264,
+    "graph_distance": 10,
+    "structural_hole_score": 0.0554
+  },
+  {
+    "concept_a": "Interdisciplinary scientific discovery",
+    "concept_b": "Scientific breakthrough",
+    "similarity": 0.4292646050453186,
     "graph_distance": 4,
-    "structural_hole_score": 0.4709
+    "structural_hole_score": 0.4955
+  },
+  {
+    "concept_a": "Ontology",
+    "concept_b": "Semantic Web",
+    "similarity": 0.4278343915939331,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "Medical datasets",
+    "concept_b": "scientific corpus",
+    "similarity": 0.42681431770324707,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "Scientific exploration phase",
+    "concept_b": "scientific research",
+    "similarity": 0.4264681935310364,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4984
+  },
+  {
+    "concept_a": "External knowledge base",
+    "concept_b": "Factual knowledge",
+    "similarity": 0.4259604811668396,
+    "graph_distance": 8,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Knowledge embedding",
+    "concept_b": "Knowledge graph reasoning",
+    "similarity": 0.4251851737499237,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6024
+  },
+  {
+    "concept_a": "science education",
+    "concept_b": "scientific communication",
+    "similarity": 0.4251128137111664,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0554
+  },
+  {
+    "concept_a": "cognitive intervention",
+    "concept_b": "cognitive integration",
+    "similarity": 0.42352089285850525,
+    "graph_distance": 999,
+    "structural_hole_score": 0.165
+  },
+  {
+    "concept_a": "Technology integration phase",
+    "concept_b": "cognitive integration",
+    "similarity": 0.42344048619270325,
+    "graph_distance": 7,
+    "structural_hole_score": 0.0839
+  },
+  {
+    "concept_a": "scientific discovery",
+    "concept_b": "science",
+    "similarity": 0.42209842801094055,
+    "graph_distance": 8,
+    "structural_hole_score": 0.3334
+  },
+  {
+    "concept_a": "Scientific knowledge graphs",
+    "concept_b": "Research publications",
+    "similarity": 0.42185282707214355,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3326
+  },
+  {
+    "concept_a": "KG-enhanced LLMs",
+    "concept_b": "KG completion",
+    "similarity": 0.4216061234474182,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5978
+  },
+  {
+    "concept_a": "Technology integration phase",
+    "concept_b": "research policy",
+    "similarity": 0.42083996534347534,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0839
+  },
+  {
+    "concept_a": "Semantic mapping",
+    "concept_b": "Semantic Web",
+    "similarity": 0.41872578859329224,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3748
+  },
+  {
+    "concept_a": "scientific discovery",
+    "concept_b": "scientific research",
+    "similarity": 0.417105495929718,
+    "graph_distance": 7,
+    "structural_hole_score": 0.7479
+  },
+  {
+    "concept_a": "Knowledge graphs",
+    "concept_b": "Local Neighbors",
+    "similarity": 0.4169609248638153,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4577
+  },
+  {
+    "concept_a": "Scientific exploration phase",
+    "concept_b": "socioeconomic driving forces",
+    "similarity": 0.4152525067329407,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2162
+  },
+  {
+    "concept_a": "Knowledge Graph Population",
+    "concept_b": "Scientific knowledge graphs",
+    "similarity": 0.4145210385322571,
+    "graph_distance": 6,
+    "structural_hole_score": 0.6658
+  },
+  {
+    "concept_a": "Scientific breakthrough",
+    "concept_b": "Research publications",
+    "similarity": 0.4142478406429291,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2455
+  },
+  {
+    "concept_a": "Ontology Creation",
+    "concept_b": "biomedical ontologies",
+    "similarity": 0.41282787919044495,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4996
+  },
+  {
+    "concept_a": "AI Agent",
+    "concept_b": "AI-augmented reasoning",
+    "similarity": 0.41170603036880493,
+    "graph_distance": 999,
+    "structural_hole_score": 0.5825
+  },
+  {
+    "concept_a": "flow theory",
+    "concept_b": "cognitive immersion",
+    "similarity": 0.41115185618400574,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
   },
   {
     "concept_a": "PDF document processing",
     "concept_b": "Text Mining",
-    "similarity": 0.3846726417541504,
+    "similarity": 0.40960973501205444,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "intrinsic motivation",
+    "concept_b": "cognitive immersion",
+    "similarity": 0.4094834625720978,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Technology integration phase",
+    "concept_b": "socioeconomic driving forces",
+    "similarity": 0.40884649753570557,
     "graph_distance": 5,
-    "structural_hole_score": 0.2498
-  },
-  {
-    "concept_a": "Research publication metadata",
-    "concept_b": "research policy",
-    "similarity": 0.3843664526939392,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Large Language Model",
-    "concept_b": "Model capacity",
-    "similarity": 0.38402754068374634,
-    "graph_distance": 8,
-    "structural_hole_score": 0.401
-  },
-  {
-    "concept_a": "Knowledge graph construction",
-    "concept_b": "knowledge-driven framework",
-    "similarity": 0.3832939863204956,
-    "graph_distance": 4,
-    "structural_hole_score": 0.0
-  },
-  {
-    "concept_a": "Scientific knowledge graph",
-    "concept_b": "Knowledge graph reasoning",
-    "similarity": 0.38308656215667725,
-    "graph_distance": 6,
-    "structural_hole_score": 0.5559
-  },
-  {
-    "concept_a": "Learner model",
-    "concept_b": "Latent knowledge",
-    "similarity": 0.3830517828464508,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3332
-  },
-  {
-    "concept_a": "Ontology Creation",
-    "concept_b": "Table mapping",
-    "similarity": 0.3824063837528229,
-    "graph_distance": 4,
-    "structural_hole_score": 0.583
-  },
-  {
-    "concept_a": "Self-training",
-    "concept_b": "Zero-shot Learning",
-    "similarity": 0.3822782039642334,
-    "graph_distance": 4,
-    "structural_hole_score": 0.25
-  },
-  {
-    "concept_a": "LLM-augmented KGs",
-    "concept_b": "Contextualized representations",
-    "similarity": 0.3821693956851959,
-    "graph_distance": 3,
-    "structural_hole_score": 0.5832
+    "structural_hole_score": 0.2162
   },
   {
     "concept_a": "science education",
-    "concept_b": "scientific communication",
-    "similarity": 0.38189697265625,
-    "graph_distance": 999,
-    "structural_hole_score": 0.0641
+    "concept_b": "scientific community",
+    "similarity": 0.4083751440048218,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
   },
   {
-    "concept_a": "Learner model",
-    "concept_b": "Predictive performance",
-    "similarity": 0.3805988132953644,
-    "graph_distance": 3,
-    "structural_hole_score": 0.3332
+    "concept_a": "network analysis",
+    "concept_b": "graph-structured data",
+    "similarity": 0.40803515911102295,
+    "graph_distance": 5,
+    "structural_hole_score": 0.333
+  },
+  {
+    "concept_a": "Semantic Path",
+    "concept_b": "Wikipedia link graph",
+    "similarity": 0.4078548550605774,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "scientific community",
+    "concept_b": "research policy",
+    "similarity": 0.4075181484222412,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Technology integration phase",
+    "concept_b": "research productivity",
+    "similarity": 0.4066298007965088,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0839
+  },
+  {
+    "concept_a": "scientific research",
+    "concept_b": "research productivity",
+    "similarity": 0.4062042832374573,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4145
   },
   {
     "concept_a": "Semantic layer",
-    "concept_b": "Semantic annotation",
-    "similarity": 0.3804503083229065,
+    "concept_b": "Semantic Path",
+    "similarity": 0.406088262796402,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4998
+  },
+  {
+    "concept_a": "Semantic Path",
+    "concept_b": "Entity Linking",
+    "similarity": 0.40608343482017517,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Visual Question Answering",
+    "concept_b": "Question answering",
+    "similarity": 0.40556806325912476,
+    "graph_distance": 7,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "biomedical question-answering",
+    "concept_b": "GPT-4 with MedPrompt",
+    "similarity": 0.4052059054374695,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3325
+  },
+  {
+    "concept_a": "Ontology Refinement",
+    "concept_b": "Semantic mapping",
+    "similarity": 0.40485095977783203,
+    "graph_distance": 5,
+    "structural_hole_score": 0.6248
+  },
+  {
+    "concept_a": "Technological advancement",
+    "concept_b": "scientific discovery",
+    "similarity": 0.40468794107437134,
+    "graph_distance": 6,
+    "structural_hole_score": 0.5834
+  },
+  {
+    "concept_a": "Scientific exploration phase",
+    "concept_b": "knowledge emergence",
+    "similarity": 0.4026784896850586,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4651
+  },
+  {
+    "concept_a": "ROUGE score",
+    "concept_b": "SciTLDR dataset",
+    "similarity": 0.402512788772583,
     "graph_distance": 3,
+    "structural_hole_score": 0.2798
+  },
+  {
+    "concept_a": "Multimodal data integration",
+    "concept_b": "Deep representation embedding",
+    "similarity": 0.4024498462677002,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Knowledge Graph Population",
+    "concept_b": "KG completion",
+    "similarity": 0.4024314880371094,
+    "graph_distance": 5,
+    "structural_hole_score": 0.7468
+  },
+  {
+    "concept_a": "Research publications",
+    "concept_b": "socioeconomic driving forces",
+    "similarity": 0.401624858379364,
+    "graph_distance": 7,
+    "structural_hole_score": 0.1323
+  },
+  {
+    "concept_a": "Interdisciplinary scientific discovery",
+    "concept_b": "Research publications",
+    "similarity": 0.4007107615470886,
+    "graph_distance": 4,
     "structural_hole_score": 0.25
   },
   {
-    "concept_a": "Relation embeddings",
-    "concept_b": "Local neighbors",
-    "similarity": 0.3801034688949585,
+    "concept_a": "Model evaluation",
+    "concept_b": "Backward discrepancy",
+    "similarity": 0.40021178126335144,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3275
+  },
+  {
+    "concept_a": "Knowledge Graph",
+    "concept_b": "SPARQL Queries",
+    "similarity": 0.3996359705924988,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4668
+  },
+  {
+    "concept_a": "science education",
+    "concept_b": "scientific research",
+    "similarity": 0.39922741055488586,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4145
+  },
+  {
+    "concept_a": "Visual Genome scene graph",
+    "concept_b": "graph-structured data",
+    "similarity": 0.3986169099807739,
+    "graph_distance": 8,
+    "structural_hole_score": 0.333
+  },
+  {
+    "concept_a": "Image perception",
+    "concept_b": "scene understanding",
+    "similarity": 0.39814865589141846,
+    "graph_distance": 7,
+    "structural_hole_score": 0.4234
+  },
+  {
+    "concept_a": "Relationship extraction",
+    "concept_b": "Semantic Path",
+    "similarity": 0.39774173498153687,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5364
+  },
+  {
+    "concept_a": "Knowledge graphs",
+    "concept_b": "SPARQL Queries",
+    "similarity": 0.3976081609725952,
     "graph_distance": 3,
+    "structural_hole_score": 0.4577
+  },
+  {
+    "concept_a": "Large Language Model",
+    "concept_b": "biomedical LLMs",
+    "similarity": 0.3974846601486206,
+    "graph_distance": 6,
+    "structural_hole_score": 0.7478
+  },
+  {
+    "concept_a": "scientific community",
+    "concept_b": "socioeconomic driving forces",
+    "similarity": 0.395977258682251,
+    "graph_distance": 999,
+    "structural_hole_score": 0.1323
+  },
+  {
+    "concept_a": "socioeconomic driving forces",
+    "concept_b": "R&D investment",
+    "similarity": 0.3959500789642334,
+    "graph_distance": 999,
+    "structural_hole_score": 0.1323
+  },
+  {
+    "concept_a": "Educational recommendation system",
+    "concept_b": "Learner engagement",
+    "similarity": 0.3957626223564148,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Ontology",
+    "concept_b": "Schema.org",
+    "similarity": 0.39573371410369873,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "Natural Language Processing",
+    "concept_b": "Question understanding",
+    "similarity": 0.39510834217071533,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3166
+  },
+  {
+    "concept_a": "Model evaluation",
+    "concept_b": "Llama3-70B",
+    "similarity": 0.3940667510032654,
+    "graph_distance": 7,
     "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Llama3-70B",
+    "concept_b": "Lightweight Models",
+    "similarity": 0.39369291067123413,
+    "graph_distance": 8,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "TrueLearn algorithm",
+    "concept_b": "Latent knowledge",
+    "similarity": 0.39363807439804077,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "Semantic mapping",
+    "concept_b": "Semantic relatedness",
+    "similarity": 0.3925679326057434,
+    "graph_distance": 4,
+    "structural_hole_score": 0.708
+  },
+  {
+    "concept_a": "Knowledge Graph Population",
+    "concept_b": "Wikipedia link graph",
+    "similarity": 0.39170002937316895,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "wealth creation",
+    "concept_b": "R&D investment",
+    "similarity": 0.39140206575393677,
+    "graph_distance": 999,
+    "structural_hole_score": 0.1131
+  },
+  {
+    "concept_a": "Multimodal data integration",
+    "concept_b": "Visual Question Answering",
+    "similarity": 0.3901243209838867,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Agent-Driven Framework",
+    "concept_b": "Multi-agent system",
+    "similarity": 0.38869979977607727,
+    "graph_distance": 5,
+    "structural_hole_score": 0.7077
+  },
+  {
+    "concept_a": "Local Neighbors",
+    "concept_b": "Knowledge embedding",
+    "similarity": 0.3884120583534241,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3331
+  },
+  {
+    "concept_a": "Scientific exploration phase",
+    "concept_b": "organized social effort",
+    "similarity": 0.3882608711719513,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0839
+  },
+  {
+    "concept_a": "Technology integration phase",
+    "concept_b": "Scientific breakthrough",
+    "similarity": 0.3872368335723877,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3294
+  },
+  {
+    "concept_a": "cognitive immersion",
+    "concept_b": "Learner engagement",
+    "similarity": 0.38707005977630615,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Local Neighbors",
+    "concept_b": "graph-structured data",
+    "similarity": 0.3868468701839447,
+    "graph_distance": 5,
+    "structural_hole_score": 0.333
+  },
+  {
+    "concept_a": "Knowledge graphs",
+    "concept_b": "Wikipedia link graph",
+    "similarity": 0.3867188096046448,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4577
+  },
+  {
+    "concept_a": "Ontology Creation",
+    "concept_b": "Schema.org",
+    "similarity": 0.3861437439918518,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Semantic mapping",
+    "concept_b": "Semantic Path",
+    "similarity": 0.3856983780860901,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6245
+  },
+  {
+    "concept_a": "Entity Embedding",
+    "concept_b": "Logic and embedding integration",
+    "similarity": 0.3848166763782501,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6772
+  },
+  {
+    "concept_a": "SPARQL Queries",
+    "concept_b": "Knowledge embedding",
+    "similarity": 0.38468021154403687,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3331
+  },
+  {
+    "concept_a": "Knowledge graphs",
+    "concept_b": "Knowledge triplet",
+    "similarity": 0.3836159110069275,
+    "graph_distance": 6,
+    "structural_hole_score": 0.7061
+  },
+  {
+    "concept_a": "Question understanding",
+    "concept_b": "Conceptual knowledge",
+    "similarity": 0.3835121989250183,
+    "graph_distance": 5,
+    "structural_hole_score": 0.071
+  },
+  {
+    "concept_a": "cognitive intervention",
+    "concept_b": "gaze behavior",
+    "similarity": 0.38256198167800903,
+    "graph_distance": 3,
+    "structural_hole_score": 0.165
+  },
+  {
+    "concept_a": "Technology integration phase",
+    "concept_b": "organized social effort",
+    "similarity": 0.38138526678085327,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0839
+  },
+  {
+    "concept_a": "Few-shot Learning",
+    "concept_b": "Self-training",
+    "similarity": 0.3804740309715271,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4943
+  },
+  {
+    "concept_a": "Large Language Model",
+    "concept_b": "Llama3-70B",
+    "similarity": 0.3804730474948883,
+    "graph_distance": 7,
+    "structural_hole_score": 0.4145
+  },
+  {
+    "concept_a": "Semantic TrueLearn",
+    "concept_b": "Learner engagement",
+    "similarity": 0.3803699016571045,
+    "graph_distance": 5,
+    "structural_hole_score": 0.6496
   }
 ]
