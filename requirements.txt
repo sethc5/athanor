@@ -1,3 +1,6 @@
+# CPU-only torch (no CUDA) — saves ~4 GB vs the default index
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 # Core dependencies
 anthropic>=0.40.0
 arxiv>=2.1.0
