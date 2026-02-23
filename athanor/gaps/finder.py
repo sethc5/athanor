@@ -15,7 +15,7 @@ from __future__ import annotations
 
 import json
 import logging
-import time
+from concurrent.futures import ThreadPoolExecutor
 from typing import List, Optional
 
 import anthropic
@@ -106,7 +106,7 @@ class GapFinder:
         api_key: str = cfg.anthropic_api_key,
         max_tokens: int = 1024,
         max_gaps: int = 20,
-        sleep_between: float = 0.5,
+        max_workers: int = 4,
     ) -> None:
         cfg.validate()
         self._client = anthropic.Anthropic(api_key=api_key)
@@ -114,7 +114,7 @@ class GapFinder:
         self._model = model
         self._max_tokens = max_tokens
         self._max_gaps = max_gaps
-        self._sleep = sleep_between
+        self._max_workers = max_workers
 
     # ── public ───────────────────────────────────────────────────────────────
 
@@ -132,19 +132,12 @@ class GapFinder:
             n_analyzed=len(candidates),
         )
 
-        for i, gap in enumerate(candidates):
-            log.info(
-                "[%d/%d] Analysing gap: %s ↔ %s",
-                i + 1,
-                len(candidates),
-                gap.concept_a,
-                gap.concept_b,
-            )
-            analysis = self._analyse_one(gap)
-            if analysis:
-                report.analyses.append(analysis)
-            time.sleep(self._sleep)
+        log.info("Analysing %d gaps with %d workers", len(candidates), self._max_workers)
 
+        with ThreadPoolExecutor(max_workers=self._max_workers) as pool:
+            results = list(pool.map(self._analyse_one, candidates))
+
+        report.analyses = [a for a in results if a is not None]
         log.info(
             "Gap analysis complete: %d/%d produced valid analyses",
             len(report.analyses),

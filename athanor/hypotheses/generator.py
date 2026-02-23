@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import json
 import logging
-import time
+from concurrent.futures import ThreadPoolExecutor
 from typing import List, Optional
 
 import anthropic
@@ -129,14 +129,14 @@ class HypothesisGenerator:
         model: str = cfg.model,
         api_key: str = cfg.anthropic_api_key,
         max_tokens: int = 2048,
-        sleep_between: float = 0.5,
+        max_workers: int = 4,
     ) -> None:
         cfg.validate()
         self._client = anthropic.Anthropic(api_key=api_key)
         self._domain = domain
         self._model = model
         self._max_tokens = max_tokens
-        self._sleep = sleep_between
+        self._max_workers = max_workers
 
     # ── public ───────────────────────────────────────────────────────────────
 
@@ -161,17 +161,12 @@ class HypothesisGenerator:
             n_gaps_considered=len(targets),
         )
 
-        for i, analysis in enumerate(targets):
-            log.info(
-                "[%d/%d] Generating hypothesis: %s ↔ %s",
-                i + 1, len(targets),
-                analysis.concept_a, analysis.concept_b,
-            )
-            hyp = self._generate_one(analysis)
-            if hyp:
-                report.hypotheses.append(hyp)
-            time.sleep(self._sleep)
+        log.info("Generating %d hypotheses with %d workers", len(targets), self._max_workers)
 
+        with ThreadPoolExecutor(max_workers=self._max_workers) as pool:
+            results = list(pool.map(self._generate_one, targets))
+
+        report.hypotheses = [h for h in results if h is not None]
         log.info(
             "Hypothesis generation complete: %d/%d succeeded",
             len(report.hypotheses), len(targets),

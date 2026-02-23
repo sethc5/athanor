@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import logging
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -60,13 +61,16 @@ class GraphBuilder:
         all_concepts: List[Concept] = []
         all_edges: List[Edge] = []
 
-        for paper in parsed_papers:
-            arxiv_id = paper["arxiv_id"]
-            log.info("Processing paper: %s — %s", arxiv_id, paper["title"][:60])
-            concepts, edges = self._extractor.extract(
-                text=paper["text"],
-                arxiv_id=arxiv_id,
-            )
+        def _extract_one(paper: dict):
+            log.info("Processing paper: %s — %s", paper["arxiv_id"], paper["title"][:60])
+            return self._extractor.extract(text=paper["text"], arxiv_id=paper["arxiv_id"])
+
+        # Parallelise Claude extraction across papers (I/O-bound, safe to thread)
+        max_workers = min(4, len(parsed_papers))
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            results = list(pool.map(_extract_one, parsed_papers))
+
+        for concepts, edges in results:
             all_concepts.extend(concepts)
             all_edges.extend(edges)
 
