@@ -274,6 +274,7 @@ Fixed `_out()` in `cli.py` to scope graphs per-domain: `outputs/graphs/<domain>/
 | Anthropic prompt caching | Medium | Low | ✅ (Session 9) |
 | All-domain status table | Low | Low | ✅ (Session 9) |
 | Cross-domain report digest | Medium | Low | ✅ (Session 9) |
+| Workspace isolation (`workspaces/`) | High | Low | ✅ (Session 9) |
 | Hypothesis aging / tracking | Medium | Medium | 🔲 |
 
 ---
@@ -299,9 +300,50 @@ Fixed `_out()` in `cli.py` to scope graphs per-domain: `outputs/graphs/<domain>/
   (Stage 1: injected into extractor user template; Stages 2+3: prepended to per-gap prompts)
 
 **Pipeline results (Session 9):**
-- 6 domains fully processed: 76+ hypotheses, top score 4.65
+- 6 domains fully processed: 96 hypotheses total, top score 4.65
 - athanor_meta, information_theory, longevity_biology, quantum_computing,  
   string_landscape, synthetic_biology all complete (Stage 1+2+3 ✅)
-- 15 cross-domain pairs launched via `athanor cross-domain --all`
+- 15 cross-domain pairs analyzed via `athanor cross-domain --all`
+- All domains + outputs migrated to workspace isolation (see below)
+
+## Session 9 — Workspace isolation
+
+**Problem:** All domains shared a single flat `domains/` and `outputs/` directory.
+Mixed-interest domains (quantum, synth bio, info theory) were polluting the
+string physics research focus.
+
+**Solution:** Workspace concept — named directories under `workspaces/` with
+their own `domains/` and `outputs/`, sharing the engine (`athanor/` package).
+
+**Workspaces created:**
+```
+workspaces/
+  string_physics/   — string_landscape, athanor_meta  (primary research)
+  longevity/        — longevity_biology               (actual interest, isolated)
+  sandbox/          — quantum_computing, synthetic_biology, information_theory
+```
+
+**Activation:**
+```bash
+export ATHANOR_WORKSPACE=string_physics   # in .env or shell profile
+athanor run --domain string_landscape     # fully scoped to workspace
+
+# Or per-command override:
+athanor --workspace longevity status
+```
+
+**Code changes:**
+- `athanor/domains/__init__.py`: `_domains_dir()` reads `ATHANOR_WORKSPACE` env,
+  returns `workspaces/<name>/domains/` when set, falls back to `domains/` at repo root
+- `athanor/cli.py`: `_ws_root()` returns active workspace root; `--workspace`
+  option on root group propagates via env var to all subcommands; `_out()` and
+  all output path references use `_ws_root()` instead of `_root`
+
+**Adding a new workspace:**
+```bash
+mkdir -p workspaces/my_cluster/domains
+# drop <domain>.yaml files in
+ATHANOR_WORKSPACE=my_cluster athanor run --domain <domain>
+```
 
 *Last updated: 2026-02-23 (Session 9)*
