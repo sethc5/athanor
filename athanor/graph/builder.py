@@ -45,6 +45,7 @@ class GraphBuilder:
         query: str = "",
         save_path: Optional[Path] = None,
         max_workers: int = 2,
+        domain_context: str = "",
     ) -> ConceptGraph:
         """Extract and merge concept graphs from *parsed_papers*.
 
@@ -67,7 +68,11 @@ class GraphBuilder:
 
         def _extract_one(paper: dict):
             log.info("Processing paper: %s — %s", paper["arxiv_id"], paper["title"][:60])
-            return self._extractor.extract(text=paper["text"], arxiv_id=paper["arxiv_id"])
+            return self._extractor.extract(
+                text=paper["text"],
+                arxiv_id=paper["arxiv_id"],
+                domain_context=domain_context,
+            )
 
         # Parallelise Claude extraction across papers (I/O-bound, safe to thread).
         # Default 8 workers: at 3000 max_tokens each that's ~24K OPM burst,

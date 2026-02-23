@@ -292,6 +292,7 @@ def run(
             query=dom.get("arxiv_query", ""),
             save_path=graph_path,
             max_workers=workers,
+            domain_context=dom.get("domain_context", ""),
         )
 
         # Also save candidate gaps
@@ -369,6 +370,7 @@ def run(
             api_key=os.environ["ANTHROPIC_API_KEY"],
             max_gaps=dom.get("max_gaps", 15),
             max_workers=workers,
+            domain_context=dom.get("domain_context", ""),
         )
         gap_report = finder.analyse(deduped, query=dom.get("arxiv_query", ""))
         report_path.write_text(gap_report.model_dump_json(indent=2))
@@ -392,6 +394,7 @@ def run(
             api_key=os.environ["ANTHROPIC_API_KEY"],
             max_tokens=dom.get("max_tokens_hypothesis", 4096),
             max_workers=_s3_workers,
+            domain_context=dom.get("domain_context", ""),
         )
         hyp_report = generator.generate(gap_report.ranked)
         hyp_path.write_text(hyp_report.model_dump_json(indent=2))

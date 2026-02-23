@@ -102,7 +102,7 @@ Example (physics/mathematics paper):
 
 _USER_TEMPLATE = """\
 Extract the concept graph from the following paper text.
-
+{domain_context_block}
 ---
 {text}
 ---
@@ -135,14 +135,19 @@ class ConceptExtractor:
         self,
         text: str,
         arxiv_id: str = "",
+        domain_context: str = "",
     ) -> tuple[List[Concept], List[Edge]]:
         """Extract concepts and edges from *text*.
 
         Returns (concepts, edges) — both tagged with arxiv_id provenance.
         """
+        ctx_block = (
+            f"\nDomain context:\n{domain_context}\n"
+            if domain_context else ""
+        )
         data, raw = call_llm_json(
             self._client, self._model, self._max_tokens,
-            _SYSTEM, _USER_TEMPLATE.format(text=text),
+            _SYSTEM, _USER_TEMPLATE.format(text=text, domain_context_block=ctx_block),
         )
         if data is None:
             log.error("Concept extraction failed for paper %s — skipping.", arxiv_id or "?")

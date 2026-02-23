@@ -142,6 +142,7 @@ class HypothesisGenerator:
         api_key: str = cfg.anthropic_api_key,
         max_tokens: int = 4096,
         max_workers: int = 4,
+        domain_context: str = "",
     ) -> None:
         cfg.validate()
         self._client = anthropic.Anthropic(api_key=api_key)
@@ -149,6 +150,7 @@ class HypothesisGenerator:
         self._model = model
         self._max_tokens = max_tokens
         self._max_workers = max_workers
+        self._domain_context = domain_context
 
     # ── public ───────────────────────────────────────────────────────────────
 
@@ -201,6 +203,8 @@ class HypothesisGenerator:
             tractability=analysis.tractability,
             impact=analysis.impact,
         )
+        if self._domain_context:
+            prompt = f"Domain context:\n{self._domain_context}\n\n" + prompt
 
         try:
             data, _ = call_llm_json(

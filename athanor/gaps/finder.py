@@ -108,6 +108,7 @@ class GapFinder:
         max_tokens: int = 1024,
         max_gaps: int = 20,
         max_workers: int = 4,
+        domain_context: str = "",
     ) -> None:
         cfg.validate()
         self._client = anthropic.Anthropic(api_key=api_key)
@@ -116,6 +117,7 @@ class GapFinder:
         self._max_tokens = max_tokens
         self._max_gaps = max_gaps
         self._max_workers = max_workers
+        self._domain_context = domain_context
 
     # ── public ───────────────────────────────────────────────────────────────
 
@@ -161,6 +163,8 @@ class GapFinder:
             graph_distance=gap.graph_distance if gap.graph_distance < 999 else "∞",
             structural_hole_score=gap.structural_hole_score,
         )
+        if self._domain_context:
+            prompt = f"Domain context:\n{self._domain_context}\n\n" + prompt
         try:
             data, _ = call_llm_json(
                 self._client, self._model, self._max_tokens, _SYSTEM, prompt
