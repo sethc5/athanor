@@ -16,6 +16,7 @@ import anthropic
 
 from athanor.config import cfg
 from athanor.graph.models import Concept, Edge
+from athanor.llm_utils import call_llm_json
 
 log = logging.getLogger(__name__)
 
@@ -54,6 +55,32 @@ Rules:
 - Prefer specific relations over generic ones.
 - weight 1.0 = central/strong, 0.1 = peripheral/weak.
 - Do not include author names, institutions, or paper titles as concepts.
+
+Examples of correct output (biology paper):
+{
+  "concepts": [
+    {"label": "mTOR signalling", "description": "Serine/threonine kinase pathway integrating nutrient signals to regulate cell growth and autophagy.", "aliases": ["mTOR pathway"]},
+    {"label": "autophagy", "description": "Lysosomal degradation pathway that recycles damaged organelles to maintain cellular homeostasis.", "aliases": ["macroautophagy"]},
+    {"label": "caloric restriction", "description": "Reduction of dietary energy intake without malnutrition; the most robust lifespan-extending intervention across species.", "aliases": ["dietary restriction"]}
+  ],
+  "edges": [
+    {"source": "caloric restriction", "target": "mTOR signalling", "relation": "inhibits", "weight": 0.9, "evidence": "CR reduces serum IGF-1, suppressing mTORC1 activity (Fig. 3)."},
+    {"source": "mTOR signalling", "target": "autophagy", "relation": "inhibits", "weight": 0.95, "evidence": "mTORC1 phosphorylates ULK1, blocking autophagy initiation; rapamycin restores flux (Fig. 5b)."}
+  ]
+}
+
+Example (physics/mathematics paper):
+{
+  "concepts": [
+    {"label": "Calabi-Yau manifold", "description": "Complex K\u00e4hler manifold with vanishing first Chern class used to compactify extra dimensions in string theory.", "aliases": ["CY3"]},
+    {"label": "mirror symmetry", "description": "Duality between CY pairs exchanging complex-structure and K\u00e4hler moduli: h^{1,1}(X)=h^{2,1}(Y).", "aliases": []},
+    {"label": "Hodge numbers", "description": "Topological invariants h^{p,q} characterising CY cohomology; h^{1,1} counts K\u00e4hler moduli.", "aliases": ["Hodge data"]}
+  ],
+  "edges": [
+    {"source": "mirror symmetry", "target": "Hodge numbers", "relation": "exchanges", "weight": 0.9, "evidence": "Mirror symmetry swaps h^{1,1}\u2194h^{2,1}, providing a shortcut for instanton enumeration (Sec. 4.2)."},
+    {"source": "Calabi-Yau manifold", "target": "Hodge numbers", "relation": "characterised_by", "weight": 1.0, "evidence": "Authors classify CY3 geometries by Hodge pairs, listing 30,108 distinct topologies (Table 1)."}
+  ]
+}
 """
 
 _USER_TEMPLATE = """\
@@ -96,42 +123,22 @@ class ConceptExtractor:
 
         Returns (concepts, edges) — both tagged with arxiv_id provenance.
         """
-        raw = self._call_claude(text)
-        return self._parse_response(raw, arxiv_id)
+        data, raw = call_llm_json(
+            self._client, self._model, self._max_tokens,
+            _SYSTEM, _USER_TEMPLATE.format(text=text),
+        )
+        if data is None:
+            log.error("Concept extraction failed for paper %s — skipping.", arxiv_id or "?")
+            return [], []
+        return self._parse_response(data, arxiv_id)
 
     # ── private ──────────────────────────────────────────────────────────────
 
-    def _call_claude(self, text: str) -> str:
-        log.info("Calling %s for concept extraction...", self._model)
-        response = self._client.messages.create(
-            model=self._model,
-            max_tokens=self._max_tokens,
-            system=_SYSTEM,
-            messages=[
-                {"role": "user", "content": _USER_TEMPLATE.format(text=text)}
-            ],
-        )
-        return response.content[0].text
-
     def _parse_response(
         self,
-        raw: str,
+        data: dict,
         arxiv_id: str,
     ) -> tuple[List[Concept], List[Edge]]:
-        # Strip markdown fences if Claude emits them despite instructions
-        text = raw.strip()
-        if text.startswith("```"):
-            text = text.split("```", 2)[1]
-            if text.startswith("json"):
-                text = text[4:]
-            text = text.rsplit("```", 1)[0]
-
-        try:
-            data = json.loads(text)
-        except json.JSONDecodeError as exc:
-            log.error("Failed to parse Claude JSON: %s\n%s", exc, raw[:500])
-            return [], []
-
         concepts = []
         known_labels = set()
         for c in data.get("concepts", []):

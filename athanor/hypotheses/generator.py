@@ -22,6 +22,7 @@ from athanor.hypotheses.models import (
     Hypothesis,
     HypothesisReport,
 )
+from athanor.llm_utils import call_llm_json
 
 log = logging.getLogger(__name__)
 
@@ -191,33 +192,19 @@ class HypothesisGenerator:
         )
 
         try:
-            response = self._client.messages.create(
-                model=self._model,
-                max_tokens=self._max_tokens,
-                system=_SYSTEM,
-                messages=[{"role": "user", "content": prompt}],
+            data, _ = call_llm_json(
+                self._client, self._model, self._max_tokens, _SYSTEM, prompt
             )
-            raw = response.content[0].text
         except anthropic.APIError as exc:
-            log.error("API error for %s↔%s: %s", analysis.concept_a, analysis.concept_b, exc)
+            log.error("API error for %s\u2194%s: %s", analysis.concept_a, analysis.concept_b, exc)
+            return None
+        if data is None:
+            log.error("Hypothesis generation failed for %s\u2194%s after retries.", analysis.concept_a, analysis.concept_b)
             return None
 
-        return self._parse(raw, analysis)
+        return self._parse(data, analysis)
 
-    def _parse(self, raw: str, analysis: GapAnalysis) -> Optional[Hypothesis]:
-        text = raw.strip()
-        if text.startswith("```"):
-            text = text.split("```", 2)[1]
-            if text.startswith("json"):
-                text = text[4:]
-            text = text.rsplit("```", 1)[0]
-
-        try:
-            data = json.loads(text)
-        except json.JSONDecodeError as exc:
-            log.error("JSON parse error: %s", exc)
-            return None
-
+    def _parse(self, data: dict, analysis: GapAnalysis) -> Optional[Hypothesis]:
         try:
             exp_data = data.get("experiment", {})
             experiment = ExperimentDesign(

@@ -121,3 +121,13 @@ seed_concepts:
   - D-brane tadpole cancellation
   - axion decay constant
   - cosmological moduli problem
+
+# Foundational papers fetched by arXiv ID regardless of query ranking.
+# Format: "arxiv:<id>" — bare IDs work (no version suffix needed).
+seed_papers:
+  - arxiv:hep-th/0301240   # KKLT: de Sitter vacua in string theory
+  - arxiv:hep-th/0502058   # Large Volume Scenario (Balasubramanian et al.)
+  - arxiv:hep-th/0002240   # Kreuzer-Skarke complete classification
+  - arxiv:0910.1523        # F-theory Standard Model (Weigand et al.)
+  - arxiv:1803.04989       # Swampland distance conjecture
+  - arxiv:1903.00009       # Swampland de Sitter conjecture review

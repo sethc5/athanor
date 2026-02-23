@@ -181,6 +181,20 @@ def run(
             existing_titles = {p.title.lower() for p in papers}
             papers.extend(p for p in s2_papers if p.title.lower() not in existing_titles)
 
+        # Seed papers (specific arXiv IDs pinned in domain YAML)
+        seed_ids = [
+            s.removeprefix("arxiv:").strip()
+            for s in dom.get("seed_papers", [])
+            if str(s).startswith("arxiv:")
+        ]
+        if seed_ids:
+            console.print(f"[yellow]Fetching {len(seed_ids)} seed paper(s) by arXiv ID…[/]")
+            seed = arxiv_client.fetch_by_ids(seed_ids)
+            existing_titles = {p.title.lower() for p in papers}
+            added = [p for p in seed if p.title.lower() not in existing_titles]
+            papers.extend(added)
+            console.print(f"[green]✓ Added {len(added)} seed paper(s)[/]")
+
         console.print(f"[green]✓ Fetched {len(papers)} papers total[/]")
 
         # Bibliographic coupling (optional co-citation seeding)
@@ -323,6 +337,99 @@ def run(
                 console.print(f"[dim]{comp} | Effort: {best.experiment.estimated_effort}[/]")
 
     console.print("\n[bold green]Pipeline complete.[/]")
+
+# ── report command ──────────────────────────────────────────────────────────
+@cli.command()
+@click.option("--domain", "-d", required=True, help="Domain name")
+@click.option("--top", "-n", default=10, show_default=True, help="Max hypotheses to include")
+@click.option("--approved-only", is_flag=True, help="Only include approved hypotheses")
+@click.option("--out", "-o", default=None, help="Output .md file path (default: print to stdout)")
+def report(domain: str, top: int, approved_only: bool, out: str) -> None:
+    """Render a Markdown report of hypotheses for a domain."""
+    from datetime import datetime
+    from athanor.hypotheses.models import HypothesisReport as HR
+
+    hyp_path = _out(domain)["hyps"] / "hypothesis_report.json"
+    if not hyp_path.exists():
+        console.print(f"[red]No hypotheses for '{domain}'. Run Stage 3 first.[/]")
+        raise SystemExit(1)
+
+    rep = HR.model_validate_json(hyp_path.read_text())
+    candidates = [
+        h for h in rep.ranked
+        if not approved_only or h.approved is True
+    ][:top]
+
+    date_str = datetime.utcnow().strftime("%Y-%m-%d")
+    title = domain.replace("_", " ").title()
+
+    lines = [
+        f"# Athanor — {title} Hypotheses",
+        f"*{date_str} | `{domain}` | "
+        f"{len(rep.hypotheses)} total | {len(candidates)} shown"
+        + (" (approved only)" if approved_only else "") + "*",
+        "",
+        "---",
+        "",
+        "## Summary",
+        "",
+        "| # | Gap | Score | N | R | I | Compute |",
+        "|---|-----|-------|---|---|---|---------|" ,
+    ]
+    for i, h in enumerate(candidates, 1):
+        comp = "\u2713" if h.experiment and h.experiment.computational else "\u2717"
+        label = {True: " ✅", False: " ❌", None: ""}.get(h.approved, "")
+        lines.append(
+            f"| {i} | {h.gap_concept_a} \u2194 {h.gap_concept_b}{label} | "
+            f"{h.composite_score:.1f} | {h.novelty} | {h.rigor} | {h.impact} | {comp} |"
+        )
+
+    lines += ["", "---", ""]
+
+    for i, h in enumerate(candidates, 1):
+        approved_tag = {True: " \u2705 Approved", False: " \u274c Rejected", None: ""}.get(h.approved, "")
+        comp_label = "Computational" if h.experiment and h.experiment.computational else "Requires wet-lab"
+        lines += [
+            f"## {i}. {h.gap_concept_a} \u2194 {h.gap_concept_b}{approved_tag}",
+            f"**Score:** {h.composite_score:.1f}  "
+            f"(N\u202f{h.novelty} \u00b7 R\u202f{h.rigor} \u00b7 I\u202f{h.impact})  |  {comp_label}",
+            "",
+            f"**Hypothesis:** {h.statement}",
+            "",
+            f"**Mechanism:** {h.mechanism}",
+            "",
+            f"**Prediction:** {h.prediction}",
+            "",
+            f"**Falsification criterion:** {h.falsification_criteria}",
+            "",
+        ]
+        if h.minimum_effect_size:
+            lines += [f"**Min. effect size:** {h.minimum_effect_size}", ""]
+        if h.experiment:
+            e = h.experiment
+            lines += ["### Experiment", "", f"*{e.approach}*", ""]
+            for step in e.steps:
+                lines.append(f"- {step}")
+            if e.steps:
+                lines.append("")
+            if e.tools:
+                lines += [f"**Tools:** {', '.join(e.tools)}", ""]
+            if e.statistical_test:
+                lines += [f"**Statistical test:** {e.statistical_test}", ""]
+            if e.estimated_effort:
+                lines += [f"**Effort:** {e.estimated_effort}", ""]
+            if e.requires_followup:
+                lines += [f"**Wet-lab follow-up:** {e.requires_followup}", ""]
+        lines += ["---", ""]
+
+    md = "\n".join(lines)
+    if out:
+        from pathlib import Path as _P
+        _P(out).write_text(md)
+        console.print(f"[green]Report written \u2192 {out}[/]")
+    else:
+        console.print(md)
+
 
 # ── approve command ──────────────────────────────────────────────────────────
 @cli.command()

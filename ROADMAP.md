@@ -187,11 +187,10 @@ to extract), schema validation in the loop, retry on malformed JSON.
 - Add retry loop with error feedback on JSON parse failure
 - Add confidence field to extracted concepts
 
-**Status:** 🔲 Planned
-
----
-
-## Domain: Longevity Biology
+**Status:** ✅ Implemented (Session 6) — added 2 worked biology + physics/math
+examples (with canonical labels, descriptions, typed edges, and evidence quotes)
+to `graph/extractor.py` `_SYSTEM` prompt. Follows the few-shot pattern now used
+by all three stages.
 
 ### 12. Hallmarks of aging (Lopez-Otin 2013 + 2023 update)
 **Original 9 (2013):** genomic instability, telomere attrition, epigenetic
@@ -263,11 +262,12 @@ Fixed `_out()` in `cli.py` to scope graphs per-domain: `outputs/graphs/<domain>/
 | Richer edge types | Medium | Medium | 🔲 |
 | DOE fields in experiments | Medium | Low | 🔲 |
 | Replication risk scoring | Medium | Low | 🔲 |
-| Few-shot prompt examples | High | Medium | 🔲 |
-| GNN gap prediction | High | High | 🔲 |
-| `athanor report` markdown export | Medium | Low | 🔲 |
+| Few-shot prompt examples | High | Medium | ✅ (Session 6) |
+| JSON retry loop | High | Low | ✅ (Session 6) |
+| `seed_papers` YAML field | High | Low | ✅ (Session 6) |
+| `athanor report` markdown export | Medium | Low | ✅ (Session 6) |
 | Hypothesis aging / tracking | Medium | Medium | 🔲 |
 
 ---
 
-*Last updated: 2025-07-11 (Session 5)*
+*Last updated: 2026-02-23 (Session 6)*

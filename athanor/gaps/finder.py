@@ -22,6 +22,7 @@ import anthropic
 
 from athanor.config import cfg
 from athanor.gaps.models import CandidateGap, GapAnalysis, GapReport
+from athanor.llm_utils import call_llm_json
 
 log = logging.getLogger(__name__)
 
@@ -160,35 +161,19 @@ class GapFinder:
             graph_distance=gap.graph_distance if gap.graph_distance < 999 else "∞",
             structural_hole_score=gap.structural_hole_score,
         )
-
         try:
-            response = self._client.messages.create(
-                model=self._model,
-                max_tokens=self._max_tokens,
-                system=_SYSTEM,
-                messages=[{"role": "user", "content": prompt}],
+            data, _ = call_llm_json(
+                self._client, self._model, self._max_tokens, _SYSTEM, prompt
             )
-            raw = response.content[0].text
         except anthropic.APIError as exc:
-            log.error("Anthropic API error for gap %s↔%s: %s", gap.concept_a, gap.concept_b, exc)
+            log.error("Anthropic API error for gap %s\u2194%s: %s", gap.concept_a, gap.concept_b, exc)
             return None
-
-        return self._parse(raw, gap)
-
-    def _parse(self, raw: str, gap: CandidateGap) -> Optional[GapAnalysis]:
-        text = raw.strip()
-        if text.startswith("```"):
-            text = text.split("```", 2)[1]
-            if text.startswith("json"):
-                text = text[4:]
-            text = text.rsplit("```", 1)[0]
-
-        try:
-            data = json.loads(text)
-        except json.JSONDecodeError as exc:
-            log.error("JSON parse error for gap %s↔%s: %s", gap.concept_a, gap.concept_b, exc)
+        if data is None:
+            log.error("Gap analysis failed for %s\u2194%s after retries.", gap.concept_a, gap.concept_b)
             return None
+        return self._parse(data, gap)
 
+    def _parse(self, data: dict, gap: CandidateGap) -> Optional[GapAnalysis]:
         try:
             return GapAnalysis(
                 concept_a=gap.concept_a,
@@ -208,5 +193,5 @@ class GapFinder:
                 structural_hole_score=gap.structural_hole_score,
             )
         except Exception as exc:  # noqa: BLE001
-            log.error("Model validation error for gap %s↔%s: %s", gap.concept_a, gap.concept_b, exc)
+            log.error("Model validation error for gap %s\u2194%s: %s", gap.concept_a, gap.concept_b, exc)
             return None

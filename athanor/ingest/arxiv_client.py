@@ -131,3 +131,27 @@ class ArxivClient:
     def _load_cache(self, path: Path) -> List[Paper]:
         data = json.loads(path.read_text(encoding="utf-8"))
         return [Paper.from_dict(d) for d in data]
+
+    def fetch_by_ids(self, arxiv_ids: List[str]) -> List[Paper]:
+        """Fetch specific papers by their arXiv IDs (no cache — deterministic).
+
+        IDs can be bare (``2309.12345``) or include the version (``2309.12345v2``).
+        """
+        if not arxiv_ids:
+            return []
+        log.info("Fetching %d papers by arXiv ID", len(arxiv_ids))
+        client = arxiv.Client()
+        search = arxiv.Search(id_list=arxiv_ids)
+        papers: List[Paper] = []
+        for result in client.results(search):
+            papers.append(Paper(
+                arxiv_id=result.entry_id.split("/")[-1],
+                title=result.title,
+                abstract=result.summary,
+                authors=[str(a) for a in result.authors],
+                categories=result.categories,
+                published=result.published.date().isoformat(),
+                url=result.entry_id,
+            ))
+        log.info("Fetched %d papers by ID", len(papers))
+        return papers
