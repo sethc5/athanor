@@ -110,7 +110,6 @@ class ArxivClient:
                 url=result.entry_id,
             )
             papers.append(paper)
-            time.sleep(0.1)  # be polite to the API
 
         log.info("Fetched %d papers", len(papers))
         self._save_cache(cache_path, papers)
