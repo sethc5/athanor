@@ -256,7 +256,6 @@ def run(
                 description_b=cb.description if cb else "",
                 papers_a=list(ca.source_papers[:4]) if ca else [],
                 papers_b=list(cb.source_papers[:4]) if cb else [],
-                structural_hole_score=g.get("structural_hole_score", 0.0),
             ))
 
         console.print(f"Deduplicating {len(enriched)} candidates…")
@@ -293,7 +292,7 @@ def run(
         console.print(f"[green]✓ Stage 3 complete[/] — {len(hyp_report.hypotheses)} hypotheses, saved → {hyp_path}")
 
         # Quick summary
-        top = hyp_report.top
+        top = hyp_report.top(3)
         if top:
             best = top[0]
             console.print(f"\n[bold green]Top hypothesis:[/] {best.statement}")
@@ -302,3 +301,6 @@ def run(
                 console.print(f"[dim]{comp} | Effort: {best.experiment.estimated_effort}[/]")
 
     console.print("\n[bold green]Pipeline complete.[/]")
+
+if __name__ == '__main__':
+    cli()
