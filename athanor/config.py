@@ -36,11 +36,6 @@ class Config:
     project_root: Path = _root
     data_raw: Path = _root / "data" / "raw"
     data_processed: Path = _root / "data" / "processed"
-    outputs_graphs: Path = _root / "outputs" / "graphs"
-
-    def __post_init__(self) -> None:
-        for p in (self.data_raw, self.data_processed, self.outputs_graphs):
-            p.mkdir(parents=True, exist_ok=True)
 
     def validate(self) -> None:
         if not self.anthropic_api_key:
@@ -51,6 +46,6 @@ class Config:
 
 
 cfg = Config()
-# Create output directories eagerly
-for _p in (cfg.data_raw, cfg.data_processed, cfg.outputs_graphs):
+# Create cache directories eagerly
+for _p in (cfg.data_raw, cfg.data_processed):
     _p.mkdir(parents=True, exist_ok=True)

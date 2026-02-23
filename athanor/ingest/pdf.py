@@ -106,16 +106,12 @@ def enrich_papers_with_fulltext(
     succeeded = 0
 
     for paper in targets:
-        # If full_text already looks like extracted text (not a URL), skip
-        if paper.full_text and not paper.full_text.startswith("http"):
+        # Skip papers that already have extracted full text
+        if paper.full_text:
             continue
 
-        # Determine URL: use existing (S2 PDF URL) or build arXiv URL
-        url = (
-            paper.full_text
-            if (paper.full_text and paper.full_text.startswith("http"))
-            else arxiv_pdf_url(paper.arxiv_id)
-        )
+        # Determine URL: prefer explicit pdf_url (from S2), fall back to arXiv
+        url = paper.pdf_url or arxiv_pdf_url(paper.arxiv_id)
 
         log.info("Fetching PDF for %s from %s", paper.arxiv_id, url[:60])
         pdf_bytes = fetch_pdf_bytes(url, session)

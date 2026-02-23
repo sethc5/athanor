@@ -36,7 +36,8 @@ class Paper:
     categories: List[str]
     published: str          # ISO-8601 date string
     url: str
-    full_text: Optional[str] = None  # populated by parser if available
+    full_text: Optional[str] = None  # populated by pdf.py if available
+    pdf_url: Optional[str] = None      # open-access PDF URL (set by S2 or arXiv)
 
     @property
     def digest(self) -> str:
@@ -48,7 +49,14 @@ class Paper:
 
     @classmethod
     def from_dict(cls, d: dict) -> "Paper":
-        return cls(**d)
+        # Backward compat: old caches may have a URL in full_text
+        ft = d.get("full_text")
+        if ft and ft.startswith("http"):
+            d = {**d, "full_text": None, "pdf_url": ft}
+        # Ignore unknown keys from future schema changes
+        import dataclasses as _dc
+        valid = {f.name for f in _dc.fields(cls)}
+        return cls(**{k: v for k, v in d.items() if k in valid})
 
 
 class ArxivClient:

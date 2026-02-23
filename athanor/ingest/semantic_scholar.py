@@ -142,9 +142,8 @@ class SemanticScholarClient:
         authors = [a.get("name", "") for a in (item.get("authors") or [])]
         cats = item.get("fieldsOfStudy") or []
 
-        # Store open-access PDF URL in full_text slot temporarily
         oa = item.get("openAccessPdf") or {}
-        pdf_url = oa.get("url", "")
+        pdf_url = oa.get("url", "") or None
 
         return Paper(
             arxiv_id=arxiv_id,
@@ -154,7 +153,7 @@ class SemanticScholarClient:
             categories=cats,
             published=pub_date[:10] if len(pub_date) >= 10 else pub_date,
             url=f"https://www.semanticscholar.org/paper/{item.get('paperId','')}",
-            full_text=pdf_url or None,  # repurpose field for PDF URL
+            pdf_url=pdf_url,
         )
 
     def _cache_path(self, prefix: str, query: str) -> Path:

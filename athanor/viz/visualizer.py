@@ -12,17 +12,22 @@ import logging
 from pathlib import Path
 from typing import Optional
 
-from athanor.config import cfg
 from athanor.graph.models import ConceptGraph
 
 log = logging.getLogger(__name__)
+
+
+def _default_output_dir() -> Path:
+    """Workspace-aware default output directory for visualizations."""
+    from athanor.pipeline import workspace_root
+    return workspace_root() / "outputs" / "graphs"
 
 
 class GraphVisualizer:
     """Render a ConceptGraph as interactive HTML or a plotly figure."""
 
     def __init__(self, output_dir: Optional[Path] = None) -> None:
-        self._out = output_dir or cfg.outputs_graphs
+        self._out = output_dir or _default_output_dir()
 
     # ── pyvis (interactive HTML) ─────────────────────────────────────────────
 
