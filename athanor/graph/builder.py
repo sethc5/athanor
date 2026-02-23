@@ -29,7 +29,8 @@ class GraphBuilder:
     """Orchestrates extraction across a corpus and merges results."""
 
     def __init__(self, extractor: Optional[ConceptExtractor] = None) -> None:
-        self._extractor = extractor or ConceptExtractor()
+        self._extractor = extractor  # lazily resolved on first build() call
+        self._extractor_override = extractor is not None
 
     # ── public ───────────────────────────────────────────────────────────────
 
@@ -51,6 +52,11 @@ class GraphBuilder:
         Returns:
             A fully merged and annotated ConceptGraph.
         """
+        # Lazily initialize the extractor so GraphBuilder() can be constructed
+        # without an API key (useful for offline/unit tests of graph utilities).
+        if self._extractor is None:
+            self._extractor = ConceptExtractor()
+
         all_concepts: List[Concept] = []
         all_edges: List[Edge] = []
 
@@ -87,6 +93,31 @@ class GraphBuilder:
         return graph
 
     # ── private ──────────────────────────────────────────────────────────────
+
+    def build_from_raw(
+        self,
+        raw: dict,
+        domain: str = "general",
+        query: str = "",
+    ) -> ConceptGraph:
+        """Build and annotate a ConceptGraph from a raw dict (no API needed).
+
+        Args:
+            raw: dict with ``concepts`` (list of dicts with at least ``label``
+                 and ``description``) and ``edges`` (list of dicts with
+                 ``source``, ``target``, and optional ``weight``).
+
+        Returns:
+            A ConceptGraph with centrality and structural-hole fields populated.
+        """
+        concepts = [Concept(**c) for c in raw.get("concepts", [])]
+        edges = [Edge(relation=e.get("relation", "related"), **{k: v for k, v in e.items() if k != "relation"}) for e in raw.get("edges", [])]
+        graph = ConceptGraph(
+            domain=domain, query=query, concepts=concepts, edges=edges
+        )
+        self._compute_centrality(graph)
+        self._compute_structural_holes(graph)
+        return graph
 
     def _merge(
         self,
@@ -196,7 +227,9 @@ class GraphBuilder:
             constraint = nx.constraint(G, weight="weight")
             for label, c_score in constraint.items():
                 if label in label_map:
-                    label_map[label].burt_constraint = round(float(c_score), 4)
+                    val = float(c_score)
+                    # NaN means isolated node — treat as fully embedded (no hole)
+                    label_map[label].burt_constraint = round(val if val == val else 1.0, 4)
         except Exception:
             log.debug("Burt constraint computation failed — skipping")
 
