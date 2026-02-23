@@ -1,0 +1,34 @@
+{
+  "domain": "Information Theory ↔ Longevity Biology",
+  "query": "Cross-domain bridge between:\nDOMAIN A (information_theory): Mathematical theory of information transmission, compression, storage, and inference. Spans classical Shannon theory, algorithmic information theory, quantum information, and modern connections to machine learning, statistical physics, neuroscience, and biology.\n\nDOMAIN B (longevity_biology): The biology of aging, lifespan extension, and healthspan improvement. Primary long-term target domain for athanor. Covers all twelve hallmarks of aging (Lopez-Otin 2013 + 2023 update), interventions, and systems biology.\n\nFocus on mechanisms that could translate concepts or methods between these fields.",
+  "n_candidates": 1,
+  "n_analyzed": 1,
+  "analyses": [
+    {
+      "concept_a": "Polar Decomposition",
+      "concept_b": "decomposition framework",
+      "research_question": "Can polar decomposition of mutual information, applied to age-stratified biological datasets, reveal distinct phase-amplitude signatures of aging processes and enable prediction of lifespan heterogeneity?",
+      "why_unexplored": "Polar decomposition of mutual information originates in signal processing and information geometry with no footprint in longevity biology. Simultaneously, longevity researchers employ decomposition frameworks (e.g., variance partitioning, latent factor models) but remain unaware that polar MI decomposition could partition information flow into amplitude (magnitude of association) and phase (timing/synchrony) components—each potentially encoding distinct aging signatures. The disciplinary isolation between information theorists and gerontologists has prevented recognition that aging phenotypes may exhibit characteristic polar MI structure.",
+      "intersection_opportunity": "Applying polar MI decomposition to multi-omic longitudinal aging datasets (transcriptomics, proteomics, metabolomics) could isolate phase-coherent aging signatures (synchronized rate-of-change across biomarkers) from amplitude-dominant signatures (magnitude shifts in mean values). This would enable: (1) identification of clock-like vs. stochastic aging processes; (2) stratification of aging trajectories by information-geometric structure; (3) prediction of lifespan variance from the phase-amplitude ratio of biological information.",
+      "methodology": "Obtain published longitudinal aging datasets (e.g., CALERIE, Baltimore Longitudinal Study of Aging, model organism time-series data). Compute joint distributions of biomarker pairs across age cohorts. For each pair, apply polar MI decomposition: I = I_amp + I_phase + I_mix, extracting amplitude (correlation magnitude), phase (temporal alignment), and mixed terms. Regress these components against lifespan/healthspan outcomes using mixed-effects models stratified by sex and genotype. Validate directionality via Granger causality on the phase component (whether past phase lags predict future amplitude shifts). Cross-validate on independent cohorts and test whether polar MI ratio predicts mortality hazard independent of conventional biomarkers.",
+      "computational": true,
+      "novelty": 5,
+      "tractability": 4,
+      "impact": 4,
+      "bridge_type": "causal",
+      "keywords": [
+        "polar decomposition mutual information",
+        "aging biomarker synchronization",
+        "information geometry longevity",
+        "phase-amplitude decomposition biological aging",
+        "information-theoretic gerontology",
+        "longitudinal multi-omic aging signatures"
+      ],
+      "similarity": 0.4722897410392761,
+      "graph_distance": 999,
+      "structural_hole_score": 0.5,
+      "approved": null,
+      "composite_score": 4.85
+    }
+  ]
+}

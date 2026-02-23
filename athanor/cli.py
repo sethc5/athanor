@@ -37,11 +37,23 @@ console = Console()
 log = logging.getLogger("athanor.cli")
 
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# ── workspace helpers ─────────────────────────────────────────────────────────
+
+def _ws_root() -> Path:
+    """Return the active workspace root (workspaces/<name>/ or repo root)."""
+    ws = os.environ.get("ATHANOR_WORKSPACE", "").strip()
+    if ws:
+        p = _root / "workspaces" / ws
+        if not p.exists():
+            console.print(f"[red]Workspace '{ws}' not found at {p}[/]")
+            raise SystemExit(1)
+        return p
+    return _root
+
 
 def _out(domain: str) -> dict:
-    """Return output path dict for a domain (all paths are domain-scoped)."""
-    root = _root / "outputs"
+    """Return output path dict for a domain, scoped to the active workspace."""
+    root = _ws_root() / "outputs"
     return {
         "graphs": root / "graphs" / domain,
         "gaps":   root / "gaps" / domain,
@@ -53,8 +65,16 @@ def _out(domain: str) -> dict:
 
 @click.group()
 @click.option("--verbose", "-v", is_flag=True, help="Enable debug logging")
-def cli(verbose: bool) -> None:
+@click.option(
+    "--workspace", "-w",
+    default=lambda: os.environ.get("ATHANOR_WORKSPACE", ""),
+    metavar="NAME",
+    help="Active workspace under workspaces/ (or set ATHANOR_WORKSPACE env var).",
+)
+def cli(verbose: bool, workspace: str) -> None:
     """Athanor — domain-agnostic automated science infrastructure."""
+    if workspace:
+        os.environ["ATHANOR_WORKSPACE"] = workspace
     level = logging.DEBUG if verbose else logging.INFO
     logging.basicConfig(level=level, format="%(levelname)s %(name)s — %(message)s")
 
@@ -566,7 +586,7 @@ def search(query: str, domain: str, min_score: float, approved_only: bool, risk:
     """Search hypotheses across all domains by keyword, score, or filter."""
     from athanor.hypotheses.models import HypothesisReport
 
-    hyp_root = _root / "outputs" / "hypotheses"
+    hyp_root = _ws_root() / "outputs" / "hypotheses"
     if not hyp_root.exists():
         console.print("[red]No hypothesis outputs found. Run Stage 3 for at least one domain.[/]")
         return
@@ -795,7 +815,7 @@ def _run_cross_domain(domain_a: str, domain_b: str, top: int, threshold: float) 
     )
     gap_report = finder.analyse(candidates[:top], query=combined_context)
 
-    out_path = _root / "outputs" / "gaps" / cross_name
+    out_path = _ws_root() / "outputs" / "gaps" / cross_name
     out_path.mkdir(parents=True, exist_ok=True)
     report_path = out_path / "gap_report.json"
     report_path.write_text(gap_report.model_dump_json(indent=2))
