@@ -107,7 +107,8 @@ scoring rubric would improve with formal DOE knowledge baked into the prompt.
 - Add `statistical_power_notes` field
 - Prompt asks Claude to specify a concrete statistical test + alpha threshold
 
-**Status:** 🔲 Planned
+**Status:** ✅ Implemented (Session 9) — `ExperimentDesign.minimum_detectable_effect` + `statistical_power_notes` added;
+  generator prompt updated with DOE schema; rendered in `athanor report`.
 
 ---
 
@@ -143,7 +144,8 @@ which hypotheses are worth pursuing and what error bars matter.
 - Prompt Claude to flag single-study dependencies
 - Penalize hypotheses that require hard-to-replicate wet-lab conditions
 
-**Status:** 🔲 Planned
+**Status:** ✅ Implemented (Session 7) — `Hypothesis.replication_risk: str = "medium"` (low/medium/high) with rubric
+  baked into generator prompt. Displayed with colour icons in `athanor search` and `athanor report`.
 
 ---
 
@@ -260,8 +262,8 @@ Fixed `_out()` in `cli.py` to scope graphs per-domain: `outputs/graphs/<domain>/
 | Hypothesis approval loop | High | Low | ✅ (Session 5) |
 | Domain-scoped graph paths | High | Low | ✅ (Session 5) |
 | Richer edge types | Medium | Medium | 🔲 |
-| DOE fields in experiments | Medium | Low | 🔲 |
-| Replication risk scoring | Medium | Low | 🔲 |
+| DOE fields in experiments | Medium | Low | ✅ (Session 9) |
+| Replication risk scoring | Medium | Low | ✅ (Session 7) |
 | Few-shot prompt examples | High | Medium | ✅ (Session 6) |
 | JSON retry loop | High | Low | ✅ (Session 6) |
 | `seed_papers` YAML field | High | Low | ✅ (Session 6) |
@@ -270,4 +272,4 @@ Fixed `_out()` in `cli.py` to scope graphs per-domain: `outputs/graphs/<domain>/
 
 ---
 
-*Last updated: 2026-02-23 (Session 6)*
+*Last updated: 2026-02-23 (Session 9)*

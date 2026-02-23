@@ -429,6 +429,10 @@ def report(domain: str, top: int, approved_only: bool, out: str) -> None:
                 lines += [f"**Tools:** {', '.join(e.tools)}", ""]
             if e.statistical_test:
                 lines += [f"**Statistical test:** {e.statistical_test}", ""]
+            if e.minimum_detectable_effect:
+                lines += [f"**Min. detectable effect:** {e.minimum_detectable_effect}", ""]
+            if e.statistical_power_notes:
+                lines += [f"**Power / sample size:** {e.statistical_power_notes}", ""]
             if e.estimated_effort:
                 lines += [f"**Effort:** {e.estimated_effort}", ""]
             if e.requires_followup:

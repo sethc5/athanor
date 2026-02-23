@@ -30,6 +30,10 @@ class ExperimentDesign(BaseModel):
     null_hypothesis: str    # the formal H₀
     statistical_test: str = ""   # e.g. "two-sided t-test, alpha=0.05, power=0.80"
 
+    # DOE quantification (ROADMAP item 6)
+    minimum_detectable_effect: str = ""  # e.g. "Cohen's d > 0.2 (~200/arm)"
+    statistical_power_notes: str = ""    # sample size reasoning + power level
+
     # Flag any validation gaps
     limitations: List[str] = Field(default_factory=list)
     requires_followup: Optional[str] = None  # what computational result needs wet lab to confirm

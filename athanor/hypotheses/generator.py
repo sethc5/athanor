@@ -67,6 +67,8 @@ Output ONLY valid JSON matching this exact schema — no prose, no markdown:
     "expected_negative":    "<What result refutes it — match falsification_criteria above>",
     "null_hypothesis":      "<Formal H\u2080: the null claim that the experiment is designed to reject>",
     "statistical_test":     "<The specific statistical test + alpha threshold, e.g. 'two-sided t-test, alpha=0.05, power=0.80'>",
+    "minimum_detectable_effect": "<Smallest effect size that would be scientifically meaningful, e.g. \"Cohen's d > 0.2 (~200/arm at 80% power)\" or \"≥2-fold enrichment\">",
+    "statistical_power_notes": "<Sample size justification: state assumed effect size, alpha, desired power (80% or 90%), and resulting N per group. For computational experiments, state convergence criterion instead.>",
     "limitations":          ["<Limitation 1>", "..."],
     "requires_followup":    "<If computational: what wet-lab step would be needed to fully confirm; null if not applicable>"
   }
@@ -227,6 +229,8 @@ class HypothesisGenerator:
                 expected_negative=exp_data.get("expected_negative", ""),
                 null_hypothesis=exp_data.get("null_hypothesis", ""),
                 statistical_test=exp_data.get("statistical_test", ""),
+                minimum_detectable_effect=exp_data.get("minimum_detectable_effect", ""),
+                statistical_power_notes=exp_data.get("statistical_power_notes", ""),
                 limitations=exp_data.get("limitations", []),
                 requires_followup=exp_data.get("requires_followup"),
             )
