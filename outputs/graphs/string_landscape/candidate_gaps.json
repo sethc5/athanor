@@ -1,0 +1,2473 @@
+[
+  {
+    "concept_a": "Type II string theory",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.903620719909668,
+    "graph_distance": 5,
+    "structural_hole_score": 0.6522
+  },
+  {
+    "concept_a": "Type II string theory",
+    "concept_b": "Type IIB string theory",
+    "similarity": 0.8807616233825684,
+    "graph_distance": 4,
+    "structural_hole_score": 0.712
+  },
+  {
+    "concept_a": "Reflexive polytope",
+    "concept_b": "reflexive polyhedra",
+    "similarity": 0.8063837289810181,
+    "graph_distance": 4,
+    "structural_hole_score": 0.601
+  },
+  {
+    "concept_a": "Calabi-Yau manifold",
+    "concept_b": "Calabi-Yau variety",
+    "similarity": 0.7732148170471191,
+    "graph_distance": 4,
+    "structural_hole_score": 0.7056
+  },
+  {
+    "concept_a": "string compactification",
+    "concept_b": "Four-dimensional compactification",
+    "similarity": 0.7578583359718323,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4471
+  },
+  {
+    "concept_a": "three generations",
+    "concept_b": "generations of fermions",
+    "similarity": 0.7564051151275635,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "string compactification",
+    "concept_b": "Six-dimensional compactification",
+    "similarity": 0.7425976991653442,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4471
+  },
+  {
+    "concept_a": "Polytope",
+    "concept_b": "lattice polytope",
+    "similarity": 0.7308862209320068,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "Complex structure moduli",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.7170330286026001,
+    "graph_distance": 5,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Strong coupling transition",
+    "concept_b": "perturbative string theory",
+    "similarity": 0.7130106687545776,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3353
+  },
+  {
+    "concept_a": "Standard Model",
+    "concept_b": "Standard Model spectrum",
+    "similarity": 0.70688796043396,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4157
+  },
+  {
+    "concept_a": "Reflexive polytope",
+    "concept_b": "polar dual",
+    "similarity": 0.7030588388442993,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2198
+  },
+  {
+    "concept_a": "Grand Unified Theory",
+    "concept_b": "Gauge coupling unification",
+    "similarity": 0.6841235160827637,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3334
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "non-K\u00e4hler geometry",
+    "similarity": 0.678025484085083,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Toric base",
+    "concept_b": "toric variety",
+    "similarity": 0.6693693995475769,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "Mirror Calabi-Yau",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.6609247922897339,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "string duality",
+    "concept_b": "T-duality",
+    "similarity": 0.659537672996521,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6018
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "non-K\u00e4hler geometry",
+    "similarity": 0.6543986797332764,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Mirror Calabi-Yau",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.6535577774047852,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4999
+  },
+  {
+    "concept_a": "Calabi-Yau compactification",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.6512429714202881,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7872
+  },
+  {
+    "concept_a": "non-K\u00e4hler geometry",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.6509299278259277,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "ten dimensional spacetime",
+    "concept_b": "Type IIB string theory",
+    "similarity": 0.6497855186462402,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3374
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.643568754196167,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "Chern class",
+    "concept_b": "characteristic classes",
+    "similarity": 0.6414844393730164,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "Calabi-Yau manifold",
+    "similarity": 0.6356499195098877,
+    "graph_distance": 3,
+    "structural_hole_score": 0.8071
+  },
+  {
+    "concept_a": "de Sitter uplift",
+    "concept_b": "de Sitter space",
+    "similarity": 0.6336899995803833,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4108
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "four-dimensional supergravity",
+    "similarity": 0.6308026909828186,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3997
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.6271494030952454,
+    "graph_distance": 4,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "F-theory/Heterotic duality",
+    "concept_b": "F-theory model",
+    "similarity": 0.6238480806350708,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "non-K\u00e4hler geometry",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.6215099096298218,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Reflexive polytope",
+    "concept_b": "lattice polytope",
+    "similarity": 0.6198691129684448,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2198
+  },
+  {
+    "concept_a": "stability",
+    "concept_b": "stable vector bundle",
+    "similarity": 0.618965744972229,
+    "graph_distance": 5,
+    "structural_hole_score": 0.583
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "non-K\u00e4hler geometry",
+    "similarity": 0.6188998222351074,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3512
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.6168069839477539,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "non-K\u00e4hler geometry",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.6141104102134705,
+    "graph_distance": 3,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "K\u00e4hler deformation",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.6087801456451416,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4998
+  },
+  {
+    "concept_a": "realistic compactification conditions",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.6046774387359619,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Reflexive polytope",
+    "concept_b": "Polytope",
+    "similarity": 0.5973414182662964,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4691
+  },
+  {
+    "concept_a": "Mirror Calabi-Yau",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.5898100137710571,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5831
+  },
+  {
+    "concept_a": "Heterotic coupling constant",
+    "concept_b": "perturbative string theory",
+    "similarity": 0.5895546674728394,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "heterotic string",
+    "concept_b": "E8\u00d7E8 theory",
+    "similarity": 0.5846397876739502,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5611
+  },
+  {
+    "concept_a": "Polytope",
+    "concept_b": "polar dual",
+    "similarity": 0.5842907428741455,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "Calabi-Yau manifold",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.5842790007591248,
+    "graph_distance": 4,
+    "structural_hole_score": 0.7891
+  },
+  {
+    "concept_a": "ten dimensional spacetime",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.5831156373023987,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2777
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.5817617177963257,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4997
+  },
+  {
+    "concept_a": "AdS minimum",
+    "concept_b": "de Sitter space",
+    "similarity": 0.5794457197189331,
+    "graph_distance": 5,
+    "structural_hole_score": 0.7255
+  },
+  {
+    "concept_a": "F-theory vacuum",
+    "concept_b": "F-theory compactification",
+    "similarity": 0.5664648413658142,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4124
+  },
+  {
+    "concept_a": "Four-dimensional compactification",
+    "concept_b": "four-dimensional supergravity",
+    "similarity": 0.5572551488876343,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "SCFT",
+    "concept_b": "Minimal model",
+    "similarity": 0.5542405843734741,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3748
+  },
+  {
+    "concept_a": "type II compactifications",
+    "concept_b": "Type IIB string theory",
+    "similarity": 0.553749680519104,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3374
+  },
+  {
+    "concept_a": "non-K\u00e4hler geometry",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.5525766611099243,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Calabi-Yau compactification",
+    "concept_b": "Calabi-Yau variety",
+    "similarity": 0.5524472594261169,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7038
+  },
+  {
+    "concept_a": "Batyrev-Borisov approach",
+    "concept_b": "reflexive polyhedra",
+    "similarity": 0.5507223010063171,
+    "graph_distance": 4,
+    "structural_hole_score": 0.564
+  },
+  {
+    "concept_a": "Four-dimensional compactification",
+    "concept_b": "heterotic string compactification",
+    "similarity": 0.5502364635467529,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4311
+  },
+  {
+    "concept_a": "heterotic string",
+    "concept_b": "SO(32) theory",
+    "similarity": 0.5439631938934326,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4167
+  },
+  {
+    "concept_a": "five brane",
+    "concept_b": "D-brane",
+    "similarity": 0.5437213182449341,
+    "graph_distance": 4,
+    "structural_hole_score": 0.58
+  },
+  {
+    "concept_a": "critical string",
+    "concept_b": "Type IIB string theory",
+    "similarity": 0.5432348251342773,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3374
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.5425494313240051,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "rigid Calabi-Yau",
+    "similarity": 0.5396722555160522,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3512
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.5387376546859741,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4998
+  },
+  {
+    "concept_a": "AdS minimum",
+    "concept_b": "AdS/CFT correspondence",
+    "similarity": 0.5385774970054626,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6017
+  },
+  {
+    "concept_a": "Batyrev-Borisov approach",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.5370802879333496,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4326
+  },
+  {
+    "concept_a": "deterministic function",
+    "concept_b": "random field",
+    "similarity": 0.5366157293319702,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Type II string theory",
+    "concept_b": "type II compactifications",
+    "similarity": 0.5364115238189697,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3746
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "Calabi-Yau variety",
+    "similarity": 0.5342860221862793,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "SL(2,Z) symmetry",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.5334621667861938,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5276
+  },
+  {
+    "concept_a": "probability distribution",
+    "concept_b": "characteristic functional",
+    "similarity": 0.5297298431396484,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "Berglund-Hubsch type",
+    "similarity": 0.5284450650215149,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "random field",
+    "concept_b": "characteristic functional",
+    "similarity": 0.526041567325592,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "deterministic function",
+    "concept_b": "probability distribution",
+    "similarity": 0.5243140459060669,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "F theory",
+    "concept_b": "F-theory/Heterotic duality",
+    "similarity": 0.5227090120315552,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6813
+  },
+  {
+    "concept_a": "gauge group",
+    "concept_b": "gauge symmetry breaking",
+    "similarity": 0.5221619606018066,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3749
+  },
+  {
+    "concept_a": "bosonic spectrum",
+    "concept_b": "bosonic string",
+    "similarity": 0.5207435488700867,
+    "graph_distance": 4,
+    "structural_hole_score": 0.1956
+  },
+  {
+    "concept_a": "stability",
+    "concept_b": "polystable vector bundle",
+    "similarity": 0.5202025771141052,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "chiral exotics",
+    "concept_b": "Standard Model spectrum",
+    "similarity": 0.5200316905975342,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "heterotic string theory",
+    "concept_b": "heterotic little string theory",
+    "similarity": 0.515981912612915,
+    "graph_distance": 4,
+    "structural_hole_score": 0.8055
+  },
+  {
+    "concept_a": "Hodge numbers",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.5144436359405518,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2177
+  },
+  {
+    "concept_a": "type II compactifications",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.514250636100769,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2777
+  },
+  {
+    "concept_a": "Four-dimensional compactification",
+    "concept_b": "T-duality",
+    "similarity": 0.513837456703186,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "K\u00e4hler deformation",
+    "concept_b": "non-K\u00e4hler geometry",
+    "similarity": 0.5135781168937683,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Kulikov degeneration",
+    "concept_b": "K3-fibration",
+    "similarity": 0.5119013786315918,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "holomorphic G bundle",
+    "concept_b": "U(n) vector bundles",
+    "similarity": 0.5116344094276428,
+    "graph_distance": 4,
+    "structural_hole_score": 0.7434
+  },
+  {
+    "concept_a": "string compactification",
+    "concept_b": "warped compactification",
+    "similarity": 0.5115712881088257,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6952
+  },
+  {
+    "concept_a": "K\u00e4hler deformation",
+    "concept_b": "K\u00e4hler structure",
+    "similarity": 0.5107883214950562,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3919
+  },
+  {
+    "concept_a": "Calabi-Yau manifold",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.5075173377990723,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7057
+  },
+  {
+    "concept_a": "Four-dimensional compactification",
+    "concept_b": "supersymmetric string theory",
+    "similarity": 0.5065462589263916,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3997
+  },
+  {
+    "concept_a": "Standard Model",
+    "concept_b": "Grand Unified Theory",
+    "similarity": 0.506302535533905,
+    "graph_distance": 3,
+    "structural_hole_score": 0.749
+  },
+  {
+    "concept_a": "holomorphic G bundle",
+    "concept_b": "stable vector bundle",
+    "similarity": 0.5049139261245728,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6353
+  },
+  {
+    "concept_a": "Type IIB string theory",
+    "concept_b": "SL(2,Z) symmetry",
+    "similarity": 0.5035738945007324,
+    "graph_distance": 4,
+    "structural_hole_score": 0.5874
+  },
+  {
+    "concept_a": "Planck scale",
+    "concept_b": "quantum gravity",
+    "similarity": 0.5021927356719971,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2389
+  },
+  {
+    "concept_a": "Complex structure moduli",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.5013307929039001,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "supersymmetry preservation",
+    "concept_b": "supersymmetric model",
+    "similarity": 0.5005699396133423,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.5003656148910522,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6012
+  },
+  {
+    "concept_a": "string vacuum",
+    "concept_b": "stringy cosmic strings",
+    "similarity": 0.49913328886032104,
+    "graph_distance": 5,
+    "structural_hole_score": 0.7329
+  },
+  {
+    "concept_a": "massless spectrum",
+    "concept_b": "string spectrum",
+    "similarity": 0.49895113706588745,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5804
+  },
+  {
+    "concept_a": "five-branes",
+    "concept_b": "stringy cosmic strings",
+    "similarity": 0.4989042282104492,
+    "graph_distance": 7,
+    "structural_hole_score": 0.583
+  },
+  {
+    "concept_a": "SO(32) theory",
+    "concept_b": "Type IIB string theory",
+    "similarity": 0.4966495633125305,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3374
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "heterotic string compactification",
+    "similarity": 0.49474969506263733,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4311
+  },
+  {
+    "concept_a": "critical string",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.4927219748497009,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2777
+  },
+  {
+    "concept_a": "spacetime theory",
+    "concept_b": "perturbative consistency",
+    "similarity": 0.4924718141555786,
+    "graph_distance": 6,
+    "structural_hole_score": 0.1606
+  },
+  {
+    "concept_a": "Standard Model",
+    "concept_b": "Gauge coupling unification",
+    "similarity": 0.4896523952484131,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4157
+  },
+  {
+    "concept_a": "SO(32) theory",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.48908162117004395,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2777
+  },
+  {
+    "concept_a": "perturbative consistency",
+    "concept_b": "Global consistency conditions",
+    "similarity": 0.4889601469039917,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3748
+  },
+  {
+    "concept_a": "3-brane probe",
+    "concept_b": "D-brane",
+    "similarity": 0.4888176918029785,
+    "graph_distance": 7,
+    "structural_hole_score": 0.248
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.4872978627681732,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6011
+  },
+  {
+    "concept_a": "Polytope",
+    "concept_b": "reflexive polyhedra",
+    "similarity": 0.48533475399017334,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6306
+  },
+  {
+    "concept_a": "heterotic string",
+    "concept_b": "heterotic little string theory",
+    "similarity": 0.48459306359291077,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7664
+  },
+  {
+    "concept_a": "stability",
+    "concept_b": "moduli stabilization",
+    "similarity": 0.48432332277297974,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6671
+  },
+  {
+    "concept_a": "heterotic string",
+    "concept_b": "direct flux breaking",
+    "similarity": 0.4839150309562683,
+    "graph_distance": 3,
+    "structural_hole_score": 0.8331
+  },
+  {
+    "concept_a": "non-K\u00e4hler geometry",
+    "concept_b": "non-geometric phase",
+    "similarity": 0.482957661151886,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "F-theory/Heterotic duality",
+    "concept_b": "Fiber/base exchange",
+    "similarity": 0.4829403758049011,
+    "graph_distance": 3,
+    "structural_hole_score": 0.499
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "critical string",
+    "similarity": 0.4827345013618469,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3997
+  },
+  {
+    "concept_a": "K\u00e4hler structure",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.48107999563217163,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3921
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.4808778762817383,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "string compactification",
+    "concept_b": "stringy cosmic strings",
+    "similarity": 0.4807170033454895,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7802
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "Type IIB string theory",
+    "similarity": 0.4804501533508301,
+    "graph_distance": 3,
+    "structural_hole_score": 0.737
+  },
+  {
+    "concept_a": "Complex structure moduli",
+    "concept_b": "non-geometric phase",
+    "similarity": 0.4791872203350067,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "NS flux",
+    "concept_b": "four-dimensional supergravity",
+    "similarity": 0.4788395166397095,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2639
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "Chern class",
+    "similarity": 0.47801345586776733,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Four-dimensional compactification",
+    "concept_b": "Kaluza-Klein theory",
+    "similarity": 0.4774640202522278,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Berglund-Hubsch type",
+    "concept_b": "Calabi-Yau variety",
+    "similarity": 0.47725170850753784,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "complete intersection Calabi-Yau",
+    "concept_b": "Berglund-Hubsch type",
+    "similarity": 0.4766106605529785,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "Calabi-Yau fourfold",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.4761216640472412,
+    "graph_distance": 4,
+    "structural_hole_score": 0.5833
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "T-duality",
+    "similarity": 0.4749191701412201,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "compactification manifold",
+    "similarity": 0.47487860918045044,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "complete intersection Calabi-Yau",
+    "concept_b": "hypersurface",
+    "similarity": 0.4741835594177246,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "Complex structure moduli",
+    "concept_b": "singular transition",
+    "similarity": 0.47356122732162476,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Hodge numbers",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.4714089632034302,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4677
+  },
+  {
+    "concept_a": "background fluxes",
+    "concept_b": "three-form flux",
+    "similarity": 0.47115617990493774,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "F theory",
+    "concept_b": "F-theory model",
+    "similarity": 0.4711350202560425,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4315
+  },
+  {
+    "concept_a": "non-K\u00e4hler geometry",
+    "concept_b": "intrinsic torsion",
+    "similarity": 0.47099417448043823,
+    "graph_distance": 4,
+    "structural_hole_score": 0.1391
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.4707498848438263,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6773
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "warped compactification",
+    "similarity": 0.47009825706481934,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2481
+  },
+  {
+    "concept_a": "three-branes",
+    "concept_b": "anti-D3 brane",
+    "similarity": 0.4700866937637329,
+    "graph_distance": 7,
+    "structural_hole_score": 0.2481
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "6D (1,0) theory",
+    "similarity": 0.4697032868862152,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0516
+  },
+  {
+    "concept_a": "D-brane",
+    "concept_b": "stringy cosmic strings",
+    "similarity": 0.4694076180458069,
+    "graph_distance": 6,
+    "structural_hole_score": 0.5812
+  },
+  {
+    "concept_a": "Four-dimensional compactification",
+    "concept_b": "warped compactification",
+    "similarity": 0.4685121178627014,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2481
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "SCFT",
+    "similarity": 0.4683952331542969,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7745
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "NS flux",
+    "similarity": 0.46792346239089966,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6636
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "supersymmetric string theory",
+    "similarity": 0.4667259454727173,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3997
+  },
+  {
+    "concept_a": "moduli space",
+    "concept_b": "non-geometric phase",
+    "similarity": 0.46448737382888794,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3589
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "non-supersymmetric vacua",
+    "similarity": 0.46341049671173096,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3997
+  },
+  {
+    "concept_a": "five brane",
+    "concept_b": "five-branes",
+    "similarity": 0.46338003873825073,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5818
+  },
+  {
+    "concept_a": "fermionic spectrum",
+    "concept_b": "massless spectrum",
+    "similarity": 0.46255970001220703,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3324
+  },
+  {
+    "concept_a": "heterotic string theory",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.46249642968177795,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7335
+  },
+  {
+    "concept_a": "complete intersection Calabi-Yau",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.46210622787475586,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5816
+  },
+  {
+    "concept_a": "spacetime theory",
+    "concept_b": "effective field theory",
+    "similarity": 0.4620543420314789,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4104
+  },
+  {
+    "concept_a": "SU(3)",
+    "concept_b": "free quotient",
+    "similarity": 0.4612105190753937,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1316
+  },
+  {
+    "concept_a": "deterministic function",
+    "concept_b": "characteristic functional",
+    "similarity": 0.46088188886642456,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Type II string theory",
+    "concept_b": "critical string",
+    "similarity": 0.4598226547241211,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3746
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "non-geometric phase",
+    "similarity": 0.45914071798324585,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "M-theory",
+    "concept_b": "Type IIB string theory",
+    "similarity": 0.45901355147361755,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6705
+  },
+  {
+    "concept_a": "singularities",
+    "concept_b": "hypersurface",
+    "similarity": 0.4585567116737366,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "Berglund-Hubsch type",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.45593464374542236,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "log Calabi-Yau compactification",
+    "concept_b": "non-geometric phase",
+    "similarity": 0.45541873574256897,
+    "graph_distance": 6,
+    "structural_hole_score": 0.375
+  },
+  {
+    "concept_a": "infinitely divisible random measure",
+    "concept_b": "convolution",
+    "similarity": 0.45536336302757263,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "Berglund-Hubsch type",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.45431259274482727,
+    "graph_distance": 3,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Berglund-Hubsch type",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.4541167616844177,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Reflexive polytope",
+    "concept_b": "toric variety",
+    "similarity": 0.45334768295288086,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2198
+  },
+  {
+    "concept_a": "E8\u00d7E8 theory",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.4528602361679077,
+    "graph_distance": 4,
+    "structural_hole_score": 0.422
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "Kaluza-Klein theory",
+    "similarity": 0.45222634077072144,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "gauge group",
+    "concept_b": "gauge theory",
+    "similarity": 0.45212191343307495,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3749
+  },
+  {
+    "concept_a": "Hodge numbers",
+    "concept_b": "Calabi-Yau variety",
+    "similarity": 0.45187026262283325,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4675
+  },
+  {
+    "concept_a": "intrinsic torsion",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.4494442939758301,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3891
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "K3-fibration",
+    "similarity": 0.44878238439559937,
+    "graph_distance": 4,
+    "structural_hole_score": 0.601
+  },
+  {
+    "concept_a": "complete intersection Calabi-Yau",
+    "concept_b": "Batyrev-Borisov approach",
+    "similarity": 0.4479067921638489,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4311
+  },
+  {
+    "concept_a": "Berglund-Hubsch type",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.44785937666893005,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "Type II string theory",
+    "concept_b": "T-duality",
+    "similarity": 0.4477524161338806,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6243
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "supersymmetric model",
+    "similarity": 0.4466788172721863,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6494
+  },
+  {
+    "concept_a": "heterotic string theory",
+    "concept_b": "bosonic string",
+    "similarity": 0.4456701874732971,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4558
+  },
+  {
+    "concept_a": "effective action",
+    "concept_b": "effective field theory",
+    "similarity": 0.44424960017204285,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6663
+  },
+  {
+    "concept_a": "bosonic spectrum",
+    "concept_b": "massless spectrum",
+    "similarity": 0.44402098655700684,
+    "graph_distance": 3,
+    "structural_hole_score": 0.528
+  },
+  {
+    "concept_a": "SO(16)\u00d7SO(16) theory",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.44373583793640137,
+    "graph_distance": 4,
+    "structural_hole_score": 0.5951
+  },
+  {
+    "concept_a": "Batyrev-Borisov approach",
+    "concept_b": "toric variety",
+    "similarity": 0.4421006143093109,
+    "graph_distance": 4,
+    "structural_hole_score": 0.1828
+  },
+  {
+    "concept_a": "E8\u00d7E8 theory",
+    "concept_b": "Type IIB string theory",
+    "similarity": 0.4417985677719116,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4818
+  },
+  {
+    "concept_a": "Hodge plot",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.44139808416366577,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "singular transition",
+    "similarity": 0.4405178427696228,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Hodge numbers",
+    "concept_b": "rigid Calabi-Yau",
+    "similarity": 0.4400637149810791,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2177
+  },
+  {
+    "concept_a": "K3 surface",
+    "concept_b": "K3-fibration",
+    "similarity": 0.43995726108551025,
+    "graph_distance": 5,
+    "structural_hole_score": 0.624
+  },
+  {
+    "concept_a": "Non-perturbative effects",
+    "concept_b": "Euclidean D-brane instanton",
+    "similarity": 0.43963029980659485,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4053
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "K\u00e4hler deformation",
+    "similarity": 0.4395778477191925,
+    "graph_distance": 4,
+    "structural_hole_score": 0.601
+  },
+  {
+    "concept_a": "Type II string theory",
+    "concept_b": "heterotic string theory",
+    "similarity": 0.439554899930954,
+    "graph_distance": 3,
+    "structural_hole_score": 0.8304
+  },
+  {
+    "concept_a": "massless spectrum",
+    "concept_b": "string vacuum",
+    "similarity": 0.43936336040496826,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7321
+  },
+  {
+    "concept_a": "parallel brane configuration",
+    "concept_b": "brane box configuration",
+    "similarity": 0.438665509223938,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2461
+  },
+  {
+    "concept_a": "Type II string theory",
+    "concept_b": "supersymmetric string theory",
+    "similarity": 0.4385374188423157,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7742
+  },
+  {
+    "concept_a": "Heterotic coupling constant",
+    "concept_b": "heterotic little string theory",
+    "similarity": 0.4384958744049072,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3497
+  },
+  {
+    "concept_a": "string duality",
+    "concept_b": "SL(2,Z) symmetry",
+    "similarity": 0.438036173582077,
+    "graph_distance": 3,
+    "structural_hole_score": 0.602
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.4379197359085083,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3512
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "non-geometric phase",
+    "similarity": 0.43771201372146606,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "infinitely divisible random field",
+    "concept_b": "characteristic functional",
+    "similarity": 0.43729254603385925,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3745
+  },
+  {
+    "concept_a": "Cohomology",
+    "concept_b": "bundle cohomology",
+    "similarity": 0.43553096055984497,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "heterotic string compactification",
+    "similarity": 0.43509441614151,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6809
+  },
+  {
+    "concept_a": "holomorphic G bundle",
+    "concept_b": "K\u00e4hler structure",
+    "similarity": 0.43489599227905273,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4442
+  },
+  {
+    "concept_a": "complete intersection Calabi-Yau",
+    "concept_b": "K3 surface",
+    "similarity": 0.43339312076568604,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6225
+  },
+  {
+    "concept_a": "K\u00e4hler structure",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.4330555200576782,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3919
+  },
+  {
+    "concept_a": "F-theory model",
+    "concept_b": "three-branes",
+    "similarity": 0.4330422878265381,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Cohomology",
+    "concept_b": "characteristic classes",
+    "similarity": 0.4325929582118988,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "log Calabi-Yau compactification",
+    "concept_b": "Calabi-Yau variety",
+    "similarity": 0.4315820336341858,
+    "graph_distance": 6,
+    "structural_hole_score": 0.6248
+  },
+  {
+    "concept_a": "direct flux breaking",
+    "concept_b": "heterotic string compactification",
+    "similarity": 0.4311598539352417,
+    "graph_distance": 4,
+    "structural_hole_score": 0.8475
+  },
+  {
+    "concept_a": "Algebraic geometry",
+    "concept_b": "hypersurface",
+    "similarity": 0.4304116368293762,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "mirror symmetry",
+    "concept_b": "Calabi-Yau variety",
+    "similarity": 0.43036821484565735,
+    "graph_distance": 4,
+    "structural_hole_score": 0.5896
+  },
+  {
+    "concept_a": "complete intersection Calabi-Yau",
+    "concept_b": "Calabi-Yau variety",
+    "similarity": 0.4287458062171936,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4982
+  },
+  {
+    "concept_a": "K\u00e4hler deformation",
+    "concept_b": "Calabi-Yau variety",
+    "similarity": 0.4283161163330078,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4996
+  },
+  {
+    "concept_a": "five brane",
+    "concept_b": "string theory",
+    "similarity": 0.42696958780288696,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5818
+  },
+  {
+    "concept_a": "Polytope",
+    "concept_b": "toric variety",
+    "similarity": 0.4265667200088501,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "SO(32) theory",
+    "concept_b": "heterotic little string theory",
+    "similarity": 0.4264889359474182,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3497
+  },
+  {
+    "concept_a": "M-theory",
+    "concept_b": "Type IIA string theory",
+    "similarity": 0.426428884267807,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6109
+  },
+  {
+    "concept_a": "Calabi-Yau compactification",
+    "concept_b": "supersymmetry preservation",
+    "similarity": 0.4264240860939026,
+    "graph_distance": 3,
+    "structural_hole_score": 0.454
+  },
+  {
+    "concept_a": "Calabi-Yau compactification",
+    "concept_b": "log Calabi-Yau compactification",
+    "similarity": 0.4259764850139618,
+    "graph_distance": 4,
+    "structural_hole_score": 0.8289
+  },
+  {
+    "concept_a": "SO(16)\u00d7SO(16) theory",
+    "concept_b": "Type IIB string theory",
+    "similarity": 0.42533010244369507,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6548
+  },
+  {
+    "concept_a": "anomaly factorization",
+    "concept_b": "five-branes",
+    "similarity": 0.4252476096153259,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "moduli space",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.42442500591278076,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6089
+  },
+  {
+    "concept_a": "SO(32) theory",
+    "concept_b": "supersymmetric string theory",
+    "similarity": 0.4237079918384552,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3997
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "Batyrev-Borisov approach",
+    "similarity": 0.423485666513443,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1828
+  },
+  {
+    "concept_a": "log Calabi-Yau compactification",
+    "concept_b": "Berglund-Hubsch type",
+    "similarity": 0.42250117659568787,
+    "graph_distance": 4,
+    "structural_hole_score": 0.375
+  },
+  {
+    "concept_a": "Euclidean D-brane instanton",
+    "concept_b": "anti-D3 brane",
+    "similarity": 0.4223332107067108,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2481
+  },
+  {
+    "concept_a": "K3 surface",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.4214857816696167,
+    "graph_distance": 3,
+    "structural_hole_score": 0.624
+  },
+  {
+    "concept_a": "mirror symmetry",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.420627236366272,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3397
+  },
+  {
+    "concept_a": "Hodge plot",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.42054444551467896,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "critical string",
+    "concept_b": "five-branes",
+    "similarity": 0.4204448461532593,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Batyrev-Borisov approach",
+    "concept_b": "Borisov differential",
+    "similarity": 0.4202696681022644,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2403
+  },
+  {
+    "concept_a": "complete intersection Calabi-Yau",
+    "concept_b": "rigid Calabi-Yau",
+    "similarity": 0.4202641546726227,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "line bundle",
+    "concept_b": "spectral data",
+    "similarity": 0.4199524521827698,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4183
+  },
+  {
+    "concept_a": "Hodge numbers",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.4199463129043579,
+    "graph_distance": 3,
+    "structural_hole_score": 0.551
+  },
+  {
+    "concept_a": "holomorphic G bundle",
+    "concept_b": "bundle cohomology",
+    "similarity": 0.4199431240558624,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3021
+  },
+  {
+    "concept_a": "Type II string theory",
+    "concept_b": "SO(32) theory",
+    "similarity": 0.4190595746040344,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3746
+  },
+  {
+    "concept_a": "heterotic little string theory",
+    "concept_b": "string spectrum",
+    "similarity": 0.418632447719574,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5976
+  },
+  {
+    "concept_a": "Four-dimensional compactification",
+    "concept_b": "Calabi-Yau compactification",
+    "similarity": 0.41796913743019104,
+    "graph_distance": 999,
+    "structural_hole_score": 0.454
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "geometric engineering",
+    "similarity": 0.41769683361053467,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "heterotic string theory",
+    "concept_b": "ten dimensional spacetime",
+    "similarity": 0.41752392053604126,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4558
+  },
+  {
+    "concept_a": "Gravitino mass",
+    "concept_b": "Planck scale",
+    "similarity": 0.4172717332839966,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2389
+  },
+  {
+    "concept_a": "Mirror Calabi-Yau",
+    "concept_b": "non-geometric phase",
+    "similarity": 0.41718465089797974,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "T-duality",
+    "concept_b": "type II compactifications",
+    "similarity": 0.4170041084289551,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Calabi-Yau manifold",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.4169011116027832,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4558
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "realistic compactification conditions",
+    "similarity": 0.4165976643562317,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3512
+  },
+  {
+    "concept_a": "Berglund-Hubsch type",
+    "concept_b": "Toric base",
+    "similarity": 0.416238009929657,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "string spectrum",
+    "concept_b": "effective action",
+    "similarity": 0.4159834384918213,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6644
+  },
+  {
+    "concept_a": "SO(32) theory",
+    "concept_b": "ten dimensional spacetime",
+    "similarity": 0.4158816337585449,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "E8\u00d7E8 theory",
+    "concept_b": "heterotic little string theory",
+    "similarity": 0.41429248452186584,
+    "graph_distance": 5,
+    "structural_hole_score": 0.494
+  },
+  {
+    "concept_a": "gauge group",
+    "concept_b": "U(n) vector bundles",
+    "similarity": 0.413504958152771,
+    "graph_distance": 3,
+    "structural_hole_score": 0.8162
+  },
+  {
+    "concept_a": "3-brane probe",
+    "concept_b": "anti-D3 brane",
+    "similarity": 0.4134923219680786,
+    "graph_distance": 7,
+    "structural_hole_score": 0.2481
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "Berglund-Hubsch type",
+    "similarity": 0.41254523396492004,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3512
+  },
+  {
+    "concept_a": "K\u00e4hler deformation",
+    "concept_b": "rigid Calabi-Yau",
+    "similarity": 0.41203081607818604,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Calabi-Yau compactification",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.41196703910827637,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7038
+  },
+  {
+    "concept_a": "covering of projective space",
+    "concept_b": "Algebraic geometry",
+    "similarity": 0.41190382838249207,
+    "graph_distance": 9,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "fermionic spectrum",
+    "concept_b": "supersymmetric model",
+    "similarity": 0.4116523861885071,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "T-duality",
+    "concept_b": "warped compactification",
+    "similarity": 0.41143444180488586,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4979
+  },
+  {
+    "concept_a": "F-theory/Heterotic duality",
+    "concept_b": "F-theory compactification",
+    "similarity": 0.4112218916416168,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6623
+  },
+  {
+    "concept_a": "mean field theory",
+    "concept_b": "effective field theory",
+    "similarity": 0.4108627438545227,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "critical string",
+    "concept_b": "bosonic string",
+    "similarity": 0.4108487665653229,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Berglund-Hubsch type",
+    "concept_b": "singular transition",
+    "similarity": 0.4095880389213562,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Type II string theory",
+    "concept_b": "E8\u00d7E8 theory",
+    "similarity": 0.40951836109161377,
+    "graph_distance": 4,
+    "structural_hole_score": 0.519
+  },
+  {
+    "concept_a": "Hodge numbers",
+    "concept_b": "Cohomology",
+    "similarity": 0.4094584584236145,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2177
+  },
+  {
+    "concept_a": "de Sitter uplift",
+    "concept_b": "AdS/CFT correspondence",
+    "similarity": 0.4094468951225281,
+    "graph_distance": 5,
+    "structural_hole_score": 0.287
+  },
+  {
+    "concept_a": "string duality",
+    "concept_b": "F-theory model",
+    "similarity": 0.40942662954330444,
+    "graph_distance": 4,
+    "structural_hole_score": 0.352
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "string vacuum",
+    "similarity": 0.40908610820770264,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7994
+  },
+  {
+    "concept_a": "mirror symmetry",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.4087062478065491,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5897
+  },
+  {
+    "concept_a": "net-generation number",
+    "concept_b": "generations of fermions",
+    "similarity": 0.40868934988975525,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Borisov differential",
+    "concept_b": "Polytope",
+    "similarity": 0.40866145491600037,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3069
+  },
+  {
+    "concept_a": "T-duality",
+    "concept_b": "heterotic string compactification",
+    "similarity": 0.40860915184020996,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6808
+  },
+  {
+    "concept_a": "covering of projective space",
+    "concept_b": "hypersurface",
+    "similarity": 0.40780651569366455,
+    "graph_distance": 8,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "stringy cosmic strings",
+    "similarity": 0.4075544476509094,
+    "graph_distance": 4,
+    "structural_hole_score": 0.7329
+  },
+  {
+    "concept_a": "SO(32) theory",
+    "concept_b": "6D (1,0) theory",
+    "similarity": 0.4067692756652832,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0516
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "heterotic string compactification",
+    "similarity": 0.406721830368042,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7823
+  },
+  {
+    "concept_a": "five brane",
+    "concept_b": "brane box configuration",
+    "similarity": 0.40644532442092896,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5781
+  },
+  {
+    "concept_a": "NS flux",
+    "concept_b": "background fluxes",
+    "similarity": 0.40631765127182007,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2639
+  },
+  {
+    "concept_a": "critical string",
+    "concept_b": "stringy cosmic strings",
+    "similarity": 0.406080424785614,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "five-branes",
+    "concept_b": "topological defect",
+    "similarity": 0.40549522638320923,
+    "graph_distance": 8,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Berglund-Hubsch type",
+    "concept_b": "realistic compactification conditions",
+    "similarity": 0.4044535756111145,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Hodge numbers",
+    "concept_b": "Batyrev-Borisov approach",
+    "similarity": 0.40405115485191345,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4005
+  },
+  {
+    "concept_a": "Heterotic coupling constant",
+    "concept_b": "String scale",
+    "similarity": 0.4032072424888611,
+    "graph_distance": 7,
+    "structural_hole_score": 0.2476
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "realistic compactification conditions",
+    "similarity": 0.4032042324542999,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "axion coupling",
+    "concept_b": "Gauge coupling unification",
+    "similarity": 0.40265896916389465,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Four-dimensional compactification",
+    "concept_b": "string vacuum",
+    "similarity": 0.4016808271408081,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3997
+  },
+  {
+    "concept_a": "infinitely divisible random measure",
+    "concept_b": "random field",
+    "similarity": 0.4015037417411804,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "SU(3)",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.4014558494091034,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "string compactification",
+    "concept_b": "String scale",
+    "similarity": 0.40115663409233093,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6947
+  },
+  {
+    "concept_a": "five-branes",
+    "concept_b": "brane box configuration",
+    "similarity": 0.40109825134277344,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4959
+  },
+  {
+    "concept_a": "Hodge plot",
+    "concept_b": "Calabi-Yau variety",
+    "similarity": 0.4009755253791809,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Hodge numbers",
+    "concept_b": "Berglund-Hubsch type",
+    "similarity": 0.4009529650211334,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2177
+  },
+  {
+    "concept_a": "K3-fibration",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.4009139835834503,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5831
+  },
+  {
+    "concept_a": "stringy cosmic strings",
+    "concept_b": "String scale",
+    "similarity": 0.400537371635437,
+    "graph_distance": 7,
+    "structural_hole_score": 0.5808
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "Toric base",
+    "similarity": 0.40050575137138367,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4997
+  },
+  {
+    "concept_a": "flux compactifications",
+    "concept_b": "compactification manifold",
+    "similarity": 0.40036994218826294,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3093
+  },
+  {
+    "concept_a": "K3 surface",
+    "concept_b": "realistic compactification conditions",
+    "similarity": 0.40035325288772583,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3742
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "singular transition",
+    "similarity": 0.39979928731918335,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "mirror symmetry",
+    "similarity": 0.3991757035255432,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3397
+  },
+  {
+    "concept_a": "Calabi-Yau compactification",
+    "concept_b": "compactification manifold",
+    "similarity": 0.39877521991729736,
+    "graph_distance": 3,
+    "structural_hole_score": 0.454
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "toric variety",
+    "similarity": 0.39871543645858765,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Batyrev-Borisov approach",
+    "concept_b": "Toric base",
+    "similarity": 0.39685070514678955,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4326
+  },
+  {
+    "concept_a": "intrinsic torsion",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.3967989385128021,
+    "graph_distance": 4,
+    "structural_hole_score": 0.1391
+  },
+  {
+    "concept_a": "gauge symmetry breaking",
+    "concept_b": "Grand Unified Theory",
+    "similarity": 0.3966706395149231,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3334
+  },
+  {
+    "concept_a": "singular transition",
+    "concept_b": "non-geometric phase",
+    "similarity": 0.3964826166629791,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "five brane",
+    "concept_b": "three-branes",
+    "similarity": 0.39608824253082275,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3321
+  },
+  {
+    "concept_a": "generations of fermions",
+    "concept_b": "Standard Model spectrum",
+    "similarity": 0.3960525393486023,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "K\u00e4hler deformation",
+    "concept_b": "moduli space",
+    "similarity": 0.39591991901397705,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6087
+  },
+  {
+    "concept_a": "K3 surface",
+    "concept_b": "K\u00e4hler moduli space",
+    "similarity": 0.3956308364868164,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6242
+  },
+  {
+    "concept_a": "complete intersection Calabi-Yau",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.39470356702804565,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "Hodge numbers",
+    "concept_b": "non-K\u00e4hler geometry",
+    "similarity": 0.39388570189476013,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2177
+  },
+  {
+    "concept_a": "string vacuum",
+    "concept_b": "T-duality",
+    "similarity": 0.3936600387096405,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6495
+  },
+  {
+    "concept_a": "Type II string theory",
+    "concept_b": "M-theory",
+    "similarity": 0.39333489537239075,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7078
+  },
+  {
+    "concept_a": "compactification manifold",
+    "concept_b": "Large volume limit",
+    "similarity": 0.3924269676208496,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3407
+  },
+  {
+    "concept_a": "exactly solvable model",
+    "concept_b": "model building",
+    "similarity": 0.39240437746047974,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5821
+  },
+  {
+    "concept_a": "gauge symmetry breaking",
+    "concept_b": "gauge theory",
+    "similarity": 0.39127933979034424,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "chiral exotics",
+    "concept_b": "Grand Unified Theory",
+    "similarity": 0.3901457190513611,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3334
+  },
+  {
+    "concept_a": "maximally symmetric spacetime",
+    "concept_b": "de Sitter space",
+    "similarity": 0.3900738060474396,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3737
+  },
+  {
+    "concept_a": "string theory",
+    "concept_b": "D-brane",
+    "similarity": 0.3900066614151001,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4978
+  },
+  {
+    "concept_a": "fermionic spectrum",
+    "concept_b": "string spectrum",
+    "similarity": 0.3897795081138611,
+    "graph_distance": 4,
+    "structural_hole_score": 0.248
+  },
+  {
+    "concept_a": "bosonic spectrum",
+    "concept_b": "string spectrum",
+    "similarity": 0.38975095748901367,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4435
+  },
+  {
+    "concept_a": "realistic compactification conditions",
+    "concept_b": "non-K\u00e4hler geometry",
+    "similarity": 0.38903486728668213,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "T-duality",
+    "concept_b": "SL(2,Z) symmetry",
+    "similarity": 0.3879038095474243,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4998
+  },
+  {
+    "concept_a": "Calabi-Yau compactification",
+    "concept_b": "rigid Calabi-Yau",
+    "similarity": 0.3877054452896118,
+    "graph_distance": 3,
+    "structural_hole_score": 0.454
+  },
+  {
+    "concept_a": "Donaldson-Uhlenbeck-Yau equation",
+    "concept_b": "stable vector bundle",
+    "similarity": 0.3876747488975525,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Four-dimensional compactification",
+    "concept_b": "compactification manifold",
+    "similarity": 0.3872566223144531,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "four-dimensional supergravity",
+    "similarity": 0.3870384097099304,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "heterotic string theory",
+    "concept_b": "supersymmetric string theory",
+    "similarity": 0.38689661026000977,
+    "graph_distance": 3,
+    "structural_hole_score": 0.8555
+  },
+  {
+    "concept_a": "Calabi-Yau variety",
+    "concept_b": "K\u00e4hler structure",
+    "similarity": 0.3865002691745758,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3919
+  },
+  {
+    "concept_a": "brane box configuration",
+    "concept_b": "stringy cosmic strings",
+    "similarity": 0.38630735874176025,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5793
+  },
+  {
+    "concept_a": "Gravitino mass",
+    "concept_b": "superpotential",
+    "similarity": 0.38617491722106934,
+    "graph_distance": 10,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "elliptic Calabi-Yau manifold",
+    "concept_b": "non-geometric phase",
+    "similarity": 0.3861660659313202,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3512
+  },
+  {
+    "concept_a": "Calabi-Yau fourfold",
+    "concept_b": "non-geometric phase",
+    "similarity": 0.38616064190864563,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "string compactification",
+    "concept_b": "D-brane",
+    "similarity": 0.38600438833236694,
+    "graph_distance": 3,
+    "structural_hole_score": 0.695
+  },
+  {
+    "concept_a": "rigid Calabi-Yau",
+    "concept_b": "K\u00e4hler structure",
+    "similarity": 0.38557401299476624,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1421
+  },
+  {
+    "concept_a": "field theory on probe",
+    "concept_b": "gauge theory",
+    "similarity": 0.38528814911842346,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3925
+  },
+  {
+    "concept_a": "heterotic little string theory",
+    "concept_b": "F-theory model",
+    "similarity": 0.3851020336151123,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3497
+  },
+  {
+    "concept_a": "K\u00e4hler structure",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.38495105504989624,
+    "graph_distance": 6,
+    "structural_hole_score": 0.1421
+  },
+  {
+    "concept_a": "Batyrev-Borisov approach",
+    "concept_b": "Complex structure moduli",
+    "similarity": 0.3849446177482605,
+    "graph_distance": 6,
+    "structural_hole_score": 0.1828
+  },
+  {
+    "concept_a": "mean field theory",
+    "concept_b": "random field",
+    "similarity": 0.3844808340072632,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "heterotic string theory",
+    "concept_b": "critical string",
+    "similarity": 0.38442856073379517,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4558
+  },
+  {
+    "concept_a": "Fiber/base exchange",
+    "concept_b": "F-theory compactification",
+    "similarity": 0.38435959815979004,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6616
+  },
+  {
+    "concept_a": "five brane",
+    "concept_b": "stringy cosmic strings",
+    "similarity": 0.38428032398223877,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6653
+  },
+  {
+    "concept_a": "Calabi-Yau compactification",
+    "concept_b": "four-dimensional supergravity",
+    "similarity": 0.3842736482620239,
+    "graph_distance": 3,
+    "structural_hole_score": 0.454
+  },
+  {
+    "concept_a": "complete intersection Calabi-Yau",
+    "concept_b": "Toric base",
+    "similarity": 0.3838394284248352,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4982
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "five brane",
+    "similarity": 0.38365769386291504,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3321
+  },
+  {
+    "concept_a": "five brane",
+    "concept_b": "parallel brane configuration",
+    "similarity": 0.38340920209884644,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3321
+  },
+  {
+    "concept_a": "flux potential",
+    "concept_b": "Flux discretuum",
+    "similarity": 0.3830525875091553,
+    "graph_distance": 8,
+    "structural_hole_score": 0.6096
+  },
+  {
+    "concept_a": "heterotic string compactification",
+    "concept_b": "Calabi-Yau fourfold",
+    "similarity": 0.38257190585136414,
+    "graph_distance": 4,
+    "structural_hole_score": 0.7643
+  },
+  {
+    "concept_a": "supersymmetric string theory",
+    "concept_b": "heterotic string compactification",
+    "similarity": 0.38236838579177856,
+    "graph_distance": 3,
+    "structural_hole_score": 0.8307
+  },
+  {
+    "concept_a": "SO(16)\u00d7SO(16) theory",
+    "concept_b": "heterotic little string theory",
+    "similarity": 0.3823358416557312,
+    "graph_distance": 5,
+    "structural_hole_score": 0.6671
+  },
+  {
+    "concept_a": "stringy cosmic strings",
+    "concept_b": "warped compactification",
+    "similarity": 0.3822692036628723,
+    "graph_distance": 6,
+    "structural_hole_score": 0.5814
+  },
+  {
+    "concept_a": "infinitely divisible random measure",
+    "concept_b": "probability distribution",
+    "similarity": 0.38211530447006226,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "type II compactifications",
+    "concept_b": "ten dimensional spacetime",
+    "similarity": 0.3820362687110901,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "elliptic fibration",
+    "concept_b": "K3-fibration",
+    "similarity": 0.38203316926956177,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6798
+  },
+  {
+    "concept_a": "Green-Schwarz formalism",
+    "concept_b": "ten dimensional spacetime",
+    "similarity": 0.3819159269332886,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "heterotic little string theory",
+    "concept_b": "SL(2,Z) symmetry",
+    "similarity": 0.38160014152526855,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5997
+  },
+  {
+    "concept_a": "holomorphic G bundle",
+    "concept_b": "spectral data",
+    "similarity": 0.3814726769924164,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3021
+  },
+  {
+    "concept_a": "K\u00e4hler deformation",
+    "concept_b": "Mirror Calabi-Yau",
+    "similarity": 0.3812146782875061,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4997
+  },
+  {
+    "concept_a": "alpha-prime corrections",
+    "concept_b": "perturbative string theory",
+    "similarity": 0.3810940980911255,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2372
+  },
+  {
+    "concept_a": "Six-dimensional compactification",
+    "concept_b": "string vacuum",
+    "similarity": 0.38102516531944275,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3997
+  },
+  {
+    "concept_a": "E8\u00d7E8 theory",
+    "concept_b": "supersymmetric string theory",
+    "similarity": 0.38094836473464966,
+    "graph_distance": 4,
+    "structural_hole_score": 0.544
+  },
+  {
+    "concept_a": "AdS minimum",
+    "concept_b": "metastable vacuum",
+    "similarity": 0.38083726167678833,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3518
+  },
+  {
+    "concept_a": "singularities",
+    "concept_b": "singular transition",
+    "similarity": 0.38075941801071167,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "spacetime theory",
+    "concept_b": "Large volume limit",
+    "similarity": 0.3800638020038605,
+    "graph_distance": 4,
+    "structural_hole_score": 0.5012
+  }
+]

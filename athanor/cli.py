@@ -109,7 +109,7 @@ def status(domain: str) -> None:
 @click.option("--pdf",         is_flag=True, help="Download full PDF text (Stage 1 only)")
 @click.option("--s2",          is_flag=True, help="Also fetch from Semantic Scholar")
 @click.option("--cocite",      is_flag=True, help="Add bibliographic coupling edges (requires --s2)")
-@click.option("--workers",     "-w", type=int, default=2, show_default=True,
+@click.option("--workers",     "-w", type=int, default=8, show_default=True,
               help="Parallel Claude workers for Stages 1+2 (Stage 3 uses max(1, workers//2) due to larger token budget)")
 def run(
     domain: str,
