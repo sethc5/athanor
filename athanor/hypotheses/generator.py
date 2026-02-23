@@ -117,8 +117,6 @@ Opportunity (Stage 2 analysis):
 Suggested methodology from Stage 2:
   {methodology}
 
-Gap scores: novelty={novelty}, tractability={tractability}, impact={impact}
-
 Generate a hypothesis and experiment design for this gap in {domain}.
 Prefer computational experiments. If the most important test requires wet lab,
 flag it clearly in requires_followup and design a computational proxy experiment
@@ -199,9 +197,6 @@ class HypothesisGenerator:
             why_unexplored=analysis.why_unexplored,
             opportunity=analysis.intersection_opportunity,
             methodology=analysis.methodology,
-            novelty=analysis.novelty,
-            tractability=analysis.tractability,
-            impact=analysis.impact,
         )
         if self._domain_context:
             prompt = f"Domain context:\n{self._domain_context}\n\n" + prompt

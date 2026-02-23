@@ -121,11 +121,6 @@ class GapFinder:
         self._domain_context = domain_context
         # Approved hypothesis statements from previous runs — gap finder avoids regenerating similar gaps
         self._prior_approved: List[str] = prior_approved or []
-        self._model = model
-        self._max_tokens = max_tokens
-        self._max_gaps = max_gaps
-        self._max_workers = max_workers
-        self._domain_context = domain_context
 
     # ── public ───────────────────────────────────────────────────────────────
 

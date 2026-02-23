@@ -13,11 +13,16 @@ from athanor.ingest.arxiv_client import Paper
 
 
 def clean_text(text: str) -> str:
-    """Normalise whitespace and remove arXiv LaTeX artefacts."""
+    """Normalise whitespace and strip arXiv LaTeX artefacts.
+
+    Math expressions ($...$) are kept as-is so downstream models
+    (Claude, embedders) can use the mathematical content.
+    Only non-math LaTeX commands like \\textbf{...} are stripped.
+    """
     # collapse newlines and extra spaces
     text = re.sub(r"\s+", " ", text)
-    # strip common LaTeX commands that survive into abstracts
-    text = re.sub(r"\$[^$]*\$", "[math]", text)
+    # strip non-math LaTeX commands that survive into abstracts
+    # (keep $...$ math expressions intact)
     text = re.sub(r"\\[a-zA-Z]+\{[^}]*\}", "", text)
     return text.strip()
 
