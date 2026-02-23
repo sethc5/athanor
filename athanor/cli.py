@@ -109,6 +109,8 @@ def status(domain: str) -> None:
 @click.option("--pdf",         is_flag=True, help="Download full PDF text (Stage 1 only)")
 @click.option("--s2",          is_flag=True, help="Also fetch from Semantic Scholar")
 @click.option("--cocite",      is_flag=True, help="Add bibliographic coupling edges (requires --s2)")
+@click.option("--workers",     "-w", type=int, default=2, show_default=True,
+              help="Parallel Claude workers for Stages 1+2 (Stage 3 uses max(1, workers//2) due to larger token budget)")
 def run(
     domain: str,
     stages: str,
@@ -118,6 +120,7 @@ def run(
     pdf: bool,
     s2: bool,
     cocite: bool,
+    workers: int,
 ) -> None:
     """Run the full athanor pipeline for a domain."""
     from athanor.domains import load_domain
@@ -135,6 +138,8 @@ def run(
         dom["max_papers"] = max_papers
     if max_gaps:
         dom["max_gaps"] = max_gaps
+    # Domain YAML can override CLI --workers (useful for token-heavy domains)
+    workers = dom.get("max_workers", workers)
 
     out = _out(domain_name)
     for p in out.values():
@@ -143,7 +148,7 @@ def run(
     console.print(Panel(
         f"[bold cyan]{dom['display']}[/]\n"
         f"Stages: {stage_list} | Papers: {dom['max_papers']} | "
-        f"Gaps: {dom.get('max_gaps',15)} | PDF: {pdf} | S2: {s2} | co-cite: {cocite}",
+        f"Gaps: {dom.get('max_gaps',15)} | Workers: {workers} | PDF: {pdf} | S2: {s2} | co-cite: {cocite}",
         title="Athanor Pipeline",
         border_style="green",
     ))
@@ -226,6 +231,7 @@ def run(
             domain=domain_name,
             query=dom.get("arxiv_query", ""),
             save_path=graph_path,
+            max_workers=workers,
         )
 
         # Also save candidate gaps
@@ -302,6 +308,7 @@ def run(
             model=dom.get("claude_model", cfg.model),
             api_key=os.environ["ANTHROPIC_API_KEY"],
             max_gaps=dom.get("max_gaps", 15),
+            max_workers=workers,
         )
         gap_report = finder.analyse(deduped, query=dom.get("arxiv_query", ""))
         report_path.write_text(gap_report.model_dump_json(indent=2))
@@ -317,11 +324,14 @@ def run(
         from athanor.hypotheses import HypothesisGenerator
 
         gap_report = GapReport.model_validate_json(report_path.read_text())
+        # Stage 3 uses 4096 tokens/request — cap workers to stay under 10K OPM Haiku limit
+        _s3_workers = max(1, workers // 2)
         generator = HypothesisGenerator(
             domain=domain_name,
             model=dom.get("claude_model", cfg.model),
             api_key=os.environ["ANTHROPIC_API_KEY"],
             max_tokens=dom.get("max_tokens_hypothesis", 4096),
+            max_workers=_s3_workers,
         )
         hyp_report = generator.generate(gap_report.ranked)
         hyp_path.write_text(hyp_report.model_dump_json(indent=2))
@@ -638,6 +648,7 @@ def cross_domain_cmd(domain_a: str, domain_b: str, top: int, threshold: float) -
         model=dom_a.get("claude_model", cfg.model),
         api_key=os.environ["ANTHROPIC_API_KEY"],
         max_gaps=top,
+        max_workers=4,  # 1024 tokens/request × 4 = 4K OPM burst, safe for Haiku
     )
     gap_report = finder.analyse(candidates[:top], query=combined_context)
 

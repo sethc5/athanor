@@ -41,6 +41,7 @@ class GraphBuilder:
         domain: str = "general",
         query: str = "",
         save_path: Optional[Path] = None,
+        max_workers: int = 2,
     ) -> ConceptGraph:
         """Extract and merge concept graphs from *parsed_papers*.
 
@@ -65,9 +66,11 @@ class GraphBuilder:
             log.info("Processing paper: %s — %s", paper["arxiv_id"], paper["title"][:60])
             return self._extractor.extract(text=paper["text"], arxiv_id=paper["arxiv_id"])
 
-        # Parallelise Claude extraction across papers (I/O-bound, safe to thread)
-        max_workers = min(4, len(parsed_papers))
-        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        # Parallelise Claude extraction across papers (I/O-bound, safe to thread).
+        # Default 2 workers: at 2048 max_tokens each that's ~4K OPM burst,
+        # safely under the 10K Haiku OPM org limit.
+        _workers = min(max_workers, len(parsed_papers))
+        with ThreadPoolExecutor(max_workers=_workers) as pool:
             results = list(pool.map(_extract_one, parsed_papers))
 
         for concepts, edges in results:

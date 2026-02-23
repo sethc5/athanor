@@ -2,16 +2,26 @@
 
 Provides JSON-retry logic: if Claude returns malformed JSON, the parse error
 is fed back as a follow-up user message so Claude can self-correct.
+
+Also handles RateLimitError with exponential backoff + jitter so parallel
+workers survive org-level TPM limits without crashing the pipeline.
 """
 from __future__ import annotations
 
 import json
 import logging
+import random
+import time
 from typing import Optional
 
 import anthropic
 
 log = logging.getLogger(__name__)
+
+# Maximum total wait across all rate-limit retries (seconds).
+# 8 attempts at 2,4,8,16,32,60,60,60 = ~4 min worst case.
+_MAX_RATE_RETRIES = 8
+_MAX_RATE_SLEEP = 60.0
 
 
 def strip_json_fences(text: str) -> str:
@@ -33,27 +43,59 @@ def call_llm_json(
     prompt: str,
     max_retries: int = 2,
 ) -> tuple[Optional[dict], str]:
-    """Call Claude and retry if the response is not valid JSON.
+    """Call Claude and retry automatically on rate limits and bad JSON.
+
+    Rate-limit handling
+    -------------------
+    On ``RateLimitError`` the call is retried with exponential backoff + jitter
+    (up to ``_MAX_RATE_RETRIES`` times, sleeping at most ``_MAX_RATE_SLEEP`` s).
+    This keeps parallel workers alive through TPM bursts instead of crashing.
+
+    JSON-retry handling
+    -------------------
+    On a JSON parse failure the error message is fed back to Claude as a
+    follow-up user turn so it can self-correct in-context (up to ``max_retries``
+    rounds).
 
     Returns ``(parsed_dict, raw_text)``.
-    ``parsed_dict`` is ``None`` if all retries are exhausted.
-    ``raw_text`` is the last raw response from Claude.
-
-    On a JSON parse failure the error message is fed back to Claude as a
-    follow-up user turn so it can self-correct in-context.
+    ``parsed_dict`` is ``None`` only if all retries are exhausted.
     """
     messages: list[dict] = [{"role": "user", "content": prompt}]
     raw = ""
 
     for attempt in range(max_retries + 1):
-        response = client.messages.create(
-            model=model,
-            max_tokens=max_tokens,
-            system=system,
-            messages=messages,
-        )
+        # ── rate-limit-aware call ─────────────────────────────────────────────
+        rate_attempt = 0
+        while True:
+            try:
+                response = client.messages.create(
+                    model=model,
+                    max_tokens=max_tokens,
+                    system=system,
+                    messages=messages,
+                )
+                break  # success
+            except anthropic.RateLimitError as exc:
+                rate_attempt += 1
+                if rate_attempt > _MAX_RATE_RETRIES:
+                    log.error(
+                        "Rate limit exceeded after %d retries — giving up: %s",
+                        _MAX_RATE_RETRIES, exc,
+                    )
+                    return None, ""
+                # Exponential backoff with ±20 % jitter
+                sleep_s = min(_MAX_RATE_SLEEP, 2 ** rate_attempt)
+                sleep_s *= 0.8 + 0.4 * random.random()
+                log.warning(
+                    "Rate limited (attempt %d/%d) — sleeping %.1f s",
+                    rate_attempt, _MAX_RATE_RETRIES, sleep_s,
+                )
+                time.sleep(sleep_s)
+
         raw = response.content[0].text
         text = strip_json_fences(raw)
+
+        # ── JSON parse / in-context retry ─────────────────────────────────────
         try:
             data = json.loads(text)
             if attempt > 0:

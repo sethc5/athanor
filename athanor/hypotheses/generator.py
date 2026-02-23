@@ -139,7 +139,7 @@ class HypothesisGenerator:
         model: str = cfg.model,
         api_key: str = cfg.anthropic_api_key,
         max_tokens: int = 4096,
-        max_workers: int = 4,
+        max_workers: int = 1,
     ) -> None:
         cfg.validate()
         self._client = anthropic.Anthropic(api_key=api_key)
