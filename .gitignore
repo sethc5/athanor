@@ -23,6 +23,8 @@ data/processed/
 outputs/graphs/*.html
 outputs/graphs/*.png
 outputs/graphs/*.json
+outputs/gaps/*.html
+outputs/gaps/*.json
 
 # OS
 .DS_Store

@@ -1,0 +1,195 @@
+"""
+athanor.gaps.finder — use Claude to analyse candidate gaps and produce
+ranked research questions.
+
+For each CandidateGap Claude answers:
+  1. What research question does this structural gap represent?
+  2. Why has this connection been missed?
+  3. What is the opportunity at this intersection?
+  4. How would you investigate it? Is it computationally tractable?
+  5. Score: novelty / tractability / impact (1–5)
+
+Domain-agnostic: the prompt is parameterised by domain name.
+"""
+from __future__ import annotations
+
+import json
+import logging
+import time
+from typing import List, Optional
+
+import anthropic
+
+from athanor.config import cfg
+from athanor.gaps.models import CandidateGap, GapAnalysis, GapReport
+
+log = logging.getLogger(__name__)
+
+# ── prompt ───────────────────────────────────────────────────────────────────
+
+_SYSTEM = """\
+You are a research gap analyst embedded inside an automated science pipeline.
+
+Your task: given two scientific concepts that are semantically related but
+structurally disconnected in the literature graph, identify the research gap
+they represent and produce a structured analysis.
+
+Output ONLY valid JSON matching this exact schema — no prose, no markdown:
+
+{
+  "research_question": "<one precise, testable question this gap implies>",
+  "why_unexplored":    "<why the community has missed or avoided this connection — 2-3 sentences>",
+  "intersection_opportunity": "<what productive work at this intersection could achieve — 2-3 sentences>",
+  "methodology": "<how you would actually investigate this — concrete steps, 3-5 sentences>",
+  "computational": <true if it can be substantially investigated computationally, false if wet-lab/observational primary>,
+  "novelty":       <integer 1-5; 5=highly novel>,
+  "tractability":  <integer 1-5; 5=very tractable with current tools>,
+  "impact":        <integer 1-5; 5=field-changing if answered>,
+  "keywords":      ["<3-6 search terms that would find relevant prior work>"]
+}
+
+Scoring rubric:
+- novelty 5: genuinely unasked; no paper directly addresses this intersection
+- novelty 1: well-trodden, incremental
+- tractability 5: answerable with existing public data + compute
+- tractability 1: requires major new instrumentation or decades of data
+- impact 5: resolves a foundational tension or enables a new class of methods
+- impact 1: niche, confirmatory
+"""
+
+_USER_TEMPLATE = """\
+Domain: {domain}
+
+Concept A: {concept_a}
+Description A: {description_a}
+Appears in papers: {papers_a}
+
+Concept B: {concept_b}
+Description B: {description_b}
+Appears in papers: {papers_b}
+
+Embedding similarity: {similarity:.3f} (high — these concepts are semantically close)
+Graph distance: {graph_distance} (large — the literature rarely links them directly)
+
+Analyze the gap between these two concepts in the context of {domain}.
+"""
+
+
+class GapFinder:
+    """Calls Claude to turn candidate gaps into ranked research questions."""
+
+    def __init__(
+        self,
+        domain: str,
+        model: str = cfg.model,
+        api_key: str = cfg.anthropic_api_key,
+        max_tokens: int = 1024,
+        max_gaps: int = 20,
+        sleep_between: float = 0.5,
+    ) -> None:
+        cfg.validate()
+        self._client = anthropic.Anthropic(api_key=api_key)
+        self._domain = domain
+        self._model = model
+        self._max_tokens = max_tokens
+        self._max_gaps = max_gaps
+        self._sleep = sleep_between
+
+    # ── public ───────────────────────────────────────────────────────────────
+
+    def analyse(
+        self,
+        gaps: List[CandidateGap],
+        query: str = "",
+    ) -> GapReport:
+        """Analyse up to *max_gaps* candidates and return a ranked GapReport."""
+        candidates = gaps[: self._max_gaps]
+        report = GapReport(
+            domain=self._domain,
+            query=query,
+            n_candidates=len(gaps),
+            n_analyzed=len(candidates),
+        )
+
+        for i, gap in enumerate(candidates):
+            log.info(
+                "[%d/%d] Analysing gap: %s ↔ %s",
+                i + 1,
+                len(candidates),
+                gap.concept_a,
+                gap.concept_b,
+            )
+            analysis = self._analyse_one(gap)
+            if analysis:
+                report.analyses.append(analysis)
+            time.sleep(self._sleep)
+
+        log.info(
+            "Gap analysis complete: %d/%d produced valid analyses",
+            len(report.analyses),
+            len(candidates),
+        )
+        return report
+
+    # ── private ──────────────────────────────────────────────────────────────
+
+    def _analyse_one(self, gap: CandidateGap) -> Optional[GapAnalysis]:
+        prompt = _USER_TEMPLATE.format(
+            domain=self._domain,
+            concept_a=gap.concept_a,
+            description_a=gap.description_a or "not available",
+            papers_a=", ".join(gap.papers_a[:4]) or "unknown",
+            concept_b=gap.concept_b,
+            description_b=gap.description_b or "not available",
+            papers_b=", ".join(gap.papers_b[:4]) or "unknown",
+            similarity=gap.similarity,
+            graph_distance=gap.graph_distance if gap.graph_distance < 999 else "∞",
+        )
+
+        try:
+            response = self._client.messages.create(
+                model=self._model,
+                max_tokens=self._max_tokens,
+                system=_SYSTEM,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            raw = response.content[0].text
+        except anthropic.APIError as exc:
+            log.error("Anthropic API error for gap %s↔%s: %s", gap.concept_a, gap.concept_b, exc)
+            return None
+
+        return self._parse(raw, gap)
+
+    def _parse(self, raw: str, gap: CandidateGap) -> Optional[GapAnalysis]:
+        text = raw.strip()
+        if text.startswith("```"):
+            text = text.split("```", 2)[1]
+            if text.startswith("json"):
+                text = text[4:]
+            text = text.rsplit("```", 1)[0]
+
+        try:
+            data = json.loads(text)
+        except json.JSONDecodeError as exc:
+            log.error("JSON parse error for gap %s↔%s: %s", gap.concept_a, gap.concept_b, exc)
+            return None
+
+        try:
+            return GapAnalysis(
+                concept_a=gap.concept_a,
+                concept_b=gap.concept_b,
+                research_question=data["research_question"],
+                why_unexplored=data["why_unexplored"],
+                intersection_opportunity=data["intersection_opportunity"],
+                methodology=data["methodology"],
+                computational=bool(data.get("computational", True)),
+                novelty=int(data.get("novelty", 3)),
+                tractability=int(data.get("tractability", 3)),
+                impact=int(data.get("impact", 3)),
+                keywords=data.get("keywords", []),
+                similarity=gap.similarity,
+                graph_distance=gap.graph_distance,
+            )
+        except Exception as exc:  # noqa: BLE001
+            log.error("Model validation error for gap %s↔%s: %s", gap.concept_a, gap.concept_b, exc)
+            return None

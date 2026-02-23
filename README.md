@@ -63,8 +63,12 @@ athanor/
 │   │   └── builder.py      # Merge extractions, compute centrality
 │   └── viz/
 │       └── visualizer.py   # pyvis + plotly renderers
+│   └── gaps/
+│       ├── models.py       # CandidateGap, GapAnalysis, GapReport (Pydantic)
+│       └── finder.py       # Claude → scored research questions
 ├── notebooks/
-│   └── stage1_literature_mapper.ipynb
+│   ├── stage1_literature_mapper.ipynb
+│   └── stage2_gap_finder.ipynb
 ├── data/
 │   └── raw/                # Cached arXiv JSON + Claude extractions
 └── outputs/
@@ -116,7 +120,7 @@ Automated science infrastructure is the highest-leverage entry point because it 
 ## Roadmap
 
 - [x] Stage 1 — Literature mapper
-- [ ] Stage 2 — Gap finder (reads Stage 1 output)
+- [x] Stage 2 — Gap finder (reads Stage 1 output)
 - [ ] Stage 3 — Hypothesis generator
 - [ ] Semantic Scholar API as alternative/supplement to arXiv
 - [ ] Full PDF text extraction (GROBID / pypdf)

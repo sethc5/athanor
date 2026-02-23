@@ -7,4 +7,5 @@ Package layout:
   athanor.embed        — text embedding utilities
   athanor.graph        — concept graph extraction and assembly
   athanor.viz          — graph visualization
+  athanor.gaps         — gap analysis and research question surfacing
 """
