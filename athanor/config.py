@@ -24,6 +24,9 @@ class Config:
     arxiv_max_results: int = int(os.environ.get("ARXIV_MAX_RESULTS", "20"))
     arxiv_sort_by: str = os.environ.get("ARXIV_SORT_BY", "relevance")
 
+    # ── Semantic Scholar ─────────────────────────────────────────────────────
+    s2_api_key: str = os.environ.get("S2_API_KEY", "")  # optional; raises rate limit
+
     # ── Embedding ────────────────────────────────────────────────────────────
     embedding_model: str = os.environ.get(
         "EMBEDDING_MODEL", "all-MiniLM-L6-v2"

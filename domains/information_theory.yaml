@@ -1,0 +1,43 @@
+# Information Theory — domain config
+name: information_theory
+display: "Information Theory"
+description: >
+  Mathematical theory of information transmission, compression, and storage.
+  Mature enough to verify pipeline output, open enough to have real gaps.
+  Connects to biology, physics, AI, and consciousness research.
+
+# arXiv / S2 search query
+arxiv_query: "information theory entropy channel capacity mutual information"
+s2_query: "information theory entropy mutual information coding theory"
+
+# Fetch settings
+max_papers: 20
+sources:
+  - arxiv
+  - semantic_scholar
+
+# Analysis settings
+max_gaps: 15
+sparse_sim_threshold: 0.45
+
+# Models
+embedding_model: all-MiniLM-L6-v2
+claude_model: claude-opus-4-5
+
+# Concept extraction hints (injected into Claude prompt)
+domain_context: >
+  This is a mathematical/theoretical domain. Prefer precise technical terms
+  (e.g. "mutual information", "channel capacity", "Kolmogorov complexity")
+  over informal descriptions. Relations should use verbs from the domain
+  vocabulary: bounds, achieves, generalizes, reduces_to, quantifies.
+
+# Keywords that signal important concepts in this domain
+seed_concepts:
+  - entropy
+  - mutual information
+  - channel capacity
+  - rate-distortion theory
+  - Kolmogorov complexity
+  - Fisher information
+  - minimum description length
+  - algorithmic information theory

@@ -1,0 +1,40 @@
+# Longevity Biology — domain config
+name: longevity_biology
+display: "Longevity Biology"
+description: >
+  The biology of aging, lifespan extension, and healthspan improvement.
+  Primary long-term target domain for athanor. Includes senescence,
+  epigenetics, metabolism, proteostasis, and rejuvenation approaches.
+
+arxiv_query: "aging senescence epigenetic clock longevity hallmarks lifespan"
+s2_query: "aging longevity senescence epigenetic clock rejuvenation lifespan extension"
+
+max_papers: 20
+sources:
+  - arxiv
+  - semantic_scholar
+
+max_gaps: 20
+sparse_sim_threshold: 0.40
+
+embedding_model: all-MiniLM-L6-v2
+claude_model: claude-opus-4-5
+
+domain_context: >
+  This is a biological domain. Concepts include molecular mechanisms,
+  cellular processes, organismal phenotypes, and interventions.
+  Relations include: regulates, inhibits, activates, correlates_with,
+  biomarker_of, therapeutic_target, causal_driver, downstream_of.
+  Flag when findings are from model organisms vs. humans.
+
+seed_concepts:
+  - cellular senescence
+  - epigenetic clock
+  - mTOR pathway
+  - NAD+ metabolism
+  - telomere length
+  - proteostasis
+  - mitochondrial dysfunction
+  - inflammaging
+  - caloric restriction
+  - senolytics

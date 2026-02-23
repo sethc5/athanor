@@ -64,6 +64,9 @@ class GapAnalysis(BaseModel):
     similarity: float = 0.0
     graph_distance: int = 999
 
+    # Human review — set in notebook or CLI before Stage 3
+    approved: Optional[bool] = None  # None = unreviewed; True = approved; False = rejected
+
 
 class GapReport(BaseModel):
     """Full ranked gap report over a corpus — Stage 3 input."""
