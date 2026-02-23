@@ -28,6 +28,7 @@ class ExperimentDesign(BaseModel):
     expected_positive: str  # what result confirms the hypothesis
     expected_negative: str  # what result refutes it
     null_hypothesis: str    # the formal H₀
+    statistical_test: str = ""   # e.g. "two-sided t-test, alpha=0.05, power=0.80"
 
     # Flag any validation gaps
     limitations: List[str] = Field(default_factory=list)
@@ -50,6 +51,12 @@ class Hypothesis(BaseModel):
     # Falsifiability
     falsifiable: bool = True
     falsification_criteria: str   # what would definitively refute this
+    minimum_effect_size: str = ""  # e.g. 'r > 0.3', '>2-fold change'
+
+    # Convenience alias used in notebooks / CLI
+    @property
+    def source_gap(self) -> str:
+        return f"{self.gap_concept_a} ⇔ {self.gap_concept_b}"
 
     # Scoring (1–5)
     novelty: int      = Field(ge=1, le=5)
@@ -82,12 +89,12 @@ class HypothesisReport(BaseModel):
     hypotheses: List[Hypothesis] = Field(default_factory=list)
 
     @property
-    def ranked(self) -> List[Hypothesis]:
+    def ranked(self) -> List["Hypothesis"]:
         return sorted(self.hypotheses, key=lambda h: h.composite_score, reverse=True)
 
-    @property
-    def top(self) -> List[Hypothesis]:
-        return self.ranked[:5]
+    def top(self, n: int = 5) -> List["Hypothesis"]:
+        """Return the top-n hypotheses by composite score."""
+        return self.ranked[:n]
 
     @property
     def computational(self) -> List[Hypothesis]:

@@ -31,17 +31,29 @@ class Embedder:
 
     # ── public ───────────────────────────────────────────────────────────────
 
-    def embed(self, texts: List[str]) -> np.ndarray:
-        """Return a (N, D) float32 array of embeddings for *texts*."""
+    def embed(self, texts: List[str], center: bool = True) -> np.ndarray:
+        """Return a (N, D) float32 array of embeddings for *texts*.
+
+        Args:
+            texts:  list of strings to embed
+            center: if True (default), mean-center the embedding matrix to
+                    correct for isotropy problems in sentence-transformer spaces.
+                    Mean-centering removes the dominant global direction that
+                    compresses all pairwise cosine similarities toward 1,
+                    restoring discriminability in high-dimensional space.
+        """
         model = self._load_model()
         log.info("Embedding %d texts with %s", len(texts), self._model_name)
         vectors = model.encode(texts, show_progress_bar=True, batch_size=32)
-        return np.array(vectors, dtype=np.float32)
+        vecs = np.array(vectors, dtype=np.float32)
+        if center and len(vecs) > 1:
+            vecs = vecs - vecs.mean(axis=0, keepdims=True)
+        return vecs
 
     def similarity_matrix(self, texts: List[str]) -> np.ndarray:
-        """Return an (N, N) cosine similarity matrix."""
+        """Return an (N, N) cosine similarity matrix (with isotropy correction)."""
         from sklearn.metrics.pairwise import cosine_similarity
-        vecs = self.embed(texts)
+        vecs = self.embed(texts, center=True)  # mean-centered
         return cosine_similarity(vecs)
 
     # ── private ──────────────────────────────────────────────────────────────

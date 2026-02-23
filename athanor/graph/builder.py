@@ -74,6 +74,7 @@ class GraphBuilder:
             edges=merged_edges,
         )
         self._compute_centrality(graph)
+        self._compute_structural_holes(graph)
 
         if save_path:
             save_path = Path(save_path)
@@ -170,3 +171,45 @@ class GraphBuilder:
         for label, score in centrality.items():
             if label in label_map:
                 label_map[label].centrality = round(score, 4)
+
+    def _compute_structural_holes(self, graph: ConceptGraph) -> None:  # noqa: C901
+        """Annotate each Concept with Burt's structural hole metrics.
+
+        Burt constraint (C_i): how redundant a node's contacts are.
+          0 = pure broker straddling otherwise disconnected clusters
+          1 = fully embedded — all contacts know each other
+
+        Effective size: number of non-redundant contacts in ego network.
+          High = spans many disconnected clusters (good broker signal).
+
+        A node is flagged as `structural_hole=True` when:
+          - burt_constraint < 0.5  (low redundancy in neighbourhood)
+          - centrality         > 0.05 (appears on many shortest paths)
+        """
+        G = graph.to_networkx()
+        if len(G.nodes) < 3:
+            return
+
+        label_map = {c.label: c for c in graph.concepts}
+
+        try:
+            constraint = nx.constraint(G, weight="weight")
+            for label, c_score in constraint.items():
+                if label in label_map:
+                    label_map[label].burt_constraint = round(float(c_score), 4)
+        except Exception:
+            log.debug("Burt constraint computation failed — skipping")
+
+        try:
+            eff_size = nx.effective_size(G, weight="weight")
+            for label, eff in eff_size.items():
+                if label in label_map:
+                    label_map[label].effective_size = round(float(eff), 4)
+        except Exception:
+            log.debug("Effective size computation failed — skipping")
+
+        # Flag structural hole brokers
+        for c in graph.concepts:
+            c.structural_hole = (
+                c.burt_constraint < 0.5 and c.centrality > 0.05
+            )

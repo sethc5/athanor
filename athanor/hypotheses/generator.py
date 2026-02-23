@@ -31,17 +31,25 @@ _SYSTEM = """\
 You are a hypothesis generation engine inside an automated science pipeline.
 
 Your task: given a research gap and its analysis, generate:
-1. A single tight, falsifiable hypothesis
+1. A single tight, falsifiable hypothesis (Popper standard)
 2. A concrete experiment design to test it
+
+A genuine hypothesis (Popperian criteria):
+- States a specific mechanistic or causal claim, NOT a redescription of an observation
+- Has a logically prior falsification criterion: a result that would REFUTE it,
+  specified before running the experiment
+- Makes a quantified or qualifiable prediction, not just "A affects B"
+- Is distinguishable from its null hypothesis
 
 Output ONLY valid JSON matching this exact schema — no prose, no markdown:
 
 {
   "statement":              "<The hypothesis as a single declarative sentence. Start with 'We hypothesize that…'>",
-  "mechanism":              "<Proposed causal or mathematical mechanism — 2-3 sentences>",
-  "prediction":             "<One specific, measurable prediction that follows from the hypothesis>",
-  "falsifiable":            <true/false>,
-  "falsification_criteria": "<What result would definitively refute this hypothesis>",
+  "mechanism":              "<Proposed causal or mathematical mechanism — 2-3 sentences. Must specify direction: A causes B, B causes A, or bidirectional>",
+  "prediction":             "<One specific, measurable prediction with direction and magnitude where possible. E.g.: 'Increasing X by 10%% will reduce Y by at least 5%%'>",
+  "falsifiable":            <true/false — true only if falsification_criteria specifies a concrete refuting result>,
+  "falsification_criteria": "<A specific, concrete result that would definitively refute this hypothesis. NOT 'if the experiment fails' — a positive result that contradicts the mechanism>",
+  "minimum_effect_size":    "<The minimum detectable effect that would constitute confirmation, e.g. 'r > 0.3', 'p < 0.05 with n=100', '>2-fold change'>",
   "novelty":   <integer 1-5>,
   "rigor":     <integer 1-5; how well-formed and testable is this hypothesis>,
   "impact":    <integer 1-5>,
@@ -53,17 +61,21 @@ Output ONLY valid JSON matching this exact schema — no prose, no markdown:
     "computational":        <true if primarily computational, false if wet-lab/observational primary>,
     "estimated_effort":     "<e.g. '1-2 weeks compute', '6-month wet lab study'>",
     "data_requirements":    "<What data or resources are needed>",
-    "expected_positive":    "<What result confirms the hypothesis>",
-    "expected_negative":    "<What result refutes it>",
-    "null_hypothesis":      "<Formal H₀>",
+    "expected_positive":    "<What result confirms the hypothesis — match prediction above>",
+    "expected_negative":    "<What result refutes it — match falsification_criteria above>",
+    "null_hypothesis":      "<Formal H\u2080: the null claim that the experiment is designed to reject>",
+    "statistical_test":     "<The specific statistical test + alpha threshold, e.g. 'two-sided t-test, alpha=0.05, power=0.80'>",
     "limitations":          ["<Limitation 1>", "..."],
     "requires_followup":    "<If computational: what wet-lab step would be needed to fully confirm; null if not applicable>"
   }
 }
 
 Scoring rubric for rigor (1–5):
-5 = fully operationalised, single clear prediction, obvious falsification test
-1 = vague claim, untestable, or unfalsifiable
+5 = fully operationalised — single clear prediction, quantified effect, concrete falsification test, formal H₀
+4 = well-formed — clear prediction, plausible falsification, but effect size unspecified
+3 = testable but vague — no quantification, or multiple confounded predictions
+2 = partially testable — important untestable component or unfalsifiable element
+1 = not a genuine hypothesis — redescription, unfalsifiable, or circular
 
 For experiment.computational:
 - true  = can be substantially tested with existing public data + code + compute
@@ -76,6 +88,10 @@ Domain: {domain}
 Research gap:
   Concept A: {concept_a}
   Concept B: {concept_b}
+
+Gap classification: {bridge_type}
+  (causal=missing mechanistic link | methodological=missing tool/framework |
+   semantic=conceptual | integrative=cross-field/cross-scale)
 
 Research question identified in Stage 2:
   {research_question}
@@ -95,6 +111,12 @@ Generate a hypothesis and experiment design for this gap in {domain}.
 Prefer computational experiments. If the most important test requires wet lab,
 flag it clearly in requires_followup and design a computational proxy experiment
 as the primary steps.
+
+For CAUSAL gaps: the hypothesis MUST specify causal direction and mechanism.
+  Include in minimum_effect_size a concrete threshold (e.g. 'hazard ratio > 1.5',
+  'explained variance > 10%%').
+For METHODOLOGICAL gaps: the hypothesis should describe the missing framework
+  and predict its performance advantage over existing approaches.
 """
 
 
@@ -163,6 +185,7 @@ class HypothesisGenerator:
             domain=self._domain,
             concept_a=analysis.concept_a,
             concept_b=analysis.concept_b,
+            bridge_type=getattr(analysis, "bridge_type", "semantic"),
             research_question=analysis.research_question,
             why_unexplored=analysis.why_unexplored,
             opportunity=analysis.intersection_opportunity,
@@ -212,6 +235,7 @@ class HypothesisGenerator:
                 expected_positive=exp_data.get("expected_positive", ""),
                 expected_negative=exp_data.get("expected_negative", ""),
                 null_hypothesis=exp_data.get("null_hypothesis", ""),
+                statistical_test=exp_data.get("statistical_test", ""),
                 limitations=exp_data.get("limitations", []),
                 requires_followup=exp_data.get("requires_followup"),
             )
@@ -225,6 +249,7 @@ class HypothesisGenerator:
                 prediction=data["prediction"],
                 falsifiable=bool(data.get("falsifiable", True)),
                 falsification_criteria=data["falsification_criteria"],
+                minimum_effect_size=data.get("minimum_effect_size", ""),
                 novelty=int(data.get("novelty", analysis.novelty)),
                 rigor=int(data.get("rigor", 3)),
                 impact=int(data.get("impact", analysis.impact)),

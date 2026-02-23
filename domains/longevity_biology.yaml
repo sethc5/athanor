@@ -3,38 +3,80 @@ name: longevity_biology
 display: "Longevity Biology"
 description: >
   The biology of aging, lifespan extension, and healthspan improvement.
-  Primary long-term target domain for athanor. Includes senescence,
-  epigenetics, metabolism, proteostasis, and rejuvenation approaches.
+  Primary long-term target domain for athanor. Covers all twelve hallmarks
+  of aging (Lopez-Otin 2013 + 2023 update), interventions, and systems biology.
 
-arxiv_query: "aging senescence epigenetic clock longevity hallmarks lifespan"
-s2_query: "aging longevity senescence epigenetic clock rejuvenation lifespan extension"
+arxiv_query: >
+  aging senescence epigenetic clock longevity hallmarks lifespan healthspan
+  inflammaging proteostasis mTOR sirtuins rejuvenation senolytics autophagy
+s2_query: >
+  aging longevity senescence epigenetic clock rejuvenation lifespan extension
+  hallmarks of aging inflammaging proteostasis autophagy dysbiosis
 
 max_papers: 20
 sources:
   - arxiv
   - semantic_scholar
 
-max_gaps: 20
+max_gaps: 25
 sparse_sim_threshold: 0.40
 
 embedding_model: all-MiniLM-L6-v2
 claude_model: claude-opus-4-5
 
 domain_context: >
-  This is a biological domain. Concepts include molecular mechanisms,
-  cellular processes, organismal phenotypes, and interventions.
+  This is a biological domain covering the twelve hallmarks of aging.
+  Original 9 hallmarks (Lopez-Otin 2013): genomic instability, telomere
+  attrition, epigenetic alterations, loss of proteostasis, deregulated
+  nutrient sensing, mitochondrial dysfunction, cellular senescence, stem
+  cell exhaustion, altered intercellular communication.
+  New 3 hallmarks (Lopez-Otin 2023): disabled macroautophagy, chronic
+  inflammation (inflammaging), dysbiosis.
+  Concepts span molecular, cellular, tissue, and organismal scales.
   Relations include: regulates, inhibits, activates, correlates_with,
-  biomarker_of, therapeutic_target, causal_driver, downstream_of.
-  Flag when findings are from model organisms vs. humans.
+  biomarker_of, therapeutic_target, causal_driver, downstream_of,
+  hallmark_of, mitigates, accelerates.
+  Flag when findings are from model organisms (C. elegans, D. melanogaster,
+  mice) vs. human data. Flag when interventions are pharmacological,
+  genetic, or lifestyle-based.
 
 seed_concepts:
+  # Original 9 hallmarks (Lopez-Otin 2013)
+  - genomic instability
+  - telomere attrition
+  - epigenetic alterations
+  - loss of proteostasis
+  - deregulated nutrient sensing
+  - mitochondrial dysfunction
   - cellular senescence
+  - stem cell exhaustion
+  - altered intercellular communication
+  # New 3 hallmarks (Lopez-Otin 2023)
+  - disabled macroautophagy
+  - chronic inflammation
+  - dysbiosis
+  # Key mechanisms and pathways
   - epigenetic clock
   - mTOR pathway
   - NAD+ metabolism
-  - telomere length
-  - proteostasis
-  - mitochondrial dysfunction
-  - inflammaging
+  - AMPK signaling
+  - insulin/IGF-1 signaling
+  - sirtuins
+  - p53 pathway
+  - NF-κB signaling
+  - SASP (senescence-associated secretory phenotype)
+  # Interventions
   - caloric restriction
   - senolytics
+  - rapamycin
+  - metformin
+  - NAD+ precursors
+  - partial reprogramming
+  - fasting mimetics
+  # Biomarkers
+  - telomere length
+  - DNA methylation age
+  - proteome stability
+  - inflammaging markers
+  - gut microbiome diversity
+

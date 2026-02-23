@@ -20,7 +20,11 @@ class Concept(BaseModel):
     description: str = ""
     aliases: List[str] = Field(default_factory=list)
     source_papers: List[str] = Field(default_factory=list)  # arxiv IDs
-    centrality: float = 0.0  # computed by GraphBuilder
+    centrality: float = 0.0      # betweenness centrality (GraphBuilder)
+    # Structural hole metrics (Burt)
+    burt_constraint: float = 1.0    # 0=pure broker, 1=fully embedded cluster
+    effective_size: float = 0.0     # non-redundant contacts in ego network
+    structural_hole: bool = False   # True if key broker between clusters
 
 
 class Edge(BaseModel):

@@ -28,6 +28,10 @@ class CandidateGap(BaseModel):
     papers_a: List[str] = Field(default_factory=list)
     papers_b: List[str] = Field(default_factory=list)
 
+    # Structural hole signal: average broker score of the two endpoints.
+    # High = gap bridges two otherwise disconnected clusters (Burt framework).
+    structural_hole_score: float = 0.0
+
 
 class GapAnalysis(BaseModel):
     """Claude's structured analysis of a single candidate gap."""
@@ -54,8 +58,31 @@ class GapAnalysis(BaseModel):
     @computed_field
     @property
     def composite_score(self) -> float:
-        """Weighted composite: impact × 0.4 + novelty × 0.35 + tractability × 0.25"""
-        return round(self.impact * 0.4 + self.novelty * 0.35 + self.tractability * 0.25, 3)
+        """Weighted composite with bonuses for causal and structural-hole gaps.
+
+        Base: impact × 0.40 + novelty × 0.35 + tractability × 0.25  (1–5 scale)
+        Bonus:
+          +0.50 for causal gaps (directional mechanistic link)
+          +0.25 for integrative gaps (cross-scale / cross-field)
+          +0.25 if structural_hole_score > 0.5 (Burt broker gap)
+        Capped at 5.0.
+        """
+        base = self.impact * 0.40 + self.novelty * 0.35 + self.tractability * 0.25
+        bonus = 0.0
+        if self.bridge_type == "causal":
+            bonus += 0.50
+        elif self.bridge_type == "integrative":
+            bonus += 0.25
+        if self.structural_hole_score > 0.5:
+            bonus += 0.25
+        return round(min(5.0, base + bonus), 3)
+
+    # Gap classification — set by GapFinder
+    # causal        : a missing *mechanistic* link (A causes B or vice versa)
+    # methodological: gap is a missing *tool* or *technique* bridge
+    # semantic      : conceptual proximity not yet formalised in literature
+    # integrative   : gap bridges two different sub-fields or scales
+    bridge_type: str = "semantic"
 
     # Tags for downstream filtering
     keywords: List[str] = Field(default_factory=list)
@@ -63,6 +90,7 @@ class GapAnalysis(BaseModel):
     # Provenance
     similarity: float = 0.0
     graph_distance: int = 999
+    structural_hole_score: float = 0.0
 
     # Human review — set in notebook or CLI before Stage 3
     approved: Optional[bool] = None  # None = unreviewed; True = approved; False = rejected

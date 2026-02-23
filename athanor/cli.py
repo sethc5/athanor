@@ -206,6 +206,7 @@ def run(
         labels = [c.label for c in concept_graph.concepts]
         threshold = dom.get("sparse_sim_threshold", 0.45)
         candidate_gaps = []
+        concept_list = concept_graph.concepts
         for i in range(len(labels)):
             for j in range(i + 1, len(labels)):
                 if csim[i, j] < threshold:
@@ -215,8 +216,18 @@ def run(
                 except nx.NetworkXNoPath:
                     dist = 999
                 if dist > 2:
-                    candidate_gaps.append({"concept_a": labels[i], "concept_b": labels[j],
-                                           "similarity": float(csim[i, j]), "graph_distance": dist})
+                    # Structural hole score: high when both endpoints are brokers
+                    # (low Burt constraint) straddling disconnected clusters
+                    sh_a = 1.0 - concept_list[i].burt_constraint
+                    sh_b = 1.0 - concept_list[j].burt_constraint
+                    sh_score = round((sh_a + sh_b) / 2, 4)
+                    candidate_gaps.append({
+                        "concept_a": labels[i],
+                        "concept_b": labels[j],
+                        "similarity": float(csim[i, j]),
+                        "graph_distance": dist,
+                        "structural_hole_score": sh_score,
+                    })
         candidate_gaps.sort(key=lambda x: x["similarity"], reverse=True)
         gaps_path.write_text(json.dumps(candidate_gaps, indent=2))
         console.print(f"[green]✓ Stage 1 complete[/] — {len(concept_graph.concepts)} concepts, {len(candidate_gaps)} gap candidates")
@@ -245,6 +256,7 @@ def run(
                 description_b=cb.description if cb else "",
                 papers_a=list(ca.source_papers[:4]) if ca else [],
                 papers_b=list(cb.source_papers[:4]) if cb else [],
+                structural_hole_score=g.get("structural_hole_score", 0.0),
             ))
 
         console.print(f"Deduplicating {len(enriched)} candidates…")

@@ -42,11 +42,25 @@ Output ONLY valid JSON matching this exact schema — no prose, no markdown:
   "intersection_opportunity": "<what productive work at this intersection could achieve — 2-3 sentences>",
   "methodology": "<how you would actually investigate this — concrete steps, 3-5 sentences>",
   "computational": <true if it can be substantially investigated computationally, false if wet-lab/observational primary>,
+  "bridge_type": "<classify the gap: 'causal' | 'methodological' | 'semantic' | 'integrative'>",
   "novelty":       <integer 1-5; 5=highly novel>,
   "tractability":  <integer 1-5; 5=very tractable with current tools>,
   "impact":        <integer 1-5; 5=field-changing if answered>,
   "keywords":      ["<3-6 search terms that would find relevant prior work>"]
 }
+
+Bridge type definitions (choose ONE):
+- "causal":         the gap is a missing mechanistic or causal link (A causes/enables/regulates B,
+                    or vice versa) — the most scientifically valuable category
+- "methodological": the gap is a missing technique, tool, or formal framework that would
+                    connect the two concepts
+- "semantic":       the two concepts are studied in parallel but never formally related;
+                    the gap is definitional or taxonomic
+- "integrative":    the gap bridges two different sub-fields, scales, or model systems
+                    (e.g. molecular ↔ organismal, in vitro ↔ in vivo)
+
+CRITICAL for causal gaps: explicitly state whether the causal direction is
+A→B, B→A, bidirectional, or unknown, and cite what directionality evidence exists.
 
 Scoring rubric:
 - novelty 5: genuinely unasked; no paper directly addresses this intersection
@@ -55,6 +69,9 @@ Scoring rubric:
 - tractability 1: requires major new instrumentation or decades of data
 - impact 5: resolves a foundational tension or enables a new class of methods
 - impact 1: niche, confirmatory
+
+Prefer CAUSAL and INTEGRATIVE gaps. Penalise purely semantic gaps (novelty ≤ 2)
+unless the semantic clarification would unblock a significant body of research.
 """
 
 _USER_TEMPLATE = """\
@@ -70,8 +87,12 @@ Appears in papers: {papers_b}
 
 Embedding similarity: {similarity:.3f} (high — these concepts are semantically close)
 Graph distance: {graph_distance} (large — the literature rarely links them directly)
+Structural hole score: {structural_hole_score:.3f} (high = gap bridges disconnected cluster boundary)
 
 Analyze the gap between these two concepts in the context of {domain}.
+Pay special attention to whether there is a directional causal relationship
+between these concepts. If this is a causal gap, specify the direction (A→B,
+B→A, bidirectional, or unknown) and any existing evidence of directionality.
 """
 
 
@@ -144,6 +165,7 @@ class GapFinder:
             papers_b=", ".join(gap.papers_b[:4]) or "unknown",
             similarity=gap.similarity,
             graph_distance=gap.graph_distance if gap.graph_distance < 999 else "∞",
+            structural_hole_score=gap.structural_hole_score,
         )
 
         try:
@@ -183,12 +205,14 @@ class GapFinder:
                 intersection_opportunity=data["intersection_opportunity"],
                 methodology=data["methodology"],
                 computational=bool(data.get("computational", True)),
+                bridge_type=data.get("bridge_type", "semantic"),
                 novelty=int(data.get("novelty", 3)),
                 tractability=int(data.get("tractability", 3)),
                 impact=int(data.get("impact", 3)),
                 keywords=data.get("keywords", []),
                 similarity=gap.similarity,
                 graph_distance=gap.graph_distance,
+                structural_hole_score=gap.structural_hole_score,
             )
         except Exception as exc:  # noqa: BLE001
             log.error("Model validation error for gap %s↔%s: %s", gap.concept_a, gap.concept_b, exc)
