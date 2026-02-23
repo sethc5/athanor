@@ -50,3 +50,14 @@ class TestStripJsonFences:
         raw = '```json\n{"a":1}'
         result = strip_json_fences(raw)
         assert '{"a":1}' in result
+
+    def test_json5_label(self):
+        """json5 and jsonc labels should be stripped cleanly."""
+        raw = '```json5\n{"a":1}\n```'
+        result = strip_json_fences(raw)
+        assert result == '{"a":1}'
+
+    def test_jsonc_label(self):
+        raw = '```jsonc\n{"a":1}\n```'
+        result = strip_json_fences(raw)
+        assert result == '{"a":1}'

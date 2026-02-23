@@ -15,7 +15,7 @@ from typing import Any, Dict
 
 import yaml
 
-_REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+from athanor.config import project_root as _REPO_ROOT
 
 
 def _domains_dir() -> Path:

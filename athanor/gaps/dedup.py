@@ -41,7 +41,9 @@ def deduplicate_gaps(
         (deduplicated_gaps, cluster_map)
         cluster_map: {representative_index → [member_indices]}
     """
-    if len(gaps) <= 1:
+    if not gaps:
+        return gaps, {}
+    if len(gaps) == 1:
         return gaps, {0: [0]}
 
     if embedder is None:

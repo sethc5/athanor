@@ -13,7 +13,6 @@ import logging
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import List, Optional
-import time
 
 import arxiv
 

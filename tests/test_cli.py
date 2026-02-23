@@ -99,7 +99,9 @@ def workspace_with_data(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
         }],
     }))
 
-    # Patch _root everywhere
+    # Patch the single source of truth and all re-exported references
+    import athanor.config as _cfg_mod
+    monkeypatch.setattr(_cfg_mod, "project_root", tmp_path)
     monkeypatch.setattr(pipeline, "_root", tmp_path)
     import athanor.cli as _cli_mod
     monkeypatch.setattr(_cli_mod, "_root", tmp_path)

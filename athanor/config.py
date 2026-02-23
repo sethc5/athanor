@@ -2,6 +2,7 @@
 athanor.config — centralised configuration via environment variables.
 
 All external knobs live here. Import `cfg` everywhere else.
+`project_root` is the single source of truth for the repository root path.
 """
 from __future__ import annotations
 
@@ -11,8 +12,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # Load .env from the project root (two levels up from this file)
-_root = Path(__file__).resolve().parent.parent
-load_dotenv(_root / ".env", override=False)
+project_root = Path(__file__).resolve().parent.parent
+load_dotenv(project_root / ".env", override=False)
 
 
 class Config:
@@ -33,9 +34,9 @@ class Config:
     )
 
     # ── Paths ────────────────────────────────────────────────────────────────
-    project_root: Path = _root
-    data_raw: Path = _root / "data" / "raw"
-    data_processed: Path = _root / "data" / "processed"
+    project_root: Path = project_root
+    data_raw: Path = project_root / "data" / "raw"
+    data_processed: Path = project_root / "data" / "processed"
 
     def validate(self) -> None:
         if not self.anthropic_api_key:

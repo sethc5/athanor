@@ -18,25 +18,18 @@ from __future__ import annotations
 import json
 import logging
 import os
-import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 import click
-from dotenv import load_dotenv
 from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 
-# Make sure athanor package is importable when run from project root
-_root = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(_root))
-load_dotenv(_root / ".env")
-
-from athanor import pipeline  # noqa: E402 — must come after sys.path fix
-from athanor.config import cfg  # noqa: E402
-from athanor.domains import list_domains, load_domain  # noqa: E402
-from athanor.hypotheses.models import HypothesisReport  # noqa: E402
+from athanor import pipeline
+from athanor.config import cfg, project_root as _root
+from athanor.domains import list_domains, load_domain
+from athanor.hypotheses.models import HypothesisReport
 
 console = Console()
 log = logging.getLogger("athanor.cli")

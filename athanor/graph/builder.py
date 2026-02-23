@@ -16,6 +16,8 @@ from __future__ import annotations
 
 import json
 import logging
+import math
+import re as _re
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -27,6 +29,15 @@ from athanor.graph.extractor import ConceptExtractor
 from athanor.graph.models import Concept, ConceptGraph, Edge
 
 log = logging.getLogger(__name__)
+
+
+def normalize_label(s: str) -> str:
+    """Canonical dedup key: lowercase, collapse hyphens/underscores/spaces.
+
+    'Calabi-Yau three-fold' and 'Calabi-Yau threefold' → same key.
+    Exported so tests can import and verify the same logic the merge uses.
+    """
+    return _re.sub(r"[-_\s]+", "", s).lower()
 
 
 class GraphBuilder:
@@ -129,7 +140,12 @@ class GraphBuilder:
             A ConceptGraph with centrality and structural-hole fields populated.
         """
         concepts = [Concept(**c) for c in raw.get("concepts", [])]
-        edges = [Edge(relation=e.get("relation", "related"), **{k: v for k, v in e.items() if k != "relation"}) for e in raw.get("edges", [])]
+        _edge_fields = {f.alias or f_name for f_name, f in Edge.model_fields.items()}
+        edges = []
+        for e in raw.get("edges", []):
+            filtered = {k: v for k, v in e.items() if k in _edge_fields}
+            filtered.setdefault("relation", "related_to")
+            edges.append(Edge(**filtered))
         graph = ConceptGraph(
             domain=domain, query=query, concepts=concepts, edges=edges
         )
@@ -259,24 +275,18 @@ class GraphBuilder:
     ) -> Tuple[List[Concept], List[Edge], Dict[str, str]]:
         """Unify duplicate concepts and remap edge endpoints."""
 
-        def _norm(s: str) -> str:
-            """Canonical dedup key: lowercase, collapse hyphens/underscores/spaces.
-            'Calabi-Yau three-fold' and 'Calabi-Yau threefold' → same key."""
-            import re
-            return re.sub(r"[-_\s]+", "", s).lower()
-
         # Build label → canonical label map (norm-key and case-insensitive)
         canon: Dict[str, str] = {}   # raw label → canonical label
         merged: Dict[str, Concept] = {}  # canonical label → Concept
 
         for c in concepts:
             key = c.label.lower()
-            norm_key = _norm(c.label)
+            norm_key = normalize_label(c.label)
             # Check if any alias already registered as a canonical concept.
             # Try both raw-lowercase and normalised key (catches hyphenation).
             resolved = None
             for alias in [c.label] + c.aliases:
-                for variant in (alias.lower(), _norm(alias)):
+                for variant in (alias.lower(), normalize_label(alias)):
                     if variant in canon:
                         resolved = canon[variant]
                         break
@@ -289,7 +299,7 @@ class GraphBuilder:
                 canon[norm_key] = c.label
                 for alias in c.aliases:
                     canon[alias.lower()] = c.label
-                    canon[_norm(alias)] = c.label
+                    canon[normalize_label(alias)] = c.label
                 if c.label not in merged:
                     merged[c.label] = c
                 else:
@@ -303,8 +313,8 @@ class GraphBuilder:
         # Remap edge endpoints to canonical labels (try normalised key too)
         merged_edges: Dict[Tuple[str, str, str], Edge] = {}
         for e in edges:
-            src = canon.get(e.source.lower()) or canon.get(_norm(e.source), e.source)
-            tgt = canon.get(e.target.lower()) or canon.get(_norm(e.target), e.target)
+            src = canon.get(e.source.lower()) or canon.get(normalize_label(e.source), e.source)
+            tgt = canon.get(e.target.lower()) or canon.get(normalize_label(e.target), e.target)
             if src == tgt:
                 continue  # skip self-loops
             if src not in merged or tgt not in merged:
@@ -377,7 +387,7 @@ class GraphBuilder:
                 if label in label_map:
                     val = float(c_score)
                     # NaN means isolated node — treat as fully embedded (no hole)
-                    label_map[label].burt_constraint = round(val if val == val else 1.0, 4)
+                    label_map[label].burt_constraint = round(1.0 if math.isnan(val) else val, 4)
         except Exception:
             log.debug("Burt constraint computation failed — skipping")
 
@@ -387,7 +397,7 @@ class GraphBuilder:
                 if label in label_map and eff is not None:
                     val = float(eff)
                     # NaN / None means degree-0/1 node — treat as single contact
-                    label_map[label].effective_size = round(val if val == val else 1.0, 4)
+                    label_map[label].effective_size = round(1.0 if math.isnan(val) else val, 4)
         except Exception:
             log.debug("Effective size computation failed — skipping")
 

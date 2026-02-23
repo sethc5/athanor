@@ -11,3 +11,9 @@ Package layout:
   athanor.hypotheses   — hypothesis generation and experiment design
   athanor.domains      — domain configuration loader
 """
+from importlib.metadata import version, PackageNotFoundError
+
+try:
+    __version__ = version("athanor")
+except PackageNotFoundError:
+    __version__ = "0.0.0-dev"

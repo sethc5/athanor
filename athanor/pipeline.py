@@ -16,7 +16,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from sklearn.metrics.pairwise import cosine_similarity
 
-from athanor.config import cfg
+from athanor.config import cfg, project_root as _root
 from athanor.domains import load_domain
 from athanor.embed import Embedder
 from athanor.gaps import GapFinder, deduplicate_gaps
@@ -36,8 +36,16 @@ from athanor.ingest.cocitation import compute_biblio_coupling
 
 log = logging.getLogger("athanor.pipeline")
 
-# Resolved once at import; overridable in tests via monkeypatch.
-_root = Path(__file__).resolve().parent.parent
+
+def _get_api_key() -> str:
+    """Return the Anthropic API key, raising a clear error if unset."""
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not key:
+        raise EnvironmentError(
+            "ANTHROPIC_API_KEY is not set. "
+            "Copy .env.example to .env and add your key."
+        )
+    return key
 
 
 # ── workspace helpers (testable, no Rich) ────────────────────────────────────
@@ -99,7 +107,7 @@ def run_stage_1(
     cocite: bool = False,
     workers: int = 8,
     hyp_path_feedback: Optional[Path] = None,
-) -> Tuple[Any, List[Dict[str, Any]], int]:
+) -> Tuple[ConceptGraph, List[Dict[str, Any]], int]:
     """Run Stage 1: fetch papers → concept graph → candidate gaps.
 
     Returns ``(concept_graph, candidate_gaps, n_papers)``.
@@ -171,7 +179,7 @@ def run_stage_1(
 
     log.info("Fetched %d papers total", len(papers))
 
-    # Bibliographic coupling
+    # Bibliographic coupling — save to disk for downstream use
     if cocite and s2:
         s2_client_cc = SemanticScholarClient(cache_dir=cfg.data_raw)
         s2_ids = [
@@ -182,7 +190,15 @@ def run_stage_1(
         if s2_ids:
             ref_map = s2_client_cc.fetch_references_batch(s2_ids)
             coupling = compute_biblio_coupling(ref_map)
-            log.info("Bibliographic coupling: %d coupled pairs", len(coupling))
+            coupling_path = out["graphs"] / "biblio_coupling.json"
+            coupling_serializable = {
+                f"{a}||{b}": score for (a, b), score in coupling.items()
+            }
+            coupling_path.write_text(json.dumps(coupling_serializable, indent=2))
+            log.info(
+                "Bibliographic coupling: %d coupled pairs → %s",
+                len(coupling), coupling_path,
+            )
 
     # PDF enrichment
     if pdf:
@@ -221,7 +237,7 @@ def run_stage_2(
     *,
     workers: int = 8,
     hyp_path_feedback: Optional[Path] = None,
-) -> Any:
+) -> GapReport:
     """Run Stage 2: candidate gaps → gap analyses.
 
     Returns a ``GapReport``.
@@ -271,7 +287,7 @@ def run_stage_2(
     finder = GapFinder(
         domain=domain_name,
         model=dom.get("claude_model", cfg.model),
-        api_key=os.environ["ANTHROPIC_API_KEY"],
+        api_key=_get_api_key(),
         max_gaps=dom.get("max_gaps", 15),
         max_workers=workers,
         domain_context=dom.get("domain_context", ""),
@@ -298,7 +314,7 @@ def run_stage_3(
     out: Dict[str, Path],
     *,
     workers: int = 8,
-) -> Any:
+) -> HypothesisReport:
     """Run Stage 3: gap analyses → hypotheses.
 
     Returns a ``HypothesisReport``.
@@ -318,7 +334,7 @@ def run_stage_3(
     generator = HypothesisGenerator(
         domain=domain_name,
         model=dom.get("claude_model", cfg.model),
-        api_key=os.environ["ANTHROPIC_API_KEY"],
+        api_key=_get_api_key(),
         max_tokens=dom.get("max_tokens_hypothesis", 4096),
         max_workers=_s3_workers,
         domain_context=dom.get("domain_context", ""),
@@ -341,7 +357,7 @@ def run_critic(
     out: Dict[str, Path],
     *,
     workers: int = 4,
-) -> Any:
+) -> HypothesisReport:
     """Run the independent critic pass on existing hypotheses.
 
     Returns the updated ``HypothesisReport``.
@@ -381,7 +397,7 @@ def run_cross_domain(
     *,
     top: int = 10,
     threshold: float = 0.45,
-) -> Any:
+) -> GapReport:
     """Find structural gaps between two domains.
 
     Returns the cross-domain ``GapReport``.
@@ -452,11 +468,12 @@ def run_cross_domain(
     finder = GapFinder(
         domain=combined_display,
         model=dom_a.get("claude_model", cfg.model),
-        api_key=os.environ["ANTHROPIC_API_KEY"],
+        api_key=_get_api_key(),
         max_gaps=top,
         max_workers=4,
+        domain_context=combined_context,
     )
-    gap_report = finder.analyse(candidates[:top], query=combined_context)
+    gap_report = finder.analyse(candidates[:top], query=f"cross-domain: {name_a} ↔ {name_b}")
 
     out_path = workspace_root() / "outputs" / "gaps" / cross_name
     out_path.mkdir(parents=True, exist_ok=True)

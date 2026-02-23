@@ -17,14 +17,22 @@ def clean_text(text: str) -> str:
 
     Math expressions ($...$) are kept as-is so downstream models
     (Claude, embedders) can use the mathematical content.
-    Only non-math LaTeX commands like \\textbf{...} are stripped.
+    Only non-math LaTeX commands outside of $...$ are stripped.
     """
     # collapse newlines and extra spaces
     text = re.sub(r"\s+", " ", text)
-    # strip non-math LaTeX commands that survive into abstracts
-    # (keep $...$ math expressions intact)
-    text = re.sub(r"\\[a-zA-Z]+\{[^}]*\}", "", text)
-    return text.strip()
+    # strip non-math LaTeX commands that survive into abstracts,
+    # but only OUTSIDE $...$ math delimiters
+    parts = re.split(r"(\$[^$]+\$)", text)
+    cleaned = []
+    for i, part in enumerate(parts):
+        if i % 2 == 1:
+            # Inside $...$  — keep as-is
+            cleaned.append(part)
+        else:
+            # Outside math — strip LaTeX commands
+            cleaned.append(re.sub(r"\\[a-zA-Z]+\{[^}]*\}", "", part))
+    return "".join(cleaned).strip()
 
 
 def paper_to_text(paper: Paper) -> str:
@@ -33,8 +41,9 @@ def paper_to_text(paper: Paper) -> str:
     When full_text is available it is preferred; otherwise abstract.
     The title is always prepended so concept extractors have context.
     """
-    body = paper.full_text if paper.full_text else paper.abstract
-    return f"Title: {paper.title}\n\nAbstract: {clean_text(body)}"
+    if paper.full_text:
+        return f"Title: {paper.title}\n\nFull text:\n{clean_text(paper.full_text)}"
+    return f"Title: {paper.title}\n\nAbstract: {clean_text(paper.abstract)}"
 
 
 def parse_papers(papers: List[Paper]) -> List[dict]:

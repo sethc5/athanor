@@ -39,7 +39,8 @@ def strip_json_fences(text: str) -> str:
     if text.startswith("```"):
         text = text.split("```", 2)[1]
         if text.startswith("json"):
-            text = text[4:]
+            # Strip 'json', 'json5', 'jsonc', etc.
+            text = text[4:].lstrip("abcdefghijklmnopqrstuvwxyz0123456789")
         text = text.rsplit("```", 1)[0]
     return text.strip()
 

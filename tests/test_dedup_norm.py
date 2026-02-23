@@ -1,45 +1,37 @@
 """Tests for _norm() canonicalization and deduplicate_gaps() clustering."""
 from __future__ import annotations
 
-import re
-
 import numpy as np
 import pytest
 
 from athanor.gaps.models import CandidateGap
 from athanor.gaps.dedup import deduplicate_gaps
+from athanor.graph.builder import normalize_label
 
 
-# ── _norm() tests ────────────────────────────────────────────────────────────
-# _norm is a private method inside GraphBuilder._merge, so we replicate the
-# logic here to test the algorithm independently.
+# ── normalize_label() tests ──────────────────────────────────────────────────
 
-def _norm(s: str) -> str:
-    """Mirror of the _norm function in athanor.graph.builder."""
-    return re.sub(r"[-_\s]+", "", s).lower()
-
-
-class TestNorm:
+class TestNormalizeLabel:
     def test_lowercase(self):
-        assert _norm("CalabiYau") == "calabiyau"
+        assert normalize_label("CalabiYau") == "calabiyau"
 
     def test_hyphen_collapse(self):
-        assert _norm("Calabi-Yau") == "calabiyau"
+        assert normalize_label("Calabi-Yau") == "calabiyau"
 
     def test_underscore_collapse(self):
-        assert _norm("Calabi_Yau") == "calabiyau"
+        assert normalize_label("Calabi_Yau") == "calabiyau"
 
     def test_mixed_separators(self):
-        assert _norm("Calabi-Yau three_fold") == "calabiyauthreefold"
+        assert normalize_label("Calabi-Yau three_fold") == "calabiyauthreefold"
 
     def test_empty_string(self):
-        assert _norm("") == ""
+        assert normalize_label("") == ""
 
     def test_already_normalized(self):
-        assert _norm("calabiyau") == "calabiyau"
+        assert normalize_label("calabiyau") == "calabiyau"
 
     def test_multiple_spaces(self):
-        assert _norm("a   b   c") == _norm("abc")
+        assert normalize_label("a   b   c") == normalize_label("abc")
 
 
 # ── deduplicate_gaps() tests ─────────────────────────────────────────────────
