@@ -1,0 +1,1108 @@
+[
+  {
+    "concept_a": "systems biology",
+    "concept_b": "systems biology models",
+    "similarity": 0.7732373476028442,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4996
+  },
+  {
+    "concept_a": "oscillation",
+    "concept_b": "oscillation amplitude",
+    "similarity": 0.7714479565620422,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1673
+  },
+  {
+    "concept_a": "synthetic biology",
+    "concept_b": "synthetic biochemical circuits",
+    "similarity": 0.7322654724121094,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6984
+  },
+  {
+    "concept_a": "system stabilization",
+    "concept_b": "Stability",
+    "similarity": 0.7302908897399902,
+    "graph_distance": 999,
+    "structural_hole_score": 0.249
+  },
+  {
+    "concept_a": "oscillation",
+    "concept_b": "oscillation period",
+    "similarity": 0.6946330070495605,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1673
+  },
+  {
+    "concept_a": "transcription factor binding domain",
+    "concept_b": "exclusive binding",
+    "similarity": 0.6939484477043152,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0598
+  },
+  {
+    "concept_a": "reinforcement learning",
+    "concept_b": "policy",
+    "similarity": 0.6840441226959229,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2699
+  },
+  {
+    "concept_a": "feedback",
+    "concept_b": "negative feedback",
+    "similarity": 0.6672207713127136,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3929
+  },
+  {
+    "concept_a": "Sequence-Function Coupling",
+    "concept_b": "Functional Synthetic Biology",
+    "similarity": 0.661848247051239,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5735
+  },
+  {
+    "concept_a": "CRISPR-based transcription regulator",
+    "concept_b": "CRISPR system selection",
+    "similarity": 0.6606962084770203,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5777
+  },
+  {
+    "concept_a": "annotation",
+    "concept_b": "annotation bias",
+    "similarity": 0.650007963180542,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1395
+  },
+  {
+    "concept_a": "CRISPR technology",
+    "concept_b": "Cellular delivery methods",
+    "similarity": 0.642859935760498,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4249
+  },
+  {
+    "concept_a": "systems biology models",
+    "concept_b": "Multiscale modeling",
+    "similarity": 0.6271620988845825,
+    "graph_distance": 7,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "circuit stability",
+    "concept_b": "Stability",
+    "similarity": 0.6219174861907959,
+    "graph_distance": 999,
+    "structural_hole_score": 0.249
+  },
+  {
+    "concept_a": "rate parameters",
+    "concept_b": "kinetic models",
+    "similarity": 0.6192616820335388,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4971
+  },
+  {
+    "concept_a": "RNase H",
+    "concept_b": "RNase R",
+    "similarity": 0.6141821146011353,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Classical physics",
+    "concept_b": "Relativistic physics",
+    "similarity": 0.6133290529251099,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "CRISPR technology",
+    "concept_b": "Experimental protocol",
+    "similarity": 0.6092286109924316,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "CRISPR technology",
+    "concept_b": "CRISPR system selection",
+    "similarity": 0.6051414012908936,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4256
+  },
+  {
+    "concept_a": "transcription factor molecules",
+    "concept_b": "transcription factor binding domain",
+    "similarity": 0.6006110906600952,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "systems biology models",
+    "concept_b": "realistic model",
+    "similarity": 0.5987821817398071,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4454
+  },
+  {
+    "concept_a": "genetic toggle switch",
+    "concept_b": "synthetic DNA switch",
+    "similarity": 0.5971665382385254,
+    "graph_distance": 3,
+    "structural_hole_score": 0.825
+  },
+  {
+    "concept_a": "positive autoregulation",
+    "concept_b": "negative feedback",
+    "similarity": 0.5919452905654907,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2646
+  },
+  {
+    "concept_a": "CRISPR-based transcription regulator",
+    "concept_b": "Cellular delivery methods",
+    "similarity": 0.5883067846298218,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5771
+  },
+  {
+    "concept_a": "annotation",
+    "concept_b": "annotation qualifiers",
+    "similarity": 0.5862503051757812,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0534
+  },
+  {
+    "concept_a": "DNA targeting site location",
+    "concept_b": "transcription factor binding domain",
+    "similarity": 0.5834894180297852,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "genetic oscillator",
+    "concept_b": "oscillation period",
+    "similarity": 0.5812485218048096,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3755
+  },
+  {
+    "concept_a": "stochastic simulations",
+    "concept_b": "stochastic simulation",
+    "similarity": 0.5801115036010742,
+    "graph_distance": 4,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "synthetic biology",
+    "concept_b": "Biological design problem",
+    "similarity": 0.5749940872192383,
+    "graph_distance": 5,
+    "structural_hole_score": 0.6811
+  },
+  {
+    "concept_a": "Biological Systems",
+    "concept_b": "Biological organism",
+    "similarity": 0.5743323564529419,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0778
+  },
+  {
+    "concept_a": "synthetic biology",
+    "concept_b": "Functional Synthetic Biology",
+    "similarity": 0.5728862285614014,
+    "graph_distance": 999,
+    "structural_hole_score": 0.6801
+  },
+  {
+    "concept_a": "Software Tooling",
+    "concept_b": "Computer-aided design",
+    "similarity": 0.5690861940383911,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4124
+  },
+  {
+    "concept_a": "data incompleteness",
+    "concept_b": "ontology misinterpretation",
+    "similarity": 0.5637117028236389,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0861
+  },
+  {
+    "concept_a": "genetic oscillator",
+    "concept_b": "oscillation amplitude",
+    "similarity": 0.5584558844566345,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3755
+  },
+  {
+    "concept_a": "robustness",
+    "concept_b": "circuit stability",
+    "similarity": 0.5534521341323853,
+    "graph_distance": 7,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "gene expression",
+    "concept_b": "gene function",
+    "similarity": 0.5489316582679749,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4871
+  },
+  {
+    "concept_a": "Functional Synthetic Biology",
+    "concept_b": "Designer cells",
+    "similarity": 0.5483312010765076,
+    "graph_distance": 999,
+    "structural_hole_score": 0.425
+  },
+  {
+    "concept_a": "ontology structure",
+    "concept_b": "gene enrichment analysis",
+    "similarity": 0.5449892282485962,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1257
+  },
+  {
+    "concept_a": "Modular Assembly",
+    "concept_b": "DNA assembly",
+    "similarity": 0.5362911224365234,
+    "graph_distance": 3,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "systems biology models",
+    "concept_b": "Computer-aided design",
+    "similarity": 0.5324383974075317,
+    "graph_distance": 5,
+    "structural_hole_score": 0.6622
+  },
+  {
+    "concept_a": "systems biology",
+    "concept_b": "realistic model",
+    "similarity": 0.5304648876190186,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4455
+  },
+  {
+    "concept_a": "circuit topology",
+    "concept_b": "Gene circuits",
+    "similarity": 0.5302482843399048,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4767
+  },
+  {
+    "concept_a": "CRISPR-based transcription regulator",
+    "concept_b": "Experimental protocol",
+    "similarity": 0.5283856391906738,
+    "graph_distance": 3,
+    "structural_hole_score": 0.402
+  },
+  {
+    "concept_a": "Biology-derived algorithms",
+    "concept_b": "Computer-aided design",
+    "similarity": 0.5278809666633606,
+    "graph_distance": 999,
+    "structural_hole_score": 0.8122
+  },
+  {
+    "concept_a": "annotation bias",
+    "concept_b": "ontology misinterpretation",
+    "similarity": 0.527617335319519,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0861
+  },
+  {
+    "concept_a": "in-silico experiments",
+    "concept_b": "deterministic simulation",
+    "similarity": 0.5227084159851074,
+    "graph_distance": 999,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Symmetry",
+    "concept_b": "Symmetry breaking",
+    "similarity": 0.5211024284362793,
+    "graph_distance": 999,
+    "structural_hole_score": 0.5548
+  },
+  {
+    "concept_a": "flux balance analysis",
+    "concept_b": "kinetic models",
+    "similarity": 0.519789457321167,
+    "graph_distance": 7,
+    "structural_hole_score": 0.498
+  },
+  {
+    "concept_a": "protein repression",
+    "concept_b": "transcription factor molecules",
+    "similarity": 0.5178083181381226,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3334
+  },
+  {
+    "concept_a": "Predictability",
+    "concept_b": "Designability",
+    "similarity": 0.5159390568733215,
+    "graph_distance": 999,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "in-silico experiments",
+    "concept_b": "stochastic simulation",
+    "similarity": 0.5099276304244995,
+    "graph_distance": 999,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "phenotype",
+    "concept_b": "Genotype-phenotype mapping",
+    "similarity": 0.5081729888916016,
+    "graph_distance": 7,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Software Tooling",
+    "concept_b": "Biology-derived algorithms",
+    "similarity": 0.5066184997558594,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3998
+  },
+  {
+    "concept_a": "cellular state control",
+    "concept_b": "programmable control",
+    "similarity": 0.5022645592689514,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "synthetic biology",
+    "concept_b": "programmable control",
+    "similarity": 0.4999772608280182,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4331
+  },
+  {
+    "concept_a": "global oscillations",
+    "concept_b": "Weakly nonlinear amplitude equations",
+    "similarity": 0.49928221106529236,
+    "graph_distance": 9,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Symmetry",
+    "concept_b": "Noether's theorem",
+    "similarity": 0.4982069730758667,
+    "graph_distance": 3,
+    "structural_hole_score": 0.248
+  },
+  {
+    "concept_a": "Functional Synthetic Biology",
+    "concept_b": "Biological design problem",
+    "similarity": 0.4976917505264282,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4949
+  },
+  {
+    "concept_a": "Classical physics",
+    "concept_b": "Quantum physics",
+    "similarity": 0.4953588545322418,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "local oscillations",
+    "concept_b": "Weakly nonlinear amplitude equations",
+    "similarity": 0.49443763494491577,
+    "graph_distance": 9,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "relaxation oscillations",
+    "concept_b": "oscillation period",
+    "similarity": 0.4882175326347351,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "circuit validation",
+    "concept_b": "Validation experiments",
+    "similarity": 0.4878765642642975,
+    "graph_distance": 7,
+    "structural_hole_score": 0.1519
+  },
+  {
+    "concept_a": "Genome engineering",
+    "concept_b": "Genome minimization",
+    "similarity": 0.4864687919616699,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "Genome engineering",
+    "concept_b": "Biological design problem",
+    "similarity": 0.48602601885795593,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4963
+  },
+  {
+    "concept_a": "global oscillations",
+    "concept_b": "oscillation period",
+    "similarity": 0.48190072178840637,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Biological Systems",
+    "concept_b": "systems biology models",
+    "similarity": 0.48144322633743286,
+    "graph_distance": 8,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "guide RNA",
+    "concept_b": "transcription activator",
+    "similarity": 0.48081016540527344,
+    "graph_distance": 7,
+    "structural_hole_score": 0.6435
+  },
+  {
+    "concept_a": "phase diagram",
+    "concept_b": "relaxation oscillations",
+    "similarity": 0.48058319091796875,
+    "graph_distance": 4,
+    "structural_hole_score": 0.583
+  },
+  {
+    "concept_a": "Turing patterns",
+    "concept_b": "Symmetry breaking",
+    "similarity": 0.48044487833976746,
+    "graph_distance": 999,
+    "structural_hole_score": 0.6253
+  },
+  {
+    "concept_a": "Functional Synthetic Biology",
+    "concept_b": "synthetic biochemical circuits",
+    "similarity": 0.47938889265060425,
+    "graph_distance": 999,
+    "structural_hole_score": 0.5121
+  },
+  {
+    "concept_a": "gene function evaluation",
+    "concept_b": "gene function",
+    "similarity": 0.4792201519012451,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3109
+  },
+  {
+    "concept_a": "metabolic flux",
+    "concept_b": "bypass pathway",
+    "similarity": 0.4754052758216858,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3747
+  },
+  {
+    "concept_a": "RNase R",
+    "concept_b": "RNA output",
+    "similarity": 0.4709106683731079,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "local oscillations",
+    "concept_b": "oscillation",
+    "similarity": 0.47087329626083374,
+    "graph_distance": 5,
+    "structural_hole_score": 0.1673
+  },
+  {
+    "concept_a": "synthetic biochemical circuits",
+    "concept_b": "Designer cells",
+    "similarity": 0.47067397832870483,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4433
+  },
+  {
+    "concept_a": "gene expression",
+    "concept_b": "gene activation",
+    "similarity": 0.4704904854297638,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4259
+  },
+  {
+    "concept_a": "gene activation",
+    "concept_b": "transcription factor molecules",
+    "similarity": 0.4685302972793579,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "genetic circuit",
+    "concept_b": "programmable control",
+    "similarity": 0.46753719449043274,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4588
+  },
+  {
+    "concept_a": "generalized modeling",
+    "concept_b": "average model",
+    "similarity": 0.46745213866233826,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4988
+  },
+  {
+    "concept_a": "systems biology",
+    "concept_b": "Biological Systems",
+    "similarity": 0.46540170907974243,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Biological design problem",
+    "concept_b": "Designer cells",
+    "similarity": 0.4647795855998993,
+    "graph_distance": 6,
+    "structural_hole_score": 0.426
+  },
+  {
+    "concept_a": "systems biology",
+    "concept_b": "Multiscale modeling",
+    "similarity": 0.4639086127281189,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "protein copy number fluctuations",
+    "concept_b": "ribosome concentration",
+    "similarity": 0.4634224772453308,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3757
+  },
+  {
+    "concept_a": "local oscillations",
+    "concept_b": "oscillation period",
+    "similarity": 0.4622163772583008,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "RNA output",
+    "concept_b": "RNA degradation",
+    "similarity": 0.4590325951576233,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4975
+  },
+  {
+    "concept_a": "MIMO control system",
+    "concept_b": "open-loop control",
+    "similarity": 0.4589662253856659,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "introductory physics education",
+    "concept_b": "Classical physics",
+    "similarity": 0.45894622802734375,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "feedback",
+    "concept_b": "Stability",
+    "similarity": 0.45731455087661743,
+    "graph_distance": 999,
+    "structural_hole_score": 0.6419
+  },
+  {
+    "concept_a": "CRISPR technology",
+    "concept_b": "Domain knowledge",
+    "similarity": 0.45709800720214844,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4997
+  },
+  {
+    "concept_a": "external control",
+    "concept_b": "open-loop control",
+    "similarity": 0.4570070505142212,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "average model",
+    "concept_b": "Zero-Average dynamics controller",
+    "similarity": 0.45533210039138794,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5818
+  },
+  {
+    "concept_a": "synthetic biochemical circuits",
+    "concept_b": "Gene circuits",
+    "similarity": 0.45452994108200073,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4921
+  },
+  {
+    "concept_a": "Natural evolution",
+    "concept_b": "Evolvability",
+    "similarity": 0.4535934031009674,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "synthetic DNA switch",
+    "concept_b": "RNase H",
+    "similarity": 0.4500502049922943,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3669
+  },
+  {
+    "concept_a": "transcription factor molecules",
+    "concept_b": "transcription activator",
+    "similarity": 0.4489521384239197,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "DNA targeting site location",
+    "concept_b": "exclusive binding",
+    "similarity": 0.44804632663726807,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3096
+  },
+  {
+    "concept_a": "annotation qualifiers",
+    "concept_b": "ontology misinterpretation",
+    "similarity": 0.44700080156326294,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "genetic circuit",
+    "concept_b": "synthetic biochemical circuits",
+    "similarity": 0.4469452500343323,
+    "graph_distance": 3,
+    "structural_hole_score": 0.724
+  },
+  {
+    "concept_a": "relaxation oscillations",
+    "concept_b": "Weakly nonlinear amplitude equations",
+    "similarity": 0.444579154253006,
+    "graph_distance": 9,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "cellular function",
+    "concept_b": "Biological activities",
+    "similarity": 0.44405966997146606,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "mutation",
+    "concept_b": "genetic intervention",
+    "similarity": 0.44361865520477295,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "systems biology",
+    "concept_b": "Cellular automata",
+    "similarity": 0.4430294632911682,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "transcription factor molecules",
+    "concept_b": "inducer molecules",
+    "similarity": 0.44201797246932983,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "circuit validation",
+    "concept_b": "robustness",
+    "similarity": 0.43966811895370483,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "pulse-width modulation",
+    "concept_b": "Pattern dial",
+    "similarity": 0.4390801787376404,
+    "graph_distance": 6,
+    "structural_hole_score": 0.6662
+  },
+  {
+    "concept_a": "metabolic flux",
+    "concept_b": "kinetic models",
+    "similarity": 0.43638068437576294,
+    "graph_distance": 7,
+    "structural_hole_score": 0.6229
+  },
+  {
+    "concept_a": "realistic model",
+    "concept_b": "Computer-aided design",
+    "similarity": 0.4361233115196228,
+    "graph_distance": 999,
+    "structural_hole_score": 0.6081
+  },
+  {
+    "concept_a": "Hopf bifurcation",
+    "concept_b": "fixed point",
+    "similarity": 0.433671772480011,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "local oscillations",
+    "concept_b": "fixed point",
+    "similarity": 0.4325648248195648,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "metabolic pathway",
+    "concept_b": "bypass pathway",
+    "similarity": 0.4310111999511719,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3998
+  },
+  {
+    "concept_a": "synthetic DNA switch",
+    "concept_b": "inducer molecules",
+    "similarity": 0.4303186237812042,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6168
+  },
+  {
+    "concept_a": "biosensor",
+    "concept_b": "signal transduction",
+    "similarity": 0.429812490940094,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2367
+  },
+  {
+    "concept_a": "oscillatory behavior",
+    "concept_b": "circuit stability",
+    "similarity": 0.42797887325286865,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3906
+  },
+  {
+    "concept_a": "open-loop control",
+    "concept_b": "Zero-Average dynamics controller",
+    "similarity": 0.4274135231971741,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3328
+  },
+  {
+    "concept_a": "synthetic rescue",
+    "concept_b": "gene deletion",
+    "similarity": 0.426155686378479,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6245
+  },
+  {
+    "concept_a": "circuit topology",
+    "concept_b": "Network size",
+    "similarity": 0.42582476139068604,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6241
+  },
+  {
+    "concept_a": "gene activation",
+    "concept_b": "positive autoregulation",
+    "similarity": 0.4251071810722351,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2646
+  },
+  {
+    "concept_a": "annotation",
+    "concept_b": "data incompleteness",
+    "similarity": 0.4250423312187195,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1394
+  },
+  {
+    "concept_a": "global oscillations",
+    "concept_b": "oscillation",
+    "similarity": 0.42471641302108765,
+    "graph_distance": 5,
+    "structural_hole_score": 0.1673
+  },
+  {
+    "concept_a": "phase diagram",
+    "concept_b": "global parameter search",
+    "similarity": 0.42463964223861694,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6463
+  },
+  {
+    "concept_a": "CRISPR technology",
+    "concept_b": "Designer cells",
+    "similarity": 0.42428991198539734,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4279
+  },
+  {
+    "concept_a": "Functional Design",
+    "concept_b": "Computer-aided design",
+    "similarity": 0.422793984413147,
+    "graph_distance": 999,
+    "structural_hole_score": 0.7833
+  },
+  {
+    "concept_a": "oscillatory behavior",
+    "concept_b": "local oscillations",
+    "similarity": 0.4214460253715515,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3906
+  },
+  {
+    "concept_a": "gene function evaluation",
+    "concept_b": "data analysis",
+    "similarity": 0.42123058438301086,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "in-vivo experiments",
+    "concept_b": "Experimental tunability",
+    "similarity": 0.41926613450050354,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3328
+  },
+  {
+    "concept_a": "introductory physics education",
+    "concept_b": "Quantum physics",
+    "similarity": 0.4189288020133972,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "in-vivo experiments",
+    "concept_b": "in-silico experiments",
+    "similarity": 0.41880714893341064,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "systems biology models",
+    "concept_b": "stochastic simulations",
+    "similarity": 0.41809988021850586,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "system stabilization",
+    "concept_b": "circuit stability",
+    "similarity": 0.4179619550704956,
+    "graph_distance": 8,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Genetic Sequences",
+    "concept_b": "Genome engineering",
+    "similarity": 0.4177860617637634,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4982
+  },
+  {
+    "concept_a": "Functional Design",
+    "concept_b": "Designability",
+    "similarity": 0.4177453815937042,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3709
+  },
+  {
+    "concept_a": "genetic element",
+    "concept_b": "Gene circuits",
+    "similarity": 0.4169144630432129,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2269
+  },
+  {
+    "concept_a": "transcription activator",
+    "concept_b": "RNase H",
+    "similarity": 0.4168129861354828,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Symmetry",
+    "concept_b": "Quantum physics",
+    "similarity": 0.4149096608161926,
+    "graph_distance": 999,
+    "structural_hole_score": 0.248
+  },
+  {
+    "concept_a": "synthetic biology",
+    "concept_b": "metabolic engineering",
+    "similarity": 0.41430121660232544,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6831
+  },
+  {
+    "concept_a": "reactive flux theory",
+    "concept_b": "Reaction-diffusion systems",
+    "similarity": 0.41428446769714355,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0825
+  },
+  {
+    "concept_a": "stochastic simulations",
+    "concept_b": "gene expression noise",
+    "similarity": 0.4141133427619934,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1511
+  },
+  {
+    "concept_a": "CRISPR technology",
+    "concept_b": "Genome minimization",
+    "similarity": 0.4127293825149536,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "field-effect transistor",
+    "concept_b": "signal transduction",
+    "similarity": 0.41162654757499695,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Modular Assembly",
+    "concept_b": "Functional Synthetic Biology",
+    "similarity": 0.4108850359916687,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4969
+  },
+  {
+    "concept_a": "guide RNA",
+    "concept_b": "RNase H",
+    "similarity": 0.41082966327667236,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3936
+  },
+  {
+    "concept_a": "transcription activator",
+    "concept_b": "RNase R",
+    "similarity": 0.41057753562927246,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "gene activation",
+    "concept_b": "transcription activator",
+    "similarity": 0.4104202091693878,
+    "graph_distance": 7,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Modular Assembly",
+    "concept_b": "Genome engineering",
+    "similarity": 0.4096773564815521,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4984
+  },
+  {
+    "concept_a": "CRISPR-based transcription regulator",
+    "concept_b": "Domain knowledge",
+    "similarity": 0.4096715450286865,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6518
+  },
+  {
+    "concept_a": "reactive flux theory",
+    "concept_b": "flux balance analysis",
+    "similarity": 0.4090542495250702,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "parameter space",
+    "concept_b": "global parameter search",
+    "similarity": 0.40868493914604187,
+    "graph_distance": 3,
+    "structural_hole_score": 0.563
+  },
+  {
+    "concept_a": "guide RNA",
+    "concept_b": "T7 RNA polymerase",
+    "similarity": 0.4074844717979431,
+    "graph_distance": 9,
+    "structural_hole_score": 0.3936
+  },
+  {
+    "concept_a": "annotation",
+    "concept_b": "gene enrichment analysis",
+    "similarity": 0.40721583366394043,
+    "graph_distance": 3,
+    "structural_hole_score": 0.179
+  },
+  {
+    "concept_a": "CRISPR technology",
+    "concept_b": "Ethical considerations",
+    "similarity": 0.40664392709732056,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2499
+  },
+  {
+    "concept_a": "Functional Design",
+    "concept_b": "Biological design problem",
+    "similarity": 0.40563327074050903,
+    "graph_distance": 999,
+    "structural_hole_score": 0.6189
+  },
+  {
+    "concept_a": "time scale separation",
+    "concept_b": "local oscillations",
+    "similarity": 0.40544790029525757,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "gene activation",
+    "concept_b": "inducer molecules",
+    "similarity": 0.4048410654067993,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "genetic element",
+    "concept_b": "Genetic Sequences",
+    "similarity": 0.40466803312301636,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "phase diagram",
+    "concept_b": "global oscillations",
+    "similarity": 0.4043319821357727,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Classical physics",
+    "concept_b": "Conservation laws",
+    "similarity": 0.40359169244766235,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "reactive flux theory",
+    "concept_b": "kinetic models",
+    "similarity": 0.40321236848831177,
+    "graph_distance": 7,
+    "structural_hole_score": 0.2481
+  },
+  {
+    "concept_a": "cataloguing",
+    "concept_b": "gene enrichment analysis",
+    "similarity": 0.4014134407043457,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1257
+  }
+]

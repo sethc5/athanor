@@ -1,0 +1,5889 @@
+{
+  "domain": "synthetic_biology",
+  "query": "synthetic biology gene circuit CRISPR metabolic engineering cell-free biosensor genetic toggle switch oscillator optogenetics\n",
+  "concepts": [
+    {
+      "label": "synthetic biology",
+      "description": "Engineering discipline enabling precise design and control of biological systems through construction of genetic circuits and novel molecular parts.",
+      "aliases": [
+        "synthetic genetic engineering",
+        "synthetic biology toolkit",
+        "bioengineering",
+        "synthetic biology engineering",
+        "synthetic genomics"
+      ],
+      "source_papers": [
+        "1304.0342v1",
+        "2207.00538v1",
+        "1704.03027v1",
+        "2204.04972v1",
+        "2006.02720v1",
+        "2512.01652v1",
+        "1210.1240v2"
+      ],
+      "centrality": 0.1113,
+      "burt_constraint": 0.1337,
+      "effective_size": 8.7658,
+      "structural_hole": true
+    },
+    {
+      "label": "genetic circuit",
+      "description": "Engineered DNA-based regulatory network composed of genetic elements that produce defined cellular behaviors and outputs.",
+      "aliases": [
+        "synthetic circuit",
+        "genetic network",
+        "synthetic gene circuit",
+        "gene network"
+      ],
+      "source_papers": [
+        "1304.0342v1",
+        "1307.3126v1",
+        "1210.1240v2"
+      ],
+      "centrality": 0.1699,
+      "burt_constraint": 0.0824,
+      "effective_size": 13.5628,
+      "structural_hole": true
+    },
+    {
+      "label": "systems biology",
+      "description": "Computational and experimental approach to study cellular behavior and system-level properties through dynamic modeling and integration of interactions.",
+      "aliases": [],
+      "source_papers": [
+        "1304.0342v1",
+        "2006.02720v1"
+      ],
+      "centrality": 0.0139,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "inositol phosphorylceramide synthase",
+      "description": "Enzyme in Leishmania parasites involved in lipid biosynthesis and membrane composition regulation.",
+      "aliases": [
+        "IPCS",
+        "IPC synthase"
+      ],
+      "source_papers": [
+        "1304.0342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Leishmania",
+      "description": "Protozoan parasite causing leishmaniasis; used as model organism for synthetic circuit construction in this study.",
+      "aliases": [
+        "leishmaniasis parasite"
+      ],
+      "source_papers": [
+        "1304.0342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "circuit simulation",
+      "description": "Computational modeling and prediction of dynamic behavior of engineered genetic circuits before experimental validation.",
+      "aliases": [
+        "dynamic simulation",
+        "in-silico modeling"
+      ],
+      "source_papers": [
+        "1304.0342v1"
+      ],
+      "centrality": 0.0066,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "circuit validation",
+      "description": "Experimental verification of genetic circuit function and predicted behavior through qualitative and quantitative measurements.",
+      "aliases": [
+        "experimental validation"
+      ],
+      "source_papers": [
+        "1304.0342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "oscillatory behavior",
+      "description": "Cyclical temporal dynamics in circuit output where molecular concentrations periodically rise and fall.",
+      "aliases": [
+        "oscillations",
+        "periodic dynamics",
+        "oscillatory dynamics"
+      ],
+      "source_papers": [
+        "1304.0342v1",
+        "1307.3126v1",
+        "1305.2954v1"
+      ],
+      "centrality": 0.0711,
+      "burt_constraint": 0.2187,
+      "effective_size": 4.5955,
+      "structural_hole": true
+    },
+    {
+      "label": "bistability",
+      "description": "Circuit property where two distinct stable states are possible; system switches between alternative cellular phenotypes.",
+      "aliases": [
+        "bistable switch",
+        "binary switch",
+        "bistable behavior",
+        "two-state stability"
+      ],
+      "source_papers": [
+        "1304.0342v1",
+        "1307.3126v1",
+        "1101.0723v1"
+      ],
+      "centrality": 0.1314,
+      "burt_constraint": 0.1509,
+      "effective_size": 6.7073,
+      "structural_hole": true
+    },
+    {
+      "label": "robustness",
+      "description": "Property of circuit design ensuring stable and reproducible behavior despite cellular noise and parameter variation.",
+      "aliases": [
+        "intrinsic robustness",
+        "circuit resilience",
+        "parametric robustness"
+      ],
+      "source_papers": [
+        "1304.0342v1",
+        "2512.01652v1"
+      ],
+      "centrality": 0.0355,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "cellular state control",
+      "description": "Ability to precisely manipulate and regulate intracellular conditions and molecular phenotypes using engineered genetic systems.",
+      "aliases": [
+        "cell state engineering"
+      ],
+      "source_papers": [
+        "1304.0342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "genetic element",
+      "description": "Basic molecular components such as promoters, coding sequences, and regulatory regions used to build synthetic circuits.",
+      "aliases": [
+        "genetic part",
+        "molecular part"
+      ],
+      "source_papers": [
+        "1304.0342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Modular Assembly",
+      "description": "Engineering approach that combines standardized, independently functional genetic sequences into larger biological systems.",
+      "aliases": [
+        "modular genetic assembly"
+      ],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.013,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Genetic Sequences",
+      "description": "DNA or RNA sequences that encode functional information and serve as the physical substrate for biological devices.",
+      "aliases": [
+        "genetic components",
+        "DNA sequences"
+      ],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.0066,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Biological Systems",
+      "description": "Complex networks of interacting molecular, cellular, or organism-level components that exhibit emergent biological functions.",
+      "aliases": [
+        "biological devices"
+      ],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Functional Design",
+      "description": "Engineering paradigm that prioritizes specification and implementation of biological function as the primary design objective.",
+      "aliases": [
+        "function-centric design"
+      ],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.0005,
+      "burt_constraint": 0.2582,
+      "effective_size": 4.6304,
+      "structural_hole": false
+    },
+    {
+      "label": "Sequence-Function Coupling",
+      "description": "Traditional synthetic biology approach where sequence specification and functional behavior are tightly entangled, limiting abstraction and reuse.",
+      "aliases": [
+        "sequence-functionality entanglement"
+      ],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.0002,
+      "burt_constraint": 0.3469,
+      "effective_size": 3.5209,
+      "structural_hole": false
+    },
+    {
+      "label": "Abstraction",
+      "description": "Conceptual separation between sequence-level details and functional specifications, enabling modular reuse and design simplification.",
+      "aliases": [],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6224,
+      "effective_size": 1.7499,
+      "structural_hole": false
+    },
+    {
+      "label": "Design Reuse",
+      "description": "Practice of applying previously engineered biological devices to new applications and contexts without complete redesign.",
+      "aliases": [
+        "device reuse",
+        "component reuse"
+      ],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6312,
+      "effective_size": 1.7077,
+      "structural_hole": false
+    },
+    {
+      "label": "Predictability",
+      "description": "Ability to reliably forecast the functional behavior of engineered biological systems from their design specifications.",
+      "aliases": [
+        "engineering predictability"
+      ],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.0001,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Engineering Flexibility",
+      "description": "Capacity to rapidly adapt, reconfigure, or repurpose biological devices across diverse applications and experimental contexts.",
+      "aliases": [
+        "design flexibility"
+      ],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Functional Synthetic Biology",
+      "description": "Emerging paradigm in synthetic biology that decouples sequence design from functional specification to improve modularity, reusability, and predictability.",
+      "aliases": [
+        "function-based synthetic biology"
+      ],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.0003,
+      "burt_constraint": 0.5062,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Software Tooling",
+      "description": "Computational infrastructure and algorithms supporting design, specification, and implementation of biological systems.",
+      "aliases": [
+        "design tools",
+        "computational tools"
+      ],
+      "source_papers": [
+        "2207.00538v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "genetic toggle switch",
+      "description": "A synthetic gene circuit consisting of two genes whose protein products mutually repress each other's expression, exhibiting bistable behavior.",
+      "aliases": [
+        "toggle switch",
+        "genetic switch",
+        "synthetic toggle"
+      ],
+      "source_papers": [
+        "1307.3126v1",
+        "0410003v1",
+        "2204.04972v1",
+        "1811.06263v1"
+      ],
+      "centrality": 0.1649,
+      "burt_constraint": 0.084,
+      "effective_size": 12.7178,
+      "structural_hole": true
+    },
+    {
+      "label": "repressilator",
+      "description": "A synthetic gene circuit composed of three genes arranged in a cyclic repression pattern, where each gene's protein product represses the next gene's expression.",
+      "aliases": [
+        "three-gene oscillator"
+      ],
+      "source_papers": [
+        "1307.3126v1",
+        "1210.1240v2"
+      ],
+      "centrality": 0.0419,
+      "burt_constraint": 0.1608,
+      "effective_size": 7.5256,
+      "structural_hole": false
+    },
+    {
+      "label": "protein repression",
+      "description": "A regulatory mechanism in which a protein product inhibits the expression or transcription of another gene.",
+      "aliases": [
+        "transcriptional repression",
+        "gene repression"
+      ],
+      "source_papers": [
+        "1307.3126v1",
+        "1704.03027v1"
+      ],
+      "centrality": 0.0073,
+      "burt_constraint": 0.3333,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "feedback",
+      "description": "A regulatory mechanism in which the output of a system influences its own input, either enhancing (positive) or dampening (negative) the system's response.",
+      "aliases": [
+        "feedback control",
+        "feedback regulation"
+      ],
+      "source_papers": [
+        "1307.3126v1",
+        "1811.06263v1"
+      ],
+      "centrality": 0.0271,
+      "burt_constraint": 0.2143,
+      "effective_size": 4.5955,
+      "structural_hole": false
+    },
+    {
+      "label": "phase diagram",
+      "description": "A graphical representation of parameter space showing regions where different dynamical behaviors or phases occur.",
+      "aliases": [],
+      "source_papers": [
+        "1307.3126v1"
+      ],
+      "centrality": 0.0629,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": true
+    },
+    {
+      "label": "parameter space",
+      "description": "The multidimensional space of all possible parameter values characterizing a system's behavior.",
+      "aliases": [
+        "high-dimensional space"
+      ],
+      "source_papers": [
+        "1307.3126v1",
+        "1607.06358v2"
+      ],
+      "centrality": 0.0558,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "introductory physics education",
+      "description": "Foundational physics instruction at the undergraduate level, typically covering classical mechanics, thermodynamics, and waves.",
+      "aliases": [
+        "physics sequence",
+        "introductory physics"
+      ],
+      "source_papers": [
+        "1307.3126v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantitative analysis",
+      "description": "Mathematical or numerical treatment of a system to determine its properties, behavior, and relationships.",
+      "aliases": [
+        "analytic treatment",
+        "numerical treatment"
+      ],
+      "source_papers": [
+        "1307.3126v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Bayesian uncertainty analysis",
+      "description": "Statistical framework for quantifying and propagating uncertainty in model parameters and predictions using Bayesian inference.",
+      "aliases": [
+        "Bayesian inference",
+        "Bayesian statistics"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6845,
+      "effective_size": 1.7857,
+      "structural_hole": false
+    },
+    {
+      "label": "systems biology models",
+      "description": "Mathematical representations of biological processes integrating multiple molecular and cellular components to simulate system-level behavior.",
+      "aliases": [
+        "mathematical models",
+        "biological models"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.0499,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "global parameter search",
+      "description": "Systematic exploration of a high-dimensional parameter space to identify all regions consistent with observational data.",
+      "aliases": [
+        "parameter estimation",
+        "global optimization"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.0384,
+      "burt_constraint": 0.3737,
+      "effective_size": 4.2167,
+      "structural_hole": false
+    },
+    {
+      "label": "Bayesian emulator",
+      "description": "Fast statistical surrogate model trained to approximate the behavior of a computationally expensive simulator while quantifying uncertainty.",
+      "aliases": [
+        "emulator",
+        "surrogate model",
+        "statistical emulator"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.0066,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "history matching",
+      "description": "Iterative Bayesian method for systematically narrowing parameter space by identifying regions where model predictions are inconsistent with observed data.",
+      "aliases": [
+        "iterative history match",
+        "history match"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.013,
+      "burt_constraint": 0.4749,
+      "effective_size": 2.3491,
+      "structural_hole": false
+    },
+    {
+      "label": "model evaluation time",
+      "description": "Computational cost or runtime required to simulate a mathematical model given a particular parameter set.",
+      "aliases": [
+        "computational cost",
+        "evaluation cost"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "uncertainty quantification",
+      "description": "Process of characterizing, propagating, and communicating sources and magnitude of uncertainty in model parameters and predictions.",
+      "aliases": [
+        "uncertainty propagation"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8265,
+      "effective_size": 1.0278,
+      "structural_hole": false
+    },
+    {
+      "label": "gene function evaluation",
+      "description": "Analysis of the biological role and regulatory effects of genes within a system using model-based comparison with observed data.",
+      "aliases": [
+        "gene function analysis",
+        "functional inference"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.044,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "hormonal crosstalk",
+      "description": "Regulatory interactions between signaling pathways mediated by plant hormones in developmental processes.",
+      "aliases": [
+        "hormone signaling",
+        "hormonal interaction"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.0066,
+      "burt_constraint": 0.502,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Arabidopsis root development",
+      "description": "Biological system governing growth and tissue differentiation in Arabidopsis thaliana root organs, regulated by multiple hormonal signals.",
+      "aliases": [
+        "root development",
+        "root morphogenesis"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "rate parameters",
+      "description": "Kinetic parameters quantifying reaction rates, transport rates, or gene expression rates in biological models.",
+      "aliases": [
+        "kinetic parameters",
+        "model parameters"
+      ],
+      "source_papers": [
+        "1607.06358v2",
+        "1101.0723v1"
+      ],
+      "centrality": 0.013,
+      "burt_constraint": 0.502,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "observed trend data",
+      "description": "Experimental measurements or qualitative observations of biological variables used to constrain model behavior.",
+      "aliases": [
+        "experimental data",
+        "observational data",
+        "trend data"
+      ],
+      "source_papers": [
+        "1607.06358v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "CRISPR-based transcription regulator",
+      "description": "Synthetic artificial transcriptional regulator using CRISPR technology to specifically activate or repress target genes.",
+      "aliases": [
+        "CRISPR transcriptional regulator",
+        "dCas9-based regulator"
+      ],
+      "source_papers": [
+        "1704.03027v1"
+      ],
+      "centrality": 0.0692,
+      "burt_constraint": 0.1961,
+      "effective_size": 5.7088,
+      "structural_hole": true
+    },
+    {
+      "label": "guide RNA",
+      "description": "RNA molecule that directs CRISPR machinery to specific DNA sequences for targeted gene regulation.",
+      "aliases": [
+        "gRNA",
+        "guide RNA design",
+        "gRNA design",
+        "sgRNA design"
+      ],
+      "source_papers": [
+        "1704.03027v1",
+        "2404.18021v2"
+      ],
+      "centrality": 0.0775,
+      "burt_constraint": 0.2127,
+      "effective_size": 5.4526,
+      "structural_hole": true
+    },
+    {
+      "label": "metabolic pathway",
+      "description": "Interconnected series of enzymatic reactions that convert substrates to products in living cells.",
+      "aliases": [
+        "metabolic network",
+        "biochemical pathway",
+        "metabolic pathway network"
+      ],
+      "source_papers": [
+        "1704.03027v1",
+        "0803.0962v1"
+      ],
+      "centrality": 0.0527,
+      "burt_constraint": 0.2004,
+      "effective_size": 5.0,
+      "structural_hole": true
+    },
+    {
+      "label": "metabolic flux",
+      "description": "The rate and directionality of substrate flow through metabolic pathways.",
+      "aliases": [
+        "metabolic flux distribution",
+        "flux control"
+      ],
+      "source_papers": [
+        "1704.03027v1"
+      ],
+      "centrality": 0.0607,
+      "burt_constraint": 0.2506,
+      "effective_size": 4.0,
+      "structural_hole": true
+    },
+    {
+      "label": "gene expression",
+      "description": "Process by which information from a gene is synthesized into functional gene products, including transcription and translation.",
+      "aliases": [
+        "transcript level",
+        "expression level",
+        "gene expression dynamics"
+      ],
+      "source_papers": [
+        "1704.03027v1",
+        "1811.06263v1",
+        "1210.1240v2"
+      ],
+      "centrality": 0.1024,
+      "burt_constraint": 0.1481,
+      "effective_size": 7.7266,
+      "structural_hole": true
+    },
+    {
+      "label": "data-driven predictive model",
+      "description": "Computational model trained on empirical datasets to predict outcomes without explicit mechanistic rules.",
+      "aliases": [
+        "machine learning model",
+        "predictive model"
+      ],
+      "source_papers": [
+        "1704.03027v1"
+      ],
+      "centrality": 0.0382,
+      "burt_constraint": 0.4167,
+      "effective_size": 2.362,
+      "structural_hole": false
+    },
+    {
+      "label": "metabolic engineering",
+      "description": "Rational design and optimization of metabolic pathways to improve production of desired compounds.",
+      "aliases": [
+        "pathway engineering"
+      ],
+      "source_papers": [
+        "1704.03027v1"
+      ],
+      "centrality": 0.0066,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "DNA targeting site location",
+      "description": "The genomic position where guide RNAs bind within a genetic cassette, determining regulatory effects.",
+      "aliases": [
+        "gRNA target location",
+        "binding site position"
+      ],
+      "source_papers": [
+        "1704.03027v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "programmable control",
+      "description": "Rational tuning and modulation of biological processes through designed genetic elements.",
+      "aliases": [
+        "rational control",
+        "tunable regulation"
+      ],
+      "source_papers": [
+        "1704.03027v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "gene activation",
+      "description": "Upregulation of gene expression to increase transcript and protein production.",
+      "aliases": [
+        "transcriptional activation"
+      ],
+      "source_papers": [
+        "1704.03027v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "chemical production yield",
+      "description": "The quantity of desired product obtained per unit of substrate or time in biomanufacturing processes.",
+      "aliases": [
+        "product yield",
+        "biosynthesis yield"
+      ],
+      "source_papers": [
+        "1704.03027v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Gene Ontology",
+      "description": "A comprehensive resource for cataloguing and standardising gene function annotations across species.",
+      "aliases": [
+        "GO"
+      ],
+      "source_papers": [
+        "1602.01876v1",
+        "1602.01875v1"
+      ],
+      "centrality": 0.0047,
+      "burt_constraint": 0.1448,
+      "effective_size": 8.7818,
+      "structural_hole": false
+    },
+    {
+      "label": "ontology structure",
+      "description": "The hierarchical organisation and logical framework underlying the Gene Ontology classification system.",
+      "aliases": [
+        "GO structure"
+      ],
+      "source_papers": [
+        "1602.01876v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "gene function",
+      "description": "The biological role, activity, or process performed by a gene or its protein product.",
+      "aliases": [
+        "gene function annotation"
+      ],
+      "source_papers": [
+        "1602.01876v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8777,
+      "effective_size": 1.0263,
+      "structural_hole": false
+    },
+    {
+      "label": "annotation",
+      "description": "Association of gene products with standardised GO terms to describe their function, location, or involvement in processes.",
+      "aliases": [
+        "GO annotation"
+      ],
+      "source_papers": [
+        "1602.01876v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8933,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "data analysis",
+      "description": "Computational and statistical methods used to extract biological insights from genomic and functional datasets.",
+      "aliases": [],
+      "source_papers": [
+        "1602.01876v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "cataloguing",
+      "description": "Systematic organisation and classification of biological information into a structured resource.",
+      "aliases": [
+        "classification"
+      ],
+      "source_papers": [
+        "1602.01876v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "mean-field analysis",
+      "description": "Analytical technique that approximates stochastic systems by replacing fluctuating variables with their average values.",
+      "aliases": [
+        "mean-field theory"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "stochastic simulations",
+      "description": "Computational method that models probabilistic dynamics of molecular systems accounting for random fluctuations.",
+      "aliases": [
+        "stochastic modelling"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "reactive flux theory",
+      "description": "Framework for calculating reaction rates by analyzing molecular flux through transition regions in phase space.",
+      "aliases": [
+        "flux theory"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "transition state theory",
+      "description": "Theory that relates reaction rates to the free energy barrier between reactant and product states.",
+      "aliases": [
+        "TST",
+        "activated complex theory"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "switch lifetime",
+      "description": "Characteristic timescale for the genetic toggle to flip between its two stable states; a measure of switch stability.",
+      "aliases": [
+        "switching time",
+        "escape time"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0573,
+      "burt_constraint": 0.1721,
+      "effective_size": 9.4033,
+      "structural_hole": true
+    },
+    {
+      "label": "transcription factor molecules",
+      "description": "Proteins that regulate gene expression by binding to DNA and controlling the rate of transcription.",
+      "aliases": [
+        "TF molecules",
+        "regulatory proteins"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "gene expression noise",
+      "description": "Stochastic fluctuations in the production and degradation of mRNA and proteins arising from the discrete nature of molecular reactions.",
+      "aliases": [
+        "biochemical noise",
+        "molecular noise"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6978,
+      "effective_size": 1.8037,
+      "structural_hole": false
+    },
+    {
+      "label": "shot noise",
+      "description": "Fluctuations in gene expression arising from the production of multiple protein copies from a single mRNA transcript.",
+      "aliases": [
+        "translational noise"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7483,
+      "effective_size": 1.0486,
+      "structural_hole": false
+    },
+    {
+      "label": "protein copy number fluctuations",
+      "description": "Variability in the number of protein molecules produced per mRNA transcript due to stochastic translation.",
+      "aliases": [
+        "translation noise",
+        "copy number noise"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7483,
+      "effective_size": 1.0486,
+      "structural_hole": false
+    },
+    {
+      "label": "transcription factor binding domain",
+      "description": "DNA region where transcription factors bind to regulate gene expression; spatial arrangement affects competitive binding.",
+      "aliases": [
+        "binding site",
+        "operator region"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "exclusive binding",
+      "description": "Arrangement of transcription factor binding domains such that competing factors mutually exclude each other on the DNA.",
+      "aliases": [
+        "exclusive switch",
+        "competitive exclusion"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8805,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "switch barrier",
+      "description": "Free energy barrier separating the two stable states of a genetic toggle switch; determines switching probability.",
+      "aliases": [
+        "energy barrier",
+        "activation barrier"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8648,
+      "effective_size": 1.0256,
+      "structural_hole": false
+    },
+    {
+      "label": "kinetic prefactor",
+      "description": "Attempt frequency factor in transition rate theory that determines the rate of barrier crossing attempts.",
+      "aliases": [
+        "prefactor",
+        "attempt rate"
+      ],
+      "source_papers": [
+        "0410003v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "GO annotations",
+      "description": "Associations between gene products and ontology terms that describe their biological functions, processes, or cellular locations.",
+      "aliases": [
+        "gene-term associations"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0024,
+      "burt_constraint": 0.3839,
+      "effective_size": 4.2273,
+      "structural_hole": false
+    },
+    {
+      "label": "ontology relations",
+      "description": "Logical connections between ontology terms such as 'is-a' and 'part-of' that structure the hierarchy and determine inference rules.",
+      "aliases": [
+        "term relationships",
+        "ontology edges"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0018,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "transitivity",
+      "description": "The property that if A relates to B and B relates to C, then A relates to C; applicable to some but not all ontology relations.",
+      "aliases": [
+        "transitive closure"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0013,
+      "burt_constraint": 0.3341,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "annotation qualifiers",
+      "description": "Metadata tags that modify GO annotations to indicate negation, restricted scope, or conditional applicability of term assignments.",
+      "aliases": [
+        "qualifier flags"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "data incompleteness",
+      "description": "The systematic absence of annotations in GO due to incomplete curation, leading to false negatives in analyses.",
+      "aliases": [
+        "annotation gaps",
+        "missing annotations"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8279,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "gene enrichment analysis",
+      "description": "A statistical method identifying significantly over-represented ontology terms in a list of genes relative to a background set.",
+      "aliases": [
+        "functional enrichment",
+        "GO enrichment"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7486,
+      "effective_size": 1.7778,
+      "structural_hole": false
+    },
+    {
+      "label": "annotation bias",
+      "description": "Systematic skewing of GO annotations toward well-studied genes, popular functions, or specific organisms, confounding aggregate analyses.",
+      "aliases": [
+        "curation bias",
+        "study bias"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8278,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "directed acyclic graph",
+      "description": "A graph structure used by GO where terms are nodes connected by directed edges with no cycles, allowing multiple parents per term.",
+      "aliases": [
+        "DAG"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "ontology misinterpretation",
+      "description": "Incorrect understanding of GO structure, term definitions, or annotation semantics leading to flawed biological conclusions.",
+      "aliases": [
+        "user error"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "is-a relation",
+      "description": "An ontology relation indicating that one term is a subclass of another, supporting upward inference through transitivity.",
+      "aliases": [
+        "subsumption"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "part-of relation",
+      "description": "An ontology relation indicating that one term represents a component of another; transitivity is not always applicable.",
+      "aliases": [
+        "partonomic relation"
+      ],
+      "source_papers": [
+        "1602.01875v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "reinforcement learning",
+      "description": "A machine learning paradigm where an agent learns to make sequential decisions by interacting with an environment and receiving reward signals.",
+      "aliases": [
+        "RL",
+        "learning-based control"
+      ],
+      "source_papers": [
+        "2204.04972v1"
+      ],
+      "centrality": 0.0012,
+      "burt_constraint": 0.5069,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "external control",
+      "description": "A strategy for manipulating or stabilizing a biological system through exogenous inputs or interventions applied from outside the system.",
+      "aliases": [
+        "external intervention"
+      ],
+      "source_papers": [
+        "2204.04972v1"
+      ],
+      "centrality": 0.0008,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "sim-to-real transfer",
+      "description": "A paradigm where a control policy or model is trained in simulation and then deployed on a real physical or biological system.",
+      "aliases": [
+        "sim-to-real",
+        "simulation-to-reality transfer"
+      ],
+      "source_papers": [
+        "2204.04972v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "data efficiency",
+      "description": "The ability of a learning algorithm to achieve good performance with minimal amounts of training data or system interactions.",
+      "aliases": [
+        "sample efficiency"
+      ],
+      "source_papers": [
+        "2204.04972v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "policy",
+      "description": "In reinforcement learning, a mapping from states to actions that defines the behavior of a learning agent.",
+      "aliases": [
+        "control policy",
+        "learned policy"
+      ],
+      "source_papers": [
+        "2204.04972v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.9533,
+      "effective_size": 1.1667,
+      "structural_hole": false
+    },
+    {
+      "label": "simplified model",
+      "description": "A reduced-complexity mathematical or computational representation of a biological system used for efficient learning and prediction.",
+      "aliases": [
+        "simplified system model"
+      ],
+      "source_papers": [
+        "2204.04972v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0077,
+      "effective_size": 1.0556,
+      "structural_hole": false
+    },
+    {
+      "label": "realistic model",
+      "description": "A detailed computational model parameterized from experimental data that more accurately represents actual biological system behavior.",
+      "aliases": [
+        "detailed model",
+        "high-fidelity model"
+      ],
+      "source_papers": [
+        "2204.04972v1"
+      ],
+      "centrality": 0.0001,
+      "burt_constraint": 0.6087,
+      "effective_size": 2.36,
+      "structural_hole": false
+    },
+    {
+      "label": "in-vivo experiments",
+      "description": "Biological experiments conducted within a living organism or cell, providing empirical parameters for system characterization.",
+      "aliases": [
+        "in vivo",
+        "live cell experiments"
+      ],
+      "source_papers": [
+        "2204.04972v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "in-silico experiments",
+      "description": "Computational simulations and modeling studies performed entirely on a computer without biological implementation.",
+      "aliases": [
+        "in silico",
+        "computational experiments"
+      ],
+      "source_papers": [
+        "2204.04972v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "system stabilization",
+      "description": "The process of controlling a dynamical system to maintain it in a desired stable state or trajectory.",
+      "aliases": [
+        "stabilization",
+        "control objective"
+      ],
+      "source_papers": [
+        "2204.04972v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "CRISPR-GPT",
+      "description": "An LLM-based agentic system augmented with domain knowledge and external tools to automate the design and execution of CRISPR gene-editing experiments.",
+      "aliases": [
+        "CRISPR agent",
+        "agentic CRISPR system"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0633,
+      "burt_constraint": 0.1678,
+      "effective_size": 10.4009,
+      "structural_hole": true
+    },
+    {
+      "label": "Large Language Models",
+      "description": "Neural network models trained on large text corpora to perform reasoning and generation tasks; can be augmented with domain knowledge and external tools.",
+      "aliases": [
+        "LLMs",
+        "language models"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0065,
+      "burt_constraint": 0.5102,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "CRISPR technology",
+      "description": "Genome engineering technology enabling precise, targeted modifications to genetic information in living cells.",
+      "aliases": [
+        "CRISPR systems",
+        "CRISPR genome engineering"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0008,
+      "burt_constraint": 0.5003,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "CRISPR system selection",
+      "description": "The process of choosing appropriate CRISPR nuclease and regulatory components suited to the specific gene-editing application.",
+      "aliases": [
+        "system selection"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6485,
+      "effective_size": 1.2594,
+      "structural_hole": false
+    },
+    {
+      "label": "Cellular delivery methods",
+      "description": "Techniques and protocols for introducing CRISPR components (nucleases, guide RNAs) into target cells.",
+      "aliases": [
+        "delivery",
+        "transfection methods",
+        "cell transfection"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6498,
+      "effective_size": 1.2655,
+      "structural_hole": false
+    },
+    {
+      "label": "Experimental protocol",
+      "description": "A detailed step-by-step procedure describing materials, methods, and conditions for conducting a CRISPR gene-editing experiment.",
+      "aliases": [
+        "protocol",
+        "experimental design"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Validation experiments",
+      "description": "Experiments designed to confirm and verify that intended genetic modifications have been successfully introduced and are functional.",
+      "aliases": [
+        "outcome validation",
+        "editing confirmation"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6962,
+      "effective_size": 1.324,
+      "structural_hole": false
+    },
+    {
+      "label": "Gene-editing design",
+      "description": "The systematic process of planning and optimizing all components of a CRISPR experiment from target selection through validation.",
+      "aliases": [
+        "genome editing design",
+        "editing design"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.4338,
+      "effective_size": 3.7986,
+      "structural_hole": false
+    },
+    {
+      "label": "Domain knowledge",
+      "description": "Specialized knowledge about CRISPR systems, molecular biology, and experimental best practices integrated into the LLM agent.",
+      "aliases": [
+        "expert knowledge",
+        "biological expertise"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Genome engineering",
+      "description": "The discipline of making precise, intentional modifications to DNA sequences and chromosomal organization in living organisms.",
+      "aliases": [
+        "genetic engineering",
+        "genome editing",
+        "genetic modification"
+      ],
+      "source_papers": [
+        "2404.18021v2",
+        "2006.02720v1"
+      ],
+      "centrality": 0.0025,
+      "burt_constraint": 0.5033,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Biological design problem",
+      "description": "Complex questions or challenges in synthetic biology and genome engineering requiring domain expertise and reasoning to solve.",
+      "aliases": [
+        "design challenge"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5041,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "External tools",
+      "description": "Computational and laboratory resources, software, and databases integrated with the LLM agent to enhance its capabilities.",
+      "aliases": [
+        "tool integration",
+        "computational resources"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Ethical considerations",
+      "description": "Moral and responsible principles governing the development and use of automated gene-editing technologies.",
+      "aliases": [
+        "ethics",
+        "responsible use"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Regulatory compliance",
+      "description": "Adherence to governmental and institutional guidelines governing the use and reporting of genome engineering technologies.",
+      "aliases": [
+        "regulatory considerations",
+        "governance"
+      ],
+      "source_papers": [
+        "2404.18021v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "synthetic rescue",
+      "description": "A genetic interaction where deletion of a second gene restores viability or function lost due to an initial gene deletion.",
+      "aliases": [
+        "synthetic suppression",
+        "rescue mutation"
+      ],
+      "source_papers": [
+        "0803.0962v1"
+      ],
+      "centrality": 0.0128,
+      "burt_constraint": 0.2509,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "flux balance analysis",
+      "description": "Computational method that constrains metabolic networks using stoichiometry and optimisation to predict metabolic flux distributions.",
+      "aliases": [
+        "FBA",
+        "flux balance-based approaches"
+      ],
+      "source_papers": [
+        "0803.0962v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "gene deletion",
+      "description": "Removal or knockout of a gene, eliminating the expression of the corresponding protein or enzyme.",
+      "aliases": [
+        "gene knockout"
+      ],
+      "source_papers": [
+        "0803.0962v1"
+      ],
+      "centrality": 0.0257,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "essential gene",
+      "description": "A gene required for cell viability or normal growth under standard conditions.",
+      "aliases": [
+        "essential enzyme"
+      ],
+      "source_papers": [
+        "0803.0962v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "mutation",
+      "description": "A change in DNA sequence that can alter or eliminate gene function, causing cellular defects.",
+      "aliases": [
+        "genetic mutation"
+      ],
+      "source_papers": [
+        "0803.0962v1"
+      ],
+      "centrality": 0.0194,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "cellular function",
+      "description": "The biological capabilities and activities performed by cells to maintain viability and respond to environmental signals.",
+      "aliases": [
+        "biological function"
+      ],
+      "source_papers": [
+        "0803.0962v1"
+      ],
+      "centrality": 0.013,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "compensatory mechanism",
+      "description": "A cellular adaptation or alternative pathway that restores lost function through alternative routes or gene activities.",
+      "aliases": [
+        "functional compensation"
+      ],
+      "source_papers": [
+        "0803.0962v1"
+      ],
+      "centrality": 0.0066,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "phenotype",
+      "description": "The observable characteristics or functional state of an organism resulting from its genotype and environment.",
+      "aliases": [
+        "cellular phenotype",
+        "nonviable phenotype"
+      ],
+      "source_papers": [
+        "0803.0962v1"
+      ],
+      "centrality": 0.0029,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "growth rate",
+      "description": "The rate at which cells increase in mass or number; a key measure of metabolic fitness.",
+      "aliases": [
+        "growth",
+        "cellular growth rate"
+      ],
+      "source_papers": [
+        "0803.0962v1",
+        "1210.1240v2"
+      ],
+      "centrality": 0.0373,
+      "burt_constraint": 0.1254,
+      "effective_size": 8.0,
+      "structural_hole": false
+    },
+    {
+      "label": "genetic intervention",
+      "description": "A therapeutic or experimental strategy that modifies gene expression or genomic sequences to alter cellular function.",
+      "aliases": [
+        "genetic therapy"
+      ],
+      "source_papers": [
+        "0803.0962v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "bypass pathway",
+      "description": "An alternative metabolic route that circumvents a blocked enzymatic step to restore flux.",
+      "aliases": [
+        "alternative pathway"
+      ],
+      "source_papers": [
+        "0803.0962v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Biology-derived algorithms",
+      "description": "Computational methods inspired by or derived from natural biological processes and mechanisms.",
+      "aliases": [
+        "biologically inspired algorithms",
+        "bio-inspired computation"
+      ],
+      "source_papers": [
+        "1003.1888v1"
+      ],
+      "centrality": 0.0009,
+      "burt_constraint": 0.2004,
+      "effective_size": 5.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Genetic algorithms",
+      "description": "Evolutionary optimization algorithms that mimic natural selection and genetic variation to solve search and optimization problems.",
+      "aliases": [
+        "GA"
+      ],
+      "source_papers": [
+        "1003.1888v1"
+      ],
+      "centrality": 0.0003,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Neural networks",
+      "description": "Computational models inspired by biological neurons that process information through interconnected nodes to learn patterns and perform inference.",
+      "aliases": [
+        "artificial neural networks",
+        "ANNs"
+      ],
+      "source_papers": [
+        "1003.1888v1"
+      ],
+      "centrality": 0.0003,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Cellular automata",
+      "description": "Discrete computational models consisting of grid-based cells that evolve according to local transition rules, exhibiting emergent behavior.",
+      "aliases": [
+        "CA"
+      ],
+      "source_papers": [
+        "1003.1888v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Natural evolution",
+      "description": "Biological process of adaptive change in populations through selection, mutation, and reproduction over generations.",
+      "aliases": [
+        "evolution"
+      ],
+      "source_papers": [
+        "1003.1888v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Biological activities",
+      "description": "Processes and mechanisms occurring in living organisms such as neural signaling, adaptation, and population dynamics.",
+      "aliases": [],
+      "source_papers": [
+        "1003.1888v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Engineering optimization",
+      "description": "Application of computational and mathematical techniques to find optimal solutions in engineering design and problem-solving.",
+      "aliases": [
+        "optimization"
+      ],
+      "source_papers": [
+        "1003.1888v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Computational sciences",
+      "description": "Scientific discipline focusing on solving problems using computational methods and algorithms.",
+      "aliases": [
+        "computational methods"
+      ],
+      "source_papers": [
+        "1003.1888v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "synthetic biochemical circuits",
+      "description": "Engineered molecular systems composed of DNA, RNA, and proteins designed to perform information processing functions.",
+      "aliases": [
+        "synthetic genetic circuits",
+        "in vitro circuits",
+        "synthetic circuits"
+      ],
+      "source_papers": [
+        "1101.0723v1",
+        "1305.2954v1"
+      ],
+      "centrality": 0.0113,
+      "burt_constraint": 0.4696,
+      "effective_size": 2.3627,
+      "structural_hole": false
+    },
+    {
+      "label": "positive autoregulation",
+      "description": "Gene regulatory motif where a product enhances its own production, creating a self-amplifying feedback loop.",
+      "aliases": [
+        "positive feedback",
+        "autoactivation"
+      ],
+      "source_papers": [
+        "1101.0723v1"
+      ],
+      "centrality": 0.0589,
+      "burt_constraint": 0.4709,
+      "effective_size": 2.3455,
+      "structural_hole": true
+    },
+    {
+      "label": "synthetic DNA switch",
+      "description": "Engineered DNA template composed of multiple synthetic oligonucleotide strands that can toggle between two regulatory states.",
+      "aliases": [
+        "DNA switch template"
+      ],
+      "source_papers": [
+        "1101.0723v1"
+      ],
+      "centrality": 0.0447,
+      "burt_constraint": 0.2661,
+      "effective_size": 4.6062,
+      "structural_hole": false
+    },
+    {
+      "label": "transcription activator",
+      "description": "RNA or protein molecule that enhances RNA synthesis from DNA templates by interacting with RNA polymerase.",
+      "aliases": [
+        "activator RNA"
+      ],
+      "source_papers": [
+        "1101.0723v1"
+      ],
+      "centrality": 0.013,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "T7 RNA polymerase",
+      "description": "Bacteriophage-derived single-subunit RNA polymerase that selectively transcribes T7 promoter sequences with high specificity.",
+      "aliases": [
+        "T7 RNAP",
+        "T7 polymerase"
+      ],
+      "source_papers": [
+        "1101.0723v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "RNase H",
+      "description": "Ribonuclease that cleaves RNA in RNA-DNA hybrid duplexes; essential for achieving bistability in the synthetic switch.",
+      "aliases": [
+        "ribonuclease H"
+      ],
+      "source_papers": [
+        "1101.0723v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "RNase R",
+      "description": "Processive ribonuclease that degrades RNA and removes incomplete degradation products to maintain stable signal levels.",
+      "aliases": [
+        "ribonuclease R"
+      ],
+      "source_papers": [
+        "1101.0723v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "RNA output",
+      "description": "Transcription product generated by the synthetic circuit that feeds back to regulate its own synthesis.",
+      "aliases": [
+        "output RNA",
+        "transcript"
+      ],
+      "source_papers": [
+        "1101.0723v1"
+      ],
+      "centrality": 0.0066,
+      "burt_constraint": 0.5033,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "thermodynamic constraints",
+      "description": "Physical chemical principles governing equilibrium stability and sequence design criteria for the synthetic DNA switch.",
+      "aliases": [
+        "thermodynamic design"
+      ],
+      "source_papers": [
+        "1101.0723v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "mathematical model",
+      "description": "Quantitative framework used to describe switch dynamics, fit experimental parameters, and predict system behavior.",
+      "aliases": [
+        "kinetic model",
+        "dynamic model",
+        "computational model"
+      ],
+      "source_papers": [
+        "1101.0723v1",
+        "2006.02720v1"
+      ],
+      "centrality": 0.0196,
+      "burt_constraint": 0.5037,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "RNA degradation",
+      "description": "Enzymatic breakdown of RNA transcripts by nucleases, controlling signal amplitude and stability.",
+      "aliases": [
+        "RNA turnover",
+        "RNA decay"
+      ],
+      "source_papers": [
+        "1101.0723v1"
+      ],
+      "centrality": 0.0066,
+      "burt_constraint": 0.5017,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "metabolators",
+      "description": "Synthetic hybrid metabolic-genetic circuits that combine metabolic and genetic regulatory components to generate oscillatory dynamics.",
+      "aliases": [
+        "metabolic-genetic oscillators"
+      ],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.007,
+      "burt_constraint": 0.3343,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "core metabolator",
+      "description": "A reference topological circuit architecture serving as the foundational model for studying metabolator family dynamics.",
+      "aliases": [
+        "reverse metabolator"
+      ],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.0334,
+      "burt_constraint": 0.2006,
+      "effective_size": 5.0,
+      "structural_hole": false
+    },
+    {
+      "label": "generalized modeling",
+      "description": "A mathematical framework for analyzing dynamical systems that studies behavior under general kinetic assumptions without requiring precise rate parameters.",
+      "aliases": [
+        "GM"
+      ],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.0039,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Hopf bifurcation",
+      "description": "A local bifurcation where a fixed point loses stability and a periodic orbit (limit cycle) emerges as a system parameter varies.",
+      "aliases": [],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.0348,
+      "burt_constraint": 0.5003,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "kinetic models",
+      "description": "Mathematical representations of biochemical reaction networks that specify rate equations governing metabolite and protein concentrations.",
+      "aliases": [
+        "kinetics",
+        "rate models"
+      ],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.0009,
+      "burt_constraint": 0.5037,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "circuit topology",
+      "description": "The directed graph structure encoding regulatory interactions and feedback loops in a genetic or metabolic circuit.",
+      "aliases": [
+        "network topology"
+      ],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.0095,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "relaxation oscillations",
+      "description": "Oscillations characterised by alternating slow and fast motion phases, often arising from separated time scales in a dynamical system.",
+      "aliases": [],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.013,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "time scale separation",
+      "description": "Coexistence of fast and slow processes in a system; when widely separated, enables reduction techniques and affects bifurcation structure.",
+      "aliases": [
+        "separated time scales",
+        "multiscale dynamics"
+      ],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.0066,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "local oscillations",
+      "description": "Periodic fluctuations that persist in a neighbourhood of equilibrium, typically near a bifurcation point.",
+      "aliases": [],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "global oscillations",
+      "description": "Large-amplitude periodic orbits sustained far from equilibrium, typically spanning a significant fraction of the state space.",
+      "aliases": [],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "circuit stability",
+      "description": "The property of a circuit to maintain robustness against perturbations and prevent unwanted dynamical transitions.",
+      "aliases": [],
+      "source_papers": [
+        "1305.2954v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Computer-aided design",
+      "description": "Computational methodology for rational and systematic engineering of biological systems using mathematical models and software tools.",
+      "aliases": [
+        "CAD",
+        "computational design"
+      ],
+      "source_papers": [
+        "2006.02720v1"
+      ],
+      "centrality": 0.0538,
+      "burt_constraint": 0.1751,
+      "effective_size": 6.7188,
+      "structural_hole": true
+    },
+    {
+      "label": "Whole-cell model",
+      "description": "Comprehensive multiscale mathematical representation capturing all major cellular processes and linking genotypes to phenotypes.",
+      "aliases": [
+        "whole-cell simulation",
+        "in silico cell"
+      ],
+      "source_papers": [
+        "2006.02720v1"
+      ],
+      "centrality": 0.0324,
+      "burt_constraint": 0.1678,
+      "effective_size": 6.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Multiscale modeling",
+      "description": "Mathematical framework that integrates processes across multiple biological scales from molecular to cellular levels.",
+      "aliases": [
+        "multiscale representation"
+      ],
+      "source_papers": [
+        "2006.02720v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Genotype-phenotype mapping",
+      "description": "Quantitative relationship linking genetic information to observable cellular characteristics and functions.",
+      "aliases": [
+        "G-P mapping"
+      ],
+      "source_papers": [
+        "2006.02720v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Design-build-test-learn cycle",
+      "description": "Iterative engineering cycle combining computational design, physical construction, experimental validation, and model refinement.",
+      "aliases": [
+        "DBTL cycle"
+      ],
+      "source_papers": [
+        "2006.02720v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Genome minimization",
+      "description": "Engineering strategy to reduce genome size while retaining essential cellular functions.",
+      "aliases": [
+        "minimal genome design"
+      ],
+      "source_papers": [
+        "2006.02720v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Cell-free systems",
+      "description": "Biochemical systems in vitro lacking cellular membranes but capable of supporting transcription and translation.",
+      "aliases": [
+        "cell-free protein synthesis",
+        "in vitro systems"
+      ],
+      "source_papers": [
+        "2006.02720v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "DNA assembly",
+      "description": "Molecular methods for synthesizing and combining DNA fragments into larger constructs or genomes.",
+      "aliases": [
+        "DNA synthesis",
+        "assembly methods"
+      ],
+      "source_papers": [
+        "2006.02720v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Designer cells",
+      "description": "Engineered cellular organisms with bespoke synthetic functions and increased modularity.",
+      "aliases": [
+        "synthetic cells"
+      ],
+      "source_papers": [
+        "2006.02720v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6438,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "MIMO control system",
+      "description": "Multi-Input Multi-Output control system where multiple inputs regulate multiple outputs simultaneously.",
+      "aliases": [
+        "MIMO"
+      ],
+      "source_papers": [
+        "1811.06263v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "pulse-width modulation",
+      "description": "Control technique that varies the duty cycle of periodic pulses to modulate system behavior in real-time.",
+      "aliases": [
+        "PWM"
+      ],
+      "source_papers": [
+        "1811.06263v1"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "inducer molecules",
+      "description": "Chemical compounds (aTc and IPTG) that regulate gene expression in the toggle switch by controlling transcriptional repression.",
+      "aliases": [
+        "inducers"
+      ],
+      "source_papers": [
+        "1811.06263v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "duty cycle",
+      "description": "The fraction of time a periodic signal remains in the active state, ranging from 0 to 1.",
+      "aliases": [],
+      "source_papers": [
+        "1811.06263v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "open-loop control",
+      "description": "Control strategy that applies predetermined inputs without real-time feedback from the system output.",
+      "aliases": [],
+      "source_papers": [
+        "1811.06263v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "average model",
+      "description": "Mathematical model that approximates the behavior of a periodically-driven system by averaging its dynamics over pulse periods.",
+      "aliases": [
+        "averaged model"
+      ],
+      "source_papers": [
+        "1811.06263v1"
+      ],
+      "centrality": 0.011,
+      "burt_constraint": 0.502,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "hybrid PI-PWM controller",
+      "description": "Feedback controller combining proportional-integral (PI) error correction with pulse-width modulation for real-time duty-cycle adjustment.",
+      "aliases": [
+        "PI-PWM"
+      ],
+      "source_papers": [
+        "1811.06263v1"
+      ],
+      "centrality": 0.0104,
+      "burt_constraint": 0.2511,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Zero-Average dynamics controller",
+      "description": "Feedback controller that drives the system state toward a sliding surface by nullifying average dynamics.",
+      "aliases": [
+        "ZAD controller",
+        "ZAD"
+      ],
+      "source_papers": [
+        "1811.06263v1"
+      ],
+      "centrality": 0.0028,
+      "burt_constraint": 0.3344,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "deterministic simulation",
+      "description": "In-silico model validation using ordinary differential equations assuming no stochastic noise.",
+      "aliases": [],
+      "source_papers": [
+        "1811.06263v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "stochastic simulation",
+      "description": "In-silico model validation using the Stochastic Simulation Algorithm to account for molecular-level noise and discrete events.",
+      "aliases": [
+        "SSA",
+        "Gillespie simulation"
+      ],
+      "source_papers": [
+        "1811.06263v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Turing patterns",
+      "description": "Spatially periodic patterns that emerge from reaction-diffusion systems through symmetry-breaking instability in morphogen gradients.",
+      "aliases": [
+        "Turing instability",
+        "reaction-diffusion patterns"
+      ],
+      "source_papers": [
+        "2512.01652v1"
+      ],
+      "centrality": 0.0082,
+      "burt_constraint": 0.3631,
+      "effective_size": 3.5789,
+      "structural_hole": false
+    },
+    {
+      "label": "Gene circuits",
+      "description": "Synthetic or natural networks of interacting genes and their products that produce emergent biological behavior.",
+      "aliases": [
+        "genetic circuits",
+        "gene networks"
+      ],
+      "source_papers": [
+        "2512.01652v1"
+      ],
+      "centrality": 0.02,
+      "burt_constraint": 0.5462,
+      "effective_size": 2.3462,
+      "structural_hole": false
+    },
+    {
+      "label": "Pattern switch",
+      "description": "A control mechanism that toggles the onset of spatial pattern formation via a single tunable parameter.",
+      "aliases": [],
+      "source_papers": [
+        "2512.01652v1"
+      ],
+      "centrality": 0.0002,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Pattern dial",
+      "description": "A control mechanism enabling continuous transitions between distinct pattern types through parameter modulation.",
+      "aliases": [],
+      "source_papers": [
+        "2512.01652v1"
+      ],
+      "centrality": 0.0068,
+      "burt_constraint": 0.334,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Weakly nonlinear amplitude equations",
+      "description": "Mathematical framework describing slow dynamics of pattern-forming instabilities near bifurcation points through reduced amplitude variables.",
+      "aliases": [
+        "amplitude equations",
+        "envelope equations"
+      ],
+      "source_papers": [
+        "2512.01652v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Experimental tunability",
+      "description": "The capacity to adjust system output or behavior through controllable experimental parameters in biological systems.",
+      "aliases": [
+        "tunability"
+      ],
+      "source_papers": [
+        "2512.01652v1"
+      ],
+      "centrality": 0.0118,
+      "burt_constraint": 0.3343,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Network size",
+      "description": "The number of nodes (genes) or regulatory interactions comprising a gene circuit architecture.",
+      "aliases": [
+        "circuit size",
+        "network complexity"
+      ],
+      "source_papers": [
+        "2512.01652v1"
+      ],
+      "centrality": 0.0303,
+      "burt_constraint": 0.2513,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Evolvability",
+      "description": "The capacity of a biological system to generate heritable phenotypic variation and adapt through evolution.",
+      "aliases": [],
+      "source_papers": [
+        "2512.01652v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Designability",
+      "description": "The ease with which a system can be engineered or programmed to achieve desired functional outcomes.",
+      "aliases": [
+        "design accessibility"
+      ],
+      "source_papers": [
+        "2512.01652v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Reaction-diffusion systems",
+      "description": "Systems combining chemical reactions with spatial diffusion of molecular species, fundamental to pattern formation.",
+      "aliases": [
+        "RD systems"
+      ],
+      "source_papers": [
+        "2512.01652v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8351,
+      "effective_size": 1.0556,
+      "structural_hole": false
+    },
+    {
+      "label": "genetic oscillator",
+      "description": "A gene regulatory network that exhibits periodic oscillations in expression levels of one or more genes.",
+      "aliases": [
+        "oscillatory genetic circuit",
+        "genetic oscillator circuit"
+      ],
+      "source_papers": [
+        "1210.1240v2"
+      ],
+      "centrality": 0.022,
+      "burt_constraint": 0.249,
+      "effective_size": 5.3214,
+      "structural_hole": false
+    },
+    {
+      "label": "cell physiology",
+      "description": "The physical and biochemical state of cells including macromolecular composition, ribosome concentration, and cell volume.",
+      "aliases": [
+        "cellular state",
+        "cellular chassis"
+      ],
+      "source_papers": [
+        "1210.1240v2"
+      ],
+      "centrality": 0.0057,
+      "burt_constraint": 0.4114,
+      "effective_size": 2.3333,
+      "structural_hole": false
+    },
+    {
+      "label": "ribosome concentration",
+      "description": "The abundance of ribosomes per unit cell volume, a key determinant of translational capacity that varies with growth rate.",
+      "aliases": [
+        "ribosomal abundance"
+      ],
+      "source_papers": [
+        "1210.1240v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "oscillation",
+      "description": "Periodic temporal fluctuation in the abundance of gene products or regulatory molecules in a genetic circuit.",
+      "aliases": [
+        "oscillatory dynamics",
+        "periodic oscillation"
+      ],
+      "source_papers": [
+        "1210.1240v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6655,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "fixed point",
+      "description": "A steady-state equilibrium solution of a dynamical system where concentrations remain constant in time.",
+      "aliases": [
+        "steady state",
+        "equilibrium"
+      ],
+      "source_papers": [
+        "1210.1240v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "negative feedback",
+      "description": "A regulatory mechanism where a gene product inhibits the expression of genes upstream in its regulatory pathway, enabling oscillatory behavior.",
+      "aliases": [
+        "negative feedback regulation"
+      ],
+      "source_papers": [
+        "1210.1240v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "plasmid",
+      "description": "An extrachromosomal circular DNA molecule used as a vehicle for genetic circuit implementation in synthetic biology.",
+      "aliases": [],
+      "source_papers": [
+        "1210.1240v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "oscillation period",
+      "description": "The time interval for one complete cycle of oscillation in a genetic oscillator.",
+      "aliases": [
+        "period"
+      ],
+      "source_papers": [
+        "1210.1240v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "oscillation amplitude",
+      "description": "The magnitude of fluctuation from baseline in the abundance of oscillating gene products.",
+      "aliases": [
+        "amplitude"
+      ],
+      "source_papers": [
+        "1210.1240v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "cell volume",
+      "description": "The physical volume occupied by a bacterial cell, which scales with growth rate and affects molecular concentrations.",
+      "aliases": [],
+      "source_papers": [
+        "1210.1240v2"
+      ],
+      "centrality": 0.0099,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Symmetry",
+      "description": "Mathematical principle characterizing invariance under transformations; fundamental to physics from classical mechanics through quantum theory.",
+      "aliases": [
+        "symmetry principle"
+      ],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0001,
+      "burt_constraint": 0.5041,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Symmetry breaking",
+      "description": "Process by which a system transitions from a symmetric state to one with reduced symmetry, enabling phase transitions and pattern formation.",
+      "aliases": [
+        "spontaneous symmetry breaking"
+      ],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.3863,
+      "effective_size": 3.5,
+      "structural_hole": false
+    },
+    {
+      "label": "Classical physics",
+      "description": "Framework of mechanics and electromagnetism based on deterministic laws and absolute space-time, prior to relativistic and quantum revisions.",
+      "aliases": [],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Relativistic physics",
+      "description": "Theory of spacetime and gravitation incorporating Einstein's principle of relativity and constancy of the speed of light.",
+      "aliases": [
+        "theory of relativity"
+      ],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Quantum physics",
+      "description": "Theory describing behaviour of matter and energy at atomic and subatomic scales, governed by wave-particle duality and probabilistic outcomes.",
+      "aliases": [
+        "quantum mechanics"
+      ],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Conservation laws",
+      "description": "Principles stating that certain physical quantities (energy, momentum, charge) remain constant in isolated systems.",
+      "aliases": [
+        "conservation properties"
+      ],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0001,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Stability",
+      "description": "Property of a system to maintain or return to its state when subject to perturbations.",
+      "aliases": [
+        "structural stability"
+      ],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0002,
+      "burt_constraint": 0.502,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Critical transitions",
+      "description": "Abrupt changes in system behaviour at critical points, characterized by extended variability and reorganization across organizational levels.",
+      "aliases": [
+        "criticality",
+        "extended criticality"
+      ],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.5201,
+      "effective_size": 2.4231,
+      "structural_hole": false
+    },
+    {
+      "label": "Biological organism",
+      "description": "Living system exhibiting organization across multiple hierarchical levels from molecular to organismal scales.",
+      "aliases": [
+        "organism"
+      ],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8443,
+      "effective_size": 1.0303,
+      "structural_hole": false
+    },
+    {
+      "label": "Viability interval",
+      "description": "Range of conditions and structural variations within which a biological system maintains functional integrity and continued existence.",
+      "aliases": [
+        "interval of viability"
+      ],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Variability",
+      "description": "Inherent differences and fluctuations in biological systems, fundamental to adaptive processes and extended critical transitions.",
+      "aliases": [],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0002,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Noether's theorem",
+      "description": "Fundamental result linking continuous symmetries to conservation laws in physical systems.",
+      "aliases": [],
+      "source_papers": [
+        "1103.1833v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "graphene",
+      "description": "Two-dimensional carbon allotrope with exceptional electronic, thermal, and mechanical properties used as a sensing material in biosensors.",
+      "aliases": [
+        "graphene material"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7821,
+      "effective_size": 1.0263,
+      "structural_hole": false
+    },
+    {
+      "label": "field-effect transistor",
+      "description": "Semiconductor device that modulates electrical conductance through an applied electric field, used for signal transduction in biosensing.",
+      "aliases": [
+        "FET"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "graphene field-effect transistor",
+      "description": "FET device incorporating graphene as the active sensing channel for ultrasensitive bioanalyte detection.",
+      "aliases": [
+        "graphene FET",
+        "GFET"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0017,
+      "burt_constraint": 0.2231,
+      "effective_size": 6.4848,
+      "structural_hole": false
+    },
+    {
+      "label": "biosensor",
+      "description": "Analytical device combining a biological recognition element with a physical transducer to detect and quantify target analytes.",
+      "aliases": [
+        "bioanalytical sensor"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.5266,
+      "effective_size": 2.3148,
+      "structural_hole": false
+    },
+    {
+      "label": "nanomaterial",
+      "description": "Material with structural features at the nanoscale that exhibits enhanced properties compared to bulk materials.",
+      "aliases": [
+        "nanostructure"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "virus detection",
+      "description": "Identification and quantification of viral particles or viral antigens in biological samples.",
+      "aliases": [
+        "viral detection",
+        "pathogen detection"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "SARS-CoV-2",
+      "description": "Coronavirus responsible for the COVID-19 pandemic, requiring rapid and reliable diagnostic detection methods.",
+      "aliases": [
+        "coronavirus",
+        "COVID-19 virus"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "sensitivity",
+      "description": "Ability of a biosensor to detect small quantities of analyte and produce a measurable signal change.",
+      "aliases": [
+        "detection sensitivity",
+        "ultrasensitivity"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.5301,
+      "effective_size": 2.338,
+      "structural_hole": false
+    },
+    {
+      "label": "signal transduction",
+      "description": "Conversion of binding events at the biosensor surface into measurable electrical or physical signals.",
+      "aliases": [
+        "signal transduction mechanism"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "rapid detection",
+      "description": "Quick identification and quantification of target analytes with minimal processing time.",
+      "aliases": [
+        "fast detection",
+        "point-of-care detection"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8006,
+      "effective_size": 1.0265,
+      "structural_hole": false
+    },
+    {
+      "label": "low-noise detection",
+      "description": "Biosensing technique that minimizes background electrical noise to improve signal-to-noise ratio and measurement accuracy.",
+      "aliases": [
+        "noise reduction"
+      ],
+      "source_papers": [
+        "2012.05543v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "synthetic biology",
+      "target": "genetic circuit",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Synthetic biology enables the precise control of cellular states through construction of genetic circuits for systems studies.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "genetic circuit",
+      "target": "inositol phosphorylceramide synthase",
+      "relation": "targets",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Genetic circuit was designed for the targeted enzyme inositol phosphorylceramide synthase belonging to Leishmania.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "genetic circuit",
+      "target": "circuit simulation",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "To explore the dynamic nature of the circuit designed, simulation was done followed by circuit validation.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "circuit simulation",
+      "target": "circuit validation",
+      "relation": "precedes",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Simulation was performed followed by circuit validation by qualitative and quantitative approaches.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "genetic circuit",
+      "target": "oscillatory behavior",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The genetic circuit shows responsiveness, oscillatory and bistable behavior.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "genetic circuit",
+      "target": "bistability",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The genetic circuit designed shows oscillatory and bistable behavior.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "genetic circuit",
+      "target": "robustness",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The genetic circuit shows intrinsic robustness together with responsiveness and oscillatory behavior.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "synthetic biology",
+      "target": "cellular state control",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Synthetic biology enables the precise control of cellular states for systems studies.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "genetic circuit",
+      "target": "Leishmania",
+      "relation": "targets",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Circuit construction for protozoan parasite Leishmania; no prior literature reports exist for such synthetic circuits in parasites.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "systems biology",
+      "target": "genetic circuit",
+      "relation": "studies",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Building circuits and studying their behavior in cells is a major goal of systems and synthetic biology.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "genetic element",
+      "target": "genetic circuit",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Genetic circuits are composed of genetic elements; synthetic biology facilitates discovery of novel parts and control strategies.",
+      "source_papers": [
+        "1304.0342v1"
+      ]
+    },
+    {
+      "source": "synthetic biology",
+      "target": "Modular Assembly",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Synthetic biologists have made great progress in developing methods for modular assembly of genetic sequences.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Modular Assembly",
+      "target": "Genetic Sequences",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Methods for modular assembly of genetic sequences combine standardized components.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Genetic Sequences",
+      "target": "Biological Systems",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Engineering biological systems by assembling genetic sequences creates devices with various functions.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Sequence-Function Coupling",
+      "target": "Abstraction",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Current paradigms entangle sequence and functionality in a manner that makes abstraction difficult.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Sequence-Function Coupling",
+      "target": "Engineering Flexibility",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Current paradigms reduce engineering flexibility.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Sequence-Function Coupling",
+      "target": "Predictability",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Entanglement of sequence and functionality impairs predictability and design reuse.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Sequence-Function Coupling",
+      "target": "Design Reuse",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The entanglement of sequence and functionality impairs design reuse.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Functional Synthetic Biology",
+      "target": "Functional Design",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Functional Synthetic Biology aims to focus design on function, rather than on sequence.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Functional Design",
+      "target": "Abstraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Focusing on function rather than sequence enables abstraction by decoupling devices from their specific use.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Functional Design",
+      "target": "Engineering Flexibility",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Functional focus allows more flexibility in how devices are used.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Functional Design",
+      "target": "Design Reuse",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Functional design creates more opportunity for reuse of devices and data.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Functional Design",
+      "target": "Predictability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Separating sequence from function leads to improvements in predictability.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Software Tooling",
+      "target": "Functional Synthetic Biology",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Realizing the vision of Functional Synthetic Biology requires supporting software tooling.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "Abstraction",
+      "target": "Design Reuse",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Abstraction decouples engineering of devices from their specifics, enabling reuse.",
+      "source_papers": [
+        "2207.00538v1"
+      ]
+    },
+    {
+      "source": "genetic toggle switch",
+      "target": "genetic circuit",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The genetic toggle switch is described as a synthetic gene circuit consisting of two genes.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "repressilator",
+      "target": "genetic circuit",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The repressilator is described as a synthetic gene circuit composed of three genes.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "genetic toggle switch",
+      "target": "bistability",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Analytic, numerical, and electronic treatments of the genetic toggle switch shows that this gene circuit realizes bistability.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "repressilator",
+      "target": "oscillatory behavior",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A simplified treatment of the repressilator reveals that this circuit can realize sustained oscillations.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "protein repression",
+      "target": "genetic toggle switch",
+      "relation": "characterises_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The genetic toggle switch consists of two genes, each of whose protein product represses the other's expression.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "protein repression",
+      "target": "repressilator",
+      "relation": "characterises_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The repressilator consists of three genes, each of whose protein product represses the next gene's expression.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "feedback",
+      "target": "genetic circuit",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Gene circuits and feedback are discussed together in the context of an educational module on gene circuits and feedback.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "genetic circuit",
+      "target": "quantitative analysis",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The genetic toggle switch and repressilator are analyzed quantitatively using analytic, numerical, and electronic treatments.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "phase diagram",
+      "target": "bistability",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "A phase diagram specifies the region of parameter space in which bistability or oscillatory behavior occurs.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "phase diagram",
+      "target": "oscillatory behavior",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "A phase diagram specifies the region of parameter space in which bistability or oscillatory behavior occurs.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "parameter space",
+      "target": "phase diagram",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "A phase diagram specifies the region of parameter space in which different behaviors occur.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "genetic circuit",
+      "target": "introductory physics education",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Gene circuits constitute the final topic of a year-long introductory physics sequence for biology and premedical students.",
+      "source_papers": [
+        "1307.3126v1"
+      ]
+    },
+    {
+      "source": "Bayesian uncertainty analysis",
+      "target": "global parameter search",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Bayesian statistical methodology for the uncertainty analysis of complex models is introduced, which is designed to address the high dimensional global parameter search problem.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "Bayesian emulator",
+      "target": "model evaluation time",
+      "relation": "reduces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Bayesian emulators that mimic the systems biology model but which are extremely fast to evaluate are embedded within an iterative history match.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "Bayesian emulator",
+      "target": "history matching",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Bayesian emulators that mimic the systems biology model but which are extremely fast to evaluate are embedded within an iterative history match.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "history matching",
+      "target": "global parameter search",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "An efficient method to search high dimensional spaces within a more formal statistical setting, while incorporating major sources of uncertainty.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "systems biology models",
+      "target": "parameter space",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "These models increasingly involve large numbers of unknown parameters, have complex structure which can result in substantial evaluation time.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "uncertainty quantification",
+      "target": "global parameter search",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The correct analysis of such models usually requires a global parameter search, over a high dimensional parameter space, that incorporates and respects the most important sources of uncertainty.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "observed trend data",
+      "target": "global parameter search",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Models need to be compared to observed data; identify the sets of rate parameter values that lead to acceptable matches to observed trend data.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "rate parameters",
+      "target": "hormonal crosstalk",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Application to two models of hormonal crosstalk in Arabidopsis root development, which have 32 rate parameters.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "hormonal crosstalk",
+      "target": "Arabidopsis root development",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Models of hormonal crosstalk in Arabidopsis root development.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "systems biology models",
+      "target": "gene function evaluation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The biological consequences of the resulting comparison, including the evaluation of gene functions, are described.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "global parameter search",
+      "target": "gene function evaluation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "The approach enables evaluation of gene functions through identification of parameter values leading to acceptable matches to observed data.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "Bayesian uncertainty analysis",
+      "target": "uncertainty quantification",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Bayesian statistical methodology for the uncertainty analysis of complex models incorporates and respects the most important sources of uncertainty.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "history matching",
+      "target": "Bayesian uncertainty analysis",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Bayesian emulators embedded within an iterative history match, an efficient method to search high dimensional spaces within a more formal statistical setting.",
+      "source_papers": [
+        "1607.06358v2"
+      ]
+    },
+    {
+      "source": "CRISPR-based transcription regulator",
+      "target": "gene activation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "artificial transcriptional regulators such as CRISPR-based transcription regulators have been developed to specifically activate genes of interest",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "CRISPR-based transcription regulator",
+      "target": "protein repression",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "artificial transcriptional regulators such as CRISPR-based transcription regulators have been developed to specifically repress genes of interest",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "guide RNA",
+      "target": "CRISPR-based transcription regulator",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "by deploying guide RNAs to target on DNA sites at different locations of genetic cassettes, we could use just one synthetic CRISPR-based transcriptional regulator",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "DNA targeting site location",
+      "target": "gene expression",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "by deploying guide RNAs to target on DNA sites at different locations of genetic cassettes, we could use just one synthetic CRISPR-based transcriptional regulator to simultaneously activate and repress gene expressions",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "guide RNA",
+      "target": "DNA targeting site location",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "guide RNAs are deployed to target on DNA sites at different locations",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "data-driven predictive model",
+      "target": "CRISPR-based transcription regulator",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "we developed a data-driven predictive model to rationally design this system for fine-tuning expression of target genes",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "gene expression",
+      "target": "data-driven predictive model",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "pairwise datasets of guide RNAs and gene expressions were used to develop the predictive model",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "guide RNA",
+      "target": "data-driven predictive model",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "pairwise datasets of guide RNAs and gene expressions were used to develop the predictive model",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "CRISPR-based transcription regulator",
+      "target": "metabolic flux",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "this system could achieve programmable control of metabolic fluxes",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "metabolic flux",
+      "target": "metabolic pathway",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "metabolic flux represents flow through metabolic pathways",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "metabolic pathway",
+      "target": "metabolic engineering",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Multiplex and multi-directional control of metabolic pathways is crucial for metabolic engineering",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "programmable control",
+      "target": "metabolic flux",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "this master CRISPR-based transcription regulator enables programmable control of metabolic fluxes",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "metabolic engineering",
+      "target": "chemical production yield",
+      "relation": "improves",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "metabolic engineering is crucial to improve product yield of fuels, chemicals, and pharmaceuticals",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "CRISPR-based transcription regulator",
+      "target": "synthetic biology",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "this master CRISPR-based transcription regulator will be a valuable addition to the synthetic biology toolkit",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "gene expression",
+      "target": "metabolic flux",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "fine-tuning expression of target genes affects metabolic flux distribution",
+      "source_papers": [
+        "1704.03027v1"
+      ]
+    },
+    {
+      "source": "Gene Ontology",
+      "target": "ontology structure",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The paper introduces the structure of the ontology as a key component of understanding GO.",
+      "source_papers": [
+        "1602.01876v1"
+      ]
+    },
+    {
+      "source": "Gene Ontology",
+      "target": "gene function",
+      "relation": "catalogues",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The GO project is described as 'the largest resource for cataloguing gene function'.",
+      "source_papers": [
+        "1602.01876v1"
+      ]
+    },
+    {
+      "source": "Gene Ontology",
+      "target": "annotation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The paper explains how to interpret annotations associated with the GO, indicating GO enables functional annotation.",
+      "source_papers": [
+        "1602.01876v1"
+      ]
+    },
+    {
+      "source": "annotation",
+      "target": "gene function",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Annotations represent associations between genes and their functions in the GO system.",
+      "source_papers": [
+        "1602.01876v1"
+      ]
+    },
+    {
+      "source": "Gene Ontology",
+      "target": "data analysis",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "GO is described as 'an essential resource for data analysis'.",
+      "source_papers": [
+        "1602.01876v1"
+      ]
+    },
+    {
+      "source": "cataloguing",
+      "target": "Gene Ontology",
+      "relation": "defines",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The primary function of GO is systematic cataloguing of gene function.",
+      "source_papers": [
+        "1602.01876v1"
+      ]
+    },
+    {
+      "source": "genetic toggle switch",
+      "target": "mean-field analysis",
+      "relation": "studied_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "We study by mean-field analysis and stochastic simulations chemical models for genetic toggle switches",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "genetic toggle switch",
+      "target": "stochastic simulations",
+      "relation": "studied_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "We study by mean-field analysis and stochastic simulations chemical models for genetic toggle switches",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "switch lifetime",
+      "target": "genetic toggle switch",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The switch stability is characterised by a well defined lifetime",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "reactive flux theory",
+      "target": "switch lifetime",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "To determine the stability of the genetic switches, we make a connection with reactive flux theory and transition state theory",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "transition state theory",
+      "target": "switch lifetime",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "To determine the stability of the genetic switches, we make a connection with reactive flux theory and transition state theory",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "transcription factor molecules",
+      "target": "switch lifetime",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "lifetime grows exponentially with the mean number of transcription factor molecules involved in the switching",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "gene expression noise",
+      "target": "switch lifetime",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The switch stability is decreased by phenomena that increase the noise in gene expression",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "shot noise",
+      "target": "switch lifetime",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Switch stability is decreased by shot noise, the production of multiple copies of a protein from a single mRNA transcript",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "protein copy number fluctuations",
+      "target": "switch lifetime",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Switch stability is decreased by fluctuations in the number of proteins produced per transcript",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "shot noise",
+      "target": "gene expression noise",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Shot noise is a phenomenon that increases the noise in gene expression",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "protein copy number fluctuations",
+      "target": "gene expression noise",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Copy number fluctuations are phenomena that increase the noise in gene expression",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "exclusive binding",
+      "target": "switch lifetime",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Robustness against biochemical noise can be drastically enhanced by arranging the transcription factor binding domains on the DNA such that competing transcription factors mutually exclude each other",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "switch barrier",
+      "target": "switch lifetime",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The barrier for flipping the switch determines its stability and lifetime",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "exclusive binding",
+      "target": "switch barrier",
+      "relation": "increases",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The barrier for flipping the switch is significantly higher for the exclusive switch than for the general switch",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "kinetic prefactor",
+      "target": "switch lifetime",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The kinetic prefactor is a factor determining the switching rate; it is roughly the same for both exclusive and general switches",
+      "source_papers": [
+        "0410003v1"
+      ]
+    },
+    {
+      "source": "Gene Ontology",
+      "target": "GO annotations",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "GO annotations are associations between gene products and ontology terms that describe their biological properties.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "Gene Ontology",
+      "target": "directed acyclic graph",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The GO is structured as a directed acyclic graph of ontology terms.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "Gene Ontology",
+      "target": "ontology relations",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The structure of GO is defined by ontology relations such as 'is-a' and 'part-of' that organize terms hierarchically.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "ontology relations",
+      "target": "transitivity",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The transitivity or lack thereof associated with different ontology relations is essential to understand for correct interpretation of GO.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "is-a relation",
+      "target": "transitivity",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The is-a relation typically supports transitive inference in ontology hierarchies.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "part-of relation",
+      "target": "transitivity",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Transitivity is not always applicable to part-of relations, complicating inference in GO.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "annotation qualifiers",
+      "target": "GO annotations",
+      "relation": "modifies",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Annotation qualifiers indicate negation, restricted scope, or conditional applicability; their importance is essential for correct annotation interpretation.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "data incompleteness",
+      "target": "GO annotations",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Incompleteness in GO data manifests as missing or absent annotations, affecting the richness of the resource.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "annotation bias",
+      "target": "gene enrichment analysis",
+      "relation": "confounds",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Several biases confound aggregate analyses such as gene enrichment analyses, particularly annotation bias toward well-studied genes.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "annotation bias",
+      "target": "GO annotations",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Systematic skewing of GO annotations toward well-studied genes and organisms represents a form of curation bias.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "data incompleteness",
+      "target": "gene enrichment analysis",
+      "relation": "confounds",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The effect of data incompleteness impacts the interpretation of aggregate analyses including enrichment studies.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "ontology misinterpretation",
+      "target": "Gene Ontology",
+      "relation": "prevents",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Common misinterpretations of the ontology and annotations hinder correct interpretation of GO data.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "GO annotations",
+      "target": "gene enrichment analysis",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Gene enrichment analysis uses GO annotations to identify significantly over-represented terms in gene lists.",
+      "source_papers": [
+        "1602.01875v1"
+      ]
+    },
+    {
+      "source": "reinforcement learning",
+      "target": "external control",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A learning-based strategy is used to stabilize a synthetic toggle switch via external control approach.",
+      "source_papers": [
+        "2204.04972v1"
+      ]
+    },
+    {
+      "source": "external control",
+      "target": "genetic toggle switch",
+      "relation": "stabilises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The problem involves using a learning-based strategy to stabilize a synthetic toggle switch via external control.",
+      "source_papers": [
+        "2204.04972v1"
+      ]
+    },
+    {
+      "source": "sim-to-real transfer",
+      "target": "data efficiency",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "To overcome the data efficiency problem that would render the algorithm unfeasible, we adopt a sim-to-real paradigm.",
+      "source_papers": [
+        "2204.04972v1"
+      ]
+    },
+    {
+      "source": "simplified model",
+      "target": "policy",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The policy is learnt via training on a simplified model of the toggle switch.",
+      "source_papers": [
+        "2204.04972v1"
+      ]
+    },
+    {
+      "source": "policy",
+      "target": "realistic model",
+      "relation": "controls",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The policy is then subsequently exploited to control a more realistic model of the switch.",
+      "source_papers": [
+        "2204.04972v1"
+      ]
+    },
+    {
+      "source": "in-vivo experiments",
+      "target": "realistic model",
+      "relation": "parameterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The realistic model is parameterized from in-vivo experiments.",
+      "source_papers": [
+        "2204.04972v1"
+      ]
+    },
+    {
+      "source": "in-silico experiments",
+      "target": "sim-to-real transfer",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "In-silico experiments confirm the viability of the sim-to-real approach.",
+      "source_papers": [
+        "2204.04972v1"
+      ]
+    },
+    {
+      "source": "reinforcement learning",
+      "target": "synthetic biology",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Learning-based control has potential use for synthetic biology control implementations.",
+      "source_papers": [
+        "2204.04972v1"
+      ]
+    },
+    {
+      "source": "genetic toggle switch",
+      "target": "system stabilization",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The problem focuses on stabilizing a synthetic toggle switch.",
+      "source_papers": [
+        "2204.04972v1"
+      ]
+    },
+    {
+      "source": "realistic model",
+      "target": "simplified model",
+      "relation": "extends",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "The realistic model is more complex than the simplified model used for initial learning.",
+      "source_papers": [
+        "2204.04972v1"
+      ]
+    },
+    {
+      "source": "CRISPR-GPT",
+      "target": "Large Language Models",
+      "relation": "augments",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "CRISPR-GPT is an LLM agent augmented with domain knowledge and external tools",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "CRISPR-GPT",
+      "target": "Gene-editing design",
+      "relation": "automates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "CRISPR-GPT automates and enhances the design process of CRISPR-based gene-editing experiments",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "CRISPR-GPT",
+      "target": "Domain knowledge",
+      "relation": "augmented_with",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "CRISPR-GPT is augmented with domain knowledge and external tools",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "CRISPR-GPT",
+      "target": "CRISPR system selection",
+      "relation": "facilitates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "CRISPR-GPT facilitates the process of selecting CRISPR systems",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "CRISPR-GPT",
+      "target": "guide RNA",
+      "relation": "facilitates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "CRISPR-GPT facilitates designing guide RNAs",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "CRISPR-GPT",
+      "target": "Cellular delivery methods",
+      "relation": "recommends",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "CRISPR-GPT recommends cellular delivery methods",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "CRISPR-GPT",
+      "target": "Experimental protocol",
+      "relation": "drafts",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "CRISPR-GPT drafts protocols for gene-editing experiments",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "CRISPR-GPT",
+      "target": "Validation experiments",
+      "relation": "designs",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "CRISPR-GPT designs validation experiments to confirm editing outcomes",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "Gene-editing design",
+      "target": "CRISPR system selection",
+      "relation": "includes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Gene-editing design encompasses selection of CRISPR systems as a component",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "Gene-editing design",
+      "target": "guide RNA",
+      "relation": "includes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Guide RNA design is part of the CRISPR experiment design process",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "Gene-editing design",
+      "target": "Cellular delivery methods",
+      "relation": "includes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Cellular delivery selection is a component of comprehensive gene-editing design",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "Gene-editing design",
+      "target": "Validation experiments",
+      "relation": "includes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Validation experiments are part of gene-editing design planning",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "CRISPR technology",
+      "target": "Genome engineering",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "CRISPR is a genome engineering technology enabling precise genetic modifications",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "guide RNA",
+      "target": "CRISPR technology",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Guide RNAs are core components that direct CRISPR molecular machinery to targets",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "Validation experiments",
+      "target": "Gene-editing design",
+      "relation": "confirms",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Validation experiments confirm that intended genetic modifications have been successfully introduced",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "Large Language Models",
+      "target": "Biological design problem",
+      "relation": "struggles_with",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "LLMs often lack specific knowledge and struggle to accurately solve biological design problems",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "Domain knowledge",
+      "target": "Biological design problem",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Domain knowledge augmentation helps address limitations of LLMs in biological design",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "External tools",
+      "target": "CRISPR-GPT",
+      "relation": "integrated_into",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "External tools are integrated with the LLM agent to enhance capabilities",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "CRISPR-GPT",
+      "target": "Ethical considerations",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The work highlights ethical and regulatory considerations associated with automated gene-editing design",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "CRISPR-GPT",
+      "target": "Regulatory compliance",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Regulatory considerations are essential for automated gene-editing tools",
+      "source_papers": [
+        "2404.18021v2"
+      ]
+    },
+    {
+      "source": "gene deletion",
+      "target": "mutation",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Gene deletions are a type of mutation that eliminates gene function; the paper studies mutants lacking essential enzymes.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "mutation",
+      "target": "cellular function",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Mutations and defects cause loss of cellular function; the paper focuses on restoring function lost due to mutants.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "essential gene",
+      "target": "growth rate",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Mutants lacking essential enzymes are unable to grow or have significantly reduced growth rate.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "synthetic rescue",
+      "target": "growth rate",
+      "relation": "restores",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Synthetic viable gene pairs restore growth rate in otherwise nonviable mutants through additional gene deletions.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "synthetic rescue",
+      "target": "phenotype",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Removal of a second enzyme-encoding gene results in a viable phenotype despite initial nonviability.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "flux balance analysis",
+      "target": "synthetic rescue",
+      "relation": "identifies",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Using flux balance-based approaches, the authors identify synthetically viable gene pairs.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "metabolic pathway",
+      "target": "flux balance analysis",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Flux balance analysis uses stoichiometric constraints of metabolic networks to predict viable states.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "gene deletion",
+      "target": "metabolic pathway",
+      "relation": "perturbs",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Gene deletions remove enzyme-encoding genes, damaging the metabolic network and affecting flux distributions.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "bypass pathway",
+      "target": "compensatory mechanism",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Bypass pathways and compensatory mechanisms represent alternative routes to restore lost metabolic function.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "compensatory mechanism",
+      "target": "cellular function",
+      "relation": "restores",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The network-based strategy aims to restore biological function through compensatory effects or bypass mechanisms.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "synthetic rescue",
+      "target": "genetic intervention",
+      "relation": "informs",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Systematic network-based identification of synthetic rescues may open new avenues for genetic interventions.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "metabolic pathway",
+      "target": "phenotype",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The structure and connectivity of metabolic networks determine the viability phenotype under different genetic perturbations.",
+      "source_papers": [
+        "0803.0962v1"
+      ]
+    },
+    {
+      "source": "Natural evolution",
+      "target": "Genetic algorithms",
+      "relation": "analogous_to",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Genetic algorithms mimic natural selection and genetic variation processes from biological evolution.",
+      "source_papers": [
+        "1003.1888v1"
+      ]
+    },
+    {
+      "source": "Biological activities",
+      "target": "Neural networks",
+      "relation": "analogous_to",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Neural networks are inspired by biological neuronal systems and their information processing mechanisms.",
+      "source_papers": [
+        "1003.1888v1"
+      ]
+    },
+    {
+      "source": "Biology-derived algorithms",
+      "target": "Genetic algorithms",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Genetic algorithms are explicitly listed as a type of biologically inspired computation.",
+      "source_papers": [
+        "1003.1888v1"
+      ]
+    },
+    {
+      "source": "Biology-derived algorithms",
+      "target": "Neural networks",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Neural networks are explicitly included among biologically inspired algorithms discussed.",
+      "source_papers": [
+        "1003.1888v1"
+      ]
+    },
+    {
+      "source": "Biology-derived algorithms",
+      "target": "Cellular automata",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Cellular automata are listed as another type of biologically inspired algorithm.",
+      "source_papers": [
+        "1003.1888v1"
+      ]
+    },
+    {
+      "source": "Biology-derived algorithms",
+      "target": "Engineering optimization",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Biology-derived algorithms are essential to engineering optimization applications and problem-solving.",
+      "source_papers": [
+        "1003.1888v1"
+      ]
+    },
+    {
+      "source": "Biology-derived algorithms",
+      "target": "Computational sciences",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Biology-derived algorithms are described as an important part of computational sciences.",
+      "source_papers": [
+        "1003.1888v1"
+      ]
+    },
+    {
+      "source": "positive autoregulation",
+      "target": "bistability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Positive autoregulation switches can achieve bistability of switch states through self-amplifying feedback.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "synthetic DNA switch",
+      "target": "positive autoregulation",
+      "relation": "implements",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The modularity of the DNA switch template allowed rational design of a synthetic DNA switch regulated by its RNA output.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "RNA output",
+      "target": "transcription activator",
+      "relation": "acts_as",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The circuit features a transcription activator configured to regulate its own production via RNA output.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "transcription activator",
+      "target": "synthetic DNA switch",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "RNA output acting as transcription activator regulates DNA switch template function.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "T7 RNA polymerase",
+      "target": "RNA output",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "T7 RNA polymerase transcribes the synthetic DNA strands to generate RNA output.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "RNase H",
+      "target": "bistability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Only RNase H is necessary to achieve bistability of switch states.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "RNase R",
+      "target": "RNA degradation",
+      "relation": "catalyses",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "RNase R is necessary to maintain stable RNA signal levels and control incomplete degradation products.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "RNA degradation",
+      "target": "bistability",
+      "relation": "stabilises",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "RNA degradation by RNase H and RNase R maintains stable signal levels supporting bistable switch operation.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "thermodynamic constraints",
+      "target": "synthetic DNA switch",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Thermodynamic and kinetic constraints dictated by sequence design criteria enabled rational design of the switch.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "rate parameters",
+      "target": "synthetic DNA switch",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Thermodynamic and kinetic constraints dictated by sequence design criteria enabled rational design of the switch.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "mathematical model",
+      "target": "bistability",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Mathematical model was used to fit ensemble parameters and predict time-courses of switch dynamics.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "synthetic biochemical circuits",
+      "target": "positive autoregulation",
+      "relation": "includes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The synthetic circuit demonstrates positive autoregulation as a key information processing motif.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "synthetic DNA switch",
+      "target": "synthetic biochemical circuits",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The in vitro synthetic autoregulatory switch is an example of a synthetic biochemical circuit.",
+      "source_papers": [
+        "1101.0723v1"
+      ]
+    },
+    {
+      "source": "metabolators",
+      "target": "core metabolator",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The core metabolator is described as 'one such circuit' within the family of metabolators.",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "generalized modeling",
+      "target": "kinetic models",
+      "relation": "generalises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "GM is applied to study 'all explicit kinetic models' without requiring precise rate parameters.",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "core metabolator",
+      "target": "Hopf bifurcation",
+      "relation": "cannot undergo",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Authors 'analytically prove that all explicit kinetic models which are topologically analogous to the core metabolator cannot undergo Hopf bifurcations.'",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "circuit topology",
+      "target": "oscillatory behavior",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Different topological configurations (core vs. reverse metabolator) exhibit distinct oscillatory properties.",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "core metabolator",
+      "target": "local oscillations",
+      "relation": "exhibits",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The reverse metabolator 'exhibits a substantially richer set of dynamical behaviors, including both local and global oscillations.'",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "core metabolator",
+      "target": "global oscillations",
+      "relation": "exhibits",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The reverse metabolator 'exhibits a substantially richer set of dynamical behaviors, including both local and global oscillations.'",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "relaxation oscillations",
+      "target": "time scale separation",
+      "relation": "arises from",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Authors examine 'the role that a separation of genetic and metabolic time scales may play' in relaxation oscillations of the reverse metabolator.",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "time scale separation",
+      "target": "circuit stability",
+      "relation": "promotes",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Widely separated time scales are found to 'promote stability in the circuit.'",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "synthetic biochemical circuits",
+      "target": "metabolators",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Metabolators are described as 'synthetically constructed' circuits.",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "generalized modeling",
+      "target": "circuit topology",
+      "relation": "studies",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "GM is used to 'study the dynamical behavior of topological models' of hybrid circuits.",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "Hopf bifurcation",
+      "target": "oscillatory behavior",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A Hopf bifurcation is the mechanism by which periodic oscillations arise in dynamical systems.",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "metabolators",
+      "target": "kinetic models",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Construction of intracellular circuits is hindered by 'poor knowledge of appropriate kinetics and precise rate parameters.'",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "core metabolator",
+      "target": "relaxation oscillations",
+      "relation": "exhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Prompted by observation of relaxation oscillations in the reverse metabolator, authors studied their role in circuit dynamics.",
+      "source_papers": [
+        "1305.2954v1"
+      ]
+    },
+    {
+      "source": "Computer-aided design",
+      "target": "synthetic biology",
+      "relation": "accelerates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Computer-aided design for synthetic biology promises to accelerate the rational and robust engineering of biological systems.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "Computer-aided design",
+      "target": "systems biology",
+      "relation": "integrates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Computer-aided whole-cell design requires integrating synthetic with systems biology.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "Whole-cell model",
+      "target": "Computer-aided design",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Whole-cell, multiscale models could transform design-build-test-learn cycles in synthetic biology and significantly aid in the design and learn phases.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "Multiscale modeling",
+      "target": "Whole-cell model",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Quantitative representations of cells able to capture multiscale processes and link genotypes to phenotypes are central to whole-cell models.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "Whole-cell model",
+      "target": "Genotype-phenotype mapping",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Whole-cell models are able to link genotypes to phenotypes.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "mathematical model",
+      "target": "Computer-aided design",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Computer-aided design requires both detailed and quantitative mathematical and experimental models of the processes to redesign.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "Genome engineering",
+      "target": "Computer-aided design",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Computer-aided design requires software and tools for genetic engineering and DNA assembly.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "DNA assembly",
+      "target": "Computer-aided design",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Computer-aided design requires software and tools for genetic engineering and DNA assembly.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "Design-build-test-learn cycle",
+      "target": "Whole-cell model",
+      "relation": "applies",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Whole-cell, multiscale models could transform design-build-test-learn cycles in synthetic biology.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "Whole-cell model",
+      "target": "Genome minimization",
+      "relation": "aids",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Case studies spanning from genome minimization demonstrate applications of whole-cell models.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "Whole-cell model",
+      "target": "Cell-free systems",
+      "relation": "aids",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Case studies spanning to cell-free systems demonstrate applications of whole-cell models.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "Computer-aided design",
+      "target": "Designer cells",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Increased precision in the design phase will have a dramatic impact on the production of designer cells and organisms with bespoke functions.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "synthetic biology",
+      "target": "Designer cells",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Synthetic biology engineering results in designer cells with bespoke functions and increased modularity.",
+      "source_papers": [
+        "2006.02720v1"
+      ]
+    },
+    {
+      "source": "genetic toggle switch",
+      "target": "MIMO control system",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The synthetic toggle switch is introduced as 'a MIMO control system that can be controlled by varying the concentrations of two inducer molecules.'",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "inducer molecules",
+      "target": "genetic toggle switch",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The toggle switch 'can be controlled by varying the concentrations of two inducer molecules, aTc and IPTG.'",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "pulse-width modulation",
+      "target": "inducer molecules",
+      "relation": "modulates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Open-loop control achieves desired expression 'where the two inputs are selected as mutually exclusive periodic pulse waves of appropriate amplitude and duty-cycle.'",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "duty cycle",
+      "target": "pulse-width modulation",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "PWM control strategy involves 'periodic pulse waves of appropriate amplitude and duty-cycle.'",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "average model",
+      "target": "genetic toggle switch",
+      "relation": "models",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Controllers are synthesized using 'a recently derived average model of the genetic toggle switch subject to these inputs.'",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "feedback",
+      "target": "genetic toggle switch",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "New feedback control approaches 'adjust the inputs duty-cycle in real-time' to achieve desired expression levels.",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "feedback",
+      "target": "pulse-width modulation",
+      "relation": "combines",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Feedback control approaches adjust 'inputs duty-cycle in real-time via two different possible strategies' including PI-PWM.",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "hybrid PI-PWM controller",
+      "target": "feedback",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "One control strategy is 'a model based hybrid PI-PWM approach' for real-time feedback adjustment.",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "Zero-Average dynamics controller",
+      "target": "feedback",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The alternative control strategy is 'a so-called Zero-Average dynamics (ZAD) controller' for real-time feedback.",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "hybrid PI-PWM controller",
+      "target": "average model",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "The hybrid PI-PWM is described as 'model based,' implying dependence on the average model.",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "deterministic simulation",
+      "target": "hybrid PI-PWM controller",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Controllers are 'validated in-silico via both deterministic and stochastic simulations.'",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "stochastic simulation",
+      "target": "hybrid PI-PWM controller",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Controllers are 'validated in-silico via both deterministic and stochastic simulations (SSA).'",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "stochastic simulation",
+      "target": "Zero-Average dynamics controller",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Controllers are 'validated in-silico via both deterministic and stochastic simulations' illustrating advantages of each.",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "deterministic simulation",
+      "target": "Zero-Average dynamics controller",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Controllers are 'validated in-silico via both deterministic and stochastic simulations.'",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "gene expression",
+      "target": "genetic toggle switch",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The toggle switch comprises 'two genes' whose expression level is the controlled output that varies with inducer concentrations.",
+      "source_papers": [
+        "1811.06263v1"
+      ]
+    },
+    {
+      "source": "Pattern switch",
+      "target": "Turing patterns",
+      "relation": "controls",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The switch toggles pattern onset via a single parameter, directly controlling when Turing pattern formation begins.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Pattern dial",
+      "target": "Turing patterns",
+      "relation": "controls",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The dial enables transitions between distinct pattern types, systematically modulating Turing pattern formation.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Weakly nonlinear amplitude equations",
+      "target": "Pattern dial",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The dial mechanism uses weakly nonlinear amplitude equations to describe transitions between pattern types.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Gene circuits",
+      "target": "Turing patterns",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Turing pattern formation occurs in gene circuits when reaction-diffusion dynamics activate spatial instabilities.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Reaction-diffusion systems",
+      "target": "Turing patterns",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Turing patterns emerge fundamentally from reaction-diffusion systems through symmetry-breaking instability.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Gene circuits",
+      "target": "Reaction-diffusion systems",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Gene circuits implement biochemical reactions and diffusive transport of molecular products across space.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Network size",
+      "target": "robustness",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Larger networks gain robustness at the cost of tunability; small networks show inverse trade-off.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Network size",
+      "target": "Experimental tunability",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Larger networks lose tunability; smaller networks are easier to control but less robust.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Pattern switch",
+      "target": "Experimental tunability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The switch mechanism improves experimental control by toggling patterns with a single tunable parameter.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Pattern dial",
+      "target": "Experimental tunability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The dial enables continuous parameter tuning for programmable transitions between pattern types.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Network size",
+      "target": "Evolvability",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Results suggest a sweet spot for network size balancing both evolvability and designability.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "Network size",
+      "target": "Designability",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Small networks are easier to control and design, while larger networks sacrifice designability for robustness.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "synthetic biology",
+      "target": "Gene circuits",
+      "relation": "designs",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Synthetic biology approaches engineer gene circuits with predetermined spatial pattern-forming functions.",
+      "source_papers": [
+        "2512.01652v1"
+      ]
+    },
+    {
+      "source": "repressilator",
+      "target": "genetic oscillator",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The repressilator is described as 'a paradigmatic example of genetic oscillator' and 'three-gene negative feedback oscillator'.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "repressilator",
+      "target": "negative feedback",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The repressilator is composed of 'cyclically repressing genes' implementing negative feedback regulation.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "genetic oscillator",
+      "target": "oscillation",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Gene networks 'exhibiting oscillatory dynamics' generate oscillations in gene expression.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "growth rate",
+      "target": "cell physiology",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The 'intracellular macromolecular composition of fast-growing bacteria changes with growth rate', directly shaping cellular state.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "growth rate",
+      "target": "ribosome concentration",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Ribosome concentration is listed as a 'parameter of gene expression' that is 'growth-rate dependent'.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "growth rate",
+      "target": "cell volume",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Cell volume is described as a parameter 'growth-rate dependent', scaling with growth physiology.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "cell physiology",
+      "target": "gene expression",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Important parameters of gene expression such as ribosome concentration and cell volume are coupled to cellular state.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "gene expression",
+      "target": "genetic oscillator",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Oscillatory dynamics of genetic oscillators manifest as changes in gene expression levels of the circuit components.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "cell physiology",
+      "target": "genetic oscillator",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The work shows that 'the coupling of regulatory circuits with the cellular chassis' and growth-rate-dependent cell physiology directly control oscillator dynamics.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "growth rate",
+      "target": "repressilator",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The repressilator 'dynamics can switch between oscillations and convergence to a fixed point depending on the cellular state of growth'.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "repressilator",
+      "target": "oscillation",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The repressilator is a 'paradigmatic example of genetic oscillator' that generates oscillations.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "repressilator",
+      "target": "fixed point",
+      "relation": "converges_to",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The repressilator dynamics can 'switch between oscillations and convergence to a fixed point' as growth conditions change.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "growth rate",
+      "target": "oscillation period",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The work indicates 'growth-rate dependence of period' in the repressilator oscillations.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "growth rate",
+      "target": "oscillation amplitude",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The work indicates 'growth-rate dependence of amplitude' in the repressilator oscillations.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "plasmid",
+      "target": "genetic oscillator",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The 'type of plasmid or gene positions on the chromosome' play an important role in circuit implementation and oscillation stability.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "genetic oscillator",
+      "target": "synthetic biology",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Minimal regulatory designs 'have been implemented synthetically', and the analysis 'has potential application in synthetic biology'.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "ribosome concentration",
+      "target": "gene expression",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Ribosome concentration directly determines translational capacity and is an important 'parameter of gene expression'.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "cell volume",
+      "target": "gene expression",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Cell volume affects molecular concentrations and is described as a parameter influencing gene expression dynamics.",
+      "source_papers": [
+        "1210.1240v2"
+      ]
+    },
+    {
+      "source": "Noether's theorem",
+      "target": "Conservation laws",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Noether's work establishes the conceptual link between symmetries and conservation properties.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "Symmetry",
+      "target": "Classical physics",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Symmetries play a major role in physics, structuring classical mechanical theories.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "Symmetry breaking",
+      "target": "Relativistic physics",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Symmetry changes allow to conceptually move from classical to relativistic physics.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "Symmetry breaking",
+      "target": "Quantum physics",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Symmetry changes allow conceptual transition from relativistic to quantum physics.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "Critical transitions",
+      "target": "Symmetry breaking",
+      "relation": "analogous_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Dynamics of biological organisms are permanent critical transitions and symmetry changes.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "Stability",
+      "target": "Symmetry",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Symmetries must be understood in relation to conservation and stability properties.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "Biological organism",
+      "target": "Critical transitions",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Dynamics of biological organisms at various organizational levels are permanent critical transitions.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "Variability",
+      "target": "Critical transitions",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Variability is at the core of biological critical transitions within limits of structural stability.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "Viability interval",
+      "target": "Variability",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Within limits of relative structural stability (viability interval), variability is maintained.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "Biological organism",
+      "target": "Symmetry breaking",
+      "relation": "undergoes",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Symmetries play a radically different role in biology compared to physics; related to different dynamics.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "Conservation laws",
+      "target": "Stability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Conservation and stability properties represented in physical theories define system behaviour.",
+      "source_papers": [
+        "1103.1833v2"
+      ]
+    },
+    {
+      "source": "graphene",
+      "target": "graphene field-effect transistor",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Graphene field-effect transistor incorporates graphene as the active sensing material in the device architecture.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "field-effect transistor",
+      "target": "graphene field-effect transistor",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "GFET is a specialized type of FET device adapted for biosensing applications.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "graphene field-effect transistor",
+      "target": "biosensor",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Graphene field-effect transistor type biosensors are employed for rapid detection of viral pathogens.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "nanomaterial",
+      "target": "biosensor",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Introduction of nanomaterials has undoubtedly improved the performance of biosensors.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "graphene",
+      "target": "biosensor",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Addition of graphene enhanced the sensing ability of biosensors to a peerless level.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "graphene field-effect transistor",
+      "target": "sensitivity",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Graphene field-effect transistor marked unique presence owing to its ability of ultrasensitive detection.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "graphene field-effect transistor",
+      "target": "low-noise detection",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Graphene field-effect transistor facilitates low-noise detection enabling instantaneous measurements.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "sensitivity",
+      "target": "signal transduction",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Ultrasensitive detection depends on efficient conversion of biorecognition events into measurable signals.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "graphene field-effect transistor",
+      "target": "virus detection",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Graphene field-effect transistor type biosensor is successfully employed in rapid detection of viruses.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "virus detection",
+      "target": "SARS-CoV-2",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Graphene field-effect transistor successfully employed in rapid detection of SARS-CoV-2.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "graphene field-effect transistor",
+      "target": "rapid detection",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Graphene field-effect transistor facilitates instantaneous measurements, enabling rapid detection capability.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    },
+    {
+      "source": "sensitivity",
+      "target": "rapid detection",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Ultrasensitive detection of small amounts of analytes facilitates rapid and reliable biosensing outcomes.",
+      "source_papers": [
+        "2012.05543v1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5692 @@
+{
+  "domain": "athanor_meta",
+  "query": "AI scientific discovery automated hypothesis generation knowledge graph LLM reasoning literature review research question generation bibliometric analysis semantic similarity scientific knowledge base\n",
+  "concepts": [
+    {
+      "label": "Knowledge Graph",
+      "description": "A structured, semantic representation of entities and their relationships organized as a directed graph for information retrieval and reasoning.",
+      "aliases": [
+        "KG",
+        "semantic graph",
+        "concept graph",
+        "knowledge network",
+        "knowledge representation network",
+        "semantic network",
+        "knowledge graph"
+      ],
+      "source_papers": [
+        "2511.11017v1",
+        "2406.01391v2",
+        "2511.06455v1",
+        "2011.01103v1",
+        "2507.17209v1",
+        "2202.07412v1",
+        "2112.04368v1"
+      ],
+      "centrality": 0.3473,
+      "burt_constraint": 0.0509,
+      "effective_size": 22.752,
+      "structural_hole": true
+    },
+    {
+      "label": "Large Language Model",
+      "description": "A deep learning model trained on large text corpora to understand and generate human language with semantic understanding.",
+      "aliases": [
+        "LLM",
+        "language model",
+        "GPT-3.5-turbo"
+      ],
+      "source_papers": [
+        "2511.11017v1",
+        "2511.06455v1",
+        "2411.18583v1",
+        "2507.17209v1"
+      ],
+      "centrality": 0.0396,
+      "burt_constraint": 0.1981,
+      "effective_size": 6.4762,
+      "structural_hole": false
+    },
+    {
+      "label": "AI Agent",
+      "description": "An autonomous system capable of perceiving its environment and taking actions to achieve specified goals through intelligent decision-making.",
+      "aliases": [
+        "intelligent agent"
+      ],
+      "source_papers": [
+        "2511.11017v1"
+      ],
+      "centrality": 0.0081,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Ontology",
+      "description": "A formal representation of concepts, properties, and relationships within a domain that defines the structure and semantics of knowledge.",
+      "aliases": [
+        "schema",
+        "taxonomy"
+      ],
+      "source_papers": [
+        "2511.11017v1"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.334,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Product Description",
+      "description": "Unstructured natural language text detailing the features, specifications, and characteristics of a commercial product.",
+      "aliases": [
+        "product metadata",
+        "product text"
+      ],
+      "source_papers": [
+        "2511.11017v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Ontology Creation",
+      "description": "The process of automatically generating domain-specific conceptual schemas and entity types from unstructured data.",
+      "aliases": [
+        "schema generation"
+      ],
+      "source_papers": [
+        "2511.11017v1"
+      ],
+      "centrality": 0.0001,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Ontology Refinement",
+      "description": "The iterative process of improving and validating ontology structure, consistency, and semantic correctness.",
+      "aliases": [
+        "schema refinement",
+        "ontology validation"
+      ],
+      "source_papers": [
+        "2511.11017v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Knowledge Graph Population",
+      "description": "The process of extracting entities and relationships from source data and instantiating them as nodes and edges in a knowledge graph.",
+      "aliases": [
+        "KG instantiation",
+        "data population"
+      ],
+      "source_papers": [
+        "2511.11017v1"
+      ],
+      "centrality": 0.0353,
+      "burt_constraint": 0.334,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Information Extraction",
+      "description": "The task of automatically identifying and extracting structured information (entities, relations, attributes) from unstructured text.",
+      "aliases": [
+        "IE",
+        "structured extraction",
+        "information extraction"
+      ],
+      "source_papers": [
+        "2511.11017v1",
+        "2011.01103v1"
+      ],
+      "centrality": 0.0399,
+      "burt_constraint": 0.2004,
+      "effective_size": 5.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Semantic Coherence",
+      "description": "The property of maintaining consistent, non-contradictory meaning and logical relationships across extracted knowledge elements.",
+      "aliases": [
+        "semantic consistency"
+      ],
+      "source_papers": [
+        "2511.11017v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "E-Commerce Platform",
+      "description": "Digital marketplace infrastructure enabling the buying and selling of products with associated product data and metadata.",
+      "aliases": [
+        "online retail",
+        "e-commerce system"
+      ],
+      "source_papers": [
+        "2511.11017v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Recommendation System",
+      "description": "An algorithmic system that suggests relevant products to users based on user preferences, item features, or collaborative patterns.",
+      "aliases": [
+        "recommender system"
+      ],
+      "source_papers": [
+        "2511.11017v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Property Coverage",
+      "description": "A metric quantifying the percentage of entity properties and attributes successfully extracted from source data into the knowledge graph.",
+      "aliases": [
+        "attribute coverage",
+        "completeness metric"
+      ],
+      "source_papers": [
+        "2511.11017v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "particle physics",
+      "description": "Branch of physics studying the fundamental constituents of matter and their interactions.",
+      "aliases": [
+        "elementary particle physics"
+      ],
+      "source_papers": [
+        "2011.14743v1"
+      ],
+      "centrality": 0.0003,
+      "burt_constraint": 0.4901,
+      "effective_size": 2.3273,
+      "structural_hole": false
+    },
+    {
+      "label": "science education",
+      "description": "Systematic instruction and learning of scientific concepts and methods at school and institutional levels.",
+      "aliases": [
+        "science teaching"
+      ],
+      "source_papers": [
+        "2011.14743v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.9823,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "scientific outreach",
+      "description": "Communication and engagement activities that present scientific research and discoveries to public and non-specialist audiences.",
+      "aliases": [
+        "science outreach",
+        "public engagement"
+      ],
+      "source_papers": [
+        "2011.14743v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.9626,
+      "effective_size": 1.027,
+      "structural_hole": false
+    },
+    {
+      "label": "IPPOG",
+      "description": "International Particle Physics Outreach Group, an organization promoting particle physics education and outreach globally since 1997.",
+      "aliases": [
+        "International Particle Physics Outreach Group"
+      ],
+      "source_papers": [
+        "2011.14743v1"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.486,
+      "effective_size": 3.1026,
+      "structural_hole": false
+    },
+    {
+      "label": "Resource Database",
+      "description": "Online platform providing curated collections of high-quality educational and outreach materials in particle physics and related sciences.",
+      "aliases": [
+        "RDB"
+      ],
+      "source_papers": [
+        "2011.14743v1"
+      ],
+      "centrality": 0.0003,
+      "burt_constraint": 0.4787,
+      "effective_size": 2.3621,
+      "structural_hole": false
+    },
+    {
+      "label": "fundamental research",
+      "description": "Scientific investigation aimed at understanding basic principles and laws of nature rather than immediate practical applications.",
+      "aliases": [
+        "basic research"
+      ],
+      "source_papers": [
+        "2011.14743v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "educational materials",
+      "description": "Curated resources, tools, and content designed to facilitate learning and understanding of scientific concepts.",
+      "aliases": [
+        "teaching resources",
+        "learning materials"
+      ],
+      "source_papers": [
+        "2011.14743v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "interdisciplinary research",
+      "description": "Scientific research that integrates methods, theories, and concepts from multiple disciplines to address complex problems.",
+      "aliases": [
+        "cross-disciplinary research",
+        "multidisciplinary science"
+      ],
+      "source_papers": [
+        "2406.01391v2"
+      ],
+      "centrality": 0.1069,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "large language models",
+      "description": "Deep learning models trained on vast corpora of text to extract, understand, and generate natural language concepts and relationships.",
+      "aliases": [
+        "LLMs",
+        "transformer language models",
+        "language models",
+        "ChatGPT",
+        "GPT4"
+      ],
+      "source_papers": [
+        "2406.01391v2",
+        "2502.20988v2",
+        "2406.19502v2",
+        "2306.08302v3",
+        "2308.12060v3"
+      ],
+      "centrality": 0.1569,
+      "burt_constraint": 0.1009,
+      "effective_size": 10.0,
+      "structural_hole": true
+    },
+    {
+      "label": "concept extraction",
+      "description": "Automated process of identifying and isolating key concepts from large bodies of scientific literature using natural language processing or machine learning.",
+      "aliases": [
+        "concept mining",
+        "semantic extraction"
+      ],
+      "source_papers": [
+        "2406.01391v2"
+      ],
+      "centrality": 0.0679,
+      "burt_constraint": 0.3395,
+      "effective_size": 3.0,
+      "structural_hole": true
+    },
+    {
+      "label": "citation-reference relationships",
+      "description": "Quantitative links between publications determined by direct citations and bibliographic references, measuring knowledge flow and influence.",
+      "aliases": [
+        "citation networks",
+        "bibliographic coupling"
+      ],
+      "source_papers": [
+        "2406.01391v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "numerical simulations",
+      "description": "Computational methods for solving equations and modelling physical systems in astronomy to study celestial phenomena.",
+      "aliases": [
+        "computational simulations",
+        "computer modelling"
+      ],
+      "source_papers": [
+        "2406.01391v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "machine learning",
+      "description": "Algorithmic approach enabling computers to learn patterns from data without explicit programming, applied to classification, prediction, and discovery tasks.",
+      "aliases": [
+        "AI",
+        "artificial intelligence",
+        "deep learning",
+        "ML",
+        "automated learning",
+        "neural networks"
+      ],
+      "source_papers": [
+        "2406.01391v2",
+        "2011.01103v1",
+        "2210.08119v1"
+      ],
+      "centrality": 0.0338,
+      "burt_constraint": 0.2053,
+      "effective_size": 5.3333,
+      "structural_hole": false
+    },
+    {
+      "label": "astronomical research",
+      "description": "Scientific investigation of celestial objects, phenomena, and the structure of the universe using observational and computational methods.",
+      "aliases": [
+        "astronomy"
+      ],
+      "source_papers": [
+        "2406.01391v2"
+      ],
+      "centrality": 0.0005,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "technology integration",
+      "description": "The process of incorporating new computational or methodological tools into existing scientific practice and infrastructure.",
+      "aliases": [
+        "tool adoption",
+        "method integration"
+      ],
+      "source_papers": [
+        "2406.01391v2"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "scientific breakthrough",
+      "description": "Significant discovery or development that substantially advances understanding or capability in a scientific field.",
+      "aliases": [
+        "scientific discovery",
+        "novel finding",
+        "breakthrough",
+        "empirical finding",
+        "scientific research"
+      ],
+      "source_papers": [
+        "2406.01391v2",
+        "0911.2729v1",
+        "2507.17209v1"
+      ],
+      "centrality": 0.103,
+      "burt_constraint": 0.1673,
+      "effective_size": 6.0,
+      "structural_hole": true
+    },
+    {
+      "label": "temporal phase analysis",
+      "description": "Method of dividing research evolution into distinct periods to identify transitions in technology adoption and scientific application.",
+      "aliases": [
+        "phase analysis",
+        "temporal stratification"
+      ],
+      "source_papers": [
+        "2406.01391v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "AI-astronomy intersection",
+      "description": "The convergence domain where machine learning and artificial intelligence methods combine with astronomical questions and datasets.",
+      "aliases": [
+        "machine learning in astronomy"
+      ],
+      "source_papers": [
+        "2406.01391v2"
+      ],
+      "centrality": 0.0024,
+      "burt_constraint": 0.5115,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Relational database",
+      "description": "A structured data storage system organized in tables with rows and columns following the relational model.",
+      "aliases": [
+        "SQL database",
+        "structured database"
+      ],
+      "source_papers": [
+        "2511.06455v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Semantic mapping",
+      "description": "The process of aligning data elements from source systems to standardized semantic vocabularies and ontologies.",
+      "aliases": [
+        "semantic alignment",
+        "ontology mapping"
+      ],
+      "source_papers": [
+        "2511.06455v1"
+      ],
+      "centrality": 0.0347,
+      "burt_constraint": 0.251,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Multi-agent system",
+      "description": "A computational system comprising multiple autonomous agents that collaborate to achieve shared objectives.",
+      "aliases": [
+        "MAS",
+        "agent-based system",
+        "multi-agent system",
+        "collaborative agents"
+      ],
+      "source_papers": [
+        "2511.06455v1",
+        "2504.19565v3"
+      ],
+      "centrality": 0.024,
+      "burt_constraint": 0.2501,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Schema.org",
+      "description": "A standardized vocabulary of structured data types and properties widely used for semantic markup and data interoperability.",
+      "aliases": [
+        "Schema markup",
+        "structured data vocabulary"
+      ],
+      "source_papers": [
+        "2511.06455v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Data integration",
+      "description": "The process of combining data from multiple heterogeneous sources into a unified, coherent representation.",
+      "aliases": [
+        "data fusion",
+        "source integration"
+      ],
+      "source_papers": [
+        "2511.06455v1"
+      ],
+      "centrality": 0.0036,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Semantic agent",
+      "description": "An autonomous LLM-based agent capable of understanding semantic relationships and performing intelligent mapping tasks.",
+      "aliases": [
+        "semantic reasoner"
+      ],
+      "source_papers": [
+        "2511.06455v1"
+      ],
+      "centrality": 0.0027,
+      "burt_constraint": 0.5014,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Data interoperability",
+      "description": "The ability of systems to exchange and use data seamlessly across different platforms and applications.",
+      "aliases": [
+        "interoperability"
+      ],
+      "source_papers": [
+        "2511.06455v1"
+      ],
+      "centrality": 0.0005,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Table mapping",
+      "description": "The process of linking database tables and columns to corresponding concepts in a target semantic framework.",
+      "aliases": [
+        "schema mapping",
+        "column annotation"
+      ],
+      "source_papers": [
+        "2511.06455v1"
+      ],
+      "centrality": 0.0094,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Semantic layer",
+      "description": "An abstraction layer positioned above raw data that provides standardized semantic interpretations and vocabulary mappings.",
+      "aliases": [
+        "ontology layer",
+        "semantic abstraction"
+      ],
+      "source_papers": [
+        "2511.06455v1"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "cognitive flow",
+      "description": "An optimal cognitive state characterized by deep focus and intrinsic motivation when task difficulty aligns with individual skill level, extended to AI-augmented reasoning contexts.",
+      "aliases": [
+        "flow state",
+        "optimal cognitive state"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0023,
+      "burt_constraint": 0.1836,
+      "effective_size": 6.7063,
+      "structural_hole": false
+    },
+    {
+      "label": "flow theory",
+      "description": "Psychological framework describing conditions under which individuals experience deep engagement and intrinsic motivation through balanced challenge and skill.",
+      "aliases": [
+        "Csikszentmihalyi flow theory"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "AI-augmented reasoning",
+      "description": "Cognitive systems where artificial intelligence provides support and enhancement to human decision-making and complex reasoning processes.",
+      "aliases": [
+        "AI-supported reasoning",
+        "human-AI reasoning"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "cognitive interventions",
+      "description": "AI-driven actions or prompts designed to support, guide, or augment human cognitive processes during reasoning and decision-making.",
+      "aliases": [
+        "AI interventions",
+        "cognitive support actions"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.729,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "context-aware augmentation",
+      "description": "Adaptive AI framework that personalizes cognitive support based on real-time contextual information about the user, task, and interaction state.",
+      "aliases": [
+        "context-aware framework",
+        "adaptive augmentation"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.002,
+      "burt_constraint": 0.3532,
+      "effective_size": 3.5068,
+      "structural_hole": false
+    },
+    {
+      "label": "multimodal behavioral cues",
+      "description": "Multiple simultaneous signals of user state derived from different modalities such as visual tracking, typing patterns, and interaction dynamics.",
+      "aliases": [
+        "behavioral signals",
+        "multimodal indicators"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0015,
+      "burt_constraint": 0.2502,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "gaze behavior",
+      "description": "Eye-tracking metric indicating visual attention patterns and cognitive load during task engagement.",
+      "aliases": [
+        "eye gaze",
+        "gaze tracking"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "typing hesitation",
+      "description": "Temporal pattern in keyboard input reflecting moments of cognitive deliberation or uncertainty during reasoning.",
+      "aliases": [
+        "keystroke dynamics",
+        "input hesitation"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "interaction speed",
+      "description": "Rate of user engagement with the system, measured through velocity of actions, responses, or interface manipulation.",
+      "aliases": [
+        "interaction rate",
+        "response velocity"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "skill-difficulty alignment",
+      "description": "Correspondence between the cognitive demands of a task and the demonstrated competence of the individual performing it.",
+      "aliases": [
+        "challenge-skill balance",
+        "difficulty-skill match"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "cognitive immersion",
+      "description": "State of deep, uninterrupted engagement where the individual's attention is fully absorbed in the cognitive task.",
+      "aliases": [
+        "mental immersion",
+        "cognitive absorption"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "intrinsic motivation",
+      "description": "Internal drive to engage in an activity for its own sake rather than external rewards, central to flow experiences.",
+      "aliases": [
+        "internal motivation",
+        "inherent motivation"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "decision-making",
+      "description": "Cognitive process of selecting among alternatives based on reasoning, evaluation, and judgment.",
+      "aliases": [
+        "decision-making process"
+      ],
+      "source_papers": [
+        "2504.16021v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Clinical Knowledge",
+      "description": "Insights and evidence gained from medical research regarding the causes, prognosis, diagnosis, and treatment of diseases, validated through real-world medical practice.",
+      "aliases": [
+        "medical knowledge",
+        "clinical evidence"
+      ],
+      "source_papers": [
+        "2502.20988v2"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Knowledge Graphs",
+      "description": "Structured representations of entities and their relationships in a domain, used to encode and organize clinical information for integration into models.",
+      "aliases": [
+        "KGs",
+        "knowledge base",
+        "external knowledge",
+        "knowledge triplets",
+        "knowledge bases",
+        "KB",
+        "KG"
+      ],
+      "source_papers": [
+        "2502.20988v2",
+        "2012.07192v1",
+        "2306.08302v3",
+        "2206.04801v1",
+        "2308.12060v3",
+        "2210.08119v1"
+      ],
+      "centrality": 0.2411,
+      "burt_constraint": 0.0714,
+      "effective_size": 22.3496,
+      "structural_hole": true
+    },
+    {
+      "label": "Retrieval-Augmented Generation",
+      "description": "Technique that augments language model generation by retrieving relevant information from external sources to improve factual accuracy and traceability.",
+      "aliases": [
+        "RAG",
+        "retrieval-based generation",
+        "retrieval-augmented LLM"
+      ],
+      "source_papers": [
+        "2502.20988v2",
+        "2411.18583v1",
+        "2507.17209v1"
+      ],
+      "centrality": 0.1107,
+      "burt_constraint": 0.2597,
+      "effective_size": 5.0614,
+      "structural_hole": true
+    },
+    {
+      "label": "Medical LLMs",
+      "description": "Large language models specifically trained or fine-tuned on medical data to perform clinical tasks such as diagnostic assistance and treatment recommendations.",
+      "aliases": [
+        "clinical LLMs",
+        "biomedical language models",
+        "domain-specific LLMs"
+      ],
+      "source_papers": [
+        "2502.20988v2",
+        "2504.19565v3"
+      ],
+      "centrality": 0.1418,
+      "burt_constraint": 0.0867,
+      "effective_size": 13.629,
+      "structural_hole": true
+    },
+    {
+      "label": "Diagnostic Assistance",
+      "description": "Application of AI models to support clinical decision-making by predicting or identifying diseases based on patient information.",
+      "aliases": [
+        "disease diagnosis",
+        "clinical diagnosis support"
+      ],
+      "source_papers": [
+        "2502.20988v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Treatment Recommendations",
+      "description": "AI-generated or AI-assisted suggestions for therapeutic interventions tailored to patient conditions.",
+      "aliases": [
+        "treatment planning",
+        "therapy suggestions"
+      ],
+      "source_papers": [
+        "2502.20988v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Multimodal Data Integration",
+      "description": "Process of combining multiple types of data (text, images, structured records) to enrich model training and improve clinical predictions.",
+      "aliases": [
+        "multimodal learning",
+        "multi-source data fusion"
+      ],
+      "source_papers": [
+        "2502.20988v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Medical Datasets",
+      "description": "Curated collections of medical data including clinical records, research literature, and annotated cases used for training and evaluation.",
+      "aliases": [
+        "clinical datasets",
+        "medical corpora"
+      ],
+      "source_papers": [
+        "2502.20988v2"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Medical Knowledge Sources",
+      "description": "Reliable repositories of medical information such as databases, ontologies, and documented clinical guidelines used to support model development.",
+      "aliases": [
+        "knowledge resources",
+        "medical databases"
+      ],
+      "source_papers": [
+        "2502.20988v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Decision Traceability",
+      "description": "Property of a model enabling clear documentation of reasoning steps and evidence underlying predictions or recommendations.",
+      "aliases": [
+        "interpretability",
+        "explainability",
+        "model transparency"
+      ],
+      "source_papers": [
+        "2502.20988v2",
+        "2202.07412v1"
+      ],
+      "centrality": 0.0421,
+      "burt_constraint": 0.2786,
+      "effective_size": 3.9387,
+      "structural_hole": false
+    },
+    {
+      "label": "Model Evaluation",
+      "description": "Systematic assessment of model performance on clinical tasks using metrics and evaluation frameworks specific to medical applications.",
+      "aliases": [
+        "performance evaluation",
+        "benchmarking"
+      ],
+      "source_papers": [
+        "2502.20988v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Academic-Industry Gap",
+      "description": "Disparity between medical LLMs developed in research institutions versus those deployed in industry settings regarding functionality and real-world applicability.",
+      "aliases": [
+        "implementation gap",
+        "translation gap"
+      ],
+      "source_papers": [
+        "2502.20988v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Literature review automation",
+      "description": "Automated system for generating comprehensive literature reviews from research documents without manual effort.",
+      "aliases": [
+        "automated literature review generation",
+        "automatic review synthesis"
+      ],
+      "source_papers": [
+        "2411.18583v1"
+      ],
+      "centrality": 0.026,
+      "burt_constraint": 0.2044,
+      "effective_size": 5.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Natural Language Processing",
+      "description": "Field of computational linguistics focused on enabling computers to understand, interpret, and generate human language.",
+      "aliases": [
+        "NLP",
+        "text processing"
+      ],
+      "source_papers": [
+        "2411.18583v1",
+        "2011.01103v1"
+      ],
+      "centrality": 0.0255,
+      "burt_constraint": 0.3333,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Frequency-based extraction",
+      "description": "NLP method that identifies important terms by counting word occurrences and statistical prominence in documents.",
+      "aliases": [
+        "frequency analysis",
+        "spaCy-based method"
+      ],
+      "source_papers": [
+        "2411.18583v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Transformer model",
+      "description": "Deep learning architecture using self-attention mechanisms; enables efficient parallel processing of sequential text data.",
+      "aliases": [
+        "T5 model",
+        "Simple T5",
+        "transformer architecture"
+      ],
+      "source_papers": [
+        "2411.18583v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "ROUGE evaluation metric",
+      "description": "Automatic metric measuring n-gram overlap between generated and reference texts; commonly used for summarization assessment.",
+      "aliases": [
+        "ROUGE score",
+        "Recall-Oriented Understudy for Gisting Evaluation"
+      ],
+      "source_papers": [
+        "2411.18583v1"
+      ],
+      "centrality": 0.0081,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "PDF document processing",
+      "description": "Techniques for extracting, parsing, and converting unstructured text from PDF files into machine-readable format.",
+      "aliases": [
+        "PDF parsing",
+        "document ingestion"
+      ],
+      "source_papers": [
+        "2411.18583v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "SciTLDR dataset",
+      "description": "Scientific paper summarization benchmark dataset containing papers paired with TL;DR-style summaries for model training and evaluation.",
+      "aliases": [
+        "scientific summarization corpus"
+      ],
+      "source_papers": [
+        "2411.18583v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Graphical user interface",
+      "description": "Visual software application allowing end-users to interact with and operate the literature review system without technical expertise.",
+      "aliases": [
+        "GUI",
+        "user interface"
+      ],
+      "source_papers": [
+        "2411.18583v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Text summarization",
+      "description": "NLP task of condensing longer documents into shorter coherent texts while preserving key information.",
+      "aliases": [
+        "document summarization",
+        "abstractive summarization"
+      ],
+      "source_papers": [
+        "2411.18583v1"
+      ],
+      "centrality": 0.0165,
+      "burt_constraint": 0.3022,
+      "effective_size": 3.482,
+      "structural_hole": false
+    },
+    {
+      "label": "Visual Question Answering",
+      "description": "Task of answering natural language questions about images by jointly understanding visual and textual information.",
+      "aliases": [
+        "VQA"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Knowledge-Routed VQA",
+      "description": "VQA variant that requires models to leverage external knowledge bases beyond image and question contexts to answer correctly.",
+      "aliases": [
+        "knowledge-based VQA",
+        "knowledge VQA"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.041,
+      "burt_constraint": 0.143,
+      "effective_size": 7.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Annotator bias",
+      "description": "Systematic inconsistencies in dataset labels arising from subjective crowdsourcing annotations by different human annotators.",
+      "aliases": [
+        "annotation bias",
+        "crowdsource bias"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0246,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Shortcut learning",
+      "description": "Phenomenon where deep models exploit superficial input-output correlations and spurious patterns instead of learning robust features.",
+      "aliases": [
+        "spurious correlation",
+        "shortcut exploitation"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0327,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Scene graph",
+      "description": "Structured representation of an image encoding objects, attributes, and relationships as nodes and edges.",
+      "aliases": [
+        "Visual Genome scene graph"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Multi-step reasoning",
+      "description": "Inference process requiring sequential logical steps across multiple knowledge or scene graph triplets to reach an answer.",
+      "aliases": [
+        "multi-hop reasoning",
+        "step-wise reasoning"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Deep representation embedding",
+      "description": "Learned distributed vector representations encoding image, text, and knowledge features in a shared embedding space.",
+      "aliases": [
+        "deep embedding",
+        "representation learning"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0389,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Image context perception",
+      "description": "Model capability to correctly extract and understand visual content from images including objects and relationships.",
+      "aliases": [
+        "visual perception",
+        "image understanding"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Question understanding",
+      "description": "Model capability to accurately parse and semantically comprehend natural language questions.",
+      "aliases": [
+        "question comprehension"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Answer ambiguity",
+      "description": "Situation where multiple plausible answers exist for a question due to unclear question formulation or incomplete constraints.",
+      "aliases": [
+        "ambiguous answers"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Answer distribution balance",
+      "description": "Dataset property ensuring answer labels are uniformly distributed across training and test sets to avoid bias toward frequent answers.",
+      "aliases": [
+        "balanced answers",
+        "class balance"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Controlled program generation",
+      "description": "Systematic algorithmic procedure for synthesizing question-answer pairs deterministically from structured knowledge and scene graphs.",
+      "aliases": [
+        "program-based generation",
+        "procedural generation"
+      ],
+      "source_papers": [
+        "2012.07192v1"
+      ],
+      "centrality": 0.0165,
+      "burt_constraint": 0.334,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Knowledge utilization",
+      "description": "The process by which models access and apply learned knowledge to solve problems or answer questions.",
+      "aliases": [
+        "knowledge reasoning"
+      ],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0784,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Hierarchical deconstruction",
+      "description": "A method of breaking down complex problems into simpler sub-problems organized in a hierarchical structure.",
+      "aliases": [
+        "question decomposition"
+      ],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0565,
+      "burt_constraint": 0.3348,
+      "effective_size": 3.0,
+      "structural_hole": true
+    },
+    {
+      "label": "DepthQA dataset",
+      "description": "A curated dataset of questions deconstructed into three hierarchical levels of conceptual, procedural, and strategic knowledge.",
+      "aliases": [],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0247,
+      "burt_constraint": 0.2501,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Conceptual knowledge",
+      "description": "Understanding of fundamental concepts and definitions required as a foundation for problem-solving.",
+      "aliases": [
+        "declarative knowledge"
+      ],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Procedural knowledge",
+      "description": "Knowledge of how to perform specific processes, steps, and techniques to solve problems.",
+      "aliases": [
+        "how-to knowledge"
+      ],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Strategic knowledge",
+      "description": "High-level understanding of when and how to apply procedures and concepts to solve complex problems.",
+      "aliases": [
+        "meta-knowledge"
+      ],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Backward discrepancy",
+      "description": "A performance gap where LLMs answer complex questions correctly but fail on constituent simpler sub-problems.",
+      "aliases": [
+        "Forward discrepancy"
+      ],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0165,
+      "burt_constraint": 0.3416,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Model capacity",
+      "description": "The size and representational power of a neural language model, typically measured by parameter count.",
+      "aliases": [
+        "model size"
+      ],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Training data memorization",
+      "description": "The phenomenon where models reproduce learned training examples rather than generalizing underlying patterns.",
+      "aliases": [
+        "memorization"
+      ],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Multi-turn interactions",
+      "description": "Sequential question-answering exchanges where models are guided progressively from simpler to more complex problems.",
+      "aliases": [
+        "iterative prompting"
+      ],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Problem-solving ability",
+      "description": "The capacity of models to reason through and correctly answer complex, multi-step questions.",
+      "aliases": [
+        "reasoning capability"
+      ],
+      "source_papers": [
+        "2406.19502v2"
+      ],
+      "centrality": 0.0714,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": true
+    },
+    {
+      "label": "Factual knowledge",
+      "description": "Verifiable, explicit information about entities, relationships, and properties grounded in structured representations.",
+      "aliases": [
+        "structured knowledge"
+      ],
+      "source_papers": [
+        "2306.08302v3"
+      ],
+      "centrality": 0.0428,
+      "burt_constraint": 0.5115,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Black-box models",
+      "description": "Machine learning models whose internal reasoning processes and decision-making mechanisms are not transparent or interpretable to users.",
+      "aliases": [
+        "interpretability challenge"
+      ],
+      "source_papers": [
+        "2306.08302v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "KG-enhanced LLMs",
+      "description": "Framework incorporating knowledge graphs during pre-training and inference phases of language models to improve factual grounding and interpretability.",
+      "aliases": [],
+      "source_papers": [
+        "2306.08302v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "LLM-augmented KGs",
+      "description": "Framework leveraging language models to improve knowledge graph tasks including embedding, completion, construction, and question answering.",
+      "aliases": [],
+      "source_papers": [
+        "2306.08302v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Synergized LLMs and KGs",
+      "description": "Framework where language models and knowledge graphs play equal roles with bidirectional reasoning driven by both data and knowledge.",
+      "aliases": [
+        "mutual enhancement framework"
+      ],
+      "source_papers": [
+        "2306.08302v3"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Knowledge graph completion",
+      "description": "Task of predicting missing facts or relationships in incomplete knowledge graphs to populate unseen knowledge.",
+      "aliases": [
+        "KG completion"
+      ],
+      "source_papers": [
+        "2306.08302v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Knowledge graph construction",
+      "description": "Process of automatically extracting entities and relationships from text to build or expand structured knowledge representations.",
+      "aliases": [
+        "KG construction"
+      ],
+      "source_papers": [
+        "2306.08302v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Graph-to-text generation",
+      "description": "Task of generating natural language descriptions from structured graph representations of knowledge.",
+      "aliases": [
+        "semantic-to-text generation"
+      ],
+      "source_papers": [
+        "2306.08302v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Question answering",
+      "description": "Task of retrieving or generating answers to natural language questions using knowledge sources.",
+      "aliases": [
+        "QA"
+      ],
+      "source_papers": [
+        "2306.08302v3",
+        "2308.12060v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Knowledge graph embeddings",
+      "description": "Learned low-dimensional vector representations of entities and relations in knowledge graphs that preserve structural and semantic information.",
+      "aliases": [
+        "KG embeddings",
+        "embeddings",
+        "embedding-based reasoning",
+        "KG embedding",
+        "Knowledge embedding",
+        "entity representations",
+        "Entity embeddings"
+      ],
+      "source_papers": [
+        "2210.08119v1",
+        "2202.07412v1",
+        "2306.08302v3",
+        "2206.04801v1"
+      ],
+      "centrality": 0.0517,
+      "burt_constraint": 0.1242,
+      "effective_size": 10.4787,
+      "structural_hole": true
+    },
+    {
+      "label": "Bidirectional reasoning",
+      "description": "Reasoning process that simultaneously integrates symbolic reasoning from knowledge graphs with neural reasoning from language models.",
+      "aliases": [
+        "dual-direction inference"
+      ],
+      "source_papers": [
+        "2306.08302v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Entity extraction",
+      "description": "Automated identification and classification of named entities (persons, organizations, concepts) from text.",
+      "aliases": [
+        "named entity recognition",
+        "NER"
+      ],
+      "source_papers": [
+        "2011.01103v1"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.3809,
+      "effective_size": 2.4088,
+      "structural_hole": false
+    },
+    {
+      "label": "Relationship extraction",
+      "description": "Automated identification and classification of semantic relationships between entities in text.",
+      "aliases": [
+        "relation extraction",
+        "RE",
+        "link prediction"
+      ],
+      "source_papers": [
+        "2011.01103v1",
+        "2206.04801v1"
+      ],
+      "centrality": 0.1624,
+      "burt_constraint": 0.164,
+      "effective_size": 7.33,
+      "structural_hole": true
+    },
+    {
+      "label": "Text Mining",
+      "description": "Process of deriving structured information and patterns from unstructured text documents.",
+      "aliases": [
+        "text analytics",
+        "text mining",
+        "literature extraction"
+      ],
+      "source_papers": [
+        "2011.01103v1",
+        "2504.19565v3"
+      ],
+      "centrality": 0.0086,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Scientific knowledge graph",
+      "description": "Domain-specific knowledge graph representing scholarly entities and relationships including publications, authors, venues, and research topics.",
+      "aliases": [
+        "scholarly KG"
+      ],
+      "source_papers": [
+        "2011.01103v1"
+      ],
+      "centrality": 0.0165,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Research publication metadata",
+      "description": "Structured information about scholarly papers including authors, venues, organizations, dates, and citations.",
+      "aliases": [
+        "publication metadata"
+      ],
+      "source_papers": [
+        "2011.01103v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Semantic annotation",
+      "description": "Process of adding machine-readable semantic meaning and labels to unstructured content.",
+      "aliases": [
+        "semantic tagging",
+        "markup"
+      ],
+      "source_papers": [
+        "2011.01103v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Hybrid system",
+      "description": "Integrated approach combining multiple NLP and Machine Learning tools and techniques for knowledge extraction.",
+      "aliases": [
+        "integrated architecture"
+      ],
+      "source_papers": [
+        "2011.01103v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Scholarly domain",
+      "description": "Academic and research sector encompassing scientific publications, researchers, institutions, and knowledge.",
+      "aliases": [
+        "academic domain",
+        "research domain"
+      ],
+      "source_papers": [
+        "2011.01103v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "corpus distillation",
+      "description": "Process of extracting and refining high-quality, representative textual data from large scientific literature to create compact training datasets.",
+      "aliases": [
+        "dataset distillation",
+        "data curation"
+      ],
+      "source_papers": [
+        "2504.19565v3"
+      ],
+      "centrality": 0.0415,
+      "burt_constraint": 0.212,
+      "effective_size": 5.6481,
+      "structural_hole": false
+    },
+    {
+      "label": "MeSH hierarchy",
+      "description": "Medical Subject Headings controlled vocabulary and thesaurus organized in a hierarchical structure used for indexing biomedical literature.",
+      "aliases": [
+        "Medical Subject Headings",
+        "MeSH"
+      ],
+      "source_papers": [
+        "2504.19565v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "knowledge-driven framework",
+      "description": "System design approach that leverages structured domain knowledge and ontologies to guide information extraction and processing.",
+      "aliases": [
+        "knowledge-guided approach"
+      ],
+      "source_papers": [
+        "2504.19565v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "biomedical ontologies",
+      "description": "Formal representations of biomedical domain concepts and their relationships, providing structured knowledge organization.",
+      "aliases": [
+        "domain ontologies",
+        "biomedical knowledge graphs"
+      ],
+      "source_papers": [
+        "2504.19565v3",
+        "2210.08119v1"
+      ],
+      "centrality": 0.0056,
+      "burt_constraint": 0.3726,
+      "effective_size": 2.4796,
+      "structural_hole": false
+    },
+    {
+      "label": "question-answer pairs",
+      "description": "Training data format consisting of domain-specific questions paired with corresponding answers, used for supervised learning.",
+      "aliases": [
+        "QA pairs",
+        "question-answer data"
+      ],
+      "source_papers": [
+        "2504.19565v3"
+      ],
+      "centrality": 0.0088,
+      "burt_constraint": 0.3351,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "biomedical question-answering",
+      "description": "Task of automatically answering natural language questions about biomedical topics using trained language models.",
+      "aliases": [
+        "medical QA",
+        "biomedical QA"
+      ],
+      "source_papers": [
+        "2504.19565v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "self-evaluation mechanism",
+      "description": "Automated process by which agents assess and refine the quality of extracted data without external supervision.",
+      "aliases": [
+        "self-assessment",
+        "autonomous quality control"
+      ],
+      "source_papers": [
+        "2504.19565v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "domain coverage",
+      "description": "Extent to which a dataset comprehensively represents the breadth of topics and concepts within a scientific domain.",
+      "aliases": [
+        "topical coverage",
+        "content breadth"
+      ],
+      "source_papers": [
+        "2504.19565v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "LLM training data",
+      "description": "Curated corpus of text used to pretrain or fine-tune large language models.",
+      "aliases": [
+        "training corpus",
+        "pretraining data"
+      ],
+      "source_papers": [
+        "2504.19565v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6332,
+      "effective_size": 1.0256,
+      "structural_hole": false
+    },
+    {
+      "label": "model fine-tuning",
+      "description": "Process of adapting a pretrained language model to specialized tasks or domains through continued training on domain-specific data.",
+      "aliases": [
+        "domain adaptation",
+        "task-specific training"
+      ],
+      "source_papers": [
+        "2504.19565v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Relation embeddings",
+      "description": "Distributed vector representations of relations in a knowledge graph, encoding semantic meaning of relation types.",
+      "aliases": [
+        "relation representations"
+      ],
+      "source_papers": [
+        "2206.04801v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Attention mechanisms",
+      "description": "Neural mechanisms that weight different parts of input data, allowing models to focus on relevant information dynamically.",
+      "aliases": [
+        "attention"
+      ],
+      "source_papers": [
+        "2206.04801v1"
+      ],
+      "centrality": 0.0002,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Message passing",
+      "description": "Graph neural network technique where node representations are updated by aggregating information from neighboring nodes.",
+      "aliases": [
+        "neighborhood aggregation"
+      ],
+      "source_papers": [
+        "2206.04801v1"
+      ],
+      "centrality": 0.0005,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Local neighbors",
+      "description": "Immediate neighboring entities and relations directly connected to a given entity in the knowledge graph.",
+      "aliases": [
+        "local neighborhood"
+      ],
+      "source_papers": [
+        "2206.04801v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Long-term dependencies",
+      "description": "Semantic relationships and information that span multiple hops or distances in the knowledge graph structure.",
+      "aliases": [
+        "long-range dependencies"
+      ],
+      "source_papers": [
+        "2206.04801v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Semantic context",
+      "description": "Contextual information derived from the semantic meaning and relationships encoded in paths between entities.",
+      "aliases": [
+        "semantic paths"
+      ],
+      "source_papers": [
+        "2206.04801v1"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Paths",
+      "description": "Sequences of entities and relations connecting two entities in a knowledge graph.",
+      "aliases": [
+        "relation paths",
+        "meta-paths"
+      ],
+      "source_papers": [
+        "2206.04801v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Contextualized representations",
+      "description": "Entity and relation embeddings that incorporate contextual information from their position and neighborhood in the knowledge graph.",
+      "aliases": [
+        "context-aware representations"
+      ],
+      "source_papers": [
+        "2206.04801v1"
+      ],
+      "centrality": 0.0241,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "ÆMP model",
+      "description": "Proposed attention-based model learning embeddings from multiple patterns for knowledge graph relation prediction.",
+      "aliases": [
+        "Attention-based Embeddings from Multiple Patterns"
+      ],
+      "source_papers": [
+        "2206.04801v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.609,
+      "effective_size": 1.2616,
+      "structural_hole": false
+    },
+    {
+      "label": "knowledge emergence",
+      "description": "The process by which new scientific understanding arises from discoveries and becomes integrated into existing scientific frameworks and communication structures.",
+      "aliases": [
+        "knowledge creation",
+        "scientific knowledge emergence"
+      ],
+      "source_papers": [
+        "0911.2729v1"
+      ],
+      "centrality": 0.0409,
+      "burt_constraint": 0.2932,
+      "effective_size": 5.4038,
+      "structural_hole": false
+    },
+    {
+      "label": "scientific communication",
+      "description": "The systems, practices, and networks through which scientists disseminate, share, and establish credibility of research findings within the research community.",
+      "aliases": [
+        "scientific discourse",
+        "research communication"
+      ],
+      "source_papers": [
+        "0911.2729v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8895,
+      "effective_size": 1.0836,
+      "structural_hole": false
+    },
+    {
+      "label": "network analysis",
+      "description": "Quantitative methodology for mapping and analyzing relationships and connections within structured systems, including citation networks and institutional relationships.",
+      "aliases": [
+        "network science",
+        "graph analysis"
+      ],
+      "source_papers": [
+        "0911.2729v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "fullerenes",
+      "description": "Spherical or ellipsoidal allotropes of carbon discovered in 1985, containing only carbon atoms arranged in closed hollow structures.",
+      "aliases": [
+        "buckminsterfullerenes",
+        "C60"
+      ],
+      "source_papers": [
+        "0911.2729v1"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "nanotubes",
+      "description": "Cylindrical nanostructures composed of rolled graphene sheets, synthesized from carbon and representing an extension of fullerene research.",
+      "aliases": [
+        "carbon nanotubes",
+        "CNTs"
+      ],
+      "source_papers": [
+        "0911.2729v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "journal structure",
+      "description": "The organizational, institutional, and editorial framework of peer-reviewed scientific journals that govern knowledge dissemination.",
+      "aliases": [
+        "publication structure",
+        "journal landscape"
+      ],
+      "source_papers": [
+        "0911.2729v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.9288,
+      "effective_size": 1.0263,
+      "structural_hole": false
+    },
+    {
+      "label": "semantic codification",
+      "description": "The process by which concepts and phenomena acquire standardized terminology and definitions within scientific discourse.",
+      "aliases": [
+        "terminology evolution",
+        "meaning codification"
+      ],
+      "source_papers": [
+        "0911.2729v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.9175,
+      "effective_size": 1.0559,
+      "structural_hole": false
+    },
+    {
+      "label": "cognitive foundation",
+      "description": "The accumulated conceptual understanding and theoretical frameworks that serve as the basis for subsequent research and discoveries.",
+      "aliases": [
+        "theoretical foundation",
+        "conceptual basis"
+      ],
+      "source_papers": [
+        "0911.2729v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.9175,
+      "effective_size": 1.0559,
+      "structural_hole": false
+    },
+    {
+      "label": "institutional change",
+      "description": "Structural transformations in scientific institutions, particularly journals and research organizations, in response to new knowledge domains.",
+      "aliases": [
+        "organizational change",
+        "institutional evolution"
+      ],
+      "source_papers": [
+        "0911.2729v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "hypothesis-driven research",
+      "description": "Scientific methodology where predictions and explanations are formulated as testable hypotheses before experimental validation.",
+      "aliases": [
+        "hypothesis generation",
+        "hypothesis-driven discovery"
+      ],
+      "source_papers": [
+        "2507.17209v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "graph neural network",
+      "description": "Deep learning architecture operating on graph-structured data to learn node and edge representations for prediction tasks.",
+      "aliases": [
+        "GNN",
+        "message-passing neural network"
+      ],
+      "source_papers": [
+        "2507.17209v1",
+        "2210.08119v1"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5113,
+      "effective_size": 2.4602,
+      "structural_hole": false
+    },
+    {
+      "label": "hallucination",
+      "description": "Phenomenon where language models generate plausible but factually incorrect or unsupported outputs.",
+      "aliases": [
+        "confabulation"
+      ],
+      "source_papers": [
+        "2507.17209v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6799,
+      "effective_size": 1.0258,
+      "structural_hole": false
+    },
+    {
+      "label": "dimensionality reduction",
+      "description": "Technique to project high-dimensional data into lower-dimensional space for visualization and interpretability.",
+      "aliases": [
+        "embedding projection"
+      ],
+      "source_papers": [
+        "2507.17209v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "hypothesis chain",
+      "description": "Iteratively refined sequence of linked hypotheses connecting predictions through knowledge graph relationships and semantic linkages.",
+      "aliases": [],
+      "source_papers": [
+        "2507.17209v1"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5037,
+      "effective_size": 2.3359,
+      "structural_hole": false
+    },
+    {
+      "label": "validation prioritization",
+      "description": "Process of ranking and filtering hypotheses based on evidence strength to identify promising candidates for experimental testing.",
+      "aliases": [
+        "hypothesis ranking"
+      ],
+      "source_papers": [
+        "2507.17209v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7334,
+      "effective_size": 1.0542,
+      "structural_hole": false
+    },
+    {
+      "label": "visual analytics",
+      "description": "Interactive visualization techniques combined with algorithmic analysis to support exploratory data analysis and decision-making.",
+      "aliases": [],
+      "source_papers": [
+        "2507.17209v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "human-AI collaboration",
+      "description": "Interactive system design integrating human expertise and judgment with artificial intelligence models for enhanced reasoning and decision support.",
+      "aliases": [
+        "human-in-the-loop",
+        "collaborative system"
+      ],
+      "source_papers": [
+        "2507.17209v1"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "biomedical knowledge",
+      "description": "Structured and unstructured information about biological systems, diseases, drugs, and molecular mechanisms relevant to medicine.",
+      "aliases": [],
+      "source_papers": [
+        "2507.17209v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Knowledge Base Question Answering",
+      "description": "Task of answering natural language questions by querying structured knowledge bases to retrieve relevant entities and relations.",
+      "aliases": [
+        "KBQA"
+      ],
+      "source_papers": [
+        "2308.12060v3"
+      ],
+      "centrality": 0.0441,
+      "burt_constraint": 0.253,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Few-shot Learning",
+      "description": "Machine learning paradigm where models are trained with only a small number of annotated examples to adapt to new tasks.",
+      "aliases": [
+        "few-shot scenario"
+      ],
+      "source_papers": [
+        "2308.12060v3"
+      ],
+      "centrality": 0.0093,
+      "burt_constraint": 0.3384,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "SPARQL Queries",
+      "description": "Query language for retrieving and manipulating data stored in RDF knowledge bases using structured graph patterns.",
+      "aliases": [
+        "SPARQL"
+      ],
+      "source_papers": [
+        "2308.12060v3"
+      ],
+      "centrality": 0.015,
+      "burt_constraint": 0.3333,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Program Synthesis",
+      "description": "Automated process of generating executable programs (e.g., SPARQL queries) from high-level specifications or natural language descriptions.",
+      "aliases": [
+        "program generation"
+      ],
+      "source_papers": [
+        "2308.12060v3"
+      ],
+      "centrality": 0.001,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Synthetic Data Generation",
+      "description": "Process of artificially creating training data through algorithmic means rather than manual annotation.",
+      "aliases": [
+        "synthetic dataset creation"
+      ],
+      "source_papers": [
+        "2308.12060v3"
+      ],
+      "centrality": 0.0053,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Self-training",
+      "description": "Semi-supervised learning technique where a model iteratively improves by making predictions on unlabeled data and using high-confidence predictions as training signals.",
+      "aliases": [
+        "execution-guided self-training"
+      ],
+      "source_papers": [
+        "2308.12060v3"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Distribution Shift",
+      "description": "Discrepancy between the distribution of training data and test data, causing model performance degradation in real-world deployment.",
+      "aliases": [
+        "domain shift"
+      ],
+      "source_papers": [
+        "2308.12060v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Lightweight Models",
+      "description": "Compact neural models designed for efficient inference with reduced parameters and computational requirements.",
+      "aliases": [],
+      "source_papers": [
+        "2308.12060v3"
+      ],
+      "centrality": 0.0165,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Entity Disambiguation",
+      "description": "Process of identifying and linking entity mentions in natural language to their corresponding entries in a knowledge base.",
+      "aliases": [],
+      "source_papers": [
+        "2308.12060v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Zero-shot Learning",
+      "description": "Machine learning paradigm where models perform on tasks without any task-specific training examples.",
+      "aliases": [
+        "zero-shot scenario"
+      ],
+      "source_papers": [
+        "2308.12060v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Automated driving",
+      "description": "Research domain focused on developing systems capable of operating vehicles with minimal human intervention using advanced computational methods.",
+      "aliases": [
+        "autonomous driving",
+        "AD"
+      ],
+      "source_papers": [
+        "2210.08119v1"
+      ],
+      "centrality": 0.0289,
+      "burt_constraint": 0.2279,
+      "effective_size": 8.2607,
+      "structural_hole": false
+    },
+    {
+      "label": "Perception",
+      "description": "Task in automated driving involving sensor data processing and interpretation to detect and classify objects in the environment.",
+      "aliases": [
+        "object detection",
+        "sensor fusion"
+      ],
+      "source_papers": [
+        "2210.08119v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5902,
+      "effective_size": 1.2005,
+      "structural_hole": false
+    },
+    {
+      "label": "Scene understanding",
+      "description": "Process of interpreting the driving environment by identifying relevant objects, their relationships, and contextual information from sensor data.",
+      "aliases": [
+        "scene representation"
+      ],
+      "source_papers": [
+        "2210.08119v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5879,
+      "effective_size": 1.2076,
+      "structural_hole": false
+    },
+    {
+      "label": "Motion planning",
+      "description": "Computational process of determining safe and feasible trajectories for vehicle movement considering constraints and objectives.",
+      "aliases": [
+        "path planning",
+        "trajectory planning"
+      ],
+      "source_papers": [
+        "2210.08119v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5902,
+      "effective_size": 1.2005,
+      "structural_hole": false
+    },
+    {
+      "label": "Validation",
+      "description": "Process of verifying and ensuring that automated driving systems meet safety, reliability, and functional requirements.",
+      "aliases": [
+        "verification",
+        "safety validation"
+      ],
+      "source_papers": [
+        "2210.08119v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5907,
+      "effective_size": 1.1992,
+      "structural_hole": false
+    },
+    {
+      "label": "Reliability",
+      "description": "System property ensuring consistent performance and dependability of automated driving systems under specified conditions.",
+      "aliases": [
+        "robustness"
+      ],
+      "source_papers": [
+        "2210.08119v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Safety",
+      "description": "Critical requirement in automated driving ensuring systems operate without causing harm to passengers, pedestrians, or property.",
+      "aliases": [
+        "safety assurance"
+      ],
+      "source_papers": [
+        "2210.08119v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Graph-structured data",
+      "description": "Data organized as networks of interconnected nodes and edges with complex relationships and inter-dependencies.",
+      "aliases": [
+        "relational data"
+      ],
+      "source_papers": [
+        "2210.08119v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7319,
+      "effective_size": 1.256,
+      "structural_hole": false
+    },
+    {
+      "label": "Knowledge graph reasoning",
+      "description": "The process of inferring new facts or relationships from existing knowledge graphs using logical or computational methods.",
+      "aliases": [
+        "KG reasoning"
+      ],
+      "source_papers": [
+        "2202.07412v1"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.5545,
+      "effective_size": 1.8137,
+      "structural_hole": false
+    },
+    {
+      "label": "Symbolic logic",
+      "description": "Formal reasoning approach based on logical rules and symbolic representation, producing deterministic and explainable results.",
+      "aliases": [
+        "logic-based reasoning",
+        "logical reasoning"
+      ],
+      "source_papers": [
+        "2202.07412v1"
+      ],
+      "centrality": 0.0026,
+      "burt_constraint": 0.403,
+      "effective_size": 3.0541,
+      "structural_hole": false
+    },
+    {
+      "label": "Logic-embedding integration",
+      "description": "Combined approach that merges symbolic logic with embedding methods to leverage determinism and explainability alongside efficiency and uncertainty handling.",
+      "aliases": [
+        "integrated reasoning",
+        "hybrid reasoning"
+      ],
+      "source_papers": [
+        "2202.07412v1"
+      ],
+      "centrality": 0.0054,
+      "burt_constraint": 0.4712,
+      "effective_size": 2.6293,
+      "structural_hole": false
+    },
+    {
+      "label": "Uncertainty",
+      "description": "Lack of determinism in knowledge representation and reasoning, necessitating probabilistic or soft inference approaches.",
+      "aliases": [
+        "uncertainty handling"
+      ],
+      "source_papers": [
+        "2202.07412v1"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Vector computation",
+      "description": "Efficient numerical computation using continuous-valued vectors, enabling scalable embedding-based reasoning.",
+      "aliases": [
+        "vector operations"
+      ],
+      "source_papers": [
+        "2202.07412v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Plausible knowledge prediction",
+      "description": "Inference of likely but not necessarily certain new facts or relationships in incomplete knowledge graphs.",
+      "aliases": [
+        "knowledge prediction"
+      ],
+      "source_papers": [
+        "2202.07412v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "scientific research",
+      "description": "A systematic process applying methods of scientific inquiry to solve consequential problems, satisfy human wants, exploit opportunities, or cope with environmental threats.",
+      "aliases": [
+        "scientific inquiry",
+        "research"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0026,
+      "burt_constraint": 0.1409,
+      "effective_size": 8.8037,
+      "structural_hole": false
+    },
+    {
+      "label": "science",
+      "description": "The discovery of root causes of phenomena to explain and predict them in a context of adaptation of life to new economic and social bases.",
+      "aliases": [
+        "scientific knowledge"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "socioeconomic driving forces",
+      "description": "Social and economic interests, concerns, and incentives that motivate nations to produce scientific research.",
+      "aliases": [
+        "socioeconomic factors",
+        "drivers of science"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "national interest",
+      "description": "Organized social efforts reflecting the concerns and interests of nations to achieve scientific advances and discoveries.",
+      "aliases": [
+        "nation-state interests"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8834,
+      "effective_size": 1.0543,
+      "structural_hole": false
+    },
+    {
+      "label": "wealth creation",
+      "description": "Economic value and prosperity generated through scientific advances and technological superiority.",
+      "aliases": [
+        "economic prosperity"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8994,
+      "effective_size": 1.0265,
+      "structural_hole": false
+    },
+    {
+      "label": "technological superiority",
+      "description": "Competitive advantage gained by nations through development and application of advanced technologies derived from scientific research.",
+      "aliases": [],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "power",
+      "description": "Social and geopolitical dominance achieved by nations through scientific and technological advancement.",
+      "aliases": [
+        "political power",
+        "geopolitical influence"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "R&D investment",
+      "description": "Financial resources allocated by nations toward research and development activities.",
+      "aliases": [
+        "research funding",
+        "research expenditure"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.001,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "productivity",
+      "description": "Economic output and efficiency gains resulting from research and development activities.",
+      "aliases": [
+        "scientific productivity"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "environmental threats",
+      "description": "Ecological and existential challenges such as resource scarcity or climate change that motivate scientific research.",
+      "aliases": [
+        "environmental challenges"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "research policy",
+      "description": "Government strategies and institutional frameworks that guide allocation of resources and direction of scientific research.",
+      "aliases": [
+        "science policy"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "social effort",
+      "description": "Coordinated organizational and institutional action by societies to support and advance scientific research.",
+      "aliases": [
+        "organized effort",
+        "institutional support"
+      ],
+      "source_papers": [
+        "1806.05028v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Educational recommendation system",
+      "description": "A system that predicts and recommends learning resources to students based on their knowledge state and engagement patterns.",
+      "aliases": [
+        "informational recommender",
+        "learner recommender"
+      ],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0083,
+      "burt_constraint": 0.5037,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Learner model",
+      "description": "A probabilistic representation of a learner's knowledge state, skills, and predicted engagement with learning materials.",
+      "aliases": [
+        "student model",
+        "knowledge state model"
+      ],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0564,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": true
+    },
+    {
+      "label": "Semantic relatedness",
+      "description": "The degree to which two knowledge topics or components are conceptually related or connected through shared meaning.",
+      "aliases": [
+        "semantic similarity",
+        "topical relatedness"
+      ],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0165,
+      "burt_constraint": 0.3343,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Knowledge components",
+      "description": "Atomic or granular units of knowledge that compose larger learning domains and can be represented hierarchically.",
+      "aliases": [
+        "knowledge units",
+        "topics"
+      ],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Learner engagement",
+      "description": "The degree to which a learner interacts with and participates in learning resources, often measured as a target variable in educational systems.",
+      "aliases": [
+        "student engagement",
+        "engagement prediction"
+      ],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0326,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Latent knowledge",
+      "description": "Unobserved or hidden knowledge possessed by a learner that is inferred from observed interactions and behaviour.",
+      "aliases": [
+        "hidden knowledge",
+        "implicit knowledge"
+      ],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Wikipedia link graph",
+      "description": "The network structure of hyperlinks connecting Wikipedia articles, used as a resource to capture semantic relationships between concepts.",
+      "aliases": [],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Bayesian machine learning",
+      "description": "A probabilistic approach to learning that uses Bayesian inference to model uncertainty and update beliefs about model parameters.",
+      "aliases": [
+        "Bayesian inference",
+        "probabilistic learning"
+      ],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Lifelong learning",
+      "description": "An educational scenario in which learners continuously acquire knowledge and skills over extended time periods.",
+      "aliases": [
+        "continuous learning",
+        "long-term learning"
+      ],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "TrueLearn algorithm",
+      "description": "An existing educational engagement prediction algorithm that models learner knowledge state using Bayesian methods.",
+      "aliases": [
+        "TrueLearn model"
+      ],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Semantic TrueLearn",
+      "description": "An extended version of the TrueLearn algorithm that incorporates semantic knowledge graph structure to improve learner engagement prediction.",
+      "aliases": [],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0247,
+      "burt_constraint": 0.2504,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Predictive performance",
+      "description": "The accuracy or effectiveness of a model in predicting outcomes such as learner engagement or knowledge.",
+      "aliases": [
+        "prediction accuracy",
+        "model performance"
+      ],
+      "source_papers": [
+        "2112.04368v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "AI Agent",
+      "target": "Knowledge Graph",
+      "relation": "constructs",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "AI agent-driven framework for constructing product knowledge graphs directly from unstructured product descriptions",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Large Language Model",
+      "target": "AI Agent",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Leveraging Large Language Models (LLMs), our method operates in three stages using dedicated agents",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Product Description",
+      "target": "Knowledge Graph",
+      "relation": "sources",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "constructing product knowledge graphs directly from unstructured product descriptions",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Ontology Creation",
+      "target": "Ontology",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "ontology creation and expansion, ontology refinement, and knowledge graph population",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Ontology Refinement",
+      "target": "Ontology",
+      "relation": "improves",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "method operates in three stages using dedicated agents: ontology creation and expansion, ontology refinement",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Ontology",
+      "target": "Knowledge Graph Population",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "ontology refinement, and knowledge graph population; ontology defines the structure for population",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graph Population",
+      "target": "Knowledge Graph",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "knowledge graph population as final stage produces the instantiated knowledge graph",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Information Extraction",
+      "target": "Knowledge Graph Population",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "extracting entities and relationships from source data is core to KG population; framework extracts structured information",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Semantic Coherence",
+      "target": "Knowledge Graph",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "agent-based approach ensures semantic coherence, scalability, and high-quality output",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graph",
+      "target": "Recommendation System",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "creating significant challenges for information retrieval, recommendation systems, and data analytics; KGs provide structured format",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graph",
+      "target": "E-Commerce Platform",
+      "relation": "applies_to",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "automated product knowledge graph construction in E-Commerce; framework evaluates on product dataset",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Property Coverage",
+      "target": "Knowledge Graph",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The framework achieves over 97% property coverage and minimal redundancy, validating its effectiveness",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "AI Agent",
+      "target": "Ontology Creation",
+      "relation": "performs",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "method operates in three stages using dedicated agents: ontology creation and expansion",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "Large Language Model",
+      "target": "Information Extraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "LLMs leverage semantic understanding to automate structured knowledge extraction",
+      "source_papers": [
+        "2511.11017v1"
+      ]
+    },
+    {
+      "source": "IPPOG",
+      "target": "particle physics",
+      "relation": "popularises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "IPPOG has been making concerted efforts to present and popularise particle physics across all audiences and age groups since 1997.",
+      "source_papers": [
+        "2011.14743v1"
+      ]
+    },
+    {
+      "source": "IPPOG",
+      "target": "scientific outreach",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "IPPOG serves as a strategic pillar in fostering long-term sustainable support for fundamental research, functioning as an outreach organization.",
+      "source_papers": [
+        "2011.14743v1"
+      ]
+    },
+    {
+      "source": "IPPOG",
+      "target": "science education",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "IPPOG has been offering tools to the scientific community, teachers and educators for almost 10 years.",
+      "source_papers": [
+        "2011.14743v1"
+      ]
+    },
+    {
+      "source": "Resource Database",
+      "target": "educational materials",
+      "relation": "contains",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The RDB is an online platform containing a collection of high quality engaging education and outreach materials.",
+      "source_papers": [
+        "2011.14743v1"
+      ]
+    },
+    {
+      "source": "IPPOG",
+      "target": "Resource Database",
+      "relation": "provides",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "One of the main tools IPPOG has been offering is the Resource Database, an online platform for education and outreach materials.",
+      "source_papers": [
+        "2011.14743v1"
+      ]
+    },
+    {
+      "source": "Resource Database",
+      "target": "particle physics",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The RDB contains materials in particle physics and related sciences.",
+      "source_papers": [
+        "2011.14743v1"
+      ]
+    },
+    {
+      "source": "scientific outreach",
+      "target": "science education",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Outreach activities bridge the gap between school education and modern scientific research.",
+      "source_papers": [
+        "2011.14743v1"
+      ]
+    },
+    {
+      "source": "particle physics",
+      "target": "fundamental research",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Particle physics is a fundamental research discipline studying basic constituents of matter.",
+      "source_papers": [
+        "2011.14743v1"
+      ]
+    },
+    {
+      "source": "large language models",
+      "target": "concept extraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "LLMs provide a new tool to extract key concepts from vast literature beyond keyword searches, enabling quantification of integration of new ideas.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "concept extraction",
+      "target": "Knowledge Graph",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Extracted 24,939 concepts were then used to form a knowledge graph, where link strength between concepts was determined by citation-reference relationships.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "citation-reference relationships",
+      "target": "Knowledge Graph",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Link strength between any two concepts in the knowledge graph was determined by their relevance through citation-reference relationships.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "Knowledge Graph",
+      "target": "numerical simulations",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The knowledge graph demonstrates the impact of numerical simulations on astronomical research by quantifying relevance across different time periods.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "Knowledge Graph",
+      "target": "machine learning",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The knowledge graph quantified the impact of machine learning on astronomical research by calculating relevance across different time periods.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "numerical simulations",
+      "target": "astronomical research",
+      "relation": "drives",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Numerical simulations represent one of the new technologies quantified as driving further scientific breakthroughs in astronomical research.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "machine learning",
+      "target": "astronomical research",
+      "relation": "drives",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Machine learning is quantified as a technology that has made inroads in astronomy and drives scientific discovery, though with identified bottlenecks.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "technology integration",
+      "target": "scientific breakthrough",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Technological advancements drive further scientific breakthroughs; the study quantifies how new technologies drive discovery in astronomy.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "temporal phase analysis",
+      "target": "technology integration",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The knowledge graph demonstrates two phases of development: integration phase and exploration phase, revealing how technology adoption unfolds temporally.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "machine learning",
+      "target": "AI-astronomy intersection",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "AI-astronomy intersection describes the convergence of machine learning methods with astronomical research domains.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "AI-astronomy intersection",
+      "target": "concept extraction",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "There is currently a lack of new concept development at the intersection of AI and Astronomy, which may be a bottleneck preventing machine learning from further transforming astronomy.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "interdisciplinary research",
+      "target": "scientific breakthrough",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Identifying factors contributing to interdisciplinary research success is crucial for advancing scientific discovery; the study quantifies how technological integration drives breakthroughs.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "Knowledge Graph",
+      "target": "interdisciplinary research",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The knowledge graph quantifies the integration of new ideas and technological advancements in astronomical research across an interdisciplinary domain.",
+      "source_papers": [
+        "2406.01391v2"
+      ]
+    },
+    {
+      "source": "Semantic mapping",
+      "target": "Knowledge Graph",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The work presents an approach for integrating multiple databases using knowledge graphs, focusing on mapping and connecting structured data.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "Multi-agent system",
+      "target": "Semantic mapping",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The methodology introduces a system comprising multiple LLM agents that map tables and columns to Schema.org terms.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "Large Language Model",
+      "target": "Semantic agent",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Semantic agents are implemented as large language models leveraging existing vocabularies for mapping tasks.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "Semantic agent",
+      "target": "Table mapping",
+      "relation": "performs",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "LLM agents map tables and columns to Schema.org terms as part of the proposed approach.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "Table mapping",
+      "target": "Schema.org",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The system maps tables and columns to Schema.org terms, utilizing existing vocabularies for semantic alignment.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "Relational database",
+      "target": "Semantic layer",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The methodology introduces a semantic layer above tables in relational databases to enable structured data integration.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "Data integration",
+      "target": "Knowledge Graph",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Integrating disparate data sources through knowledge graphs enables businesses to unlock the full potential of their data.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "Data integration",
+      "target": "Data interoperability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "A key to overcoming interoperability challenges lies in integrating disparate data sources across siloed systems.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "Semantic mapping",
+      "target": "Data interoperability",
+      "relation": "improves",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Mapping and connecting structured data across systems by leveraging existing vocabularies addresses data interoperability challenges.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "Semantic layer",
+      "target": "Semantic mapping",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The semantic layer above database tables facilitates the mapping process to standardized vocabularies.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "Multi-agent system",
+      "target": "Table mapping",
+      "relation": "performs",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The system comprises multiple LLM agents working together to map tables and columns.",
+      "source_papers": [
+        "2511.06455v1"
+      ]
+    },
+    {
+      "source": "flow theory",
+      "target": "cognitive flow",
+      "relation": "extends",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Paper describes cognitive flow as 'an extension of flow theory in AI-augmented reasoning'",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "cognitive flow",
+      "target": "skill-difficulty alignment",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Flow theory describes optimal cognitive state 'where a task's difficulty aligns with their skill level'",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "cognitive flow",
+      "target": "intrinsic motivation",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Cognitive flow involves 'deep focus and intrinsic motivation'",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "cognitive interventions",
+      "target": "cognitive flow",
+      "relation": "can inhibit",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Interventions that disrupt the state of cognitive flow 'can hinder rather than enhance decision-making'",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "context-aware augmentation",
+      "target": "cognitive interventions",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Framework 'adapts interventions based on three key contextual factors: type, timing, and scale'",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "multimodal behavioral cues",
+      "target": "context-aware augmentation",
+      "relation": "informs",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "AI can 'leverage multimodal behavioral cues (e.g., gaze behavior, typing hesitation, interaction speed)' to dynamically adjust support",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "gaze behavior",
+      "target": "multimodal behavioral cues",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Gaze behavior listed as example multimodal behavioral cue",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "typing hesitation",
+      "target": "multimodal behavioral cues",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Typing hesitation listed as example multimodal behavioral cue",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "interaction speed",
+      "target": "multimodal behavioral cues",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Interaction speed listed as example multimodal behavioral cue",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "context-aware augmentation",
+      "target": "cognitive flow",
+      "relation": "maintains",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "AI can 'dynamically adjust cognitive support to maintain or restore flow'",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "context-aware augmentation",
+      "target": "cognitive immersion",
+      "relation": "preserves",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Approach ensures AI 'support deep engagement in complex decision-making without disrupting cognitive immersion'",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "cognitive flow",
+      "target": "decision-making",
+      "relation": "enhances",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Interventions that maintain flow support 'deep engagement in complex decision-making'",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "AI-augmented reasoning",
+      "target": "cognitive flow",
+      "relation": "can_disrupt",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "In AI-augmented reasoning, 'interventions that disrupt the state of cognitive flow can hinder rather than enhance decision-making'",
+      "source_papers": [
+        "2504.16021v1"
+      ]
+    },
+    {
+      "source": "large language models",
+      "target": "Medical LLMs",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Medical LLMs are large language models specifically trained or fine-tuned on medical data.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Clinical Knowledge",
+      "target": "Medical LLMs",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The paper reviews initiatives to embed clinical knowledge into LLMs to ensure accurate medical knowledge in models.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Medical LLMs",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Knowledge graphs are technologies used to integrate clinical knowledge into KG-supported LLMs.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Retrieval-Augmented Generation",
+      "target": "Medical LLMs",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "RAG is a technology for integrating external knowledge sources into RAG-assisted LLMs.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Medical Datasets",
+      "target": "Medical LLMs",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Specialized datasets are used for training-based integration of clinical knowledge into LLMs.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Multimodal Data Integration",
+      "target": "Clinical Knowledge",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Text and multimodal data integration are approaches for incorporating clinical knowledge into models.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Medical Knowledge Sources",
+      "target": "Medical Datasets",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Reliable knowledge sources from the medical domain, including databases and datasets, are gathered for model development.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Medical LLMs",
+      "target": "Diagnostic Assistance",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Medical LLMs are developed for applications such as diagnostic assistance and treatment recommendations.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Medical LLMs",
+      "target": "Treatment Recommendations",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Medical LLMs are developed for applications such as diagnostic assistance and treatment recommendations.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Decision Traceability",
+      "target": "Medical LLMs",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Models must deliver traceable decision-making processes, a key requirement for clinical LLMs.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Decision Traceability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Knowledge graphs provide structured representations that improve traceability of model reasoning.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Retrieval-Augmented Generation",
+      "target": "Decision Traceability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "RAG improves decision traceability by retrieving and documenting evidence supporting generated recommendations.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Medical LLMs",
+      "target": "Model Evaluation",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Evaluation systems are discussed as applicable to relevant tasks for assessing medical LLM performance.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Academic-Industry Gap",
+      "target": "Medical LLMs",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The paper assesses the disparity between models developed in academic settings and those in industry.",
+      "source_papers": [
+        "2502.20988v2"
+      ]
+    },
+    {
+      "source": "Literature review automation",
+      "target": "Natural Language Processing",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The research evaluates several Natural Language Processing strategies as the core methods to automate literature review generation.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "Literature review automation",
+      "target": "PDF document processing",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Developing a system capable of automatically generating literature reviews from only PDF files as input is the primary objective.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "Retrieval-Augmented Generation",
+      "target": "Large Language Model",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "RAG is implemented with Large Language Model (GPT-3.5-turbo) as one of three evaluated systems.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "Large Language Model",
+      "target": "Text summarization",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "GPT-3.5-turbo is used to generate literature reviews, which requires text summarization capabilities.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "Transformer model",
+      "target": "Text summarization",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Simple T5 transformer model is utilized as one of three distinct techniques to implement auto-generating systems.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "Frequency-based extraction",
+      "target": "Text summarization",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "spaCy frequency-based method is evaluated as one of the NLP strategies for auto-generating literature reviews.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "ROUGE evaluation metric",
+      "target": "Literature review automation",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "ROUGE scores are used for the evaluation of all three systems.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "SciTLDR dataset",
+      "target": "Literature review automation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The SciTLDR dataset is chosen for this research experiment to train and evaluate the three different systems.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "Large Language Model",
+      "target": "ROUGE evaluation metric",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The Large Language Model GPT-3.5-turbo achieved the highest ROUGE-1 score, 0.364, outperforming other approaches.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "Graphical user interface",
+      "target": "Literature review automation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.6,
+      "evidence": "A graphical user interface is created for the best system based on the large language model.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "Retrieval-Augmented Generation",
+      "target": "Text summarization",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "RAG with LLM is one of three evaluated techniques for generating literature reviews through improved context-grounded summarization.",
+      "source_papers": [
+        "2411.18583v1"
+      ]
+    },
+    {
+      "source": "Knowledge-Routed VQA",
+      "target": "Visual Question Answering",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Knowledge-Routed VQA is a variant of VQA that incorporates knowledge reasoning as a core requirement.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Annotator bias",
+      "target": "Shortcut learning",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Crowdsourced annotations with annotator bias often lead to superficial over-fitted correlations that models exploit as shortcuts.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Shortcut learning",
+      "target": "Deep representation embedding",
+      "relation": "corrupts",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Deep embedding models exploit shortcut correlations rather than learning robust representations; the proposed dataset aims to cutoff this behavior.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Controlled program generation",
+      "target": "Annotator bias",
+      "relation": "prevents",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Programs generate question-answer pairs deterministically from structured data instead of crowdsourcing, eliminating annotator subjectivity.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Controlled program generation",
+      "target": "Answer ambiguity",
+      "relation": "prevents",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Programs are designed to avoid answer ambiguity through structured constraints and selection logic.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Controlled program generation",
+      "target": "Answer distribution balance",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Programs balance answer distribution across the dataset as part of their design constraints.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Scene graph",
+      "target": "Knowledge-Routed VQA",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Scene graphs from Visual Genome are used as a data source for generating Knowledge-Routed VQA question-answer pairs.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Knowledge-Routed VQA",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "External knowledge bases provide triplets from which controlled programs generate knowledge-routed questions.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Multi-step reasoning",
+      "target": "Knowledge-Routed VQA",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Programs push multi-step reasoning by selecting one or two triplets requiring sequential inference.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Image context perception",
+      "target": "Knowledge-Routed VQA",
+      "relation": "required_for",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A desirable VQA model must correctly perceive image context; the dataset enforces this by ensuring only one knowledge triplet relates to image objects.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Question understanding",
+      "target": "Knowledge-Routed VQA",
+      "relation": "required_for",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A desirable VQA model must understand the question; this is a core requirement of knowledge reasoning.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Deep representation embedding",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Models must incorporate learned knowledge from external bases into their embedding representations.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Knowledge-Routed VQA",
+      "target": "Shortcut learning",
+      "relation": "prevents",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The dataset design aims to cutoff shortcut learning by enforcing that only one knowledge relates to image objects and all questions use different knowledge.",
+      "source_papers": [
+        "2012.07192v1"
+      ]
+    },
+    {
+      "source": "Hierarchical deconstruction",
+      "target": "DepthQA dataset",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The DepthQA dataset is created by deconstructing questions into a hierarchical graph representing different depths of knowledge.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "DepthQA dataset",
+      "target": "Conceptual knowledge",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "DepthQA deconstructs questions into three depths: (i) recalling conceptual knowledge as the first level.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "DepthQA dataset",
+      "target": "Procedural knowledge",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "DepthQA deconstructs questions into (ii) applying procedural knowledge as the second level.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "DepthQA dataset",
+      "target": "Strategic knowledge",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "DepthQA deconstructs questions into (iii) analyzing strategic knowledge as the third level.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "large language models",
+      "target": "Knowledge utilization",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The paper studies how LLMs use their knowledge for reasoning, examining their knowledge utilization patterns.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "Hierarchical deconstruction",
+      "target": "Backward discrepancy",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Based on a hierarchical graph, we quantify forward discrepancy, a discrepancy in LLM performance on simpler sub-problems versus complex questions.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "Model capacity",
+      "target": "Backward discrepancy",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Smaller models exhibit more discrepancies than larger models, showing an inverse relationship with model capacity.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "Training data memorization",
+      "target": "Backward discrepancy",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Distinct patterns of discrepancies are observed across model capacity and possibility of training data memorization.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "Multi-turn interactions",
+      "target": "Problem-solving ability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Guiding models from simpler to complex questions through multi-turn interactions improves performance across model sizes.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "Hierarchical deconstruction",
+      "target": "Problem-solving ability",
+      "relation": "improves",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Structured intermediate steps in knowledge reasoning, enabled by hierarchical deconstruction, improve problem-solving abilities.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "Knowledge utilization",
+      "target": "Problem-solving ability",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Understanding how LLMs utilize knowledge enhances problem-solving abilities through structured reasoning.",
+      "source_papers": [
+        "2406.19502v2"
+      ]
+    },
+    {
+      "source": "large language models",
+      "target": "Black-box models",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "LLMs are black-box models, which often fall short of capturing and accessing factual knowledge.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Factual knowledge",
+      "relation": "stores",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Knowledge Graphs are structured knowledge models that explicitly store rich factual knowledge.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "KG-enhanced LLMs",
+      "target": "large language models",
+      "relation": "enhances",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "KG-enhanced LLMs incorporate KGs during the pre-training and inference phases of LLMs, or for the purpose of enhancing understanding of the knowledge learned by LLMs.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "KG-enhanced LLMs",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "KGs can enhance LLMs by providing external knowledge for inference and interpretability.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "LLM-augmented KGs",
+      "target": "Knowledge Graphs",
+      "relation": "improves",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "LLM-augmented KGs leverage LLMs for different KG tasks such as embedding, completion, construction, graph-to-text generation, and question answering.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "large language models",
+      "target": "LLM-augmented KGs",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "LLM-augmented KGs leverage LLMs for different KG tasks.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Knowledge graph completion",
+      "target": "Knowledge Graphs",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Knowledge graph completion is one of the KG tasks that leverage LLMs.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Knowledge graph construction",
+      "target": "Knowledge Graphs",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Knowledge graph construction is one of the KG tasks that leverage LLMs.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Graph-to-text generation",
+      "target": "Knowledge Graphs",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Graph-to-text generation is one of the KG tasks that leverage LLMs.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Question answering",
+      "target": "Knowledge Graphs",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Question answering is one of the KG tasks that leverage LLMs.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Knowledge graph embeddings",
+      "target": "Knowledge Graphs",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Knowledge embedding is one of the KG tasks that leverage LLMs.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Synergized LLMs and KGs",
+      "target": "large language models",
+      "relation": "enhances",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Synergized LLMs and KGs play equal roles and work in a mutually beneficial way to enhance both LLMs and KGs.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Synergized LLMs and KGs",
+      "target": "Knowledge Graphs",
+      "relation": "enhances",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Synergized LLMs and KGs play equal roles and work in a mutually beneficial way to enhance both LLMs and KGs.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Bidirectional reasoning",
+      "target": "Synergized LLMs and KGs",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Synergized LLMs and KGs enable bidirectional reasoning driven by both data and knowledge.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "large language models",
+      "target": "Factual knowledge",
+      "relation": "captures",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "LLMs often fall short of capturing and accessing factual knowledge.",
+      "source_papers": [
+        "2306.08302v3"
+      ]
+    },
+    {
+      "source": "Natural Language Processing",
+      "target": "Entity extraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "NLP and Machine Learning methods employed for extracting entities from research publications",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "Natural Language Processing",
+      "target": "Relationship extraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "NLP and Machine Learning methods employed for extracting relationships from research publications",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "machine learning",
+      "target": "Entity extraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Machine Learning techniques used as state-of-the-art methods for entity extraction from text",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "machine learning",
+      "target": "Relationship extraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Machine Learning techniques applied for extracting relationships from research publications",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "Text Mining",
+      "target": "Information Extraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "State-of-the-art Text Mining tools employed to tackle knowledge extraction challenge",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "Entity extraction",
+      "target": "Knowledge Graph",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Extracted entities are integrated into large-scale knowledge graph structure",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "Relationship extraction",
+      "target": "Knowledge Graph",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Extracted relationships are integrated into large-scale knowledge graph structure",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "Hybrid system",
+      "target": "Information Extraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Hybrid approach integrating multiple NLP and ML tools for extracting entities and relationships",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "Information Extraction",
+      "target": "Scientific knowledge graph",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Knowledge extraction from research publications generates scientific knowledge graph with 109,105 triples",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "Scientific knowledge graph",
+      "target": "Research publication metadata",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Scientific knowledge graphs typically contain metadata describing publications: authors, venues, organizations, research topics, citations",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "Semantic annotation",
+      "target": "Knowledge Graph",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Manual annotation and semantic markup contribute to knowledge graph construction",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "Scientific knowledge graph",
+      "target": "Scholarly domain",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Scientific knowledge graphs focus on scholarly domain representing research entities and relationships",
+      "source_papers": [
+        "2011.01103v1"
+      ]
+    },
+    {
+      "source": "corpus distillation",
+      "target": "Medical LLMs",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Corpus distillation addresses insufficient quantity and quality in open-source annotated scientific corpora, a bottleneck for effective LLM training in biomedical research.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "Multi-agent system",
+      "target": "corpus distillation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The collaborative multi-agent architecture works to autonomously extract, synthesize, and self-evaluate high-quality textual data from vast scientific literature.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "MeSH hierarchy",
+      "target": "Multi-agent system",
+      "relation": "guides",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Specialized agents are each guided by the Medical Subject Headings (MeSH) hierarchy to work in concert.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "knowledge-driven framework",
+      "target": "corpus distillation",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "A knowledge-driven, agentic framework for scientific corpus distillation tailored for LLM training in biomedical domain.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "biomedical ontologies",
+      "target": "question-answer pairs",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Question-answer pairs are generated ensuring consistency with biomedical ontologies.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "Text Mining",
+      "target": "corpus distillation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Agents autonomously extract high-quality textual data from vast scientific literature through mining processes.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "question-answer pairs",
+      "target": "Medical LLMs",
+      "relation": "improves",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Language models trained on multi-agent distilled datasets achieve notable improvements in biomedical question-answering tasks.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "self-evaluation mechanism",
+      "target": "question-answer pairs",
+      "relation": "refines",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The agentic framework collectively generates and refines domain-specific question-answer pairs through self-evaluation.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "biomedical question-answering",
+      "target": "Medical LLMs",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Language models trained on distilled datasets are evaluated on biomedical question-answering tasks.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "domain coverage",
+      "target": "corpus distillation",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The framework ensures comprehensive coverage of the biomedical domain while maintaining consistency.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "LLM training data",
+      "target": "Medical LLMs",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The multi-agent distilled datasets serve as training data for biomedical LLM development.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "corpus distillation",
+      "target": "LLM training data",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Corpus distillation generates AI-Ready datasets that enable improved LLM training.",
+      "source_papers": [
+        "2504.19565v3"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Relationship extraction",
+      "relation": "motivates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Knowledge bases are naturally incomplete; relation prediction is proposed as a solution to complete their information.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "Relationship extraction",
+      "target": "Knowledge graph embeddings",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Recent works tackle this challenge by learning embeddings for entities and relations, then employing them to predict new relations.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "Relationship extraction",
+      "target": "Relation embeddings",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Learning embeddings for entities and relations enables prediction of new relations among entities.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "Message passing",
+      "target": "Knowledge graph embeddings",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "ÆMP acquires entities' context information through an attention-enhanced message-passing scheme.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "Attention mechanisms",
+      "target": "Message passing",
+      "relation": "enhances",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "An attention-enhanced message-passing scheme captures entities' local semantics while focusing on different aspects of their neighborhood.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "Local neighbors",
+      "target": "Knowledge graph embeddings",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Most methods focus only on the local neighbors of a relation to learn the embeddings.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "Long-term dependencies",
+      "target": "Knowledge graph embeddings",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Methods may fail to capture KGs' context information by neglecting long-term dependencies and the propagation of entities' semantics.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "Paths",
+      "target": "Semantic context",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Semantic context is captured by leveraging the paths and their relationships between entities.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "Semantic context",
+      "target": "Contextualized representations",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Capturing semantic context, by leveraging paths and their relationships between entities, improves representation of entities.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "Attention mechanisms",
+      "target": "Contextualized representations",
+      "relation": "improves",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Empirical findings show how attention mechanisms can improve entities' context representation.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "Contextualized representations",
+      "target": "Relationship extraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Combining entities and semantic path contexts improves the general representation of entities and the relation predictions.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "ÆMP model",
+      "target": "Knowledge graph embeddings",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "ÆMP is a novel model for learning contextualized representations of entities through attention-enhanced message-passing.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "ÆMP model",
+      "target": "Relationship extraction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "ÆMP outperforms or competes with state-of-the-art relation prediction methods on several knowledge graph benchmarks.",
+      "source_papers": [
+        "2206.04801v1"
+      ]
+    },
+    {
+      "source": "scientific breakthrough",
+      "target": "knowledge emergence",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The discovery of fullerenes in 1985 is analyzed as the scientific discovery that triggered a process which led to research in nanotubes.",
+      "source_papers": [
+        "0911.2729v1"
+      ]
+    },
+    {
+      "source": "knowledge emergence",
+      "target": "scientific communication",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Knowledge emergence has effects on the structure of scientific communication as new knowledge becomes integrated and disseminated.",
+      "source_papers": [
+        "0911.2729v1"
+      ]
+    },
+    {
+      "source": "network analysis",
+      "target": "knowledge emergence",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Network analysis is applied to understand this emergence institutionally as changes in the journals; semantically, as changes in the codification of meaning.",
+      "source_papers": [
+        "0911.2729v1"
+      ]
+    },
+    {
+      "source": "knowledge emergence",
+      "target": "journal structure",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Knowledge emergence is analyzed institutionally as changes in the journals.",
+      "source_papers": [
+        "0911.2729v1"
+      ]
+    },
+    {
+      "source": "knowledge emergence",
+      "target": "semantic codification",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Knowledge emergence is analyzed semantically as changes in the codification of meaning in terms of words.",
+      "source_papers": [
+        "0911.2729v1"
+      ]
+    },
+    {
+      "source": "fullerenes",
+      "target": "nanotubes",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The discovery of fullerenes in 1985 triggered a process which led to research in nanotubes.",
+      "source_papers": [
+        "0911.2729v1"
+      ]
+    },
+    {
+      "source": "fullerenes",
+      "target": "scientific breakthrough",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The discovery of fullerenes in 1985 is analyzed as the scientific discovery that triggered subsequent research.",
+      "source_papers": [
+        "0911.2729v1"
+      ]
+    },
+    {
+      "source": "knowledge emergence",
+      "target": "cognitive foundation",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The new knowledge becomes the emergent foundation of further developments.",
+      "source_papers": [
+        "0911.2729v1"
+      ]
+    },
+    {
+      "source": "journal structure",
+      "target": "scientific communication",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Institutional changes in journals constitute fundamental changes in scientific communication structure.",
+      "source_papers": [
+        "0911.2729v1"
+      ]
+    },
+    {
+      "source": "semantic codification",
+      "target": "cognitive foundation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "The standardization of terminology and meaning (semantic codification) enables the formation of stable cognitive foundations for further research.",
+      "source_papers": [
+        "0911.2729v1"
+      ]
+    },
+    {
+      "source": "Large Language Model",
+      "target": "hallucination",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "LLMs 'suffer from hallucinations and lack grounding in structured knowledge, limiting their reliability'",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "Retrieval-Augmented Generation",
+      "target": "hallucination",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "RAGs augment LLMs with retrieved knowledge to reduce hallucinations and improve factual grounding",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graph",
+      "target": "Retrieval-Augmented Generation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "RAGs leverage structured knowledge from KGs to ground LLM reasoning",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "human-AI collaboration",
+      "target": "hypothesis-driven research",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "HypoChainer 'integrates human expertise, LLM-driven reasoning, and knowledge graphs to enhance hypothesis generation and validation'",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "dimensionality reduction",
+      "target": "graph neural network",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Experts use 'dimensionality reduction to navigate large-scale GNN predictions'",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graph",
+      "target": "hypothesis chain",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Experts 'iteratively examine KG relationships around predictions and semantically linked entities, refining hypotheses'",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "hypothesis chain",
+      "target": "validation prioritization",
+      "relation": "precedes",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Stage two produces hypothesis chains; stage three filters 'refined hypotheses based on KG-supported evidence'",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graph",
+      "target": "validation prioritization",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Hypotheses are 'filtered based on KG-supported evidence to identify high-priority candidates for experimentation'",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "visual analytics",
+      "target": "hypothesis chain",
+      "relation": "strengthens",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Visual analytics 'further strengthen weak links in reasoning' during hypothesis refinement",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "biomedical knowledge",
+      "target": "scientific breakthrough",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Modern scientific discovery requires 'integrating vast and heterogeneous knowledge critical to breakthroughs in biomedicine'",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "human-AI collaboration",
+      "target": "scientific breakthrough",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "HypoChainer demonstrates 'its potential to support interpretable, scalable, and knowledge-grounded scientific discovery'",
+      "source_papers": [
+        "2507.17209v1"
+      ]
+    },
+    {
+      "source": "large language models",
+      "target": "Program Synthesis",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "FlexKBQA leverages LLMs as program translators for converting SPARQL queries into natural language questions.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "Program Synthesis",
+      "target": "SPARQL Queries",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Automated algorithms sample diverse programs, such as SPARQL queries, from the knowledge base.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "Synthetic Data Generation",
+      "target": "Few-shot Learning",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The synthetic dataset facilitates training a specialized lightweight model with minimal annotation burden.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "Self-training",
+      "target": "Distribution Shift",
+      "relation": "mitigates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Execution-guided self-training reduces the distribution shift between synthetic data and real user questions.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "Lightweight Models",
+      "target": "Knowledge Base Question Answering",
+      "relation": "specialises_for",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "FlexKBQA trains a specialized lightweight model for the knowledge base to enable efficient deployment.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "large language models",
+      "target": "Knowledge Base Question Answering",
+      "relation": "enhances",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The framework harnesses the inherent reasoning capability of LLMs to enhance the entire KBQA system.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "Few-shot Learning",
+      "target": "Knowledge Base Question Answering",
+      "relation": "addresses",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "FlexKBQA tackles few-shot KBQA where high-quality annotated data is insufficient in real-world scenarios.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "SPARQL Queries",
+      "target": "Synthetic Data Generation",
+      "relation": "input_to",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "SPARQL queries are sampled from the knowledge base and converted into natural language questions for synthetic data creation.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "Entity Disambiguation",
+      "target": "Knowledge Base Question Answering",
+      "relation": "part_of",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Entity linking is a critical component of KBQA systems for handling diverse entities within knowledge bases.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "Zero-shot Learning",
+      "target": "Few-shot Learning",
+      "relation": "generalises_from",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "FlexKBQA achieves impressive results in both few-shot and the more challenging zero-shot scenarios.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "SPARQL Queries",
+      "relation": "queried_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Programs such as SPARQL queries are sampled from the knowledge base for structured data retrieval.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "Self-training",
+      "target": "Lightweight Models",
+      "relation": "trains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Execution-guided self-training iteratively leverages unlabeled user questions to improve the lightweight model.",
+      "source_papers": [
+        "2308.12060v3"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Automated driving",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "KGs have recently gained significant attention from both industry and academia for applications that benefit automated driving tasks.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "graph neural network",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Recent progress in knowledge graph embeddings and graph neural networks allows applying machine learning to graph-structured data.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Knowledge graph embeddings",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Recent progress in knowledge graph embeddings allows applying machine learning to graph-structured data.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "machine learning",
+      "target": "Automated driving",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Deep learning methods have made remarkable breakthroughs in automated driving.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "biomedical ontologies",
+      "target": "Automated driving",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Ontologies are listed as the first main task of AD where KGs are applied.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Perception",
+      "target": "Automated driving",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Perception is one of the main tasks of AD for incorporating available information and knowledge.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Scene understanding",
+      "target": "Automated driving",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Scene understanding is one of the main tasks of AD listed in the survey.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Motion planning",
+      "target": "Automated driving",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Motion planning is one of the main tasks of AD where KGs are applied.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Validation",
+      "target": "Automated driving",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Validation is one of the main tasks of AD addressed by KG-based approaches.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "biomedical ontologies",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Ontologies form the structural foundation for knowledge representation in KGs.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Perception",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "KGs are applied to perception tasks in automated driving to effectively incorporate available information.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Scene understanding",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "KGs help exploit structured and relational data for scene understanding in AD.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Motion planning",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "KGs are applied to motion planning tasks by providing structured knowledge of driving scenarios.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graphs",
+      "target": "Validation",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "KGs are applied to validation tasks for ensuring reliability and safety of automated systems.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Reliability",
+      "target": "Automated driving",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Reliability is a critical unsolved problem to guarantee in automated driving systems.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Safety",
+      "target": "Automated driving",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Safety is an essential unsolved problem, especially to effectively incorporate knowledge in the driving task.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Graph-structured data",
+      "target": "Knowledge Graphs",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Knowledge graphs exploit structured, dynamic, and relational data organized as graph-structured data.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "graph neural network",
+      "target": "Graph-structured data",
+      "relation": "processes",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Graph neural networks are designed to handle the complexity of graph-structured data with complex relationships and inter-dependencies.",
+      "source_papers": [
+        "2210.08119v1"
+      ]
+    },
+    {
+      "source": "Knowledge graph reasoning",
+      "target": "Symbolic logic",
+      "relation": "can_use",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Conventional KG reasoning based on symbolic logic is deterministic, with reasoning results being explainable.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "Knowledge graph reasoning",
+      "target": "Knowledge graph embeddings",
+      "relation": "can_use",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Modern embedding-based reasoning can deal with uncertainty and predict plausible knowledge, often with high efficiency via vector computation.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "Symbolic logic",
+      "target": "Decision Traceability",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Conventional KG reasoning based on symbolic logic is deterministic, with reasoning results being explainable.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "Symbolic logic",
+      "target": "Uncertainty",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Conventional KG reasoning based on symbolic logic is deterministic, contrasting with embedding-based methods that can deal with uncertainty.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "Knowledge graph embeddings",
+      "target": "Uncertainty",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Modern embedding-based reasoning can deal with uncertainty and predict plausible knowledge.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "Knowledge graph embeddings",
+      "target": "Plausible knowledge prediction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Modern embedding-based reasoning can deal with uncertainty and predict plausible knowledge.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "Knowledge graph embeddings",
+      "target": "Vector computation",
+      "relation": "uses",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Modern embedding-based reasoning often achieves high efficiency via vector computation.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "Logic-embedding integration",
+      "target": "Symbolic logic",
+      "relation": "incorporates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A promising direction is to integrate both logic-based and embedding-based methods.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "Logic-embedding integration",
+      "target": "Knowledge graph embeddings",
+      "relation": "incorporates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A promising direction is to integrate both logic-based and embedding-based methods.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "Logic-embedding integration",
+      "target": "Decision Traceability",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Integrated approach aims to have advantages of both logic-based (explainability) and embedding-based (efficiency) methods.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "Logic-embedding integration",
+      "target": "Knowledge graph reasoning",
+      "relation": "advances",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "A promising direction is to integrate both logic-based and embedding-based methods for KG reasoning.",
+      "source_papers": [
+        "2202.07412v1"
+      ]
+    },
+    {
+      "source": "socioeconomic driving forces",
+      "target": "scientific research",
+      "relation": "causes",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "scientific research is produced for social and economic interests of nations (power, wealth creation, technological superiority, etc.)",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "national interest",
+      "target": "scientific research",
+      "relation": "drives",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "organized social effort that inevitably reflect the concerns and interests of nations to achieve advances and discoveries",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "scientific research",
+      "target": "wealth creation",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "scientific research explains the sources of social power and wealth creation by nations",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "scientific research",
+      "target": "technological superiority",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "advances and discoveries spread to the rest of humankind, creating technological superiority",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "scientific research",
+      "target": "power",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "scientific research is driven by interests of nations to achieve power and social dominance",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "environmental threats",
+      "target": "scientific research",
+      "relation": "motivates",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "nations produce scientific research to cope with environmental threats, such as war",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "R&D investment",
+      "target": "productivity",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "relationships between R&D investment and productivity are discussed",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "R&D investment",
+      "target": "scientific research",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "R&D investment provides resources necessary for systematic scientific inquiry and research processes",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "research policy",
+      "target": "R&D investment",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "research policy implications discussed in context of allocating R&D investment",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "social effort",
+      "target": "scientific research",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "immense growth of science in modern society is not only due to activity of scientists but rather to general social efforts of nations",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "science",
+      "target": "scientific research",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "science and scientific research are distinct but related concepts; research applies scientific methods",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "wealth creation",
+      "target": "national interest",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "wealth creation is identified as a primary national interest driving research",
+      "source_papers": [
+        "1806.05028v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graph",
+      "target": "Semantic relatedness",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A semantic knowledge graph encodes semantic relatedness between knowledge topics by representing their structural relationships.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Semantic TrueLearn",
+      "target": "TrueLearn algorithm",
+      "relation": "extends",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Semantic TrueLearn is described as a novel semantic version of TrueLearn that adds semantic awareness to the base model.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Knowledge Graph",
+      "target": "Learner model",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The semantic knowledge graph is leveraged to build a humanly intuitive knowledge representation within the learner model.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Semantic relatedness",
+      "target": "Latent knowledge",
+      "relation": "propagates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The system propagates latent information across semantically related topics to improve knowledge state inference.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Learner model",
+      "target": "Learner engagement",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The learner model is used to better predict learner engagement in the educational recommendation system.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Wikipedia link graph",
+      "target": "Knowledge Graph",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The Wikipedia link graph is used as a resource to exploit semantic relatedness between knowledge components.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Semantic TrueLearn",
+      "target": "Learner engagement",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Semantic TrueLearn achieves statistically significant improvements in predicting learner engagement.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Bayesian machine learning",
+      "target": "Semantic TrueLearn",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Semantic TrueLearn leverages Bayesian machine learning to improve the predictive performance of educational engagement.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Knowledge components",
+      "target": "Semantic relatedness",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Semantic relatedness is defined between knowledge components in learning resources.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Educational recommendation system",
+      "target": "Learner model",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The educational recommendation system incorporates a novel learner model to predict learner engagement.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Lifelong learning",
+      "target": "Educational recommendation system",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The state-aware educational recommendation system is designed for lifelong learning scenarios.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    },
+    {
+      "source": "Semantic TrueLearn",
+      "target": "Predictive performance",
+      "relation": "improves",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Semantic TrueLearn achieves statistically significant improvements in terms of predictive performance.",
+      "source_papers": [
+        "2112.04368v1"
+      ]
+    }
+  ]
+}

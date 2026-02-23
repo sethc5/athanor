@@ -1,0 +1,989 @@
+[
+  {
+    "concept_a": "lattice gauge theories",
+    "concept_b": "lattice gauge theory",
+    "similarity": 0.8000539541244507,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0903
+  },
+  {
+    "concept_a": "quantum error correction",
+    "concept_b": "logical qubit",
+    "similarity": 0.7304034233093262,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7585
+  },
+  {
+    "concept_a": "universal gate set",
+    "concept_b": "universal gate",
+    "similarity": 0.718483567237854,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6567
+  },
+  {
+    "concept_a": "measurement-free error correction",
+    "concept_b": "Active error correction",
+    "similarity": 0.7157712578773499,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "thermalisation",
+    "concept_b": "thermalisation channel",
+    "similarity": 0.714852511882782,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3637
+  },
+  {
+    "concept_a": "universal gate",
+    "concept_b": "universality",
+    "similarity": 0.701542317867279,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2824
+  },
+  {
+    "concept_a": "Active error correction",
+    "concept_b": "Classical processing",
+    "similarity": 0.7008627653121948,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "T-depth",
+    "concept_b": "circuit depth",
+    "similarity": 0.6978801488876343,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "qubit overhead",
+    "concept_b": "Error-correction overhead",
+    "similarity": 0.6931426525115967,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6237
+  },
+  {
+    "concept_a": "code rate",
+    "concept_b": "Logical error rate",
+    "similarity": 0.6804514527320862,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3203
+  },
+  {
+    "concept_a": "measurement-free error correction",
+    "concept_b": "Classical processing",
+    "similarity": 0.663271963596344,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Logical information",
+    "concept_b": "logical qubit",
+    "similarity": 0.6618205308914185,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7298
+  },
+  {
+    "concept_a": "Delay line",
+    "concept_b": "Delay line error",
+    "similarity": 0.6548525094985962,
+    "graph_distance": 7,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "quantum-controlled thermalisations",
+    "concept_b": "thermalisation channel",
+    "similarity": 0.6531596779823303,
+    "graph_distance": 999,
+    "structural_hole_score": 0.194
+  },
+  {
+    "concept_a": "measurement-free error correction",
+    "concept_b": "fault-tolerant error correction",
+    "similarity": 0.6522743701934814,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0754
+  },
+  {
+    "concept_a": "Classical processing",
+    "concept_b": "code capacity",
+    "similarity": 0.6513147950172424,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Stabilizer codes",
+    "concept_b": "stabilizer operators",
+    "similarity": 0.6356381177902222,
+    "graph_distance": 3,
+    "structural_hole_score": 0.559
+  },
+  {
+    "concept_a": "Continuous-time quantum error correction",
+    "concept_b": "quantum error correction",
+    "similarity": 0.6348057985305786,
+    "graph_distance": 999,
+    "structural_hole_score": 0.8552
+  },
+  {
+    "concept_a": "readout fidelity",
+    "concept_b": "gate fidelity",
+    "similarity": 0.6269964575767517,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3992
+  },
+  {
+    "concept_a": "universal gate set",
+    "concept_b": "universality",
+    "similarity": 0.6223188638687134,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3743
+  },
+  {
+    "concept_a": "Direct feedback",
+    "concept_b": "measurement-free error correction",
+    "similarity": 0.6188420057296753,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "Break-even point",
+    "concept_b": "Error suppression",
+    "similarity": 0.6176160573959351,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1263
+  },
+  {
+    "concept_a": "measurement-free error correction",
+    "concept_b": "code capacity",
+    "similarity": 0.6165124177932739,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "quantum link models",
+    "concept_b": "lattice gauge theory",
+    "similarity": 0.6151872873306274,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3513
+  },
+  {
+    "concept_a": "circuit-level noise model",
+    "concept_b": "noise model",
+    "similarity": 0.6113853454589844,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4996
+  },
+  {
+    "concept_a": "Active error correction",
+    "concept_b": "code capacity",
+    "similarity": 0.6096857786178589,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "gate noise",
+    "concept_b": "circuit-level noise model",
+    "similarity": 0.6030987501144409,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6671
+  },
+  {
+    "concept_a": "fault-tolerant error correction",
+    "concept_b": "Active error correction",
+    "similarity": 0.5795215368270874,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3252
+  },
+  {
+    "concept_a": "Subsystem principle",
+    "concept_b": "Subsystem",
+    "similarity": 0.5725222826004028,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Direct feedback",
+    "concept_b": "fault-tolerant error correction",
+    "similarity": 0.5709850788116455,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3238
+  },
+  {
+    "concept_a": "Hilbert space subsystem",
+    "concept_b": "Subsystem",
+    "similarity": 0.5669833421707153,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Direct feedback",
+    "concept_b": "Active error correction",
+    "similarity": 0.5653136372566223,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4981
+  },
+  {
+    "concept_a": "Clifford gates",
+    "concept_b": "single-qubit Clifford gates",
+    "similarity": 0.564645528793335,
+    "graph_distance": 8,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "error threshold",
+    "concept_b": "code rate",
+    "similarity": 0.5617172122001648,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4393
+  },
+  {
+    "concept_a": "gate noise",
+    "concept_b": "circuit depth",
+    "similarity": 0.5564652681350708,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4173
+  },
+  {
+    "concept_a": "three-bit gate",
+    "concept_b": "Multiqubit gates",
+    "similarity": 0.5559179186820984,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4996
+  },
+  {
+    "concept_a": "qubit overhead",
+    "concept_b": "code rate",
+    "similarity": 0.5525700449943542,
+    "graph_distance": 3,
+    "structural_hole_score": 0.374
+  },
+  {
+    "concept_a": "Indirect feedback",
+    "concept_b": "measurement-free error correction",
+    "similarity": 0.5486096143722534,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Indirect feedback",
+    "concept_b": "fault-tolerant error correction",
+    "similarity": 0.5481717586517334,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0754
+  },
+  {
+    "concept_a": "stochastic noise",
+    "concept_b": "biased noise",
+    "similarity": 0.544762372970581,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "many-body quantum physics",
+    "concept_b": "Quantum many-body Hamiltonian",
+    "similarity": 0.538583517074585,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0903
+  },
+  {
+    "concept_a": "readout fidelity",
+    "concept_b": "Quantum readout",
+    "similarity": 0.5371255874633789,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "quantum algorithm",
+    "concept_b": "Quantum Machine Learning",
+    "similarity": 0.5343130826950073,
+    "graph_distance": 5,
+    "structural_hole_score": 0.1177
+  },
+  {
+    "concept_a": "logic gate implementation",
+    "concept_b": "logical qubit",
+    "similarity": 0.5313824415206909,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4002
+  },
+  {
+    "concept_a": "lattice gauge theories",
+    "concept_b": "Kitaev quantum double model",
+    "similarity": 0.518660306930542,
+    "graph_distance": 5,
+    "structural_hole_score": 0.294
+  },
+  {
+    "concept_a": "correlations",
+    "concept_b": "bisynchronicity",
+    "similarity": 0.5153502225875854,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Single qubit protection",
+    "concept_b": "quantum error correction",
+    "similarity": 0.511888325214386,
+    "graph_distance": 999,
+    "structural_hole_score": 0.6767
+  },
+  {
+    "concept_a": "stochastic noise",
+    "concept_b": "noise model",
+    "similarity": 0.5103533267974854,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "quantum circuit",
+    "concept_b": "quantum gates",
+    "similarity": 0.5046827793121338,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7463
+  },
+  {
+    "concept_a": "Entanglement-assisted quantum error-correcting codes",
+    "concept_b": "logical qubit",
+    "similarity": 0.5042726397514343,
+    "graph_distance": 4,
+    "structural_hole_score": 0.5356
+  },
+  {
+    "concept_a": "quantum computation",
+    "concept_b": "Qubit systems",
+    "similarity": 0.502680242061615,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4166
+  },
+  {
+    "concept_a": "quantum operator",
+    "concept_b": "quantization",
+    "similarity": 0.5021293759346008,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "fault-tolerant error correction",
+    "concept_b": "code capacity",
+    "similarity": 0.5014820098876953,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0754
+  },
+  {
+    "concept_a": "quantum low-density parity-check codes",
+    "concept_b": "Topological quantum error correction",
+    "similarity": 0.5008568167686462,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3061
+  },
+  {
+    "concept_a": "Indirect feedback",
+    "concept_b": "Active error correction",
+    "similarity": 0.5004216432571411,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "quantum link models",
+    "concept_b": "electric-field coupling",
+    "similarity": 0.4997308850288391,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3513
+  },
+  {
+    "concept_a": "Entanglement-assisted quantum error-correcting codes",
+    "concept_b": "quantum low-density parity-check codes",
+    "similarity": 0.49710866808891296,
+    "graph_distance": 3,
+    "structural_hole_score": 0.51
+  },
+  {
+    "concept_a": "Feedback control",
+    "concept_b": "Measurement latency",
+    "similarity": 0.49467626214027405,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Topological quantum error correction",
+    "concept_b": "topological protection",
+    "similarity": 0.4921237826347351,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Quantum simulation",
+    "concept_b": "classical simulation",
+    "similarity": 0.49095702171325684,
+    "graph_distance": 10,
+    "structural_hole_score": 0.2391
+  },
+  {
+    "concept_a": "quantum computation",
+    "concept_b": "Quantum hardware",
+    "similarity": 0.4888507127761841,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4166
+  },
+  {
+    "concept_a": "classical limit",
+    "concept_b": "quantum field theory limit",
+    "similarity": 0.4881856441497803,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2258
+  },
+  {
+    "concept_a": "Kitaev quantum double model",
+    "concept_b": "lattice gauge theory",
+    "similarity": 0.48657914996147156,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2037
+  },
+  {
+    "concept_a": "error threshold",
+    "concept_b": "Break-even point",
+    "similarity": 0.4845696985721588,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4393
+  },
+  {
+    "concept_a": "quantum link models",
+    "concept_b": "Kitaev quantum double model",
+    "similarity": 0.48422569036483765,
+    "graph_distance": 4,
+    "structural_hole_score": 0.555
+  },
+  {
+    "concept_a": "circuit depth",
+    "concept_b": "Gate time",
+    "similarity": 0.48299312591552734,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "qubit overhead",
+    "concept_b": "resource requirements",
+    "similarity": 0.4821680188179016,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6978
+  },
+  {
+    "concept_a": "non-stochastic noise",
+    "concept_b": "biased noise",
+    "similarity": 0.4804966449737549,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Clifford frame",
+    "concept_b": "single-qubit Clifford gates",
+    "similarity": 0.4787667393684387,
+    "graph_distance": 7,
+    "structural_hole_score": 0.3325
+  },
+  {
+    "concept_a": "quantum advantage",
+    "concept_b": "Quantum Machine Learning",
+    "similarity": 0.4769384562969208,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3275
+  },
+  {
+    "concept_a": "Code parameters",
+    "concept_b": "code rate",
+    "similarity": 0.4764063358306885,
+    "graph_distance": 5,
+    "structural_hole_score": -0.0181
+  },
+  {
+    "concept_a": "Direct feedback",
+    "concept_b": "Classical processing",
+    "similarity": 0.47395944595336914,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "Continuous-time quantum error correction",
+    "concept_b": "logical qubit",
+    "similarity": 0.47321879863739014,
+    "graph_distance": 999,
+    "structural_hole_score": 0.7601
+  },
+  {
+    "concept_a": "matching decoder",
+    "concept_b": "code capacity",
+    "similarity": 0.470661997795105,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "quantum gates",
+    "concept_b": "qubits",
+    "similarity": 0.46839678287506104,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3745
+  },
+  {
+    "concept_a": "gate noise",
+    "concept_b": "T-depth",
+    "similarity": 0.4659809470176697,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4173
+  },
+  {
+    "concept_a": "random circuit sampling",
+    "concept_b": "classical simulation",
+    "similarity": 0.46107807755470276,
+    "graph_distance": 5,
+    "structural_hole_score": 0.1345
+  },
+  {
+    "concept_a": "code rate",
+    "concept_b": "phenomenological model",
+    "similarity": 0.45983144640922546,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Decoding algorithm",
+    "concept_b": "code capacity",
+    "similarity": 0.45654261112213135,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3548
+  },
+  {
+    "concept_a": "Entanglement-assisted quantum error-correcting codes",
+    "concept_b": "Topological quantum error correction",
+    "similarity": 0.45572030544281006,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2038
+  },
+  {
+    "concept_a": "quantum low-density parity-check codes",
+    "concept_b": "Surface codes",
+    "similarity": 0.45325514674186707,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7374
+  },
+  {
+    "concept_a": "quantum circuits",
+    "concept_b": "circuit-level noise model",
+    "similarity": 0.4525173008441925,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5533
+  },
+  {
+    "concept_a": "Entanglement-assisted quantum error-correcting codes",
+    "concept_b": "Stabilizer codes",
+    "similarity": 0.4515675902366638,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5131
+  },
+  {
+    "concept_a": "Model robustness",
+    "concept_b": "performance guarantee",
+    "similarity": 0.4512839615345001,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "T-depth",
+    "concept_b": "circuit complexity",
+    "similarity": 0.4507399797439575,
+    "graph_distance": 8,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "lattice gauge theories",
+    "concept_b": "Wilson loop",
+    "similarity": 0.4484679400920868,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3395
+  },
+  {
+    "concept_a": "quantum advantage",
+    "concept_b": "quantum algorithm",
+    "similarity": 0.4474647343158722,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4452
+  },
+  {
+    "concept_a": "Indirect feedback",
+    "concept_b": "Classical processing",
+    "similarity": 0.44719642400741577,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Logical error rate",
+    "concept_b": "logical qubit",
+    "similarity": 0.44717681407928467,
+    "graph_distance": 4,
+    "structural_hole_score": 0.652
+  },
+  {
+    "concept_a": "quantum low-density parity-check codes",
+    "concept_b": "logical qubit",
+    "similarity": 0.4455620050430298,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6379
+  },
+  {
+    "concept_a": "non-Abelian flux",
+    "concept_b": "lattice gauge theory",
+    "similarity": 0.44521206617355347,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "random circuit sampling",
+    "concept_b": "output distribution",
+    "similarity": 0.4416336417198181,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3842
+  },
+  {
+    "concept_a": "categorical quantum mechanics",
+    "concept_b": "quantum sets",
+    "similarity": 0.4411888122558594,
+    "graph_distance": 999,
+    "structural_hole_score": 0.5704
+  },
+  {
+    "concept_a": "gate noise",
+    "concept_b": "logic gate implementation",
+    "similarity": 0.4404420852661133,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4857
+  },
+  {
+    "concept_a": "Active error correction",
+    "concept_b": "matching decoder",
+    "similarity": 0.4402937889099121,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "lattice gauge theory",
+    "concept_b": "Lattice geometry",
+    "similarity": 0.4383452236652374,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "qubits",
+    "concept_b": "Qubit systems",
+    "similarity": 0.43741148710250854,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "quantization",
+    "concept_b": "commuting observables",
+    "similarity": 0.4365384578704834,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Delay line error",
+    "concept_b": "Measurement latency",
+    "similarity": 0.4353829324245453,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "resource requirements",
+    "concept_b": "circuit depth",
+    "similarity": 0.4347039461135864,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3238
+  },
+  {
+    "concept_a": "angular momentum operators",
+    "concept_b": "spherical tensor operators",
+    "similarity": 0.43464624881744385,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Direct feedback",
+    "concept_b": "code capacity",
+    "similarity": 0.4329480528831482,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "Error suppression",
+    "concept_b": "code capacity",
+    "similarity": 0.43065956234931946,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1263
+  },
+  {
+    "concept_a": "measurement-free error correction",
+    "concept_b": "Decoding algorithm",
+    "similarity": 0.430356502532959,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3548
+  },
+  {
+    "concept_a": "quantum circuit",
+    "concept_b": "quantum algorithm",
+    "similarity": 0.4298037886619568,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4894
+  },
+  {
+    "concept_a": "Markovian decoherence",
+    "concept_b": "dephasing",
+    "similarity": 0.4290127158164978,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4982
+  },
+  {
+    "concept_a": "CNOT gate",
+    "concept_b": "Clifford gates",
+    "similarity": 0.4286649227142334,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "uncertainty relations",
+    "concept_b": "commuting observables",
+    "similarity": 0.42838254570961,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "quantum circuit",
+    "concept_b": "circuit depth",
+    "similarity": 0.42828819155693054,
+    "graph_distance": 6,
+    "structural_hole_score": 0.3717
+  },
+  {
+    "concept_a": "measurement-free error correction",
+    "concept_b": "Pauli frame",
+    "similarity": 0.4264404773712158,
+    "graph_distance": 4,
+    "structural_hole_score": 0.333
+  },
+  {
+    "concept_a": "Continuous-time quantum error correction",
+    "concept_b": "algorithm robustness",
+    "similarity": 0.42582690715789795,
+    "graph_distance": 999,
+    "structural_hole_score": 0.6784
+  },
+  {
+    "concept_a": "Continuous weak measurements",
+    "concept_b": "Weak unitary operations",
+    "similarity": 0.4252772331237793,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Single qubit protection",
+    "concept_b": "logical qubit",
+    "similarity": 0.42473575472831726,
+    "graph_distance": 999,
+    "structural_hole_score": 0.5817
+  },
+  {
+    "concept_a": "CNOT gate",
+    "concept_b": "three-bit gate",
+    "similarity": 0.4243427813053131,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4996
+  },
+  {
+    "concept_a": "Delay line",
+    "concept_b": "Measurement latency",
+    "similarity": 0.4195358157157898,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "phase space",
+    "concept_b": "ground space",
+    "similarity": 0.4188627600669861,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "quantum algorithm",
+    "concept_b": "algorithm robustness",
+    "similarity": 0.41865187883377075,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3677
+  },
+  {
+    "concept_a": "Pauli gates",
+    "concept_b": "single-qubit Clifford gates",
+    "similarity": 0.4168732166290283,
+    "graph_distance": 7,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "categorical quantum mechanics",
+    "concept_b": "dagger Frobenius algebras",
+    "similarity": 0.4164978563785553,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "fault-tolerant error correction",
+    "concept_b": "Break-even point",
+    "similarity": 0.41623711585998535,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0754
+  },
+  {
+    "concept_a": "quantum advantage",
+    "concept_b": "resource requirements",
+    "similarity": 0.41587668657302856,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6513
+  },
+  {
+    "concept_a": "neutral-atom quantum computing",
+    "concept_b": "Quantum hardware",
+    "similarity": 0.41538238525390625,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Direct feedback",
+    "concept_b": "Pauli frame",
+    "similarity": 0.4139801263809204,
+    "graph_distance": 999,
+    "structural_hole_score": 0.5814
+  },
+  {
+    "concept_a": "fault-tolerant error correction",
+    "concept_b": "Classical processing",
+    "similarity": 0.4137280583381653,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0754
+  },
+  {
+    "concept_a": "quantum control",
+    "concept_b": "Quantum simulation",
+    "similarity": 0.41285789012908936,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2391
+  },
+  {
+    "concept_a": "quantum field theory limit",
+    "concept_b": "electric-field coupling",
+    "similarity": 0.4127520024776459,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2258
+  },
+  {
+    "concept_a": "electric-field coupling",
+    "concept_b": "lattice gauge theory",
+    "similarity": 0.4124419093132019,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "quantum circuit",
+    "concept_b": "Quantum hardware",
+    "similarity": 0.41219818592071533,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3717
+  },
+  {
+    "concept_a": "qubit overhead",
+    "concept_b": "Qubit systems",
+    "similarity": 0.4107131361961365,
+    "graph_distance": 4,
+    "structural_hole_score": 0.374
+  },
+  {
+    "concept_a": "light-matter interaction",
+    "concept_b": "electric-field coupling",
+    "similarity": 0.4102535843849182,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "quantum error correction",
+    "concept_b": "Error-correction overhead",
+    "similarity": 0.40902432799339294,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6765
+  },
+  {
+    "concept_a": "quantum gates",
+    "concept_b": "three-bit gate",
+    "similarity": 0.4087839126586914,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6243
+  },
+  {
+    "concept_a": "Markovian decoherence",
+    "concept_b": "Loschmidt return rate",
+    "similarity": 0.40809744596481323,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4974
+  },
+  {
+    "concept_a": "Generalization error bound",
+    "concept_b": "code capacity",
+    "similarity": 0.40734216570854187,
+    "graph_distance": 5,
+    "structural_hole_score": 0.428
+  },
+  {
+    "concept_a": "T-depth",
+    "concept_b": "Gate time",
+    "similarity": 0.40528422594070435,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Active error correction",
+    "concept_b": "Pauli frame",
+    "similarity": 0.4042530655860901,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5827
+  },
+  {
+    "concept_a": "logic gate implementation",
+    "concept_b": "Pauli gates",
+    "similarity": 0.403390109539032,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0685
+  },
+  {
+    "concept_a": "quantum circuits",
+    "concept_b": "circuit depth",
+    "similarity": 0.4007912278175354,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3034
+  },
+  {
+    "concept_a": "quantum link models",
+    "concept_b": "Wilson loop",
+    "similarity": 0.4007614552974701,
+    "graph_distance": 999,
+    "structural_hole_score": 0.6004
+  },
+  {
+    "concept_a": "T-depth",
+    "concept_b": "constant-depth circuits",
+    "similarity": 0.40029364824295044,
+    "graph_distance": 7,
+    "structural_hole_score": 0.311
+  },
+  {
+    "concept_a": "random circuit sampling",
+    "concept_b": "circuit depth",
+    "similarity": 0.4001394510269165,
+    "graph_distance": 7,
+    "structural_hole_score": 0.1345
+  }
+]

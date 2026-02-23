@@ -5,6 +5,11 @@ is fed back as a follow-up user message so Claude can self-correct.
 
 Also handles RateLimitError with exponential backoff + jitter so parallel
 workers survive org-level TPM limits without crashing the pipeline.
+
+Prompt caching: long system prompts (≥ 1024 tokens, estimated by char count)
+are automatically sent with cache_control=ephemeral so repeated calls within
+the 5-minute TTL reuse the cached prefix — saving ~80 % of input token cost
+for stages that call Claude many times with the same system prompt.
 """
 from __future__ import annotations
 
@@ -12,7 +17,7 @@ import json
 import logging
 import random
 import time
-from typing import Optional
+from typing import Optional, Union
 
 import anthropic
 
@@ -22,6 +27,10 @@ log = logging.getLogger(__name__)
 # 8 attempts at 2,4,8,16,32,60,60,60 = ~4 min worst case.
 _MAX_RATE_RETRIES = 8
 _MAX_RATE_SLEEP = 60.0
+
+# Anthropic requires ≥ 1024 tokens in a cached block.
+# We estimate 1 token ≈ 4 characters (conservative for scientific English).
+_CACHE_MIN_CHARS = 1024 * 4
 
 
 def strip_json_fences(text: str) -> str:
@@ -42,6 +51,7 @@ def call_llm_json(
     system: str,
     prompt: str,
     max_retries: int = 2,
+    use_cache: bool = True,
 ) -> tuple[Optional[dict], str]:
     """Call Claude and retry automatically on rate limits and bad JSON.
 
@@ -57,11 +67,29 @@ def call_llm_json(
     follow-up user turn so it can self-correct in-context (up to ``max_retries``
     rounds).
 
+    Prompt caching
+    --------------
+    When ``use_cache=True`` (default) and the system prompt is ≥ 1024 tokens
+    (estimated), it is sent with ``cache_control={"type": "ephemeral"}`` so
+    Anthropic caches it for 5 minutes.  Saves ~80 % of input token cost for
+    stages that call Claude many times with the same system prompt (Stage 1
+    processes ~20 papers; Stage 2 analyses ~20 gaps; Stage 3 generates ~10
+    hypotheses — all with identical multi-KB system prompts).
+
     Returns ``(parsed_dict, raw_text)``.
     ``parsed_dict`` is ``None`` only if all retries are exhausted.
     """
     messages: list[dict] = [{"role": "user", "content": prompt}]
     raw = ""
+
+    # Build the system parameter — plain string or cached block list
+    if use_cache and len(system) >= _CACHE_MIN_CHARS:
+        system_param: Union[str, list] = [
+            {"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}
+        ]
+        log.debug("Prompt caching enabled for %d-char system prompt", len(system))
+    else:
+        system_param = system
 
     for attempt in range(max_retries + 1):
         # ── rate-limit-aware call ─────────────────────────────────────────────
@@ -71,7 +99,7 @@ def call_llm_json(
                 response = client.messages.create(
                     model=model,
                     max_tokens=max_tokens,
-                    system=system,
+                    system=system_param,
                     messages=messages,
                 )
                 break  # success
@@ -94,6 +122,15 @@ def call_llm_json(
 
         raw = response.content[0].text
         text = strip_json_fences(raw)
+
+        # Log cache stats when available (Anthropic returns these in usage)
+        usage = response.usage
+        if hasattr(usage, "cache_read_input_tokens") and usage.cache_read_input_tokens:
+            log.debug(
+                "Prompt cache HIT — saved %d input tokens (created: %d)",
+                usage.cache_read_input_tokens,
+                getattr(usage, "cache_creation_input_tokens", 0),
+            )
 
         # ── JSON parse / in-context retry ─────────────────────────────────────
         try:

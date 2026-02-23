@@ -1,0 +1,5799 @@
+{
+  "domain": "quantum_computing",
+  "query": "quantum computing error correction fault tolerance NISQ variational quantum algorithms quantum advantage surface code qubit coherence quantum gates\n",
+  "concepts": [
+    {
+      "label": "Tianyan Quantum Cloud Platform",
+      "description": "A cloud service providing remote access to a superconducting quantum processor with demonstrated quantum advantage capabilities.",
+      "aliases": [
+        "Tianyan platform",
+        "Tianyan cloud service"
+      ],
+      "source_papers": [
+        "2512.10504v2"
+      ],
+      "centrality": 0.0025,
+      "burt_constraint": 0.5014,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Zuchongzhi 3.0",
+      "description": "A superconducting quantum processor architecture that serves as the design basis for the Tianyan quantum hardware.",
+      "aliases": [],
+      "source_papers": [
+        "2512.10504v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Tianyan-287",
+      "description": "A superconducting quantum processor prototype with 105 qubits accessible via cloud platform achieving high operational fidelities.",
+      "aliases": [
+        "Tianyan quantum processor"
+      ],
+      "source_papers": [
+        "2512.10504v2"
+      ],
+      "centrality": 0.0391,
+      "burt_constraint": 0.1806,
+      "effective_size": 6.7252,
+      "structural_hole": false
+    },
+    {
+      "label": "superconducting qubit",
+      "description": "A quantum bit implemented using superconducting circuits, forming the basic computational unit of the Tianyan processor.",
+      "aliases": [
+        "superconducting quantum bit",
+        "transmon"
+      ],
+      "source_papers": [
+        "2512.10504v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum advantage",
+      "description": "The capability of a quantum computer to solve specific computational tasks faster than the best known classical algorithms on state-of-the-art supercomputers.",
+      "aliases": [
+        "quantum supremacy",
+        "computational advantage",
+        "quantum speedup"
+      ],
+      "source_papers": [
+        "2512.10504v2",
+        "2012.03819v3",
+        "2209.14158v3"
+      ],
+      "centrality": 0.0636,
+      "burt_constraint": 0.3451,
+      "effective_size": 3.5263,
+      "structural_hole": true
+    },
+    {
+      "label": "random circuit sampling",
+      "description": "A benchmark task that applies random quantum gates to a quantum circuit and samples the output distribution, used to demonstrate quantum advantage.",
+      "aliases": [
+        "RCS",
+        "random circuit sampling benchmark"
+      ],
+      "source_papers": [
+        "2512.10504v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7311,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "two-qubit gate",
+      "description": "A quantum operation acting on two qubits with 99.56% fidelity in the Tianyan platform.",
+      "aliases": [
+        "two-qubit operation",
+        "entangling gate",
+        "two-input two-output gate",
+        "single-qubit operation",
+        "one-qubit gate",
+        "single-qubit gate"
+      ],
+      "source_papers": [
+        "2512.10504v2",
+        "9505016v1"
+      ],
+      "centrality": 0.0409,
+      "burt_constraint": 0.319,
+      "effective_size": 3.5395,
+      "structural_hole": false
+    },
+    {
+      "label": "readout fidelity",
+      "description": "The accuracy of measuring and extracting quantum information from qubits, achieved at 98.7% in Tianyan-287.",
+      "aliases": [
+        "measurement fidelity",
+        "readout accuracy"
+      ],
+      "source_papers": [
+        "2512.10504v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "gate fidelity",
+      "description": "The accuracy of quantum gate operations; Tianyan achieves 99.90% for single-qubit and 99.56% for two-qubit gates.",
+      "aliases": [
+        "operational fidelity",
+        "gate accuracy",
+        "operation fidelity"
+      ],
+      "source_papers": [
+        "2512.10504v2",
+        "1801.00862v3",
+        "2011.03031v2",
+        "2009.07851"
+      ],
+      "centrality": 0.0446,
+      "burt_constraint": 0.2016,
+      "effective_size": 5.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Cqlib SDK",
+      "description": "An open-source software development kit designed for programming quantum systems using extended quantum circuits, operators, and primitives.",
+      "aliases": [
+        "Cqlib",
+        "quantum SDK"
+      ],
+      "source_papers": [
+        "2512.10504v2"
+      ],
+      "centrality": 0.0154,
+      "burt_constraint": 0.2502,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum circuit",
+      "description": "A sequence of quantum gates applied to qubits; the fundamental programming model for quantum computation.",
+      "aliases": [
+        "quantum program",
+        "circuit",
+        "gate sequence",
+        "QC",
+        "quantum gates"
+      ],
+      "source_papers": [
+        "2512.10504v2",
+        "9505016v1",
+        "2409.07626v2"
+      ],
+      "centrality": 0.0435,
+      "burt_constraint": 0.2566,
+      "effective_size": 4.6029,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum operator",
+      "description": "Mathematical objects representing quantum observables or transformations used in quantum circuit construction and simulation.",
+      "aliases": [
+        "observable",
+        "quantum observable"
+      ],
+      "source_papers": [
+        "2512.10504v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum primitive",
+      "description": "Basic building blocks or fundamental operations in quantum programming provided by Cqlib for circuit construction.",
+      "aliases": [],
+      "source_papers": [
+        "2512.10504v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Continuous-time quantum error correction",
+      "description": "An approach to protecting quantum information from noise in which both noise and error correcting operations are treated as continuous-time processes.",
+      "aliases": [
+        "CTQEC"
+      ],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0026,
+      "burt_constraint": 0.1432,
+      "effective_size": 7.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Subsystem principle",
+      "description": "The principle that protected quantum information is contained in a subsystem of the Hilbert space rather than the full system.",
+      "aliases": [],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Continuous weak measurements",
+      "description": "Measurement operations applied continuously in time that weakly couple to the quantum system without strongly projecting its state.",
+      "aliases": [
+        "weak measurements"
+      ],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Feedback control",
+      "description": "Real-time correction operations applied based on measurement outcomes to suppress errors and protect quantum information.",
+      "aliases": [
+        "feedback",
+        "error correcting operations"
+      ],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Encoded basis",
+      "description": "A choice of basis for analyzing the system state in which the subsystem containing protected information is explicitly represented.",
+      "aliases": [],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0005,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Single qubit protection",
+      "description": "Protocols and strategies for protecting the coherence and information of a single qubit from decoherence and noise.",
+      "aliases": [],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0005,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Weak unitary operations",
+      "description": "Unitary operations applied weakly and continuously to the system to correct errors and maintain quantum coherence.",
+      "aliases": [],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Direct feedback",
+      "description": "Error correction scheme in which feedback operations are applied directly based on measurement outcomes.",
+      "aliases": [],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0013,
+      "burt_constraint": 0.5033,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Indirect feedback",
+      "description": "Error correction scheme in which feedback is applied indirectly through measurement-conditioned operations.",
+      "aliases": [],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Markovian decoherence",
+      "description": "Decoherence dynamics with no memory effects, where the future evolution depends only on the current state.",
+      "aliases": [
+        "memoryless noise",
+        "non-Markovian noise",
+        "memory effects",
+        "Non-Markovian decoherence"
+      ],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0009,
+      "burt_constraint": 0.5033,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Quantum Zeno regime",
+      "description": "A dynamical regime where frequent measurements or operations prevent transitions away from the initial state, inhibiting decoherence.",
+      "aliases": [
+        "Zeno effect",
+        "quantum Zeno effect"
+      ],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0005,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Time resolution",
+      "description": "The temporal granularity or frequency of weak error-correcting operations applied to the quantum system.",
+      "aliases": [],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Hilbert space subsystem",
+      "description": "A factorized subspace of the total Hilbert space that decouples from the environment and retains protected quantum information.",
+      "aliases": [
+        "protected subspace"
+      ],
+      "source_papers": [
+        "1311.2485v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "spin-cat code",
+      "description": "Quantum error-correcting code that encodes a qubit in a large spin qudit using superpositions of angular momentum coherent states, analogous to continuous variable cat encoding.",
+      "aliases": [
+        "spin cat encoding"
+      ],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.049,
+      "burt_constraint": 0.1429,
+      "effective_size": 7.6081,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum error correction",
+      "description": "Technique for protecting quantum information against decoherence and noise by encoding logical qubits redundantly and detecting/correcting errors.",
+      "aliases": [
+        "QEC",
+        "error correcting code",
+        "QECC",
+        "error correction codes"
+      ],
+      "source_papers": [
+        "2401.04271v4",
+        "1610.04013v1",
+        "2403.01376v2",
+        "1908.02829v3",
+        "2209.11322v3"
+      ],
+      "centrality": 0.083,
+      "burt_constraint": 0.1465,
+      "effective_size": 7.7751,
+      "structural_hole": true
+    },
+    {
+      "label": "fault-tolerant quantum computation",
+      "description": "Framework for performing quantum computation reliably despite errors, using error-correcting codes and gates designed to prevent error propagation.",
+      "aliases": [
+        "fault tolerance",
+        "error correction",
+        "fault-tolerant computation",
+        "FTQC",
+        "fault-tolerant quantum computing",
+        "FT",
+        "fault-tolerant QC",
+        "error-corrected quantum computing",
+        "topological quantum computing",
+        "costly error correction",
+        "early fault-tolerant quantum computing"
+      ],
+      "source_papers": [
+        "2401.04271v4",
+        "1312.0165v1",
+        "2512.02760v1",
+        "2403.01376v2",
+        "1411.3028",
+        "1801.00862v3",
+        "2012.03819v3",
+        "2209.11322v3",
+        "1704.06662v2"
+      ],
+      "centrality": 0.3377,
+      "burt_constraint": 0.0777,
+      "effective_size": 19.2643,
+      "structural_hole": true
+    },
+    {
+      "label": "angular momentum operators",
+      "description": "Quantum operators representing components of angular momentum (spin) that characterize the dominant error sources in spin-based qudits.",
+      "aliases": [
+        "spin operators",
+        "angular momentum components"
+      ],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "phase errors",
+      "description": "Quantum errors that affect the phase relationships between superposition states, analogous to phase-flip errors in qubit systems.",
+      "aliases": [
+        "phase-flip errors"
+      ],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "amplitude errors",
+      "description": "Quantum errors that alter the populations and amplitudes of quantum states, corrected using measurement-free error correction schemes.",
+      "aliases": [],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "CNOT gate",
+      "description": "Two-qubit controlled-NOT gate that implements conditional bit-flip operations; here rank-preserving to maintain spherical tensor structure.",
+      "aliases": [
+        "controlled-NOT gate"
+      ],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "spherical tensor operators",
+      "description": "Mathematical objects characterizing angular momentum eigenstates; their rank structure is preserved by suitable gate operations.",
+      "aliases": [
+        "tensor operators"
+      ],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "error threshold",
+      "description": "Critical physical error rate below which logical error rate decreases with increasing code distance; spin-cat code achieves higher threshold than standard qubit codes.",
+      "aliases": [
+        "fault-tolerant threshold",
+        "threshold",
+        "threshold error rate",
+        "critical threshold",
+        "fault-tolerance threshold"
+      ],
+      "source_papers": [
+        "2401.04271v4",
+        "2209.11322v3",
+        "1704.06662v2",
+        "1411.3028",
+        "2009.07851"
+      ],
+      "centrality": 0.0509,
+      "burt_constraint": 0.1214,
+      "effective_size": 10.4519,
+      "structural_hole": true
+    },
+    {
+      "label": "universal gate set",
+      "description": "Collection of quantum gates sufficient to implement arbitrary unitary operations; identified here to preserve dominant error structure.",
+      "aliases": [
+        "universal gates"
+      ],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.0322,
+      "burt_constraint": 0.2514,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "measurement-free error correction",
+      "description": "Error correction scheme that corrects errors without performing explicit syndrome measurements, used here for amplitude errors.",
+      "aliases": [],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "neutral-atom quantum computing",
+      "description": "Quantum computing platform using neutral atoms trapped in optical lattices or tweezers, with nuclear spins encoding qudits.",
+      "aliases": [
+        "neutral atom platform"
+      ],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Rydberg blockade",
+      "description": "Interaction mechanism in neutral-atom systems where excited Rydberg states prevent neighboring atoms from being excited, enabling entangling gates.",
+      "aliases": [
+        "Rydberg interaction",
+        "blockade effect",
+        "dipolar coupling"
+      ],
+      "source_papers": [
+        "2401.04271v4",
+        "2011.03031v2"
+      ],
+      "centrality": 0.0091,
+      "burt_constraint": 0.335,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum control",
+      "description": "Techniques for manipulating quantum systems using external fields and pulses to implement desired unitary operations.",
+      "aliases": [
+        "coherent control"
+      ],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "qudit encoding",
+      "description": "Encoding of quantum information in a d-dimensional quantum system (d > 2), here using large spin states in nuclear spins.",
+      "aliases": [
+        "d-level encoding",
+        "multi-level encoding"
+      ],
+      "source_papers": [
+        "2401.04271v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "NISQ technology",
+      "description": "Noisy Intermediate-Scale Quantum devices with 50-100 qubits, capable of performing tasks beyond classical computers but limited by gate noise.",
+      "aliases": [
+        "Noisy Intermediate-Scale Quantum",
+        "NISQ devices",
+        "near-term quantum processors"
+      ],
+      "source_papers": [
+        "1801.00862v3",
+        "2112.04501v3",
+        "2409.07626v2"
+      ],
+      "centrality": 0.0924,
+      "burt_constraint": 0.1268,
+      "effective_size": 8.7721,
+      "structural_hole": true
+    },
+    {
+      "label": "quantum gates",
+      "description": "Basic quantum operations that manipulate qubits; subject to noise in NISQ devices, limiting circuit depth and reliability.",
+      "aliases": [
+        "quantum operations",
+        "gate operations"
+      ],
+      "source_papers": [
+        "1801.00862v3",
+        "2011.03031v2"
+      ],
+      "centrality": 0.0028,
+      "burt_constraint": 0.2509,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum circuits",
+      "description": "Sequences of quantum gates applied to qubits; their executable size is limited by accumulated noise in NISQ era.",
+      "aliases": [
+        "quantum circuits"
+      ],
+      "source_papers": [
+        "1801.00862v3"
+      ],
+      "centrality": 0.0011,
+      "burt_constraint": 0.3931,
+      "effective_size": 2.385,
+      "structural_hole": false
+    },
+    {
+      "label": "gate noise",
+      "description": "Errors and decoherence affecting quantum gates, constraining the reliable execution depth of quantum circuits.",
+      "aliases": [
+        "quantum noise",
+        "gate errors",
+        "decoherence",
+        "environmental noise",
+        "error rate",
+        "noise sources",
+        "quantum errors"
+      ],
+      "source_papers": [
+        "1801.00862v3",
+        "1312.0165v1",
+        "2011.03031v2",
+        "2409.07626v2"
+      ],
+      "centrality": 0.0845,
+      "burt_constraint": 0.1655,
+      "effective_size": 6.7223,
+      "structural_hole": true
+    },
+    {
+      "label": "qubits",
+      "description": "Quantum bits, the fundamental units of quantum information; NISQ devices contain 50-100 qubits.",
+      "aliases": [
+        "quantum bits"
+      ],
+      "source_papers": [
+        "1801.00862v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "many-body quantum physics",
+      "description": "Study of quantum systems with multiple interacting particles; a key application domain for NISQ devices.",
+      "aliases": [
+        "quantum many-body systems"
+      ],
+      "source_papers": [
+        "1801.00862v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "classical computers",
+      "description": "Traditional digital computers whose computational capabilities are surpassed by near-term NISQ devices in specific tasks.",
+      "aliases": [
+        "classical digital computers"
+      ],
+      "source_papers": [
+        "1801.00862v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Entanglement-assisted quantum error-correcting codes",
+      "description": "A class of quantum error-correcting codes that leverage pre-shared entanglement between sender and receiver to improve code parameters and performance.",
+      "aliases": [
+        "EAQECC",
+        "entanglement-assisted codes"
+      ],
+      "source_papers": [
+        "1610.04013v1"
+      ],
+      "centrality": 0.0133,
+      "burt_constraint": 0.5923,
+      "effective_size": 2.3818,
+      "structural_hole": false
+    },
+    {
+      "label": "Entanglement",
+      "description": "Quantum correlation between two or more subsystems such that the joint state cannot be factorized into independent subsystems.",
+      "aliases": [
+        "quantum entanglement",
+        "non-local correlation"
+      ],
+      "source_papers": [
+        "1610.04013v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.9872,
+      "effective_size": 1.0556,
+      "structural_hole": false
+    },
+    {
+      "label": "Code parameters",
+      "description": "Metrics characterizing quantum codes, including number of physical qubits, logical qubits, and minimum distance.",
+      "aliases": [
+        "[[n,k,d]] notation"
+      ],
+      "source_papers": [
+        "1610.04013v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0361,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Sender-receiver channel",
+      "description": "The quantum communication link over which quantum information is transmitted and subject to environmental noise and errors.",
+      "aliases": [
+        "quantum channel"
+      ],
+      "source_papers": [
+        "1610.04013v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Holonomic quantum computation",
+      "description": "A quantum computation approach using geometric phases and adiabatic evolution to manipulate quantum information.",
+      "aliases": [
+        "geometric quantum computation",
+        "holonomic gates"
+      ],
+      "source_papers": [
+        "1312.0165v1"
+      ],
+      "centrality": 0.0198,
+      "burt_constraint": 0.5037,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Stabilizer codes",
+      "description": "A class of quantum error-correcting codes defined by a stabilizer group whose eigenspace encodes logical qubits.",
+      "aliases": [
+        "stabilizer error correction",
+        "stabilizer formalism",
+        "CSS codes"
+      ],
+      "source_papers": [
+        "1312.0165v1",
+        "1411.3028"
+      ],
+      "centrality": 0.0206,
+      "burt_constraint": 0.3816,
+      "effective_size": 3.1746,
+      "structural_hole": false
+    },
+    {
+      "label": "Adiabatic dragging",
+      "description": "A technique for transporting quantum states along a parameter-dependent path while maintaining instantaneous eigenstate configuration.",
+      "aliases": [
+        "adiabatic evolution",
+        "adiabatic passage"
+      ],
+      "source_papers": [
+        "1312.0165v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7466,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Logical information",
+      "description": "Quantum information encoded in the protected subspace of an error-correcting code.",
+      "aliases": [
+        "encoded qubits",
+        "logical qubits",
+        "logical state",
+        "encoded information"
+      ],
+      "source_papers": [
+        "1312.0165v1",
+        "2012.03819v3",
+        "1411.3028"
+      ],
+      "centrality": 0.0718,
+      "burt_constraint": 0.2039,
+      "effective_size": 6.4313,
+      "structural_hole": true
+    },
+    {
+      "label": "Subsystem",
+      "description": "A partition of a larger quantum system containing a subset of the physical degrees of freedom.",
+      "aliases": [
+        "quantum subsystem"
+      ],
+      "source_papers": [
+        "1312.0165v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Geometric phase",
+      "description": "A phase acquired by a quantum state under adiabatic evolution through a closed loop in parameter space, independent of energy eigenvalues.",
+      "aliases": [
+        "Berry phase",
+        "holonomy",
+        "holonomy operator"
+      ],
+      "source_papers": [
+        "1312.0165v1",
+        "1908.02829v3"
+      ],
+      "centrality": 0.0133,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "coherent states",
+      "description": "Quantum states that minimize uncertainty relations and behave most classically, with well-defined phase and amplitude.",
+      "aliases": [
+        "CS",
+        "coherent quantum states"
+      ],
+      "source_papers": [
+        "2003.11810v4"
+      ],
+      "centrality": 0.0016,
+      "burt_constraint": 0.1368,
+      "effective_size": 8.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Schrödinger approach",
+      "description": "Seminal foundational perspective on coherent states based on wave packet dynamics and minimum uncertainty.",
+      "aliases": [
+        "Schrödinger's treatment"
+      ],
+      "source_papers": [
+        "2003.11810v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum optics",
+      "description": "Experimental and theoretical study of quantum properties of light, photons, and light-matter interactions.",
+      "aliases": [
+        "quantum optics perspective"
+      ],
+      "source_papers": [
+        "2003.11810v4"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.5433,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum gravity",
+      "description": "Theoretical framework attempting to reconcile quantum mechanics with general relativity and gravity at all scales.",
+      "aliases": [
+        "QG",
+        "quantum gravity theory"
+      ],
+      "source_papers": [
+        "2003.11810v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "uncertainty relations",
+      "description": "Mathematical bounds constraining the simultaneous precision of complementary observable pairs.",
+      "aliases": [
+        "Heisenberg uncertainty",
+        "uncertainty principle"
+      ],
+      "source_papers": [
+        "2003.11810v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "wave packet",
+      "description": "Localized quantum state formed by superposition of waves, describing particle-like behaviour.",
+      "aliases": [
+        "quantum wave packet"
+      ],
+      "source_papers": [
+        "2003.11810v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "phase space",
+      "description": "Mathematical space parameterized by canonical coordinates and momenta describing classical and quantum dynamics.",
+      "aliases": [
+        "canonical phase space"
+      ],
+      "source_papers": [
+        "2003.11810v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantization",
+      "description": "Mathematical procedure converting classical observables and Poisson brackets into quantum operators and commutation relations.",
+      "aliases": [
+        "canonical quantization"
+      ],
+      "source_papers": [
+        "2003.11810v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "classical limit",
+      "description": "Limit regime where quantum systems approximate classical behaviour, typically as ℏ→0.",
+      "aliases": [
+        "semiclassical limit"
+      ],
+      "source_papers": [
+        "2003.11810v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "light-matter interaction",
+      "description": "Coupling between electromagnetic radiation and atomic or molecular systems in quantum optics.",
+      "aliases": [
+        "light-atom coupling"
+      ],
+      "source_papers": [
+        "2003.11810v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum low-density parity-check codes",
+      "description": "Quantum error-correcting codes with sparse parity-check matrices enabling constant-rate encoding with linear minimum distance.",
+      "aliases": [
+        "QLDPC codes",
+        "QLDPC"
+      ],
+      "source_papers": [
+        "2512.02760v1"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.3878,
+      "effective_size": 2.6662,
+      "structural_hole": false
+    },
+    {
+      "label": "qubit overhead",
+      "description": "The ratio of physical qubits required to logical qubits needed for error-corrected quantum computation.",
+      "aliases": [
+        "resource overhead"
+      ],
+      "source_papers": [
+        "2512.02760v1",
+        "2403.01376v2"
+      ],
+      "centrality": 0.0261,
+      "burt_constraint": 0.2521,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "circuit-level noise model",
+      "description": "Noise model characterizing errors on quantum gates and qubits at the circuit level rather than in the asymptotic limit.",
+      "aliases": [
+        "circuit noise"
+      ],
+      "source_papers": [
+        "2512.02760v1"
+      ],
+      "centrality": 0.0198,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "diamond norm",
+      "description": "Mathematical norm measuring the maximum distinguishability between quantum channels, capturing both stochastic and non-stochastic noise.",
+      "aliases": [],
+      "source_papers": [
+        "2512.02760v1"
+      ],
+      "centrality": 0.0134,
+      "burt_constraint": 0.3342,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "stochastic noise",
+      "description": "Noise characterized by random, incoherent errors with well-defined probability distributions.",
+      "aliases": [
+        "incoherent noise"
+      ],
+      "source_papers": [
+        "2512.02760v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "non-stochastic noise",
+      "description": "Noise including coherent and correlated errors that cannot be described as simple probabilistic channels.",
+      "aliases": [
+        "coherent noise"
+      ],
+      "source_papers": [
+        "2512.02760v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "amplitude damping",
+      "description": "Noise process describing energy dissipation and decay of quantum states to lower energy eigenstates.",
+      "aliases": [
+        "damping noise"
+      ],
+      "source_papers": [
+        "2512.02760v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "fault-tolerant error correction",
+      "description": "Error correction scheme designed to correct errors without introducing new errors from the correction process itself.",
+      "aliases": [
+        "FT error correction"
+      ],
+      "source_papers": [
+        "2512.02760v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8492,
+      "effective_size": 1.2857,
+      "structural_hole": false
+    },
+    {
+      "label": "logic gate implementation",
+      "description": "Methods for realizing logical quantum gates on encoded qubits that maintain error-correction properties.",
+      "aliases": [
+        "logical gates"
+      ],
+      "source_papers": [
+        "2512.02760v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8631,
+      "effective_size": 1.2647,
+      "structural_hole": false
+    },
+    {
+      "label": "code rate",
+      "description": "The ratio of logical qubits to physical qubits in a quantum error-correcting code.",
+      "aliases": [],
+      "source_papers": [
+        "2512.02760v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "minimum distance",
+      "description": "The minimum weight of errors detectable and correctable by a quantum error-correcting code; larger distance improves reliability.",
+      "aliases": [
+        "code distance",
+        "distance",
+        "scaling",
+        "lattice distance"
+      ],
+      "source_papers": [
+        "2512.02760v1",
+        "2403.01376v2",
+        "1411.3028",
+        "2009.07851"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.3196,
+      "effective_size": 4.1711,
+      "structural_hole": false
+    },
+    {
+      "label": "polylogarithmic overhead",
+      "description": "Resource overhead scaling as polylogarithm of problem size; typical in traditional fault-tolerant approaches.",
+      "aliases": [],
+      "source_papers": [
+        "2512.02760v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "universal gate",
+      "description": "A quantum gate or set of gates from which any unitary operation on qubits can be constructed.",
+      "aliases": [
+        "universal quantum gate",
+        "computationally universal"
+      ],
+      "source_papers": [
+        "9505016v1"
+      ],
+      "centrality": 0.0043,
+      "burt_constraint": 0.4352,
+      "effective_size": 2.408,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum computation",
+      "description": "Computation performed using quantum mechanical phenomena and qubits as the fundamental information units.",
+      "aliases": [
+        "quantum computing",
+        "quantum computer"
+      ],
+      "source_papers": [
+        "9505016v1",
+        "2011.03031v2"
+      ],
+      "centrality": 0.0191,
+      "burt_constraint": 0.1668,
+      "effective_size": 6.0,
+      "structural_hole": false
+    },
+    {
+      "label": "three-bit gate",
+      "description": "A quantum logic gate operating on three qubits; the Deutsch gate is a canonical example.",
+      "aliases": [
+        "three-qubit gate",
+        "Deutsch gate"
+      ],
+      "source_papers": [
+        "9505016v1"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "universality",
+      "description": "The property that a set of gates or operations is sufficient to generate any desired unitary transformation.",
+      "aliases": [
+        "computational universality"
+      ],
+      "source_papers": [
+        "9505016v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Rydberg atoms",
+      "description": "Highly excited atomic states with one or more electrons in high principal quantum number orbitals, exhibiting strong dipole-dipole interactions.",
+      "aliases": [
+        "Rydberg states",
+        "Rydberg qubits"
+      ],
+      "source_papers": [
+        "2011.03031v2"
+      ],
+      "centrality": 0.0057,
+      "burt_constraint": 0.2816,
+      "effective_size": 4.6087,
+      "structural_hole": false
+    },
+    {
+      "label": "Optical trapping",
+      "description": "Technique using focused laser beams to confine and position neutral atoms in three-dimensional potential wells.",
+      "aliases": [
+        "optical lattices",
+        "optical tweezers",
+        "cold atoms"
+      ],
+      "source_papers": [
+        "2011.03031v2",
+        "2112.04501v3"
+      ],
+      "centrality": 0.0008,
+      "burt_constraint": 0.5017,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Quantum simulation",
+      "description": "Use of a controllable quantum system to model and predict the behavior of another quantum system, especially many-body systems.",
+      "aliases": [
+        "quantum simulator",
+        "quantum simulation",
+        "analog quantum simulation"
+      ],
+      "source_papers": [
+        "2011.03031v2",
+        "2112.04501v3"
+      ],
+      "centrality": 0.0044,
+      "burt_constraint": 0.5217,
+      "effective_size": 2.3818,
+      "structural_hole": false
+    },
+    {
+      "label": "State preparation",
+      "description": "Initialization of qubits into a specified quantum state with high fidelity before computation or simulation.",
+      "aliases": [
+        "state initialization"
+      ],
+      "source_papers": [
+        "2011.03031v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Quantum readout",
+      "description": "Measurement process to extract classical information from quantum states with minimal decoherence and high accuracy.",
+      "aliases": [
+        "quantum measurement",
+        "state readout"
+      ],
+      "source_papers": [
+        "2011.03031v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Multiqubit gates",
+      "description": "Quantum logic operations that entangle or correlate the states of two or more qubits simultaneously.",
+      "aliases": [
+        "two-qubit gates",
+        "multi-body gates"
+      ],
+      "source_papers": [
+        "2011.03031v2"
+      ],
+      "centrality": 0.0003,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Quantum many-body Hamiltonian",
+      "description": "Total energy operator describing interactions and dynamics of systems with many interacting quantum particles.",
+      "aliases": [
+        "many-body Hamiltonian",
+        "quantum Hamiltonian"
+      ],
+      "source_papers": [
+        "2011.03031v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8194,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Linear array of emitters",
+      "description": "A one-dimensional arrangement of quantum light sources that generate entangled photonic resource states through sequential interactions.",
+      "aliases": [
+        "multi-emitter architecture"
+      ],
+      "source_papers": [
+        "2403.01376v2"
+      ],
+      "centrality": 0.0134,
+      "burt_constraint": 0.334,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Delay line",
+      "description": "An optical component that introduces temporal delays to photons, used in photonic quantum processors to facilitate interactions between emitted photons.",
+      "aliases": [
+        "delay line component"
+      ],
+      "source_papers": [
+        "2403.01376v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Resource state",
+      "description": "An entangled quantum state generated off-line and used as a consumable resource in measurement-based or gate-based quantum computation.",
+      "aliases": [
+        "quantum resource state"
+      ],
+      "source_papers": [
+        "2403.01376v2"
+      ],
+      "centrality": 0.0198,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Logical error rate",
+      "description": "The rate at which errors occur on encoded logical qubits, reflecting the effective failure rate of fault-tolerant quantum information.",
+      "aliases": [
+        "logical error probability"
+      ],
+      "source_papers": [
+        "2403.01376v2"
+      ],
+      "centrality": 0.007,
+      "burt_constraint": 0.3595,
+      "effective_size": 3.6127,
+      "structural_hole": false
+    },
+    {
+      "label": "Delay line error",
+      "description": "Errors arising from imperfections in delay lines, including photon loss, dispersion, and temporal decoherence of stored photonic states.",
+      "aliases": [
+        "delay line noise"
+      ],
+      "source_papers": [
+        "2403.01376v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Break-even point",
+      "description": "The threshold condition where the overhead cost of error correction begins to yield a net reduction in logical error rate.",
+      "aliases": [
+        "crossover threshold"
+      ],
+      "source_papers": [
+        "2403.01376v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Error suppression",
+      "description": "The phenomenon where increasing code distance or physical resources leads to exponential reduction in the logical error rate below threshold.",
+      "aliases": [
+        "error scaling"
+      ],
+      "source_papers": [
+        "2403.01376v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7474,
+      "effective_size": 1.2361,
+      "structural_hole": false
+    },
+    {
+      "label": "Photon stream",
+      "description": "A continuous sequence of photons that interact with emitters to generate entangled states in photonic quantum processors.",
+      "aliases": [
+        "photonic stream"
+      ],
+      "source_papers": [
+        "2403.01376v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum link models",
+      "description": "Lattice regularizations of gauge theories using quantum spins on links to represent gauge fields in discrete spacetime.",
+      "aliases": [
+        "QLM",
+        "quantum link regularization"
+      ],
+      "source_papers": [
+        "2112.04501v3"
+      ],
+      "centrality": 0.0357,
+      "burt_constraint": 0.2974,
+      "effective_size": 4.5765,
+      "structural_hole": false
+    },
+    {
+      "label": "lattice gauge theories",
+      "description": "Discretized formulation of gauge theories on a spatial lattice, amenable to numerical simulation and quantum synthesis.",
+      "aliases": [
+        "LGT"
+      ],
+      "source_papers": [
+        "2112.04501v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8193,
+      "effective_size": 1.027,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum field theory limit",
+      "description": "Continuum limit in which a lattice regularization reproduces the dynamics and symmetries of the underlying continuum quantum field theory.",
+      "aliases": [
+        "continuum limit",
+        "QFT limit"
+      ],
+      "source_papers": [
+        "2112.04501v3"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.5485,
+      "effective_size": 2.3077,
+      "structural_hole": false
+    },
+    {
+      "label": "far-from-equilibrium dynamics",
+      "description": "Non-equilibrium evolution of quantum systems following a sudden change in Hamiltonian (quench), far from thermal or ground states.",
+      "aliases": [
+        "quench dynamics",
+        "non-equilibrium evolution"
+      ],
+      "source_papers": [
+        "2112.04501v3"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.2502,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum quench",
+      "description": "Sudden change in system parameters, used to prepare far-from-equilibrium initial states and study relaxation and coherent evolution.",
+      "aliases": [
+        "sudden perturbation"
+      ],
+      "source_papers": [
+        "2112.04501v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Loschmidt return rate",
+      "description": "Logarithm of the squared overlap between evolved state and initial state, probing coherence and dephasing in quench dynamics.",
+      "aliases": [
+        "Loschmidt echo",
+        "return probability"
+      ],
+      "source_papers": [
+        "2112.04501v3"
+      ],
+      "centrality": 0.0002,
+      "burt_constraint": 0.502,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "chiral condensate",
+      "description": "Order parameter characterizing spontaneous breaking of chiral symmetry, measured as a bilinear fermion expectation value.",
+      "aliases": [
+        "chiral symmetry breaking"
+      ],
+      "source_papers": [
+        "2112.04501v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "link spin length",
+      "description": "Quantum spin representation on lattice links; half-integer or integer values determine the dimension of the local Hilbert space.",
+      "aliases": [
+        "spin length",
+        "link dimension"
+      ],
+      "source_papers": [
+        "2112.04501v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "infinite matrix product states",
+      "description": "Variational tensor-network ansatz for representing infinite 1D quantum states, used to simulate thermodynamic limits numerically.",
+      "aliases": [
+        "iMPS",
+        "MPS"
+      ],
+      "source_papers": [
+        "2112.04501v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "electric-field coupling",
+      "description": "Interaction strength between the quantum link model and the electric field degrees of freedom on the lattice.",
+      "aliases": [
+        "gauge field coupling",
+        "strong coupling regime"
+      ],
+      "source_papers": [
+        "2112.04501v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Kitaev quantum double model",
+      "description": "A 2D lattice model with gauge symmetry for finite groups that exhibits topological quantum order and ground-state degeneracy.",
+      "aliases": [
+        "quantum double model",
+        "double model"
+      ],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0133,
+      "burt_constraint": 0.5926,
+      "effective_size": 2.375,
+      "structural_hole": false
+    },
+    {
+      "label": "topological quantum order",
+      "description": "A phase of matter with long-range entanglement characterised by non-local ground-state degeneracy and topological robustness against local perturbations.",
+      "aliases": [
+        "topological order",
+        "TQO"
+      ],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.9749,
+      "effective_size": 1.1041,
+      "structural_hole": false
+    },
+    {
+      "label": "ground space",
+      "description": "The subspace of a Hamiltonian spanned by all zero-energy eigenstates.",
+      "aliases": [
+        "ground-state manifold"
+      ],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "energy density",
+      "description": "The expectation value of the Hamiltonian per unit cell or local energy per region.",
+      "aliases": [],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "gauge-invariant state",
+      "description": "A quantum state that is invariant under local gauge transformations generated by Gauss's law constraints.",
+      "aliases": [
+        "physical state"
+      ],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "contractible region",
+      "description": "A topologically simply-connected spatial region in which loops can be continuously deformed to a point.",
+      "aliases": [],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "reduced density matrix",
+      "description": "The density matrix of a subsystem obtained by tracing out all other degrees of freedom.",
+      "aliases": [
+        "reduced state"
+      ],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "non-Abelian flux",
+      "description": "A non-commuting gauge flux or topological charge arising from non-Abelian gauge symmetry.",
+      "aliases": [
+        "non-Abelian charge"
+      ],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Wilson loop",
+      "description": "An order parameter in lattice gauge theory measuring the phase or group element of parallel transport around a closed loop.",
+      "aliases": [
+        "Wilson operator"
+      ],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5017,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "lattice gauge theory",
+      "description": "A discrete formulation of gauge theory on a spatial lattice with gauge fields on bonds and matter on sites.",
+      "aliases": [],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "topological entanglement entropy",
+      "description": "A universal constant term in the entanglement entropy that characterises the topological order independent of region geometry.",
+      "aliases": [
+        "TEE"
+      ],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0234,
+      "effective_size": 1.0243,
+      "structural_hole": false
+    },
+    {
+      "label": "commuting observables",
+      "description": "A set of quantum observables that mutually commute and can be simultaneously measured without uncertainty.",
+      "aliases": [
+        "commuting set"
+      ],
+      "source_papers": [
+        "1908.02829v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "thermalisation",
+      "description": "Process by which a quantum system reaches thermal equilibrium with a heat bath, characterized by exponential decay to Boltzmann distribution.",
+      "aliases": [
+        "thermalization",
+        "thermal equilibration"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.002,
+      "burt_constraint": 0.2727,
+      "effective_size": 4.6105,
+      "structural_hole": false
+    },
+    {
+      "label": "Unruh temperature",
+      "description": "Temperature perceived by an accelerating observer in flat spacetime, proportional to their proper acceleration divided by the Boltzmann constant.",
+      "aliases": [
+        "acceleration-dependent temperature"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0009,
+      "burt_constraint": 0.356,
+      "effective_size": 3.5132,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum superposition",
+      "description": "Coherent linear combination of quantum states; a fundamental feature of quantum mechanics enabling interference effects.",
+      "aliases": [
+        "superposition state",
+        "quantum coherence"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0011,
+      "burt_constraint": 0.5037,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "relativistic noninertial reference frames",
+      "description": "Accelerated reference frames in special or general relativity where Lorentz invariance is maintained but inertial forces appear.",
+      "aliases": [
+        "accelerated frames",
+        "noninertial coordinates"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7506,
+      "effective_size": 1.0526,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum thermodynamics",
+      "description": "Study of thermodynamic laws and heat processes in the quantum regime where coherence, entanglement, and work fluctuations are significant.",
+      "aliases": [
+        "quantum statistical mechanics"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0207,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "relativistic quantum information",
+      "description": "Framework combining quantum information theory with special and general relativity to study information in relativistic systems.",
+      "aliases": [
+        "relativistic quantum information theory"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0207,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum-controlled thermalisations",
+      "description": "Application of thermalisation channels conditioned on quantum control parameters, allowing superpositions of thermalisation processes.",
+      "aliases": [
+        "controlled thermalization channels"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0008,
+      "burt_constraint": 0.6121,
+      "effective_size": 2.36,
+      "structural_hole": false
+    },
+    {
+      "label": "Rindler wedge",
+      "description": "Region of spacetime accessible to a uniformly accelerating observer; the natural coordinate system for studying Unruh radiation.",
+      "aliases": [
+        "Rindler coordinates",
+        "Rindler spacetime"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "field modes",
+      "description": "Fundamental degrees of freedom of a quantum field, indexed by momentum and polarization; the basis for mode decomposition in QFT.",
+      "aliases": [
+        "quantum field modes",
+        "mode excitations"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0005,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "proper acceleration",
+      "description": "Acceleration measured in the instantaneous rest frame of an observer; an invariant quantity independent of reference frame.",
+      "aliases": [
+        "invariant acceleration"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "spatial translation superposition",
+      "description": "Quantum superposition of accelerated trajectories differing by spatial displacement while maintaining the same proper acceleration profile.",
+      "aliases": [
+        "translated trajectory superposition"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "orthogonal field modes",
+      "description": "Set of quantum field modes with zero inner product, representing incommensurate excitations with no overlap.",
+      "aliases": [
+        "orthogonal mode basis"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "thermalisation channel",
+      "description": "Quantum operation or coupling mechanism that drives a system toward thermal equilibrium with a reservoir.",
+      "aliases": [
+        "thermalization mechanism",
+        "thermal channel"
+      ],
+      "source_papers": [
+        "2307.02593v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "categorical quantum mechanics",
+      "description": "Framework for studying quantum phenomena using category theory and diagrammatic calculus, emphasizing compositional structure.",
+      "aliases": [
+        "categorical approach to quantum theory"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "nonlocal games",
+      "description": "Multiplayer games where players can share quantum entanglement but cannot communicate, used to test quantum correlations.",
+      "aliases": [
+        "Bell games",
+        "XOR games"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0015,
+      "burt_constraint": 0.2002,
+      "effective_size": 5.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum questions and answers",
+      "description": "Extension of classical game questions to quantum-valued objects, allowing superposition and entanglement in game inputs and outputs.",
+      "aliases": [
+        "quantum inputs and outputs"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0007,
+      "burt_constraint": 0.5242,
+      "effective_size": 2.3981,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum sets",
+      "description": "Mathematical structures defined as special symmetric dagger Frobenius algebras used to encode quantum objects in categorical quantum mechanics.",
+      "aliases": [
+        "Frobenius algebras"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0007,
+      "burt_constraint": 0.3589,
+      "effective_size": 3.5847,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum functions",
+      "description": "Maps between quantum sets preserving their algebraic structure, generalizing classical functions to the quantum domain.",
+      "aliases": [],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.8195,
+      "effective_size": 1.1289,
+      "structural_hole": false
+    },
+    {
+      "label": "diagrammatic calculus",
+      "description": "Graphical notation for manipulating morphisms in tensor categories, replacing symbolic algebraic expressions with string diagrams.",
+      "aliases": [
+        "string diagrams",
+        "graphical notation"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "tensor categories",
+      "description": "Categories equipped with a monoidal tensor product structure allowing compositional manipulation of morphisms.",
+      "aliases": [
+        "monoidal categories"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "strategies",
+      "description": "In quantum games, player response rules defining how to map quantum questions to quantum answers.",
+      "aliases": [
+        "player strategies",
+        "quantum strategies"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0002,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "correlations",
+      "description": "Statistical relationships between question-answer pairs in a game, quantifying degree of coordination between players.",
+      "aliases": [
+        "quantum correlations"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "synchronicity",
+      "description": "Property of a game where for every question, all players must give identical answers; stronger than classical winning condition.",
+      "aliases": [
+        "synchronous games"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0005,
+      "burt_constraint": 0.5017,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "bisynchronicity",
+      "description": "Variant of synchronicity requiring symmetry in the strategy structure, relating to bidirectional consistency of answers.",
+      "aliases": [
+        "bi-synchronicity"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "graph homomorphism game",
+      "description": "Nonlocal game where players cooperatively verify that a given function is a valid graph homomorphism between two graphs.",
+      "aliases": [],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0002,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum graphs",
+      "description": "Extension of classical graphs to the quantum setting using quantum sets as vertices and quantum functions as edges.",
+      "aliases": [],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum graph homomorphisms",
+      "description": "Maps between quantum graphs preserving quantum structure, analogous to classical graph homomorphisms in the quantum domain.",
+      "aliases": [],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0001,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "dagger Frobenius algebras",
+      "description": "Algebraic structures with both multiplication and comultiplication operations satisfying Frobenius conditions, used in categorical quantum mechanics.",
+      "aliases": [
+        "Frobenius structures"
+      ],
+      "source_papers": [
+        "2408.15444v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "derivative pricing",
+      "description": "Computational problem of determining the fair value of financial derivatives such as options and forwards.",
+      "aliases": [
+        "option pricing"
+      ],
+      "source_papers": [
+        "2012.03819v3"
+      ],
+      "centrality": 0.0659,
+      "burt_constraint": 0.2502,
+      "effective_size": 4.0,
+      "structural_hole": true
+    },
+    {
+      "label": "autocallable derivatives",
+      "description": "Structured financial instruments with embedded call features that automatically trigger early redemption under specified market conditions.",
+      "aliases": [],
+      "source_papers": [
+        "2012.03819v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Target Accrual Redemption Forward",
+      "description": "Exotic forward contract with path-dependent payoff structure accumulating coupon payments until reaching a predefined target.",
+      "aliases": [
+        "TARF"
+      ],
+      "source_papers": [
+        "2012.03819v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "re-parameterization method",
+      "description": "Novel quantum algorithm for derivative pricing that combines pre-trained variational circuits with fault-tolerant quantum computing to reduce resource overhead.",
+      "aliases": [],
+      "source_papers": [
+        "2012.03819v3"
+      ],
+      "centrality": 0.0785,
+      "burt_constraint": 0.2689,
+      "effective_size": 4.6264,
+      "structural_hole": true
+    },
+    {
+      "label": "variational circuits",
+      "description": "Parametrized quantum circuits trained classically to prepare specific quantum states or compute expectation values.",
+      "aliases": [
+        "parameterized quantum circuits",
+        "VQE circuits"
+      ],
+      "source_papers": [
+        "2012.03819v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "T-depth",
+      "description": "Circuit complexity metric measuring the depth of T-gate layers in a quantum circuit, determining fault-tolerance overhead.",
+      "aliases": [
+        "T-gate depth"
+      ],
+      "source_papers": [
+        "2012.03819v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "resource requirements",
+      "description": "Quantitative estimates of computational resources (qubits, gates, circuit depth, runtime) needed to execute a quantum algorithm.",
+      "aliases": [
+        "resource estimates"
+      ],
+      "source_papers": [
+        "2012.03819v3"
+      ],
+      "centrality": 0.0079,
+      "burt_constraint": 0.3523,
+      "effective_size": 3.5278,
+      "structural_hole": false
+    },
+    {
+      "label": "quantum algorithm",
+      "description": "Procedure exploiting quantum mechanical phenomena to solve computational problems.",
+      "aliases": [],
+      "source_papers": [
+        "2012.03819v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7646,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Quantum Machine Learning",
+      "description": "Machine learning algorithms and models implemented on quantum computers to exploit quantum mechanical phenomena for improved computational efficiency.",
+      "aliases": [
+        "QML"
+      ],
+      "source_papers": [
+        "2409.07626v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Generalization error bound",
+      "description": "A theoretical upper limit on the difference between training error and test error, quantifying how well a model generalizes to unseen data.",
+      "aliases": [
+        "generalization bound",
+        "generalization error"
+      ],
+      "source_papers": [
+        "2409.07626v2"
+      ],
+      "centrality": 0.0331,
+      "burt_constraint": 0.144,
+      "effective_size": 7.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Supervised QML",
+      "description": "Quantum machine learning algorithms trained on labeled data to learn mappings between input and output variables.",
+      "aliases": [
+        "supervised quantum learning"
+      ],
+      "source_papers": [
+        "2409.07626v2"
+      ],
+      "centrality": 0.0214,
+      "burt_constraint": 0.2504,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Systematic Mapping Study",
+      "description": "A structured literature review methodology that categorizes and synthesizes research findings across a broad research area.",
+      "aliases": [
+        "SMS"
+      ],
+      "source_papers": [
+        "2409.07626v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Quantum hardware",
+      "description": "Physical quantum computing devices and platforms used to implement quantum algorithms.",
+      "aliases": [
+        "quantum devices",
+        "quantum processors"
+      ],
+      "source_papers": [
+        "2409.07626v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Optimization techniques",
+      "description": "Methods and algorithms used to adjust model parameters during training to minimize loss or error functions.",
+      "aliases": [
+        "optimization algorithms"
+      ],
+      "source_papers": [
+        "2409.07626v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Model robustness",
+      "description": "The ability of a machine learning model to maintain performance despite perturbations, noise, or variations in input data.",
+      "aliases": [
+        "robust machine learning"
+      ],
+      "source_papers": [
+        "2409.07626v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Classical benchmark datasets",
+      "description": "Standard datasets used to evaluate and compare machine learning algorithm performance across different implementations.",
+      "aliases": [
+        "benchmark datasets",
+        "MNIST",
+        "IRIS"
+      ],
+      "source_papers": [
+        "2409.07626v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Training error",
+      "description": "The prediction error of a model measured on the data used to train it.",
+      "aliases": [],
+      "source_papers": [
+        "2409.07626v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Test error",
+      "description": "The prediction error of a model measured on previously unseen data not used during training.",
+      "aliases": [],
+      "source_papers": [
+        "2409.07626v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "noise model",
+      "description": "Mathematical description of error mechanisms and their statistical properties in quantum systems.",
+      "aliases": [
+        "error model"
+      ],
+      "source_papers": [
+        "2209.11322v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "dephasing",
+      "description": "Decoherence mechanism causing loss of quantum phase coherence and diagonal terms in the density matrix.",
+      "aliases": [
+        "dephasing noise",
+        "dephasing scale"
+      ],
+      "source_papers": [
+        "2209.11322v3"
+      ],
+      "centrality": 0.0001,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "phase estimation",
+      "description": "Quantum algorithm task of determining the phase of an eigenvalue of a unitary operator with high precision.",
+      "aliases": [
+        "phase estimation algorithm"
+      ],
+      "source_papers": [
+        "2209.11322v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "randomized phase estimation algorithm",
+      "description": "Probabilistic quantum algorithm for phase estimation designed to be robust to noise through random sampling strategies.",
+      "aliases": [
+        "randomized algorithm"
+      ],
+      "source_papers": [
+        "2209.11322v3"
+      ],
+      "centrality": 0.0392,
+      "burt_constraint": 0.2115,
+      "effective_size": 4.7986,
+      "structural_hole": false
+    },
+    {
+      "label": "circuit depth",
+      "description": "Number of sequential quantum gate layers in a quantum circuit, determining minimum execution time and error accumulation.",
+      "aliases": [
+        "depth"
+      ],
+      "source_papers": [
+        "2209.11322v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "algorithm robustness",
+      "description": "Property of quantum algorithms to maintain performance guarantees and correctness despite the presence of noisy quantum hardware.",
+      "aliases": [
+        "robustness to error"
+      ],
+      "source_papers": [
+        "2209.11322v3"
+      ],
+      "centrality": 0.0066,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "sample complexity",
+      "description": "Number of measurement samples or algorithm repetitions required to achieve desired statistical accuracy.",
+      "aliases": [
+        "sampling",
+        "number of samples"
+      ],
+      "source_papers": [
+        "2209.11322v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "performance guarantee",
+      "description": "Formal bound or condition assuring that an algorithm achieves specified accuracy or success probability.",
+      "aliases": [
+        "performance bound"
+      ],
+      "source_papers": [
+        "2209.11322v3"
+      ],
+      "centrality": 0.0133,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Error diagnostics",
+      "description": "The process of identifying and characterizing errors in quantum systems, potentially subject to latencies or computational delays.",
+      "aliases": [
+        "error detection",
+        "syndrome extraction",
+        "stabilizer measurement",
+        "parity check measurement"
+      ],
+      "source_papers": [
+        "1704.06662v2",
+        "1411.3028",
+        "2009.07851"
+      ],
+      "centrality": 0.0328,
+      "burt_constraint": 0.2164,
+      "effective_size": 6.6723,
+      "structural_hole": false
+    },
+    {
+      "label": "Measurement latency",
+      "description": "Delay between a quantum measurement and the availability of its classical outcome, slowing feedback and error correction.",
+      "aliases": [
+        "measurement delay"
+      ],
+      "source_papers": [
+        "1704.06662v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Decoding algorithm",
+      "description": "Computational procedure that processes error syndromes to determine the appropriate error correction operation.",
+      "aliases": [
+        "syndrome decoding",
+        "error decoder",
+        "decoding algorithm",
+        "error correction algorithm"
+      ],
+      "source_papers": [
+        "1704.06662v2",
+        "1411.3028",
+        "2009.07851"
+      ],
+      "centrality": 0.0134,
+      "burt_constraint": 0.2905,
+      "effective_size": 4.7738,
+      "structural_hole": false
+    },
+    {
+      "label": "Active error correction",
+      "description": "Real-time error correction strategy requiring continuous syndrome extraction and immediate correction feedback.",
+      "aliases": [],
+      "source_papers": [
+        "1704.06662v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Error-correction overhead",
+      "description": "Additional quantum resources (qubits, gates, time) required to implement error correction beyond the logical computation.",
+      "aliases": [
+        "correction cost"
+      ],
+      "source_papers": [
+        "1704.06662v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Pauli frame",
+      "description": "Error correction protocol that tracks Pauli errors in software rather than applying physical correction operations.",
+      "aliases": [
+        "Pauli tracking"
+      ],
+      "source_papers": [
+        "1704.06662v2"
+      ],
+      "centrality": 0.0122,
+      "burt_constraint": 0.334,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Clifford frame",
+      "description": "Extension of error correction allowing optimal corrections drawn from the full Clifford group rather than restricted to Pauli gates.",
+      "aliases": [
+        "Clifford-frame protocol"
+      ],
+      "source_papers": [
+        "1704.06662v2"
+      ],
+      "centrality": 0.0078,
+      "burt_constraint": 0.3351,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Pauli gates",
+      "description": "The single-qubit X, Y, Z Pauli matrices forming the basis of the standard stabilizer formalism in quantum error correction.",
+      "aliases": [
+        "Pauli operators"
+      ],
+      "source_papers": [
+        "1704.06662v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Clifford gates",
+      "description": "Quantum gates that map the Pauli group to itself; include CNOT, Hadamard, and phase gates.",
+      "aliases": [
+        "Clifford group"
+      ],
+      "source_papers": [
+        "1704.06662v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Gate time",
+      "description": "Duration required to apply a quantum gate operation in a physical quantum processor.",
+      "aliases": [],
+      "source_papers": [
+        "1704.06662v2"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "gate teleportation",
+      "description": "A quantum circuit primitive that transfers quantum gates between qubits using entanglement and classical communication.",
+      "aliases": [
+        "gate-teleportation circuits"
+      ],
+      "source_papers": [
+        "2209.14158v3"
+      ],
+      "centrality": 0.0514,
+      "burt_constraint": 0.334,
+      "effective_size": 3.0,
+      "structural_hole": true
+    },
+    {
+      "label": "possibilistic simulation",
+      "description": "A weak form of classical simulation where the goal is to output any string appearing with non-zero probability in the quantum circuit's output distribution.",
+      "aliases": [],
+      "source_papers": [
+        "2209.14158v3"
+      ],
+      "centrality": 0.0392,
+      "burt_constraint": 0.3684,
+      "effective_size": 3.5,
+      "structural_hole": false
+    },
+    {
+      "label": "single-qubit Clifford gates",
+      "description": "A set of single-qubit quantum gates that generate the Clifford group, a subgroup of unitary operations preserving the stabilizer formalism.",
+      "aliases": [
+        "Clifford gate",
+        "single-qubit Clifford"
+      ],
+      "source_papers": [
+        "2209.14158v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "constant-depth circuits",
+      "description": "Classical Boolean circuits with depth bounded by a constant independent of input size, limiting computational power.",
+      "aliases": [
+        "constant-depth classical circuits",
+        "AC⁰"
+      ],
+      "source_papers": [
+        "2209.14158v3"
+      ],
+      "centrality": 0.0134,
+      "burt_constraint": 0.378,
+      "effective_size": 3.4925,
+      "structural_hole": false
+    },
+    {
+      "label": "bounded fan-in gates",
+      "description": "Logic gates with a constant upper bound on the number of input wires, typically AND, OR, NOT gates.",
+      "aliases": [
+        "bounded fan-in"
+      ],
+      "source_papers": [
+        "2209.14158v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "parity computation",
+      "description": "The classical problem of computing the XOR of n bits, a fundamental hard problem for constant-depth circuits.",
+      "aliases": [
+        "parity problem"
+      ],
+      "source_papers": [
+        "2209.14158v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7978,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "circuit complexity",
+      "description": "The study of the resources (depth, size, fan-in) required to solve computational problems using Boolean circuits.",
+      "aliases": [
+        "classical circuit complexity"
+      ],
+      "source_papers": [
+        "2209.14158v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "classical simulation",
+      "description": "The task of reproducing the output statistics or specific outputs of a quantum circuit using a classical algorithm.",
+      "aliases": [
+        "classical simulation of quantum circuits"
+      ],
+      "source_papers": [
+        "2209.14158v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "output distribution",
+      "description": "The probability distribution over all possible measurement outcomes from a quantum circuit.",
+      "aliases": [
+        "probability distribution"
+      ],
+      "source_papers": [
+        "2209.14158v3"
+      ],
+      "centrality": 0.0067,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Surface codes",
+      "description": "Topological quantum error correction codes defined on a 2D lattice with local stabilizer generators, enabling scalable fault-tolerant quantum computation.",
+      "aliases": [
+        "surface code",
+        "2D topological codes",
+        "planar code",
+        "2D topological code"
+      ],
+      "source_papers": [
+        "1411.3028",
+        "2009.07851"
+      ],
+      "centrality": 0.0283,
+      "burt_constraint": 0.1374,
+      "effective_size": 7.8163,
+      "structural_hole": false
+    },
+    {
+      "label": "Qubit systems",
+      "description": "Quantum systems based on two-level quantum systems (qubits) used as the fundamental units for quantum information processing and error correction.",
+      "aliases": [
+        "qubit codes",
+        "two-level systems"
+      ],
+      "source_papers": [
+        "1411.3028"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Qudit systems",
+      "description": "Quantum systems based on d-level quantum systems (qudits) generalizing qubits to higher-dimensional Hilbert spaces for enhanced error correction capacity.",
+      "aliases": [
+        "qudit codes",
+        "higher-dimensional codes"
+      ],
+      "source_papers": [
+        "1411.3028"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Topological quantum error correction",
+      "description": "Error correction approach leveraging topological properties of quantum codes where logical information is encoded non-locally, providing robustness against local perturbations.",
+      "aliases": [
+        "topological codes",
+        "TQEC"
+      ],
+      "source_papers": [
+        "1411.3028"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Lattice geometry",
+      "description": "Spatial arrangement of qubits or qudits in a regular 2D or 3D grid structure defining the topology and interaction pattern of the quantum code.",
+      "aliases": [
+        "code lattice",
+        "spatial structure"
+      ],
+      "source_papers": [
+        "1411.3028"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Classical processing",
+      "description": "Post-measurement computational steps where syndrome data is processed classically to determine error locations and optimal correction operations.",
+      "aliases": [
+        "classical algorithm",
+        "post-processing"
+      ],
+      "source_papers": [
+        "1411.3028"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "XZZX surface code",
+      "description": "A variant of the surface code quantum error correction protocol using a modified pattern of X and Z stabilizer operators arranged in an alternating checkerboard pattern.",
+      "aliases": [
+        "checkerboard surface code"
+      ],
+      "source_papers": [
+        "2009.07851"
+      ],
+      "centrality": 0.008,
+      "burt_constraint": 0.2798,
+      "effective_size": 3.6351,
+      "structural_hole": false
+    },
+    {
+      "label": "stabilizer operators",
+      "description": "Commuting projectors that define the code space; measuring eigenvalues reveals error information without destroying quantum state.",
+      "aliases": [
+        "stabilizers",
+        "check operators"
+      ],
+      "source_papers": [
+        "2009.07851"
+      ],
+      "centrality": 0.0017,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "logical qubit",
+      "description": "Encoded quantum information protected by the error-correcting code against local noise and errors.",
+      "aliases": [
+        "encoded qubit",
+        "protected qubit"
+      ],
+      "source_papers": [
+        "2009.07851"
+      ],
+      "centrality": 0.0117,
+      "burt_constraint": 0.3365,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "biased noise",
+      "description": "Asymmetric error model where bit-flip and phase-flip errors occur at different rates; common in certain physical platforms.",
+      "aliases": [
+        "noise bias",
+        "asymmetric errors",
+        "dephasing-dominated errors"
+      ],
+      "source_papers": [
+        "2009.07851"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "matching decoder",
+      "description": "Decoding algorithm based on minimum-weight perfect matching to pair and correct syndrome defects.",
+      "aliases": [
+        "minimum-weight matching"
+      ],
+      "source_papers": [
+        "2009.07851"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "topological protection",
+      "description": "Robustness of encoded information conferred by topological order; errors require non-local string operators to affect logical qubits.",
+      "aliases": [
+        "topological error suppression"
+      ],
+      "source_papers": [
+        "2009.07851"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "code capacity",
+      "description": "Information-theoretic limit of error correction performance when syndrome measurements are perfect and known.",
+      "aliases": [
+        "depolarizing limit"
+      ],
+      "source_papers": [
+        "2009.07851"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "phenomenological model",
+      "description": "Error model including both qubit errors and measurement errors; more realistic than code capacity.",
+      "aliases": [
+        "syndrome noise model"
+      ],
+      "source_papers": [
+        "2009.07851"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "Tianyan Quantum Cloud Platform",
+      "target": "Tianyan-287",
+      "relation": "provides_access_to",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Tianyan Quantum Cloud Platform offers cloud services demonstrating quantum advantage capabilities with...Tianyan-287.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "Tianyan-287",
+      "target": "superconducting qubit",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Tianyan-287 features 105 qubits and is a superconducting quantum processor prototype.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "Zuchongzhi 3.0",
+      "target": "Tianyan-287",
+      "relation": "analogous_to",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "This cloud-accessible superconducting quantum prototype...Zuchongzhi 3.0-like superconducting quantum processor.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "Tianyan-287",
+      "target": "quantum advantage",
+      "relation": "demonstrates",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Tianyan Quantum Cloud Platform offers cloud services demonstrating quantum advantage capabilities.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "random circuit sampling",
+      "target": "quantum advantage",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "For a specific benchmark task involving random circuit sampling...the platform completes one million samples in just 18.4 minutes...state-of-the-art classical supercomputers would require approximately 16,000 years.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "two-qubit gate",
+      "target": "gate fidelity",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Single-qubit gates...at 99.90% fidelity.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "Tianyan-287",
+      "target": "two-qubit gate",
+      "relation": "implements",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Tianyan-287...achieves high operational fidelities, with single-qubit gates...at 99.90%.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "Tianyan-287",
+      "target": "readout fidelity",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Tianyan-287...readout fidelity at 98.7%.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "Cqlib SDK",
+      "target": "quantum circuit",
+      "relation": "programs",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Cqlib, an open-source SDK designed for working with quantum systems at the level of extended quantum circuits.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "Cqlib SDK",
+      "target": "quantum operator",
+      "relation": "programs",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Cqlib designed for working with quantum systems at the level of...operators.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "Cqlib SDK",
+      "target": "quantum primitive",
+      "relation": "programs",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Cqlib designed for working with quantum systems at the level of...primitives.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "Cqlib SDK",
+      "target": "Tianyan Quantum Cloud Platform",
+      "relation": "provides_interface_to",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "To facilitate this, the platform provides access via Cqlib, an open-source SDK.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "random circuit sampling",
+      "target": "Tianyan-287",
+      "relation": "benchmarks",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "For a specific benchmark task involving random circuit sampling on a 74-qubit system...the platform completes one million samples in just 18.4 minutes.",
+      "source_papers": [
+        "2512.10504v2"
+      ]
+    },
+    {
+      "source": "Continuous-time quantum error correction",
+      "target": "Subsystem principle",
+      "relation": "based_on",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "CTQEC is investigated from the point of view of the subsystem principle, which states that protected quantum information is contained in a subsystem of the Hilbert space.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Continuous-time quantum error correction",
+      "target": "Continuous weak measurements",
+      "relation": "employs",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "CTQEC is based on continuous weak measurements and feedback.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Continuous-time quantum error correction",
+      "target": "Feedback control",
+      "relation": "employs",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "CTQEC is based on continuous weak measurements and feedback.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Encoded basis",
+      "target": "Continuous-time quantum error correction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "By looking at the evolution of the state in an encoded basis, the problem can be reduced to protecting a known state, allowing design of CTQEC procedures.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Single qubit protection",
+      "target": "Continuous-time quantum error correction",
+      "relation": "generalises_to",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "CTQEC procedures can be designed from protocols for the protection of a single qubit via weak measurements and weak unitary operations.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Weak unitary operations",
+      "target": "Single qubit protection",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "CTQEC schemes with both direct and indirect feedback can be obtained from strategies for single qubit protection via weak measurements and weak unitary operations.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Direct feedback",
+      "target": "Continuous-time quantum error correction",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Previously studied CTQEC schemes with direct and indirect feedback are reviewed and analyzed.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Indirect feedback",
+      "target": "Continuous-time quantum error correction",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Previously studied CTQEC schemes with direct and indirect feedback are reviewed and analyzed.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Markovian decoherence",
+      "target": "Quantum Zeno regime",
+      "relation": "exhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Due to the existence of a Zeno regime in non-Markovian dynamics, the performance of CTQEC exhibits a quadratic improvement.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Time resolution",
+      "target": "Quantum Zeno regime",
+      "relation": "controls",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Performance improvement occurs if the time resolution of weak error-correcting operations is high enough to reveal the non-Markovian character of the noise process.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Direct feedback",
+      "target": "Markovian decoherence",
+      "relation": "mitigates",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Results on the performance of CTQEC with direct feedback in cases of Markovian and non-Markovian decoherence are reviewed.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Subsystem principle",
+      "target": "Hilbert space subsystem",
+      "relation": "defines",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The subsystem principle states that protected quantum information is contained in a subsystem of the Hilbert space.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "Encoded basis",
+      "target": "Hilbert space subsystem",
+      "relation": "explicitly_represents",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "An encoded basis is used in which the subsystem containing the protected information is explicit.",
+      "source_papers": [
+        "1311.2485v2"
+      ]
+    },
+    {
+      "source": "spin-cat code",
+      "target": "quantum error correction",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The spin-cat code is a quantum error-correcting protocol based on spin qudit encoding.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "spin-cat code",
+      "target": "fault-tolerant quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The spin-cat code exhibits superior thresholds and lower resource overheads, paving the way for achieving fault tolerance.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "angular momentum operators",
+      "target": "spin-cat code",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Error operators linear or quadratic in angular momentum components are the dominant errors corrected by spin-cat codes.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "phase errors",
+      "target": "spin-cat code",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Phase errors are categorized as one of the dominant error sources and can be effectively corrected by the spin-cat code.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "amplitude errors",
+      "target": "spin-cat code",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Amplitude errors are categorized as one of the dominant error sources addressed through measurement-free error correction.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "CNOT gate",
+      "target": "universal gate set",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The CNOT gate is identified as a key component of the universal gate set for spin-cat codes.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "CNOT gate",
+      "target": "spherical tensor operators",
+      "relation": "preserves",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The rank-preserving CNOT gate preserves the rank of spherical tensor operators during gate operations.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "universal gate set",
+      "target": "fault-tolerant quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Identifying a suitable universal gate set preserves dominant errors during gate operations, essential for fault tolerance.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "error threshold",
+      "target": "fault-tolerant quantum computation",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The fault-tolerant threshold for spin-cat encoding surpasses that of standard qubit-based encodings.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "measurement-free error correction",
+      "target": "amplitude errors",
+      "relation": "corrects",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "A measurement-free error correction scheme is proposed to address amplitude errors without relying on syndrome measurements.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "neutral-atom quantum computing",
+      "target": "spin-cat code",
+      "relation": "implements",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "A specific implementation is based on neutral-atom quantum computing with qudits encoded in the nuclear spin of Sr.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "Rydberg blockade",
+      "target": "universal gate set",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The Rydberg blockade is used to generate the universal gate set including the rank-preserving CNOT gate in neutral-atom systems.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "quantum control",
+      "target": "universal gate set",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Quantum control and Rydberg blockade are used to generate the universal gate set in the neutral-atom implementation.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "qudit encoding",
+      "target": "spin-cat code",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The spin-cat code encodes a qubit in a large spin qudit using superpositions of angular momentum coherent states.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "spin-cat code",
+      "target": "error threshold",
+      "relation": "exhibits",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Spin-cat codes tailored to dominant error sources can exhibit superior thresholds compared to those designed for unstructured noise.",
+      "source_papers": [
+        "2401.04271v4"
+      ]
+    },
+    {
+      "source": "gate noise",
+      "target": "quantum circuits",
+      "relation": "limits",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "noise in quantum gates will limit the size of quantum circuits that can be executed reliably",
+      "source_papers": [
+        "1801.00862v3"
+      ]
+    },
+    {
+      "source": "NISQ technology",
+      "target": "quantum circuits",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "noise in NISQ devices limits the size of quantum circuits that can be executed reliably",
+      "source_papers": [
+        "1801.00862v3"
+      ]
+    },
+    {
+      "source": "quantum gates",
+      "target": "quantum circuits",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "quantum circuits are composed of sequences of quantum gates",
+      "source_papers": [
+        "1801.00862v3"
+      ]
+    },
+    {
+      "source": "qubits",
+      "target": "NISQ technology",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "NISQ devices contain 50-100 qubits",
+      "source_papers": [
+        "1801.00862v3"
+      ]
+    },
+    {
+      "source": "NISQ technology",
+      "target": "many-body quantum physics",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "NISQ devices will be useful tools for exploring many-body quantum physics",
+      "source_papers": [
+        "1801.00862v3"
+      ]
+    },
+    {
+      "source": "NISQ technology",
+      "target": "classical computers",
+      "relation": "surpasses",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Quantum computers with 50-100 qubits may be able to perform tasks which surpass the capabilities of classical digital computers",
+      "source_papers": [
+        "1801.00862v3"
+      ]
+    },
+    {
+      "source": "gate fidelity",
+      "target": "fault-tolerant quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Quantum technologists should strive for more accurate quantum gates, eventually leading to fully fault-tolerant quantum computing",
+      "source_papers": [
+        "1801.00862v3"
+      ]
+    },
+    {
+      "source": "NISQ technology",
+      "target": "fault-tolerant quantum computation",
+      "relation": "precedes",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "NISQ era is regarded as a significant step toward the more powerful quantum technologies of the future, including fault-tolerant quantum computing",
+      "source_papers": [
+        "1801.00862v3"
+      ]
+    },
+    {
+      "source": "gate noise",
+      "target": "gate fidelity",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Reducing gate noise is equivalent to improving quantum gate accuracy, a key goal stated in the paper",
+      "source_papers": [
+        "1801.00862v3"
+      ]
+    },
+    {
+      "source": "Entanglement-assisted quantum error-correcting codes",
+      "target": "quantum error correction",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Entanglement-assisted codes are a class of quantum error-correcting codes that enhance QEC through pre-shared entanglement.",
+      "source_papers": [
+        "1610.04013v1"
+      ]
+    },
+    {
+      "source": "Entanglement-assisted quantum error-correcting codes",
+      "target": "Entanglement",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "These codes fundamentally depend on pre-shared entanglement between sender and receiver as a resource for improved performance.",
+      "source_papers": [
+        "1610.04013v1"
+      ]
+    },
+    {
+      "source": "Entanglement-assisted quantum error-correcting codes",
+      "target": "Code parameters",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The effectiveness of entanglement-assisted codes is measured by their code parameters, which are improved compared to standard QEC.",
+      "source_papers": [
+        "1610.04013v1"
+      ]
+    },
+    {
+      "source": "quantum error correction",
+      "target": "Sender-receiver channel",
+      "relation": "protects",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Quantum error correction protocols protect quantum information transmitted over noisy sender-receiver channels.",
+      "source_papers": [
+        "1610.04013v1"
+      ]
+    },
+    {
+      "source": "Entanglement",
+      "target": "Code parameters",
+      "relation": "improves",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Pre-shared entanglement enhances code parameters, allowing better efficiency and error correction capabilities.",
+      "source_papers": [
+        "1610.04013v1"
+      ]
+    },
+    {
+      "source": "Holonomic quantum computation",
+      "target": "Geometric phase",
+      "relation": "relies_on",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Holonomic quantum computation uses geometric phases to perform gates via adiabatic evolution.",
+      "source_papers": [
+        "1312.0165v1"
+      ]
+    },
+    {
+      "source": "Adiabatic dragging",
+      "target": "Logical information",
+      "relation": "transports",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Adiabatic dragging of the subsystem containing logical information around suitable loops maintains protection.",
+      "source_papers": [
+        "1312.0165v1"
+      ]
+    },
+    {
+      "source": "fault-tolerant quantum computation",
+      "target": "Stabilizer codes",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Fault-tolerant holonomic quantum computation operates on stabilizer codes for error correction.",
+      "source_papers": [
+        "1312.0165v1"
+      ]
+    },
+    {
+      "source": "Stabilizer codes",
+      "target": "Logical information",
+      "relation": "protects",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Stabilizer codes encode logical information in their protected subspace.",
+      "source_papers": [
+        "1312.0165v1",
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "Holonomic quantum computation",
+      "target": "fault-tolerant quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Fault-tolerant holonomic quantum computation combines holonomic gates with error correction for robust quantum computation.",
+      "source_papers": [
+        "1312.0165v1"
+      ]
+    },
+    {
+      "source": "Adiabatic dragging",
+      "target": "Stabilizer codes",
+      "relation": "operates_on",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The approach uses adiabatic dragging on subsystems within stabilizer codes to preserve logical information.",
+      "source_papers": [
+        "1312.0165v1"
+      ]
+    },
+    {
+      "source": "gate noise",
+      "target": "Logical information",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Quantum noise causes errors that corrupt logical information; fault tolerance mitigates this threat.",
+      "source_papers": [
+        "1312.0165v1"
+      ]
+    },
+    {
+      "source": "Subsystem",
+      "target": "Logical information",
+      "relation": "contains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The subsystem containing the logical information is adiabatically dragged to maintain protection.",
+      "source_papers": [
+        "1312.0165v1"
+      ]
+    },
+    {
+      "source": "coherent states",
+      "target": "uncertainty relations",
+      "relation": "minimizes",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Coherent states minimize uncertainty relations and saturate the bound Δx·Δp ≥ℏ/2.",
+      "source_papers": [
+        "2003.11810v4"
+      ]
+    },
+    {
+      "source": "coherent states",
+      "target": "Schrödinger approach",
+      "relation": "originates_from",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The seminal approach of Schrödinger is a foundational perspective on coherent states.",
+      "source_papers": [
+        "2003.11810v4"
+      ]
+    },
+    {
+      "source": "coherent states",
+      "target": "quantum optics",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Coherent states have experimental applications and are studied extensively in quantum optics.",
+      "source_papers": [
+        "2003.11810v4"
+      ]
+    },
+    {
+      "source": "coherent states",
+      "target": "quantum gravity",
+      "relation": "applies_to",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Theoretical developments in quantum gravity employ coherent state formalism.",
+      "source_papers": [
+        "2003.11810v4"
+      ]
+    },
+    {
+      "source": "wave packet",
+      "target": "coherent states",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Coherent states behave as wave packets with minimal spreading.",
+      "source_papers": [
+        "2003.11810v4"
+      ]
+    },
+    {
+      "source": "coherent states",
+      "target": "classical limit",
+      "relation": "approximates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Coherent states behave most classically and bridge quantum and classical dynamics.",
+      "source_papers": [
+        "2003.11810v4"
+      ]
+    },
+    {
+      "source": "quantization",
+      "target": "coherent states",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Coherent states emerge from quantization procedures applied to phase space.",
+      "source_papers": [
+        "2003.11810v4"
+      ]
+    },
+    {
+      "source": "phase space",
+      "target": "coherent states",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Coherent states have well-defined phase and are localized in phase space.",
+      "source_papers": [
+        "2003.11810v4"
+      ]
+    },
+    {
+      "source": "light-matter interaction",
+      "target": "quantum optics",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Light-matter interaction is a central phenomenon studied in quantum optics.",
+      "source_papers": [
+        "2003.11810v4"
+      ]
+    },
+    {
+      "source": "quantum optics",
+      "target": "coherent states",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Coherent states provide the experimental take and framework for quantum optics studies.",
+      "source_papers": [
+        "2003.11810v4"
+      ]
+    },
+    {
+      "source": "fault-tolerant quantum computation",
+      "target": "qubit overhead",
+      "relation": "incurs",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Fault-tolerant quantum computation traditionally incurs substantial resource overhead",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "quantum low-density parity-check codes",
+      "target": "fault-tolerant quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Constant qubit overhead fault-tolerant quantum computation is achievable using QLDPC codes",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "circuit-level noise model",
+      "target": "diamond norm",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Circuit-level noise model defined via the diamond norm, which captures both stochastic and non-stochastic noise",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "diamond norm",
+      "target": "stochastic noise",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Diamond norm captures both stochastic and non-stochastic noise",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "diamond norm",
+      "target": "non-stochastic noise",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Diamond norm captures coherent and amplitude damping noise",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "circuit-level noise model",
+      "target": "fault-tolerant quantum computation",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Work considers general circuit-level noise model and proves constant qubit overhead is achievable",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "quantum low-density parity-check codes",
+      "target": "code rate",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "QLDPC codes with constant rate and linear minimum distance",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "quantum low-density parity-check codes",
+      "target": "minimum distance",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "QLDPC codes with constant rate and linear minimum distance",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "fault-tolerant error correction",
+      "target": "logic gate implementation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Develop a fault-tolerant error correction scheme and a method for implementing logic gates under general circuit noise",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "fault-tolerant error correction",
+      "target": "fault-tolerant quantum computation",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Fault-tolerant error correction is a core component of fault-tolerant quantum computation",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "logic gate implementation",
+      "target": "fault-tolerant quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Method for implementing logic gates under general circuit noise extends fault-tolerant quantum computation",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "polylogarithmic overhead",
+      "target": "qubit overhead",
+      "relation": "generalises",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Traditional approaches incur qubit overhead scaling polylogarithmically, but this work achieves constant overhead",
+      "source_papers": [
+        "2512.02760v1"
+      ]
+    },
+    {
+      "source": "two-qubit gate",
+      "target": "universal gate",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Proof that a class of two-input, two-output gates exists such that any one is universal for quantum computation.",
+      "source_papers": [
+        "9505016v1"
+      ]
+    },
+    {
+      "source": "universal gate",
+      "target": "quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Universal gates form the foundational building blocks for implementing any quantum computation.",
+      "source_papers": [
+        "9505016v1"
+      ]
+    },
+    {
+      "source": "three-bit gate",
+      "target": "universality",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The Deutsch three-bit gate is a canonical example of a universal gate in quantum computation.",
+      "source_papers": [
+        "9505016v1"
+      ]
+    },
+    {
+      "source": "quantum circuit",
+      "target": "three-bit gate",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The three-bit Deutsch gate is explicitly constructed as a network consisting of replicas of a single two-bit gate.",
+      "source_papers": [
+        "9505016v1"
+      ]
+    },
+    {
+      "source": "two-qubit gate",
+      "target": "quantum circuit",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The network is composed of replicas of a single two-bit gate.",
+      "source_papers": [
+        "9505016v1"
+      ]
+    },
+    {
+      "source": "quantum circuit",
+      "target": "universal gate",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Universal quantum operations can be constructed by arranging two-bit gates in networks.",
+      "source_papers": [
+        "9505016v1"
+      ]
+    },
+    {
+      "source": "Rydberg atoms",
+      "target": "Rydberg blockade",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Rydberg atoms exhibit strong dipole-dipole interactions due to large polarizability of highly excited states.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "Optical trapping",
+      "target": "Rydberg atoms",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Arrays of optically trapped atoms are excited to Rydberg states for quantum simulation and computing.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "Rydberg atoms",
+      "target": "Quantum simulation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Rydberg-interacting qubit arrays have emerged as a competitive platform for quantum simulation with controlled many-body dynamics.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "Rydberg atoms",
+      "target": "quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Arrays of optically trapped Rydberg atoms serve as a physical platform for quantum computing with more than 100 qubits demonstrated.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "State preparation",
+      "target": "quantum computation",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "High-fidelity state preparation is a demonstrated capability essential for reliable quantum computations.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "Quantum readout",
+      "target": "quantum computation",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "High-fidelity readout capabilities have been demonstrated and are necessary for quantum computation.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "quantum gates",
+      "target": "quantum computation",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Quantum logic gates with controlled quantum dynamics are fundamental building blocks for quantum computations.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "Multiqubit gates",
+      "target": "quantum gates",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Multiqubit gates are a class of quantum logic gates operating on multiple qubits simultaneously.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "gate fidelity",
+      "target": "quantum gates",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Gate fidelity quantifies the accuracy of quantum logic gate operations.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "gate noise",
+      "target": "quantum computation",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Low error rates across multiqubit gates are required for reliable quantum computations approaching scalability.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "Rydberg blockade",
+      "target": "Multiqubit gates",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Rydberg blockade mechanism is used to implement two-qubit entangling gates in these systems.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "Quantum many-body Hamiltonian",
+      "target": "Quantum simulation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Engineering controlled quantum dynamics of many-body Hamiltonians is essential for quantum simulation in many-body regimes.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "Rydberg atoms",
+      "target": "Quantum many-body Hamiltonian",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The flexibility of Rydberg platform allows engineering of various quantum many-body Hamiltonians.",
+      "source_papers": [
+        "2011.03031v2"
+      ]
+    },
+    {
+      "source": "Linear array of emitters",
+      "target": "Resource state",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A resource state for fault-tolerant quantum computation is generated by letting the emitters interact with a stream of photons and their neighboring emitters.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "Resource state",
+      "target": "quantum error correction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Resource states are used to implement fault-tolerant quantum error correction in measurement-based paradigms.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "quantum error correction",
+      "target": "fault-tolerant quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Fault-tolerant quantum error correction architecture is designed to achieve exponential error suppression with increasing resources.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "Delay line error",
+      "target": "Logical error rate",
+      "relation": "causes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The effect of delay line errors is studied in two regimes, with the logical error rate depending on the error rate per unit length in the delay line.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "minimum distance",
+      "target": "Logical error rate",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Between the two regimes, the logical error rate steadily decreases as the number of emitters increases, which scales with the code distance.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "Delay line",
+      "target": "Linear array of emitters",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The fault-tolerant quantum error correction architecture consists of a linear array of emitters and delay lines.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "Linear array of emitters",
+      "target": "Photon stream",
+      "relation": "interacts with",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The emitters interact with a stream of photons and their neighboring emitters to generate resource states.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "qubit overhead",
+      "target": "Break-even point",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "A detailed study of the break-even point and the fault-tolerance overhead suggests conditions for practical error suppression.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "Error suppression",
+      "target": "Logical error rate",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Error suppression occurs when the logical error rate decreases from a scaling of p to p^2 as physical resources increase.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "minimum distance",
+      "target": "Error suppression",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Increasing code distance by scaling the number of emitters enables exponential error suppression in the multi-emitter architecture.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "qubit overhead",
+      "target": "Logical error rate",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The logical error rate depends on the resource overhead required to implement fault-tolerant quantum error correction.",
+      "source_papers": [
+        "2403.01376v2"
+      ]
+    },
+    {
+      "source": "quantum link models",
+      "target": "lattice gauge theories",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "quantum link models are lattice regularizations of gauge theories using quantum spins on links",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "quantum link models",
+      "target": "quantum field theory limit",
+      "relation": "approaches",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "the low-energy physics of D quantum link models approaches the quantum field theory limit already at small link spin length",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "quantum quench",
+      "target": "far-from-equilibrium dynamics",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "quantum quench is used to prepare far-from-equilibrium initial states and study their evolution",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "far-from-equilibrium dynamics",
+      "target": "Loschmidt return rate",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "numerical simulations of the Loschmidt return rate in far-from-equilibrium quench dynamics demonstrate approach to QFT limit",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "far-from-equilibrium dynamics",
+      "target": "chiral condensate",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "chiral condensate is measured in far-from-equilibrium simulations via infinite matrix product states",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "link spin length",
+      "target": "quantum field theory limit",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "the low-energy physics approaches the QFT limit already at small link spin length",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "infinite matrix product states",
+      "target": "far-from-equilibrium dynamics",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "numerical simulations of Loschmidt return rate and chiral condensate in infinite matrix product states work directly in the thermodynamic limit",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "electric-field coupling",
+      "target": "Loschmidt return rate",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "criticality emerging in Loschmidt return rate is fundamentally different in strong electric-field coupling regime",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "Optical trapping",
+      "target": "quantum link models",
+      "relation": "implements",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "state-of-the-art ultracold-atom implementations of quantum link lattice gauge theories can simulate their quantum field theory limit",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "NISQ technology",
+      "target": "quantum link models",
+      "relation": "implements",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "state-of-the-art NISQ-device implementations of quantum link lattice gauge theories have potential to simulate QFT limit",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "Quantum simulation",
+      "target": "quantum link models",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "realizations of gauge theories in quantum synthetic matter setups enable probing of exotic phenomena using quantum link models",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "lattice gauge theories",
+      "target": "quantum field theory limit",
+      "relation": "approaches",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "lattice gauge theories regularize QFT; quantum link models determine how faithfully they capture the QFT limit",
+      "source_papers": [
+        "2112.04501v3"
+      ]
+    },
+    {
+      "source": "Kitaev quantum double model",
+      "target": "topological quantum order",
+      "relation": "exhibits",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Kitaev's quantum double models in 2D provide some of the most commonly studied examples of topological quantum order.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "Kitaev quantum double model",
+      "target": "quantum error correction",
+      "relation": "realises",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The ground space is thought to yield a quantum error-correcting code. We offer an explicit proof that this is the case for arbitrary finite groups.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "ground space",
+      "target": "quantum error correction",
+      "relation": "encodes",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The ground space serves as the quantum error-correcting code in Kitaev's model.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "gauge-invariant state",
+      "target": "Geometric phase",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The local properties of a gauge-invariant state are fully determined by specifying that its holonomies in the region are trivial.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "energy density",
+      "target": "quantum error correction",
+      "relation": "bounds",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Any two states with zero energy density in some contractible region must have the same reduced state in that region.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "contractible region",
+      "target": "reduced density matrix",
+      "relation": "defines",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Local properties are determined by examining the reduced state within contractible regions.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "non-Abelian flux",
+      "target": "gauge-invariant state",
+      "relation": "does_not_determine",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Local properties of gauge-invariant states are not generally determined by specifying all of their non-Abelian fluxes.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "Wilson loop",
+      "target": "commuting observables",
+      "relation": "does_not_form",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The Wilson loops of lattice gauge theory do not form a complete commuting set of observables.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "lattice gauge theory",
+      "target": "Wilson loop",
+      "relation": "defines",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Wilson loops are fundamental order parameters in lattice gauge theory.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "Kitaev quantum double model",
+      "target": "topological entanglement entropy",
+      "relation": "exhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "We compute the topological entanglement entropy in Kitaev's model.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "topological entanglement entropy",
+      "target": "topological quantum order",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Topological entanglement entropy is a signature of topological order independent of region geometry.",
+      "source_papers": [
+        "1908.02829v3"
+      ]
+    },
+    {
+      "source": "quantum superposition",
+      "target": "thermalisation",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A system in a superposition of spatially translated trajectories fails to thermalise despite being subject to the same thermalisation channel that would thermalise non-superposed states.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "proper acceleration",
+      "target": "Unruh temperature",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The Unruh temperature is acceleration-dependent, varying with the proper acceleration of the observer.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "Rindler wedge",
+      "target": "Unruh temperature",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The Unruh effect describes thermalisation to acceleration-dependent temperature in Rindler coordinates accessible to uniformly accelerated observers.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "field modes",
+      "target": "thermalisation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "A probe interacting with field modes undergoes thermalisation; interaction with incommensurate modes sets prevents thermalisation.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "spatial translation superposition",
+      "target": "field modes",
+      "relation": "couples_to",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "A probe accelerating in a superposition of spatial translations interacts with incommensurate sets of field modes.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "orthogonal field modes",
+      "target": "thermalisation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "In special cases where modes are orthogonal (e.g. Rindler wedges translated orthogonally to plane of motion), thermalisation does result.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "relativistic noninertial reference frames",
+      "target": "Unruh temperature",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The framework of QFT in relativistic noninertial reference frames explains acceleration-dependent thermalisation and Unruh effects.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "quantum-controlled thermalisations",
+      "target": "quantum superposition",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Quantum-controlled application of thermalisation channels enables superpositions of thermalisation processes showing failure to equilibrate.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "relativistic quantum information",
+      "target": "quantum-controlled thermalisations",
+      "relation": "motivates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Recent results in relativistic quantum information independently demonstrated failure to thermalise under quantum-controlled channel application.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "quantum thermodynamics",
+      "target": "quantum-controlled thermalisations",
+      "relation": "motivates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Recent results in quantum thermodynamics independently showed systems may fail to thermalise under quantum-controlled thermalisation.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "relativistic noninertial reference frames",
+      "target": "thermalisation",
+      "relation": "explains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "QFT in relativistic noninertial reference frames provides explanation of thermalisation failure in superposition regimes.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "relativistic quantum information",
+      "target": "quantum thermodynamics",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Both fields independently discovered thermalisation failure phenomena, now unified through relativistic quantum effects.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "Unruh temperature",
+      "target": "thermalisation",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "An accelerating system thermalises to the Unruh temperature, an acceleration-dependent equilibrium state.",
+      "source_papers": [
+        "2307.02593v2"
+      ]
+    },
+    {
+      "source": "categorical quantum mechanics",
+      "target": "diagrammatic calculus",
+      "relation": "uses",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Equations are presented using a diagrammatic calculus for tensor categories in the categorical quantum mechanics framework.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "categorical quantum mechanics",
+      "target": "tensor categories",
+      "relation": "generalises_to",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Categorical quantum mechanics is formulated within the framework of tensor categories.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "quantum sets",
+      "target": "dagger Frobenius algebras",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Quantum sets are defined as special symmetric dagger Frobenius algebras.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "quantum functions",
+      "target": "quantum sets",
+      "relation": "maps",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Quantum functions map between quantum sets, generalizing classical functions to quantum domain.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "nonlocal games",
+      "target": "quantum questions and answers",
+      "relation": "extends_to",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "We extend nonlocal games to allow quantum questions and answers.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "quantum questions and answers",
+      "target": "quantum sets",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Quantum questions and answers are formulated using quantum sets.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "nonlocal games",
+      "target": "strategies",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Standard definitions for nonlocal games include strategies.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "nonlocal games",
+      "target": "correlations",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Standard definitions for nonlocal games include correlations.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "nonlocal games",
+      "target": "synchronicity",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "We extend standard definitions including synchronicity to quantum games.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "graph homomorphism game",
+      "target": "nonlocal games",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Graph homomorphism game is a nonlocal game verifying graph homomorphism properties.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "graph homomorphism game",
+      "target": "quantum graphs",
+      "relation": "extends_to",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "We extend the graph homomorphism game to quantum graphs.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "quantum graphs",
+      "target": "quantum sets",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Quantum graphs use quantum sets as vertices and quantum functions as edges.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "quantum graph homomorphisms",
+      "target": "quantum graphs",
+      "relation": "maps",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Quantum graph homomorphisms map between quantum graphs preserving quantum structure.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "quantum graph homomorphisms",
+      "target": "strategies",
+      "relation": "relates_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Perfect strategies in the quantum graph homomorphism game connect to quantum graph homomorphisms.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "synchronicity",
+      "target": "bisynchronicity",
+      "relation": "generalises_to",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "We show the quantum graph homomorphism game is synchronous and bisynchronous, extending results about synchronicity.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "quantum questions and answers",
+      "target": "quantum functions",
+      "relation": "uses",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Quantum questions and answers are implemented using quantum functions of Musto, Reutter, and Verdon.",
+      "source_papers": [
+        "2408.15444v4"
+      ]
+    },
+    {
+      "source": "derivative pricing",
+      "target": "quantum advantage",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The paper examines when quantum computing can achieve advantage in the derivative pricing domain, providing resource bounds for valuable quantum advantage in this application.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "autocallable derivatives",
+      "target": "derivative pricing",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Autocallable and TARF derivatives are used as benchmark use cases for quantum derivative pricing.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "Target Accrual Redemption Forward",
+      "target": "derivative pricing",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "TARF derivatives serve as a benchmark use case for quantum derivative pricing algorithms.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "re-parameterization method",
+      "target": "quantum algorithm",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The re-parameterization method is a new quantum algorithm introduced for derivative pricing.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "re-parameterization method",
+      "target": "derivative pricing",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The re-parameterization method combines pre-trained variational circuits with fault-tolerant quantum computing to avoid blocking challenges in known approaches for quantum derivative pricing.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "variational circuits",
+      "target": "re-parameterization method",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The re-parameterization method combines pre-trained variational circuits with fault-tolerant quantum computing.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "fault-tolerant quantum computation",
+      "target": "re-parameterization method",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The method combines pre-trained variational circuits with fault-tolerant quantum computing to reduce resource requirements.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "re-parameterization method",
+      "target": "resource requirements",
+      "relation": "reduces_to",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The re-parameterization method dramatically reduces resource requirements compared to known approaches, requiring 8k logical qubits and T-depth of 54 million.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "Logical information",
+      "target": "resource requirements",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The paper estimates 8k logical qubits as a key resource metric for the benchmark use cases.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "T-depth",
+      "target": "resource requirements",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "T-depth of 54 million is reported as a critical resource requirement for quantum derivative pricing.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "fault-tolerant quantum computation",
+      "target": "Logical information",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Logical qubits are error-corrected quantum bits in fault-tolerant quantum computing frameworks.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "quantum algorithm",
+      "target": "resource requirements",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Quantum algorithms have associated resource requirements in terms of qubits, gates, and circuit depth needed for execution.",
+      "source_papers": [
+        "2012.03819v3"
+      ]
+    },
+    {
+      "source": "Quantum Machine Learning",
+      "target": "Generalization error bound",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The success of QML in the NISQ era hinges on the generalization error bound, a cornerstone of robust and reliable machine learning models.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "NISQ technology",
+      "target": "gate noise",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The NISQ era is characterized by noisy, intermediate-scale quantum devices where QC operations are susceptible to various noise sources and errors.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "gate noise",
+      "target": "Generalization error bound",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Quantum Circuit operations in NISQ-era devices susceptible to noise sources directly impact the derivation and tightness of generalization bounds.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "quantum circuit",
+      "target": "gate noise",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "QC operations in NISQ-era devices are susceptible to various noise sources and errors.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "Supervised QML",
+      "target": "Generalization error bound",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The study systematically explores the state-of-the-art generalization bound for supervised QML in NISQ-era.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "Systematic Mapping Study",
+      "target": "Supervised QML",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The paper conducts a Systematic Mapping Study to explore the state-of-the-art generalization bound for supervised QML in NISQ-era.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "Quantum hardware",
+      "target": "NISQ technology",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The study systematically summarizes the existing computational platforms with quantum hardware in the context of NISQ-era devices.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "Optimization techniques",
+      "target": "Generalization error bound",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "The study analyzes optimization techniques as one of the common properties of the bounds found in the literature.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "Model robustness",
+      "target": "Generalization error bound",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Generalization error bound is identified as a cornerstone of robust and reliable machine learning models.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "Classical benchmark datasets",
+      "target": "Supervised QML",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The study presents the performance accuracy of various approaches in classical benchmark datasets like MNIST and IRIS datasets.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "Training error",
+      "target": "Generalization error bound",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Generalization error bound quantifies the difference between training error and test error.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "Test error",
+      "target": "Generalization error bound",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Generalization error bound quantifies the difference between training error and test error.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "NISQ technology",
+      "target": "Supervised QML",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "QML success in the NISQ era depends on understanding generalization bounds under noise and limited resources.",
+      "source_papers": [
+        "2409.07626v2"
+      ]
+    },
+    {
+      "source": "fault-tolerant quantum computation",
+      "target": "quantum error correction",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Costly error correction is inherent to early fault-tolerant era; error correction codes enable this regime despite imperfect hardware.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "noise model",
+      "target": "algorithm robustness",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Analysis of algorithm performance under two simple noise models leads to characterization of robustness.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "randomized phase estimation algorithm",
+      "target": "phase estimation",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "A randomized algorithm for the task of phase estimation is introduced as the main subject.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "randomized phase estimation algorithm",
+      "target": "algorithm robustness",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The algorithm is designed to be robust to some degree of error, with analysis proving its robustness properties.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "dephasing",
+      "target": "noise model",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Dephasing is one of the simple noise models analyzed in the paper.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "error threshold",
+      "target": "randomized phase estimation algorithm",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Analysis leads to a noise threshold below which arbitrarily high accuracy can be achieved by increasing samples.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "sample complexity",
+      "target": "error threshold",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Increasing the number of samples in the algorithm enables achieving high accuracy below noise threshold.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "circuit depth",
+      "target": "performance guarantee",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Maximum ratio of circuit depth to dephasing scale is computed such that performance guarantees hold; circuit depth < 0.916 × dephasing scale.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "dephasing",
+      "target": "performance guarantee",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Dephasing scale is the denominator in the depth-to-noise-scale ratio determining performance bounds.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "randomized phase estimation algorithm",
+      "target": "performance guarantee",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Algorithm can succeed with arbitrarily high probability as long as circuit depth condition is met, establishing performance guarantees.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "fault-tolerant quantum computation",
+      "target": "randomized phase estimation algorithm",
+      "relation": "motivates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Development of quantum algorithms robust to error is motivated by the need for computations during costly error correction era.",
+      "source_papers": [
+        "2209.11322v3"
+      ]
+    },
+    {
+      "source": "fault-tolerant quantum computation",
+      "target": "Error diagnostics",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Fault tolerance depends on error diagnostics to identify and correct errors; the paper addresses latencies in this process.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Measurement latency",
+      "target": "Error diagnostics",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Measurement latencies slow error diagnostics; the paper addresses this constraint explicitly.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Decoding algorithm",
+      "target": "Error diagnostics",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Decoding algorithms are a key component of error diagnostics, translating syndromes to corrections.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Error diagnostics",
+      "target": "Active error correction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Fast error diagnostics enables active error correction; slow diagnostics motivates alternatives discussed in the scheme.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Active error correction",
+      "target": "Error-correction overhead",
+      "relation": "increases",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Active error correction requires continuous operations, raising overhead; the paper's scheme reduces overhead by avoiding it.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Pauli frame",
+      "target": "fault-tolerant quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Pauli frame tracking allows fault-tolerant computation without physical active correction, central to the proposed protocol.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Clifford frame",
+      "target": "Pauli frame",
+      "relation": "extends",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The Clifford frame generalizes the Pauli frame by allowing corrections from the full Clifford group.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Clifford frame",
+      "target": "error threshold",
+      "relation": "increases",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The paper states the Clifford frame protocol 'can increase error thresholds' compared to Pauli-only approaches.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Pauli gates",
+      "target": "Pauli frame",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The Pauli frame is defined by tracking and manipulating Pauli gates; standard error correction uses Pauli corrections.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Clifford gates",
+      "target": "Clifford frame",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The Clifford frame allows optimal corrections chosen from all Clifford gates, an extension beyond Pauli gates.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Gate time",
+      "target": "Error-correction overhead",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The paper notes reduced overhead 'when error diagnostics is much slower than the gate time'; timing relationships are critical.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "Error diagnostics",
+      "target": "Gate time",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "The scheme achieves benefits when error diagnostics latency exceeds gate time; these timescales are central to the protocol.",
+      "source_papers": [
+        "1704.06662v2"
+      ]
+    },
+    {
+      "source": "gate teleportation",
+      "target": "quantum advantage",
+      "relation": "provides",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Gate-teleportation circuits are among the most basic examples of computations believed to provide a quantum computational advantage.",
+      "source_papers": [
+        "2209.14158v3"
+      ]
+    },
+    {
+      "source": "gate teleportation",
+      "target": "possibilistic simulation",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The paper considers possibilistic simulation of gate-teleportation circuits as the computational task.",
+      "source_papers": [
+        "2209.14158v3"
+      ]
+    },
+    {
+      "source": "single-qubit Clifford gates",
+      "target": "gate teleportation",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The paper focuses on single-qubit Clifford-gate-teleportation circuits.",
+      "source_papers": [
+        "2209.14158v3"
+      ]
+    },
+    {
+      "source": "possibilistic simulation",
+      "target": "constant-depth circuits",
+      "relation": "bounds",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The simulation problem cannot be solved by constant-depth classical circuits with bounded fan-in gates.",
+      "source_papers": [
+        "2209.14158v3"
+      ]
+    },
+    {
+      "source": "parity computation",
+      "target": "possibilistic simulation",
+      "relation": "reduces_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Results are obtained by a reduction to the problem of computing the parity.",
+      "source_papers": [
+        "2209.14158v3"
+      ]
+    },
+    {
+      "source": "constant-depth circuits",
+      "target": "parity computation",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Parity is a well-studied hard problem for constant-depth circuits.",
+      "source_papers": [
+        "2209.14158v3"
+      ]
+    },
+    {
+      "source": "bounded fan-in gates",
+      "target": "constant-depth circuits",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Constant-depth circuits are composed of bounded fan-in gates.",
+      "source_papers": [
+        "2209.14158v3"
+      ]
+    },
+    {
+      "source": "circuit complexity",
+      "target": "constant-depth circuits",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Results are based on classical circuit complexity analysis of constant-depth and bounded fan-in properties.",
+      "source_papers": [
+        "2209.14158v3"
+      ]
+    },
+    {
+      "source": "classical simulation",
+      "target": "output distribution",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Classical simulation aims to reproduce the output distribution or specific outputs of a quantum circuit.",
+      "source_papers": [
+        "2209.14158v3"
+      ]
+    },
+    {
+      "source": "possibilistic simulation",
+      "target": "output distribution",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Possibilistic simulation outputs any string appearing with non-zero probability in the output distribution.",
+      "source_papers": [
+        "2209.14158v3"
+      ]
+    },
+    {
+      "source": "Surface codes",
+      "target": "Topological quantum error correction",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Surface codes are a canonical implementation of topological quantum error correction on 2D lattices.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "Surface codes",
+      "target": "Stabilizer codes",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Surface codes are defined by local stabilizer generators forming an Abelian group.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "Decoding algorithm",
+      "target": "Error diagnostics",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Decoders operate on syndrome measurement outcomes to identify and correct errors.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "Error diagnostics",
+      "target": "Logical information",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Syndrome measurements extract error information without directly revealing the encoded logical state.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "Surface codes",
+      "target": "error threshold",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Surface codes exhibit an error threshold above which logical errors decrease exponentially with code distance.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "Decoding algorithm",
+      "target": "fault-tolerant quantum computation",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Fast, fault-tolerant decoders are essential for achieving error correction below the threshold.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "Qubit systems",
+      "target": "Surface codes",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Qubit surface codes encode logical qubits in 2D lattices of physical qubits.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "Qudit systems",
+      "target": "Surface codes",
+      "relation": "generalises",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Qudit surface codes extend qubit codes to higher-dimensional systems for enhanced error correction capacity.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "Lattice geometry",
+      "target": "Surface codes",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Surface codes are defined on 2D square lattices with local stabilizer operators at plaquettes and vertices.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "Classical processing",
+      "target": "Decoding algorithm",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Decoding algorithms rely on classical post-processing of syndrome measurements to determine recovery operations.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "minimum distance",
+      "target": "fault-tolerant quantum computation",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Scalable fault-tolerant quantum computation depends on achieving exponential suppression of logical errors with code size.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "error threshold",
+      "target": "minimum distance",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Operating below error threshold is necessary for logical error suppression and therefore scalability.",
+      "source_papers": [
+        "1411.3028"
+      ]
+    },
+    {
+      "source": "XZZX surface code",
+      "target": "Surface codes",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "XZZX is a variant of the surface code with modified stabilizer operator arrangement.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "XZZX surface code",
+      "target": "stabilizer operators",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The XZZX code uses an alternating checkerboard pattern of X and Z stabilizers on the lattice.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "Surface codes",
+      "target": "logical qubit",
+      "relation": "protects",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The surface code encodes and protects logical qubits against local errors through topological order.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "stabilizer operators",
+      "target": "Error diagnostics",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Measuring stabilizer eigenvalues reveals error syndromes without destroying the encoded state.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "Error diagnostics",
+      "target": "Decoding algorithm",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Decoded syndrome outcomes feed into classical decoding algorithms to infer and correct errors.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "biased noise",
+      "target": "XZZX surface code",
+      "relation": "increases",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "XZZX surface code shows improved error thresholds and performance under biased noise models compared to standard surface codes.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "Decoding algorithm",
+      "target": "logical qubit",
+      "relation": "protects",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Classical decoding corrects syndrome-identified errors, preventing them from corrupting the encoded logical qubit.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "minimum distance",
+      "target": "error threshold",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Higher code distance improves logical error scaling below threshold; larger lattices suppress errors exponentially.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "error threshold",
+      "target": "topological protection",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Below error threshold, topological protection becomes effective and logical error rates improve exponentially with distance.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "matching decoder",
+      "target": "Decoding algorithm",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Minimum-weight matching is a specific practical decoding algorithm for surface codes.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "code capacity",
+      "target": "error threshold",
+      "relation": "bounds",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Code capacity provides an upper bound on achievable error thresholds when syndrome measurements are ideal.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "phenomenological model",
+      "target": "error threshold",
+      "relation": "reduces",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Realistic phenomenological error models including measurement errors typically yield lower thresholds than code capacity.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "XZZX surface code",
+      "target": "error threshold",
+      "relation": "improves",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "XZZX exhibits higher error thresholds under biased noise compared to standard surface codes, particularly for depolarizing and dephasing-dominated models.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    },
+    {
+      "source": "gate fidelity",
+      "target": "logical qubit",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Fidelity quantifies how well the encoded logical qubit state is preserved against errors during computation.",
+      "source_papers": [
+        "2009.07851"
+      ]
+    }
+  ]
+}
