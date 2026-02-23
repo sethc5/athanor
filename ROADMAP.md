@@ -275,7 +275,11 @@ Fixed `_out()` in `cli.py` to scope graphs per-domain: `outputs/graphs/<domain>/
 | All-domain status table | Low | Low | ✅ (Session 9) |
 | Cross-domain report digest | Medium | Low | ✅ (Session 9) |
 | Workspace isolation (`workspaces/`) | High | Low | ✅ (Session 9) |
+| Independent critic pass (Stage 3.5) | High | Medium | ✅ (Session 10) |
+| Approved → seed feedback loop | High | Low | ✅ (Session 10) |
+| `final_score` blended ranking | Medium | Low | ✅ (Session 10) |
 | Hypothesis aging / tracking | Medium | Medium | 🔲 |
+| Verification bridge (Stage 4) | High | High | 🔲 |
 
 ---
 
@@ -347,3 +351,70 @@ ATHANOR_WORKSPACE=my_cluster athanor run --domain <domain>
 ```
 
 *Last updated: 2026-02-23 (Session 9)*
+
+---
+
+## Session 10 — Quality polish: critic pass + feedback loop
+
+**Trigger:** Self-assessment critique — the system rates its own hypotheses,
+causing score inflation (5.00 across all new string_physics domains). Two
+feedback mechanisms implemented to address this.
+
+### Independent critic pass (Stage 3.5)
+
+The core problem: the same LLM that generated a hypothesis also scored its
+novelty/rigor/impact. A model that just invented something has strong prior
+to rate it highly.
+
+**Solution:** `athanor/hypotheses/critic.py` — `HypothesisCritic` class:
+- For each hypothesis, strips the original scores and makes a fresh LLM call
+- The critic sees only: statement, mechanism, prediction, falsification criterion
+- Returns `critic_novelty`, `critic_rigor`, `critic_impact` (1–5), plus a one-sentence critique note
+- **`Hypothesis.final_score`** = blended average of generator + critic composite scores
+- **`HypothesisReport.ranked`** now sorts by `final_score` (uses `composite_score` when critic hasn't run)
+
+**Usage:**
+```bash
+# Standalone - re-score existing hypothesis_report.json
+ATHANOR_WORKSPACE=string_physics athanor critique --domain cy3_machine_learning
+
+# As part of a pipeline run
+ATHANOR_WORKSPACE=string_physics athanor run --domain moduli_periods --stages 3 --critique
+```
+
+The critic uses a deliberately conservative prompt — default to novelty ≤ 3,
+penalise circular falsification criteria, flag `already_known=true` if the
+intersection is well-covered in literature.
+
+### Approved → seed feedback loop
+
+Two complementary feedback mechanisms activate when a domain has approved hypotheses:
+
+**Stage 1** (literature fetch): Extracts `keywords` from all `approved=True`
+hypotheses → adds them as an extra arXiv query on the next run. This means
+future runs automatically pull follow-up literature adjacent to confirmed
+discoveries.
+
+**Stage 2** (gap finder): Loads approved hypothesis `statement` fields → appends
+them to each per-gap LLM prompt as "Already approved hypotheses — do NOT generate
+a similar research question." Prevents the gap finder from cycling back to the
+same territory on re-runs.
+
+Both mechanisms are zero-config — they activate automatically whenever
+`hypothesis_report.json` contains approved hypotheses.
+
+### Code changes
+- `athanor/hypotheses/critic.py` — new `HypothesisCritic` class
+- `athanor/hypotheses/models.py` — `Hypothesis.critic_novelty/rigor/impact/note` fields;
+  `Hypothesis.final_score` blended property; `HypothesisReport.ranked` uses `final_score`
+- `athanor/hypotheses/__init__.py` — exports `HypothesisCritic`
+- `athanor/gaps/finder.py` — `GapFinder.__init__` accepts `prior_approved: list[str]`;
+  `_analyse_one` appends them to per-gap prompt
+- `athanor/cli.py`:
+  - `athanor run --critique` flag — runs critic after Stage 3
+  - `athanor critique --domain X` standalone command — shows score delta table
+  - Stage 1 feedback loop: approved keywords → extra arXiv query
+  - Stage 2 feedback loop: approved statements → `GapFinder(prior_approved=...)`
+  - All score display/sort updated to use `final_score`
+
+*Last updated: 2026-02-23 (Session 10)*

@@ -109,10 +109,18 @@ class GapFinder:
         max_gaps: int = 20,
         max_workers: int = 4,
         domain_context: str = "",
+        prior_approved: Optional[List[str]] = None,
     ) -> None:
         cfg.validate()
         self._client = anthropic.Anthropic(api_key=api_key)
         self._domain = domain
+        self._model = model
+        self._max_tokens = max_tokens
+        self._max_gaps = max_gaps
+        self._max_workers = max_workers
+        self._domain_context = domain_context
+        # Approved hypothesis statements from previous runs — gap finder avoids regenerating similar gaps
+        self._prior_approved: List[str] = prior_approved or []
         self._model = model
         self._max_tokens = max_tokens
         self._max_gaps = max_gaps
@@ -165,6 +173,12 @@ class GapFinder:
         )
         if self._domain_context:
             prompt = f"Domain context:\n{self._domain_context}\n\n" + prompt
+        if self._prior_approved:
+            approved_block = "\n".join(f"  - {s}" for s in self._prior_approved[:10])
+            prompt += (
+                f"\n\nAlready-approved hypotheses from previous runs (do NOT generate "
+                f"a research question that would lead to a similar hypothesis):\n{approved_block}"
+            )
         try:
             data, _ = call_llm_json(
                 self._client, self._model, self._max_tokens, _SYSTEM, prompt

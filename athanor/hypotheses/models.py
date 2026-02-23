@@ -85,6 +85,24 @@ class Hypothesis(BaseModel):
     # Human review
     approved: Optional[bool] = None   # None = unreviewed; True/False = reviewed
 
+    # Critic pass (Stage 3.5) — independent blind re-score
+    critic_novelty: Optional[int] = None   # None = critic not yet run
+    critic_rigor: Optional[int] = None
+    critic_impact: Optional[int] = None
+    critic_note: str = ""              # one-sentence justification from critic
+
+    @computed_field
+    @property
+    def final_score(self) -> float:
+        """Blended score: average of generator + critic composite if critic ran, else composite_score.
+
+        Having two independent scorers substantially reduces self-scoring inflation.
+        """
+        if self.critic_novelty is not None and self.critic_rigor is not None and self.critic_impact is not None:
+            crit = self.critic_impact * 0.4 + self.critic_novelty * 0.35 + self.critic_rigor * 0.25
+            return round((self.composite_score + crit) / 2, 3)
+        return self.composite_score
+
 
 class HypothesisReport(BaseModel):
     """Full ranked hypothesis report — the terminal Stage 3 output."""
@@ -95,10 +113,11 @@ class HypothesisReport(BaseModel):
 
     @property
     def ranked(self) -> List["Hypothesis"]:
-        return sorted(self.hypotheses, key=lambda h: h.composite_score, reverse=True)
+        """Sort by final_score (blended if critic ran, else composite_score)."""
+        return sorted(self.hypotheses, key=lambda h: h.final_score, reverse=True)
 
     def top(self, n: int = 5) -> List["Hypothesis"]:
-        """Return the top-n hypotheses by composite score."""
+        """Return the top-n hypotheses by final_score."""
         return self.ranked[:n]
 
     @property

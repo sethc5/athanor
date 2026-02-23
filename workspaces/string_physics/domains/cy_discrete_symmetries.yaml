@@ -1,0 +1,50 @@
+name: cy_discrete_symmetries
+display: "Discrete Symmetries & Flavor from CY Geometry"
+description: >
+  Discrete symmetries arising from Calabi-Yau geometry and their physical
+  implications: automorphism groups of CY3 manifolds acting on Hodge structure,
+  dihedral/non-Abelian flavor symmetries for Yukawa textures, Froggatt-Nielsen
+  U(1) from geometry, D-brane orientifold discrete remnants, geometric
+  engineering of flavor symmetries, and the relationship between CY
+  monodromy groups and neutrino mixing patterns.
+
+domain_context: >
+  Central object: The GL=12/D₆ polytope — h¹¹=17, h²¹=20, KS index 37.
+  A D₆ dihedral symmetry acts on the 20 complex-structure moduli, reducing
+  them to 5 D₆-invariant combinations. The holomorphic (3,0)-form Ω transforms
+  under D₆, so only D₆-invariant periods enter the superpotential.
+
+  26 D₆-invariant Yukawa couplings survive (out of the full set), creating a
+  highly constrained Yukawa texture. Open question: do these 26 couplings
+  reproduce a realistic quark-lepton mass hierarchy, or do we need a
+  secondary Froggatt-Nielsen mechanism?
+
+  The CyTools pipeline computes these via:
+    κ_{abc} = ∫ J_a ∧ J_b ∧ J_c  (Kähler triple intersection)
+    Y_{ijk} ∝ ∫_CY3 Ω ∧ χ_i ∧ χ_j ∧ χ_k  (from (2,1)-forms)
+
+  Key questions:
+  - Which CY3 automorphism groups can sustain non-Abelian discrete flavor symmetry?
+  - How does the D₆ action constrain the Picard-Fuchs system?
+  - Can CY monodromy groups predict θ₁₃ lepton mixing angles?
+
+  Edge vocabulary: has_symmetry, fixes_coupling, breaks_to, acts_on,
+  constrains, generates_texture, forbids, allows, descends_from, is_subgroup_of,
+  monodromy_of, automorphism_of, invariant_under, lifts_to
+
+sources: [arxiv, s2]
+queries:
+  - "discrete symmetry Calabi-Yau automorphism group string compactification"
+  - "dihedral symmetry D6 heterotic string Yukawa texture"
+  - "non-Abelian discrete flavor symmetry string theory lepton quarks"
+  - "Froggatt-Nielsen U1 symmetry string landscape fermion masses"
+  - "monodromy group Calabi-Yau mirror symmetry period integrals"
+  - "CY3 automorphism Picard-Fuchs constraint orbifold"
+  - "D-brane discrete gauge symmetry orientifold Yukawa coupling"
+  - "finite group action cohomology Calabi-Yau three-fold"
+  - "neutrino mixing angles discrete symmetry string theoretic model"
+  - "flavor symmetry geometric engineering del Pezzo fibration"
+
+max_papers: 25
+max_gaps: 20
+claude_model: claude-haiku-4-5

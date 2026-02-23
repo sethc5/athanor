@@ -1,0 +1,681 @@
+[
+  {
+    "concept_a": "Intrinsic motivation",
+    "concept_b": "Motivation",
+    "similarity": 0.7880356311798096,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Meta-learning",
+    "concept_b": "Model-Agnostic Meta-Learning",
+    "similarity": 0.7258529663085938,
+    "graph_distance": 999,
+    "structural_hole_score": 0.6777
+  },
+  {
+    "concept_a": "model generalization",
+    "concept_b": "generalization performance",
+    "similarity": 0.7036586999893188,
+    "graph_distance": 11,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "RL algorithm",
+    "concept_b": "Policy learning",
+    "similarity": 0.6831328272819519,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "transfer learning",
+    "concept_b": "knowledge transfer",
+    "similarity": 0.6773540377616882,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "benchmark study",
+    "concept_b": "Benchmark dataset",
+    "similarity": 0.6738490462303162,
+    "graph_distance": 7,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Model-based reinforcement learning",
+    "concept_b": "RL algorithm",
+    "similarity": 0.6726215481758118,
+    "graph_distance": 8,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Generalization",
+    "concept_b": "generalization performance",
+    "similarity": 0.6665502786636353,
+    "graph_distance": 11,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "Graph kernel",
+    "concept_b": "Graph decoder",
+    "similarity": 0.6590372920036316,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1181
+  },
+  {
+    "concept_a": "Machine Learning",
+    "concept_b": "supervised machine learning",
+    "similarity": 0.653418242931366,
+    "graph_distance": 7,
+    "structural_hole_score": 0.6662
+  },
+  {
+    "concept_a": "ML Pipeline",
+    "concept_b": "Pipeline synthesis",
+    "similarity": 0.6503603458404541,
+    "graph_distance": 12,
+    "structural_hole_score": 0.3409
+  },
+  {
+    "concept_a": "Reinforcement learning",
+    "concept_b": "Policy learning",
+    "similarity": 0.630301833152771,
+    "graph_distance": 9,
+    "structural_hole_score": 0.3893
+  },
+  {
+    "concept_a": "n-bit Quantization",
+    "concept_b": "n-BQ-NN",
+    "similarity": 0.6262403726577759,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2181
+  },
+  {
+    "concept_a": "Model decision making",
+    "concept_b": "Model decision drivers",
+    "similarity": 0.6239461302757263,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "Action selection",
+    "concept_b": "Policy learning",
+    "similarity": 0.613991916179657,
+    "graph_distance": 11,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Uncertainty quantification",
+    "concept_b": "uncertainty handling",
+    "similarity": 0.6027078628540039,
+    "graph_distance": 10,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "image classification",
+    "concept_b": "Object recognition",
+    "similarity": 0.6000103950500488,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Network embedding",
+    "concept_b": "Graph encoder",
+    "similarity": 0.5960050821304321,
+    "graph_distance": 8,
+    "structural_hole_score": 0.4266
+  },
+  {
+    "concept_a": "Reinforcement learning",
+    "concept_b": "deep reinforcement learning",
+    "similarity": 0.588952898979187,
+    "graph_distance": 7,
+    "structural_hole_score": 0.7226
+  },
+  {
+    "concept_a": "Network embedding",
+    "concept_b": "node2vec",
+    "similarity": 0.5883221626281738,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4266
+  },
+  {
+    "concept_a": "Embedding dimension",
+    "concept_b": "Graph encoder",
+    "similarity": 0.585350513458252,
+    "graph_distance": 10,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Robustness",
+    "concept_b": "noise robustness",
+    "similarity": 0.5813469290733337,
+    "graph_distance": 7,
+    "structural_hole_score": 0.4245
+  },
+  {
+    "concept_a": "model generalization",
+    "concept_b": "Generalization",
+    "similarity": 0.5811816453933716,
+    "graph_distance": 10,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "Reinforcement learning",
+    "concept_b": "RL algorithm",
+    "similarity": 0.5796313285827637,
+    "graph_distance": 7,
+    "structural_hole_score": 0.3893
+  },
+  {
+    "concept_a": "Distance metric",
+    "concept_b": "Pairwise distance embedding",
+    "similarity": 0.5755977630615234,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4998
+  },
+  {
+    "concept_a": "DOME framework",
+    "concept_b": "Pipeline synthesis",
+    "similarity": 0.5733184218406677,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5901
+  },
+  {
+    "concept_a": "Bias",
+    "concept_b": "dataset bias",
+    "similarity": 0.5699652433395386,
+    "graph_distance": 6,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Meta-learning",
+    "concept_b": "Meta-learning rate",
+    "similarity": 0.5653263330459595,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4998
+  },
+  {
+    "concept_a": "air quality monitoring station",
+    "concept_b": "meteorological data",
+    "similarity": 0.5650205612182617,
+    "graph_distance": 3,
+    "structural_hole_score": 0.249
+  },
+  {
+    "concept_a": "Graph representation",
+    "concept_b": "Graph encoder",
+    "similarity": 0.5639097094535828,
+    "graph_distance": 12,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "class imbalance learning",
+    "concept_b": "KEEL benchmark datasets",
+    "similarity": 0.5632114410400391,
+    "graph_distance": 3,
+    "structural_hole_score": 0.374
+  },
+  {
+    "concept_a": "Model-based reinforcement learning",
+    "concept_b": "Policy learning",
+    "similarity": 0.5612296462059021,
+    "graph_distance": 10,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Learning efficiency",
+    "concept_b": "Policy learning",
+    "similarity": 0.5564253330230713,
+    "graph_distance": 11,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "miniImageNet dataset",
+    "concept_b": "CIFAR-10 dataset",
+    "similarity": 0.5539395213127136,
+    "graph_distance": 8,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Task-adaptive projection",
+    "concept_b": "Task-independent representation",
+    "similarity": 0.5498853921890259,
+    "graph_distance": 8,
+    "structural_hole_score": 0.2202
+  },
+  {
+    "concept_a": "policy adaptation",
+    "concept_b": "Policy learning",
+    "similarity": 0.5466282963752747,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3193
+  },
+  {
+    "concept_a": "Latent parameters",
+    "concept_b": "Graph encoder",
+    "similarity": 0.5425878763198853,
+    "graph_distance": 10,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Online hyperparameter adaptation",
+    "concept_b": "Alpha MAML",
+    "similarity": 0.5425186157226562,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5816
+  },
+  {
+    "concept_a": "Meta-learning",
+    "concept_b": "task distribution",
+    "similarity": 0.5374628305435181,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3747
+  },
+  {
+    "concept_a": "Reinforcement learning",
+    "concept_b": "meta-reinforcement learning",
+    "similarity": 0.5369148254394531,
+    "graph_distance": 6,
+    "structural_hole_score": 0.7814
+  },
+  {
+    "concept_a": "Meta-learning",
+    "concept_b": "Alpha MAML",
+    "similarity": 0.5366551280021667,
+    "graph_distance": 999,
+    "structural_hole_score": 0.5821
+  },
+  {
+    "concept_a": "DOME framework",
+    "concept_b": "ML Pipeline",
+    "similarity": 0.5354073643684387,
+    "graph_distance": 10,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "unsupervised representation learning",
+    "concept_b": "Unsupervised learning",
+    "similarity": 0.5287023186683655,
+    "graph_distance": 10,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Benchmark dataset",
+    "concept_b": "KEEL benchmark datasets",
+    "similarity": 0.5264310836791992,
+    "graph_distance": 11,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "RL algorithm",
+    "concept_b": "DRL algorithms",
+    "similarity": 0.5262519121170044,
+    "graph_distance": 3,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Graph encoder",
+    "concept_b": "Graph decoder",
+    "similarity": 0.5262258648872375,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Feature aggregation",
+    "concept_b": "Graph encoder",
+    "similarity": 0.5261590480804443,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Meta-learning",
+    "concept_b": "meta-reinforcement learning",
+    "similarity": 0.5250487923622131,
+    "graph_distance": 999,
+    "structural_hole_score": 0.642
+  },
+  {
+    "concept_a": "Distance metric",
+    "concept_b": "Base distance measure",
+    "similarity": 0.5243308544158936,
+    "graph_distance": 999,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Model decision making",
+    "concept_b": "Model Inference",
+    "similarity": 0.5232874155044556,
+    "graph_distance": 5,
+    "structural_hole_score": 0.4993
+  },
+  {
+    "concept_a": "tieredImageNet dataset",
+    "concept_b": "CIFAR-10 dataset",
+    "similarity": 0.5186587572097778,
+    "graph_distance": 8,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Stochastic gradient descent",
+    "concept_b": "Convergence rate",
+    "similarity": 0.5175474286079407,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Asymptotic distribution",
+    "concept_b": "node2vec",
+    "similarity": 0.5131925344467163,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4164
+  },
+  {
+    "concept_a": "Event-based sensors",
+    "concept_b": "Asynchronous processing",
+    "similarity": 0.5109179019927979,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2469
+  },
+  {
+    "concept_a": "Link prediction",
+    "concept_b": "node2vec",
+    "similarity": 0.5094696283340454,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Shannon entropy",
+    "concept_b": "Maximum entropy method",
+    "similarity": 0.5084191560745239,
+    "graph_distance": 8,
+    "structural_hole_score": 0.7494
+  },
+  {
+    "concept_a": "node2vec",
+    "concept_b": "Graph encoder",
+    "similarity": 0.5040027499198914,
+    "graph_distance": 7,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Network embedding",
+    "concept_b": "Graph neural network",
+    "similarity": 0.49864625930786133,
+    "graph_distance": 8,
+    "structural_hole_score": 0.6842
+  },
+  {
+    "concept_a": "deep learning",
+    "concept_b": "deep representations",
+    "similarity": 0.498617559671402,
+    "graph_distance": 9,
+    "structural_hole_score": 0.249
+  },
+  {
+    "concept_a": "Graph representation",
+    "concept_b": "Graph classification",
+    "similarity": 0.49592530727386475,
+    "graph_distance": 12,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "learned transformations",
+    "concept_b": "Parameter optimization",
+    "similarity": 0.4951971769332886,
+    "graph_distance": 999,
+    "structural_hole_score": 0.05
+  },
+  {
+    "concept_a": "deep reinforcement learning",
+    "concept_b": "Policy learning",
+    "similarity": 0.49411913752555847,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Meta-learning",
+    "concept_b": "TapNet",
+    "similarity": 0.49161458015441895,
+    "graph_distance": 999,
+    "structural_hole_score": 0.6494
+  },
+  {
+    "concept_a": "Official Statistics",
+    "concept_b": "Ethical Governance",
+    "similarity": 0.49160873889923096,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "Embedding dimension",
+    "concept_b": "Node clustering",
+    "similarity": 0.490200936794281,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Exchangeable graph",
+    "concept_b": "Graph encoder",
+    "similarity": 0.48994380235671997,
+    "graph_distance": 10,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Model-based reinforcement learning",
+    "concept_b": "meta-reinforcement learning",
+    "similarity": 0.4887350797653198,
+    "graph_distance": 7,
+    "structural_hole_score": 0.3921
+  },
+  {
+    "concept_a": "Embedding dimension",
+    "concept_b": "node2vec",
+    "similarity": 0.48811304569244385,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Decision making",
+    "concept_b": "Model decision making",
+    "similarity": 0.4864495098590851,
+    "graph_distance": 7,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "n-BQ-NN",
+    "concept_b": "Shift Operation",
+    "similarity": 0.4851740598678589,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4679
+  },
+  {
+    "concept_a": "Resource allocation",
+    "concept_b": "learning budget",
+    "similarity": 0.48409414291381836,
+    "graph_distance": 8,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Node classification",
+    "concept_b": "Graph classification",
+    "similarity": 0.482189804315567,
+    "graph_distance": 9,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Model-based reinforcement learning",
+    "concept_b": "deep reinforcement learning",
+    "similarity": 0.48193222284317017,
+    "graph_distance": 8,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Machine Learning",
+    "concept_b": "traditional machine learning",
+    "similarity": 0.4810696244239807,
+    "graph_distance": 7,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Training set size",
+    "concept_b": "Support set",
+    "similarity": 0.4807804822921753,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "ML Pipeline",
+    "concept_b": "AutoML",
+    "similarity": 0.4804786145687103,
+    "graph_distance": 11,
+    "structural_hole_score": 0.4239
+  },
+  {
+    "concept_a": "Link prediction",
+    "concept_b": "Latent parameters",
+    "similarity": 0.480477511882782,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Machine Learning",
+    "concept_b": "Algorithm selection",
+    "similarity": 0.4783121943473816,
+    "graph_distance": 5,
+    "structural_hole_score": 0.6243
+  },
+  {
+    "concept_a": "Machine Learning",
+    "concept_b": "biological application",
+    "similarity": 0.47784292697906494,
+    "graph_distance": 8,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Model decision making",
+    "concept_b": "Model Training",
+    "similarity": 0.4715047776699066,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "Learning procedures",
+    "concept_b": "Backpropagation Algorithm",
+    "similarity": 0.47027844190597534,
+    "graph_distance": 6,
+    "structural_hole_score": -0.0154
+  },
+  {
+    "concept_a": "Decision-making architecture",
+    "concept_b": "Model-based reinforcement learning",
+    "similarity": 0.4698489308357239,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Reconstructed Gradient Function",
+    "concept_b": "Neural network approximation",
+    "similarity": 0.46623000502586365,
+    "graph_distance": 7,
+    "structural_hole_score": 0.1884
+  },
+  {
+    "concept_a": "Inference-as-a-Service",
+    "concept_b": "Data Privacy",
+    "similarity": 0.46472468972206116,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Link prediction",
+    "concept_b": "Graph encoder",
+    "similarity": 0.4630383849143982,
+    "graph_distance": 9,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "hyperparameter optimization",
+    "concept_b": "Parameter optimization",
+    "similarity": 0.4629412889480591,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2908
+  },
+  {
+    "concept_a": "Decision-making architecture",
+    "concept_b": "Policy learning",
+    "similarity": 0.46269872784614563,
+    "graph_distance": 11,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "n-BQ-NN",
+    "concept_b": "Shift Vector Processing Element",
+    "similarity": 0.46209466457366943,
+    "graph_distance": 999,
+    "structural_hole_score": 0.4681
+  },
+  {
+    "concept_a": "Self-play",
+    "concept_b": "Policy learning",
+    "similarity": 0.45930975675582886,
+    "graph_distance": 10,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Embedding space",
+    "concept_b": "Embedding dimension",
+    "similarity": 0.45677343010902405,
+    "graph_distance": 11,
+    "structural_hole_score": 0.3089
+  },
+  {
+    "concept_a": "Learning efficiency",
+    "concept_b": "policy adaptation",
+    "similarity": 0.4554463028907776,
+    "graph_distance": 7,
+    "structural_hole_score": 0.3193
+  },
+  {
+    "concept_a": "Meta-learning",
+    "concept_b": "policy adaptation",
+    "similarity": 0.4540039896965027,
+    "graph_distance": 999,
+    "structural_hole_score": 0.5691
+  },
+  {
+    "concept_a": "n-BQ-NN",
+    "concept_b": "Digital Signal Processing Resource",
+    "similarity": 0.45366790890693665,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2181
+  },
+  {
+    "concept_a": "Graph representation",
+    "concept_b": "Graph neural network",
+    "similarity": 0.4521338641643524,
+    "graph_distance": 12,
+    "structural_hole_score": 0.2576
+  },
+  {
+    "concept_a": "evaluation metrics",
+    "concept_b": "benchmark study",
+    "similarity": 0.45100900530815125,
+    "graph_distance": 4,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Monitoring",
+    "concept_b": "Data Availability",
+    "similarity": 0.4509587287902832,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "node2vec",
+    "concept_b": "Convergence rate",
+    "similarity": 0.45077139139175415,
+    "graph_distance": 5,
+    "structural_hole_score": 0.0
+  }
+]

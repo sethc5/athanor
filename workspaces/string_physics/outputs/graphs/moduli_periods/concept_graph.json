@@ -1,0 +1,5982 @@
+{
+  "domain": "moduli_periods",
+  "query": "Picard-Fuchs period integrals Calabi-Yau GKZ hypergeometric system KKLT Large Volume Scenario moduli stabilization IIB flux compactification special geometry Kahler potential de Sitter uplift swampland conjecture Yukawa couplings mirror symmetry Gukov-Vafa-Witten superpotential tadpole\n",
+  "concepts": [
+    {
+      "label": "SYZ mirror symmetry",
+      "description": "Strominger-Yau-Zaslow mirror construction via special Lagrangian fibrations, providing a geometric dual description of two mirror Calabi-Yau manifolds.",
+      "aliases": [
+        "Strominger-Yau-Zaslow duality",
+        "SYZ construction",
+        "Strominger-Yau-Zaslow"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "1801.02749v2"
+      ],
+      "centrality": 0.0226,
+      "burt_constraint": 0.2961,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "toric Calabi-Yau varieties",
+      "description": "Calabi-Yau 3-folds with torus action and fan description, compactifications of C^3 defined by toric polytopes with h^{1,1} and h^{2,1} determined by polytope combinatorics.",
+      "aliases": [
+        "toric CY3",
+        "toric Calabi-Yau 3-folds"
+      ],
+      "source_papers": [
+        "1412.7231v3"
+      ],
+      "centrality": 0.0299,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "period integrals",
+      "description": "Holomorphic integrals Π_a(z) = ∫_{γ_a} Ω(z) of the (3,0)-form on CY3 over homology cycles, encoding dependence on complex-structure moduli.",
+      "aliases": [
+        "periods",
+        "Π_a(z)",
+        "Π_a",
+        "Abelian integrals",
+        "moduli-dependent periods",
+        "period vector",
+        "period",
+        "period integral"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "9511001v1",
+        "2402.04089v2",
+        "1111.7307v2",
+        "2401.13567v2",
+        "0110126v3",
+        "1811.05463v3",
+        "0505272v1",
+        "2503.00272v2",
+        "2011.08227v2",
+        "1308.1222v4",
+        "1605.07877v2",
+        "0701215v1",
+        "2407.16758v2",
+        "1704.00164v1",
+        "0212061v2",
+        "2201.00322v1",
+        "0609180v2",
+        "1603.06631v2",
+        "1801.02749v2",
+        "9205041v1"
+      ],
+      "centrality": 0.2517,
+      "burt_constraint": 0.1178,
+      "effective_size": 26.9392,
+      "structural_hole": true
+    },
+    {
+      "label": "Picard-Fuchs system",
+      "description": "GKZ differential equations L_i Π = 0 satisfied by period integrals, derived from the toric ambient space lattice and GLSM charge matrix.",
+      "aliases": [
+        "Picard-Fuchs equations",
+        "GKZ system",
+        "GKZ-hypergeometric system",
+        "PF system",
+        "GKZ operators",
+        "PF equations",
+        "Gelfand-Kapranov-Zelevinsky system",
+        "Gauss-Manin system",
+        "PF equation"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "9511001v1",
+        "2402.04089v2",
+        "1111.7307v2",
+        "2401.13567v2",
+        "0110126v3",
+        "1811.05463v3",
+        "0505272v1",
+        "2407.16758v2",
+        "2503.00272v2",
+        "2011.08227v2",
+        "2201.00322v1",
+        "1801.02749v2",
+        "9205041v1",
+        "1605.07877v2",
+        "0701215v1"
+      ],
+      "centrality": 0.063,
+      "burt_constraint": 0.254,
+      "effective_size": 10.2372,
+      "structural_hole": true
+    },
+    {
+      "label": "complex-structure moduli",
+      "description": "Parameters z = (z_1,...,z_{h^{2,1}}) that characterize deformations of the complex structure of a Calabi-Yau manifold.",
+      "aliases": [
+        "z_i moduli",
+        "CS moduli",
+        "complex moduli",
+        "z_i",
+        "complex structure deformations",
+        "z-coordinates",
+        "complex structure",
+        "cs moduli",
+        "z^i",
+        "moduli coordinates"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "9511001v1",
+        "2402.04089v2",
+        "1111.7307v2",
+        "2401.13567v2",
+        "0110126v3",
+        "1811.05463v3",
+        "0505272v1",
+        "2407.16758v2",
+        "1704.00164v1",
+        "2503.00272v2",
+        "2011.08227v2",
+        "1308.1222v4",
+        "0212061v2",
+        "0609180v2",
+        "1603.06631v2",
+        "1801.02749v2",
+        "1605.07877v2",
+        "0701215v1"
+      ],
+      "centrality": 0.0983,
+      "burt_constraint": 0.2038,
+      "effective_size": 15.3569,
+      "structural_hole": true
+    },
+    {
+      "label": "flux superpotential",
+      "description": "Effective superpotential W = ∫(G_3 ∧ Ω) = G_a Π^a + F_a determined by three-form flux G_3 integrated against the holomorphic form via periods.",
+      "aliases": [
+        "W",
+        "Gukov-Vafa superpotential",
+        "IIB superpotential",
+        "W(z)",
+        "W_flux"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "2402.04089v2",
+        "2401.13567v2",
+        "1301.7280v3",
+        "1811.05463v3",
+        "0505272v1",
+        "2407.16758v2",
+        "2503.00272v2",
+        "2011.08227v2",
+        "1308.1222v4",
+        "0609180v2",
+        "1603.06631v2",
+        "9205041v1",
+        "0701215v1"
+      ],
+      "centrality": 0.103,
+      "burt_constraint": 0.1867,
+      "effective_size": 12.7735,
+      "structural_hole": true
+    },
+    {
+      "label": "Kähler potential",
+      "description": "Function K = -ln(-i∫(Ω∧Ω̄)) - 2ln(V) governing supersymmetric effective dynamics; sum of geometric and volume contributions.",
+      "aliases": [
+        "K",
+        "Kähler function",
+        "Kahler potential"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "1301.7280v3",
+        "2011.08227v2",
+        "0609180v2",
+        "9205041v1",
+        "0701215v1"
+      ],
+      "centrality": 0.0552,
+      "burt_constraint": 0.1388,
+      "effective_size": 11.4765,
+      "structural_hole": true
+    },
+    {
+      "label": "Kähler moduli",
+      "description": "Parameters τ^a controlling the sizes and shapes of divisors in the Kähler cone; related to periods via the mirror map t^a = ∂F/∂X^a.",
+      "aliases": [
+        "Kähler coordinates",
+        "τ^a",
+        "volume moduli",
+        "t-coordinates",
+        "Kähler parameters",
+        "Kähler structure",
+        "Kähler deformations",
+        "t^a",
+        "Kähler parameter",
+        "Kahler coordinates",
+        "symplectic moduli"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "2402.04089v2",
+        "1111.7307v2",
+        "2401.13567v2",
+        "1301.7280v3",
+        "1811.05463v3",
+        "0505272v1",
+        "2407.16758v2",
+        "2503.00272v2",
+        "2011.08227v2",
+        "1308.1222v4",
+        "0609180v2",
+        "9205041v1",
+        "1605.07877v2"
+      ],
+      "centrality": 0.1127,
+      "burt_constraint": 0.134,
+      "effective_size": 15.7898,
+      "structural_hole": true
+    },
+    {
+      "label": "moduli stabilization",
+      "description": "Mechanism for fixing the moduli (complex-structure and Kähler) to discrete values via flux superpotential and non-perturbative corrections.",
+      "aliases": [
+        "fixing moduli",
+        "stabilization",
+        "moduli fixing",
+        "vacuum stabilization",
+        "stabilization locus",
+        "vacuum fixing",
+        "stabilisation"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "2402.04089v2",
+        "1111.7307v2",
+        "2401.13567v2",
+        "1301.7280v3",
+        "1811.05463v3",
+        "0505272v1",
+        "2407.16758v2",
+        "1704.00164v1",
+        "2503.00272v2",
+        "2011.08227v2",
+        "1308.1222v4",
+        "0609180v2",
+        "9205041v1"
+      ],
+      "centrality": 0.1198,
+      "burt_constraint": 0.1002,
+      "effective_size": 14.4682,
+      "structural_hole": true
+    },
+    {
+      "label": "KKLT construction",
+      "description": "Kachru-Kallosh-Linde-Trivedi scenario for de Sitter vacua: flux-stabilize complex structure with W_0 << 1, then uplift via non-perturbative gaugino condensation or D3-instantons.",
+      "aliases": [
+        "KKLT",
+        "KKLT scenario",
+        "KKLT stabilization"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "2503.00272v2",
+        "0701215v1"
+      ],
+      "centrality": 0.0622,
+      "burt_constraint": 0.1708,
+      "effective_size": 6.663,
+      "structural_hole": true
+    },
+    {
+      "label": "Large Volume Scenario",
+      "description": "Moduli stabilization regime requiring h^{1,1} ≥ 2 and exponentially large volumes V ~ e^{aτ_s}; stabilizes via α'-corrections and non-perturbative effects.",
+      "aliases": [
+        "LVS",
+        "large volume compactification"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "2402.04089v2",
+        "2401.13567v2",
+        "2503.00272v2",
+        "1308.1222v4",
+        "0701215v1"
+      ],
+      "centrality": 0.072,
+      "burt_constraint": 0.1436,
+      "effective_size": 10.3454,
+      "structural_hole": true
+    },
+    {
+      "label": "special Lagrangian fibration",
+      "description": "A fibration of a Calabi-Yau by special Lagrangian cycles (calibrated submanifolds) with respect to the SYZ construction; provides the geometric mirror mechanism.",
+      "aliases": [
+        "SL fibration",
+        "SLag fibration",
+        "SLT fibration"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "1801.02749v2"
+      ],
+      "centrality": 0.0034,
+      "burt_constraint": 0.5633,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "mirror map",
+      "description": "Isomorphism between the Kähler moduli space of one CY and complex-structure moduli of its mirror, given by t^a = ∂F/∂X^a where F is the prepotential.",
+      "aliases": [
+        "mirror transformation",
+        "mirror symmetry map",
+        "mirror isomorphism",
+        "period map"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "2401.13567v2",
+        "0505272v1",
+        "9205041v1"
+      ],
+      "centrality": 0.0267,
+      "burt_constraint": 0.4045,
+      "effective_size": 2.4977,
+      "structural_hole": false
+    },
+    {
+      "label": "Yukawa coupling",
+      "description": "Cubic interaction term κ_{abc} = F_{abc} in the effective superpotential; at large volume determined by intersection numbers of divisors.",
+      "aliases": [
+        "F_{abc}",
+        "κ_{abc}",
+        "Yukawa texture",
+        "three-point couplings",
+        "three-point correlator",
+        "Yukawa interaction",
+        "superpotential coupling"
+      ],
+      "source_papers": [
+        "1412.7231v3",
+        "0505272v1",
+        "0212061v2",
+        "0609180v2"
+      ],
+      "centrality": 0.0577,
+      "burt_constraint": 0.271,
+      "effective_size": 5.2035,
+      "structural_hole": true
+    },
+    {
+      "label": "D6 orbifold symmetry",
+      "description": "Dihedral symmetry of order 12 acting on a toric CY polytope; reduces h^{2,1}=20 complex-structure moduli to 5 D6-invariant degrees of freedom.",
+      "aliases": [
+        "D_6 symmetry",
+        "dihedral symmetry"
+      ],
+      "source_papers": [
+        "1412.7231v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Calabi-Yau hypersurface",
+      "description": "A three-dimensional Kähler manifold with vanishing first Chern class, defined as a hypersurface in a toric ambient space.",
+      "aliases": [
+        "CY3",
+        "toric CY variety",
+        "Calabi-Yau space",
+        "Calabi-Yau manifold",
+        "Calabi-Yau 3-fold",
+        "K3-fibred CY",
+        "Calabi-Yau",
+        "CY3 hypersurface"
+      ],
+      "source_papers": [
+        "9511001v1",
+        "1111.7307v2",
+        "1301.7280v3",
+        "0505272v1",
+        "2503.00272v2",
+        "2011.08227v2",
+        "0212061v2",
+        "2201.00322v1"
+      ],
+      "centrality": 0.1427,
+      "burt_constraint": 0.1384,
+      "effective_size": 12.0672,
+      "structural_hole": true
+    },
+    {
+      "label": "toric geometry",
+      "description": "Algebraic geometry framework using lattice polytopes and their fans to study varieties with torus actions, providing systematic access to Gröbner bases and GKZ systems.",
+      "aliases": [
+        "toric variety theory"
+      ],
+      "source_papers": [
+        "9511001v1"
+      ],
+      "centrality": 0.0285,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "mirror symmetry",
+      "description": "Duality between pairs of Calabi-Yau manifolds exchanging complex-structure and Kähler moduli, relating period integrals to quantum geometry.",
+      "aliases": [
+        "mirror duality",
+        "T-duality",
+        "mirror map",
+        "T-duality symmetry",
+        "CY mirror symmetry",
+        "CY mirror duality",
+        "t^a = ∂F/∂X^a",
+        "LG/Fano duality",
+        "mirror hypothesis"
+      ],
+      "source_papers": [
+        "9511001v1",
+        "2402.04089v2",
+        "0108088v3",
+        "2401.13567v2",
+        "0505272v1",
+        "2407.16758v2",
+        "1704.00164v1",
+        "2503.00272v2",
+        "0212061v2",
+        "2201.00322v1",
+        "2102.01388v3",
+        "1801.02749v2",
+        "9205041v1",
+        "1605.07877v2",
+        "0701215v1"
+      ],
+      "centrality": 0.1923,
+      "burt_constraint": 0.1556,
+      "effective_size": 15.0955,
+      "structural_hole": true
+    },
+    {
+      "label": "Gröbner basis",
+      "description": "A special set of generators of the toric ideal that determines the structure of local solutions and differential operators in the GKZ system.",
+      "aliases": [
+        "Gröbner generators"
+      ],
+      "source_papers": [
+        "9511001v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "large radius limit",
+      "description": "Special limiting region of moduli space where the Calabi-Yau volume becomes large and classical geometry dominates; geometric interpretation becomes transparent.",
+      "aliases": [
+        "large volume limit",
+        "geometric limit"
+      ],
+      "source_papers": [
+        "9511001v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "intersection ring",
+      "description": "The cohomology ring of a toric variety equipped with the cup product, encoding intersection numbers of divisors and curves.",
+      "aliases": [
+        "intersection theory",
+        "intersection numbers",
+        "κ_{abc}"
+      ],
+      "source_papers": [
+        "9511001v1",
+        "2402.04089v2"
+      ],
+      "centrality": 0.0336,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Hodge numbers",
+      "description": "Topological invariants h^{p,q} characterising the cohomology of the Calabi-Yau; h^{2,1} equals the complex-structure moduli dimension.",
+      "aliases": [
+        "Hodge data",
+        "h^{1,1}, h^{2,1}",
+        "Hodge diamonds",
+        "h^{p,q}"
+      ],
+      "source_papers": [
+        "9511001v1",
+        "1704.00164v1"
+      ],
+      "centrality": 0.0045,
+      "burt_constraint": 0.3582,
+      "effective_size": 2.7928,
+      "structural_hole": false
+    },
+    {
+      "label": "Fermat hypersurface",
+      "description": "A special class of toric hypersurface defined by monomials of equal degree, admitting explicit algebraic and period integral analysis.",
+      "aliases": [
+        "Fermat type"
+      ],
+      "source_papers": [
+        "9511001v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Landau-Ginzburg model",
+      "description": "A superpotential-based model whose critical locus defines a singular variety; non-LG models studied here relate to non-geometric phases.",
+      "aliases": [
+        "LG model",
+        "superpotential theory",
+        "weak LG model",
+        "superpotential"
+      ],
+      "source_papers": [
+        "9511001v1",
+        "2102.01388v3",
+        "1801.02749v2"
+      ],
+      "centrality": 0.06,
+      "burt_constraint": 0.2019,
+      "effective_size": 5.0,
+      "structural_hole": true
+    },
+    {
+      "label": "differential operators",
+      "description": "Linear differential operators constructed from the GKZ system acting on period integrals; their principal parts encode intersection theory.",
+      "aliases": [
+        "L_i operators",
+        "GKZ operators"
+      ],
+      "source_papers": [
+        "9511001v1"
+      ],
+      "centrality": 0.0113,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "local solutions",
+      "description": "Analytic solutions to the GKZ differential system valid in a neighbourhood of special points (e.g., large radius limit or conifold locus).",
+      "aliases": [
+        "local periods",
+        "fundamental solutions"
+      ],
+      "source_papers": [
+        "9511001v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "toric ideal",
+      "description": "The ideal in a polynomial ring generated by binomials, whose structure determines the GKZ differential equations via the GLSM charge matrix.",
+      "aliases": [
+        "binomial ideal",
+        "semigroup ideal"
+      ],
+      "source_papers": [
+        "9511001v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Schoen Calabi-Yau threefold",
+      "description": "A self-mirror Calabi-Yau threefold with h¹¹=12, h²¹=12 and D₆ symmetry used as a compactification geometry for type IIB string theory.",
+      "aliases": [
+        "Schoen CY3",
+        "self-mirror Schoen manifold"
+      ],
+      "source_papers": [
+        "2402.04089v2"
+      ],
+      "centrality": 0.0015,
+      "burt_constraint": 0.4344,
+      "effective_size": 1.9688,
+      "structural_hole": false
+    },
+    {
+      "label": "Non-perturbative corrections",
+      "description": "Exponentially suppressed terms W_np ~ e^{-aτ} in the superpotential from D3-instantons or gaugino condensation on wrapped branes.",
+      "aliases": [
+        "W_np",
+        "instanton corrections",
+        "D3-instantons",
+        "instanton effects",
+        "instanton superpotential",
+        "multiple-exponential potential"
+      ],
+      "source_papers": [
+        "2402.04089v2",
+        "2401.13567v2",
+        "1301.7280v3",
+        "1811.05463v3"
+      ],
+      "centrality": 0.0494,
+      "burt_constraint": 0.1735,
+      "effective_size": 7.3446,
+      "structural_hole": false
+    },
+    {
+      "label": "Effective scalar potential",
+      "description": "The four-dimensional effective potential V_eff derived from the superpotential and Kähler potential; determines the vacuum structure and moduli stabilization.",
+      "aliases": [
+        "scalar potential",
+        "V_eff",
+        "effective potential",
+        "moduli potential"
+      ],
+      "source_papers": [
+        "2402.04089v2",
+        "1603.06631v2"
+      ],
+      "centrality": 0.0753,
+      "burt_constraint": 0.2005,
+      "effective_size": 5.5446,
+      "structural_hole": true
+    },
+    {
+      "label": "F-term uplift",
+      "description": "Mechanism for lifting vacua to positive cosmological constant by adding F-term contributions from anti-D3 branes or F-term corrections in LVS.",
+      "aliases": [
+        "F-term SUSY breaking",
+        "F-term"
+      ],
+      "source_papers": [
+        "2402.04089v2",
+        "2401.13567v2"
+      ],
+      "centrality": 0.0008,
+      "burt_constraint": 0.5017,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "de Sitter vacuum",
+      "description": "Four-dimensional vacuum with positive cosmological constant Λ > 0; obtained via moduli stabilization and SUSY-breaking uplifts in string theory.",
+      "aliases": [
+        "dS vacuum",
+        "dS",
+        "dS minimum",
+        "dS_4",
+        "de Sitter"
+      ],
+      "source_papers": [
+        "2402.04089v2",
+        "1308.1222v4",
+        "0701215v1"
+      ],
+      "centrality": 0.0376,
+      "burt_constraint": 0.1886,
+      "effective_size": 7.5369,
+      "structural_hole": false
+    },
+    {
+      "label": "Swampland conjecture",
+      "description": "Conjectural consistency criterion from quantum gravity: in any effective field theory, |∇V| ≥ c·V for some c > 0; rules out certain SUSY-breaking vacua.",
+      "aliases": [
+        "de Sitter swampland conjecture",
+        "dS Swampland",
+        "Swampland dS conjecture",
+        "dS swampland",
+        "swampland de Sitter conjecture",
+        "dS swampland conjecture"
+      ],
+      "source_papers": [
+        "2402.04089v2",
+        "1811.05463v3",
+        "2503.00272v2",
+        "2011.08227v2",
+        "1308.1222v4",
+        "0701215v1"
+      ],
+      "centrality": 0.0029,
+      "burt_constraint": 0.3296,
+      "effective_size": 4.2606,
+      "structural_hole": false
+    },
+    {
+      "label": "Calabi-Yau manifold",
+      "description": "A complex Kähler manifold with vanishing first Chern class c₁(X)=0, admitting a unique Ricci-flat metric and a nowhere-vanishing holomorphic (n,0)-form Ω.",
+      "aliases": [
+        "CY manifold",
+        "Calabi-Yau n-fold",
+        "CY3",
+        "Calabi-Yau threefold"
+      ],
+      "source_papers": [
+        "0108088v3",
+        "1801.02749v2",
+        "9205041v1"
+      ],
+      "centrality": 0.0751,
+      "burt_constraint": 0.1222,
+      "effective_size": 8.9364,
+      "structural_hole": true
+    },
+    {
+      "label": "special Lagrangian submanifold",
+      "description": "A calibrated Lagrangian submanifold L in a Calabi-Yau manifold defined by Im(e^{iθ} Ω|_L) = 0 for some fixed phase θ ∈ [0, 2π).",
+      "aliases": [
+        "SL m-fold",
+        "special Lagrangian cycle"
+      ],
+      "source_papers": [
+        "0108088v3"
+      ],
+      "centrality": 0.0337,
+      "burt_constraint": 0.227,
+      "effective_size": 5.0,
+      "structural_hole": false
+    },
+    {
+      "label": "holonomy group",
+      "description": "The Lie group of parallel transports around loops in the tangent bundle; Calabi-Yau m-folds are characterized by holonomy ⊆ SU(m).",
+      "aliases": [
+        "holonomy",
+        "reduced holonomy"
+      ],
+      "source_papers": [
+        "0108088v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Kähler geometry",
+      "description": "Differential geometry of complex manifolds equipped with a Kähler metric ω = ∂∂̄K, combining symplectic and complex structure.",
+      "aliases": [
+        "Kähler structure",
+        "Kähler metric",
+        "moduli space geometry"
+      ],
+      "source_papers": [
+        "0108088v3",
+        "1603.06631v2"
+      ],
+      "centrality": 0.0621,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": true
+    },
+    {
+      "label": "Calabi Conjecture",
+      "description": "Theorem (Yau, 1978): any Kähler manifold with c₁=0 admits a unique Ricci-flat Kähler metric in each Kähler class.",
+      "aliases": [
+        "Yau theorem"
+      ],
+      "source_papers": [
+        "0108088v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "calibrated geometry",
+      "description": "Framework defining calibrated submanifolds via a closed p-form calibration φ such that φ|_L = vol_L for minimal submanifolds L.",
+      "aliases": [
+        "calibration"
+      ],
+      "source_papers": [
+        "0108088v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "deformation theory",
+      "description": "Study of infinitesimal and global deformations of geometric structures, controlling how submanifolds vary in moduli spaces.",
+      "aliases": [
+        "deformation",
+        "infinitesimal deformations"
+      ],
+      "source_papers": [
+        "0108088v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "moduli space",
+      "description": "Parameter space classifying geometric structures (e.g., compact special Lagrangian submanifolds) up to isomorphism; typically a finite-dimensional manifold or orbifold.",
+      "aliases": [
+        "moduli",
+        "parameter space"
+      ],
+      "source_papers": [
+        "0108088v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "singularities of special Lagrangian submanifolds",
+      "description": "Isolated and non-isolated singular points of special Lagrangian cycles, locally modelled on cones or higher-codimension singular sets.",
+      "aliases": [
+        "SL singularities"
+      ],
+      "source_papers": [
+        "0108088v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "SYZ Conjecture",
+      "description": "Conjecture (Strominger-Yau-Zaslow) that mirror Calabi-Yau pairs admit dual special Lagrangian fibrations with torus fibres, explaining mirror symmetry geometrically.",
+      "aliases": [
+        "Strominger-Yau-Zaslow conjecture"
+      ],
+      "source_papers": [
+        "0108088v3"
+      ],
+      "centrality": 0.0371,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "holomorphic (n,0)-form",
+      "description": "A nowhere-vanishing holomorphic differential form Ω of degree (n,0) on a Calabi-Yau n-fold; defines the volume form via Ω ∧ Ω̄ = (i^n/2^n) vol.",
+      "aliases": [
+        "canonical form",
+        "volume form",
+        "anti-canonical form",
+        "top holomorphic form",
+        "Ω",
+        "holomorphic form",
+        "V",
+        "CY volume",
+        "holomorphic top-form"
+      ],
+      "source_papers": [
+        "0108088v3",
+        "1301.7280v3",
+        "0110126v3",
+        "1704.00164v1",
+        "1308.1222v4",
+        "2201.00322v1"
+      ],
+      "centrality": 0.0975,
+      "burt_constraint": 0.1969,
+      "effective_size": 7.0287,
+      "structural_hole": true
+    },
+    {
+      "label": "Ricci-flat metric",
+      "description": "A Kähler metric with vanishing Ricci tensor Ric = 0, induced on Calabi-Yau manifolds by the Calabi Conjecture.",
+      "aliases": [
+        "Ricci flatness"
+      ],
+      "source_papers": [
+        "0108088v3"
+      ],
+      "centrality": 0.0113,
+      "burt_constraint": 0.5003,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "almost Calabi-Yau manifold",
+      "description": "A generalization of Calabi-Yau manifolds (not necessarily Kähler) admitting a nowhere-vanishing holomorphic (n,0)-form and calibrated geometry; useful for special Lagrangian deformation theory.",
+      "aliases": [
+        "ACY manifold"
+      ],
+      "source_papers": [
+        "0108088v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "thermal effective potential",
+      "description": "One-loop potential arising from finite-temperature string compactifications via free action on the Euclidean time circle; lifts moduli dynamically.",
+      "aliases": [
+        "thermal potential"
+      ],
+      "source_papers": [
+        "1111.7307v2"
+      ],
+      "centrality": 0.0336,
+      "burt_constraint": 0.2183,
+      "effective_size": 4.7252,
+      "structural_hole": false
+    },
+    {
+      "label": "conifold locus",
+      "description": "Singular subspace in moduli space where the Calabi-Yau develops a node; responsible for enhanced gauge symmetry and light BPS states.",
+      "aliases": [
+        "conifold point"
+      ],
+      "source_papers": [
+        "1111.7307v2"
+      ],
+      "centrality": 0.0125,
+      "burt_constraint": 0.335,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "gauge theory",
+      "description": "Quantum field theory with local gauge symmetry geometrically engineered near singular loci of the Calabi-Yau compactification.",
+      "aliases": [
+        "engineered gauge theory"
+      ],
+      "source_papers": [
+        "1111.7307v2"
+      ],
+      "centrality": 0.001,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "BPS states",
+      "description": "Massive states preserving a fraction of supersymmetry that become massless at singular loci, affecting the effective dynamics.",
+      "aliases": [
+        "BPS spectrum"
+      ],
+      "source_papers": [
+        "1111.7307v2"
+      ],
+      "centrality": 0.0012,
+      "burt_constraint": 0.5037,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "hypermultiplet moduli",
+      "description": "Scalar fields transforming in hypermultiplet representations of N=2 supersymmetry, arising from matter coupled to gauge theories.",
+      "aliases": [
+        "matter moduli"
+      ],
+      "source_papers": [
+        "1111.7307v2"
+      ],
+      "centrality": 0.0043,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "vector multiplet moduli",
+      "description": "Scalar fields in vector multiplet representations of N=2 supersymmetry, parametrizing the Coulomb branch of gauge theories.",
+      "aliases": [
+        "Coulomb moduli"
+      ],
+      "source_papers": [
+        "1111.7307v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "type IIA compactification",
+      "description": "String theory with two-form RR field and odd-dimensional D-branes, compactified on a Calabi-Yau threefold.",
+      "aliases": [
+        "type IIA on CY3"
+      ],
+      "source_papers": [
+        "1111.7307v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "heterotic duality",
+      "description": "Duality relating type IIA on Calabi-Yau to heterotic string on K3 × T², exchanging complex and Kähler structure.",
+      "aliases": [
+        "type II / heterotic duality"
+      ],
+      "source_papers": [
+        "1111.7307v2"
+      ],
+      "centrality": 0.0001,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "axio-dilaton",
+      "description": "Modulus field τ = χ + i/g_s combining the axion and dilaton in heterotic string; dual to Kähler moduli in type IIA.",
+      "aliases": [
+        "dilaton modulus"
+      ],
+      "source_papers": [
+        "1111.7307v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "self-mirror Calabi-Yau",
+      "description": "Calabi-Yau threefold satisfying mirror symmetry self-duality, simplifying period integral structure and α'-corrections.",
+      "aliases": [
+        "self-dual CY3"
+      ],
+      "source_papers": [
+        "2401.13567v2"
+      ],
+      "centrality": 0.0422,
+      "burt_constraint": 0.3364,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "α'-corrections",
+      "description": "Perturbative quantum gravity corrections to the effective potential, suppressed in large-volume and self-mirror constructions.",
+      "aliases": [
+        "string loop corrections",
+        "worldsheet corrections"
+      ],
+      "source_papers": [
+        "2401.13567v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "de Sitter vacua",
+      "description": "Metastable vacuum states with small positive cosmological constant Λ > 0, corresponding to exponentially suppressed uplifting contributions.",
+      "aliases": [
+        "dS vacua",
+        "de-Sitter"
+      ],
+      "source_papers": [
+        "2401.13567v2",
+        "2011.08227v2"
+      ],
+      "centrality": 0.0237,
+      "burt_constraint": 0.2427,
+      "effective_size": 4.6177,
+      "structural_hole": false
+    },
+    {
+      "label": "swampland conjectures",
+      "description": "Conjectures constraining effective potentials realizable in consistent string theory, particularly de Sitter conjecture |∇V| ≥ c·V.",
+      "aliases": [
+        "swampland"
+      ],
+      "source_papers": [
+        "2401.13567v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Type IIB orientifold",
+      "description": "String theory compactification on a CY3 with O-plane orientifold projection, enabling both complex-structure and Kähler moduli stabilization via fluxes and non-perturbative effects.",
+      "aliases": [
+        "IIB orientifold compactification",
+        "IIB orientifold"
+      ],
+      "source_papers": [
+        "1301.7280v3",
+        "2011.08227v2"
+      ],
+      "centrality": 0.0016,
+      "burt_constraint": 0.4369,
+      "effective_size": 2.6171,
+      "structural_hole": false
+    },
+    {
+      "label": "K3-fibred structure",
+      "description": "A CY3 that fibres over ℙ¹ with K3 surfaces as generic fibres, enabling systematic volume-form decomposition and moduli stabilization.",
+      "aliases": [
+        "K3 fibration"
+      ],
+      "source_papers": [
+        "1301.7280v3"
+      ],
+      "centrality": 0.0218,
+      "burt_constraint": 0.2779,
+      "effective_size": 3.7394,
+      "structural_hole": false
+    },
+    {
+      "label": "Gaugino condensation",
+      "description": "Non-perturbative effect in which condensation of gaugino bilinears on wrapped D-branes generates exponentially-suppressed contributions to the superpotential.",
+      "aliases": [
+        "condensation corrections"
+      ],
+      "source_papers": [
+        "1301.7280v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Poly-instanton corrections",
+      "description": "Higher-order non-perturbative corrections from multiple instantons; contribute additional terms to the superpotential beyond single-instanton effects.",
+      "aliases": [
+        "multi-instanton effects"
+      ],
+      "source_papers": [
+        "1301.7280v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "α′-corrections",
+      "description": "String-loop and worldsheet-instanton corrections to the Kähler potential, suppressed by powers of α′ = l_s²/M_p²; crucial for stabilizing large Kähler moduli.",
+      "aliases": [
+        "alpha-prime corrections",
+        "loop corrections"
+      ],
+      "source_papers": [
+        "1301.7280v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Del Pezzo surface",
+      "description": "A Fano surface that is a blowup of ℙ² at generic points; appears as a divisor in CY3 geometries and plays a key role in volume form structure.",
+      "aliases": [
+        "dP surface",
+        "del Pezzo"
+      ],
+      "source_papers": [
+        "1301.7280v3",
+        "2102.01388v3"
+      ],
+      "centrality": 0.0004,
+      "burt_constraint": 0.5033,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "W-surface",
+      "description": "A genus-1 fibred surface appearing as a divisor in K3-fibred CY3 geometries; contributes to the decomposition of the Kähler cone.",
+      "aliases": [],
+      "source_papers": [
+        "1301.7280v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Reflexive polytope",
+      "description": "A lattice polytope P such that both P and its polar dual P° are lattice polytopes; classifies toric Fano varieties and generates CY3 via GLSM construction.",
+      "aliases": [
+        "reflexive lattice polytope"
+      ],
+      "source_papers": [
+        "1301.7280v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Abelian integrals",
+      "description": "Integrals of algebraic differential forms over cycles of an algebraic variety, generalizing elliptic integrals and period integrals on CY manifolds.",
+      "aliases": [
+        "relative cohomology integrals"
+      ],
+      "source_papers": [
+        "0110126v3"
+      ],
+      "centrality": 0.0447,
+      "burt_constraint": 0.2509,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "relative cohomology",
+      "description": "Cohomology group H^n(X,X_∞) measuring differential forms modulo those with poles, dual to the module of Abelian integrals.",
+      "aliases": [
+        "relative de Rham cohomology"
+      ],
+      "source_papers": [
+        "0110126v3"
+      ],
+      "centrality": 0.0113,
+      "burt_constraint": 0.5014,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "GKZ operator",
+      "description": "Differential operator L_i constructed from the charge matrix of a toric ambient space, generating the Picard-Fuchs ideal annihilating period integrals.",
+      "aliases": [
+        "Gelfand-Kapranov-Zelevinsky operator",
+        "A-hypergeometric operator",
+        "PF operator"
+      ],
+      "source_papers": [
+        "0110126v3",
+        "1704.00164v1"
+      ],
+      "centrality": 0.0365,
+      "burt_constraint": 0.2546,
+      "effective_size": 4.5721,
+      "structural_hole": false
+    },
+    {
+      "label": "polynomial at infinity",
+      "description": "A regular polynomial f(x,y) in two variables whose behavior at infinity is controlled, used to define the corresponding Abelian integral module.",
+      "aliases": [
+        "regular at infinity polynomial"
+      ],
+      "source_papers": [
+        "0110126v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "module isomorphism",
+      "description": "Canonical isomorphism between the module of relative cohomologies H^*(X,X_∞) and the module of Abelian integrals, proven via integral representation.",
+      "aliases": [
+        "cohomology-period duality"
+      ],
+      "source_papers": [
+        "0110126v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "algebraic variety",
+      "description": "Geometric object defined by polynomial equations, including CY manifolds and their total spaces, on which period integrals are naturally defined.",
+      "aliases": [
+        "algebraic space"
+      ],
+      "source_papers": [
+        "0110126v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "differential form",
+      "description": "Exterior form with smooth or meromorphic coefficients on an algebraic variety; the space of forms closed modulo exact forms constitutes cohomology.",
+      "aliases": [
+        "exterior form"
+      ],
+      "source_papers": [
+        "0110126v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "cycle",
+      "description": "A formal sum of oriented submanifolds (homology class) over which period integrals are integrated; dual to the relative cohomology.",
+      "aliases": [
+        "homology cycle",
+        "integration contour"
+      ],
+      "source_papers": [
+        "0110126v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "de Sitter saddle point",
+      "description": "Critical point of the effective scalar potential with positive cosmological constant (dS4 geometry); metastable or unstable equilibrium.",
+      "aliases": [
+        "dS critical point",
+        "dS saddle"
+      ],
+      "source_papers": [
+        "1811.05463v3"
+      ],
+      "centrality": 0.0135,
+      "burt_constraint": 0.3014,
+      "effective_size": 3.6129,
+      "structural_hole": false
+    },
+    {
+      "label": "flux quantization",
+      "description": "Requirement that three-form fluxes G_3 and RR/NS fluxes satisfy Dirac quantization conditions; constrains allowed flux choices.",
+      "aliases": [
+        "flux integrality"
+      ],
+      "source_papers": [
+        "1811.05463v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "large internal volume",
+      "description": "Regime where the CY3 volume V >> 1 (in string units); suppresses α' corrections and ensures weak coupling.",
+      "aliases": [
+        "large volume regime",
+        "LVS",
+        "Large Volume Scenario"
+      ],
+      "source_papers": [
+        "1811.05463v3",
+        "0609180v2"
+      ],
+      "centrality": 0.0074,
+      "burt_constraint": 0.5017,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "weak coupling",
+      "description": "Regime where string coupling g_s << 1; ensures validity of perturbative type IIB string theory.",
+      "aliases": [
+        "g_s << 1"
+      ],
+      "source_papers": [
+        "1811.05463v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Weak Gravity Conjecture",
+      "description": "Swampland conjecture requiring existence of light charged particles; constrains the tower of instanton corrections in string compactifications.",
+      "aliases": [
+        "WGC"
+      ],
+      "source_papers": [
+        "1811.05463v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "type IIB string compactification",
+      "description": "Compactification of type IIB supergravity on a CY3 manifold to four dimensions with fluxes and branes; provides effective N=1 supergravity.",
+      "aliases": [
+        "IIB/CY3 compactification",
+        "IIB compactification"
+      ],
+      "source_papers": [
+        "1811.05463v3",
+        "1308.1222v4"
+      ],
+      "centrality": 0.0108,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "uplifting term",
+      "description": "Explicit positive-energy contribution (anti-D3 brane, D-term, or F-term) added to the potential to achieve de Sitter vacua; contrasted with uplifting-free constructions.",
+      "aliases": [
+        "uplift"
+      ],
+      "source_papers": [
+        "1811.05463v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "integral variations of Hodge structure",
+      "description": "Families of integral (3,0)-forms on CY3 parametrized by moduli, satisfying Picard-Fuchs equations; the periods encode both geometry and physics of string compactifications.",
+      "aliases": [
+        "IVHS",
+        "variations of Hodge structure",
+        "integral VHS"
+      ],
+      "source_papers": [
+        "0505272v1"
+      ],
+      "centrality": 0.0616,
+      "burt_constraint": 0.2753,
+      "effective_size": 3.6957,
+      "structural_hole": true
+    },
+    {
+      "label": "special geometry",
+      "description": "Hodge-theoretic structure on complex-structure and Kähler moduli spaces of CY; relates Kähler metric K_{ij̄} = ∂_i ∂_{j̄} K and Yukawa couplings to period integrals.",
+      "aliases": [
+        "special Kähler geometry",
+        "prepotential geometry",
+        "F_{abc}"
+      ],
+      "source_papers": [
+        "0505272v1",
+        "1704.00164v1",
+        "2503.00272v2",
+        "0212061v2",
+        "0701215v1"
+      ],
+      "centrality": 0.0301,
+      "burt_constraint": 0.3166,
+      "effective_size": 4.1062,
+      "structural_hole": false
+    },
+    {
+      "label": "one-parameter families",
+      "description": "Subfamily of CY threefolds depending on a single complex parameter z; topologically realized as fibrations over the thrice-punctured sphere ℙ¹ \\ {0,1,∞}.",
+      "aliases": [
+        "one-dimensional families",
+        "pencils"
+      ],
+      "source_papers": [
+        "0505272v1"
+      ],
+      "centrality": 0.0113,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "thrice-punctured sphere",
+      "description": "The Riemann sphere ℙ¹ with three punctures (typically at z = 0, 1, ∞); serves as the base for one-parameter families of CY with monodromy singularities.",
+      "aliases": [
+        "ℙ¹ \\ {0,1,∞}",
+        "punctured base"
+      ],
+      "source_papers": [
+        "0505272v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "geometric realization",
+      "description": "Problem of determining which abstract integral variations of Hodge structure actually arise as period domains of families of Calabi-Yau threefolds, rather than purely algebraically.",
+      "aliases": [
+        "realization problem"
+      ],
+      "source_papers": [
+        "0505272v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Calabi-Yau compactification",
+      "description": "String theory compactification on a Calabi-Yau 3-fold (CY3) to obtain 4D effective field theory with moduli fields.",
+      "aliases": [
+        "CY3 compactification",
+        "Calabi-Yau 3-fold",
+        "CY compactification",
+        "CY3 flux compactification"
+      ],
+      "source_papers": [
+        "2407.16758v2",
+        "0609180v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6452,
+      "effective_size": 1.2327,
+      "structural_hole": false
+    },
+    {
+      "label": "tadpole conjecture",
+      "description": "Conjecture that the number of stabilised complex-structure moduli grows at most linearly with flux tadpole charge N_flux, bounded by 2/3 h_{2,1}.",
+      "aliases": [
+        "tadpole bound",
+        "flux tadpole bound"
+      ],
+      "source_papers": [
+        "2407.16758v2",
+        "0701215v1"
+      ],
+      "centrality": 0.0308,
+      "burt_constraint": 0.202,
+      "effective_size": 5.0,
+      "structural_hole": false
+    },
+    {
+      "label": "flux tadpole",
+      "description": "Measure of total quantised G_3 flux charge coupling to complex-structure moduli stabilisation.",
+      "aliases": [
+        "tadpole charge",
+        "N_flux"
+      ],
+      "source_papers": [
+        "2407.16758v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Gepner model",
+      "description": "Non-geometric conformal field theory model on the worldsheet, mirror dual to a rigid Calabi-Yau in the interior of moduli space.",
+      "aliases": [
+        "Gepner CFT"
+      ],
+      "source_papers": [
+        "2407.16758v2"
+      ],
+      "centrality": 0.0214,
+      "burt_constraint": 0.3342,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "non-geometric background",
+      "description": "String compactification background without a geometric large-radius description, such as Gepner models or orbifolold limits.",
+      "aliases": [
+        "non-geometric flux",
+        "non-geometric compactification"
+      ],
+      "source_papers": [
+        "2407.16758v2"
+      ],
+      "centrality": 0.0114,
+      "burt_constraint": 0.3354,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "rigid Calabi-Yau",
+      "description": "Calabi-Yau manifold with h^{2,1} = 0, possessing no complex-structure deformations.",
+      "aliases": [
+        "rigidity"
+      ],
+      "source_papers": [
+        "2407.16758v2"
+      ],
+      "centrality": 0.0093,
+      "burt_constraint": 0.5033,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "supersymmetric Minkowski solution",
+      "description": "4D vacuum with vanishing cosmological constant and unbroken supersymmetry, characterised by dW/dz_i = 0.",
+      "aliases": [
+        "susy Minkowski",
+        "SUSY Minkowski vacua"
+      ],
+      "source_papers": [
+        "2407.16758v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "massless moduli conjecture",
+      "description": "Conjecture that in supergravity, Minkowski vacua require at least some massless moduli; refuted in non-geometric backgrounds.",
+      "aliases": [
+        "massless Minkowski conjecture"
+      ],
+      "source_papers": [
+        "2407.16758v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Calabi-Yau operator",
+      "description": "A Fuchsian differential operator that determines ℚ-local systems underlying a variation of Hodge structure with h^{3,0}=h^{2,1}=h^{1,2}=h^{0,3}=1, appearing as Picard-Fuchs operators for families of CY3 threefolds.",
+      "aliases": [
+        "CY operator",
+        "Almkvist-Zudilin operator"
+      ],
+      "source_papers": [
+        "1704.00164v1"
+      ],
+      "centrality": 0.0216,
+      "burt_constraint": 0.2501,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Fuchsian differential system",
+      "description": "A system of linear differential equations with regular singularities, satisfying L_i Π = 0 where L_i are differential operators with poles of order ≤1.",
+      "aliases": [
+        "Fuchsian system",
+        "regular singular system"
+      ],
+      "source_papers": [
+        "1704.00164v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "variation of Hodge structure",
+      "description": "A parametrized family of Hodge decompositions H^n = ⊕_{p+q=n} H^{p,q} varying holomorphically over a moduli space, with period vectors satisfying Picard-Fuchs equations.",
+      "aliases": [
+        "VHS",
+        "Hodge variation",
+        "Hodge decomposition"
+      ],
+      "source_papers": [
+        "1704.00164v1",
+        "1605.07877v2"
+      ],
+      "centrality": 0.0088,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "ℚ-local system",
+      "description": "A locally constant sheaf of ℚ-vector spaces over the moduli space, with monodromy determined by the Picard-Fuchs system around singular loci.",
+      "aliases": [
+        "local system",
+        "monodromy local system"
+      ],
+      "source_papers": [
+        "1704.00164v1"
+      ],
+      "centrality": 0.0006,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "rational curves",
+      "description": "Genus-zero algebraic curves on a variety; their enumerative invariants (Gromov-Witten invariants) are encoded in period integrals of the mirror.",
+      "aliases": [
+        "genus-zero curves",
+        "GW invariants",
+        "genus-zero invariants"
+      ],
+      "source_papers": [
+        "1704.00164v1",
+        "1605.07877v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7275,
+      "effective_size": 1.3312,
+      "structural_hole": false
+    },
+    {
+      "label": "one-parameter family",
+      "description": "A family of CY threefolds depending on a single complex modulus, yielding a scalar Picard-Fuchs operator of ordinary differential equations.",
+      "aliases": [
+        "one-parameter model",
+        "single-modulus family"
+      ],
+      "source_papers": [
+        "1704.00164v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Griffiths transversality",
+      "description": "Condition governing how the Hodge filtration of the cohomology varies with moduli, ensuring periods satisfy integrability constraints related to special geometry.",
+      "aliases": [
+        "Hodge structure variation"
+      ],
+      "source_papers": [
+        "2503.00272v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Feynman integrals",
+      "description": "Loop integrals in quantum field theory whose evaluation can be connected to Calabi-Yau period integrals via differential equations and iterated integrals.",
+      "aliases": [
+        "Feynman diagrams"
+      ],
+      "source_papers": [
+        "2503.00272v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Frobenius structure",
+      "description": "Graded algebra structure on the cohomology of a Calabi-Yau manifold characterizing the monodromy action and permitting decomposition of the period matrix.",
+      "aliases": [
+        "Frobenius algebra"
+      ],
+      "source_papers": [
+        "2503.00272v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Non-geometric fluxes",
+      "description": "Q-flux and R-flux components arising in string theory backgrounds with non-geometric structure; contributions to the flux superpotential.",
+      "aliases": [
+        "Q-flux",
+        "R-flux"
+      ],
+      "source_papers": [
+        "2011.08227v2"
+      ],
+      "centrality": 0.0036,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Tadpole cancellation",
+      "description": "Constraint on flux quanta from D-brane charge conservation: N_flux + flux contributions = 2/3 h_{2,1} (tadpole conjecture).",
+      "aliases": [
+        "tadpole",
+        "tadpole condition"
+      ],
+      "source_papers": [
+        "2011.08227v2"
+      ],
+      "centrality": 0.0028,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Geometric fluxes",
+      "description": "H-flux and F-flux components arising from NS-NS and RR three-form fields in string compactifications.",
+      "aliases": [
+        "H-flux",
+        "F-flux"
+      ],
+      "source_papers": [
+        "2011.08227v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Brown-Teitelboum brane nucleation",
+      "description": "Instanton process mediating transitions between vacua via nucleation of D5/NS5 branes, changing the flux quantum number.",
+      "aliases": [
+        "BT brane nucleation",
+        "BT decay"
+      ],
+      "source_papers": [
+        "1308.1222v4"
+      ],
+      "centrality": 0.0074,
+      "burt_constraint": 0.3342,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Coleman-de Luccia tunneling",
+      "description": "Semiclassical tunneling mechanism through the effective potential barrier connecting two vacua, computed via the Euclidean action.",
+      "aliases": [
+        "CDL tunneling",
+        "CDL"
+      ],
+      "source_papers": [
+        "1308.1222v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.3352,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Anti-D3 brane uplift",
+      "description": "Mechanism to lift AdS minima to metastable dS via non-perturbative potential from anti-D3 branes at the Klebanov-Strassler throat.",
+      "aliases": [
+        "KKLT uplift",
+        "anti-brane uplift"
+      ],
+      "source_papers": [
+        "1308.1222v4",
+        "0701215v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Decay rate",
+      "description": "Exponential transition probability per unit time, Γ ~ exp(-S_E) where S_E is the Euclidean action of the instanton.",
+      "aliases": [
+        "tunneling rate",
+        "Γ"
+      ],
+      "source_papers": [
+        "1308.1222v4"
+      ],
+      "centrality": 0.0105,
+      "burt_constraint": 0.3341,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Effective field theory description",
+      "description": "Low-energy supergravity approximation valid when mass scales of heavy moduli are well-separated from the cosmological scale.",
+      "aliases": [
+        "EFT",
+        "EFT regime"
+      ],
+      "source_papers": [
+        "1308.1222v4"
+      ],
+      "centrality": 0.0065,
+      "burt_constraint": 0.3345,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "crystalline cohomology",
+      "description": "A p-adic cohomology theory for varieties over fields of characteristic p>0, serving as an analogue of de Rham cohomology in positive characteristic.",
+      "aliases": [
+        "Frobenius action",
+        "F-crystal",
+        "Frobenius",
+        "p-th power map"
+      ],
+      "source_papers": [
+        "0212061v2"
+      ],
+      "centrality": 0.0023,
+      "burt_constraint": 0.5041,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "prepotential",
+      "description": "A homogeneous function F(X^a) that encodes Yukawa couplings and determines the Kähler potential via special geometry relations.",
+      "aliases": [
+        "F-function",
+        "genus-zero Gromov-Witten potential"
+      ],
+      "source_papers": [
+        "0212061v2"
+      ],
+      "centrality": 0.0211,
+      "burt_constraint": 0.2725,
+      "effective_size": 3.8446,
+      "structural_hole": false
+    },
+    {
+      "label": "maximal unipotent monodromy",
+      "description": "A singularity structure at a boundary point of the moduli space where the local monodromy matrix is unipotent with maximal Jordan block; associated with large complex-structure or conifold limits.",
+      "aliases": [
+        "MUMM point",
+        "large complex structure limit"
+      ],
+      "source_papers": [
+        "0212061v2"
+      ],
+      "centrality": 0.0113,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "canonical coordinates",
+      "description": "Special coordinates on moduli space (often periods or their derivatives) that exhibit integral or integrality-respecting properties under mirror symmetry.",
+      "aliases": [
+        "flat coordinates",
+        "distinguished coordinates"
+      ],
+      "source_papers": [
+        "0212061v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "integrality property",
+      "description": "A property requiring that certain geometric invariants (periods, Yukawa couplings, or their derivatives) are integers or rational multiples of each other under appropriate normalization.",
+      "aliases": [
+        "integral structure",
+        "Z-structure"
+      ],
+      "source_papers": [
+        "0212061v2"
+      ],
+      "centrality": 0.0001,
+      "burt_constraint": 0.502,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "ordinary variety",
+      "description": "A smooth projective variety in characteristic p > 0 whose Frobenius endomorphism acts with maximal rank on crystalline cohomology, generalizing ordinary elliptic curves.",
+      "aliases": [
+        "ordinary CY3",
+        "supersingular-free"
+      ],
+      "source_papers": [
+        "0212061v2"
+      ],
+      "centrality": 0.0023,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "moduli space boundary",
+      "description": "The boundary locus of the moduli space of complex structures, characterized by singularities or degenerate period matrices.",
+      "aliases": [
+        "boundary point",
+        "divisor at infinity"
+      ],
+      "source_papers": [
+        "0212061v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "p-adic analogue",
+      "description": "A geometric or arithmetic property defined over p-adic fields or in characteristic p that mirrors a classical (complex) geometric property.",
+      "aliases": [
+        "p-adic variant",
+        "characteristic p analogue"
+      ],
+      "source_papers": [
+        "0212061v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "B-brane superpotential",
+      "description": "Holomorphic function depending on open and closed moduli encoding the effective interaction energy of B-type branes wrapping cycles in a Calabi-Yau manifold.",
+      "aliases": [
+        "open-string superpotential"
+      ],
+      "source_papers": [
+        "2201.00322v1"
+      ],
+      "centrality": 0.0674,
+      "burt_constraint": 0.2314,
+      "effective_size": 4.6762,
+      "structural_hole": true
+    },
+    {
+      "label": "blow-up",
+      "description": "Resolution of singularities in a variety by replacing a subvariety (curve) with its exceptional divisor, producing a smooth ambient space.",
+      "aliases": [
+        "resolution",
+        "blow-up construction"
+      ],
+      "source_papers": [
+        "2201.00322v1"
+      ],
+      "centrality": 0.0193,
+      "burt_constraint": 0.7003,
+      "effective_size": 1.2555,
+      "structural_hole": false
+    },
+    {
+      "label": "A-model",
+      "description": "Topological string theory quantized on Kähler geometry; computes genus-g Gromov-Witten invariants and open-string Ooguri-Vafa invariants.",
+      "aliases": [
+        "A-twist"
+      ],
+      "source_papers": [
+        "2201.00322v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Ooguri-Vafa invariant",
+      "description": "Integer invariant counting open-string worldsheet instantons ending on a Lagrangian brane in a Calabi-Yau; extracted from open-string amplitudes in the A-model.",
+      "aliases": [
+        "OV invariant",
+        "open Gromov-Witten invariant"
+      ],
+      "source_papers": [
+        "2201.00322v1"
+      ],
+      "centrality": 0.0113,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "closed modulus",
+      "description": "Parameter controlling the complex-structure or Kähler geometry of the ambient Calabi-Yau manifold, not coupled to open-string boundary conditions.",
+      "aliases": [
+        "bulk modulus"
+      ],
+      "source_papers": [
+        "2201.00322v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "open modulus",
+      "description": "Parameter characterizing the position, deformation, or Wilson line of a D-brane or B-brane in the Calabi-Yau; coupled to open-string boundary conditions.",
+      "aliases": [
+        "brane modulus"
+      ],
+      "source_papers": [
+        "2201.00322v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "complete intersection",
+      "description": "A variety defined as the transverse intersection of hypersurfaces in a toric ambient space, generalizing hypersurface singularities.",
+      "aliases": [
+        "CICY"
+      ],
+      "source_papers": [
+        "2201.00322v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "complex-structure modulus",
+      "description": "A parameter z_i controlling the shape and algebraic equations defining a Calabi-Yau manifold while preserving the holomorphic (3,0)-form.",
+      "aliases": [
+        "z_i",
+        "deformation parameter",
+        "complex-structure deformation"
+      ],
+      "source_papers": [
+        "2201.00322v1",
+        "9205041v1"
+      ],
+      "centrality": 0.0093,
+      "burt_constraint": 0.4555,
+      "effective_size": 2.5114,
+      "structural_hole": false
+    },
+    {
+      "label": "D7-brane matter fields",
+      "description": "Chiral matter fermions and scalars arising from open strings on wrapped D7 branes; their Kähler metrics depend on both complex and Kähler moduli.",
+      "aliases": [
+        "matter metrics",
+        "bifundamental matter",
+        "wrapped D7 matter"
+      ],
+      "source_papers": [
+        "0609180v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6004,
+      "effective_size": 1.6196,
+      "structural_hole": false
+    },
+    {
+      "label": "modular weight",
+      "description": "Scaling exponent under Kähler moduli rescaling that determines the Kähler potential dependence of matter field kinetic terms and Yukawa couplings.",
+      "aliases": [
+        "weight",
+        "modular scaling"
+      ],
+      "source_papers": [
+        "0609180v2"
+      ],
+      "centrality": 0.006,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "soft supersymmetry breaking",
+      "description": "Soft terms in effective field theory (gaugino masses, squark masses, A-terms) arising from supergravity F-term breaking; their form is controlled by the Kähler potential.",
+      "aliases": [
+        "soft SUSY breaking",
+        "soft terms"
+      ],
+      "source_papers": [
+        "0609180v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "toroidal compactification",
+      "description": "String compactification on a product of tori T^6; simplest case where Kähler potential is exactly computable, used for benchmarking.",
+      "aliases": [
+        "toroidal orientifold",
+        "T^6 compactification"
+      ],
+      "source_papers": [
+        "0609180v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "matter metric",
+      "description": "Metric K_{I J̄} on the space of matter field scalar components; controls kinetic terms and is determined by the Kähler potential via K_{I J̄} = ∂_I ∂_{J̄} K.",
+      "aliases": [
+        "matter kinetic metric",
+        "scalar metric"
+      ],
+      "source_papers": [
+        "0609180v2"
+      ],
+      "centrality": 0.0015,
+      "burt_constraint": 0.6257,
+      "effective_size": 1.2204,
+      "structural_hole": false
+    },
+    {
+      "label": "perturbative expansion",
+      "description": "Systematic expansion of physical quantities (Kähler potential, matter metrics) in powers of αʹ or powers of moduli field values; valid at weak coupling or large volume.",
+      "aliases": [
+        "order-by-order expansion",
+        "perturbative series"
+      ],
+      "source_papers": [
+        "0609180v2"
+      ],
+      "centrality": 0.0022,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Calabi-Yau landscape",
+      "description": "The ensemble of Calabi-Yau threefold geometries arising in type IIB string compactifications, parameterised by moduli and exhibiting varying physical properties.",
+      "aliases": [
+        "CY landscape",
+        "string landscape"
+      ],
+      "source_papers": [
+        "1603.06631v2"
+      ],
+      "centrality": 0.0336,
+      "burt_constraint": 0.3364,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Kähler moduli inflation",
+      "description": "Inflationary mechanism in type IIB compactifications where the volume modulus or fibre moduli serve as the inflaton field, with slow-roll conditions translating to geometric constraints.",
+      "aliases": [
+        "volume inflation",
+        "moduli inflation"
+      ],
+      "source_papers": [
+        "1603.06631v2"
+      ],
+      "centrality": 0.0011,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "slow-roll condition",
+      "description": "Inflationary requirement that the scalar potential gradient is small compared to the potential itself, ensuring quasi-exponential expansion: ε ≪ 1, η ≪ 1.",
+      "aliases": [
+        "slow-roll parameter",
+        "slow-roll constraint"
+      ],
+      "source_papers": [
+        "1603.06631v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "type IIB compactification",
+      "description": "String theory compactification on a Calabi-Yau threefold with O3/O7-plane orientifold projection, yielding four-dimensional N=1 supergravity with complex and Kähler moduli.",
+      "aliases": [
+        "IIB/O3O7 orientifold",
+        "type IIB string theory"
+      ],
+      "source_papers": [
+        "1603.06631v2"
+      ],
+      "centrality": 0.0113,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "O3/O7-plane orientifold",
+      "description": "Orientifold projection of type IIB string theory introducing O-plane fixed loci and corresponding tadpole constraints that constrain the flux and brane content.",
+      "aliases": [
+        "orientifold projection",
+        "O-plane"
+      ],
+      "source_papers": [
+        "1603.06631v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "moduli space dimension",
+      "description": "The total number of independent moduli fields parameterising the moduli space, equal to h^{1,1} + h^{2,1} for CY threefolds in type IIB.",
+      "aliases": [
+        "moduli number"
+      ],
+      "source_papers": [
+        "1603.06631v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "inflationary constraint",
+      "description": "Geometric constraint on the Kähler moduli space arising from slow-roll requirements, restricting the Kähler metric and curvature to allow sufficient field excursion and small acceleration.",
+      "aliases": [
+        "geometric constraint"
+      ],
+      "source_papers": [
+        "1603.06631v2"
+      ],
+      "centrality": 0.0443,
+      "burt_constraint": 0.334,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "volume modulus",
+      "description": "The Kähler modulus τ_b associated with the overall volume of the Calabi-Yau, appearing logarithmically in the Kähler potential and controlling the string coupling.",
+      "aliases": [
+        "volume",
+        "τ_b",
+        "V",
+        "Kahler volume modulus"
+      ],
+      "source_papers": [
+        "1603.06631v2",
+        "0701215v1"
+      ],
+      "centrality": 0.0057,
+      "burt_constraint": 0.2501,
+      "effective_size": 4.0,
+      "structural_hole": false
+    },
+    {
+      "label": "log Calabi-Yau compactification",
+      "description": "A compactification of a Landau-Ginzburg model that extends a weak LG model to a log Calabi-Yau variety, relating Fano geometry to mirror symmetry.",
+      "aliases": [
+        "log CY compactification"
+      ],
+      "source_papers": [
+        "2102.01388v3"
+      ],
+      "centrality": 0.0339,
+      "burt_constraint": 0.335,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Fano variety",
+      "description": "A smooth projective variety whose anticanonical divisor is ample, serving as the geometric base for Landau-Ginzburg mirrors.",
+      "aliases": [
+        "Fano surface"
+      ],
+      "source_papers": [
+        "2102.01388v3"
+      ],
+      "centrality": 0.0229,
+      "burt_constraint": 0.3348,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "singular compactification",
+      "description": "A compactification of a variety that admits singularities, unavoidable in certain log CY completions of higher-degree coverings.",
+      "aliases": [],
+      "source_papers": [
+        "2102.01388v3"
+      ],
+      "centrality": 0.0001,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "anticanonical system",
+      "description": "The linear system of divisors in the anticanonical class of a Fano variety; its dimension bounds the number of singular fibers.",
+      "aliases": [
+        "anticanonical divisor system"
+      ],
+      "source_papers": [
+        "2102.01388v3"
+      ],
+      "centrality": 0.0113,
+      "burt_constraint": 0.5037,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "fiber over infinity",
+      "description": "The special fiber at infinity in a compactification, whose number of components is conjectured to equal the anticanonical dimension.",
+      "aliases": [
+        "fiber at infinity"
+      ],
+      "source_papers": [
+        "2102.01388v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "projective space covering",
+      "description": "A finite morphism from an algebraic variety to projective space, of controlled degree and Gorenstein index; studied for degrees >2.",
+      "aliases": [
+        "covering of projective space"
+      ],
+      "source_papers": [
+        "2102.01388v3"
+      ],
+      "centrality": 0.0113,
+      "burt_constraint": 0.5078,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "smoothness obstruction",
+      "description": "Topological or algebraic constraints that prevent a log CY compactification from admitting a smooth projective model.",
+      "aliases": [],
+      "source_papers": [
+        "2102.01388v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "degree-indexed family",
+      "description": "A parametrized family of coverings of ℙ^n classified by degree d; degree >2 coverings exhibit unavoidable singularities in log CY compactifications.",
+      "aliases": [],
+      "source_papers": [
+        "2102.01388v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Gorenstein index",
+      "description": "A numerical invariant measuring the singularity type of a variety; used to classify coverings of projective space.",
+      "aliases": [
+        "index"
+      ],
+      "source_papers": [
+        "2102.01388v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Tyurin degeneration",
+      "description": "A special type of degeneration of Calabi-Yau manifolds characterized by singular fibers that preserve structure relevant to mirror symmetry.",
+      "aliases": [
+        "Tyurin fibration"
+      ],
+      "source_papers": [
+        "1801.02749v2"
+      ],
+      "centrality": 0.0005,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Doran-Harder-Thompson conjecture",
+      "description": "Conjecture bridging mirror symmetry for Calabi-Yau manifolds to mirror symmetry for quasi-Fano varieties via Tyurin degenerations.",
+      "aliases": [
+        "DHT conjecture"
+      ],
+      "source_papers": [
+        "1801.02749v2"
+      ],
+      "centrality": 0.0044,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Theta function",
+      "description": "Special function arising in geometric quantization and SYZ mirror symmetry; used to reconstruct the mirror variety from torus fibration data.",
+      "aliases": [
+        "holomorphic theta function"
+      ],
+      "source_papers": [
+        "1801.02749v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Geometric quantization",
+      "description": "Method assigning quantum operators to classical Poisson structures; used in constructing mirror maps and Landau-Ginzburg models.",
+      "aliases": [
+        "prequantum bundle construction"
+      ],
+      "source_papers": [
+        "1801.02749v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Quasi-Fano manifold",
+      "description": "Variety with ample anticanonical bundle −K_X; natural mirror partner to certain Landau-Ginzburg models and degenerations.",
+      "aliases": [
+        "weak Fano"
+      ],
+      "source_papers": [
+        "1801.02749v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Calabi-Yau fibration",
+      "description": "A fibration where the fibers are Calabi-Yau manifolds; splitting such fibrations yields new Landau-Ginzburg constructions.",
+      "aliases": [
+        "CY-fibered variety"
+      ],
+      "source_papers": [
+        "1801.02749v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "mirror manifold",
+      "description": "Dual Calabi-Yau manifold related by mirror symmetry, with complex-structure moduli exchanged for Kähler moduli of the original.",
+      "aliases": [
+        "mirror CY",
+        "mirror dual"
+      ],
+      "source_papers": [
+        "9205041v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "global properties of solutions",
+      "description": "Boundary conditions and monodromy constraints on period integrals near singular loci (large-structure, conifold) ensuring consistency and uniqueness.",
+      "aliases": [
+        "boundary conditions",
+        "monodromy"
+      ],
+      "source_papers": [
+        "9205041v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "plane cubic curves",
+      "description": "One-dimensional complex algebraic curves defined by homogeneous cubic polynomials in projective 2-space; genus-one curves with special arithmetic and modular properties.",
+      "aliases": [
+        "cubic curves",
+        "elliptic curves"
+      ],
+      "source_papers": [
+        "1605.07877v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Calabi-Yau varieties",
+      "description": "Complex Kähler manifolds with vanishing first Chern class; central to string theory compactifications and mirror symmetry.",
+      "aliases": [
+        "CY manifolds",
+        "Calabi-Yau"
+      ],
+      "source_papers": [
+        "1605.07877v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Weil-Petersson geometry",
+      "description": "Riemannian geometry on the moduli space of Calabi-Yau varieties induced by the Hodge metric on period domain; measures deformations of complex structure.",
+      "aliases": [
+        "WP metric",
+        "Hodge metric"
+      ],
+      "source_papers": [
+        "1605.07877v2"
+      ],
+      "centrality": 0.0165,
+      "burt_constraint": 0.582,
+      "effective_size": 1.6874,
+      "structural_hole": false
+    },
+    {
+      "label": "arithmetic properties",
+      "description": "Number-theoretic invariants and phenomena on algebraic varieties, such as rational points, zeta functions, and Galois representations.",
+      "aliases": [
+        "arithmetic aspects"
+      ],
+      "source_papers": [
+        "1605.07877v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "holomorphic differential forms",
+      "description": "Closed (p,q)-forms with holomorphic coefficients; for CY3, the (3,0)-form Ω integrates to give periods.",
+      "aliases": [
+        "holomorphic forms",
+        "top-degree forms"
+      ],
+      "source_papers": [
+        "1605.07877v2"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "D-term uplifting",
+      "description": "Lifting of AdS vacua to dS via D-term potential from magnetized D7-branes maintaining supersymmetry breaking at the moduli-stabilization locus.",
+      "aliases": [
+        "D-term",
+        "magnetized D7 uplift"
+      ],
+      "source_papers": [
+        "0701215v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "SYZ mirror symmetry",
+      "target": "toric Calabi-Yau varieties",
+      "relation": "applies_to",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Survey focuses on SYZ mirror symmetry for compact toric and toric Calabi-Yau varieties, establishing geometric fibration framework.",
+      "source_papers": [
+        "1412.7231v3"
+      ]
+    },
+    {
+      "source": "special Lagrangian fibration",
+      "target": "SYZ mirror symmetry",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "SYZ mirror symmetry is defined via special Lagrangian fibrations; the geometric dual is obtained through the SL structure.",
+      "source_papers": [
+        "1412.7231v3"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "Picard-Fuchs system",
+      "relation": "satisfies",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Period integrals Π_a(z) satisfy the Picard-Fuchs differential system L_i Π = 0 derived from the toric ambient space.",
+      "source_papers": [
+        "2201.00322v1",
+        "9205041v1",
+        "2011.08227v2",
+        "1412.7231v3",
+        "0110126v3",
+        "2402.04089v2",
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "period integrals",
+      "relation": "parameterises",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Period integrals Π_a(z) depend on complex-structure moduli z = (z_1,...,z_{h^{2,1}}).",
+      "source_papers": [
+        "9511001v1",
+        "1412.7231v3"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "flux superpotential",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Flux superpotential W = ∫(G_3 ∧ Ω) = G_a Π^a + F_a is directly expressed as periods multiplied by flux quantum numbers.",
+      "source_papers": [
+        "1811.05463v3",
+        "2401.13567v2",
+        "1308.1222v4",
+        "9205041v1",
+        "1412.7231v3",
+        "2503.00272v2",
+        "2402.04089v2",
+        "1603.06631v2",
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "flux superpotential",
+      "target": "moduli stabilization",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Flux superpotential W provides the potential energy for stabilizing moduli via extremization ∂W/∂z_i = 0.",
+      "source_papers": [
+        "2407.16758v2",
+        "1811.05463v3",
+        "2401.13567v2",
+        "1301.7280v3",
+        "1308.1222v4",
+        "9205041v1",
+        "2011.08227v2",
+        "1412.7231v3",
+        "2503.00272v2",
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "KKLT construction",
+      "target": "moduli stabilization",
+      "relation": "is_a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "KKLT is a specific moduli stabilization scenario using flux to fix complex structure with W_0 << 1, then non-perturbative uplift.",
+      "source_papers": [
+        "1412.7231v3"
+      ]
+    },
+    {
+      "source": "Large Volume Scenario",
+      "target": "moduli stabilization",
+      "relation": "is_a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "LVS is an alternative moduli stabilization regime with exponentially large volumes V ~ e^{aτ_s} and different hierarchies.",
+      "source_papers": [
+        "1412.7231v3"
+      ]
+    },
+    {
+      "source": "Kähler moduli",
+      "target": "Kähler potential",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Kähler potential K = -ln(-i∫(Ω∧Ω̄)) - 2ln(V) encodes the dynamics of Kähler moduli τ^a.",
+      "source_papers": [
+        "1412.7231v3"
+      ]
+    },
+    {
+      "source": "mirror map",
+      "target": "Kähler moduli",
+      "relation": "relates_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Mirror map t^a = ∂F/∂X^a connects Kähler moduli of one CY to complex-structure moduli of the mirror via periods.",
+      "source_papers": [
+        "1412.7231v3"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "mirror map",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Periods (via prepotential F) directly determine the mirror map that exchanges Kähler and complex-structure coordinates.",
+      "source_papers": [
+        "1412.7231v3",
+        "9205041v1"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "Kähler moduli",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Open question whether complex-structure stabilization causally constrains the Kähler moduli subspace; mirror map suggests coupling.",
+      "source_papers": [
+        "1412.7231v3",
+        "2503.00272v2",
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "Yukawa coupling",
+      "target": "flux superpotential",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Yukawa couplings κ_{abc} = F_{abc} appear as cubic terms in the superpotential and encode four-point interactions.",
+      "source_papers": [
+        "1412.7231v3"
+      ]
+    },
+    {
+      "source": "D6 orbifold symmetry",
+      "target": "Picard-Fuchs system",
+      "relation": "reduces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "D6 symmetry reduces h^{2,1}=20 to 5 invariant moduli, making the GKZ Picard-Fuchs system tractable for explicit computation.",
+      "source_papers": [
+        "1412.7231v3"
+      ]
+    },
+    {
+      "source": "toric Calabi-Yau varieties",
+      "target": "period integrals",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Toric CY geometry (polytope, fan) determines the periods through the structure of the holomorphic (3,0)-form.",
+      "source_papers": [
+        "1412.7231v3"
+      ]
+    },
+    {
+      "source": "Picard-Fuchs system",
+      "target": "period integrals",
+      "relation": "governs",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Period integrals Π_a(z) are solutions to the GKZ differential system L_i Π = 0, with the system structure determined by toric data.",
+      "source_papers": [
+        "9511001v1",
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "toric geometry",
+      "target": "Picard-Fuchs system",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The GKZ system is constructed from the GLSM charge matrix of the toric ambient space; Gröbner basis of toric ideal yields finite set of differential operators.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "Calabi-Yau hypersurface",
+      "target": "period integrals",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Period integrals Π_a(z) = ∫_{γ_a} Ω(z) are defined by integrating the holomorphic (3,0)-form Ω over cycles in the CY3.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "period integrals",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Mirror symmetry relates period integrals on the CY to quantum geometry of the mirror; complex-structure moduli map to Kähler moduli via mirror map.",
+      "source_papers": [
+        "9511001v1",
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "Gröbner basis",
+      "target": "differential operators",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The Gröbner basis for the toric ideal determines a finite set of differential operators for local solutions of the GKZ system.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "large radius limit",
+      "target": "intersection ring",
+      "relation": "makes_transparent",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "At the large radius limit, the principal parts of GKZ operators show close relationship with the intersection ring of the toric variety.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "differential operators",
+      "target": "intersection ring",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Principal parts of GKZ operators encode intersection theory; differential structure encodes Yukawa couplings determined by intersection numbers.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "Hodge numbers",
+      "target": "complex-structure moduli",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The complex-structure moduli dimension equals h^{2,1}, the Hodge number of (2,1)-forms.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "Calabi-Yau hypersurface",
+      "target": "Hodge numbers",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Calabi-Yau hypersurfaces are classified and analyzed by their Hodge numbers, with applications to Fermat and non-Fermat types up to stated values.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "Fermat hypersurface",
+      "target": "Calabi-Yau hypersurface",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Fermat hypersurfaces are a special class of toric CY hypersurfaces analyzed explicitly for period integral computation.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "local solutions",
+      "target": "period integrals",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Local solutions to the GKZ system provide explicit analytic expressions for periods near special points like large radius limit.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "toric ideal",
+      "target": "Picard-Fuchs system",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The structure of the toric ideal, via its Gröbner basis, determines the differential operators comprising the GKZ system.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "Landau-Ginzburg model",
+      "target": "Calabi-Yau hypersurface",
+      "relation": "relates_to",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Non-Landau-Ginzburg models are identified and analyzed as singular limits related to the CY3 geometry.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "toric geometry",
+      "target": "mirror symmetry",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Toric geometry provides systematic framework for mirror symmetry; toric fans encode both direct and mirror polytopes; GKZ systems relate period integrals to mirror geometry.",
+      "source_papers": [
+        "9511001v1"
+      ]
+    },
+    {
+      "source": "Schoen Calabi-Yau threefold",
+      "target": "complex-structure moduli",
+      "relation": "parametrises",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The Schoen CY3 has h²¹=12 complex-structure moduli; the paper studies 5 D₆-invariant combinations.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "Schoen Calabi-Yau threefold",
+      "target": "Kähler moduli",
+      "relation": "parametrises",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The Schoen CY3 has h¹¹=12 Kähler moduli; LVS requires at least one small cycle.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "period integrals",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Period integrals Π_a(z) are functions of complex-structure parameters z; they satisfy Picard-Fuchs equations.",
+      "source_papers": [
+        "2402.04089v2",
+        "1111.7307v2",
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "mirror symmetry",
+      "relation": "encodes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Mirror map t^a = ∂F/∂X^a; periods on the CY3 determine Kähler coordinates on the mirror.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "Kähler moduli",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Mirror map relates periods (complex-structure on CY3) to Kähler moduli on the mirror.",
+      "source_papers": [
+        "2402.04089v2",
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "flux superpotential",
+      "target": "Effective scalar potential",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The effective potential is derived from W and Kähler potential K via V_eff supergravity formula.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "Non-perturbative corrections",
+      "target": "flux superpotential",
+      "relation": "modifies",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "LVS and KKLT require W_np ~ e^{-aτ} from instantons/gaugino condensation to stabilize volume.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "intersection ring",
+      "target": "Large Volume Scenario",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Intersection numbers κ_{abc} determine the F-function and volume scaling V ~ e^{aτ_s} in LVS; paper computes them explicitly.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "Large Volume Scenario",
+      "target": "moduli stabilization",
+      "relation": "achieves",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "LVS stabilizes Kähler moduli via flux superpotential and non-perturbative terms; volume remains large V >> 1.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "moduli stabilization",
+      "target": "Effective scalar potential",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Moduli are fixed at extrema of V_eff; stabilization analysis studies critical points of the potential.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "F-term uplift",
+      "target": "de Sitter vacuum",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Paper finds special F-term uplift contributions from self-mirror LVS that generate de Sitter vacua.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "de Sitter vacuum",
+      "target": "Swampland conjecture",
+      "relation": "violates",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Swampland conjecture |∇V| ≥ c·V rules out metastable dS vacua; paper discusses compatibility of LVS dS with swampland constraints.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "Schoen Calabi-Yau threefold",
+      "target": "Large Volume Scenario",
+      "relation": "admits",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Paper explicitly realizes LVS on Schoen CY3 with h¹¹=12, h²¹=12; shows self-mirror geometry enables dS vacua.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "Large Volume Scenario",
+      "target": "Swampland conjecture",
+      "relation": "tests",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Paper discusses whether LVS dS vacua satisfy Swampland de Sitter conjecture constraints.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "Effective scalar potential",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Period integrals (CS-dependent) enter the superpotential, which generates the effective potential; CS stabilization affects Kähler moduli via mirror map.",
+      "source_papers": [
+        "2402.04089v2"
+      ]
+    },
+    {
+      "source": "Calabi-Yau manifold",
+      "target": "holomorphic (n,0)-form",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Calabi-Yau m-folds are defined by admitting a unique nowhere-vanishing holomorphic (m,0)-form Ω (Abstract, Intro).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "Calabi-Yau manifold",
+      "target": "holonomy group",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Calabi-Yau m-folds are introduced via holonomy groups, with holonomy ⊆ SU(m) (Abstract).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "Calabi-Yau manifold",
+      "target": "Ricci-flat metric",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Calabi-Yau manifolds admit a unique Ricci-flat Kähler metric in each Kähler class via the Calabi Conjecture.",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "Calabi Conjecture",
+      "target": "Ricci-flat metric",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The Calabi Conjecture (Yau, 1978) proves existence and uniqueness of Ricci-flat Kähler metrics on Calabi-Yau manifolds.",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "Kähler geometry",
+      "target": "Calabi-Yau manifold",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Calabi-Yau manifolds are introduced via Kähler geometry and the Calabi Conjecture (Abstract).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "calibrated geometry",
+      "target": "special Lagrangian submanifold",
+      "relation": "defines",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Special Lagrangian m-folds are introduced via calibrated geometry with a calibrating form (Abstract).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "special Lagrangian submanifold",
+      "target": "Calabi-Yau manifold",
+      "relation": "part_of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Special Lagrangian submanifolds are studied as cycles within (almost) Calabi-Yau m-folds (Abstract).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "deformation theory",
+      "target": "moduli space",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The deformation theory and moduli spaces of compact special Lagrangian submanifolds in Calabi-Yau m-folds are described, controlling global variation (Abstract).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "special Lagrangian submanifold",
+      "target": "singularities of special Lagrangian submanifolds",
+      "relation": "may_exhibit",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Isolated singularities of special Lagrangian m-folds are analyzed, locally modelled on cones (Abstract).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "holomorphic (n,0)-form",
+      "relation": "relates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Mirror Symmetry connects periods (integrals of Ω) and Gromov-Witten invariants between mirror pairs (Abstract).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "SYZ Conjecture",
+      "target": "special Lagrangian submanifold",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The SYZ Conjecture proposes that mirror Calabi-Yau pairs admit dual special Lagrangian fibrations, explaining mirror symmetry geometrically (Abstract).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "SYZ Conjecture",
+      "target": "mirror symmetry",
+      "relation": "explains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The SYZ Conjecture provides a geometric explanation for mirror symmetry via special Lagrangian fibrations (Abstract).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "almost Calabi-Yau manifold",
+      "target": "special Lagrangian submanifold",
+      "relation": "contains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Almost Calabi-Yau m-folds are a generalization useful in special Lagrangian geometry and deformation theory (Abstract).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "Calabi-Yau manifold",
+      "target": "special Lagrangian submanifold",
+      "relation": "contains",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Special Lagrangian m-folds are submanifolds within Calabi-Yau m-folds defined by a phase condition on Ω (Abstract, deformation theory).",
+      "source_papers": [
+        "0108088v3"
+      ]
+    },
+    {
+      "source": "Calabi-Yau hypersurface",
+      "target": "complex-structure moduli",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Complex-structure moduli z = (z_1,...,z_{h^{2,1}}) parameterize deformations of the CY manifold preserving holomorphicity.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "Calabi-Yau hypersurface",
+      "target": "Kähler moduli",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Kähler moduli t^a describe the Kähler cone and divisor volumes within the CY threefold.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "Picard-Fuchs system",
+      "target": "period integrals",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Differential equations L_i Π = 0 uniquely determine the period integrals given initial conditions and the GKZ system structure.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "Kähler moduli",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Via the mirror map t^a = ∂F/∂X^a, periods on the mirror determine Kähler coordinates on the original CY.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "conifold locus",
+      "target": "BPS states",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "At the conifold singularity, BPS states become massless, fundamentally altering the low-energy spectrum and effective dynamics.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "conifold locus",
+      "target": "gauge theory",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Enhanced gauge symmetries are geometrically engineered near singular loci including the conifold, where massless charged states arise.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "gauge theory",
+      "target": "hypermultiplet moduli",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Gauge theories with charged matter generate hypermultiplet moduli spaces; the text describes SU(N) gauge theories coupled to adjoint hypermultiplets.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "thermal effective potential",
+      "target": "complex-structure moduli",
+      "relation": "stabilizes",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The stringy thermal potential lifts all complex-structure moduli involved in engineered gauge theories; 'all Kahler and complex structure moduli involved in the gauge theories are lifted'.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "thermal effective potential",
+      "target": "Kähler moduli",
+      "relation": "stabilizes",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The thermal potential provides explicit stabilization of Kähler moduli; shown for type IIA with h^{11}=2 where both Kähler moduli are stabilized.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "thermal effective potential",
+      "target": "vector multiplet moduli",
+      "relation": "stabilizes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The analysis demonstrates that the entire vector multiplet moduli space can be lifted by the thermal potential at singular loci intersections.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "thermal effective potential",
+      "target": "hypermultiplet moduli",
+      "relation": "stabilizes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Hypermultiplet moduli are dynamically stabilized together with vector multiplets during cosmological evolution under thermal potential back-reaction.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "BPS states",
+      "target": "thermal effective potential",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Analysis proceeds without integrating out BPS states becoming massless at singular loci, indicating their importance for the thermal dynamics.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "type IIA compactification",
+      "target": "heterotic duality",
+      "relation": "is_dual_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Type IIA on CY3 is dual to heterotic string on K3 × T²; the text demonstrates both Kähler moduli and axio-dilaton stabilization in the dual picture.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "heterotic duality",
+      "target": "axio-dilaton",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "In the dual thermal heterotic picture on K3 × T², the axio-dilaton is stabilized alongside the torus modulus via the mirror duality map.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "moduli stabilization",
+      "target": "conifold locus",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The text shows that favorable stabilization points sit at intersections of singular loci including the conifold, indicating geometric necessity.",
+      "source_papers": [
+        "1111.7307v2"
+      ]
+    },
+    {
+      "source": "self-mirror Calabi-Yau",
+      "target": "α'-corrections",
+      "relation": "trivialises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Self-mirror CY construction trivializes α'-corrections due to the self-duality property, simplifying the effective potential.",
+      "source_papers": [
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "Picard-Fuchs system",
+      "target": "period integrals",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "GKZ differential operators L_i satisfy L_i Π = 0, governing the analytic structure of periods.",
+      "source_papers": [
+        "2407.16758v2",
+        "1811.05463v3",
+        "2401.13567v2",
+        "0701215v1",
+        "1605.07877v2",
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "Non-perturbative corrections",
+      "target": "Large Volume Scenario",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Non-perturbative W_np terms provide the dominant uplift contribution in LVS, scaling as e^{-aτ_s}.",
+      "source_papers": [
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "Large Volume Scenario",
+      "target": "Kähler moduli",
+      "relation": "stabilises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "LVS stabilizes Kähler moduli via competition between non-perturbative and perturbative contributions with exponentially large volume V ~ e^{aτ_s}.",
+      "source_papers": [
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "self-mirror Calabi-Yau",
+      "target": "Large Volume Scenario",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Self-mirror CY construction enables LVS with T-dual non-geometric fluxes while trivializing α'-corrections.",
+      "source_papers": [
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "Non-perturbative corrections",
+      "target": "F-term uplift",
+      "relation": "competes_with",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Non-perturbative contributions and F-term uplift both contribute to the effective potential at comparable order in large-volume limit.",
+      "source_papers": [
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "de Sitter vacua",
+      "target": "swampland conjectures",
+      "relation": "constrained_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "de Sitter conjecture |∇V| ≥ c·V restricts the allowed parameter space for metastable dS vacua; self-mirror LVS with non-perturbative uplift satisfies these bounds.",
+      "source_papers": [
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "Large Volume Scenario",
+      "target": "de Sitter vacua",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Non-perturbative uplift in large volume scenario naturally generates de Sitter vacua consistent with swampland conjectures.",
+      "source_papers": [
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "self-mirror Calabi-Yau",
+      "relation": "motivates",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "T-duality symmetry motivates embeddings in self-mirror CY constructions to naturally incorporate non-geometric fluxes.",
+      "source_papers": [
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "mirror map",
+      "target": "complex-structure moduli",
+      "relation": "exchanges",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Mirror map relates complex-structure moduli on one CY to Kähler moduli on the mirror, encoded via t^a = ∂F/∂X^a.",
+      "source_papers": [
+        "2401.13567v2"
+      ]
+    },
+    {
+      "source": "Type IIB orientifold",
+      "target": "Kähler moduli",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Type IIB orientifold compactification is the framework within which Kähler moduli stabilization is performed.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "Calabi-Yau hypersurface",
+      "target": "Type IIB orientifold",
+      "relation": "is_dual_to",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "CY3 serves as the internal geometry in type IIB orientifold compactification on CY3 × ℝ^{3,1}.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "K3-fibred structure",
+      "target": "Calabi-Yau hypersurface",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The considered Calabi-Yau threefolds are K3-fibred and admit at least one del Pezzo surface.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "K3-fibred structure",
+      "target": "holomorphic (n,0)-form",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "K3-fibred volume form enables systematic decomposition into base and fibre contributions for Kähler moduli parameterization.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "Non-perturbative corrections",
+      "target": "Kähler moduli",
+      "relation": "stabilizes",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Non-perturbative superpotential including gaugino condensation and poly-instanton corrections is used to fix all four Kähler moduli.",
+      "source_papers": [
+        "1811.05463v3",
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "Gaugino condensation",
+      "target": "Non-perturbative corrections",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Gaugino condensation corrections are explicitly included in the non-perturbative superpotential construction.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "Poly-instanton corrections",
+      "target": "Non-perturbative corrections",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Poly-instanton corrections contribute additional terms to the non-perturbative superpotential.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "Non-perturbative corrections",
+      "target": "flux superpotential",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The total superpotential W combines flux contribution W_0 and non-perturbative W_np.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "α′-corrections",
+      "target": "Kähler potential",
+      "relation": "modifies",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "α′-corrections to Kähler potential are used alongside the superpotential to fix all four Kähler moduli.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "Kähler potential",
+      "target": "moduli stabilization",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Kähler potential with α′-corrections is essential for achieving consistent moduli stabilization.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "Del Pezzo surface",
+      "target": "K3-fibred structure",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "K3-fibred CY3 geometries admit at least one del Pezzo surface as a divisor.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "W-surface",
+      "target": "K3-fibred structure",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "K3-fibred CY3 geometries admit at least one W-surface as a divisor.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "Reflexive polytope",
+      "target": "Calabi-Yau hypersurface",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Reflexive lattice polytopes classify four-dimensional CY3 geometries; authors searched all reflexive polytopes to identify 23 satisfying the requirements.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "holomorphic (n,0)-form",
+      "target": "Kähler moduli",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The K3-fibred volume form provides the parameterization of Kähler moduli space.",
+      "source_papers": [
+        "1301.7280v3"
+      ]
+    },
+    {
+      "source": "GKZ operator",
+      "target": "Picard-Fuchs system",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The Picard-Fuchs system is generated by GKZ differential operators L_i determined by the lattice of the toric ambient space.",
+      "source_papers": [
+        "0110126v3"
+      ]
+    },
+    {
+      "source": "Abelian integrals",
+      "target": "period integrals",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Period integrals on CY manifolds are a special case of Abelian integrals of algebraic differential forms over cycles.",
+      "source_papers": [
+        "0110126v3"
+      ]
+    },
+    {
+      "source": "relative cohomology",
+      "target": "Abelian integrals",
+      "relation": "is_dual_to",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Proved isomorphism between the module of relative cohomologies H^*(X,X_∞) and the module of Abelian integrals.",
+      "source_papers": [
+        "0110126v3"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "period integrals",
+      "relation": "parametrises",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Periods are integrals Π_a(z) of the holomorphic form, explicitly depending on complex-structure moduli z as arguments.",
+      "source_papers": [
+        "0110126v3",
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "holomorphic (n,0)-form",
+      "target": "period integrals",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Period integrals are defined as Π_a(z) = ∫_{γ_a} Ω(z), where Ω is the holomorphic (3,0)-form.",
+      "source_papers": [
+        "0110126v3"
+      ]
+    },
+    {
+      "source": "cycle",
+      "target": "period integrals",
+      "relation": "defines_integration_path_for",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Period integrals are explicitly integrals over cycles γ_a in the relative homology of the variety.",
+      "source_papers": [
+        "0110126v3"
+      ]
+    },
+    {
+      "source": "differential form",
+      "target": "Abelian integrals",
+      "relation": "integrand_of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Abelian integrals are defined as integrals of algebraic differential forms over cycles.",
+      "source_papers": [
+        "0110126v3"
+      ]
+    },
+    {
+      "source": "polynomial at infinity",
+      "target": "Abelian integrals",
+      "relation": "defines",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The module of Abelian integrals corresponds to a regular at infinity polynomial in two variables.",
+      "source_papers": [
+        "0110126v3"
+      ]
+    },
+    {
+      "source": "algebraic variety",
+      "target": "relative cohomology",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Relative cohomology H^*(X,X_∞) is a fundamental invariant of the pair (variety, behavior at infinity).",
+      "source_papers": [
+        "0110126v3"
+      ]
+    },
+    {
+      "source": "module isomorphism",
+      "target": "Picard-Fuchs system",
+      "relation": "enables_existence_proof_of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Using the isomorphism between relative cohomologies and Abelian integrals, existence and properties of the Picard-Fuchs system are deduced.",
+      "source_papers": [
+        "0110126v3"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "period integrals",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Period integrals Π_a(z) depend on complex-structure parameters z_i ∈ ℂ^{h^{2,1}}.",
+      "source_papers": [
+        "1811.05463v3",
+        "1308.1222v4",
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "flux superpotential",
+      "target": "complex-structure moduli",
+      "relation": "stabilizes",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Authors stabilize complex structure and dilaton with fluxes via the flux superpotential W.",
+      "source_papers": [
+        "1811.05463v3"
+      ]
+    },
+    {
+      "source": "flux superpotential",
+      "target": "de Sitter saddle point",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The resultant potential combining flux superpotential and racetrack term exhibits dS critical points (saddle points).",
+      "source_papers": [
+        "1811.05463v3"
+      ]
+    },
+    {
+      "source": "Non-perturbative corrections",
+      "target": "de Sitter saddle point",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Racetrack potentials lead to potentials that generically exhibit de Sitter critical points.",
+      "source_papers": [
+        "1811.05463v3"
+      ]
+    },
+    {
+      "source": "de Sitter saddle point",
+      "target": "Swampland conjecture",
+      "relation": "violates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Paper demonstrates dS saddle points that violate the strong form of the dS Swampland Conjecture |∇V|/V ≥ c.",
+      "source_papers": [
+        "1811.05463v3"
+      ]
+    },
+    {
+      "source": "moduli stabilization",
+      "target": "flux quantization",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Stabilization with fluxes must satisfy flux quantization consistency requirement.",
+      "source_papers": [
+        "1811.05463v3"
+      ]
+    },
+    {
+      "source": "moduli stabilization",
+      "target": "large internal volume",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Models must satisfy large internal volume consistency requirement for validity.",
+      "source_papers": [
+        "1811.05463v3"
+      ]
+    },
+    {
+      "source": "moduli stabilization",
+      "target": "weak coupling",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Stabilization must maintain weak coupling g_s << 1 for perturbative validity.",
+      "source_papers": [
+        "1811.05463v3"
+      ]
+    },
+    {
+      "source": "de Sitter saddle point",
+      "target": "Weak Gravity Conjecture",
+      "relation": "satisfies",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "dS saddle points are checked against Weak Gravity Conjecture consistency.",
+      "source_papers": [
+        "1811.05463v3"
+      ]
+    },
+    {
+      "source": "type IIB string compactification",
+      "target": "period integrals",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Type IIB/CY3 compactifications are fundamentally characterized by periods of the holomorphic (3,0)-form.",
+      "source_papers": [
+        "1811.05463v3"
+      ]
+    },
+    {
+      "source": "Non-perturbative corrections",
+      "target": "moduli stabilization",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Racetrack potential mechanism provides non-perturbative Kähler moduli stabilization.",
+      "source_papers": [
+        "1811.05463v3"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "period integrals",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Mirror symmetry relates complex-structure periods on one family to Kähler data on the mirror; periods of the mirror determine the prepotential.",
+      "source_papers": [
+        "9205041v1",
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "Picard-Fuchs system",
+      "target": "complex-structure moduli",
+      "relation": "governs",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "GKZ operators L_i encode the z-dependence of periods; the system structure is determined by the moduli space dimension h^{2,1}.",
+      "source_papers": [
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "integral variations of Hodge structure",
+      "target": "period integrals",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "IVHS are families of (3,0)-forms Ω(z) whose integrals over cycles γ_a form period vectors satisfying Picard-Fuchs equations.",
+      "source_papers": [
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "Calabi-Yau hypersurface",
+      "target": "integral variations of Hodge structure",
+      "relation": "realises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "One-parameter families of CY with h^{2,1}=1 and b³=4 provide geometric realizations of integral variations of Hodge structure.",
+      "source_papers": [
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "mirror map",
+      "target": "Kähler moduli",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Mirror map t^a = ∂F/∂X^a relates complex-structure periods on the original CY to Kähler moduli on the mirror.",
+      "source_papers": [
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "Yukawa coupling",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Yukawa couplings F_{abc} = κ_{abc} (intersection numbers) and κ_{αβγ}(z) are encoded in the prepotential computed from periods via special geometry.",
+      "source_papers": [
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "special geometry",
+      "target": "Yukawa coupling",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Special Kähler structure on moduli space relates Kähler metric K_{ij̄} and Yukawa functions κ_{αβγ} to period integrals and their derivatives.",
+      "source_papers": [
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "special geometry",
+      "target": "Kähler moduli",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Via mirror map, complex-structure periods determine Kähler metric and moduli space geometry on the mirror side.",
+      "source_papers": [
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "one-parameter families",
+      "target": "integral variations of Hodge structure",
+      "relation": "realises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "One-parameter CY families with h^{2,1}=1 and b³=4 serve as geometric realizations of IVHS; classification parallels geometric classification.",
+      "source_papers": [
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "thrice-punctured sphere",
+      "target": "one-parameter families",
+      "relation": "parametrises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "One-parameter families of CY are realized as fibrations over ℙ¹ \\ {0,1,∞}, with singularities (large-complex-structure, conifold, etc.) at punctures.",
+      "source_papers": [
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "integral variations of Hodge structure",
+      "target": "geometric realization",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Classification of IVHS underlying CY families directly addresses which abstract VHS have geometric realizations as CY periods.",
+      "source_papers": [
+        "0505272v1"
+      ]
+    },
+    {
+      "source": "Calabi-Yau compactification",
+      "target": "complex-structure moduli",
+      "relation": "contains",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "CY compactifications possess h^{2,1} complex-structure moduli parametrising deformations of the complex structure.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "Calabi-Yau compactification",
+      "target": "Kähler moduli",
+      "relation": "contains",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "CY compactifications possess h^{1,1} Kähler moduli parametrising the Kähler form.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "moduli stabilization",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The paper states complex-structure moduli must be stabilised in phenomenologically-relevant vacua, motivating the study of flux-based stabilisation.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "flux superpotential",
+      "target": "period integrals",
+      "relation": "depends_on",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Flux superpotential W = G_a Π^a + F_a is explicitly defined as periods Π^a contracted with flux quantum numbers G_a.",
+      "source_papers": [
+        "2407.16758v2",
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "complex-structure moduli",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Periods Π_a(z) depend on complex-structure coordinates z_i as Π_a(z) = ∫_{γ_a} Ω(z).",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "tadpole conjecture",
+      "target": "complex-structure moduli",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The conjecture proposes that the number of stabilised complex-structure moduli grows at most linearly with flux tadpole charge N_flux.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "flux tadpole",
+      "target": "tadpole conjecture",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The tadpole bound N_flux ≤ 2/3 h_{2,1} is the quantitative form of the tadpole conjecture.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "Gepner model",
+      "target": "non-geometric background",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The paper describes the Gepner model as a non-geometric background mirror dual to a rigid Calabi-Yau.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "Gepner model",
+      "target": "mirror symmetry",
+      "relation": "related_via",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The Gepner model is the mirror dual to a rigid Calabi-Yau manifold, exemplifying mirror symmetry in the non-geometric regime.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "non-geometric background",
+      "target": "rigid Calabi-Yau",
+      "relation": "is_dual_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The Gepner model, a non-geometric background, is mirror dual to a rigid Calabi-Yau with h^{2,1}=0.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "rigid Calabi-Yau",
+      "target": "complex-structure moduli",
+      "relation": "lacks",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "A rigid CY has h^{2,1}=0, possessing no complex-structure deformations and hence no complex moduli.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "supersymmetric Minkowski solution",
+      "target": "moduli stabilization",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Minkowski vacua with dW/dz_i=0 require fixed moduli; the paper constructs such solutions with all complex moduli massive.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "tadpole conjecture",
+      "target": "supersymmetric Minkowski solution",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The paper constructs supersymmetric Minkowski flux solutions and tests whether they satisfy the tadpole bound, confirming linear growth.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "Gepner model",
+      "target": "tadpole conjecture",
+      "relation": "tests",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The paper scrutinises the tadpole conjecture using the Gepner model, constructing an extensive set of supersymmetric Minkowski solutions to confirm linear growth.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "massless moduli conjecture",
+      "target": "non-geometric background",
+      "relation": "refuted_in",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The paper shows that non-geometric Gepner backgrounds yield Minkowski vacua with all moduli massive, refuting the massless Minkowski conjecture beyond supergravity.",
+      "source_papers": [
+        "2407.16758v2"
+      ]
+    },
+    {
+      "source": "Calabi-Yau operator",
+      "target": "GKZ operator",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Calabi-Yau operators 'make their appearance as Picard-Fuchs operators of families of Calabi-Yau threefolds' (Abstract).",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "GKZ operator",
+      "target": "period integrals",
+      "relation": "governs",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Picard-Fuchs operators determine the differential equations L_i Π = 0 satisfied by periods Π_a(z).",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "complex-structure moduli",
+      "relation": "depends_on",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Periods Π_a(z) are functions of complex-structure moduli z = (z_1,...,z_{h^{2,1}}).",
+      "source_papers": [
+        "0212061v2",
+        "1801.02749v2",
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "GKZ operator",
+      "target": "Fuchsian differential system",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Picard-Fuchs operators are Fuchsian differential operators with regular singularities determining VHS.",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "Calabi-Yau operator",
+      "target": "ℚ-local system",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "CY operators 'conjecturally determine ℚ-local systems that underly a variation of Hodge structure' (Abstract).",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "ℚ-local system",
+      "target": "variation of Hodge structure",
+      "relation": "underlies",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "ℚ-local systems provide the monodromy structure underlying variations of Hodge structure.",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "variation of Hodge structure",
+      "target": "Hodge numbers",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "VHS with fixed Hodge numbers h^{3,0}=h^{2,1}=h^{1,2}=h^{0,3}=1 characterize CY operators.",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "Calabi-Yau operator",
+      "target": "holomorphic (n,0)-form",
+      "relation": "encodes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Picard-Fuchs operators appearing as CY operators encode the variation of the unique (3,0)-form on CY3.",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "period integrals",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Mirror symmetry implies periods on one side determine Kähler coordinates on the mirror via t^a = ∂F/∂X^a.",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "rational curves",
+      "relation": "encodes",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Picard-Fuchs periods 'encode the numbers of rational curves on a mirror manifold' (Abstract).",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "one-parameter family",
+      "target": "Calabi-Yau operator",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "CY operators are 'motivated by mirror symmetry of one-parameter models' (Abstract).",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "GKZ operator",
+      "target": "special geometry",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Picard-Fuchs systems and periods determine special-geometry data: F_{abc} from intersection numbers and Kähler metrics from period derivatives.",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "moduli stabilization",
+      "relation": "subject_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Complex-structure moduli stabilization via flux superpotential W = G_a Π^a uses periods determined by Picard-Fuchs operators.",
+      "source_papers": [
+        "1704.00164v1"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "period integrals",
+      "relation": "parameterizes",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Periods Π_a(z) are holomorphic functions of complex-structure moduli z_i that parameterize the period domain.",
+      "source_papers": [
+        "2011.08227v2",
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "period integrals",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Mirror symmetry provides computational access to period integrals and Yukawa couplings via dual manifold analysis.",
+      "source_papers": [
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "Griffiths transversality",
+      "target": "period integrals",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Variations of Hodge structure governing period geometry are constrained by Griffiths transversality, an integrability condition.",
+      "source_papers": [
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "special geometry",
+      "target": "flux superpotential",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Special geometry determines the Kähler metric and Yukawa couplings from the prepotential, which governs the superpotential structure.",
+      "source_papers": [
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "KKLT construction",
+      "target": "flux superpotential",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "KKLT requires W_0 from flux stabilization followed by non-perturbative W_np; W_0 must satisfy |W_0| << 1.",
+      "source_papers": [
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "KKLT construction",
+      "target": "Kähler moduli",
+      "relation": "stabilizes",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "KKLT stabilizes Kähler moduli via gaugino condensation and D3-instantons contributing non-perturbative superpotential.",
+      "source_papers": [
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "Large Volume Scenario",
+      "target": "Kähler moduli",
+      "relation": "stabilizes",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "LVS achieves exponentially large volume V ~ e^{aτ_s} with Swiss-cheese small cycles and requires h^{1,1} >= 2.",
+      "source_papers": [
+        "1308.1222v4",
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "Swampland conjecture",
+      "target": "KKLT construction",
+      "relation": "violates",
+      "edge_type": "empirical",
+      "weight": 0.65,
+      "evidence": "Swampland conjecture |∇V| >= c·V may exclude metastable dS vacua from KKLT; compatibility remains debated.",
+      "source_papers": [
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "Swampland conjecture",
+      "target": "Large Volume Scenario",
+      "relation": "competes_with",
+      "edge_type": "empirical",
+      "weight": 0.6,
+      "evidence": "Uncertainty whether LVS vacua satisfy the swampland de Sitter bound; compatibility is an open question.",
+      "source_papers": [
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "moduli stabilization",
+      "target": "Calabi-Yau hypersurface",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Stabilization fixes moduli on the moduli space of the CY3; the fixed point loci are projective special Kähler.",
+      "source_papers": [
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "Frobenius structure",
+      "target": "period integrals",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Frobenius algebra structure on cohomology permits decomposition of period matrix into semisimple and nilpotent parts.",
+      "source_papers": [
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "Feynman integrals",
+      "relation": "reduces_to",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Feynman integrals can be solved by iterated integrals of periods; regulated IBP relations factorize using period decomposition.",
+      "source_papers": [
+        "2503.00272v2"
+      ]
+    },
+    {
+      "source": "Geometric fluxes",
+      "target": "flux superpotential",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "W = ∫(G_3 ∧ Ω) = G_a Π^a where G_3 includes H-flux and F-flux components.",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "Non-geometric fluxes",
+      "target": "flux superpotential",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Q-flux and R-flux contribute to the three-form G_3 appearing in W = ∫(G_3 ∧ Ω).",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "flux superpotential",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Superpotential W is a linear combination of periods: W = G_a Π^a; periods determine Yukawa texture via second derivatives of W.",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "Kähler potential",
+      "target": "moduli stabilization",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Kähler potential K = -ln(-i∫(Ω∧Ω̄)) - 2ln(V) determines the scalar potential V = e^K(|D_i W|² - 3|W|²).",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "Kähler moduli",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Mirror map relates complex-structure moduli on CY to Kähler coordinates on mirror; question raised whether cs stabilization constrains Kähler subspace.",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "Tadpole cancellation",
+      "target": "moduli stabilization",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Flux tadpole N_flux must satisfy tadpole conjecture: flux tadpole contribution ≤ 2/3 h_{2,1}, limiting available fluxes.",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "Non-geometric fluxes",
+      "target": "Tadpole cancellation",
+      "relation": "contributes_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Paper derives that non-geometric flux contributions to tadpole cancellation should be similar to D-branes, not anti-D-branes.",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "flux superpotential",
+      "target": "de Sitter vacua",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Examples of stable de Sitter constructions found with (non-)geometric fluxes via classical flux stabilization.",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "Swampland conjecture",
+      "target": "de Sitter vacua",
+      "relation": "violates",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Swampland bound |∇V| ≥ c·V excludes metastable dS vacua; paper finds de Sitter constructions that violate this conjecture.",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "de Sitter vacua",
+      "target": "Type IIB orientifold",
+      "relation": "tests_consistency_in",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Paper reassesses known de Sitter constructions with (non-)geometric fluxes and argues these are not consistent in string theory.",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "Calabi-Yau hypersurface",
+      "target": "Type IIB orientifold",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Type IIB orientifold compactifications studied on Calabi-Yau three-folds with (non-)geometric fluxes.",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "Picard-Fuchs system",
+      "target": "complex-structure moduli",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "GKZ differential system L_i Π = 0 encodes constraints on period integrals and thus on moduli space geometry.",
+      "source_papers": [
+        "2011.08227v2"
+      ]
+    },
+    {
+      "source": "moduli stabilization",
+      "target": "Effective field theory description",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Stabilized moduli with hierarchical masses are essential for validity of the low-energy EFT approximation.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "Large Volume Scenario",
+      "target": "de Sitter vacuum",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "LVS can generate metastable dS vacua via D-term or F-term uplifts, though compatibility with swampland is debated.",
+      "source_papers": [
+        "1308.1222v4",
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "Anti-D3 brane uplift",
+      "target": "de Sitter vacuum",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Anti-D3 branes in the throat lift AdS to dS by breaking supersymmetry with non-perturbative contributions.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "de Sitter vacuum",
+      "target": "Brown-Teitelboum brane nucleation",
+      "relation": "undergoes",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Metastable dS vacua decay via BT instanton processes changing flux quantum numbers.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "de Sitter vacuum",
+      "target": "Coleman-de Luccia tunneling",
+      "relation": "undergoes",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Semiclassical CDL tunneling competes with BT decay; CDL to decompactification is exponentially dominant.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "Coleman-de Luccia tunneling",
+      "target": "Decay rate",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "CDL mechanism yields decay rate Γ ~ exp(-S_E) where S_E is the Euclidean action, expressed in terms of volumes.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "Brown-Teitelboum brane nucleation",
+      "target": "Decay rate",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "BT decay rates computed from flux-changing instanton action, also exponential in volume.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "holomorphic (n,0)-form",
+      "target": "Decay rate",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "All decay rates scale as exponentials of the volume; larger V suppresses transitions.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "Swampland conjecture",
+      "target": "de Sitter vacuum",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.65,
+      "evidence": "Swampland de Sitter conjecture |∇V| ≥ c·V excludes some metastable dS constructions, but compatibility with LVS is debated.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "Large Volume Scenario",
+      "target": "Swampland conjecture",
+      "relation": "competes_with",
+      "edge_type": "empirical",
+      "weight": 0.6,
+      "evidence": "LVS produces dS vacua that may violate swampland bounds; tension unresolved.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "Kähler moduli",
+      "target": "complex-structure moduli",
+      "relation": "exchanges",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Mirror symmetry relates Kähler moduli on one CY to complex-structure moduli on the mirror; stabilization may causally couple them.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "type IIB string compactification",
+      "target": "Large Volume Scenario",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "LVS is a specific regime of type IIB CY3 compactifications with hierarchical moduli masses.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "Effective field theory description",
+      "target": "Brown-Teitelboum brane nucleation",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "EFT analysis of BT instanton decay requires that instanton size remains parametrically small relative to CY scale.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "Effective field theory description",
+      "target": "Coleman-de Luccia tunneling",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "CDL tunneling analysis valid only if barrier height and widths lie within the EFT regime.",
+      "source_papers": [
+        "1308.1222v4"
+      ]
+    },
+    {
+      "source": "Calabi-Yau hypersurface",
+      "target": "period integrals",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Period integrals Π_a(z) = ∫_{γ_a} Ω encode the geometric properties of the CY3 via the holomorphic (3,0)-form.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "prepotential",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Complex structure is encoded in the prepotential F(X^a) via the mirror map; periods at stabilization locus predict exact Yukawa texture.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "prepotential",
+      "target": "Yukawa coupling",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Yukawa couplings F_{abc} = ∂³F/∂X^a∂X^b∂X^c are derived as third derivatives of the prepotential.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "complex-structure moduli",
+      "relation": "exchanges",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Mirror symmetry swaps complex-structure moduli on one CY3 with Kähler moduli on its mirror; h^{1,1} ↔ h^{2,1}.",
+      "source_papers": [
+        "0212061v2",
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "prepotential",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The prepotential on the mirror is determined by Gromov-Witten invariants via mirror symmetry predictions.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "maximal unipotent monodromy",
+      "target": "period integrals",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "At boundary points with maximal unipotent local monodromy, the period matrix exhibits a canonical structure analogous to the crystalline cohomology.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "canonical coordinates",
+      "target": "integrality property",
+      "relation": "exhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Canonical coordinates on moduli space, often periods or their derivatives, exhibit integral properties observed in mirror symmetry examples.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "crystalline cohomology",
+      "target": "ordinary variety",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Crystalline cohomology is used to study the arithmetic and p-adic geometry of ordinary varieties in characteristic p.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "ordinary variety",
+      "target": "Calabi-Yau hypersurface",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "An ordinary Calabi-Yau threefold in characteristic p is a CY3 where the Frobenius acts with maximal rank on crystalline cohomology.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "p-adic analogue",
+      "target": "integrality property",
+      "relation": "preserves",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "The paper shows p-adic analogues of integrality properties for canonical coordinates and the prepotential observed in complex mirror symmetry.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "special geometry",
+      "target": "Yukawa coupling",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Special geometry relates the Kähler metric and prepotential to Yukawa couplings F_{abc} via κ_{abc} = F_{abc} at large volume.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "moduli space boundary",
+      "target": "maximal unipotent monodromy",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The boundary of the complex-structure moduli space is characterized by maximal unipotent local monodromy singularities.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "crystalline cohomology",
+      "target": "prepotential",
+      "relation": "analogous_to",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Crystalline cohomology of ordinary CY3 in characteristic p exhibits structure analogous to the prepotential and Yukawa couplings in complex geometry.",
+      "source_papers": [
+        "0212061v2"
+      ]
+    },
+    {
+      "source": "B-brane superpotential",
+      "target": "period integrals",
+      "relation": "depends_on",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "B-brane superpotentials depending on several closed- and open-moduli are calculated via period integrals through mirror symmetry.",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "complex-structure modulus",
+      "target": "period integrals",
+      "relation": "parametrizes",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Period integrals are parametrized by complex-structure moduli z = (z_1,...,z_{h^{2,1}}) and satisfy differential equations.",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "blow-up",
+      "target": "period integrals",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "By blowing up the ambient space along a curve wrapped by B-branes, we obtain a blow-up new manifold and the period integral satisfying the GKZ-system (Abstract).",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "B-brane superpotential",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Via mirror symmetry to A-model, we calculate the superpotentials (Abstract).",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "A-model",
+      "target": "Ooguri-Vafa invariant",
+      "relation": "computes",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Ooguri-Vafa invariants are extracted via the A-model calculation of open-string amplitudes.",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "blow-up",
+      "target": "Picard-Fuchs system",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Blowing up the ambient space along a curve produces a manifold whose period integrals satisfy the GKZ-system determined by the toric lattice.",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "B-brane superpotential",
+      "target": "open modulus",
+      "relation": "depends_on",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "B-brane superpotentials depend on several closed- and open-moduli (Abstract).",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "B-brane superpotential",
+      "target": "closed modulus",
+      "relation": "depends_on",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "B-brane superpotentials depend on several closed- and open-moduli (Abstract).",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "holomorphic (n,0)-form",
+      "target": "period integrals",
+      "relation": "integrates_to",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Period integrals Π_a(z) = ∫_{γ_a} Ω(z) where Ω(z) is the holomorphic (3,0)-form parametrized by complex-structure moduli.",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "Calabi-Yau hypersurface",
+      "target": "holomorphic (n,0)-form",
+      "relation": "admits",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Calabi-Yau hypersurfaces are characterized by admitting a holomorphic (3,0)-form.",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "complete intersection",
+      "target": "period integrals",
+      "relation": "supports",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "We study superpotentials on Calabi-Yau complete intersections and extract their periods (Abstract).",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "Ooguri-Vafa invariant",
+      "target": "B-brane superpotential",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Ooguri-Vafa invariants are extracted from concrete examples and constrain the superpotential (Abstract).",
+      "source_papers": [
+        "2201.00322v1"
+      ]
+    },
+    {
+      "source": "Kähler potential",
+      "target": "matter metric",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "The matter metric K_{I J̄} is defined as the second derivative of the Kähler potential, K_{I J̄} = ∂_I ∂_{J̄} K, controlling kinetic terms in the effective Lagrangian.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "D7-brane matter fields",
+      "target": "Kähler potential",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The paper computes modular weights of D7-brane bifundamental matter using techniques that extract the Kähler moduli dependence of the Kähler potential for matter fields.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "Kähler moduli",
+      "target": "matter metric",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Matter metrics depend on Kähler moduli through the Kähler potential; modular weights encode this scaling dependence in a perturbative expansion.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "modular weight",
+      "target": "Kähler potential",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Modular weights are scaling exponents under Kähler moduli rescaling that determine the Kähler potential dependence; the paper extracts these weights using scaling arguments and locality.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "Yukawa coupling",
+      "target": "Kähler potential",
+      "relation": "receives_correction_from",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Knowledge of Yukawa coupling structure is sufficient to constrain the Kähler potential; the paper uses Yukawa structure to guide extraction of modular dependence.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "large internal volume",
+      "target": "perturbative expansion",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The large-volume scenario V >> 1 permits controlled perturbative expansions in αʹ and gs; the paper uses scaling arguments valid in this regime.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "Calabi-Yau compactification",
+      "target": "Kähler moduli",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Kähler moduli t^a parameterize the Kähler cone of the CY3 and determine divisor volumes; essential data for CY compactifications.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "soft supersymmetry breaking",
+      "target": "Kähler potential",
+      "relation": "determined_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "In gravity-mediated SUSY breaking, soft term coefficients (gaugino masses, A-terms) are determined by derivatives of the Kähler potential and superpotential.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "moduli stabilization",
+      "target": "Kähler potential",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Knowledge of the complete Kähler potential is needed to compute the scalar potential and find stabilization points; the paper contributes to this understanding.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "toroidal compactification",
+      "target": "Kähler potential",
+      "relation": "analogous_to",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "The paper applies techniques to toroidal compactifications and compares results with exact Kähler potentials known for these cases, using them to benchmark methods.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "D7-brane matter fields",
+      "target": "Yukawa coupling",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Yukawa couplings arise from the overlap of matter wavefunctions on D7 branes; their moduli dependence is governed by the matter Kähler potential.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "perturbative expansion",
+      "target": "modular weight",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The paper develops a perturbative expansion in Kähler moduli to extract modular weights; each order corresponds to a definite scaling under moduli rescaling.",
+      "source_papers": [
+        "0609180v2"
+      ]
+    },
+    {
+      "source": "slow-roll condition",
+      "target": "inflationary constraint",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The slow-roll requirement on the scalar potential translates to a geometric constraint on the Kähler geometry of the vacuum (Abstract, Introduction).",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "inflationary constraint",
+      "target": "Kähler geometry",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The inflationary constraint leads to a hard bound on the moduli space geometry (Abstract).",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "Kähler moduli inflation",
+      "target": "Effective scalar potential",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Slow-roll requirement on the scalar potential is the foundation for Kähler moduli inflation constraints.",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "type IIB compactification",
+      "target": "Calabi-Yau landscape",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Type IIB string compactifications on O3/O7 orientifold generate the ensemble of CY landscape geometries (Abstract).",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "flux superpotential",
+      "target": "complex-structure moduli",
+      "relation": "stabilises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The flux superpotential W(z) stabilises the complex-structure moduli at tree level via minimisation ∂W/∂z_i = 0.",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "O3/O7-plane orientifold",
+      "target": "type IIB compactification",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Type IIB compactifications are defined by their orientifold projection; O3/O7-planes are the defining structure here.",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "Calabi-Yau landscape",
+      "target": "moduli space dimension",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The inflationary constraint is independent of the moduli space dimension (Abstract), yet geometries are parameterised by h^{1,1} + h^{2,1}.",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "inflationary constraint",
+      "target": "Calabi-Yau landscape",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Only 6.57% of geometries inspected support high-scale Kähler moduli inflation, showing strong filtering by inflationary constraint (Abstract).",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "volume modulus",
+      "target": "Kähler moduli inflation",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The volume modulus or fibre moduli serve as the inflaton field in Kähler moduli inflation scenarios.",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "Effective scalar potential",
+      "target": "slow-roll condition",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Slow-roll conditions (ε ≪ 1, η ≪ 1) are computed as derivatives of the scalar potential.",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "Kähler geometry",
+      "target": "Effective scalar potential",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The Kähler potential K determines the metric structure and field-space geometry entering the potential V = e^K(...).",
+      "source_papers": [
+        "1603.06631v2"
+      ]
+    },
+    {
+      "source": "Landau-Ginzburg model",
+      "target": "log Calabi-Yau compactification",
+      "relation": "extends_to",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "The procedure constructs log CY compactifications of weak LG models (Abstract); LG models are the non-compact base objects being completed.",
+      "source_papers": [
+        "2102.01388v3"
+      ]
+    },
+    {
+      "source": "Fano variety",
+      "target": "Landau-Ginzburg model",
+      "relation": "is_dual_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Mirror symmetry relates Fano varieties to LG models; the paper applies the LG/Fano duality framework to del Pezzo surfaces and coverings.",
+      "source_papers": [
+        "2102.01388v3"
+      ]
+    },
+    {
+      "source": "Del Pezzo surface",
+      "target": "Fano variety",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Del Pezzo surfaces are defined as Fano surfaces; the paper explicitly studies del Pezzo surfaces as primary examples of Fano varieties.",
+      "source_papers": [
+        "2102.01388v3"
+      ]
+    },
+    {
+      "source": "projective space covering",
+      "target": "log Calabi-Yau compactification",
+      "relation": "receives_singular",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "For coverings of degree greater than 2, the log CY compactification is singular; moreover, no smooth projective log CY compactification exists.",
+      "source_papers": [
+        "2102.01388v3"
+      ]
+    },
+    {
+      "source": "degree-indexed family",
+      "target": "singular compactification",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Coverings of degree >2 necessarily yield singular log CY compactifications; smoothness fails above degree 2.",
+      "source_papers": [
+        "2102.01388v3"
+      ]
+    },
+    {
+      "source": "anticanonical system",
+      "target": "fiber over infinity",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The conjecture proves that the number of components of the fiber over infinity equals the dimension of the anticanonical system of the Fano variety.",
+      "source_papers": [
+        "2102.01388v3"
+      ]
+    },
+    {
+      "source": "Fano variety",
+      "target": "anticanonical system",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Anticanonical system dimension is a fundamental invariant of Fano varieties; the paper uses anticanonical dimension to classify geometric behavior.",
+      "source_papers": [
+        "2102.01388v3"
+      ]
+    },
+    {
+      "source": "smoothness obstruction",
+      "target": "singular compactification",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "No smooth projective log CY compactification exists for certain coverings; obstructions force singularities to be unavoidable.",
+      "source_papers": [
+        "2102.01388v3"
+      ]
+    },
+    {
+      "source": "Gorenstein index",
+      "target": "projective space covering",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "The paper classifies coverings of projective space by degree and Gorenstein index as the relevant structural parameters.",
+      "source_papers": [
+        "2102.01388v3"
+      ]
+    },
+    {
+      "source": "log Calabi-Yau compactification",
+      "target": "mirror symmetry",
+      "relation": "instantiates",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Log CY compactifications provide explicit geometric realizations of mirror symmetry between Fano varieties and LG models via the compactification procedure.",
+      "source_papers": [
+        "2102.01388v3"
+      ]
+    },
+    {
+      "source": "Calabi-Yau manifold",
+      "target": "mirror symmetry",
+      "relation": "participates_in",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Mirror symmetry fundamentally pairs Calabi-Yau manifolds, exchanging their complex and Kähler geometry.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "Tyurin degeneration",
+      "target": "Calabi-Yau manifold",
+      "relation": "is_a_degeneration_of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Tyurin degenerations are special limiting cases of Calabi-Yau families discussed throughout.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "Doran-Harder-Thompson conjecture",
+      "target": "Tyurin degeneration",
+      "relation": "uses",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "DHT conjecture builds a bridge using Tyurin degenerations as the central tool.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "Doran-Harder-Thompson conjecture",
+      "target": "mirror symmetry",
+      "relation": "extends",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Conjecture extends mirror symmetry from Calabi-Yau manifolds to quasi-Fano varieties.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "SYZ mirror symmetry",
+      "target": "special Lagrangian fibration",
+      "relation": "requires",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "SYZ construction is fundamentally based on special Lagrangian torus fibrations; pairs dual fibrations.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "special Lagrangian fibration",
+      "target": "Calabi-Yau manifold",
+      "relation": "fibers",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Paper emphasizes SYZ fibrations of Calabi-Yau manifolds as geometric basis for mirror symmetry.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "Picard-Fuchs system",
+      "relation": "parametrizes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Periods are functions of moduli; PF system depends on the structure of the moduli space.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "Theta function",
+      "target": "SYZ mirror symmetry",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Paper cites theta functions as related topics arising from SYZ mirror symmetry analysis.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "Geometric quantization",
+      "target": "SYZ mirror symmetry",
+      "relation": "implements",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Geometric quantization is mentioned alongside SYZ as a related topic for constructing mirrors.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "Landau-Ginzburg model",
+      "target": "Quasi-Fano manifold",
+      "relation": "is_mirror_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "DHT conjecture connects LG models (from CY fibrations) to quasi-Fano mirrors.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "Calabi-Yau fibration",
+      "target": "Landau-Ginzburg model",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Paper proposes new LG construction by splitting Calabi-Yau fibrations; splitting CY fibrations yields LG models.",
+      "source_papers": [
+        "1801.02749v2"
+      ]
+    },
+    {
+      "source": "Calabi-Yau manifold",
+      "target": "complex-structure modulus",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Complex-structure deformations z_i parametrize inequivalent CY geometries; the number of moduli equals h^{2,1}.",
+      "source_papers": [
+        "9205041v1"
+      ]
+    },
+    {
+      "source": "complex-structure modulus",
+      "target": "period integrals",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Period integrals Π_a(z) are functions of the complex-structure moduli z, encoding moduli-dependent geometric information.",
+      "source_papers": [
+        "9205041v1"
+      ]
+    },
+    {
+      "source": "mirror manifold",
+      "target": "Kähler moduli",
+      "relation": "is_dual_to",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Mirror symmetry exchanges complex-structure moduli of the original with Kähler moduli of the mirror manifold.",
+      "source_papers": [
+        "9205041v1"
+      ]
+    },
+    {
+      "source": "mirror map",
+      "target": "Kähler potential",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The mirror map relating periods on mirror to Kähler moduli effects the complex-structure–Kähler back-reaction encoded in K.",
+      "source_papers": [
+        "9205041v1"
+      ]
+    },
+    {
+      "source": "global properties of solutions",
+      "target": "Picard-Fuchs system",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Boundary conditions and monodromy at singular loci (large-structure, conifold) must supplement the Picard-Fuchs equation to ensure consistency.",
+      "source_papers": [
+        "9205041v1"
+      ]
+    },
+    {
+      "source": "Kähler moduli",
+      "target": "Kähler potential",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Kähler potential K depends on Kähler moduli τ^a and volume V; K = -ln(-i∫(Ω∧Ω̄)) - 2ln(V).",
+      "source_papers": [
+        "9205041v1"
+      ]
+    },
+    {
+      "source": "complex-structure modulus",
+      "target": "flux superpotential",
+      "relation": "stabilises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Complex-structure moduli are fixed by the flux superpotential; ∂W/∂z_i = 0 determines stabilization locus.",
+      "source_papers": [
+        "9205041v1"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "Kähler moduli",
+      "relation": "exchanges",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Mirror duality exchanges Kähler moduli of one CY with complex-structure moduli of its mirror partner.",
+      "source_papers": [
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "rational curves",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Period integrals on the mirror determine genus-zero Gromov-Witten invariants of the original CY via mirror symmetry (Abstract).",
+      "source_papers": [
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "variation of Hodge structure",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Periods encode the Hodge structure; their variation with moduli defines the variation of Hodge structure (Abstract, domain context).",
+      "source_papers": [
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "Picard-Fuchs system",
+      "target": "rational curves",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Application of Picard-Fuchs equations in studying genus zero Gromov-Witten invariants of Calabi-Yau varieties (Abstract).",
+      "source_papers": [
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "Weil-Petersson geometry",
+      "target": "complex-structure moduli",
+      "relation": "characterised_by",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Weil-Petersson geometry is defined on the moduli space controlled by complex-structure parameters and relates to period integrals (Abstract).",
+      "source_papers": [
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "plane cubic curves",
+      "target": "mirror symmetry",
+      "relation": "exemplifies",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Plane cubic curves are a primary example for discussing arithmetic aspects of mirror symmetry (Title, Abstract).",
+      "source_papers": [
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "holomorphic differential forms",
+      "target": "period integrals",
+      "relation": "defines",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Period integrals are integrals of holomorphic differential forms over cycles; the (3,0)-form Ω on CY3 integrates to give periods.",
+      "source_papers": [
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "Picard-Fuchs system",
+      "target": "arithmetic properties",
+      "relation": "reveals",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The Picard-Fuchs equation can be used to reveal arithmetic properties of plane cubics and mirror pairs (Abstract).",
+      "source_papers": [
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "Calabi-Yau varieties",
+      "target": "mirror symmetry",
+      "relation": "subject_of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Calabi-Yau varieties are the central objects on which mirror symmetry acts; application to genus-zero GW invariants stated (Abstract).",
+      "source_papers": [
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "Weil-Petersson geometry",
+      "relation": "induces",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "Mirror symmetry relates enumerative invariants to periods, which structure the Weil-Petersson metric on moduli spaces (Abstract).",
+      "source_papers": [
+        "1605.07877v2"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "period integrals",
+      "relation": "parametrise",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Π_a(z) = ∫_{γ_a} Ω(z) explicitly depends on z = (z_1,...,z_{h^{2,1}}); periods encode moduli structure.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "period integrals",
+      "target": "flux superpotential",
+      "relation": "generates",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "W = ∫(G_3 ∧ Ω) = G_a Π^a; flux couples linearly to periods (Gukov-Vafa formula).",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "flux superpotential",
+      "target": "Kähler potential",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "W determines scalar dynamics and enters effective equations for volume stabilization via ∂W/∂τ^a terms.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "complex-structure moduli",
+      "target": "flux superpotential",
+      "relation": "stabilises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Closed string fluxes fix dilaton and complex structure moduli; superpotential W encodes stabilization constraint via periods.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "KKLT construction",
+      "target": "volume modulus",
+      "relation": "stabilises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Non-perturbative W_np from gaugino condensation/D3-instantons stabilizes volume when |W_0| << 1.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "KKLT construction",
+      "target": "de Sitter vacuum",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "KKLT uplifts AdS to dS via anti-D3 branes; central dS construction in string theory but contested.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "Large Volume Scenario",
+      "target": "volume modulus",
+      "relation": "stabilises",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "LVS achieves V ~ e^{a τ_s} >> 1 with hierarchical W_0 ~ O(1) from small Swiss cheese cycles.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "D-term uplifting",
+      "target": "de Sitter vacuum",
+      "relation": "uplifts",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Magnetized D7-branes provide D-term potential lifting AdS moduli-stabilization vacua consistently to dS_4.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "Kähler potential",
+      "target": "volume modulus",
+      "relation": "constrains",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "K = -2ln(V) term directly controls volume dynamics; perturbative quantum corrections to K stabilize V in AdS.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "Swampland conjecture",
+      "target": "de Sitter vacuum",
+      "relation": "contradicts",
+      "edge_type": "empirical",
+      "weight": 0.75,
+      "evidence": "dS conjecture |∇V| ≥ c·V excludes metastable dS vacua; compatibility with KKLT/LVS debated.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "tadpole conjecture",
+      "target": "KKLT construction",
+      "relation": "violates",
+      "edge_type": "empirical",
+      "weight": 0.7,
+      "evidence": "Flux tadpole bound N_flux ≤ 2/3 h_{2,1} rules out many KKLT constructions; computational testing needed.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "mirror symmetry",
+      "target": "complex-structure moduli",
+      "relation": "relates_to",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Mirror map t^a = ∂F/∂X^a connects complex-structure periods to Kähler coordinates on mirror; back-reaction channel.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "special geometry",
+      "target": "period integrals",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Period integrals are primary objects in special geometry encoding Yukawa couplings F_{abc} and Kähler metric K_{ij̄}.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    },
+    {
+      "source": "Anti-D3 brane uplift",
+      "target": "de Sitter vacuum",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.6,
+      "evidence": "KKLT anti-D3 uplift mechanism for dS; subject to Maldacena-Nunez and Danielsson-Van Riet criticism regarding backreaction.",
+      "source_papers": [
+        "0701215v1"
+      ]
+    }
+  ]
+}

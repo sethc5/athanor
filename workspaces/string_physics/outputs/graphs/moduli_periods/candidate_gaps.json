@@ -1,0 +1,408 @@
+[
+  {
+    "concept_a": "type IIB string compactification",
+    "concept_b": "type IIB compactification",
+    "similarity": 0.7512993812561035,
+    "graph_distance": 7,
+    "structural_hole_score": 0.4998
+  },
+  {
+    "concept_a": "type IIA compactification",
+    "concept_b": "type IIB compactification",
+    "similarity": 0.7309305667877197,
+    "graph_distance": 999,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "relative cohomology",
+    "concept_b": "module isomorphism",
+    "similarity": 0.6871364116668701,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "Type IIB orientifold",
+    "concept_b": "type IIB compactification",
+    "similarity": 0.6832188367843628,
+    "graph_distance": 7,
+    "structural_hole_score": 0.5315
+  },
+  {
+    "concept_a": "SYZ mirror symmetry",
+    "concept_b": "SYZ Conjecture",
+    "similarity": 0.6693903207778931,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6017
+  },
+  {
+    "concept_a": "F-term uplift",
+    "concept_b": "uplifting term",
+    "similarity": 0.6653292179107666,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2491
+  },
+  {
+    "concept_a": "Schoen Calabi-Yau threefold",
+    "concept_b": "type IIA compactification",
+    "similarity": 0.6593673229217529,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2828
+  },
+  {
+    "concept_a": "swampland conjectures",
+    "concept_b": "Weak Gravity Conjecture",
+    "similarity": 0.6538341641426086,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "K\u00e4hler moduli inflation",
+    "concept_b": "inflationary constraint",
+    "similarity": 0.6468024849891663,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5828
+  },
+  {
+    "concept_a": "type IIA compactification",
+    "concept_b": "Calabi-Yau compactification",
+    "similarity": 0.6232174634933472,
+    "graph_distance": 999,
+    "structural_hole_score": 0.1774
+  },
+  {
+    "concept_a": "Schoen Calabi-Yau threefold",
+    "concept_b": "type IIB compactification",
+    "similarity": 0.6185605525970459,
+    "graph_distance": 6,
+    "structural_hole_score": 0.5328
+  },
+  {
+    "concept_a": "SYZ mirror symmetry",
+    "concept_b": "mirror manifold",
+    "similarity": 0.6177091002464294,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3519
+  },
+  {
+    "concept_a": "Schoen Calabi-Yau threefold",
+    "concept_b": "Calabi-Yau landscape",
+    "similarity": 0.6091893911361694,
+    "graph_distance": 5,
+    "structural_hole_score": 0.6146
+  },
+  {
+    "concept_a": "type IIA compactification",
+    "concept_b": "Calabi-Yau landscape",
+    "similarity": 0.5987839102745056,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3318
+  },
+  {
+    "concept_a": "Type IIB orientifold",
+    "concept_b": "O3/O7-plane orientifold",
+    "similarity": 0.5955072045326233,
+    "graph_distance": 8,
+    "structural_hole_score": 0.2815
+  },
+  {
+    "concept_a": "SYZ mirror symmetry",
+    "concept_b": "mirror symmetry",
+    "similarity": 0.595139741897583,
+    "graph_distance": 3,
+    "structural_hole_score": 0.7742
+  },
+  {
+    "concept_a": "K\u00e4hler geometry",
+    "concept_b": "special geometry",
+    "similarity": 0.5932629108428955,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6749
+  },
+  {
+    "concept_a": "Calabi-Yau compactification",
+    "concept_b": "type IIB compactification",
+    "similarity": 0.5927988886833191,
+    "graph_distance": 6,
+    "structural_hole_score": 0.4274
+  },
+  {
+    "concept_a": "differential operators",
+    "concept_b": "GKZ operator",
+    "similarity": 0.5889386534690857,
+    "graph_distance": 5,
+    "structural_hole_score": 0.622
+  },
+  {
+    "concept_a": "Type IIB orientifold",
+    "concept_b": "type IIB string compactification",
+    "similarity": 0.5796379446983337,
+    "graph_distance": 3,
+    "structural_hole_score": 0.5313
+  },
+  {
+    "concept_a": "Calabi-Yau manifold",
+    "concept_b": "rigid Calabi-Yau",
+    "similarity": 0.5704220533370972,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6873
+  },
+  {
+    "concept_a": "Gr\u00f6bner basis",
+    "concept_b": "toric ideal",
+    "similarity": 0.566451370716095,
+    "graph_distance": 7,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "intersection ring",
+    "concept_b": "complete intersection",
+    "similarity": 0.5592077970504761,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3332
+  },
+  {
+    "concept_a": "Calabi-Yau compactification",
+    "concept_b": "Calabi-Yau landscape",
+    "similarity": 0.5584344267845154,
+    "graph_distance": 5,
+    "structural_hole_score": 0.5092
+  },
+  {
+    "concept_a": "type IIA compactification",
+    "concept_b": "type IIB string compactification",
+    "similarity": 0.556555986404419,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "special Lagrangian fibration",
+    "concept_b": "Calabi-Yau fibration",
+    "similarity": 0.5557403564453125,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2183
+  },
+  {
+    "concept_a": "algebraic variety",
+    "concept_b": "rational curves",
+    "similarity": 0.5501408576965332,
+    "graph_distance": 4,
+    "structural_hole_score": 0.1362
+  },
+  {
+    "concept_a": "Calabi-Yau hypersurface",
+    "concept_b": "Calabi-Yau varieties",
+    "similarity": 0.5487632155418396,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4308
+  },
+  {
+    "concept_a": "Calabi-Yau hypersurface",
+    "concept_b": "almost Calabi-Yau manifold",
+    "similarity": 0.5470763444900513,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4308
+  },
+  {
+    "concept_a": "moduli space",
+    "concept_b": "moduli space boundary",
+    "similarity": 0.5369542837142944,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "mirror manifold",
+    "concept_b": "Calabi-Yau varieties",
+    "similarity": 0.5339425802230835,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "toric geometry",
+    "concept_b": "Reflexive polytope",
+    "similarity": 0.5253437161445618,
+    "graph_distance": 4,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "closed modulus",
+    "concept_b": "complex-structure modulus",
+    "similarity": 0.5252017974853516,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2722
+  },
+  {
+    "concept_a": "F-term uplift",
+    "concept_b": "de Sitter vacua",
+    "similarity": 0.5232933163642883,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6278
+  },
+  {
+    "concept_a": "crystalline cohomology",
+    "concept_b": "p-adic analogue",
+    "similarity": 0.5227800607681274,
+    "graph_distance": 999,
+    "structural_hole_score": 0.248
+  },
+  {
+    "concept_a": "almost Calabi-Yau manifold",
+    "concept_b": "rigid Calabi-Yau",
+    "similarity": 0.5221861004829407,
+    "graph_distance": 5,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "de Sitter vacua",
+    "concept_b": "uplifting term",
+    "similarity": 0.5219033360481262,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3786
+  },
+  {
+    "concept_a": "special Lagrangian fibration",
+    "concept_b": "SYZ Conjecture",
+    "similarity": 0.5198982954025269,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4681
+  },
+  {
+    "concept_a": "type IIA compactification",
+    "concept_b": "Type IIB orientifold",
+    "similarity": 0.5040443539619446,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2815
+  },
+  {
+    "concept_a": "Hodge numbers",
+    "concept_b": "geometric realization",
+    "similarity": 0.5010862350463867,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3209
+  },
+  {
+    "concept_a": "SYZ mirror symmetry",
+    "concept_b": "self-mirror Calabi-Yau",
+    "similarity": 0.4991222620010376,
+    "graph_distance": 4,
+    "structural_hole_score": 0.6837
+  },
+  {
+    "concept_a": "almost Calabi-Yau manifold",
+    "concept_b": "Calabi-Yau varieties",
+    "similarity": 0.49560046195983887,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "closed modulus",
+    "concept_b": "volume modulus",
+    "similarity": 0.4933999180793762,
+    "graph_distance": 5,
+    "structural_hole_score": 0.375
+  },
+  {
+    "concept_a": "de Sitter vacuum",
+    "concept_b": "supersymmetric Minkowski solution",
+    "similarity": 0.48828572034835815,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6555
+  },
+  {
+    "concept_a": "toric geometry",
+    "concept_b": "Gr\u00f6bner basis",
+    "similarity": 0.4866597652435303,
+    "graph_distance": 6,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "one-parameter families",
+    "concept_b": "one-parameter family",
+    "similarity": 0.48642978072166443,
+    "graph_distance": 5,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "geometric realization",
+    "concept_b": "Weil-Petersson geometry",
+    "similarity": 0.485787570476532,
+    "graph_distance": 4,
+    "structural_hole_score": 0.209
+  },
+  {
+    "concept_a": "tadpole conjecture",
+    "concept_b": "Tadpole cancellation",
+    "similarity": 0.48252251744270325,
+    "graph_distance": 3,
+    "structural_hole_score": 0.6488
+  },
+  {
+    "concept_a": "Calabi-Yau landscape",
+    "concept_b": "Calabi-Yau varieties",
+    "similarity": 0.4761485159397125,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3318
+  },
+  {
+    "concept_a": "Type IIB orientifold",
+    "concept_b": "Geometric fluxes",
+    "similarity": 0.4753250181674957,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2815
+  },
+  {
+    "concept_a": "self-mirror Calabi-Yau",
+    "concept_b": "mirror manifold",
+    "similarity": 0.4745910167694092,
+    "graph_distance": 3,
+    "structural_hole_score": 0.3318
+  },
+  {
+    "concept_a": "complex-structure moduli",
+    "concept_b": "almost Calabi-Yau manifold",
+    "similarity": 0.47002047300338745,
+    "graph_distance": 4,
+    "structural_hole_score": 0.3981
+  },
+  {
+    "concept_a": "Calabi-Yau manifold",
+    "concept_b": "mirror manifold",
+    "similarity": 0.46984466910362244,
+    "graph_distance": 3,
+    "structural_hole_score": 0.4389
+  },
+  {
+    "concept_a": "type IIA compactification",
+    "concept_b": "Geometric fluxes",
+    "similarity": 0.4653034806251526,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "integrality property",
+    "concept_b": "arithmetic properties",
+    "similarity": 0.4644815921783447,
+    "graph_distance": 999,
+    "structural_hole_score": 0.249
+  },
+  {
+    "concept_a": "massless moduli conjecture",
+    "concept_b": "Effective field theory description",
+    "similarity": 0.4610934853553772,
+    "graph_distance": 5,
+    "structural_hole_score": 0.3327
+  },
+  {
+    "concept_a": "type IIB string compactification",
+    "concept_b": "Geometric fluxes",
+    "similarity": 0.4575568437576294,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "gauge theory",
+    "concept_b": "Calabi-Yau compactification",
+    "similarity": 0.4525662064552307,
+    "graph_distance": 4,
+    "structural_hole_score": 0.4272
+  }
+]

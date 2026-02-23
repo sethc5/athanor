@@ -1,0 +1,71 @@
+name: cy3_discrete_symmetry
+display: "Discrete Symmetries & Flavor from CY Geometry"
+
+queries:
+  - "discrete symmetry Calabi-Yau compactification flavor symmetry string theory"
+  - "dihedral symmetry orbifold Calabi-Yau Yukawa texture fermion mass"
+  - "non-perturbative effects divisor dP del Pezzo instanton Yukawa"
+  - "discrete torsion H-flux Calabi-Yau orbifold quotient string"
+  - "D6 symmetry CY3 modular symmetry moduli space flux vacua"
+  - "Standard Model gauge group Calabi-Yau F-theory discrete symmetry"
+  - "Yukawa coupling selection rules discrete symmetry quark lepton mass"
+  - "anomalous U1 B-L symmetry Calabi-Yau compactification proton decay"
+  - "flavor symmetry model building A4 S4 Delta27 string compactification"
+  - "symmetry breaking scalar vev moduli stabilization discrete remnant"
+
+max_papers: 25
+max_gaps: 20
+model: claude-haiku-4-5
+
+domain_context: |
+  ## CyTools GL=12 / D₆ Polytope — Discrete Symmetry Research Context
+
+  This domain targets external literature on discrete symmetry in Calabi-Yau
+  compactifications, with direct relevance to the GL=12 polytope (h¹¹=17,
+  h²¹=20) identified in the CyTools 3-generation scan.
+
+  ### The GL=12 Polytope — D₆ Symmetry Facts
+  - Gorenstein index 12, point group D₆ (dihedral of order 12 ≅ Z₂ ⋊ Z₆)
+  - Largest discrete symmetry group among ALL χ=±6 reflexive polytopes in KS
+  - 5 D₆-invariant Kähler moduli τ₁…τ₅ (of 17 total)
+  - 5 D₆-invariant complex structure moduli (of 20 total)
+  - 26 D₆-invariant Yukawa couplings from the 3-family intersection structure
+  - Maximal τ_Swiss ≈ 8.3 → viable large-volume string background
+  - 14 divisor classes, 3 of which are del Pezzo (dP) → non-perturbative
+    instanton contributions to Yukawa are geometrically accessible
+
+  ### Open Problem P2 — Yukawa Texture from D₆ Symmetry
+  The 26 D₆-invariant Yukawa couplings W_{ijk} = ∫ Ω ∧ ψᵢ ∧ ψⱼ ∧ ψₖ
+  decompose under D₆ representations. If the D₆ acts faithfully on the
+  three generations (≅ flavor symmetry), it predicts:
+  - Zero entries in the Yukawa matrix by group theory
+  - Ratios of nonzero entries fixed by Clebsch-Gordan coefficients
+  - Comparison to observed quark/lepton mass hierarchies + CKM/PMNS angles
+
+  ### Why Discrete Symmetry Matters for the Standard Model
+  - The observed fermion mass hierarchy (top vs. electron: factor 10⁵) is
+    unexplained in the SM — discrete symmetry groups like A₄, S₄, D₆, Δ(27)
+    are leading candidates for flavor symmetry explaining this
+  - CY orbifold quotients by Γ ⊂ SU(3) produce discrete torsion → shifts
+    the Yukawa selection rules (discrete torsion H ∈ H²(Γ, U(1)))
+  - Non-perturbative Yukawa from D3/E3-instantons wrapping dP divisors can
+    fill entries forbidden at perturbative level — dP divisors in GL=12
+    provide exactly this mechanism
+
+  ### Phenomenological Targets
+  - Does D₆ acting on three generations reproduce observed mass ratios?
+  - Which Standard Model group embeddings (SU(5), SO(10), Pati-Salam)
+    are compatible with D₆ symmetry breaking via flux/vev?
+  - Can anomalous U(1)_B-L from the CY cohomology suppress proton decay?
+  - Do non-perturbative corrections (E3 on dP divisors) generate μ-term
+    or neutrino Dirac mass without destabilizing LVS moduli?
+
+  ### Research Frontier
+  - Systematic classification of discrete symmetries in KS polytopes is
+    incomplete — only a handful of GL≥8 cases have been analyzed
+  - Connection between polytope automorphism group and physical flavor
+    symmetry is conjectural for h¹¹>6 cases
+  - F-theory spectral cover can break GUT → SM while preserving discrete
+    subgroup — mechanism not fully worked out for D₆ case
+  - Swampland cobordism conjecture may restrict consistent discrete symmetries
+    in quantum gravity — relevance to D₆ unknown

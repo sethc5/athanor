@@ -162,7 +162,7 @@ def status(domain: str) -> None:
                     hr = HypothesisReport.model_validate_json(hyp_path.read_text())
                     top = hr.top(1)
                     if top:
-                        best_score = f"{top[0].composite_score:.2f}"
+                        best_score = f"{top[0].final_score:.2f}"
                 except Exception:
                     pass
 
@@ -191,6 +191,7 @@ def status(domain: str) -> None:
 @click.option("--cocite",      is_flag=True, help="Add bibliographic coupling edges (requires --s2)")
 @click.option("--workers",     "-w", type=int, default=8, show_default=True,
               help="Parallel Claude workers for Stages 1+2 (Stage 3 uses max(1, workers//2) due to larger token budget)")
+@click.option("--critique",    is_flag=True, help="Run independent critic pass after Stage 3 (Stage 3.5)")
 def run(
     domain: str,
     stages: str,
@@ -201,6 +202,7 @@ def run(
     s2: bool,
     cocite: bool,
     workers: int,
+    critique: bool,
 ) -> None:
     """Run the full athanor pipeline for a domain."""
     from athanor.domains import load_domain
@@ -237,6 +239,8 @@ def run(
     gaps_path  = out["graphs"] / "candidate_gaps.json"
     report_path = out["gaps"] / "gap_report.json"
     hyp_path   = out["hyps"] / "hypothesis_report.json"
+    # Shared reference for feedback loop (approved hypotheses → next run)
+    _hyp_path_feedback = hyp_path
 
     # ── Stage 1 ──────────────────────────────────────────────────────────────
     if 1 in stage_list:
@@ -248,20 +252,59 @@ def run(
 
         # arXiv
         arxiv_client = ArxivClient(cache_dir=cfg.data_raw)
-        papers.extend(arxiv_client.fetch(
-            dom.get("arxiv_query", dom.get("s2_query", "")),
-            max_results=dom["max_papers"],
-            use_cache=not no_cache,
-        ))
+        # Support both old single-query format (arxiv_query) and new multi-query list (queries)
+        _query_list: list[str] = dom.get("queries") or []
+        if not _query_list:
+            _single = dom.get("arxiv_query", dom.get("s2_query", ""))
+            if _single:
+                _query_list = [_single]
+
+        # Approved-hypothesis feedback loop: inject approved keywords as extra queries
+        # so future runs automatically discover follow-up literature.
+        if _hyp_path_feedback.exists():
+            from athanor.hypotheses.models import HypothesisReport as _HR
+            _prior = _HR.model_validate_json(_hyp_path_feedback.read_text())
+            _approved_kw: list[str] = [
+                kw
+                for h in _prior.hypotheses
+                if h.approved is True
+                for kw in h.keywords
+            ]
+            _dedup_kw = list(dict.fromkeys(_approved_kw))  # preserve order, dedup
+            if _dedup_kw:
+                _extra_q = " ".join(_dedup_kw[:12])  # cap to 12 terms
+                if _extra_q not in _query_list:
+                    _query_list = _query_list + [_extra_q]
+                    console.print(
+                        f"[yellow]Feedback loop:[/] added query from {len([h for h in _prior.hypotheses if h.approved])} approved hypotheses"
+                    )
+
+        for _q in _query_list:
+            _fetched = arxiv_client.fetch(
+                _q,
+                max_results=dom["max_papers"],
+                use_cache=not no_cache,
+            )
+            _existing = {p.title.lower() for p in papers}
+            papers.extend(p for p in _fetched if p.title.lower() not in _existing)
 
         # Semantic Scholar (optional)
         if s2 or "semantic_scholar" in dom.get("sources", []):
             s2_client = SemanticScholarClient(cache_dir=cfg.data_raw)
-            s2_papers = s2_client.fetch(
-                dom.get("s2_query", dom.get("arxiv_query", "")),
-                max_results=dom["max_papers"],
-                use_cache=not no_cache,
-            )
+            _s2_query_list: list[str] = dom.get("queries") or []
+            if not _s2_query_list:
+                _s2_single = dom.get("s2_query", dom.get("arxiv_query", ""))
+                if _s2_single:
+                    _s2_query_list = [_s2_single]
+            s2_papers: list = []
+            for _q in _s2_query_list:
+                _s2_fetched = s2_client.fetch(
+                    _q,
+                    max_results=dom["max_papers"],
+                    use_cache=not no_cache,
+                )
+                _existing_s2 = {p.title.lower() for p in s2_papers}
+                s2_papers.extend(p for p in _s2_fetched if p.title.lower() not in _existing_s2)
             # Deduplicate by title
             existing_titles = {p.title.lower() for p in papers}
             papers.extend(p for p in s2_papers if p.title.lower() not in existing_titles)
@@ -306,10 +349,11 @@ def run(
 
         parsed = parse_papers(papers)
         builder = GraphBuilder()
+        _primary_query = (dom.get("queries") or [dom.get("arxiv_query", "")])[0]
         concept_graph = builder.build(
             parsed,
             domain=domain_name,
-            query=dom.get("arxiv_query", ""),
+            query=_primary_query,
             save_path=graph_path,
             max_workers=workers,
             domain_context=dom.get("domain_context", ""),
@@ -384,6 +428,19 @@ def run(
         deduped, _ = deduplicate_gaps(enriched)
         console.print(f"[green]→ {len(deduped)} after deduplication[/]")
 
+        # Feedback loop: load approved hypotheses from previous runs to avoid regenerating similar gaps
+        _prior_approved_statements: list[str] = []
+        if _hyp_path_feedback.exists():
+            from athanor.hypotheses.models import HypothesisReport as _HR2
+            _prior2 = _HR2.model_validate_json(_hyp_path_feedback.read_text())
+            _prior_approved_statements = [
+                h.statement for h in _prior2.hypotheses if h.approved is True
+            ]
+            if _prior_approved_statements:
+                console.print(
+                    f"[yellow]Feedback loop:[/] gap finder will avoid {len(_prior_approved_statements)} already-approved hypothesis areas"
+                )
+
         finder = GapFinder(
             domain=domain_name,
             model=dom.get("claude_model", cfg.model),
@@ -391,8 +448,9 @@ def run(
             max_gaps=dom.get("max_gaps", 15),
             max_workers=workers,
             domain_context=dom.get("domain_context", ""),
+            prior_approved=_prior_approved_statements,
         )
-        gap_report = finder.analyse(deduped, query=dom.get("arxiv_query", ""))
+        gap_report = finder.analyse(deduped, query=(dom.get("queries") or [dom.get("arxiv_query", "")])[0])
         report_path.write_text(gap_report.model_dump_json(indent=2))
         console.print(f"[green]✓ Stage 2 complete[/] — {len(gap_report.analyses)} gaps analysed, saved → {report_path}")
 
@@ -420,16 +478,100 @@ def run(
         hyp_path.write_text(hyp_report.model_dump_json(indent=2))
         console.print(f"[green]✓ Stage 3 complete[/] — {len(hyp_report.hypotheses)} hypotheses, saved → {hyp_path}")
 
+        # Stage 3.5 — optional independent critic pass
+        if critique:
+            console.rule("[bold]Stage 3.5 — Critic Pass[/]")
+            from athanor.hypotheses import HypothesisCritic
+            critic = HypothesisCritic(
+                model=dom.get("claude_model", cfg.model),
+                api_key=os.environ["ANTHROPIC_API_KEY"],
+                max_workers=_s3_workers,
+            )
+            hyp_report = critic.critique(hyp_report)
+            hyp_path.write_text(hyp_report.model_dump_json(indent=2))
+            _critiqued = sum(1 for h in hyp_report.hypotheses if h.critic_novelty is not None)
+            console.print(f"[green]✓ Critic pass complete[/] — {_critiqued} hypotheses re-scored, saved → {hyp_path}")
+
         # Quick summary
         top = hyp_report.top(3)
         if top:
             best = top[0]
             console.print(f"\n[bold green]Top hypothesis:[/] {best.statement}")
+            console.print(f"[dim]Score: {best.composite_score:.2f} gen", end="")
+            if best.critic_novelty is not None:
+                console.print(f" → {best.final_score:.2f} blended[/]")
+            else:
+                console.print("[/]")
             if best.experiment:
                 comp = "Computational ✓" if best.experiment.computational else "Wet lab required"
                 console.print(f"[dim]{comp} | Effort: {best.experiment.estimated_effort}[/]")
 
     console.print("\n[bold green]Pipeline complete.[/]")
+
+# ── critique command ─────────────────────────────────────────────────────────
+@cli.command()
+@click.option("--domain", "-d", required=True, help="Domain whose hypothesis_report.json to critique")
+@click.option("--workers", "-w", type=int, default=4, show_default=True, help="Parallel critic workers")
+def critique(domain: str, workers: int) -> None:
+    """Run an independent critic pass (Stage 3.5) on an existing hypothesis report.
+
+    Loads hypothesis_report.json, re-scores each hypothesis blindly (no original
+    scores shown to the critic), writes critic_novelty / critic_rigor / critic_impact
+    and a blended final_score back to the same file.
+
+    Use this after 'athanor run --stages 3' or as a standalone quality check.
+    """
+    from athanor.hypotheses.models import HypothesisReport as HR
+    from athanor.hypotheses.critic import HypothesisCritic
+
+    hyp_path = _out(domain)["hyps"] / "hypothesis_report.json"
+    if not hyp_path.exists():
+        console.print(f"[red]No hypothesis report for '{domain}'. Run Stage 3 first.[/]")
+        raise SystemExit(1)
+
+    report = HR.model_validate_json(hyp_path.read_text())
+    n = len(report.hypotheses)
+    if n == 0:
+        console.print("[yellow]No hypotheses to critique.[/]")
+        return
+
+    console.rule(f"[bold]Critic Pass — {domain}[/]")
+    console.print(f"Re-scoring {n} hypotheses independently (workers={workers})…")
+
+    critic = HypothesisCritic(
+        api_key=os.environ.get("ANTHROPIC_API_KEY", ""),
+        max_workers=workers,
+    )
+    report = critic.critique(report)
+    hyp_path.write_text(report.model_dump_json(indent=2))
+
+    console.print(f"\n[green]✓ Critic pass complete[/] — {n} hypotheses updated → {hyp_path}\n")
+
+    # Show delta table: generator score vs blended final score
+    from rich.table import Table
+    tbl = Table(title=f"Score delta — {domain}", show_header=True)
+    tbl.add_column("Gap", style="dim", max_width=40)
+    tbl.add_column("Gen", justify="center")
+    tbl.add_column("Crit N/R/I", justify="center")
+    tbl.add_column("Blended", justify="center", style="bold")
+    tbl.add_column("Δ", justify="center")
+    tbl.add_column("Critic note", max_width=40, style="dim")
+
+    for h in sorted(report.hypotheses, key=lambda x: x.final_score, reverse=True):
+        gen_s = h.composite_score
+        fin_s = h.final_score
+        delta = fin_s - gen_s
+        delta_str = f"[red]{delta:+.2f}[/]" if delta < -0.2 else (f"[green]{delta:+.2f}[/]" if delta > 0.2 else f"{delta:+.2f}")
+        crit_str = f"{h.critic_novelty}/{h.critic_rigor}/{h.critic_impact}" if h.critic_novelty else "—"
+        tbl.add_row(
+            f"{h.gap_concept_a} ⇔ {h.gap_concept_b}",
+            f"{gen_s:.2f}",
+            crit_str,
+            f"{fin_s:.2f}",
+            delta_str,
+            h.critic_note[:60] if h.critic_note else "",
+        )
+    console.print(tbl)
 
 # ── report command ──────────────────────────────────────────────────────────
 @cli.command()
@@ -476,7 +618,7 @@ def report(domain: str, top: int, approved_only: bool, out: str) -> None:
             all_hypotheses.append((d, h))
 
     # Sort by composite score descending
-    all_hypotheses.sort(key=lambda x: x[1].composite_score, reverse=True)
+    all_hypotheses.sort(key=lambda x: x[1].final_score, reverse=True)
     candidates = all_hypotheses[:top]
 
     multi = len(domain_list) > 1
@@ -514,7 +656,7 @@ def report(domain: str, top: int, approved_only: bool, out: str) -> None:
             row_vals.append(dom_name)
         row_vals += [
             f"{h.gap_concept_a} \u2194 {h.gap_concept_b}{label}",
-            f"{h.composite_score:.1f}",
+            f"{h.final_score:.1f}",
             str(h.novelty), str(h.rigor), str(h.impact),
             f"{risk_icon} {getattr(h, 'replication_risk', 'medium')}",
             comp,
@@ -529,7 +671,7 @@ def report(domain: str, top: int, approved_only: bool, out: str) -> None:
         domain_tag = f" *(domain: {dom_name})*" if multi else ""
         lines += [
             f"## {i}. {h.gap_concept_a} \u2194 {h.gap_concept_b}{approved_tag}{domain_tag}",
-            f"**Score:** {h.composite_score:.1f}  "
+            f"**Score:** {h.final_score:.1f}  "
             f"(N\u202f{h.novelty} \u00b7 R\u202f{h.rigor} \u00b7 I\u202f{h.impact})  |  "
             f"{comp_label}  |  Replication risk: **{getattr(h, 'replication_risk', 'medium')}**",
             "",
@@ -602,7 +744,7 @@ def search(query: str, domain: str, min_score: float, approved_only: bool, risk:
             continue
         rep = HypothesisReport.model_validate_json(report_file.read_text())
         for h in rep.ranked:
-            if h.composite_score < min_score:
+            if h.final_score < min_score:
                 continue
             if approved_only and h.approved is not True:
                 continue
@@ -631,7 +773,7 @@ def search(query: str, domain: str, min_score: float, approved_only: bool, risk:
         appr_icon = {True: " \u2705", False: " \u274c", None: ""}.get(h.approved, "")
         console.print(
             f"[dim]{dom_name}[/]  [cyan]{h.gap_concept_a} \u2194 {h.gap_concept_b}[/]{appr_icon}"
-            f"  score=[bold]{h.composite_score:.1f}[/]  {risk_icon}  compute={comp_icon}"
+            f"  score=[bold]{h.final_score:.1f}[/]  {risk_icon}  compute={comp_icon}"
         )
         console.print(f"  {h.statement[:120]}\u2026" if len(h.statement) > 120 else f"  {h.statement}")
         console.print()
@@ -653,7 +795,7 @@ def approve(domain: str, show_all: bool) -> None:
     if not candidates:
         console.print("[green]All hypotheses already reviewed. Use --all to re-review.[/]")
         return
-    candidates.sort(key=lambda h: h.composite_score, reverse=True)
+    candidates.sort(key=lambda h: h.final_score, reverse=True)
     console.print(
         f"[bold]Reviewing {len(candidates)} hypothesis(es) for [cyan]{domain}[/][/] "
         "([bold]y[/]=approve  [bold]n[/]=reject  [bold]s[/]=skip  [bold]q[/]=quit)\n"
@@ -661,7 +803,7 @@ def approve(domain: str, show_all: bool) -> None:
     approved_n = rejected_n = skipped_n = 0
     for i, hyp in enumerate(candidates, 1):
         console.rule(
-            f"[bold]#{i}/{len(candidates)}  Score {hyp.composite_score:.1f}  "
+            f"[bold]#{i}/{len(candidates)}  Score {hyp.final_score:.1f}  "
             f"N:{hyp.novelty} R:{hyp.rigor} I:{hyp.impact}[/]"
         )
         console.print(f"[cyan bold]{hyp.gap_concept_a} \u2194 {hyp.gap_concept_b}[/]")
