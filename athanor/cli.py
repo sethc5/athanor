@@ -286,6 +286,7 @@ def run(
             domain=domain_name,
             model=dom.get("claude_model", cfg.model),
             api_key=os.environ["ANTHROPIC_API_KEY"],
+            max_tokens=dom.get("max_tokens_hypothesis", 4096),
         )
         hyp_report = generator.generate(gap_report.ranked)
         hyp_path.write_text(hyp_report.model_dump_json(indent=2))

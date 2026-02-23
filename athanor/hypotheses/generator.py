@@ -128,7 +128,7 @@ class HypothesisGenerator:
         domain: str,
         model: str = cfg.model,
         api_key: str = cfg.anthropic_api_key,
-        max_tokens: int = 2048,
+        max_tokens: int = 4096,
         max_workers: int = 4,
     ) -> None:
         cfg.validate()

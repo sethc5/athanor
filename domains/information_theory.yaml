@@ -2,13 +2,20 @@
 name: information_theory
 display: "Information Theory"
 description: >
-  Mathematical theory of information transmission, compression, and storage.
-  Mature enough to verify pipeline output, open enough to have real gaps.
-  Connects to biology, physics, AI, and consciousness research.
+  Mathematical theory of information transmission, compression, storage, and
+  inference. Spans classical Shannon theory, algorithmic information theory,
+  quantum information, and modern connections to machine learning, statistical
+  physics, neuroscience, and biology.
 
 # arXiv / S2 search query
-arxiv_query: "information theory entropy channel capacity mutual information"
-s2_query: "information theory entropy mutual information coding theory"
+arxiv_query: >
+  information theory entropy channel capacity mutual information
+  rate-distortion Kolmogorov complexity Fisher information
+  coding theory data compression neural information processing
+s2_query: >
+  information theory entropy mutual information channel capacity
+  algorithmic information theory quantum information Fisher information
+  minimum description length neural coding data compression
 
 # Fetch settings
 max_papers: 20
@@ -17,27 +24,74 @@ sources:
   - semantic_scholar
 
 # Analysis settings
-max_gaps: 15
-sparse_sim_threshold: 0.45
+max_gaps: 20
+sparse_sim_threshold: 0.40
 
 # Models
 embedding_model: all-MiniLM-L6-v2
-claude_model: claude-opus-4-5
+claude_model: claude-haiku-4-5
 
 # Concept extraction hints (injected into Claude prompt)
 domain_context: >
   This is a mathematical/theoretical domain. Prefer precise technical terms
-  (e.g. "mutual information", "channel capacity", "Kolmogorov complexity")
-  over informal descriptions. Relations should use verbs from the domain
-  vocabulary: bounds, achieves, generalizes, reduces_to, quantifies.
+  over informal descriptions. Relations should use domain vocabulary:
+  bounds, achieves, generalizes, reduces_to, quantifies, approximates,
+  lower_bounds, upper_bounds, achievability, converse.
+  Flag when a result is: exact vs. asymptotic, single-letter vs. multi-letter,
+  classical vs. quantum, discrete vs. continuous, average vs. worst-case.
+  Note connections across subfields: Shannon theory ↔ statistical physics,
+  coding theory ↔ combinatorics, MDL ↔ Bayesian inference,
+  information geometry ↔ statistics, neural coding ↔ efficient coding theory.
 
-# Keywords that signal important concepts in this domain
 seed_concepts:
-  - entropy
+  # Core Shannon theory
+  - Shannon entropy
   - mutual information
   - channel capacity
   - rate-distortion theory
-  - Kolmogorov complexity
+  - source coding theorem
+  - channel coding theorem
+  - joint typicality
+  - typical sequences
+
+  # Classical bounds and quantities
+  - Kullback-Leibler divergence
   - Fisher information
+  - Cramer-Rao bound
+  - data processing inequality
+  - Fano's inequality
+  - channel polarization
+
+  # Algorithmic / descriptional complexity
+  - Kolmogorov complexity
   - minimum description length
   - algorithmic information theory
+  - Solomonoff induction
+  - universal prediction
+
+  # Quantum information
+  - von Neumann entropy
+  - quantum channel capacity
+  - quantum error correction
+  - entanglement entropy
+  - quantum mutual information
+
+  # Modern ML / statistical connections
+  - information bottleneck
+  - variational inference
+  - PAC-Bayes bounds
+  - neural network generalization
+  - compression and generalization
+
+  # Physics connections
+  - thermodynamic entropy
+  - Maxwell's demon
+  - Landauer's principle
+  - black hole information paradox
+
+  # Neuroscience / biology
+  - efficient coding hypothesis
+  - neural coding
+  - redundancy reduction
+  - population coding
+  - sensory adaptation

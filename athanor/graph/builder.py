@@ -240,8 +240,10 @@ class GraphBuilder:
         try:
             eff_size = nx.effective_size(G, weight="weight")
             for label, eff in eff_size.items():
-                if label in label_map:
-                    label_map[label].effective_size = round(float(eff), 4)
+                if label in label_map and eff is not None:
+                    val = float(eff)
+                    # NaN / None means degree-0/1 node — treat as single contact
+                    label_map[label].effective_size = round(val if val == val else 1.0, 4)
         except Exception:
             log.debug("Effective size computation failed — skipping")
 
