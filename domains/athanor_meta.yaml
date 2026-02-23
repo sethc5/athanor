@@ -1,0 +1,88 @@
+# Athanor Meta — AI-assisted scientific discovery (dogfood domain)
+# Athanor analysing itself and related systems. The gaps it finds here
+# are candidates for its own roadmap.
+name: athanor_meta
+display: "AI-Assisted Scientific Discovery"
+description: >
+  AI systems for scientific discovery: knowledge graph construction,
+  automated hypothesis generation, LLM reasoning over literature,
+  and the limits of current approaches. Running athanor on this domain
+  surfaces its own blind spots and improvement opportunities.
+
+arxiv_query: >
+  AI scientific discovery automated hypothesis generation knowledge graph
+  LLM reasoning literature review research question generation
+  bibliometric analysis semantic similarity scientific knowledge base
+s2_query: >
+  AI scientific discovery automated hypothesis generation knowledge graph
+  large language model scientific reasoning automated literature review
+  research gap identification co-citation analysis
+
+max_papers: 20
+sources:
+  - arxiv
+  - semantic_scholar
+
+max_gaps: 20
+sparse_sim_threshold: 0.38
+
+embedding_model: all-MiniLM-L6-v2
+claude_model: claude-haiku-4-5
+
+domain_context: >
+  This domain covers AI and ML systems applied to scientific research.
+  Prefer precise technical terms over marketing language.
+  Key distinctions to preserve:
+  - knowledge graph vs. embedding space vs. citation network
+  - retrieval vs. reasoning vs. generation
+  - structural gap (graph topology) vs. semantic gap (embedding distance)
+  - hypothesis (testable prediction) vs. research question vs. observation
+  Relations: extracts_from, indexes, retrieves, embeds, ranks, scores,
+  clusters, bridges, contradicts, extends, validates, refutes.
+  Flag when a result is: benchmark-only, domain-specific, human-evaluated,
+  or requires proprietary data. Note differences between closed-loop
+  (automated end-to-end) vs. human-in-the-loop systems.
+
+seed_concepts:
+  # Core pipeline concepts
+  - knowledge graph construction
+  - concept extraction
+  - relation extraction
+  - structural holes
+  - bibliometric coupling
+  - co-citation analysis
+  - semantic similarity
+  - embedding space
+  - citation network
+
+  # Hypothesis and reasoning
+  - hypothesis generation
+  - falsification criteria
+  - causal inference
+  - research gap identification
+  - scientific question formulation
+  - experiment design automation
+  - Bayesian reasoning
+
+  # LLM capabilities and limits
+  - large language model reasoning
+  - hallucination in scientific context
+  - retrieval-augmented generation
+  - in-context learning
+  - chain-of-thought reasoning
+  - LLM knowledge boundaries
+  - zero-shot generalization
+
+  # Human-AI collaboration
+  - human-in-the-loop science
+  - AI peer review
+  - automated literature review
+  - research assistant systems
+  - scientific consensus modelling
+
+  # Evaluation and benchmarking
+  - scientific discovery benchmark
+  - hypothesis novelty scoring
+  - impact prediction
+  - cross-domain transfer
+  - reproducibility

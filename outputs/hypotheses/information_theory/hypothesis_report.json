@@ -1,0 +1,382 @@
+{
+  "domain": "information_theory",
+  "query": "",
+  "n_gaps_considered": 6,
+  "hypotheses": [
+    {
+      "gap_concept_a": "Electromagnetic Fields",
+      "gap_concept_b": "Random Fields",
+      "source_question": "How can random field theory be systematically applied to characterize the information-theoretic capacity and optimal signal detection in spatially-correlated electromagnetic field environments, and what are the fundamental limits on mutual information when EM fields are modeled as structured random processes rather than memoryless channels?",
+      "statement": "We hypothesize that spatial correlation structure in electromagnetic random fields directly causes a reduction in mutual information capacity relative to memoryless channel models, and that this reduction is quantifiable through kernel-dependent bounds that depend on the correlation decay rate of the EM field's spatial covariance function.",
+      "mechanism": "EM fields modeled as structured random processes exhibit spatial correlation via their covariance kernel K(r, r'). This correlation structure constrains the effective degrees of freedom available for independent signal transmission; spatially correlated noise introduces dependencies that reduce the rank of the noise covariance matrix relative to a memoryless assumption. The mutual information I(X; Y) through a correlated Gaussian channel decreases monotonically as the correlation length scale increases, because spatial coherence in the noise reduces the number of orthogonal eigenmodes available for signal encoding.",
+      "prediction": "For a Rayleigh fading EM field with exponential spatial correlation kernel K(r, r') = σ² exp(−|r − r'|/λ_c), the information capacity will be at least 15–25% lower than the corresponding memoryless (i.i.d. noise) channel capacity when the correlation length λ_c is comparable to the antenna aperture dimension. Specifically, for a 10-element uniform linear array with half-wavelength spacing in a field with λ_c = 5λ, the gap will exceed 0.5 bits/channel use in SNR regimes 10–20 dB.",
+      "falsifiable": true,
+      "falsification_criteria": "If computed mutual information for spatially-correlated EM random field models matches (within ±5%) the memoryless channel capacity over multiple SNR regimes (5–30 dB) and correlation length scales (λ_c ∈ [0.5λ, 20λ]), the hypothesis is refuted. Alternatively, if spatial correlation structure is shown to *increase* mutual information capacity by >5% relative to memoryless models in any regime, the causal mechanism is contradicted.",
+      "minimum_effect_size": "Capacity reduction ≥ 15% relative to memoryless baseline for realistic correlation length (λ_c ~ 5–10 wavelengths); explained variance in capacity loss by correlation kernel properties R² > 0.80 across EM field models; correlation-induced bounds must be tighter (lower) than existing MIMO capacity formulas by >10% in at least one tested scenario.",
+      "novelty": 4,
+      "rigor": 5,
+      "impact": 5,
+      "experiment": {
+        "approach": "Computationally construct explicit mappings between canonical EM field models (Rayleigh, Rician, multipath) and their spatial covariance kernels; compute mutual information I(X; Y) for signals transmitted through these structured random processes using differential entropy; compare against memoryless baselines and existing MIMO capacity literature.",
+        "steps": [
+          "Step 1: Formalize three canonical EM field models as structured random fields: (a) Rayleigh fading with exponential kernel K(r,r') = σ² exp(−|r−r'|/λ_c), (b) multipath with sinc-kernel incorporating path delay spread, (c) urban scattering with Matérn-class kernels. Document covariance structure, correlation decay rates, and effective rank for each.",
+          "Step 2: For each field model, parameterize a 10-element uniform linear array (ULA) or 4×4 MIMO grid. Compute spatial covariance matrix Σ_noise by discretizing the field kernel at element separations and SNR levels (5, 10, 15, 20, 30 dB).",
+          "Step 3: Calculate mutual information I(X; Y) for a spatially-correlated Gaussian channel Y = HX + N where H is the spatial channel matrix and N ~ N(0, Σ_noise). Use the Gaussian channel formula I(X;Y) = ½ log₂ det(I + (P/M)H Σ_noise⁻¹ H†), where P is transmit power and M is number of transmit elements.",
+          "Step 4: For each EM model and correlation length λ_c ∈ {0.5λ, 1λ, 2λ, 5λ, 10λ, 20λ}, compute the capacity gap: ΔC = C_memoryless − C_correlated. Record as a function of λ_c and SNR.",
+          "Step 5: Fit bounds on capacity loss using correlation kernel properties: test whether ΔC is predictable from (1) correlation length λ_c, (2) effective rank of Σ_noise, (3) eigenvalue distribution decay rate. Compute R² for each predictor.",
+          "Step 6: Compare empirical capacities against published MIMO capacity formulas (Telatar, Rician MIMO capacity) by mapping the random field models to equivalent Rician K-factors and condition numbers. Identify discrepancies >10%.",
+          "Step 7: Validate on ray-tracing synthetic channels: generate EM field realizations using 3GPP 3D spatial channel model; extract empirical covariance matrices; recompute mutual information and compare to kernel-predicted bounds.",
+          "Step 8: (Optional validation) Compare predictions against published measured MIMO channel datasets (e.g., COST2100, Elektrobit) by fitting spatial kernels to measured covariance and testing capacity predictions."
+        ],
+        "tools": [
+          "Python/NumPy for covariance matrix construction and eigenvalue decomposition",
+          "SciPy optimize for fitting kernel parameters to measured covariance",
+          "Information-theoretic library (e.g., itlib or custom implementation) for differential entropy and mutual information computation",
+          "MATLAB Communications Toolbox or custom MIMO channel simulator for multipath and Rayleigh field generation",
+          "3GPP 3D Spatial Channel Model (SCM/3GPP 38.901) for ray-tracing validation",
+          "Published MIMO channel measurement datasets (COST2100, Elektrobit, OpenWireless) for empirical covariance fitting"
+        ],
+        "computational": true,
+        "estimated_effort": "3–4 weeks. Steps 1–6: kernel formulation, covariance computation, and capacity calculation (~2 weeks). Step 7: ray-tracing integration and empirical validation (~1 week). Step 8 (optional): dataset preprocessing and correlation fitting (~1 week).",
+        "data_requirements": "Synthetic: 3GPP 3D SCM/channel impulse response generator; custom ray-tracing simulator (OpenStreetMap-based urban geometry optional). Empirical: COST2100 measured MIMO channels or equivalent published dataset (~GB scale); antenna geometry specifications (ULA or planar array element spacing, frequency, bandwidth).",
+        "expected_positive": "Computed mutual information for exponentially-correlated Rayleigh field at λ_c = 5λ is 15–25% lower than memoryless capacity across SNR 10–20 dB. Capacity loss ΔC is predictable (R² > 0.80) from kernel correlation length and effective rank of Σ_noise. Ray-tracing and empirical dataset validations confirm bounds within ±8% of predicted capacity.",
+        "expected_negative": "Mutual information for spatially-correlated models equals memoryless baseline (±5%) across all λ_c and SNR regimes, indicating no causal effect of spatial structure on capacity. Or: spatial correlation is shown to increase capacity by >5%, contradicting the predicted mechanism. Or: capacity loss is not predictable from kernel properties (R² < 0.5), suggesting the causal link is not through spatial covariance structure.",
+        "null_hypothesis": "H₀: Mutual information capacity of signals transmitted through spatially-correlated EM random fields is equal to memoryless Gaussian channel capacity, with no statistically significant reduction attributable to spatial correlation structure. (Two-sided test: capacity difference = 0.)",
+        "statistical_test": "One-way ANOVA across correlation length values (λ_c ∈ {0.5λ, 1λ, 2λ, 5λ, 10λ, 20λ}) testing whether mean capacity differs by SNR regime; Bonferroni-corrected post-hoc t-tests for pairwise comparisons (α = 0.05 per family). Pearson correlation and linear regression of ΔC vs. kernel properties (correlation length, effective rank) to test predictability; R² threshold > 0.80 for acceptance. Power analysis: n = 100 channel realizations per (λ_c, SNR) pair to achieve power ≥ 0.90 for detecting ≥15% capacity reduction.",
+        "limitations": [
+          "Assumes Gaussian random field model; real EM fields may exhibit non-Gaussian statistics (e.g., fading amplitude distributions) not captured by kernel-based covariance alone.",
+          "Antenna element spacing and array geometry are fixed (ULA, MIMO grid); results may not generalize to arbitrary antenna topologies or wideband frequency-selective channels where spatial correlation varies with frequency.",
+          "Ray-tracing and measured channel datasets are limited to specific propagation environments (urban, indoor) and frequencies; generalization to other scenarios (rural, high-frequency mmWave) requires additional data.",
+          "Assumes stationarity and ergodicity of EM fields; non-stationary or time-varying correlation structure (e.g., mobile scattering) is not addressed.",
+          "Computation assumes discrete spatial sampling of the random field; continuous field limits and Nyquist-type constraints are not explicitly treated."
+        ],
+        "requires_followup": "Wet-lab validation: measure MIMO channel impulse responses in controlled scattering environment (anechoic chamber with tunable multipath via scatterers); fit spatial kernels to measured covariance matrices; transmit known signal ensembles and measure receiver mutual information empirically via mutual information estimation (e.g., binning or k-NN methods) to confirm computational predictions. This ~6-month effort would definitively validate the causal link between EM field spatial structure and information-theoretic capacity limits."
+      },
+      "keywords": [
+        "spatial correlation, electromagnetic random fields",
+        "mutual information capacity, fading channels",
+        "MIMO channel covariance, structured noise",
+        "random field theory, wireless communications",
+        "kernel methods, Gaussian channel capacity"
+      ],
+      "gap_similarity": 0.7124108672142029,
+      "gap_distance": 3,
+      "approved": null,
+      "composite_score": 4.65
+    },
+    {
+      "gap_concept_a": "Lossy Compression",
+      "gap_concept_b": "Rate Distortion Theory",
+      "source_question": "How can rate-distortion theory be operationalized to design practical lossy compression algorithms that provably achieve the theoretical rate-distortion bound for non-standard distortion metrics and real-world data distributions?",
+      "statement": "We hypothesize that rate-distortion Lagrangian optimization (via iterative Blahut-Arimoto or variational inference) applied to image compression with learned entropy models causes achievable (rate, distortion) pairs to move significantly closer to the theoretical RD bound compared to non-RD-optimized neural codecs, because explicit rate-distortion trade-off balancing in the loss function directly minimizes the Lagrangian dual rather than relying on ad-hoc regularization.",
+      "mechanism": "Standard neural image codecs optimize a fixed-weight sum of reconstruction loss and entropy regularization (e.g., λ × rate + distortion), which does not dynamically balance the rate-distortion trade-off across the full operational range. Rate-distortion Lagrangian optimization, by contrast, iteratively adjusts the Lagrange multiplier β to move along the convex RD frontier, forcing the algorithm to explore the achievable region more systematically. This causes the learned compressor to approach the theoretical bounds predicted by information-theoretic analysis for the data distribution and distortion metric in use.",
+      "prediction": "An RD-optimized neural compressor trained on ImageNet with MSE distortion will achieve empirical (rate, distortion) points that lie within 5% of the theoretical RD bound (computed via Blahut-Arimoto on the empirical distribution) across the operational range [0.1–2.0 bits/pixel], whereas a standard entropy-regularized baseline (e.g., Ballé et al. 2018 codec) will deviate by >15% from the bound at the same rates.",
+      "falsifiable": true,
+      "falsification_criteria": "If the RD-optimized compressor's empirical rate-distortion curve does NOT lie closer to the theoretical RD bound than the non-RD-optimized baseline by at least 5 percentage points (measured as average Euclidean distance in rate-distortion space), or if the gap between them is statistically indistinguishable (p > 0.05, paired signed-rank test on per-image deviations), the hypothesis is refuted.",
+      "minimum_effect_size": "The RD-optimized compressor must reduce mean absolute percentage deviation from the theoretical RD bound by at least 5 percentage points (e.g., from 15% to 10%) relative to the baseline, measured across ≥100 validation images and ≥5 distinct rate-points.",
+      "novelty": 4,
+      "rigor": 4,
+      "impact": 4,
+      "experiment": {
+        "approach": "Implement two neural image codecs—one explicitly optimized via rate-distortion Lagrangian (Blahut-Arimoto or continuous relaxation) and one using standard entropy regularization—and compare their empirical operating points against the theoretical RD curve derived from Blahut-Arimoto on the training distribution. Measure proximity to bounds across multiple rate-operating points.",
+        "steps": [
+          "Prepare ImageNet validation subset (10,000 images, 256×256 resolution) and compute empirical pixel value distribution.",
+          "Compute theoretical rate-distortion curve using Blahut-Arimoto algorithm on quantized empirical distribution with MSE distortion (β sweep over [0.01, 10]).",
+          "Implement RD-optimized neural compressor: use iterative Lagrangian optimization during training—train encoder-decoder with parameterized entropy model, then adjust Lagrange multiplier β after each epoch to target specific rate-points on the theoretical RD curve.",
+          "Implement baseline non-RD-optimized compressor: standard architecture (Ballé et al. 2018 or equivalent) with fixed-weight entropy regularization tuned via grid search.",
+          "Train both codecs for 100 epochs on ImageNet training set with identical architecture capacity (same bottleneck size, entropy model parameterization).",
+          "Evaluate both on validation set across 5 target rate-points (0.1, 0.5, 1.0, 1.5, 2.0 bits/pixel): measure achieved rate (via entropy model) and MSE distortion.",
+          "For each image and rate-point, compute Euclidean distance in (rate, distortion) space between empirical point and nearest point on theoretical RD curve.",
+          "Aggregate: compute mean absolute percentage deviation from RD bound for RD-optimized vs. baseline across all images and rate-points.",
+          "Perform paired signed-rank test (Wilcoxon) on per-image deviations to assess statistical significance."
+        ],
+        "tools": [
+          "CompressAI library (learned compression models)",
+          "TensorFlow or PyTorch (neural network training)",
+          "scipy.optimize (Blahut-Arimoto implementation or use existing finite-alphabet RD solver)",
+          "ImageNet validation dataset (or downsampled variant for computational tractability)",
+          "Custom Python scripts for rate-distortion curve fitting and evaluation metrics"
+        ],
+        "computational": true,
+        "estimated_effort": "3–4 weeks compute (training two codecs for 100 epochs each on 10K images, plus RD curve computation and evaluation). GPU-based training recommended (1–2 V100 GPU-months).",
+        "data_requirements": "ImageNet training set (1.2M images) for initial training, ImageNet validation set (50K images, subsample to 10K for tractability). Empirical distribution estimates require histogram binning of pixel values (standard preprocessing).",
+        "expected_positive": "RD-optimized compressor's mean deviation from theoretical RD bound is ≤10%, while baseline's deviation is ≥15%; paired signed-rank test on per-image deviations shows p < 0.05 with the RD-optimized codec consistently closer to bounds.",
+        "expected_negative": "Both codecs achieve similar mean deviations (within 2–3 percentage points, p > 0.05), or the RD-optimized compressor's deviation is not significantly smaller than the baseline, suggesting that explicit RD Lagrangian optimization does not improve proximity to theoretical bounds in practice.",
+        "null_hypothesis": "H₀: There is no statistically significant difference (p ≥ 0.05) between the mean absolute percentage deviation from the theoretical RD bound achieved by the RD-optimized compressor and the entropy-regularized baseline, or the RD-optimized codec deviates further from bounds.",
+        "statistical_test": "Paired Wilcoxon signed-rank test (two-sided) on per-image mean deviations across all rate-points, α = 0.05; secondary: effect size (Cohen's d or r) to quantify practical significance of deviation reduction.",
+        "limitations": [
+          "Theoretical RD curve is computed only on quantized empirical distribution; true RD bound for continuous Gaussian approximations may differ slightly.",
+          "Experiment limited to MSE distortion and image domain; generalization to other distortion metrics (LPIPS, SSIM) and modalities (video, audio) requires separate validation.",
+          "Architecture capacity held constant, but RD-optimized training may saturate differently; fair comparison requires equal parameter budgets and careful tuning of both baselines.",
+          "Blahut-Arimoto on high-resolution images is computationally expensive; experiment uses downsampled 256×256 images—scaling to full-resolution or higher-dimensional alphabets may alter conclusions.",
+          "Learned entropy model approximation error not isolated; very expressive entropy models in both codecs may obscure RD optimization benefits."
+        ],
+        "requires_followup": "Once computational hypothesis is confirmed: (1) extend to other distortion metrics (perceptual: LPIPS, SSIM) and verify that RD-optimized codecs track information-theoretic bounds under these metrics (requires human perceptual studies to validate ground-truth distortion); (2) validate on video compression (H.265, VVC) to assess whether RD Lagrangian scaling improves real-world compression efficiency; (3) deploy to hardware codec implementations (e.g., HEVC neural post-filtering) to measure wall-clock compression gains and bitstream format compliance constraints."
+      },
+      "keywords": [
+        "rate-distortion theory",
+        "Blahut-Arimoto algorithm",
+        "neural image compression",
+        "Lagrangian optimization",
+        "information-theoretic bounds",
+        "learned entropy models"
+      ],
+      "gap_similarity": 0.6945558786392212,
+      "gap_distance": 3,
+      "approved": null,
+      "composite_score": 4.0
+    },
+    {
+      "gap_concept_a": "Electromagnetic Fields",
+      "gap_concept_b": "Spatial Discretization",
+      "source_question": "How does the spatial discretization resolution of electromagnetic fields fundamentally limit the mutual information between a continuous wireless channel and its sampled representation, and can this limit be characterized as a formal information-theoretic bound?",
+      "statement": "We hypothesize that spatial discretization of continuous electromagnetic fields acts as a lossy information channel, and that the mutual information between the continuous field and its N-point spatial sample is bounded by I(Φ; Φ̂) ≤ (N/2) log₂(1 + SNR_eff(Δx)), where SNR_eff(Δx) decays exponentially with inter-sample spacing Δx, such that doubling spatial resolution increases mutual information by at most log₂(1 + k·e^(-α·Δx)) nats, with k and α determined by field coherence length.",
+      "mechanism": "Continuous electromagnetic fields obey Maxwell equations and exhibit spatial correlation structure characterized by a coherence length λ_c that depends on propagation geometry and frequency band. Spatial discretization at N points samples only the bandlimited subspace spanned by field basis functions with spatial frequency content up to π/Δx; finer sampling (smaller Δx) captures higher spatial frequencies and reduces aliasing in the field reconstruction, thereby increasing the mutual information between observed samples and the true continuous field. The mechanism operates through the Nyquist–Whittaker theorem: sub-Nyquist sampling (Δx > λ_c/2) causes irreversible information loss via spatial aliasing, while over-Nyquist sampling exhibits diminishing returns bounded by the intrinsic dimensionality of the field subspace.",
+      "prediction": "For a 3D propagation volume with coherence length λ_c ≈ λ/2 (λ = wavelength) and uniform sampling at spacing Δx, the mutual information I(Φ; Φ̂_N) will increase sub-linearly with N: specifically, increasing N from 64 to 512 spatial samples (doubling linear resolution) will increase mutual information by at least 3 nats but no more than 6 nats, and this gain will saturate when Δx < λ_c/3, after which doubling N increases I by <0.5 nats. Over-sampled regimes (Δx < λ_c/4) will show I(Φ; Φ̂) plateau at 90% of the theoretical maximum channel capacity within 20% of the critical sampling density.",
+      "falsifiable": true,
+      "falsification_criteria": "If doubling spatial resolution (halving Δx) from near-optimal density consistently increases mutual information by >8 nats (or >15% of measured capacity), or if mutual information continues to increase linearly with N across the full range 64 ≤ N ≤ 2048 samples without saturation, or if the coherence-length-dependent bound does not explain >85% of observed variance in I(N, Δx) across independent ray-tracing and measured channel datasets, the hypothesis is refuted.",
+      "minimum_effect_size": "Coefficient of determination R² > 0.85 between predicted I(N, Δx) and empirical mutual information computed from simulated/measured fields; exponential decay constant α estimated to within ±20% of theoretical value across three independent propagation scenarios; saturation effect (plateau of dI/dN <0.5 nats) confirmed at Δx < λ_c/3 with statistical significance p < 0.05.",
+      "novelty": 4,
+      "rigor": 5,
+      "impact": 4,
+      "experiment": {
+        "approach": "Formalize the continuous EM field as a Gaussian random field via Maxwell-equation-derived covariance kernels, compute differential entropy of the continuous field under standard constraints (1–6 GHz band, 10 m³ volume, free-space and multipath scenarios), and then compute mutual information I(Φ; Φ̂_N) as a function of sample count N and spacing Δx via KL divergence between true and reconstructed field distributions, validated empirically against ray-tracing and measured indoor/outdoor channel data across discretization densities.",
+        "steps": [
+          "Stage 1: Derive spatial covariance kernel K(r, r') for EM fields in free space and cluttered indoor environments using wave-equation Green's function solutions; compute coherence length λ_c as the decay distance over which K(r, r+Δ) drops to 1/e of maximum, parameterized by frequency band and scattering geometry.",
+          "Stage 2: Generate synthetic continuous EM field samples using Karhunen–Loève expansion truncated at spatial frequencies up to 2π/λ_c; compute differential entropy h(Φ) = (1/2)log₂(det(2πe·Σ)), where Σ is the spatial covariance matrix discretized on a 256³ fine grid.",
+          "Stage 3: Implement adaptive and uniform spatial sampling schemes: uniform spacing Δx ∈ {λ/8, λ/4, λ/2, λ, 2λ}, N ∈ {8, 27, 64, 125, 216, 512, 1000, 2048}; reconstruct continuous field from samples via radial-basis-function (RBF) or thin-plate-spline interpolation.",
+          "Stage 4: Compute mutual information via three methods: (a) KL divergence between true field distribution and reconstructed distribution, (b) Gaussian channel capacity formula I = (1/2)log₂(1 + SNR_eff), where SNR_eff estimated from reconstruction error, (c) direct entropy difference I(Φ; Φ̂) = h(Φ) - h(Φ|Φ̂), using conditional entropy from residual field error.",
+          "Stage 5: Fit exponential decay model I(N, Δx) = C₁·log(N) - C₂·e^(-α·Δx/λ_c) + C₃ to empirical data using nonlinear least-squares; extract coherence-length scaling and saturation regime.",
+          "Stage 6: Validate against three independent datasets: (a) 3GPP 3D propagation ray-tracing model for 5G at 3.5 GHz in urban canyon, (b) measured indoor MIMO channel data (publicly available COST2100 database), (c) FEKO/CST EM simulation of multipath in a 20 m³ room with furniture.",
+          "Stage 7: Compute information-capacity gap: determine minimum N and Δx required to achieve 95% of perfect-knowledge capacity C_perfect, and compare against Nyquist criterion λ/2."
+        ],
+        "tools": [
+          "Python 3.10+ with NumPy, SciPy (KL divergence, Gaussian entropy, covariance matrices)",
+          "Ray-tracing simulator: Wireless InSite or open-source Pyroomacoustics for channel simulation",
+          "3GPP 3D channel model (TR 38.901 reference implementation or equivalent)",
+          "COST2100 measured MIMO channel database (publicly available, MATLAB format)",
+          "RBF interpolation: scipy.interpolate.Rbf or thin-plate-spline library",
+          "Statistical fitting: scikit-learn, scipy.optimize.curve_fit",
+          "Visualization: Matplotlib, Mayavi for 3D field plots"
+        ],
+        "computational": true,
+        "estimated_effort": "4–6 weeks: ~1 week for covariance kernel derivation and code framework; ~2 weeks for synthetic field generation, sampling, and mutual information computation (KL divergence); ~1 week for ray-tracing validation and COST2100 dataset processing; ~1–2 weeks for model fitting, sensitivity analysis, and documentation.",
+        "data_requirements": "Public datasets: COST2100 measured MIMO channel (CSI 16×16 matrices, ~1 GB); 3GPP TR 38.901 channel model parameters (free); Pyroomacoustics synthetic channels (generated on-the-fly). Computational: ~4 TB scratch space for 256³ synthetic field grids and ray-tracing outputs; GPU optional (accelerates RBF interpolation and KL divergence for large N, ~8–16 GB GPU RAM recommended but not required).",
+        "expected_positive": "Mutual information I(Φ; Φ̂_N) measured from ray-traced and real channel data increases sub-linearly with N, saturating at I_sat ≈ 0.9·h(Φ) when Δx ≤ λ_c/3; fitted exponential decay model explains ≥85% of variance (R² ≥ 0.85) across all three independent datasets; extracted decay constant α = 2π/(measured λ_c) to within ±20% of theoretical value; doubling N from near-critical density increases I by 2–5 nats (consistent with log₂ growth).",
+        "expected_negative": "Empirical I(N) continues linear or super-linear growth beyond N=512 across multiple datasets; R² of exponential-decay model <0.70; no statistically significant saturation effect (dI/dN does not fall below 0.5 nats at high N); measured coherence length does not correlate with frequency-band wavelength or scattering geometry.",
+        "null_hypothesis": "H₀: The mutual information between continuous and discretely sampled EM fields is independent of spatial coherence length, and increases linearly with log(N) regardless of inter-sample spacing Δx. Under H₀, the capacity loss from discretization cannot be predicted a priori from field properties, and adaptive sampling offers no systematic advantage over uniform Nyquist-density sampling.",
+        "statistical_test": "Two-part test: (1) nonlinear regression with F-test to compare full exponential model I(N, Δx) = C₁·log(N) - C₂·e^(-α·Δx/λ_c) + C₃ against reduced linear model I(N) = a·log(N) + b; reject H₀ if F-statistic >3.84 (p<0.05) across ≥2/3 of datasets. (2) Spearman rank correlation ρ between Δx/λ_c and saturation regime (quantified as N where dI/dN <0.5 nats); reject H₀ if ρ > 0.70 with p < 0.05. (3) Coefficient of determination R² ≥ 0.85 for full model on held-out validation data (30% of simulated channels).",
+        "limitations": [
+          "Covariance kernel derivation assumes stationarity (valid for macroscopic scales >few wavelengths but breaks near scatterers); results may not directly apply to non-stationary near-field zones (distance <λ²/4D).",
+          "RBF reconstruction is nonlinear and may introduce bias; spline-based interpolation assumes smoothness that EM fields may not satisfy at material boundaries; sensitivity to interpolation method not fully explored here.",
+          "Synthetic fields via Karhunen–Loève expansion assume Gaussianity; non-Gaussian multipath fading (e.g., Rician with dominant LOS) may alter mutual information by 10–20%; addressed in robustness checks but not primary focus.",
+          "Ray-tracing simulations assume classical geometrical optics; diffraction and creeping waves neglected, which may underestimate field complexity at low frequencies or shadow regions.",
+          "Measured COST2100 data limited to narrowband (5 MHz bandwidth); extrapolation to wideband (>100 MHz) systems requires separate validation.",
+          "Computational complexity scales as O(N³) for direct covariance inversion; analysis limited to N ≤ 2048; full 3D megavoxel-scale volumes inaccessible without hierarchical or low-rank approximations."
+        ],
+        "requires_followup": "Wet-lab validation: Construct a multi-antenna testbed (8–16 element UPA, 2.4 GHz or 5 GHz) in a controlled indoor space with tunable scattering (movable absorbers/reflectors) to measure full-channel CSI as a function of antenna spacing; vary inter-element spacing and count while keeping total aperture fixed, measure actual mutual information from CSI sequences, and compare empirical saturation points to predictions. This would confirm that the information-theoretic bound derived from field theory maps to achievable communication performance and generalizes beyond ray-tracing simulations."
+      },
+      "keywords": [
+        "spatial discretization",
+        "electromagnetic field sampling",
+        "mutual information bound",
+        "channel capacity loss",
+        "MIMO sampling strategy",
+        "Nyquist sampling EM fields"
+      ],
+      "gap_similarity": 0.5162503123283386,
+      "gap_distance": 999,
+      "approved": null,
+      "composite_score": 4.25
+    },
+    {
+      "gap_concept_a": "Random Fields",
+      "gap_concept_b": "Spatial Discretization",
+      "source_question": "How does the information-theoretic cost of spatial discretization depend on the spectral and correlation structure of the underlying random field, and can we derive field-dependent sampling theorems that minimize information loss?",
+      "statement": "We hypothesize that the mutual information loss during spatial discretization of a random field is causally determined by the product of the field's spectral bandwidth and correlation length, such that fields with narrower spectral support and longer correlation lengths incur exponentially lower information loss per unit sample density than broadband uncorrelated fields, enabling derivation of field-dependent sampling theorems that reduce required sample counts by at least 50% compared to uniform Nyquist sampling.",
+      "mechanism": "Spatial discretization introduces aliasing and truncation that severs the mutual information channel between the continuous field F and discrete samples S. The severity of this loss depends causally on how much energy the field concentrates in low spatial frequencies (spectral bandwidth) and how far correlations extend (correlation length): fields with strong low-frequency dominance and long-range coherence can be reconstructed from sparse samples without losing mutual information, because the underlying degrees of freedom are few. Conversely, broadband fields with short correlation lengths have entropy distributed across all spatial scales, making uniform Nyquist sampling necessary to preserve I(F;S).",
+      "prediction": "For a stationary Gaussian random field with Matérn covariance (correlation length ℓ, smoothness ν), the information-theoretic sample density required to achieve 90% mutual information recovery will scale as d_s ∝ (ℓ₀/ℓ)^d · ν^α, where ℓ₀ is the domain size, d is spatial dimension, and α ∈ [0.5, 1]. Specifically: a Matérn field with ℓ = 10 m and ν = 2.5 (moderate smoothness) over a 100 m domain will require ≤ 50% of the uniform Nyquist sample density (approximately 25 samples vs 50) to preserve mutual information > 0.9 relative to the continuum limit.",
+      "falsifiable": true,
+      "falsification_criteria": "If, for synthetic Matérn random fields with fixed smoothness ν, doubling the correlation length ℓ does NOT reduce the required sample density by at least 30%, or if mutual information loss shows NO systematic dependence on correlation length (p > 0.05 in a linear regression of I(F;S) vs. ℓ), the hypothesis is refuted. Additionally, if adaptive sampling based on spectral structure achieves < 10% improvement over uniform Nyquist sampling on real electromagnetic field data (WiFi or antenna patterns), the practical utility claim is falsified.",
+      "minimum_effect_size": "Correlation length elasticity of information loss ≥ 0.5 (i.e., a 10% increase in ℓ reduces sample density by ≥ 5%); R² > 0.75 for the regression model of information loss vs. (ℓ, ν, bandwidth); adaptive sampling reduces median sample count by ≥ 50% vs. Nyquist on synthetic fields and ≥ 15% on real electromagnetic data.",
+      "novelty": 4,
+      "rigor": 5,
+      "impact": 4,
+      "experiment": {
+        "approach": "Computationally derive and validate the causal relationship between random field spectral/correlation properties and information-theoretic sampling cost via: (1) analytical derivation of mutual information I(F;S) for canonical field models; (2) numerical simulation of synthetic Gaussian random fields varying spectral bandwidth and correlation length; (3) comparison of uniform Nyquist vs. field-adapted adaptive sampling on synthetic and real electromagnetic data.",
+        "steps": [
+          "Step 1: Formalize mutual information I(F;S) between continuous field F and discrete sample set S for a Gaussian random field. Derive closed-form approximation using differential entropy: I(F;S) ≈ (1/2) log(det(K_FS · K_SS^{-1} · K_SF)) where K_ij are covariance blocks. Validate numerically for 1D and 2D Matérn fields.",
+          "Step 2: Generate synthetic Matérn random fields (d=1,2) with correlation lengths ℓ ∈ {5, 10, 20, 40} m, smoothness ν ∈ {0.5, 1.5, 2.5}, over domain L = 100 m. For each field, compute I(F;S) as a function of sample density (5, 10, 20, 50, 100 samples).",
+          "Step 3: Fit regression model log(ρ_s) = c₀ + β₁ log(ℓ) + β₂ ν + β₃ W_eff + ε, where ρ_s is the critical sample density for I(F;S) > 0.9 and W_eff is effective spectral bandwidth. Test H₀: β₁ = 0 (correlation length has no effect).",
+          "Step 4: Design adaptive sampling algorithm: (a) estimate local spectral content via Fourier analysis of coarse initial samples; (b) allocate remaining samples proportionally to regions of high spectral bandwidth and short correlation length; (c) iteratively refine until I(F;S) ≥ target threshold.",
+          "Step 5: Compare adaptive vs. uniform Nyquist sampling on 100 synthetic realizations per field class. Measure: (i) sample count ratio (adaptive / Nyquist); (ii) reconstruction RMSE; (iii) mutual information ratio I_adaptive / I_Nyquist.",
+          "Step 6: Obtain real electromagnetic field data: WiFi signal strength maps (2D spatial field) from public datasets (e.g., OpenSignal) and simulated antenna radiation patterns (3D electromagnetic field). Apply adaptive sampling algorithm and compare reconstruction fidelity (MSE, spectral correlation) vs. uniform sampling at same budget.",
+          "Step 7: Derive empirical field-dependent sampling theorem: recommend minimum sample density as function of (ℓ, ν, W_eff) for prescribed mutual information recovery level.",
+          "Step 8: Validate derived theorem prospectively: generate holdout test fields not used in regression; predict required sample density; compare prediction error to empirical ground truth."
+        ],
+        "tools": [
+          "Python/NumPy/SciPy for covariance matrix computation and Gaussian random field simulation",
+          "scikit-learn for regression and adaptive sampling prototyping",
+          "Matérn covariance library (e.g., GPy, George) for canonical field models",
+          "Open-source WiFi spatial field datasets (OpenSignal, Wigle) or simulated antenna radiation patterns (HFSS or CST simulation data)",
+          "Information-theoretic estimation: entropy_estimator (kNN-based mutual information), or analytic Gaussian entropy formulas",
+          "Visualization: matplotlib/Plotly for mutual information decay curves and spatial field reconstructions"
+        ],
+        "computational": true,
+        "estimated_effort": "4–6 weeks. Week 1: analytical derivation + code prototype for I(F;S) (covariance matrix ops). Weeks 2–3: synthetic field generation, sampling regime study (CPU: ~50–100 core-hours for grid search). Weeks 4–5: adaptive algorithm development + validation on synthetic + real data. Week 6: manuscript generation, figures, sensitivity analysis.",
+        "data_requirements": "Public WiFi field strength data (OpenSignal API or CSV exports, ~100–500 spatial field samples per location); simulated antenna radiation patterns (CST/HFSS outputs or generated via free EM solver). Synthetic: unlimited—generated on-the-fly. Total storage: < 5 GB.",
+        "expected_positive": "Mutual information loss exhibits exponential or power-law decay with correlation length (β₁ < -0.5, p < 0.001); adaptive sampling achieves ≥50% reduction in sample count vs. Nyquist on synthetic fields and ≥15% on real electromagnetic data; derived regression model explains ≥75% of variance in required sample density; field-dependent sampling theorem validates on holdout test set with prediction error < 20%.",
+        "expected_negative": "Mutual information loss shows no significant dependence on correlation length (β₁ ≈ 0, p > 0.05); adaptive sampling provides < 10% improvement over Nyquist on both synthetic and real data; regression model R² < 0.50; derived theorem fails to generalize to holdout fields (prediction error > 40%).",
+        "null_hypothesis": "H₀: The mutual information cost of spatial discretization is independent of the random field's correlation length and spectral bandwidth. Equivalently, the sample density required for fixed mutual information recovery does not vary significantly as a function of ℓ, ν, or W_eff; all field classes require approximately Nyquist-rate sampling regardless of structure.",
+        "statistical_test": "Multiple linear regression: log(ρ_s) ~ log(ℓ) + ν + W_eff. Test H₀: β₁ = β₂ = β₃ = 0 using F-test (α = 0.01). Secondary: Spearman rank correlation between correlation length and sample count ratio (α = 0.05, two-tailed). Permutation test for adaptive vs. Nyquist on real data: 1000 random label permutations to assess whether observed sample-count advantage is significant (α = 0.05).",
+        "limitations": [
+          "Analysis assumes Gaussian random fields; non-Gaussian fields (e.g., log-normal, heavy-tailed) may have different information-theoretic scaling.",
+          "Synthetic fields are stationary; real spatial phenomena often exhibit non-stationarity and anisotropy, which may alter correlation structure.",
+          "Adaptive sampling algorithm is a proof-of-concept heuristic; optimality (e.g., information-theoretic lower bound on sample density) is not proven, only empirically approached.",
+          "Real electromagnetic data (WiFi, antenna) may be limited in spatial extent and resolution; generalization to other domains (e.g., geophysical, fluid dynamics) untested.",
+          "Computational mutual information estimation (kNN, binning) has bias at finite sample sizes; analytical Gaussian formulas are exact only for jointly Gaussian F and S.",
+          "Mutual information preservation threshold (e.g., I(F;S) > 0.9) is arbitrary; different applications may require different fidelity targets."
+        ],
+        "requires_followup": "Experimental validation on real-world sensor networks or tomography systems (radar, seismic, magnetotelluric) to confirm that field-dependent sampling theorems reduce the number of physical sensors/measurements by ≥ 15–20% in practice while maintaining reconstruction fidelity. Specifically: (1) deploy adaptive sampling on an existing WiFi-based indoor localization system or mobile antenna measurement campaign and measure actual data collection cost vs. uniform grid; (2) run a controlled magnetotelluric imaging survey with adaptive electrode placement derived from the theorem and compare inversion error to standard Schlumberger array. This wet-lab validation would require 6–12 months and close-partnership with a measurement or imaging facility."
+      },
+      "keywords": [
+        "random field entropy",
+        "spatial sampling theorem",
+        "mutual information discretization",
+        "Matérn covariance",
+        "adaptive sampling",
+        "spectral bandwidth"
+      ],
+      "gap_similarity": 0.515225887298584,
+      "gap_distance": 999,
+      "approved": null,
+      "composite_score": 4.25
+    },
+    {
+      "gap_concept_a": "Relative entropy",
+      "gap_concept_b": "Entropic Points",
+      "source_question": "How do entropic points in probability distribution space constrain the geometry and accessibility of relative entropy divergences, and can this constraint structure be leveraged to characterize which divergence values are achievable between distributions with specified marginal entropy signatures?",
+      "statement": "We hypothesize that entropic points constrain relative entropy divergences through a convex geometric mechanism: the feasible set of KL divergences between distributions with fixed marginal entropy signatures forms a non-empty, compact, convex polytope in divergence space, whose vertices and edges are determined exclusively by the extremal geometry of the entropy simplex.",
+      "mechanism": "Entropic points define the boundary of the achievable entropy region in distribution space. For any pair of entropy values (h₁, h₂) on or within this boundary, the set of realizable KL divergences D_KL(P||Q) subject to H(P)=h₁ and H(Q)=h₂ is bounded by the convex hull of divergences achievable at entropy-extremal (maximum-entropy and minimal-entropy) distributions. This occurs because entropy is a linear functional on the probability simplex, and KL divergence is a convex function; their joint constraint defines a convex feasible region whose extreme points lie at entropy-extremal distributions. Non-convex divergence values are therefore provably unachievable for those entropy configurations.",
+      "prediction": "For all discrete distributions with n ∈ [3,8] outcomes and entropy constraints h₁, h₂ ∈ (0, log n), the convex polytope F(h₁, h₂) characterizing achievable KL divergences will be non-empty and have a closed-form upper bound that depends only on h₁, h₂, and n. Specifically, max D_KL(P||Q) ≤ f(h₁, h₂, n) where f is a function of entropy differences and outcome cardinality, derivable from moment polytope theory, and this bound will be tighter than existing entropy-only bounds by at least 15% in median gap cases (n=5, entropy range [0.5 log n, 0.9 log n]).",
+      "falsifiable": true,
+      "falsification_criteria": "If, for any tested pair (h₁, h₂) in the interior or boundary of the entropy simplex, the empirically computed feasible set F(h₁, h₂) (via solving min/max KL over the convex constraints {P: H(P)=h₁, P∈Δⁿ}) is non-convex, or if there exist feasible divergence values that cannot be written as a convex combination of divergences achieved at extremal entropy distributions, or if the upper bound derived from entropy-space geometry is violated by any numerically computed divergence in F(h₁, h₂), the hypothesis is refuted.",
+      "minimum_effect_size": "The convex polytope characterization holds if: (1) F(h₁, h₂) is verified to be convex (convexity test: every divergence on the line segment between any two feasible divergences is also feasible) for n=3–8 cases tested, (2) the derived upper bound on max D_KL(P||Q) is tighter than the naive bound D_KL ≤ log n by >15% (median relative improvement across entropy configurations), and (3) explained variance R² > 0.90 between predicted F bounds and empirically solved F values across 100+ entropy configuration samples.",
+      "novelty": 4,
+      "rigor": 5,
+      "impact": 4,
+      "experiment": {
+        "approach": "Computationally characterize the feasible set of relative entropy divergences for distributions constrained by fixed marginal entropies, using convex optimization to enumerate extreme points and verify convexity, then derive and test analytical bounds via moment polytope theory.",
+        "steps": [
+          "For n ∈ {3, 4, 5, 6, 7, 8}, sample 200+ pairs (h₁, h₂) uniformly from the interior and boundary of the valid entropy region (0 ≤ h₁, h₂ ≤ log n).",
+          "For each pair (h₁, h₂), solve the convex optimization problems: (a) max D_KL(P||Q) s.t. H(P)=h₁, H(Q)=h₂, P,Q∈Δⁿ; (b) min D_KL(P||Q) s.t. same constraints; (c) min/max D_KL(Q||P) to test symmetry in feasible sets.",
+          "For each (h₁, h₂), identify all extremal distributions (those at vertices of the constrained entropy polytope) and compute their divergences; verify that the convex hull of these extremal divergences matches the full feasible set F(h₁, h₂) (test convexity by sampling 50 interior points per pair and verifying all lie within the convex hull).",
+          "Derive upper bound formula max D_KL(P||Q) ≤ g(h₁, h₂, n) using: (i) duality between entropy linear functionals and moment polytopes; (ii) explicit closed-form expressions for extremal distributions (e.g., uniform, delta distributions, or two-point distributions); (iii) optimization over these candidates.",
+          "Compare derived bound g(h₁, h₂, n) against empirically maximized divergences: compute relative error = |g(h₁, h₂, n) − empirical_max| / empirical_max across all tested (h₁, h₂, n) triples.",
+          "For high-dimensional validation (n=10–20), solve the same convex optimization problems on a sparser grid (50 pairs per n) to confirm that bound tightness and convexity properties hold at larger scale.",
+          "Compute R² between predicted bounds (from formula g) and empirical maxima across all n values and entropy configurations; check that explained variance exceeds 0.90.",
+          "Test feasibility of using entropy values alone to predict achievable divergence ranges: given h₁, h₂, and n only (no explicit P, Q), predict whether a target divergence value d* is feasible; validate against empirical F(h₁, h₂) via binary classification (precision, recall, F1-score)."
+        ],
+        "tools": [
+          "CVX (MATLAB) or CVXPY (Python) for convex optimization",
+          "SciPy.optimize (scipy.optimize.minimize with entropy/KL constraints)",
+          "scipy.stats for entropy computation",
+          "Qhull or scipy.spatial.ConvexHull for extremal point enumeration and convex hull verification",
+          "SymPy for symbolic derivation of bound formulas",
+          "Pandas, NumPy for sampling and aggregation; Matplotlib/Seaborn for visualization of feasible sets",
+          "Custom scripts for moment polytope duality calculations"
+        ],
+        "computational": true,
+        "estimated_effort": "3–4 weeks compute: ~1 week for initial convex optimization sweeps (n=3–8, 200 pairs each, ~10–50 solves per pair), 1 week for extremal point identification and convexity verification, 1 week for bound derivation and formula fitting, 1 week for high-dimensional validation and cross-validation; total ~500–1000 CPU-hours.",
+        "data_requirements": "No external datasets required; all computations are on synthetic probability distributions generated within the entropy-constrained simplex. Required: (1) ability to sample from uniform entropy regions (algorithmic), (2) access to standard numerical optimization solvers (open-source), (3) computational resources (~100 GB RAM sufficient, CPUs for parallelization).",
+        "expected_positive": "Convex polytope F(h₁, h₂) is empirically verified for n=3–8 (convexity test passes for 100% of tested pairs); derived bound formula g(h₁, h₂, n) achieves relative error <15% and R²>0.90; high-dimensional cases (n=10–20) show consistent convexity and bound tightness; entropy-only prediction of divergence feasibility achieves F1-score >0.85.",
+        "expected_negative": "Any of: (a) empirical F(h₁, h₂) is non-convex for >5% of tested pairs; (b) derived bound is violated (empirical divergence exceeds bound) for any case; (c) convex hull of extremal divergences does not match full feasible set F; (d) R² <0.80 or relative error >20%; (e) convexity fails at high dimensions (n≥10); (f) entropy-only prediction F1-score <0.70.",
+        "null_hypothesis": "H₀: The feasible set of relative entropy divergences for distributions constrained by fixed marginal entropies is not structured by the convex geometry of entropic points. Equivalently, (a) F(h₁, h₂) is generically non-convex or empty for interior entropy pairs, (b) no closed-form bound on max D_KL(P||Q) exists as a function of h₁, h₂, n alone, or (c) entropy-extremal distributions do not determine the boundary of F(h₁, h₂).",
+        "statistical_test": "Two-part test: (1) Convexity: for each (h₁, h₂, n), test whether F is convex via feasibility check of all interpolated divergence values (binomial test: if >95% of sampled interior points satisfy convexity constraint, reject H₀ at α=0.05). (2) Bound tightness: linear regression of empirical max D_KL against predicted bound g, testing R²>0.90 via F-test (F-statistic = (R²/(1−R²)) × (N−2), α=0.05 with N=total samples across all n,h₁,h₂). (3) Entropy-only prediction: binary classification metrics (precision, recall, F1) at threshold α=0.05 significance.",
+        "limitations": [
+          "Computational complexity scales exponentially with n; validation limited to n≤20 due to polytope complexity; real-world applications (n>50) require approximation heuristics not yet developed.",
+          "Convex optimization solvers have numerical precision limits (~1e-6 relative error); tightness bounds may be artifacts of solver tolerance rather than true geometric properties.",
+          "Moment polytope duality applies to specific functional forms (polynomial moments); extension to other entropy definitions (Rényi, Tsallis) requires separate derivation.",
+          "Feasible set characterization assumes discrete, finite-support distributions; continuous distributions require measure-theoretic extension not addressed here.",
+          "No guarantee that analytical bound formula g remains tight beyond tested range of n or entropy values."
+        ],
+        "requires_followup": "None immediately required for confirmation; this is a pure computational hypothesis. However, a follow-up wet-lab / information-theoretic application would be: (1) test whether entropy-geometry-based divergence bounds improve performance in channel capacity estimation under entropy-constrained signaling (compare against standard rate-distortion algorithms), (2) apply bounds to privacy-amplification protocols to derive tighter privacy guarantees from entropy observations alone, (3) embed the convex polytope characterization into optimization solvers for inverse problems (e.g., inferring message distributions from entropy feedback in communication systems)."
+      },
+      "keywords": [
+        "relative entropy geometry",
+        "entropic points constraint manifold",
+        "convex polytope divergence feasible set",
+        "entropy simplex extremal distributions",
+        "KL divergence bounds entropy constraints"
+      ],
+      "gap_similarity": 0.42697155475616455,
+      "gap_distance": 8,
+      "approved": null,
+      "composite_score": 4.25
+    },
+    {
+      "gap_concept_a": "Electromagnetic Fields",
+      "gap_concept_b": "Continuous Transceivers",
+      "source_question": "How does the spatial distribution and continuity of electromagnetic fields mechanistically determine the information-theoretic capacity and error bounds of continuous-region transceiver systems, and can this relationship be formalized to predict performance limits from field geometry alone?",
+      "statement": "We hypothesize that the Shannon capacity of a continuous-region transceiver system is causally determined by the topology and boundary geometry of the electromagnetic field, specifically through the rank and conditioning of the Green's function operator over the transceiver domains, such that field geometry alone predicts capacity within ±15% of the true value independent of frequency-dependent material parameters.",
+      "mechanism": "Continuous transceiver regions couple to electromagnetic fields via boundary and interior conductivity profiles. The Green's function G(r,r') encodes how field sources at position r' influence the receiver at r. For two distinct transmitted symbols, the mutual information between received field distributions depends on the Kullback–Leibler divergence of their Green's function images—a quantity determined purely by the geometric eigenmodes of the domains and their separation. Field geometry (boundary curvature, transceiver separation, region compactness) determines the spectral decay of G's singular values; faster decay reduces the effective degrees of freedom and lowers capacity. Thus, geometry causally constrains capacity through the dimension and conditioning of the Green's operator.",
+      "prediction": "For a fixed transmitted power budget and frequency, the Shannon capacity computed from the spectral properties of the Green's function operator over two continuous transceiver regions will predict the numerically simulated capacity (via FDTD) with a mean absolute percentage error ≤15%, across at least 20 distinct geometries (varying aspect ratio, boundary smoothness, and inter-region distance by ±50% from baseline).",
+      "falsifiable": true,
+      "falsification_criteria": "If the geometry-based capacity bound (derived from Green's function eigenspectrum) predicts the FDTD-simulated capacity with mean absolute percentage error >25% across the test suite, or if two geometries with identical boundary topology but different interior conductivity profiles yield capacity predictions differing by >20% when conductivity does not appear in the geometric theory, the hypothesis is refuted.",
+      "minimum_effect_size": "Mean absolute percentage error (MAPE) ≤15% on capacity prediction; Pearson correlation r > 0.85 between geometry-derived bounds and FDTD capacity across ≥20 test cases; explained variance (R²) > 0.72.",
+      "novelty": 4,
+      "rigor": 5,
+      "impact": 4,
+      "experiment": {
+        "approach": "Build a computational pipeline that (1) defines continuous transceiver regions using parametric boundary geometry, (2) computes the Green's function for the electromagnetic medium analytically (or via boundary element method), (3) derives capacity bounds from Green's function spectral properties using mutual information theory, and (4) validates predictions against high-fidelity FDTD simulations and published experimental antenna array measurements.",
+        "steps": [
+          "Define a parameterized family of 2D/3D transceiver geometries: cylindrical, spherical, ellipsoidal, and irregular shapes; vary aspect ratio (0.3–3), boundary smoothness (smooth vs. sharp corners), inter-region separation (0.5λ–5λ), and conductivity profiles.",
+          "For each geometry, compute the Green's function G(r,r') for the electromagnetic medium (free space or lossy dielectric) using analytic solutions (sphere, cylinder) or boundary element method (BEM) for irregular shapes.",
+          "Extract the singular value decomposition (SVD) of G restricted to source (transmitter) and observation (receiver) regions; compute the cumulative spectral decay and condition number κ(G).",
+          "Derive information-theoretic capacity bounds using the mutual information I(Y;X) = (1/2)log₂(1 + λ_max(GG†)) for each transmitted symbol pair, lower-bounded by minimum KL-divergence across all symbol pairs (2-PAM, QPSK, 16-QAM alphabets).",
+          "Implement FDTD solver (e.g., Meep, COMSOL, or Remcom XFdtd) for the same geometries; simulate time-domain electromagnetic propagation for multiple transmitted symbols with fixed transmit power; measure received signal statistics and numerically estimate Shannon capacity using mutual information estimators (plugin, bias-corrected, or k-NN based).",
+          "Compare capacity predictions from step 4 (geometry-derived) vs. step 5 (FDTD-derived) on each geometry; compute mean absolute percentage error (MAPE), Pearson r, and R².",
+          "Perform sensitivity analysis: vary conductivity, frequency (100 MHz – 10 GHz), noise floor (−100 to −40 dBm), and verify that geometry-derived bounds remain predictive independent of these parameters.",
+          "Cross-validate against published experimental data from phased-array antennas (MIMO arrays) with known geometry and measured channel capacity (e.g., IEEE 802.11ac/ax testbeds, or published indoor MIMO measurements).",
+          "Test whether optimal geometries (maximizing capacity for fixed volume) obey predictable principles (e.g., compactness via isoperimetric inequality, symmetry axes) by varying geometry systematically and identifying the Pareto frontier of capacity vs. size."
+        ],
+        "tools": [
+          "Meep (FDTD electromagnetic simulator, open-source)",
+          "Gmsh + Elmer (BEM and FEM for Green's function computation)",
+          "SciPy (SVD, eigendecomposition, mutual information estimation)",
+          "COMSOL Multiphysics or Remcom XFdtd (industrial-grade FDTD, if higher fidelity needed)",
+          "Published MIMO channel measurement datasets (e.g., COST 2100, IEEE 802.11ac indoor channels, or Saleh-Valenzuela ray-tracing models)",
+          "Python + NumPy/Matplotlib for pipeline integration and visualization"
+        ],
+        "computational": true,
+        "estimated_effort": "8–12 weeks compute: 2 weeks geometry parameterization + BEM Green's function computation; 3 weeks FDTD simulations for 20+ geometries (parallelized across frequency/symbol alphabets); 2 weeks capacity estimation and statistical validation; 2 weeks sensitivity analysis and cross-validation; 1 week optimization of geometry for maximum capacity.",
+        "data_requirements": "Published MIMO channel measurements (freely available from IEEE, COST databases, or Saleh-Valenzuela models); computational cluster or cloud GPU access for FDTD (≈1000–5000 core-hours); no proprietary data required.",
+        "expected_positive": "Geometry-derived capacity bounds predict FDTD-simulated capacity with MAPE ≤15%, Pearson r > 0.85, and R² > 0.72 across all 20+ test geometries; spectral decay rate of Green's function correlates (r > 0.80) with capacity loss as geometry becomes elongated or boundaries become rough; optimal transceiver geometry follows isoperimetric principles (compactness maximizes capacity per unit volume).",
+        "expected_negative": "MAPE > 25% or R² < 0.60 across test geometries; geometry-derived bounds fail to track FDTD capacity when conductivity or frequency varies significantly (sensitivity >30% unexplained); optimal geometry does not follow compactness or symmetry principles, indicating geometry alone is insufficient.",
+        "null_hypothesis": "H₀: The Shannon capacity of a continuous-region transceiver system is independent of transceiver boundary geometry; capacity is determined solely by frequency-dependent material parameters (permittivity, conductivity, loss) and transmitted power, not by shape or topology. Equivalently, the Green's function spectral properties over geometric domains do not correlate with channel capacity.",
+        "statistical_test": "Pearson correlation test (two-sided, α=0.05, n=20 geometries) for r > 0.85; ordinary least squares regression of FDTD capacity vs. geometric predictions, testing H₀: slope ≠ 1 (indicating systematic bias); Bland–Altman analysis for agreement; power set to 0.80 for detecting a 15% MAPE difference from null.",
+        "limitations": [
+          "Computational FDTD is inherently approximate (finite grid, numerical dispersion, PML truncation); results are subject to discretization error and should be validated against higher-fidelity solvers or experiment.",
+          "2D simulations may not capture all 3D field phenomena (e.g., out-of-plane coupling, leaky modes); 3D FDTD becomes computationally expensive (101–102× more cost).",
+          "Model assumes linear, time-invariant electromagnetic media; nonlinear saturation, time-varying multipath, or Doppler effects are not captured.",
+          "Cross-validation with real antenna arrays is limited to published datasets; direct control of geometry is not possible, reducing validation rigor.",
+          "Assumes continuous transceiver regions are stationary and perfectly realized; practical antenna fabrication tolerances and dynamic deformation are not modeled.",
+          "Capacity bounds derived from mutual information of received field distributions assume Gaussian input symbols and ideal receiver; practical modulation schemes and imperfect decoding are not considered."
+        ],
+        "requires_followup": "To fully confirm the hypothesis empirically, a wet-lab experiment would measure the channel capacity of custom-fabricated antenna arrays with controlled geometry (cylindrical, spherical, and irregular shapes of known dimensions) in an anechoic chamber across multiple frequencies (1–10 GHz). This would validate that theoretical predictions translate to real physical systems. Intermediate proxy: simulate realistic antenna impedance (S-parameters, radiation patterns from HFSS) within FDTD and re-validate capacity predictions; this closes the gap between idealized continuous regions and practical discretized antennas without requiring hardware."
+      },
+      "keywords": [
+        "electromagnetic field topology",
+        "Shannon capacity",
+        "Green's function",
+        "transceiver geometry",
+        "continuous-region communication",
+        "information-theoretic bounds"
+      ],
+      "gap_similarity": 0.4273920953273773,
+      "gap_distance": 4,
+      "approved": null,
+      "composite_score": 4.25
+    }
+  ]
+}

@@ -170,3 +170,54 @@ class SemanticScholarClient:
     def _load_cache(self, path: Path) -> List[Paper]:
         data = json.loads(path.read_text(encoding="utf-8"))
         return [Paper.from_dict(d) for d in data]
+
+    # ── co-citation helpers ───────────────────────────────────────────────────
+
+    def fetch_references_batch(
+        self,
+        s2_paper_ids: List[str],
+        use_cache: bool = True,
+    ) -> dict[str, list[str]]:
+        """Return ``{paper_id: [cited_paper_id, …]}`` for each S2 paper ID.
+
+        Results are persisted in a single JSON cache file so subsequent runs
+        only re-fetch IDs that are not already cached.
+        """
+        cache_path = self._cache_dir / "_references_batch.json"
+        cached: dict[str, list[str]] = (
+            json.loads(cache_path.read_text()) if (use_cache and cache_path.exists()) else {}
+        )
+
+        to_fetch = [pid for pid in s2_paper_ids if pid not in cached]
+        if to_fetch:
+            log.info("Fetching references for %d papers from S2…", len(to_fetch))
+        for pid in to_fetch:
+            try:
+                resp = self._session.get(
+                    f"{_BASE}/paper/{pid}/references",
+                    params={"fields": "paperId", "limit": 100},
+                    timeout=20,
+                )
+                if resp.status_code == 200:
+                    data = resp.json().get("data", [])
+                    cached[pid] = [
+                        r["citedPaper"]["paperId"]
+                        for r in data
+                        if r.get("citedPaper") and r["citedPaper"].get("paperId")
+                    ]
+                elif resp.status_code == 429:
+                    log.warning("S2 rate-limited — sleeping 30 s")
+                    time.sleep(30)
+                    cached[pid] = []
+                else:
+                    log.debug("S2 references %s → HTTP %s", pid, resp.status_code)
+                    cached[pid] = []
+            except Exception as exc:
+                log.debug("S2 reference fetch failed for %s: %s", pid, exc)
+                cached[pid] = []
+            time.sleep(0.15)
+
+        if to_fetch:
+            cache_path.write_text(json.dumps(cached, indent=2))
+
+        return {pid: cached.get(pid, []) for pid in s2_paper_ids}

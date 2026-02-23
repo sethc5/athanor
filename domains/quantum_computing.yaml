@@ -1,0 +1,90 @@
+# Quantum Computing — NISQ era through fault-tolerant architectures
+name: quantum_computing
+display: "Quantum Computing"
+description: >
+  Quantum computation spanning near-term NISQ devices, quantum error correction,
+  fault-tolerant architectures, and quantum algorithms. Active intersection with
+  information theory, condensed matter, and cryptography. Real gaps exist between
+  theoretical thresholds and engineering realities.
+
+arxiv_query: >
+  quantum computing error correction fault tolerance NISQ variational quantum
+  algorithms quantum advantage surface code qubit coherence quantum gates
+s2_query: >
+  quantum computing quantum error correction fault tolerant quantum computation
+  variational quantum eigensolver QAOA quantum advantage qubit noise
+  surface code threshold theorem
+
+max_papers: 20
+sources:
+  - arxiv
+  - semantic_scholar
+
+max_gaps: 20
+sparse_sim_threshold: 0.40
+
+embedding_model: all-MiniLM-L6-v2
+claude_model: claude-haiku-4-5
+
+domain_context: >
+  This domain spans theoretical and experimental quantum computing.
+  Key distinctions:
+  - NISQ (noisy intermediate-scale quantum) vs. fault-tolerant era
+  - Physical qubit vs. logical qubit
+  - Gate-based vs. measurement-based vs. adiabatic computation
+  - Classical simulation complexity vs. actual quantum advantage
+
+  Relations: encodes, corrects, decomposes, approximates, achieves,
+  outperforms, bounds_fidelity_of, transpiles_to, compiles_to,
+  saturates_threshold, fault-tolerantly_implements.
+
+  Flag when: result is hardware-specific (superconducting/ion-trap/photonic),
+  requires classical pre/post-processing, is asymptotic vs. constant-factor,
+  or assumes idealized noise model.
+
+seed_concepts:
+  # Error correction
+  - quantum error correction
+  - surface code
+  - stabilizer codes
+  - fault tolerance threshold
+  - logical qubit
+  - syndrome measurement
+  - magic state distillation
+  - concatenated codes
+
+  # NISQ algorithms
+  - variational quantum eigensolver
+  - QAOA
+  - quantum approximate optimization
+  - quantum circuit ansatz
+  - barren plateaus
+  - noise mitigation
+  - zero-noise extrapolation
+
+  # Quantum information
+  - quantum entanglement
+  - quantum channel capacity
+  - quantum mutual information
+  - von Neumann entropy
+  - quantum advantage
+  - quantum supremacy
+  - quantum volume
+
+  # Hardware
+  - superconducting qubit
+  - ion trap qubit
+  - photonic quantum computing
+  - qubit coherence time
+  - gate fidelity
+  - cross-talk
+  - decoherence
+
+  # Algorithms
+  - Shor's algorithm
+  - Grover's algorithm
+  - quantum phase estimation
+  - quantum simulation
+  - quantum machine learning
+  - HHL algorithm
+  - quantum walk

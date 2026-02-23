@@ -1,0 +1,44 @@
+[
+  {
+    "concept_a": "Electromagnetic Fields",
+    "concept_b": "Random Fields",
+    "similarity": 0.7124108672142029,
+    "graph_distance": 3,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Lossy Compression",
+    "concept_b": "Rate Distortion Theory",
+    "similarity": 0.6945558786392212,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2498
+  },
+  {
+    "concept_a": "Electromagnetic Fields",
+    "concept_b": "Spatial Discretization",
+    "similarity": 0.5162503123283386,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Random Fields",
+    "concept_b": "Spatial Discretization",
+    "similarity": 0.515225887298584,
+    "graph_distance": 999,
+    "structural_hole_score": 0.25
+  },
+  {
+    "concept_a": "Electromagnetic Fields",
+    "concept_b": "Continuous Transceivers",
+    "similarity": 0.4273920953273773,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "Relative entropy",
+    "concept_b": "Entropic Points",
+    "similarity": 0.42697155475616455,
+    "graph_distance": 8,
+    "structural_hole_score": 0.2491
+  }
+]

@@ -6,7 +6,9 @@ Usage:
     athanor run --domain longevity_biology --max-papers 20 --stages 1,2,3
     athanor run --domain information_theory --stages 1      # Stage 1 only
     athanor list-domains
-    athanor status                                           # show outputs for a domain
+    athanor status --domain longevity_biology
+    athanor approve --domain longevity_biology              # review hypotheses
+    athanor cross-domain --domain-a longevity_biology --domain-b information_theory
 
 Pipeline stages:
     1 = Literature mapper  (arXiv fetch → concept graph)
@@ -38,10 +40,10 @@ log = logging.getLogger("athanor.cli")
 # ── helpers ──────────────────────────────────────────────────────────────────
 
 def _out(domain: str) -> dict:
-    """Return output path dict for a domain."""
+    """Return output path dict for a domain (all paths are domain-scoped)."""
     root = _root / "outputs"
     return {
-        "graphs": root / "graphs",
+        "graphs": root / "graphs" / domain,
         "gaps":   root / "gaps" / domain,
         "hyps":   root / "hypotheses" / domain,
     }
@@ -106,6 +108,7 @@ def status(domain: str) -> None:
 @click.option("--no-cache",    is_flag=True, help="Ignore all cached outputs and re-fetch/re-extract")
 @click.option("--pdf",         is_flag=True, help="Download full PDF text (Stage 1 only)")
 @click.option("--s2",          is_flag=True, help="Also fetch from Semantic Scholar")
+@click.option("--cocite",      is_flag=True, help="Add bibliographic coupling edges (requires --s2)")
 def run(
     domain: str,
     stages: str,
@@ -114,6 +117,7 @@ def run(
     no_cache: bool,
     pdf: bool,
     s2: bool,
+    cocite: bool,
 ) -> None:
     """Run the full athanor pipeline for a domain."""
     from athanor.domains import load_domain
@@ -139,7 +143,7 @@ def run(
     console.print(Panel(
         f"[bold cyan]{dom['display']}[/]\n"
         f"Stages: {stage_list} | Papers: {dom['max_papers']} | "
-        f"Gaps: {dom.get('max_gaps',15)} | PDF: {pdf} | S2: {s2}",
+        f"Gaps: {dom.get('max_gaps',15)} | PDF: {pdf} | S2: {s2} | co-cite: {cocite}",
         title="Athanor Pipeline",
         border_style="green",
     ))
@@ -178,6 +182,23 @@ def run(
             papers.extend(p for p in s2_papers if p.title.lower() not in existing_titles)
 
         console.print(f"[green]✓ Fetched {len(papers)} papers total[/]")
+
+        # Bibliographic coupling (optional co-citation seeding)
+        if cocite and s2:
+            from athanor.ingest.cocitation import compute_biblio_coupling
+            console.print("[yellow]Fetching reference lists for bibliographic coupling…[/]")
+            s2_client_cc = SemanticScholarClient(cache_dir=cfg.data_raw)
+            s2_ids = [
+                p.url.rstrip("/").split("/")[-1]
+                for p in papers
+                if "semanticscholar.org/paper/" in p.url
+            ]
+            if s2_ids:
+                ref_map = s2_client_cc.fetch_references_batch(s2_ids)
+                coupling = compute_biblio_coupling(ref_map)
+                console.print(f"[green]✓ Bibliographic coupling: {len(coupling)} coupled pairs[/]")
+            else:
+                console.print("[dim]No Semantic Scholar IDs in fetched papers — skipping co-citation[/]")
 
         # PDF enrichment
         if pdf:
@@ -302,6 +323,164 @@ def run(
                 console.print(f"[dim]{comp} | Effort: {best.experiment.estimated_effort}[/]")
 
     console.print("\n[bold green]Pipeline complete.[/]")
+
+# ── approve command ──────────────────────────────────────────────────────────
+@cli.command()
+@click.option("--domain", "-d", required=True, help="Domain name")
+@click.option("--all", "show_all", is_flag=True, help="Re-review already-reviewed hypotheses")
+def approve(domain: str, show_all: bool) -> None:
+    """Interactively approve or reject hypotheses for a domain."""
+    from athanor.hypotheses.models import HypothesisReport
+    hyp_path = _out(domain)["hyps"] / "hypothesis_report.json"
+    if not hyp_path.exists():
+        console.print(f"[red]No hypothesis report found for '{domain}'. Run Stage 3 first.[/]")
+        raise SystemExit(1)
+    report = HypothesisReport.model_validate_json(hyp_path.read_text())
+    candidates = list(report.hypotheses if show_all else report.pending_review)
+    if not candidates:
+        console.print("[green]All hypotheses already reviewed. Use --all to re-review.[/]")
+        return
+    candidates.sort(key=lambda h: h.composite_score, reverse=True)
+    console.print(
+        f"[bold]Reviewing {len(candidates)} hypothesis(es) for [cyan]{domain}[/][/] "
+        "([bold]y[/]=approve  [bold]n[/]=reject  [bold]s[/]=skip  [bold]q[/]=quit)\n"
+    )
+    approved_n = rejected_n = skipped_n = 0
+    for i, hyp in enumerate(candidates, 1):
+        console.rule(
+            f"[bold]#{i}/{len(candidates)}  Score {hyp.composite_score:.1f}  "
+            f"N:{hyp.novelty} R:{hyp.rigor} I:{hyp.impact}[/]"
+        )
+        console.print(f"[cyan bold]{hyp.gap_concept_a} \u2194 {hyp.gap_concept_b}[/]")
+        console.print(f"\n[bold]Hypothesis:[/] {hyp.statement}\n")
+        console.print(f"[bold]Mechanism:[/]  {hyp.mechanism}\n")
+        console.print(f"[bold]Falsify if:[/] {hyp.falsification_criteria}\n")
+        if hyp.experiment:
+            tag = "Computational \u2713" if hyp.experiment.computational else "Wet-lab"
+            console.print(f"[dim]{tag} | Effort: {hyp.experiment.estimated_effort}[/]\n")
+        choice = click.prompt(
+            "  Decision", default="s",
+            type=click.Choice(["y", "n", "s", "q"], case_sensitive=False),
+        )
+        if choice == "q":
+            break
+        elif choice == "y":
+            hyp.approved = True
+            approved_n += 1
+        elif choice == "n":
+            hyp.approved = False
+            rejected_n += 1
+        else:
+            skipped_n += 1
+    hyp_path.write_text(report.model_dump_json(indent=2))
+    console.print(
+        f"\n[green]Saved.[/] Approved: {approved_n}  Rejected: {rejected_n}  Skipped: {skipped_n}"
+    )
+
+
+# ── cross-domain command ──────────────────────────────────────────────────────
+@cli.command("cross-domain")
+@click.option("--domain-a", "-a", required=True, help="First domain (Stage 1 must be complete)")
+@click.option("--domain-b", "-b", required=True, help="Second domain (Stage 1 must be complete)")
+@click.option("--top", "-n", default=10, show_default=True, help="Max bridges to analyse")
+@click.option("--threshold", default=0.45, show_default=True, help="Min cross-domain cosine similarity")
+def cross_domain_cmd(domain_a: str, domain_b: str, top: int, threshold: float) -> None:
+    """Find structural gaps BETWEEN two domains \u2014 cross-pollination opportunities."""
+    import numpy as np
+    from sklearn.metrics.pairwise import cosine_similarity
+    from athanor.domains import load_domain
+    from athanor.graph.models import ConceptGraph
+    from athanor.embed import Embedder
+    from athanor.gaps import GapFinder
+    from athanor.gaps.models import CandidateGap
+
+    dom_a = load_domain(domain_a)
+    dom_b = load_domain(domain_b)
+    name_a, name_b = dom_a["name"], dom_b["name"]
+    cross_name = f"{name_a}__{name_b}"
+
+    graph_a = _out(name_a)["graphs"] / "concept_graph.json"
+    graph_b = _out(name_b)["graphs"] / "concept_graph.json"
+    for p, d in [(graph_a, name_a), (graph_b, name_b)]:
+        if not p.exists():
+            console.print(f"[red]No concept graph for '{d}' \u2014 run Stage 1 first.[/]")
+            raise SystemExit(1)
+
+    cg_a = ConceptGraph.model_validate_json(graph_a.read_text())
+    cg_b = ConceptGraph.model_validate_json(graph_b.read_text())
+    console.print(
+        f"[green]Loaded:[/] {name_a} ({len(cg_a.concepts)} concepts)  +  "
+        f"{name_b} ({len(cg_b.concepts)} concepts)"
+    )
+
+    # Embed all concepts (no centering — preserve inter-domain distances)
+    embedder = Embedder()
+    texts_a = [f"{c.label}. {c.description}" for c in cg_a.concepts]
+    texts_b = [f"{c.label}. {c.description}" for c in cg_b.concepts]
+    embs_a = embedder.embed(texts_a, center=False)
+    embs_b = embedder.embed(texts_b, center=False)
+
+    sim = cosine_similarity(embs_a, embs_b)  # shape (|A|, |B|)
+
+    bridges: list[tuple[float, object, object]] = []
+    for i, ca in enumerate(cg_a.concepts):
+        for j, cb in enumerate(cg_b.concepts):
+            s = float(sim[i, j])
+            if s >= threshold:
+                bridges.append((s, ca, cb))
+    bridges.sort(key=lambda x: x[0], reverse=True)
+    bridges = bridges[: top * 4]  # oversample
+    console.print(f"Found {len(bridges)} cross-domain bridges (threshold={threshold})")
+
+    if not bridges:
+        console.print("[yellow]No bridges found. Try lowering --threshold.[/]")
+        return
+
+    candidates = [
+        CandidateGap(
+            concept_a=ca.label,
+            concept_b=cb.label,
+            similarity=s,
+            graph_distance=999,
+            structural_hole_score=0.5,
+            description_a=ca.description,
+            description_b=cb.description,
+            papers_a=list(ca.source_papers[:4]),
+            papers_b=list(cb.source_papers[:4]),
+        )
+        for s, ca, cb in bridges
+    ]
+
+    combined_context = (
+        f"Cross-domain bridge between:\n"
+        f"DOMAIN A ({name_a}): {dom_a.get('description', '')}\n"
+        f"DOMAIN B ({name_b}): {dom_b.get('description', '')}\n"
+        f"Focus on mechanisms that could translate concepts or methods between these fields."
+    )
+    combined_display = f"{dom_a['display']} \u2194 {dom_b['display']}"
+
+    finder = GapFinder(
+        domain=combined_display,
+        model=dom_a.get("claude_model", cfg.model),
+        api_key=os.environ["ANTHROPIC_API_KEY"],
+        max_gaps=top,
+    )
+    gap_report = finder.analyse(candidates[:top], query=combined_context)
+
+    out_path = _root / "outputs" / "gaps" / cross_name
+    out_path.mkdir(parents=True, exist_ok=True)
+    report_path = out_path / "gap_report.json"
+    report_path.write_text(gap_report.model_dump_json(indent=2))
+    console.print(
+        f"[green]\u2713 Cross-domain analysis complete[/] \u2014 "
+        f"{len(gap_report.analyses)} bridges analysed \u2192 {report_path}"
+    )
+    for a in gap_report.ranked[:5]:
+        console.print(
+            f"  \u2022 [cyan]{a.concept_a}[/] ({name_a}) \u2194 [cyan]{a.concept_b}[/] ({name_b}): "
+            f"{a.research_question[:100]}\u2026"
+        )
+
 
 if __name__ == '__main__':
     cli()

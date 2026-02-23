@@ -1,0 +1,97 @@
+# Synthetic Biology — gene circuits, CRISPR, metabolic engineering
+name: synthetic_biology
+display: "Synthetic Biology"
+description: >
+  Engineering of biological systems: genetic circuits, CRISPR-based tools,
+  metabolic engineering, cell-free systems, and biosensors. Young enough
+  to have real structural gaps; mature enough to have a dense paper base.
+  The causal framing athanor uses maps naturally onto regulatory network biology.
+
+arxiv_query: >
+  synthetic biology gene circuit CRISPR metabolic engineering cell-free
+  biosensor genetic toggle switch oscillator optogenetics
+s2_query: >
+  synthetic biology genetic circuit design CRISPR Cas9 base editing
+  metabolic engineering cell-free protein synthesis biosensor
+  gene regulatory network toggle switch oscillator
+
+max_papers: 20
+sources:
+  - arxiv
+  - semantic_scholar
+
+max_gaps: 20
+sparse_sim_threshold: 0.40
+
+embedding_model: all-MiniLM-L6-v2
+claude_model: claude-haiku-4-5
+
+domain_context: >
+  This is an engineering biology domain. Relations are strongly causal:
+  activates, represses, induces, degrades, phosphorylates, transcribes,
+  translates, sequesters, gates, filters, amplifies.
+
+  Key distinctions:
+  - In vivo (live cells) vs. in vitro (cell-free) vs. in silico (model)
+  - Prokaryotic (E. coli, B. subtilis) vs. eukaryotic (yeast, CHO, human)
+  - Transcriptional vs. post-transcriptional vs. post-translational regulation
+  - Small molecule vs. light vs. temperature induction
+  - Characterisation (measured) vs. model (predicted) vs. designed (intended)
+
+  Flag organism context, whether a circuit is orthogonal to the host,
+  and whether results are validated in a chassis or only simulated.
+
+seed_concepts:
+  # Circuit elements
+  - genetic toggle switch
+  - repressilator oscillator
+  - feed-forward loop
+  - positive feedback loop
+  - negative feedback loop
+  - AND gate genetic circuit
+  - NOT gate genetic circuit
+  - memory device
+
+  # CRISPR tools
+  - CRISPR-Cas9 gene editing
+  - base editing
+  - prime editing
+  - CRISPRi gene repression
+  - CRISPRa gene activation
+  - dCas9 scaffold
+  - guide RNA design
+  - off-target effects
+
+  # Metabolic engineering
+  - metabolic flux analysis
+  - pathway engineering
+  - biosynthetic pathway
+  - cofactor balancing
+  - dynamic metabolic control
+  - product titre optimisation
+  - chassis organism
+
+  # Cell-free systems
+  - cell-free protein synthesis
+  - TXTL system
+  - cell-free gene circuit
+  - in vitro transcription-translation
+  - prototyping speed
+
+  # Sensing and control
+  - biosensor design
+  - riboswitch
+  - aptamer
+  - optogenetic control
+  - quorum sensing
+  - two-component system
+
+  # Design principles
+  - retroactivity
+  - modularity
+  - orthogonality
+  - insulator part
+  - noise in gene expression
+  - stochastic gene expression
+  - robustness
+  - tunability

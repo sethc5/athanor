@@ -1,0 +1,1315 @@
+{
+  "domain": "information_theory",
+  "query": "information theory entropy channel capacity mutual information rate-distortion Kolmogorov complexity Fisher information coding theory data compression neural information processing\n",
+  "concepts": [
+    {
+      "label": "Shannon Information",
+      "description": "A probabilistic theory of information based on entropy and measure of uncertainty in messages.",
+      "aliases": [
+        "Shannon theory",
+        "information theory"
+      ],
+      "source_papers": [
+        "0410002v1"
+      ],
+      "centrality": 0.4229,
+      "burt_constraint": 0.2402,
+      "effective_size": 5.4528,
+      "structural_hole": true,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Kolmogorov Complexity",
+      "description": "A measure of the algorithmic complexity of a string based on the length of the shortest program that produces it.",
+      "aliases": [
+        "algorithmic complexity",
+        "computational complexity",
+        "descriptive complexity"
+      ],
+      "source_papers": [
+        "0410002v1",
+        "1207.5742v4"
+      ],
+      "centrality": 0.2207,
+      "burt_constraint": 0.2183,
+      "effective_size": 6.4211,
+      "structural_hole": true,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Shannon Entropy",
+      "description": "The expected value of information content representing uncertainty in a probability distribution.",
+      "aliases": [
+        "entropy",
+        "information entropy"
+      ],
+      "source_papers": [
+        "0410002v1",
+        "1207.5742v4"
+      ],
+      "centrality": 0.0293,
+      "burt_constraint": 0.4132,
+      "effective_size": 2.4,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Universal Coding",
+      "description": "A coding scheme that efficiently encodes strings without prior knowledge of their probability distribution.",
+      "aliases": [
+        "universal compression"
+      ],
+      "source_papers": [
+        "0410002v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.6815,
+      "effective_size": 1.0263,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Shannon Mutual Information",
+      "description": "A measure of the mutual dependence between two random variables in probabilistic terms.",
+      "aliases": [
+        "mutual information",
+        "input-output mutual information",
+        "MI",
+        "information rate",
+        "channel capacity measure"
+      ],
+      "source_papers": [
+        "0410002v1",
+        "1609.02342v1",
+        "2111.00496v4",
+        "1003.6091v3"
+      ],
+      "centrality": 0.6999,
+      "burt_constraint": 0.0833,
+      "effective_size": 13.0,
+      "structural_hole": true,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Algorithmic Mutual Information",
+      "description": "A measure of the mutual algorithmic dependence between strings based on Kolmogorov complexity.",
+      "aliases": [
+        "Kolmogorov mutual information"
+      ],
+      "source_papers": [
+        "0410002v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Probabilistic Sufficient Statistic",
+      "description": "A statistic that contains all information in data relevant to a parameter in the probabilistic framework.",
+      "aliases": [
+        "sufficient statistic"
+      ],
+      "source_papers": [
+        "0410002v1"
+      ],
+      "centrality": 0.0931,
+      "burt_constraint": 0.3342,
+      "effective_size": 3.0,
+      "structural_hole": true,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Algorithmic Sufficient Statistic",
+      "description": "A compressed representation that captures all algorithmically meaningful information in a string.",
+      "aliases": [
+        "algorithmic statistic"
+      ],
+      "source_papers": [
+        "0410002v1"
+      ],
+      "centrality": 0.0523,
+      "burt_constraint": 0.3342,
+      "effective_size": 3.0,
+      "structural_hole": true,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Lossy Compression",
+      "description": "A compression technique that discards information to achieve higher compression ratios.",
+      "aliases": [
+        "lossy encoding"
+      ],
+      "source_papers": [
+        "0410002v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Meaningful Information",
+      "description": "Information that is algorithmically essential or non-redundant in the Kolmogorov framework.",
+      "aliases": [],
+      "source_papers": [
+        "0410002v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Rate Distortion Theory",
+      "description": "A framework for lossy compression that optimizes the trade-off between compression rate and reconstruction error.",
+      "aliases": [
+        "rate-distortion"
+      ],
+      "source_papers": [
+        "0410002v1"
+      ],
+      "centrality": 0.0275,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Structure Function",
+      "description": "A Kolmogorov-based function that characterizes the trade-off between description length and model complexity.",
+      "aliases": [
+        "Kolmogorov structure function"
+      ],
+      "source_papers": [
+        "0410002v1"
+      ],
+      "centrality": 0.0071,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Stein identities",
+      "description": "Mathematical identities relating probability distributions to their derivatives, used in statistical inference and information theory.",
+      "aliases": [
+        "Stein equation"
+      ],
+      "source_papers": [
+        "1609.02342v1"
+      ],
+      "centrality": 0.0448,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Gamma distribution",
+      "description": "A continuous probability distribution parameterized by shape and rate, commonly used as a target distribution in statistical modeling.",
+      "aliases": [
+        "gamma target"
+      ],
+      "source_papers": [
+        "1609.02342v1"
+      ],
+      "centrality": 0.0417,
+      "burt_constraint": 0.2535,
+      "effective_size": 4.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Non-linear channel",
+      "description": "A communication channel where the output is a nonlinear function of the input, specifically designed for gamma-distributed inputs.",
+      "aliases": [],
+      "source_papers": [
+        "1609.02342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5517,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Channel quality parameter",
+      "description": "A scalar parameter controlling the fidelity or performance characteristics of a communication channel.",
+      "aliases": [],
+      "source_papers": [
+        "1609.02342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "De Bruijn identity",
+      "description": "A fundamental identity relating the derivative of mutual information to Fisher information, extended here for gamma distributions.",
+      "aliases": [
+        "De Bruijn relation"
+      ],
+      "source_papers": [
+        "1609.02342v1"
+      ],
+      "centrality": 0.0652,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": true,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Fisher information",
+      "description": "A measure of the amount of information carried by an observable random variable about an unknown parameter.",
+      "aliases": [
+        "Fisher information matrix"
+      ],
+      "source_papers": [
+        "1609.02342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Additive Gaussian noise channel",
+      "description": "A classical communication channel model where output equals input plus independent Gaussian noise.",
+      "aliases": [
+        "AWGN channel",
+        "additive white Gaussian noise channel"
+      ],
+      "source_papers": [
+        "1609.02342v1",
+        "1003.6091v3"
+      ],
+      "centrality": 0.109,
+      "burt_constraint": 0.2505,
+      "effective_size": 4.0,
+      "structural_hole": true,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Signal-to-noise ratio",
+      "description": "A measure of the relative power of a signal to the power of noise in a channel.",
+      "aliases": [
+        "SNR"
+      ],
+      "source_papers": [
+        "1609.02342v1",
+        "1003.6091v3"
+      ],
+      "centrality": 0.0062,
+      "burt_constraint": 0.3333,
+      "effective_size": 3.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Minimum mean-square error",
+      "description": "The expected squared difference between an estimated value and the true value, often used as an optimality criterion.",
+      "aliases": [
+        "MMSE"
+      ],
+      "source_papers": [
+        "1609.02342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Relative entropy",
+      "description": "A divergence measure between two probability distributions, quantifying their dissimilarity.",
+      "aliases": [
+        "Kullback-Leibler divergence",
+        "KL divergence"
+      ],
+      "source_papers": [
+        "1609.02342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Stochastic representation",
+      "description": "A probabilistic decomposition or reformulation of a mathematical quantity using random variables.",
+      "aliases": [],
+      "source_papers": [
+        "1609.02342v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 0.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Electromagnetic Fields",
+      "description": "Continuous spatial distributions of electric and magnetic fields used to model wireless communication.",
+      "aliases": [
+        "EM fields",
+        "continuous fields"
+      ],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Channel Capacity",
+      "description": "The maximum rate of reliable information transmission through a communication channel.",
+      "aliases": [
+        "channel bandwidth",
+        "Shannon capacity"
+      ],
+      "source_papers": [
+        "2111.00496v4",
+        "1003.6091v3"
+      ],
+      "centrality": 0.1401,
+      "burt_constraint": 0.2511,
+      "effective_size": 4.0,
+      "structural_hole": true,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Random Fields",
+      "description": "Mathematical models representing spatially continuous random processes used to characterize electromagnetic signals.",
+      "aliases": [
+        "stochastic fields"
+      ],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.039,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Spatial Discretization",
+      "description": "The process of sampling continuous electromagnetic fields at discrete points, which may result in information loss.",
+      "aliases": [
+        "sampling"
+      ],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Mercer Expansion",
+      "description": "A mathematical technique for decomposing functions into eigenfunction series, used to derive mutual information expressions.",
+      "aliases": [
+        "eigenfunction expansion"
+      ],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "White Noise Model",
+      "description": "A communication model assuming additive white Gaussian noise with flat power spectrum.",
+      "aliases": [
+        "AWGN model"
+      ],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.039,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Autocorrelation Function",
+      "description": "A function describing the correlation of a signal with itself at different spatial lags.",
+      "aliases": [
+        "correlation function"
+      ],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Fredholm Determinant",
+      "description": "A mathematical tool for computing properties of integral operators, used for numerical calculation of mutual information.",
+      "aliases": [],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Colored Noise",
+      "description": "Noise with non-flat power spectrum, extending beyond the white noise assumption.",
+      "aliases": [
+        "correlated noise"
+      ],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Spatial Spectral Density",
+      "description": "The distribution of signal power as a function of spatial frequency.",
+      "aliases": [
+        "power spectral density"
+      ],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Continuous Transceivers",
+      "description": "Transmitter-receiver systems modeled as continuous spatial regions rather than discrete points.",
+      "aliases": [
+        "continuous communication terminals"
+      ],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Information Loss",
+      "description": "Loss of information that occurs when continuous fields cannot be perfectly recovered from discrete samples.",
+      "aliases": [],
+      "source_papers": [
+        "2111.00496v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Linear Information Inequalities",
+      "description": "Linear inequalities that constrain Shannon entropy values across random variables.",
+      "aliases": [
+        "information inequalities",
+        "entropy inequalities"
+      ],
+      "source_papers": [
+        "1207.5742v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Conditional Information Inequalities",
+      "description": "Linear entropy inequalities that hold only for distributions satisfying additional linear entropy constraints.",
+      "aliases": [
+        "conditional inequalities"
+      ],
+      "source_papers": [
+        "1207.5742v4"
+      ],
+      "centrality": 0.1534,
+      "burt_constraint": 0.2606,
+      "effective_size": 4.0,
+      "structural_hole": true,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Entropic Points",
+      "description": "Points in entropy space corresponding to valid probability distributions.",
+      "aliases": [
+        "entropy vectors"
+      ],
+      "source_papers": [
+        "1207.5742v4"
+      ],
+      "centrality": 0.039,
+      "burt_constraint": 0.5017,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Almost Entropic Points",
+      "description": "Points in the closure of the entropic region that satisfy conditional inequalities but may not correspond to actual probability distributions.",
+      "aliases": [
+        "near-entropic points"
+      ],
+      "source_papers": [
+        "1207.5742v4"
+      ],
+      "centrality": 0.0762,
+      "burt_constraint": 0.5005,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Unconditional Linear Inequalities",
+      "description": "Linear entropy inequalities that hold for all probability distributions without additional constraints.",
+      "aliases": [
+        "universal inequalities"
+      ],
+      "source_papers": [
+        "1207.5742v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Probability Distributions",
+      "description": "Mathematical functions assigning probabilities to outcomes of random variables.",
+      "aliases": [
+        "distributions"
+      ],
+      "source_papers": [
+        "1207.5742v4"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Polar Decomposition",
+      "description": "A method to express mutual information using amplitude, phase, and mixed components in polar coordinates.",
+      "aliases": [
+        "polar coordinate decomposition"
+      ],
+      "source_papers": [
+        "1003.6091v3"
+      ],
+      "centrality": 0.1405,
+      "burt_constraint": 0.2011,
+      "effective_size": 5.0,
+      "structural_hole": true,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Amplitude Term",
+      "description": "The component of mutual information corresponding to the magnitude variations of the channel signal.",
+      "aliases": [],
+      "source_papers": [
+        "1003.6091v3"
+      ],
+      "centrality": 0.0018,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Phase Term",
+      "description": "The component of mutual information corresponding to the phase variations of the channel signal.",
+      "aliases": [],
+      "source_papers": [
+        "1003.6091v3"
+      ],
+      "centrality": 0.0018,
+      "burt_constraint": 0.5015,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Gaussian Input",
+      "description": "A communication channel input with signal following a Gaussian probability distribution.",
+      "aliases": [
+        "Gaussian source"
+      ],
+      "source_papers": [
+        "1003.6091v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Partially Coherent Channels",
+      "description": "Communication channels where the signal exhibits partial coherence between different components or modes.",
+      "aliases": [
+        "partial coherence channels"
+      ],
+      "source_papers": [
+        "1003.6091v3"
+      ],
+      "centrality": 0.008,
+      "burt_constraint": 0.5037,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Spectral Loss",
+      "description": "A property of partially coherent channels representing the degradation of information transmission across frequency spectrum.",
+      "aliases": [],
+      "source_papers": [
+        "1003.6091v3"
+      ],
+      "centrality": 0.0058,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Nonlinear Fiber-Optic Channels",
+      "description": "Optical communication channels in fiber optics where nonlinear effects significantly impact signal propagation.",
+      "aliases": [
+        "nonlinear optical channels",
+        "nonlinear fiber channels"
+      ],
+      "source_papers": [
+        "1003.6091v3"
+      ],
+      "centrality": 0.035,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    },
+    {
+      "label": "Mixed Terms",
+      "description": "Cross-coupling components in the polar decomposition of mutual information between amplitude and phase.",
+      "aliases": [],
+      "source_papers": [
+        "1003.6091v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false,
+      "structural_hole_score": 0.0
+    }
+  ],
+  "edges": [
+    {
+      "source": "Shannon Entropy",
+      "target": "Shannon Information",
+      "relation": "fundamental_concept_of",
+      "weight": 0.95,
+      "evidence": "Shannon entropy versus Kolmogorov complexity as basic notions of both theories",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Kolmogorov Complexity",
+      "target": "Shannon Information",
+      "relation": "contrasts_with",
+      "weight": 0.9,
+      "evidence": "Compare the elementary theories of Shannon information and Kolmogorov complexity, the extent to which they have a common purpose, and where they are fundamentally different",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Shannon Information",
+      "target": "Universal Coding",
+      "relation": "relates_to",
+      "weight": 0.85,
+      "evidence": "Relation of both to universal coding",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Kolmogorov Complexity",
+      "target": "Universal Coding",
+      "relation": "relates_to",
+      "weight": 0.85,
+      "evidence": "Relation of both to universal coding",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Shannon Mutual Information",
+      "target": "Shannon Information",
+      "relation": "fundamental_concept_of",
+      "weight": 0.9,
+      "evidence": "Shannon mutual information as basic notion of Shannon theory",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Algorithmic Mutual Information",
+      "target": "Kolmogorov Complexity",
+      "relation": "fundamental_concept_of",
+      "weight": 0.9,
+      "evidence": "Kolmogorov (algorithmic) mutual information as basic notion of Kolmogorov theory",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Probabilistic Sufficient Statistic",
+      "target": "Shannon Information",
+      "relation": "fundamental_concept_of",
+      "weight": 0.85,
+      "evidence": "Probabilistic sufficient statistic related to Shannon theory",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Algorithmic Sufficient Statistic",
+      "target": "Kolmogorov Complexity",
+      "relation": "fundamental_concept_of",
+      "weight": 0.85,
+      "evidence": "Algorithmic sufficient statistic related to Kolmogorov theory",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Probabilistic Sufficient Statistic",
+      "target": "Algorithmic Sufficient Statistic",
+      "relation": "analogous_to",
+      "weight": 0.8,
+      "evidence": "Probabilistic sufficient statistic versus algorithmic sufficient statistic",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Lossy Compression",
+      "target": "Probabilistic Sufficient Statistic",
+      "relation": "relates_to",
+      "weight": 0.75,
+      "evidence": "Probabilistic sufficient statistic related to lossy compression in Shannon theory",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Meaningful Information",
+      "target": "Algorithmic Sufficient Statistic",
+      "relation": "relates_to",
+      "weight": 0.75,
+      "evidence": "Algorithmic sufficient statistic related to meaningful information in Kolmogorov theory",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Rate Distortion Theory",
+      "target": "Shannon Information",
+      "relation": "fundamental_concept_of",
+      "weight": 0.85,
+      "evidence": "Rate distortion theory as basic notion in Shannon theory",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Structure Function",
+      "target": "Kolmogorov Complexity",
+      "relation": "fundamental_concept_of",
+      "weight": 0.85,
+      "evidence": "Kolmogorov's structure function as basic notion in Kolmogorov theory",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Rate Distortion Theory",
+      "target": "Structure Function",
+      "relation": "analogous_to",
+      "weight": 0.8,
+      "evidence": "Rate distortion theory versus Kolmogorov's structure function",
+      "source_papers": [
+        "0410002v1"
+      ]
+    },
+    {
+      "source": "Stein identities",
+      "target": "Gamma distribution",
+      "relation": "applies_to",
+      "weight": 0.95,
+      "evidence": "new Stein identities for gamma target distribution",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "De Bruijn identity",
+      "target": "Gamma distribution",
+      "relation": "extends_to",
+      "weight": 0.9,
+      "evidence": "rescaled version of De Bruijn identity for gamma target distribution",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "Non-linear channel",
+      "target": "Gamma distribution",
+      "relation": "designed_for",
+      "weight": 0.95,
+      "evidence": "new non-linear channel specifically designed for gamma inputs",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "Shannon Mutual Information",
+      "target": "Non-linear channel",
+      "relation": "measures",
+      "weight": 0.95,
+      "evidence": "derivative of the input-output mutual information of this non-linear channel",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "De Bruijn identity",
+      "target": "Shannon Mutual Information",
+      "relation": "relates_to",
+      "weight": 0.9,
+      "evidence": "proof relies on a rescaled version of De Bruijn identity together with Fisher information",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "Fisher information",
+      "target": "De Bruijn identity",
+      "relation": "supports",
+      "weight": 0.85,
+      "evidence": "stochastic representation for the gamma specific Fisher information",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "Shannon Mutual Information",
+      "target": "Channel quality parameter",
+      "relation": "depends_on",
+      "weight": 0.9,
+      "evidence": "derivative of the input-output mutual information with respect to the channel quality parameter",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "Additive Gaussian noise channel",
+      "target": "Signal-to-noise ratio",
+      "relation": "parameterized_by",
+      "weight": 0.85,
+      "evidence": "link between derivative of mutual information with respect to signal-to-noise ratio",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "Additive Gaussian noise channel",
+      "target": "Minimum mean-square error",
+      "relation": "relates_to",
+      "weight": 0.85,
+      "evidence": "well-known link between derivative of mutual information and minimum mean-square error",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "Non-linear channel",
+      "target": "Shannon Mutual Information",
+      "relation": "enables_analysis_of",
+      "weight": 0.9,
+      "evidence": "derive precise bounds and asymptotics for the input-output mutual information of the non-linear channel",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "Stein identities",
+      "target": "Shannon Mutual Information",
+      "relation": "enables",
+      "weight": 0.85,
+      "evidence": "from these two ingredients, we derive an explicit and simple formula for the derivative of mutual information",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "Relative entropy",
+      "target": "Gamma distribution",
+      "relation": "applies_to",
+      "weight": 0.7,
+      "evidence": "paper title indicates focus on relative entropy alongside mutual information for gamma target",
+      "source_papers": [
+        "1609.02342v1"
+      ]
+    },
+    {
+      "source": "Spatial Discretization",
+      "target": "Information Loss",
+      "relation": "causes",
+      "weight": 0.9,
+      "evidence": "spatial discretization may results in information loss because the continuous field can not be perfectly recovered from the sampling points",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "Electromagnetic Fields",
+      "target": "Channel Capacity",
+      "relation": "enables",
+      "weight": 0.8,
+      "evidence": "electromagnetic information theory based on spatially continuous electromagnetic fields becomes necessary to reveal the fundamental theoretical capacity bound",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "Random Fields",
+      "target": "Shannon Mutual Information",
+      "relation": "models",
+      "weight": 0.85,
+      "evidence": "model the communication process between two continuous regions by random fields. Then, for the white noise model, we use Mercer expansion to derive the mutual information",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "Mercer Expansion",
+      "target": "Shannon Mutual Information",
+      "relation": "enables",
+      "weight": 0.9,
+      "evidence": "we use Mercer expansion to derive the mutual information between the source and the destination",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "White Noise Model",
+      "target": "Shannon Mutual Information",
+      "relation": "enables",
+      "weight": 0.85,
+      "evidence": "for the white noise model, we use Mercer expansion to derive the mutual information",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "Autocorrelation Function",
+      "target": "Shannon Mutual Information",
+      "relation": "enables",
+      "weight": 0.7,
+      "evidence": "an analytic method is introduced based on autocorrelation functions with rational spectrum",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "Fredholm Determinant",
+      "target": "Shannon Mutual Information",
+      "relation": "enables",
+      "weight": 0.75,
+      "evidence": "the Fredholm determinant is used for the general autocorrelation functions to provide the numerical calculation scheme",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "Colored Noise",
+      "target": "White Noise Model",
+      "relation": "extends",
+      "weight": 0.8,
+      "evidence": "Further works extend the white noise model to colored noise and discuss the mutual information under it",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "Continuous Transceivers",
+      "target": "Random Fields",
+      "relation": "modeled_by",
+      "weight": 0.85,
+      "evidence": "model the communication process between two continuous regions by random fields",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "Spatial Spectral Density",
+      "target": "Channel Capacity",
+      "relation": "derives",
+      "weight": 0.75,
+      "evidence": "The mutual information and the capacity are derived through the spatial spectral density",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "Shannon Mutual Information",
+      "target": "Channel Capacity",
+      "relation": "measures",
+      "weight": 0.9,
+      "evidence": "mutual information and the capacity are derived through the spatial spectral density",
+      "source_papers": [
+        "2111.00496v4"
+      ]
+    },
+    {
+      "source": "Conditional Information Inequalities",
+      "target": "Linear Information Inequalities",
+      "relation": "specializes",
+      "weight": 0.9,
+      "evidence": "conditional linear information inequalities, i.e., linear inequalities for Shannon entropy that hold for distributions whose entropies meet some linear constraints",
+      "source_papers": [
+        "1207.5742v4"
+      ]
+    },
+    {
+      "source": "Linear Information Inequalities",
+      "target": "Shannon Entropy",
+      "relation": "constrains",
+      "weight": 0.95,
+      "evidence": "linear inequalities for Shannon entropy",
+      "source_papers": [
+        "1207.5742v4"
+      ]
+    },
+    {
+      "source": "Conditional Information Inequalities",
+      "target": "Unconditional Linear Inequalities",
+      "relation": "contradicts_extension_to",
+      "weight": 0.85,
+      "evidence": "some conditional information inequalities cannot be extended to any unconditional linear inequalities",
+      "source_papers": [
+        "1207.5742v4"
+      ]
+    },
+    {
+      "source": "Conditional Information Inequalities",
+      "target": "Almost Entropic Points",
+      "relation": "holds_for",
+      "weight": 0.75,
+      "evidence": "Some of these conditional inequalities hold for almost entropic points, while others do not",
+      "source_papers": [
+        "1207.5742v4"
+      ]
+    },
+    {
+      "source": "Entropic Points",
+      "target": "Probability Distributions",
+      "relation": "corresponds_to",
+      "weight": 0.9,
+      "evidence": "distributions whose entropies meet some linear constraints",
+      "source_papers": [
+        "1207.5742v4"
+      ]
+    },
+    {
+      "source": "Almost Entropic Points",
+      "target": "Entropic Points",
+      "relation": "extends",
+      "weight": 0.8,
+      "evidence": "almost entropic points in the closure of entropic region",
+      "source_papers": [
+        "1207.5742v4"
+      ]
+    },
+    {
+      "source": "Kolmogorov Complexity",
+      "target": "Shannon Entropy",
+      "relation": "analogous_to",
+      "weight": 0.6,
+      "evidence": "counterparts of conditional information inequalities for Kolmogorov complexity",
+      "source_papers": [
+        "1207.5742v4"
+      ]
+    },
+    {
+      "source": "Conditional Information Inequalities",
+      "target": "Kolmogorov Complexity",
+      "relation": "generalizes_to",
+      "weight": 0.5,
+      "evidence": "discuss some counterparts of conditional information inequalities for Kolmogorov complexity",
+      "source_papers": [
+        "1207.5742v4"
+      ]
+    },
+    {
+      "source": "Shannon Mutual Information",
+      "target": "Polar Decomposition",
+      "relation": "decomposes_via",
+      "weight": 1.0,
+      "evidence": "The mutual information between a complex-valued channel input and output is decomposed into four parts based on polar coordinates",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Polar Decomposition",
+      "target": "Amplitude Term",
+      "relation": "includes",
+      "weight": 0.95,
+      "evidence": "decomposed into four parts based on polar coordinates: an amplitude term, a phase term, and two mixed terms",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Polar Decomposition",
+      "target": "Phase Term",
+      "relation": "includes",
+      "weight": 0.95,
+      "evidence": "decomposed into four parts based on polar coordinates: an amplitude term, a phase term, and two mixed terms",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Polar Decomposition",
+      "target": "Mixed Terms",
+      "relation": "includes",
+      "weight": 0.9,
+      "evidence": "decomposed into four parts based on polar coordinates: an amplitude term, a phase term, and two mixed terms",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Amplitude Term",
+      "target": "Signal-to-noise ratio",
+      "relation": "dominates_at",
+      "weight": 0.85,
+      "evidence": "at high signal-to-noise ratio (SNR), the amplitude and phase terms dominate the mixed terms",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Phase Term",
+      "target": "Signal-to-noise ratio",
+      "relation": "dominates_at",
+      "weight": 0.85,
+      "evidence": "at high signal-to-noise ratio (SNR), the amplitude and phase terms dominate the mixed terms",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Additive Gaussian noise channel",
+      "target": "Gaussian Input",
+      "relation": "tested_with",
+      "weight": 0.9,
+      "evidence": "For the AWGN channel with a Gaussian input, analytical expressions are derived for high SNR",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Additive Gaussian noise channel",
+      "target": "Shannon Mutual Information",
+      "relation": "applies_to",
+      "weight": 0.95,
+      "evidence": "Numerical results for the additive white Gaussian noise (AWGN) channel with various inputs",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Partially Coherent Channels",
+      "target": "Spectral Loss",
+      "relation": "exhibits",
+      "weight": 0.95,
+      "evidence": "The decomposition method is applied to partially coherent channels and a property of such channels called 'spectral loss' is developed",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Spectral Loss",
+      "target": "Nonlinear Fiber-Optic Channels",
+      "relation": "occurs_in",
+      "weight": 0.9,
+      "evidence": "Spectral loss occurs in nonlinear fiber-optic channels",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Nonlinear Fiber-Optic Channels",
+      "target": "Channel Capacity",
+      "relation": "affects",
+      "weight": 0.85,
+      "evidence": "it may be one effect that needs to be taken into account to explain the behavior of the capacity of nonlinear fiber-optic channels",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    },
+    {
+      "source": "Polar Decomposition",
+      "target": "Partially Coherent Channels",
+      "relation": "applied_to",
+      "weight": 0.8,
+      "evidence": "The decomposition method is applied to partially coherent channels",
+      "source_papers": [
+        "1003.6091v3"
+      ]
+    }
+  ]
+}

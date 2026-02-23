@@ -1,0 +1,123 @@
+# String Landscape — Calabi-Yau compactifications, F-theory, Standard Model geometry
+# Covers the search for Standard Model-like vacua in the string landscape,
+# including heterotic, F-theory, and type IIB compactifications.
+# Directly relevant to the cytools_project work.
+name: string_landscape
+display: "String Landscape & Calabi-Yau Compactifications"
+description: >
+  The search for Standard Model physics from string/F-theory compactifications
+  on Calabi-Yau 3-folds. Covers the Kreuzer-Skarke database, vector bundle
+  constructions, F-theory discriminant loci, moduli stabilisation, and the
+  swampland programme. The central challenge: finding a geometrically
+  consistent compactification with exactly three chiral generations, gauge
+  group SU(3)×SU(2)×U(1), and stabilised moduli.
+
+arxiv_query: >
+  Calabi-Yau compactification Standard Model string theory F-theory
+  heterotic string flux compactification Hodge numbers vector bundle
+  Large Volume Scenario Kreuzer-Skarke swampland conjecture
+s2_query: >
+  Calabi-Yau three-fold Standard Model string compactification F-theory
+  heterotic string vector bundles moduli stabilisation Large Volume Scenario
+  Kreuzer-Skarke database swampland de Sitter vacuum
+
+max_papers: 20
+sources:
+  - arxiv
+  - semantic_scholar
+
+max_gaps: 20
+sparse_sim_threshold: 0.38
+
+embedding_model: all-MiniLM-L6-v2
+claude_model: claude-haiku-4-5
+max_tokens_hypothesis: 4096
+
+domain_context: >
+  This is a mathematical physics domain combining algebraic geometry and
+  string theory. Precision is essential.
+
+  Key geometry objects:
+  - Calabi-Yau 3-fold (CY3): compact complex 3-manifold with SU(3) holonomy
+  - Hodge numbers h¹¹ (Kähler moduli), h²¹ (complex structure moduli)
+  - Euler characteristic χ = 2(h¹¹ - h²¹); for 3 generations need |χ| = 6
+  - Reflexive polytope: defines toric ambient space for CY hypersurface
+  - Kreuzer-Skarke database: all 473,800,776 reflexive polytopes in 4D
+
+  Key compactification types:
+  - Heterotic: gauge bundle on CY3, needs rank-4/5 vector bundle, χ(V)=±3
+  - F-theory: elliptic fibration over base B₂, gauge group from Kodaira fibers
+  - Type IIB: orientifold with D-branes, tadpole cancellation, KKLT/LVS
+
+  Moduli stabilisation:
+  - Large Volume Scenario (LVS): swiss-cheese Kähler potential, large overall
+    volume τ_big with small blow-up cycles τ_small embedded inside
+  - KKLT: anti-de Sitter minimum uplifted to de Sitter via anti-D3 branes
+  - Flux superpotential W₀ from 3-form fluxes (Gukov-Vafa-Witten)
+
+  Relations: compactifies_on, fibres_over, stabilises, breaks_to, generates,
+  constrains, bounds, admits, classifies, lifts_to, reduces_to,
+  Kodaira-type, tadpole-cancels.
+
+  Flag distinctions: exact vs. tadpole-approximate, perturbative vs.
+  non-perturbative, classical vs. quantum-corrected, toric vs. non-toric.
+
+seed_concepts:
+  # Core geometry
+  - Calabi-Yau 3-fold
+  - Hodge numbers
+  - Euler characteristic
+  - reflexive polytope
+  - Kreuzer-Skarke database
+  - toric variety
+  - mirror symmetry
+  - elliptic fibration
+
+  # Vector bundles (heterotic)
+  - line bundle cohomology
+  - monad bundle construction
+  - vector bundle stability
+  - Hermitian-Yang-Mills connection
+  - Chern character
+  - Atiyah-Singer index theorem
+  - chiral index
+  - three-generation spectrum
+
+  # F-theory
+  - F-theory compactification
+  - Kodaira fiber classification
+  - discriminant locus
+  - gauge algebra from singularities
+  - matter curves
+  - Yukawa coupling points
+  - G-flux
+
+  # Moduli stabilisation
+  - Kähler moduli
+  - complex structure moduli
+  - dilaton stabilisation
+  - Large Volume Scenario
+  - swiss cheese geometry
+  - KKLT scenario
+  - flux superpotential
+  - anti-de Sitter vacuum
+  - de Sitter uplifting
+  - swampland conjecture
+
+  # Period geometry
+  - Picard-Fuchs equations
+  - GKZ hypergeometric system
+  - period integrals
+  - prepotential
+  - Gromov-Witten invariants
+  - quantum cohomology
+  - mirror map
+  - Yukawa couplings
+
+  # Phenomenology
+  - Standard Model gauge group
+  - supersymmetry breaking
+  - soft terms
+  - D-brane tadpole cancellation
+  - axion decay constant
+  - cosmological moduli problem

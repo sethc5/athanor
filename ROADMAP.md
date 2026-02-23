@@ -57,11 +57,7 @@ this entirely.
 - Bibliographic coupling score as edge weight signal
 - H-index of source papers as trustworthiness proxy for concept provenance
 
-**Status:** 🔲 Planned
-
----
-
-## Tier 2 — Hypothesis generation quality
+**Status:** ✅ Implemented (Session 5) — `SemanticScholarClient.fetch_references_batch()` + `ingest/cocitation.py` (`compute_biblio_coupling()`). Activated via `athanor run --cocite --s2`.
 
 ### 4. Philosophy of falsification (Popper)
 **What:** A genuine hypothesis must specify what would refute it. "X correlates
@@ -164,7 +160,7 @@ basis for cross-domain hypothesis seeding.
 - Structural graph isomorphism search across domain ConceptGraphs
 - Cross-domain suggestion engine as stage 2.5
 
-**Status:** 🔲 Future (Stage 4)
+**Status:** 🔲 Future (Stage 4) — **partially done (Session 5):** `athanor cross-domain --domain-a X --domain-b Y` CLI command implemented (cosine bridge detection → GapFinder → JSON report). Graph-isomorphism search remains future work.
 
 ---
 
@@ -223,6 +219,34 @@ modules are drug targets. Maps directly onto the graph architecture.
 
 ---
 
+## Tier 5 — Human-in-the-loop review
+
+### 14. Hypothesis approval loop
+**What:** Researchers need an interactive workflow to curate generated hypotheses
+before investing lab/compute resources. Flag approved/rejected hypotheses so
+downstream tools can filter to human-vetted candidates.
+
+**Affects:** `cli.py`, `hypotheses/models.py`
+
+**Implementation:**
+- `Hypothesis.approved: Optional[bool]` field (was already in models, now wired up)
+- `HypothesisReport.pending_review` property: hypotheses with `approved is None`
+- `athanor approve --domain X` CLI command: interactive y/n/s/q loop,
+  renders statement / mechanism / falsification criteria / experiment type,
+  writes decision back to `hypothesis_report.json`
+
+**Status:** ✅ Implemented (Session 5)
+
+---
+
+### 15. Domain-scoped graph paths
+**What:** All domains were overwriting the same `outputs/graphs/concept_graph.json`.
+Fixed `_out()` in `cli.py` to scope graphs per-domain: `outputs/graphs/<domain>/`.
+
+**Status:** ✅ Fixed (Session 5) — prerequisite for cross-domain command.
+
+---
+
 ## Priority matrix
 
 | Item | Impact | Effort | Status |
@@ -232,14 +256,18 @@ modules are drug targets. Maps directly onto the graph architecture.
 | Causal bridge_type | High | Low | ✅ |
 | Isotropy correction | Medium | Low | ✅ |
 | Longevity hallmarks YAML | High | Low | ✅ |
-| Bibliometrics / co-citation | High | Medium | 🔲 |
+| Bibliometrics / co-citation | High | Medium | ✅ (Session 5) |
+| Cross-domain gap finder | High | High | ✅ (Session 5) |
+| Hypothesis approval loop | High | Low | ✅ (Session 5) |
+| Domain-scoped graph paths | High | Low | ✅ (Session 5) |
 | Richer edge types | Medium | Medium | 🔲 |
 | DOE fields in experiments | Medium | Low | 🔲 |
 | Replication risk scoring | Medium | Low | 🔲 |
 | Few-shot prompt examples | High | Medium | 🔲 |
-| Cross-domain transfer | High | High | 🔲 |
 | GNN gap prediction | High | High | 🔲 |
+| `athanor report` markdown export | Medium | Low | 🔲 |
+| Hypothesis aging / tracking | Medium | Medium | 🔲 |
 
 ---
 
-*Last updated: 2026-02-23 (Session 4)*
+*Last updated: 2025-07-11 (Session 5)*
