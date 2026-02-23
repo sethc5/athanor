@@ -1,0 +1,80 @@
+name: moduli_periods
+display: "Moduli Stabilization & Period Integrals"
+description: >
+  Moduli stabilization mechanisms in IIB string compactifications — KKLT,
+  Large Volume Scenario (LVS), flux compactification, Picard-Fuchs differential
+  systems for CY period integrals, GKZ hypergeometric systems, Yukawa coupling
+  computation from geometry, de Sitter uplift conjectures, and the causal
+  constraints that complex-structure moduli stabilization imposes on Kähler
+  moduli through the special geometry relations.
+
+domain_context: >
+  This domain covers the mathematics and physics of period integrals and
+  moduli stabilization for type IIB string compactifications on CY3 × ℝ^{3,1}.
+  The central objects are:
+
+  Period integrals Π_a(z) = ∫_{γ_a} Ω(z) where Ω(z) is the holomorphic
+  (3,0)-form on the CY3 and z = (z_1,...,z_{h^{2,1}}) are complex-structure
+  moduli. These satisfy the Picard-Fuchs (PF) differential system L_i Π = 0
+  where L_i are GKZ differential operators determined by the lattice of the
+  toric ambient space (GLSM charge matrix).
+
+  Key results needed for realistic models:
+  - Closed-form or numerical period integrals near large complex-structure and
+    conifold points
+  - Flux superpotential W = ∫(G_3 ∧ Ω) = G_a Π^a + F_a ∂W/∂τ^a (Gukov-Vafa)
+  - Kähler potential K = -ln(-i∫(Ω∧Ω̄)) - 2ln(V) (Kähler + dilaton)
+  - KKLT: W_0 = const from flux stabilization, then non-perturbative W_np
+    from gaugino condensation / D3-instantons. Requires |W_0| << 1.
+  - LVS: Require h¹¹ ≥ 2, at least one "Swiss cheese" small cycle (dP divisor
+    with D³ > 0 and τ_s = D_s²). Exponentially large volume V ~ e^{a τ_s}.
+    Hierarchy: V ~ e^{a τ_s} >> 1, τ_s ~ ln(V)/a, W_0 ~ O(1).
+  - de Sitter: Anti-D3 brane uplift (KKLT), D-term uplift, F-term uplift.
+    All contested — Maldacena-Nunez argument, Danielsson-Van Riet criticism.
+
+  Special geometry relations:
+  F_{abc} = κ_{abc} (intersection numbers at large volume)
+  K_{ij̄} (Kähler metric) = ∂_i ∂_{j̄} K
+  Complex structure → Kähler back-reaction via mirror map:
+  t^a = ∂F/∂X^a (periods determine Kähler coordinates on mirror)
+
+  GL=12 / D₆ context (primary application):
+  The polytope h¹¹=17, h²¹=20, D₆ symmetry (index 37 in KS) has 5
+  D₆-invariant complex-structure moduli, exactly making the PF system
+  tractable (20 → 5 via symmetry reduction). 26 D₆-invariant Yukawa
+  couplings known. GKZ system being analyzed. Goal: closed-form periods
+  → exact Yukawa texture prediction at stabilization locus.
+
+  Key conjectures / open questions:
+  - Does complex-structure stabilization causally constrain the Kähler moduli
+    subspace? (Equivalently: does ∂²W/∂z_i∂z_j determine K_{ab} on the
+    Kähler side via the mirror map?)
+  - Swampland de Sitter conjecture: |∇V| ≥ c·V excludes metastable dS vacua.
+    Status: debated. Compatible with LVS? KKLT?
+  - Tadpole conjecture: flux tadpole N_flux ≤ 2/3 h_{2,1}. Rules out many
+    KKLT constructions. Tested computationally?
+
+  Edge type vocabulary:
+  stabilizes, determines, constrains, competes_with, requires, predicts,
+  violates, uplifts, receives_correction_from, flows_to, is_dual_to,
+  breaks_supersymmetry_via, generates
+
+arxiv_query: >
+  Picard-Fuchs period integrals Calabi-Yau GKZ hypergeometric system
+  KKLT Large Volume Scenario moduli stabilization IIB flux compactification
+  special geometry Kahler potential de Sitter uplift swampland conjecture
+  Yukawa couplings mirror symmetry Gukov-Vafa-Witten superpotential tadpole
+
+s2_query: >
+  Picard-Fuchs period integrals Calabi-Yau GKZ hypergeometric differential
+  KKLT Large Volume Scenario moduli stabilization type IIB flux compactification
+  special geometry Kahler potential de Sitter uplift anti-D3 swampland
+  Yukawa couplings mirror symmetry prepotential superpotential tadpole cancellation
+
+sources:
+  - arxiv
+  - semantic_scholar
+
+max_papers: 25
+max_gaps: 20
+claude_model: claude-haiku-4-5

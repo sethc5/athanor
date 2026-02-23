@@ -1,0 +1,74 @@
+name: cy3_machine_learning
+display: "ML for Calabi-Yau Geometry"
+description: >
+  Machine learning approaches to Calabi-Yau threefold geometry: predicting
+  line bundle cohomology, Hodge numbers from polytope data, learning
+  topological invariants, neural network approximation of period integrals
+  and Yukawa couplings, generative models for vacua scanning, reinforcement
+  learning for bundle construction, and ML-accelerated Kreuzer-Skarke
+  database exploration.
+
+domain_context: >
+  This domain sits at the intersection of algebraic geometry, string
+  compactification, and machine learning. The central objects are Calabi-Yau
+  threefolds (CY3s) constructed as hypersurfaces in toric varieties defined
+  by reflexive polytopes from the Kreuzer-Skarke (KS) database.
+
+  Key prediction targets:
+  - h⁰(L): number of global sections of a line bundle L on a CY3 — this
+    determines the number of matter generations in heterotic string theory
+  - Hodge numbers (h¹¹, h²¹): topological invariants controlling the number
+    of Kähler and complex-structure moduli
+  - Line bundle cohomology vector (h⁰, h¹, h², h³): full deformation theory
+  - Swiss cheese parameters (τ/V^{2/3}): LVS moduli stabilization viability
+  - Elliptic / K3 fibration existence: F-theory compactification pathways
+
+  Key input features for ML models:
+  - Reflexive polytope vertex matrix and face lattice
+  - Dual polytope structure
+  - Mori cone generators and SR ideal
+  - Intersection numbers κ_{abc}
+  - Second Chern class c₂
+  - GLSM charge matrix
+  - Line bundle charge vector (integers relative to Kähler basis)
+
+  Key methods in the literature:
+  - Supervised regression/classification (random forest, XGBoost, MLP)
+  - Graph neural networks on toric divisor graphs
+  - Transformer architectures on polytope sequences
+  - Topological data analysis (persistent homology of polytope fan)
+  - Reinforcement learning for sequential bundle construction
+  - Normalizing flows / VAEs for generative modelling of the landscape
+
+  Open problem (from companion CyTools scan project):
+  The KS database has 104 Hodge pairs with χ = −6 (three-generation CY3s),
+  ranging h¹¹ = 13 to 128. ~50,000 polytopes have been scanned but 195,000+
+  remain at h¹¹ = 18 alone. A validated ML pre-screener (predict h⁰ ≥ 3
+  line bundle existence from cheap polytope combinatorics) could give 100×
+  speedup. The hypothesis: normalized lattice point density, Gorenstein index,
+  and face lattice depth jointly predict h¹¹ and line bundle richness.
+
+  Edge type vocabulary for this domain:
+  predicts, trained_on, approximates, generalizes_to, validates,
+  replaces_computation_of, correlates_with, is_feature_for, outperforms,
+  fails_for, augments, transfers_to
+
+arxiv_query: >
+  machine learning Calabi-Yau cohomology neural network Hodge numbers
+  Kreuzer-Skarke database reflexive polytopes graph neural network
+  toric geometry line bundle cohomology reinforcement learning string vacua
+  topological machine learning period integrals Yukawa couplings
+
+s2_query: >
+  machine learning Calabi-Yau threefold Hodge numbers neural network
+  Kreuzer-Skarke database reflexive polytopes graph neural network toric
+  line bundle cohomology reinforcement learning string vacua landscape
+  topological data analysis period integrals Yukawa coupling prediction
+
+sources:
+  - arxiv
+  - semantic_scholar
+
+max_papers: 25
+max_gaps: 20
+claude_model: claude-haiku-4-5
