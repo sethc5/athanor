@@ -14,6 +14,26 @@ import os
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
+from sklearn.metrics.pairwise import cosine_similarity
+
+from athanor.config import cfg
+from athanor.domains import load_domain
+from athanor.embed import Embedder
+from athanor.gaps import GapFinder, deduplicate_gaps
+from athanor.gaps.models import CandidateGap, GapReport
+from athanor.graph import GraphBuilder, compute_candidate_gaps
+from athanor.graph.models import ConceptGraph
+from athanor.hypotheses import HypothesisGenerator
+from athanor.hypotheses.critic import HypothesisCritic
+from athanor.hypotheses.models import HypothesisReport
+from athanor.ingest import (
+    ArxivClient,
+    SemanticScholarClient,
+    parse_papers,
+    enrich_papers_with_fulltext,
+)
+from athanor.ingest.cocitation import compute_biblio_coupling
+
 log = logging.getLogger("athanor.pipeline")
 
 # Resolved once at import; overridable in tests via monkeypatch.
@@ -49,7 +69,6 @@ def _load_approved_keywords(hyp_path: Path) -> List[str]:
     """Extract unique keywords from approved hypotheses (for query enrichment)."""
     if not hyp_path.exists():
         return []
-    from athanor.hypotheses.models import HypothesisReport
     prior = HypothesisReport.model_validate_json(hyp_path.read_text())
     kw = [
         kw
@@ -64,63 +83,8 @@ def _load_approved_statements(hyp_path: Path) -> List[str]:
     """Extract statements from approved hypotheses (for gap exclusion)."""
     if not hyp_path.exists():
         return []
-    from athanor.hypotheses.models import HypothesisReport
     prior = HypothesisReport.model_validate_json(hyp_path.read_text())
     return [h.statement for h in prior.hypotheses if h.approved is True]
-
-
-# ── candidate gap computation ───────────────────────────────────────────────
-
-def compute_candidate_gaps(
-    concept_graph,
-    threshold: float = 0.45,
-) -> List[Dict[str, Any]]:
-    """Compute candidate gaps from a ConceptGraph.
-
-    A candidate gap is a concept pair that is semantically close (cosine
-    similarity ≥ *threshold*) but graph-distant (shortest path > 2).
-
-    Returns a list of dicts sorted by similarity descending.
-    """
-    import networkx as nx
-    from sklearn.metrics.pairwise import cosine_similarity
-    from athanor.embed import Embedder
-
-    G = concept_graph.to_networkx()
-    embedder = Embedder()
-
-    concept_texts = [
-        c.label + ". " + c.description for c in concept_graph.concepts
-    ]
-    concept_embs = embedder.embed(concept_texts)
-    csim = cosine_similarity(concept_embs)
-
-    labels = [c.label for c in concept_graph.concepts]
-    concept_list = concept_graph.concepts
-    candidate_gaps: List[Dict[str, Any]] = []
-
-    for i in range(len(labels)):
-        for j in range(i + 1, len(labels)):
-            if csim[i, j] < threshold:
-                continue
-            try:
-                dist = nx.shortest_path_length(G, labels[i], labels[j])
-            except nx.NetworkXNoPath:
-                dist = 999
-            if dist > 2:
-                sh_a = 1.0 - concept_list[i].burt_constraint
-                sh_b = 1.0 - concept_list[j].burt_constraint
-                sh_score = round((sh_a + sh_b) / 2, 4)
-                candidate_gaps.append({
-                    "concept_a": labels[i],
-                    "concept_b": labels[j],
-                    "similarity": float(csim[i, j]),
-                    "graph_distance": dist,
-                    "structural_hole_score": sh_score,
-                })
-
-    candidate_gaps.sort(key=lambda x: x["similarity"], reverse=True)
-    return candidate_gaps
 
 
 # ── Stage 1 — Literature Mapper ─────────────────────────────────────────────
@@ -140,15 +104,6 @@ def run_stage_1(
 
     Returns ``(concept_graph, candidate_gaps, n_papers)``.
     """
-    from athanor.config import cfg
-    from athanor.ingest import (
-        ArxivClient,
-        SemanticScholarClient,
-        parse_papers,
-        enrich_papers_with_fulltext,
-    )
-    from athanor.graph import GraphBuilder
-
     domain_name = dom["name"]
     graph_path = out["graphs"] / "concept_graph.json"
     gaps_path = out["graphs"] / "candidate_gaps.json"
@@ -218,8 +173,6 @@ def run_stage_1(
 
     # Bibliographic coupling
     if cocite and s2:
-        from athanor.ingest.cocitation import compute_biblio_coupling
-
         s2_client_cc = SemanticScholarClient(cache_dir=cfg.data_raw)
         s2_ids = [
             p.url.rstrip("/").split("/")[-1]
@@ -273,11 +226,6 @@ def run_stage_2(
 
     Returns a ``GapReport``.
     """
-    from athanor.config import cfg
-    from athanor.graph.models import ConceptGraph
-    from athanor.gaps import GapFinder, deduplicate_gaps
-    from athanor.gaps.models import CandidateGap, GapReport
-
     domain_name = dom["name"]
     graph_path = out["graphs"] / "concept_graph.json"
     gaps_path = out["graphs"] / "candidate_gaps.json"
@@ -355,10 +303,6 @@ def run_stage_3(
 
     Returns a ``HypothesisReport``.
     """
-    from athanor.config import cfg
-    from athanor.gaps.models import GapReport
-    from athanor.hypotheses import HypothesisGenerator
-
     domain_name = dom["name"]
     report_path = out["gaps"] / "gap_report.json"
     hyp_path = out["hyps"] / "hypothesis_report.json"
@@ -402,10 +346,6 @@ def run_critic(
 
     Returns the updated ``HypothesisReport``.
     """
-    from athanor.config import cfg
-    from athanor.hypotheses.models import HypothesisReport
-    from athanor.hypotheses.critic import HypothesisCritic
-
     hyp_path = out["hyps"] / "hypothesis_report.json"
     if not hyp_path.exists():
         raise FileNotFoundError(
@@ -446,15 +386,6 @@ def run_cross_domain(
 
     Returns the cross-domain ``GapReport``.
     """
-    import numpy as np
-    from sklearn.metrics.pairwise import cosine_similarity
-    from athanor.config import cfg
-    from athanor.domains import load_domain
-    from athanor.graph.models import ConceptGraph
-    from athanor.embed import Embedder
-    from athanor.gaps import GapFinder
-    from athanor.gaps.models import CandidateGap
-
     dom_a = load_domain(domain_a)
     dom_b = load_domain(domain_b)
     name_a, name_b = dom_a["name"], dom_b["name"]
@@ -490,7 +421,6 @@ def run_cross_domain(
 
     if not bridges:
         log.warning("No bridges found. Try lowering threshold.")
-        from athanor.gaps.models import GapReport
         return GapReport(
             domain=cross_name,
             query=f"cross-domain: {name_a} ↔ {name_b}",

@@ -19,12 +19,14 @@ import json
 import logging
 import os
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import click
 from dotenv import load_dotenv
 from rich.console import Console
 from rich.panel import Panel
+from rich.table import Table
 
 # Make sure athanor package is importable when run from project root
 _root = Path(__file__).resolve().parent.parent
@@ -32,6 +34,9 @@ sys.path.insert(0, str(_root))
 load_dotenv(_root / ".env")
 
 from athanor import pipeline  # noqa: E402 — must come after sys.path fix
+from athanor.config import cfg  # noqa: E402
+from athanor.domains import list_domains, load_domain  # noqa: E402
+from athanor.hypotheses.models import HypothesisReport  # noqa: E402
 
 console = Console()
 log = logging.getLogger("athanor.cli")
@@ -76,7 +81,6 @@ def cli(verbose: bool, workspace: str) -> None:
 @cli.command("list-domains")
 def list_domains_cmd() -> None:
     """List all available domain configurations."""
-    from athanor.domains import list_domains
     domains = list_domains()
     if not domains:
         console.print("[yellow]No domain configs found in domains/[/]")
@@ -92,8 +96,6 @@ def list_domains_cmd() -> None:
 @click.option("--domain", "-d", default=None, help="Domain name — omit to show all domains")
 def status(domain: str) -> None:
     """Show pipeline output status for one or all domains."""
-    from athanor.domains import list_domains
-    from rich.table import Table
 
     def _stage_info(path):
         if not path.exists():
@@ -144,7 +146,6 @@ def status(domain: str) -> None:
             hyp_path = paths["hyps"] / "hypothesis_report.json"
             if hyp_path.exists():
                 try:
-                    from athanor.hypotheses.models import HypothesisReport
                     hr = HypothesisReport.model_validate_json(hyp_path.read_text())
                     top = hr.top(1)
                     if top:
@@ -187,9 +188,6 @@ def run(
     critique: bool,
 ) -> None:
     """Run the full athanor pipeline for a domain."""
-    from athanor.domains import load_domain
-    from athanor.config import cfg
-
     if not os.environ.get("ANTHROPIC_API_KEY"):
         console.print("[bold red]Error:[/] ANTHROPIC_API_KEY not set. Copy .env.example → .env")
         raise SystemExit(1)
@@ -282,9 +280,6 @@ def run(
 @click.option("--workers", "-w", type=int, default=4, show_default=True, help="Parallel critic workers")
 def critique(domain: str, workers: int) -> None:
     """Run an independent critic pass (Stage 3.5) on an existing hypothesis report."""
-    from athanor.domains import load_domain
-    from athanor.hypotheses.models import HypothesisReport as HR
-
     dom = load_domain(domain)
     out = _out(dom["name"])
     hyp_path = out["hyps"] / "hypothesis_report.json"
@@ -293,7 +288,7 @@ def critique(domain: str, workers: int) -> None:
         console.print(f"[red]No hypothesis report for '{domain}'. Run Stage 3 first.[/]")
         raise SystemExit(1)
 
-    report = HR.model_validate_json(hyp_path.read_text())
+    report = HypothesisReport.model_validate_json(hyp_path.read_text())
     n = len(report.hypotheses)
     if n == 0:
         console.print("[yellow]No hypotheses to critique.[/]")
@@ -307,7 +302,7 @@ def critique(domain: str, workers: int) -> None:
     console.print(f"\n[green]✓ Critic pass complete[/] — {n} hypotheses updated → {hyp_path}\n")
 
     # Show delta table
-    from rich.table import Table
+
     tbl = Table(title=f"Score delta — {domain}", show_header=True)
     tbl.add_column("Gap", style="dim", max_width=40)
     tbl.add_column("Gen", justify="center")
@@ -345,11 +340,7 @@ def critique(domain: str, workers: int) -> None:
 @click.option("--out", "-o", default=None, help="Output .md file path (default: print to stdout)")
 def report(domain: str, top: int, approved_only: bool, out: str) -> None:
     """Render a Markdown report of hypotheses for one or all domains."""
-    from datetime import datetime
-    from athanor.hypotheses.models import HypothesisReport as HR
-    from athanor.domains import list_domains
-
-    date_str = datetime.utcnow().strftime("%Y-%m-%d")
+    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     if domain:
         domain_list = [domain]
@@ -370,7 +361,7 @@ def report(domain: str, top: int, approved_only: bool, out: str) -> None:
                 console.print(f"[red]No hypotheses for '{d}'. Run Stage 3 first.[/]")
                 raise SystemExit(1)
             continue
-        rep = HR.model_validate_json(hyp_path.read_text())
+        rep = HypothesisReport.model_validate_json(hyp_path.read_text())
         for h in rep.ranked:
             if approved_only and h.approved is not True:
                 continue
@@ -484,8 +475,6 @@ def report(domain: str, top: int, approved_only: bool, out: str) -> None:
 def search(query: str, domain: str, min_score: float, approved_only: bool,
            risk: str, compute: bool) -> None:
     """Search hypotheses across all domains by keyword, score, or filter."""
-    from athanor.hypotheses.models import HypothesisReport
-
     hyp_root = _ws_root() / "outputs" / "hypotheses"
     if not hyp_root.exists():
         console.print("[red]No hypothesis outputs found. Run Stage 3 for at least one domain.[/]")
@@ -546,8 +535,6 @@ def search(query: str, domain: str, min_score: float, approved_only: bool,
 @click.option("--all", "show_all", is_flag=True, help="Re-review already-reviewed hypotheses")
 def approve(domain: str, show_all: bool) -> None:
     """Interactively approve or reject hypotheses for a domain."""
-    from athanor.hypotheses.models import HypothesisReport
-
     hyp_path = _out(domain)["hyps"] / "hypothesis_report.json"
     if not hyp_path.exists():
         console.print(f"[red]No hypothesis report found for '{domain}'. Run Stage 3 first.[/]")
@@ -611,7 +598,6 @@ def approve(domain: str, show_all: bool) -> None:
 def cross_domain_cmd(domain_a: str, domain_b: str, all_pairs: bool,
                      top: int, threshold: float) -> None:
     """Find structural gaps BETWEEN two domains — cross-pollination opportunities."""
-    from athanor.domains import list_domains
 
     if all_pairs:
         available = [
