@@ -410,59 +410,102 @@ def run(
 
 # ── report command ──────────────────────────────────────────────────────────
 @cli.command()
-@click.option("--domain", "-d", required=True, help="Domain name")
+@click.option("--domain", "-d", default=None, help="Domain name (omit for all-domain digest)")
 @click.option("--top", "-n", default=10, show_default=True, help="Max hypotheses to include")
 @click.option("--approved-only", is_flag=True, help="Only include approved hypotheses")
 @click.option("--out", "-o", default=None, help="Output .md file path (default: print to stdout)")
 def report(domain: str, top: int, approved_only: bool, out: str) -> None:
-    """Render a Markdown report of hypotheses for a domain."""
+    """Render a Markdown report of hypotheses for one or all domains.</p>
+
+    Omit --domain to produce a cross-domain digest sorted by composite score.
+    """
     from datetime import datetime
     from athanor.hypotheses.models import HypothesisReport as HR
-
-    hyp_path = _out(domain)["hyps"] / "hypothesis_report.json"
-    if not hyp_path.exists():
-        console.print(f"[red]No hypotheses for '{domain}'. Run Stage 3 first.[/]")
-        raise SystemExit(1)
-
-    rep = HR.model_validate_json(hyp_path.read_text())
-    candidates = [
-        h for h in rep.ranked
-        if not approved_only or h.approved is True
-    ][:top]
+    from athanor.domains import list_domains
 
     date_str = datetime.utcnow().strftime("%Y-%m-%d")
-    title = domain.replace("_", " ").title()
+
+    # ── resolve which domains to include ─────────────────────────────────────
+    if domain:
+        domain_list = [domain]
+    else:
+        domain_list = [
+            d for d in sorted(list_domains())
+            if (_out(d)["hyps"] / "hypothesis_report.json").exists()
+        ]
+        if not domain_list:
+            console.print("[red]No hypothesis reports found. Run Stage 3 first.[/]")
+            raise SystemExit(1)
+
+    # ── load and (optionally) aggregate ──────────────────────────────────────
+    all_hypotheses: list[tuple[str, object]] = []  # (domain_name, Hypothesis)
+    for d in domain_list:
+        hyp_path = _out(d)["hyps"] / "hypothesis_report.json"
+        if not hyp_path.exists():
+            if len(domain_list) == 1:
+                console.print(f"[red]No hypotheses for '{d}'. Run Stage 3 first.[/]")
+                raise SystemExit(1)
+            continue
+        rep = HR.model_validate_json(hyp_path.read_text())
+        for h in rep.ranked:
+            if approved_only and h.approved is not True:
+                continue
+            all_hypotheses.append((d, h))
+
+    # Sort by composite score descending
+    all_hypotheses.sort(key=lambda x: x[1].composite_score, reverse=True)
+    candidates = all_hypotheses[:top]
+
+    multi = len(domain_list) > 1
+    if multi:
+        title = "Cross-Domain Research Digest"
+        subtitle = f"{', '.join(domain_list)}"
+    else:
+        title_domain = domain_list[0].replace("_", " ").title()
+        title = f"{title_domain} Hypotheses"
+        subtitle = domain_list[0]
 
     lines = [
-        f"# Athanor — {title} Hypotheses",
-        f"*{date_str} | `{domain}` | "
-        f"{len(rep.hypotheses)} total | {len(candidates)} shown"
+        f"# Athanor — {title}",
+        f"*{date_str} | {subtitle} | "
+        f"{len(all_hypotheses)} total | {len(candidates)} shown"
         + (" (approved only)" if approved_only else "") + "*",
         "",
         "---",
         "",
         "## Summary",
         "",
-        "| # | Gap | Score | N | R | I | Rep. Risk | Compute |",
-        "|---|-----|-------|---|---|---|-----------|---------|" ,
     ]
-    for i, h in enumerate(candidates, 1):
+
+    header_cols = ["#", "Domain", "Gap", "Score", "N", "R", "I", "Rep. Risk", "Compute"] if multi else \
+                  ["#", "Gap", "Score", "N", "R", "I", "Rep. Risk", "Compute"]
+    lines.append("| " + " | ".join(header_cols) + " |")
+    lines.append("| " + " | ".join(["---"] * len(header_cols)) + " |")
+
+    for i, (dom_name, h) in enumerate(candidates, 1):
         comp = "\u2713" if h.experiment and h.experiment.computational else "\u2717"
         label = {True: " \u2705", False: " \u274c", None: ""}.get(h.approved, "")
         risk_icon = {"low": "\U0001f7e2", "high": "\U0001f534"}.get(getattr(h, "replication_risk", "medium"), "\U0001f7e1")
-        lines.append(
-            f"| {i} | {h.gap_concept_a} \u2194 {h.gap_concept_b}{label} | "
-            f"{h.composite_score:.1f} | {h.novelty} | {h.rigor} | {h.impact} | "
-            f"{risk_icon} {getattr(h, 'replication_risk', 'medium')} | {comp} |"
-        )
+        row_vals = [str(i)]
+        if multi:
+            row_vals.append(dom_name)
+        row_vals += [
+            f"{h.gap_concept_a} \u2194 {h.gap_concept_b}{label}",
+            f"{h.composite_score:.1f}",
+            str(h.novelty), str(h.rigor), str(h.impact),
+            f"{risk_icon} {getattr(h, 'replication_risk', 'medium')}",
+            comp,
+        ]
+        lines.append("| " + " | ".join(row_vals) + " |")
 
     lines += ["", "---", ""]
 
-    for i, h in enumerate(candidates, 1):
+    for i, (dom_name, h) in enumerate(candidates, 1):
         approved_tag = {True: " \u2705 Approved", False: " \u274c Rejected", None: ""}.get(h.approved, "")
         comp_label = "Computational" if h.experiment and h.experiment.computational else "Requires wet-lab"
+        domain_tag = f" *(domain: {dom_name})*" if multi else ""
         lines += [
-            f"## {i}. {h.gap_concept_a} \u2194 {h.gap_concept_b}{approved_tag}",
+            f"## {i}. {h.gap_concept_a} \u2194 {h.gap_concept_b}{approved_tag}{domain_tag}",
             f"**Score:** {h.composite_score:.1f}  "
             f"(N\u202f{h.novelty} \u00b7 R\u202f{h.rigor} \u00b7 I\u202f{h.impact})  |  "
             f"{comp_label}  |  Replication risk: **{getattr(h, 'replication_risk', 'medium')}**",
