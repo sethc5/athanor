@@ -268,8 +268,40 @@ Fixed `_out()` in `cli.py` to scope graphs per-domain: `outputs/graphs/<domain>/
 | JSON retry loop | High | Low | ✅ (Session 6) |
 | `seed_papers` YAML field | High | Low | ✅ (Session 6) |
 | `athanor report` markdown export | Medium | Low | ✅ (Session 6) |
+| `athanor cross-domain --all` | High | Low | ✅ (Session 9) |
+| `domain_context` YAML + wiring | High | Low | ✅ (Session 9) |
+| Semantic concept deduplication | High | Medium | ✅ (Session 9) |
+| Anthropic prompt caching | Medium | Low | ✅ (Session 9) |
+| All-domain status table | Low | Low | ✅ (Session 9) |
+| Cross-domain report digest | Medium | Low | ✅ (Session 9) |
 | Hypothesis aging / tracking | Medium | Medium | 🔲 |
 
 ---
+
+## Session 9 — Summary of changes
+
+**Trigger:** User reported Tier 1 rate limits upgraded to 90K OPM on all models.
+
+**Changes:**
+- Worker defaults raised: Stage 1+2 → 8 workers, Stage 3 (4096 tok/req) → 4 workers
+- `_norm()` in `graph/builder.py`: collapses hyphens/underscores/spaces before dedup  
+  (catches "three-fold" ↔ "threefold" without embeddings)
+- `_semantic_dedup()` in `graph/builder.py`: union-find over raw cosine similarity  
+  (threshold=0.88) catches abbreviation variants like CY3 ↔ Calabi-Yau threefold
+- `ExperimentDesign.minimum_detectable_effect` + `statistical_power_notes` DOE fields
+- Stage 1 `max_tokens` raised 2048 → 3000 (math papers were truncating mid-JSON)
+- Anthropic prompt caching: `call_llm_json(use_cache=True)` auto-wraps system  
+  prompts ≥ 4096 chars with `cache_control={"type": "ephemeral"}`
+- `athanor status`: `--domain` now optional; all-domain Rich table with counts + top scores
+- `athanor report`: `--domain` now optional; cross-domain digest sorted by composite score
+- `athanor cross-domain --all`: runs all N×(N-1)/2 domain pairs automatically
+- `domain_context` YAML field wired through all 3 pipeline stages  
+  (Stage 1: injected into extractor user template; Stages 2+3: prepended to per-gap prompts)
+
+**Pipeline results (Session 9):**
+- 6 domains fully processed: 76+ hypotheses, top score 4.65
+- athanor_meta, information_theory, longevity_biology, quantum_computing,  
+  string_landscape, synthetic_biology all complete (Stage 1+2+3 ✅)
+- 15 cross-domain pairs launched via `athanor cross-domain --all`
 
 *Last updated: 2026-02-23 (Session 9)*

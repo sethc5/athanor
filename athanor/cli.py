@@ -714,6 +714,7 @@ def _run_cross_domain(domain_a: str, domain_b: str, top: int, threshold: float) 
     """Core impl for cross-domain gap analysis (shared by single and --all modes)."""
     import numpy as np
     from sklearn.metrics.pairwise import cosine_similarity
+    from athanor.config import cfg
     from athanor.domains import load_domain
     from athanor.graph.models import ConceptGraph
     from athanor.embed import Embedder
