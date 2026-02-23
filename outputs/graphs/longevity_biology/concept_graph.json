@@ -1,0 +1,997 @@
+{
+  "domain": "longevity_biology",
+  "query": "aging senescence epigenetic clock longevity hallmarks lifespan healthspan inflammaging proteostasis mTOR sirtuins rejuvenation senolytics autophagy\n",
+  "concepts": [
+    {
+      "label": "chronological age prediction",
+      "description": "Estimation of a person's actual age from biological markers, particularly DNA methylation patterns.",
+      "aliases": [
+        "age estimation from methylation"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0452,
+      "burt_constraint": 0.3429,
+      "effective_size": 4.236,
+      "structural_hole": false
+    },
+    {
+      "label": "DNA methylation",
+      "description": "Chemical modification of cytosine bases in DNA that serves as an epigenetic marker correlated with age and cellular state.",
+      "aliases": [
+        "methylation patterns",
+        "epigenetic marks"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0175,
+      "burt_constraint": 0.5003,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "biological age",
+      "description": "Measure of physiological aging status derived from molecular markers, potentially differing from chronological age.",
+      "aliases": [
+        "epigenetic age",
+        "biological clock"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Epigenetic Correlation Drift",
+      "description": "Temporal variation in the relationship between DNA methylation patterns and age across different life stages.",
+      "aliases": [
+        "ECD"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7013,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Heterogeneity Among CpGs",
+      "description": "Variability in how individual CpG sites respond to aging and their predictive contributions across population subgroups.",
+      "aliases": [
+        "HAC"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7013,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "CpG sites",
+      "description": "Genomic locations where cytosine is followed by guanine, commonly subject to methylation and age-related changes.",
+      "aliases": [
+        "CpG loci"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0079,
+      "burt_constraint": 0.5033,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "similarity searching",
+      "description": "Computational method to identify and group similar DNA methylation profiles based on distance or similarity metrics.",
+      "aliases": [
+        "similarity clustering"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "age group clustering",
+      "description": "Partitioning of methylation profiles into groups corresponding to different life stages or age ranges.",
+      "aliases": [
+        "age stratification"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0206,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Explainable Boosting Machines",
+      "description": "Interpretable machine learning algorithm that combines boosting with inherent explainability for feature importance and interactions.",
+      "aliases": [
+        "EBM"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0349,
+      "burt_constraint": 0.3336,
+      "effective_size": 3.0,
+      "structural_hole": false
+    },
+    {
+      "label": "group-specific prediction",
+      "description": "Machine learning approach that trains separate models for distinct population subgroups to improve accuracy and capture heterogeneity.",
+      "aliases": [
+        "stratified prediction"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0397,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "CpG interactions",
+      "description": "Pairwise or higher-order joint effects between CpG methylation sites on age prediction.",
+      "aliases": [
+        "methylation interactions"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "aging rates",
+      "description": "Rate of change in biological markers over time, potentially varying across age groups and individuals.",
+      "aliases": [
+        "age-specific aging rates"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "epigenetic clocks",
+      "description": "Predictive models trained on methylation data to estimate biological age, used as reference benchmarks.",
+      "aliases": [
+        "methylation clocks"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "feature importance",
+      "description": "Quantitative measure of how much individual features (CpG sites) contribute to model predictions.",
+      "aliases": [
+        "variable importance"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.0079,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "iTARGET algorithm",
+      "description": "Two-phase method combining age-group clustering via similarity search and group-specific EBM-based age prediction.",
+      "aliases": [
+        "Interpretable Tailored Age Regression"
+      ],
+      "source_papers": [
+        "2501.02401v1"
+      ],
+      "centrality": 0.096,
+      "burt_constraint": 0.2235,
+      "effective_size": 6.4472,
+      "structural_hole": true
+    },
+    {
+      "label": "onset of senescence",
+      "description": "The age at which the senescent process begins to manifest with measurable increases in mortality risk.",
+      "aliases": [
+        "senescence onset",
+        "aging onset",
+        "human aging",
+        "aging process",
+        "senescence"
+      ],
+      "source_papers": [
+        "2504.04143v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.5556,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "life expectancy",
+      "description": "The average number of years an individual is expected to live, a key demographic measure of population longevity.",
+      "aliases": [
+        "longevity"
+      ],
+      "source_papers": [
+        "2504.04143v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.574,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "pace of senescence",
+      "description": "The rate at which individuals accumulate age-related mortality risk; the speed at which the aging process unfolds.",
+      "aliases": [
+        "aging rate",
+        "senescence rate"
+      ],
+      "source_papers": [
+        "2504.04143v3"
+      ],
+      "centrality": 0.0365,
+      "burt_constraint": 0.2209,
+      "effective_size": 5.6881,
+      "structural_hole": false
+    },
+    {
+      "label": "period shocks",
+      "description": "Transient, time-limited disturbances in mortality patterns caused by historical events affecting entire populations simultaneously.",
+      "aliases": [
+        "historical shocks",
+        "mortality shocks"
+      ],
+      "source_papers": [
+        "2504.04143v3"
+      ],
+      "centrality": 0.0095,
+      "burt_constraint": 0.5268,
+      "effective_size": 2.3323,
+      "structural_hole": false
+    },
+    {
+      "label": "biological baseline",
+      "description": "The underlying intrinsic component of age-specific mortality risk attributable to fundamental biological aging processes.",
+      "aliases": [
+        "baseline mortality"
+      ],
+      "source_papers": [
+        "2504.04143v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "long-term trend",
+      "description": "A systematic directional change in mortality patterns or senescence pace occurring over extended time periods across generations.",
+      "aliases": [
+        "secular trend"
+      ],
+      "source_papers": [
+        "2504.04143v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7958,
+      "effective_size": 1.0271,
+      "structural_hole": false
+    },
+    {
+      "label": "cohort mortality data",
+      "description": "Age-specific death rates tracked longitudinally for groups of individuals born in the same period, used to study aging patterns.",
+      "aliases": [
+        "mortality data",
+        "age-specific mortality"
+      ],
+      "source_papers": [
+        "2504.04143v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "decomposition framework",
+      "description": "A mathematical or statistical method that separates an observed phenomenon into distinct constituent components for analysis.",
+      "aliases": [
+        "decomposition model",
+        "component analysis"
+      ],
+      "source_papers": [
+        "2504.04143v3"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "Vaupel hypothesis",
+      "description": "The proposition that human longevity gains derive from delayed senescence onset rather than slowed pace of aging itself.",
+      "aliases": [
+        "constant pace hypothesis"
+      ],
+      "source_papers": [
+        "2504.04143v3"
+      ],
+      "centrality": 0.0111,
+      "burt_constraint": 0.5004,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "epigenetic landscape",
+      "description": "Patterns of chemical modifications on histone tails that regulate gene expression and maintain cell identity.",
+      "aliases": [
+        "histone modification patterns",
+        "epigenetic state"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0571,
+      "burt_constraint": 0.2159,
+      "effective_size": 5.7091,
+      "structural_hole": true
+    },
+    {
+      "label": "histone modification",
+      "description": "Chemical modifications (acetylation, deacetylation, methylation) on histone tail residues that alter chromatin structure and transcriptional activity.",
+      "aliases": [
+        "histone PTM",
+        "histone mark"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0254,
+      "burt_constraint": 0.5014,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "sirtuin",
+      "description": "NAD+-dependent histone deacetylase involved in DNA damage repair and stress response.",
+      "aliases": [
+        "histone deacetylase",
+        "HDAC"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0143,
+      "burt_constraint": 0.5473,
+      "effective_size": 2.0,
+      "structural_hole": false
+    },
+    {
+      "label": "DNA double-strand break",
+      "description": "Break in both strands of the DNA double helix, a critical form of genomic damage requiring rapid repair.",
+      "aliases": [
+        "DSB",
+        "double-strand break"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "chromatin architecture",
+      "description": "Three-dimensional organisation and folding of chromatin fiber into domains and topologically associating units.",
+      "aliases": [
+        "chromatin structure",
+        "chromatin folding",
+        "3D chromatin organization"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0254,
+      "burt_constraint": 0.5115,
+      "effective_size": 2.3863,
+      "structural_hole": false
+    },
+    {
+      "label": "long-range chromatin contact",
+      "description": "Physical interactions between distant genomic regions mediated by chromatin looping and 3D structure.",
+      "aliases": [
+        "chromatin loop",
+        "long-range interaction"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "stochastic model",
+      "description": "Computational framework incorporating probabilistic transitions to simulate histone modification dynamics and chromatin behavior.",
+      "aliases": [
+        "stochastic simulation",
+        "probabilistic model"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 0.7949,
+      "effective_size": 1.0515,
+      "structural_hole": false
+    },
+    {
+      "label": "epigenetic erosion",
+      "description": "Loss or destabilisation of normal histone modification patterns in response to stress or enzyme depletion.",
+      "aliases": [
+        "epigenetic destabilisation"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "enzyme relocalisation",
+      "description": "Movement of histone-modifying enzymes from their normal distribution to specific genomic sites, such as DNA damage foci.",
+      "aliases": [
+        "enzyme relocalization",
+        "protein relocalisation"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "cell identity",
+      "description": "Stable cell-type-specific transcriptional and phenotypic state maintained by epigenetic regulation.",
+      "aliases": [
+        "cell fate",
+        "cell type specification"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "tissue homeostasis",
+      "description": "Maintenance of stable tissue structure and function through coordinated epigenetic and cellular processes.",
+      "aliases": [
+        "cellular homeostasis"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "genomic stress",
+      "description": "Conditions such as DNA damage, replication fork collapse, or oxidative stress that threaten genomic integrity.",
+      "aliases": [
+        "DNA damage stress"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0,
+      "burt_constraint": 1.0,
+      "effective_size": 1.0,
+      "structural_hole": false
+    },
+    {
+      "label": "chromatin resilience",
+      "description": "Capacity of chromatin structure to resist destabilisation of epigenetic patterns under stress conditions.",
+      "aliases": [
+        "epigenetic buffering"
+      ],
+      "source_papers": [
+        "2508.16548v1"
+      ],
+      "centrality": 0.0143,
+      "burt_constraint": 0.5,
+      "effective_size": 2.0,
+      "structural_hole": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "DNA methylation",
+      "target": "chronological age prediction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "DNA methylation patterns serve as primary input for accurate age prediction; the task is to estimate chronological age from these patterns.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "Epigenetic Correlation Drift",
+      "target": "chronological age prediction",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "ECD creates challenges for age prediction by reflecting dynamic and non-stationary relationships between methylation and age.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "Heterogeneity Among CpGs",
+      "target": "chronological age prediction",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "HAC complicates prediction as different CpG sites contribute heterogeneously across life stages and individuals.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "CpG sites",
+      "target": "DNA methylation",
+      "relation": "is-a",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "CpG sites are the genomic locations where methylation modifications occur.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "similarity searching",
+      "target": "age group clustering",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The first phase employs similarity searching to cluster methylation profiles by age group.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "age group clustering",
+      "target": "iTARGET algorithm",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Age group clustering constitutes the first phase of the two-phase iTARGET algorithm.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "Explainable Boosting Machines",
+      "target": "group-specific prediction",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The second phase uses EBM for precise, group-specific prediction of age.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "group-specific prediction",
+      "target": "iTARGET algorithm",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Group-specific EBM prediction constitutes the second phase of the two-phase iTARGET algorithm.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "iTARGET algorithm",
+      "target": "chronological age prediction",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "iTARGET is a novel two-phase algorithm designed to improve prediction accuracy for chronological age from methylation.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "iTARGET algorithm",
+      "target": "Heterogeneity Among CpGs",
+      "relation": "addresses",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The group-specific approach of iTARGET is designed to handle heterogeneity among CpGs across different populations.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "iTARGET algorithm",
+      "target": "Epigenetic Correlation Drift",
+      "relation": "addresses",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Age-group clustering in iTARGET addresses ECD by capturing life-stage-specific methylation-age relationships.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "Explainable Boosting Machines",
+      "target": "feature importance",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "EBM provides inherent explainability to reveal key age-related CpG sites and their importance.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "feature importance",
+      "target": "CpG sites",
+      "relation": "characterises_by",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Key age-related CpG sites are identified through feature importance measures from the EBM model.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "Explainable Boosting Machines",
+      "target": "CpG interactions",
+      "relation": "detects",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "EBM identifies pairwise interactions between CpG sites as part of its interpretable analysis.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "iTARGET algorithm",
+      "target": "aging rates",
+      "relation": "detects",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The method detects age-specific changes in aging rates through its group-specific prediction approach.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "biological age",
+      "target": "chronological age prediction",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Accurate chronological age prediction from methylation advances biological age estimation.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "iTARGET algorithm",
+      "target": "epigenetic clocks",
+      "relation": "outperforms",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Experimental results show that iTARGET outperforms traditional epigenetic clocks and machine learning models.",
+      "source_papers": [
+        "2501.02401v1"
+      ]
+    },
+    {
+      "source": "onset of senescence",
+      "target": "life expectancy",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Human aging is marked by steady rise in risk of dying with age; this process determines life expectancy gains.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "pace of senescence",
+      "target": "onset of senescence",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "The pace of senescence is a core attribute describing how quickly the aging process unfolds.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "onset of senescence",
+      "target": "life expectancy",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Vaupel hypothesizes that gains in longevity come from delayed onset of senescence rather than its slowing down.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "Vaupel hypothesis",
+      "target": "pace of senescence",
+      "relation": "predicts",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Hypothesis proposes that the pace at which individuals age may be constant, with longevity gains from delayed onset.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "decomposition framework",
+      "target": "pace of senescence",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "New framework decomposes the pace of senescence into three components: biological baseline, long-term trend, and cumulative period shocks.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "biological baseline",
+      "target": "pace of senescence",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Biological baseline is one of three decomposed components of the pace of senescence.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "long-term trend",
+      "target": "pace of senescence",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Long-term trend is one of three decomposed components of the pace of senescence.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "period shocks",
+      "target": "pace of senescence",
+      "relation": "part-of",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Cumulative impact of period shocks is one of three decomposed components of the pace of senescence.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "cohort mortality data",
+      "target": "Vaupel hypothesis",
+      "relation": "tests",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Framework applied to cohort mortality data from 12 countries to test Vaupel's hypothesis.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "period shocks",
+      "target": "long-term trend",
+      "relation": "inhibits",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Once period shocks are accounted for, there is no statistical evidence of a long-term trend in pace of senescence.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "period shocks",
+      "target": "life expectancy",
+      "relation": "correlates_with",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "Variations in mortality patterns are consistent with echoes of shared historical events affecting populations.",
+      "source_papers": [
+        "2504.04143v3"
+      ]
+    },
+    {
+      "source": "histone modification",
+      "target": "epigenetic landscape",
+      "relation": "characterises",
+      "edge_type": "empirical",
+      "weight": 1.0,
+      "evidence": "Epigenetic landscapes are represented by patterns of chemical modifications on histone tails.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "epigenetic landscape",
+      "target": "cell identity",
+      "relation": "maintains",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Epigenetic landscapes are essential for maintaining cell identity and tissue homeostasis.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "epigenetic landscape",
+      "target": "tissue homeostasis",
+      "relation": "maintains",
+      "edge_type": "empirical",
+      "weight": 0.95,
+      "evidence": "Epigenetic landscapes are essential for maintaining cell identity and tissue homeostasis.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "chromatin architecture",
+      "target": "epigenetic landscape",
+      "relation": "regulates",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Epigenetic landscapes are shaped by the three-dimensional organisation of chromatin.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "sirtuin",
+      "target": "histone modification",
+      "relation": "produces",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Sirtuins are histone deacetylases that modify histone tails via deacetylation.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "DNA double-strand break",
+      "target": "sirtuin",
+      "relation": "triggers_relocalisation_of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Sirtuin relocalisation to DSB sites leads to epigenetic erosion in response to genomic stress.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "enzyme relocalisation",
+      "target": "epigenetic erosion",
+      "relation": "causes",
+      "edge_type": "empirical",
+      "weight": 0.9,
+      "evidence": "Sirtuin relocalisation to DSB sites leads to epigenetic erosion.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "sirtuin",
+      "target": "DNA double-strand break",
+      "relation": "participates_in_repair_of",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Sirtuins are histone deacetylases involved in DSB repair.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "long-range chromatin contact",
+      "target": "chromatin resilience",
+      "relation": "enables",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Chromatin regions with large domains of long-range contacts are more resilient to epigenetic destabilisation.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "stochastic model",
+      "target": "epigenetic landscape",
+      "relation": "measures",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "A stochastic model of histone modification dynamics was used to investigate epigenetic pattern destabilisation.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "stochastic model",
+      "target": "chromatin architecture",
+      "relation": "integrates",
+      "edge_type": "empirical",
+      "weight": 0.8,
+      "evidence": "The stochastic model was integrated with chromatin architecture to investigate histone modification dynamics.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "genomic stress",
+      "target": "epigenetic landscape",
+      "relation": "destabilises",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "Response to genomic stress such as DNA double-strand breaks destabilises epigenetic patterns.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    },
+    {
+      "source": "chromatin architecture",
+      "target": "chromatin resilience",
+      "relation": "determines",
+      "edge_type": "empirical",
+      "weight": 0.85,
+      "evidence": "The resulting landscape depends on chromatin geometry; regions with large long-range contact domains are more resilient.",
+      "source_papers": [
+        "2508.16548v1"
+      ]
+    }
+  ]
+}

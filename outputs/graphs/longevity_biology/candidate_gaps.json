@@ -1,0 +1,86 @@
+[
+  {
+    "concept_a": "biological age",
+    "concept_b": "aging rates",
+    "similarity": 0.6060171127319336,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "biological age",
+    "concept_b": "biological baseline",
+    "similarity": 0.5297490358352661,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "DNA double-strand break",
+    "concept_b": "genomic stress",
+    "similarity": 0.48756182193756104,
+    "graph_distance": 4,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "histone modification",
+    "concept_b": "enzyme relocalisation",
+    "similarity": 0.4598007798194885,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "histone modification",
+    "concept_b": "epigenetic erosion",
+    "similarity": 0.45583903789520264,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2493
+  },
+  {
+    "concept_a": "epigenetic landscape",
+    "concept_b": "epigenetic erosion",
+    "similarity": 0.454060435295105,
+    "graph_distance": 999,
+    "structural_hole_score": 0.3921
+  },
+  {
+    "concept_a": "biological baseline",
+    "concept_b": "cohort mortality data",
+    "similarity": 0.43787968158721924,
+    "graph_distance": 3,
+    "structural_hole_score": 0.0
+  },
+  {
+    "concept_a": "sirtuin",
+    "concept_b": "enzyme relocalisation",
+    "similarity": 0.4207920432090759,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2263
+  },
+  {
+    "concept_a": "CpG sites",
+    "concept_b": "CpG interactions",
+    "similarity": 0.41719046235084534,
+    "graph_distance": 3,
+    "structural_hole_score": 0.2484
+  },
+  {
+    "concept_a": "sirtuin",
+    "concept_b": "epigenetic erosion",
+    "similarity": 0.41685357689857483,
+    "graph_distance": 999,
+    "structural_hole_score": 0.2263
+  },
+  {
+    "concept_a": "long-term trend",
+    "concept_b": "cohort mortality data",
+    "similarity": 0.4155600070953369,
+    "graph_distance": 3,
+    "structural_hole_score": 0.1021
+  },
+  {
+    "concept_a": "aging rates",
+    "concept_b": "biological baseline",
+    "similarity": 0.41330188512802124,
+    "graph_distance": 999,
+    "structural_hole_score": 0.0
+  }
+]

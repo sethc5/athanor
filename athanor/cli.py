@@ -671,12 +671,44 @@ def approve(domain: str, show_all: bool) -> None:
 
 # ── cross-domain command ──────────────────────────────────────────────────────
 @cli.command("cross-domain")
-@click.option("--domain-a", "-a", required=True, help="First domain (Stage 1 must be complete)")
-@click.option("--domain-b", "-b", required=True, help="Second domain (Stage 1 must be complete)")
-@click.option("--top", "-n", default=10, show_default=True, help="Max bridges to analyse")
+@click.option("--domain-a", "-a", default=None, help="First domain (Stage 1 must be complete)")
+@click.option("--domain-b", "-b", default=None, help="Second domain (Stage 1 must be complete)")
+@click.option("--all", "all_pairs", is_flag=True, help="Run all domain-pair combinations automatically")
+@click.option("--top", "-n", default=10, show_default=True, help="Max bridges to analyse per pair")
 @click.option("--threshold", default=0.45, show_default=True, help="Min cross-domain cosine similarity")
-def cross_domain_cmd(domain_a: str, domain_b: str, top: int, threshold: float) -> None:
-    """Find structural gaps BETWEEN two domains \u2014 cross-pollination opportunities."""
+def cross_domain_cmd(domain_a: str, domain_b: str, all_pairs: bool, top: int, threshold: float) -> None:
+    """Find structural gaps BETWEEN two domains \u2014 cross-pollination opportunities.
+
+    Use --all to automatically run every pair of domains that have a Stage 1 concept graph.
+    """
+    from athanor.domains import list_domains
+
+    if all_pairs:
+        # Find all domains with concept graphs and run every pair
+        available = [
+            d for d in sorted(list_domains())
+            if (_out(d)["graphs"] / "concept_graph.json").exists()
+        ]
+        if len(available) < 2:
+            console.print("[red]Need at least 2 domains with concept graphs. Run Stage 1 first.[/]")
+            raise SystemExit(1)
+        pairs = [(available[i], available[j])
+                 for i in range(len(available))
+                 for j in range(i + 1, len(available))]
+        console.print(f"[bold]Running {len(pairs)} cross-domain pairs across {len(available)} domains[/]")
+        for da, db in pairs:
+            console.rule(f"[cyan]{da} ↔ {db}[/]")
+            _run_cross_domain(da, db, top, threshold)
+        return
+
+    if not domain_a or not domain_b:
+        console.print("[red]Provide --domain-a and --domain-b, or use --all[/]")
+        raise SystemExit(1)
+    _run_cross_domain(domain_a, domain_b, top, threshold)
+
+
+def _run_cross_domain(domain_a: str, domain_b: str, top: int, threshold: float) -> None:
+    """Core impl for cross-domain gap analysis (shared by single and --all modes)."""
     import numpy as np
     from sklearn.metrics.pairwise import cosine_similarity
     from athanor.domains import load_domain
