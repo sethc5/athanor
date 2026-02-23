@@ -373,15 +373,17 @@ def report(domain: str, top: int, approved_only: bool, out: str) -> None:
         "",
         "## Summary",
         "",
-        "| # | Gap | Score | N | R | I | Compute |",
-        "|---|-----|-------|---|---|---|---------|" ,
+        "| # | Gap | Score | N | R | I | Rep. Risk | Compute |",
+        "|---|-----|-------|---|---|---|-----------|---------|" ,
     ]
     for i, h in enumerate(candidates, 1):
         comp = "\u2713" if h.experiment and h.experiment.computational else "\u2717"
-        label = {True: " ✅", False: " ❌", None: ""}.get(h.approved, "")
+        label = {True: " \u2705", False: " \u274c", None: ""}.get(h.approved, "")
+        risk_icon = {"low": "\U0001f7e2", "high": "\U0001f534"}.get(getattr(h, "replication_risk", "medium"), "\U0001f7e1")
         lines.append(
             f"| {i} | {h.gap_concept_a} \u2194 {h.gap_concept_b}{label} | "
-            f"{h.composite_score:.1f} | {h.novelty} | {h.rigor} | {h.impact} | {comp} |"
+            f"{h.composite_score:.1f} | {h.novelty} | {h.rigor} | {h.impact} | "
+            f"{risk_icon} {getattr(h, 'replication_risk', 'medium')} | {comp} |"
         )
 
     lines += ["", "---", ""]
@@ -392,7 +394,8 @@ def report(domain: str, top: int, approved_only: bool, out: str) -> None:
         lines += [
             f"## {i}. {h.gap_concept_a} \u2194 {h.gap_concept_b}{approved_tag}",
             f"**Score:** {h.composite_score:.1f}  "
-            f"(N\u202f{h.novelty} \u00b7 R\u202f{h.rigor} \u00b7 I\u202f{h.impact})  |  {comp_label}",
+            f"(N\u202f{h.novelty} \u00b7 R\u202f{h.rigor} \u00b7 I\u202f{h.impact})  |  "
+            f"{comp_label}  |  Replication risk: **{getattr(h, 'replication_risk', 'medium')}**",
             "",
             f"**Hypothesis:** {h.statement}",
             "",
@@ -431,6 +434,69 @@ def report(domain: str, top: int, approved_only: bool, out: str) -> None:
         console.print(md)
 
 
+# ── search command ──────────────────────────────────────────────────────────
+@cli.command()
+@click.argument("query", default="")
+@click.option("--domain", "-d", default=None, help="Restrict to one domain")
+@click.option("--min-score", default=0.0, show_default=True, help="Min composite score")
+@click.option("--approved-only", is_flag=True, help="Only approved hypotheses")
+@click.option("--risk", default=None, type=click.Choice(["low", "medium", "high"]), help="Filter by replication risk")
+@click.option("--compute", is_flag=True, help="Only computational experiments")
+def search(query: str, domain: str, min_score: float, approved_only: bool, risk: str, compute: bool) -> None:
+    """Search hypotheses across all domains by keyword, score, or filter."""
+    from athanor.hypotheses.models import HypothesisReport
+
+    hyp_root = _root / "outputs" / "hypotheses"
+    if not hyp_root.exists():
+        console.print("[red]No hypothesis outputs found. Run Stage 3 for at least one domain.[/]")
+        return
+
+    domain_dirs = (
+        [hyp_root / domain] if domain else sorted(hyp_root.iterdir())
+    )
+
+    results: list[tuple[str, object]] = []  # (domain_name, Hypothesis)
+    for d in domain_dirs:
+        report_file = d / "hypothesis_report.json"
+        if not report_file.exists():
+            continue
+        rep = HypothesisReport.model_validate_json(report_file.read_text())
+        for h in rep.ranked:
+            if h.composite_score < min_score:
+                continue
+            if approved_only and h.approved is not True:
+                continue
+            if risk and getattr(h, "replication_risk", "medium") != risk:
+                continue
+            if compute and not (h.experiment and h.experiment.computational):
+                continue
+            if query:
+                needle = query.lower()
+                haystack = " ".join([
+                    h.statement, h.mechanism, h.gap_concept_a,
+                    h.gap_concept_b, " ".join(h.keywords),
+                ]).lower()
+                if needle not in haystack:
+                    continue
+            results.append((d.name, h))
+
+    if not results:
+        console.print(f"[yellow]No hypotheses match the search.[/]")
+        return
+
+    console.print(f"[bold]{len(results)} result(s)[/]\n")
+    for dom_name, h in results:
+        risk_icon = {"low": "\U0001f7e2", "high": "\U0001f534"}.get(getattr(h, "replication_risk", "medium"), "\U0001f7e1")
+        comp_icon = "\u2713" if h.experiment and h.experiment.computational else "\u2717"
+        appr_icon = {True: " \u2705", False: " \u274c", None: ""}.get(h.approved, "")
+        console.print(
+            f"[dim]{dom_name}[/]  [cyan]{h.gap_concept_a} \u2194 {h.gap_concept_b}[/]{appr_icon}"
+            f"  score=[bold]{h.composite_score:.1f}[/]  {risk_icon}  compute={comp_icon}"
+        )
+        console.print(f"  {h.statement[:120]}\u2026" if len(h.statement) > 120 else f"  {h.statement}")
+        console.print()
+
+
 # ── approve command ──────────────────────────────────────────────────────────
 @cli.command()
 @click.option("--domain", "-d", required=True, help="Domain name")
@@ -464,7 +530,8 @@ def approve(domain: str, show_all: bool) -> None:
         console.print(f"[bold]Falsify if:[/] {hyp.falsification_criteria}\n")
         if hyp.experiment:
             tag = "Computational \u2713" if hyp.experiment.computational else "Wet-lab"
-            console.print(f"[dim]{tag} | Effort: {hyp.experiment.estimated_effort}[/]\n")
+            risk = getattr(hyp, "replication_risk", "medium")
+            console.print(f"[dim]{tag} | Replication risk: {risk} | Effort: {hyp.experiment.estimated_effort}[/]\n")
         choice = click.prompt(
             "  Decision", default="s",
             type=click.Choice(["y", "n", "s", "q"], case_sensitive=False),

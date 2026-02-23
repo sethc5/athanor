@@ -41,12 +41,29 @@ Output ONLY valid JSON matching this exact schema — no prose, no markdown:
     {
       "source": "<concept label>",
       "target": "<concept label>",
-      "relation": "<verb phrase, e.g. extends | depends_on | contradicts | enables | measures | approximates>",
+      "relation": "<verb phrase — see controlled vocabulary below>",
+      "edge_type": "<one of: causal | inhibitory | correlational | methodological | definitional | empirical | analogical>",
       "weight": <float 0.1–1.0 indicating strength>,
       "evidence": "<short quote or paraphrase supporting this relation>"
     }
   ]
 }
+
+Controlled edge_type vocabulary (choose the BEST fit):
+- causal:          A directly causes, enables, or produces B (mechanistic link, direction known)
+- inhibitory:      A suppresses, blocks, or down-regulates B (causal but negative direction)
+- correlational:   A and B co-occur or co-vary; directionality unknown or not established
+- methodological:  A is a technique, tool, or framework used to study/measure/derive B
+- definitional:    A is a special case of B, or B is formally defined in terms of A (isa / part-of)
+- empirical:       A is observed or measured in / from B (data-level link)
+- analogical:      A is structurally analogous to B in a different domain
+
+Relation verb vocabulary (pick from these or coin a domain-specific verb):
+  causes · inhibits · enables · regulates · requires · produces · prevents
+  correlates_with · predicts · approximates · bounds · constrains · measures
+  extends · generalises · reduces_to · is-a · part-of · characterised_by
+  exchanges · classifies · stabilises · compactifies_on · fibres_over
+  contradicts · refutes · analogous_to
 
 Rules:
 - Extract 5–15 concepts per paper.
@@ -64,8 +81,8 @@ Examples of correct output (biology paper):
     {"label": "caloric restriction", "description": "Reduction of dietary energy intake without malnutrition; the most robust lifespan-extending intervention across species.", "aliases": ["dietary restriction"]}
   ],
   "edges": [
-    {"source": "caloric restriction", "target": "mTOR signalling", "relation": "inhibits", "weight": 0.9, "evidence": "CR reduces serum IGF-1, suppressing mTORC1 activity (Fig. 3)."},
-    {"source": "mTOR signalling", "target": "autophagy", "relation": "inhibits", "weight": 0.95, "evidence": "mTORC1 phosphorylates ULK1, blocking autophagy initiation; rapamycin restores flux (Fig. 5b)."}
+    {"source": "caloric restriction", "target": "mTOR signalling", "relation": "inhibits", "edge_type": "causal", "weight": 0.9, "evidence": "CR reduces serum IGF-1, suppressing mTORC1 activity (Fig. 3)."},
+    {"source": "mTOR signalling", "target": "autophagy", "relation": "inhibits", "edge_type": "inhibitory", "weight": 0.95, "evidence": "mTORC1 phosphorylates ULK1, blocking autophagy initiation; rapamycin restores flux (Fig. 5b)."}
   ]
 }
 
@@ -77,8 +94,8 @@ Example (physics/mathematics paper):
     {"label": "Hodge numbers", "description": "Topological invariants h^{p,q} characterising CY cohomology; h^{1,1} counts K\u00e4hler moduli.", "aliases": ["Hodge data"]}
   ],
   "edges": [
-    {"source": "mirror symmetry", "target": "Hodge numbers", "relation": "exchanges", "weight": 0.9, "evidence": "Mirror symmetry swaps h^{1,1}\u2194h^{2,1}, providing a shortcut for instanton enumeration (Sec. 4.2)."},
-    {"source": "Calabi-Yau manifold", "target": "Hodge numbers", "relation": "characterised_by", "weight": 1.0, "evidence": "Authors classify CY3 geometries by Hodge pairs, listing 30,108 distinct topologies (Table 1)."}
+    {"source": "mirror symmetry", "target": "Hodge numbers", "relation": "exchanges", "edge_type": "definitional", "weight": 0.9, "evidence": "Mirror symmetry swaps h^{1,1}\u2194h^{2,1}, providing a shortcut for instanton enumeration (Sec. 4.2)."},
+    {"source": "Calabi-Yau manifold", "target": "Hodge numbers", "relation": "characterised_by", "edge_type": "definitional", "weight": 1.0, "evidence": "Authors classify CY3 geometries by Hodge pairs, listing 30,108 distinct topologies (Table 1)."}
   ]
 }
 """
@@ -164,6 +181,7 @@ class ConceptExtractor:
                     source=e["source"],
                     target=e["target"],
                     relation=e.get("relation", "related_to"),
+                    edge_type=e.get("edge_type", "empirical"),
                     weight=float(e.get("weight", 0.5)),
                     evidence=e.get("evidence", ""),
                     source_papers=[arxiv_id] if arxiv_id else [],

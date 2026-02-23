@@ -31,7 +31,8 @@ class Edge(BaseModel):
     """A directed or undirected relationship between two concepts."""
     source: str          # concept label
     target: str          # concept label
-    relation: str        # e.g. "extends", "depends_on", "contradicts"
+    relation: str        # verb phrase from controlled vocabulary
+    edge_type: str = "empirical"  # 'causal' | 'inhibitory' | 'correlational' | 'methodological' | 'definitional' | 'empirical' | 'analogical'
     weight: float = 1.0  # strength of the relationship
     evidence: str = ""   # excerpt supporting this edge
     source_papers: List[str] = Field(default_factory=list)

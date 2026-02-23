@@ -54,6 +54,7 @@ Output ONLY valid JSON matching this exact schema — no prose, no markdown:
   "novelty":   <integer 1-5>,
   "rigor":     <integer 1-5; how well-formed and testable is this hypothesis>,
   "impact":    <integer 1-5>,
+  "replication_risk": "<'low' | 'medium' | 'high' — how likely this result will fail to replicate>",
   "keywords":  ["<3-6 search terms>"],
   "experiment": {
     "approach":             "<High-level strategy in 1-2 sentences>",
@@ -77,6 +78,14 @@ Scoring rubric for rigor (1–5):
 3 = testable but vague — no quantification, or multiple confounded predictions
 2 = partially testable — important untestable component or unfalsifiable element
 1 = not a genuine hypothesis — redescription, unfalsifiable, or circular
+
+Replication risk rubric:
+- low:    computational/mathematical; deterministic or well-powered statistical test;
+          no single-lab dependencies; standard public datasets
+- medium: well-powered study but relies on biological variability, model organisms,
+          or proprietary data; effect size moderate; established methodology
+- high:   small n; requires hard-to-replicate lab conditions; p-hacking risk;
+          single assay; novel measurement technique with no cross-lab validation
 
 For experiment.computational:
 - true  = can be substantially tested with existing public data + code + compute
@@ -235,6 +244,7 @@ class HypothesisGenerator:
                 novelty=int(data.get("novelty", analysis.novelty)),
                 rigor=int(data.get("rigor", 3)),
                 impact=int(data.get("impact", analysis.impact)),
+                replication_risk=data.get("replication_risk", "medium"),
                 keywords=data.get("keywords", analysis.keywords),
                 gap_similarity=analysis.similarity,
                 gap_distance=analysis.graph_distance,

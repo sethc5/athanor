@@ -62,6 +62,7 @@ class Hypothesis(BaseModel):
     novelty: int      = Field(ge=1, le=5)
     rigor: int        = Field(ge=1, le=5)   # how well-formed / testable
     impact: int       = Field(ge=1, le=5)
+    replication_risk: str = "medium"  # 'low' | 'medium' | 'high'
 
     @computed_field
     @property
