@@ -256,11 +256,10 @@ def run(
         if top:
             best = top[0]
             console.print(f"\n[bold green]Top hypothesis:[/] {_esc(best.statement)}")
-            console.print(f"[dim]Score: {best.composite_score:.2f} gen", end="")
             if best.critic_novelty is not None:
-                console.print(f" → {best.final_score:.2f} blended[/]")
+                console.print(f"[dim]Score: {best.composite_score:.2f} gen → {best.final_score:.2f} blended[/]")
             else:
-                console.print("[/]")
+                console.print(f"[dim]Score: {best.composite_score:.2f}[/]")
             if best.experiment:
                 comp = "Computational ✓" if best.experiment.computational else "Wet lab required"
                 console.print(f"[dim]{comp} | Effort: {best.experiment.estimated_effort}[/]")
