@@ -1,0 +1,114 @@
+name: sm_vacuum_selection
+display: "SM Vacuum Selection from CY3 Compactifications"
+description: >
+  What discriminates a Calabi-Yau compactification that merely contains
+  SU(3)×SU(2) gauge factors from one that actually IS the Standard Model?
+  Filtering criteria beyond Kodaira fiber classification: chirality conditions,
+  Yukawa rank/texture, hypercharge flux breaking, proton decay suppression,
+  moduli stabilization compatibility, and the structural question of whether
+  χ(CY3) = ±6 with elliptic fibration inherently forces SM-like gauge algebras.
+
+domain_context: |
+  ## Motivating Observation
+
+  In a CyTools scan of χ = -6 reflexive polytopes from the Kreuzer-Skarke
+  database, ALL 39 elliptically fibered CY3 threefolds examined carry gauge
+  algebras containing su(3) ⊕ su(2) ⊕ u(1) factors from Kodaira fiber
+  classification. This is either:
+
+  (A) A deep structural fact: χ = -6 + elliptic fibration may inherently
+      force SM-like gauge algebras (publishable if true).
+  (B) An artifact of the heuristic Kodaira classifier being too permissive.
+
+  If (A), the real question shifts from "which CY3s have SM gauge groups?"
+  to "which ones are the *actual* SM?" — requiring sharper discriminants.
+
+  ## The Filtering Hierarchy (what we need to understand)
+
+  Level 0: Gauge algebra contains su(3) ⊕ su(2)  ← DONE (trivially: 39/39)
+  Level 1: Correct hypercharge U(1)_Y embedding   ← How restrictive?
+  Level 2: Exactly 3 chiral generations            ← χ/2 = 3, but chirality
+           index ≠ net chirality without flux choice
+  Level 3: Yukawa couplings exist AND have correct  ← Rank conditions,
+           rank structure (top ≫ bottom ≫ electron)    texture zeros
+  Level 4: No fast proton decay (B-L or discrete    ← Anomalous U(1),
+           symmetry protection)                        discrete remnants
+  Level 5: Moduli stabilization (LVS/KKLT) compatible ← Swiss cheese
+           with Yukawa sector                           structure needed
+  Level 6: Cosmological viability (dS vacuum,       ← Swampland constraints
+           inflation, dark energy)
+
+  ## Key Research Groups & Their Approaches
+
+  - Anderson/Gray/Lukas: heterotic line-bundle models on CICYs, systematic
+    scan of ~10⁸ bundles, chirality from Chern classes, stability from
+    slope conditions. Their filtering power at each level is well-documented.
+
+  - Cvetic/Halverson/Lin: F-theory on toric bases, Weierstrass models,
+    systematic classification of gauge algebras from discriminant locus.
+    Key question: what fraction of their "SM-like" models survive Yukawa
+    and proton-decay filters?
+
+  - Braun/He/Ovrut: heterotic spectral cover on favorable CY3s, SU(5) → SM
+    via Wilson lines. Key result: only O(100) models survive all filters
+    out of O(10⁵) candidates. What are their decisive filters?
+
+  - Taylor/Wang: F-theory base classification, toric bases for 4D F-theory,
+    counting elliptic fibrations. Upper bounds on gauge group rank.
+
+  - He/Lukas/ML: machine learning for Hodge number prediction, bundle
+    stability, SM identification. What features are predictive?
+
+  ## Open Questions for Athanor
+
+  1. Does χ = -6 force certain Kodaira fiber types? (If yes, Level 0 is
+     trivial and we can skip it entirely.)
+
+  2. What is the theoretical filtering power of each level? (i.e., what
+     fraction of candidates does each test eliminate?)
+
+  3. Is there a lattice-level obstruction to SU(5) GUT → SM breaking that
+     would re-rank candidates without explicit flux computation?
+
+  4. For the GL=12/D₆ polytope (h¹¹=17, h²¹=20): which of Levels 1-6
+     have been checked, and which remain open?
+
+  5. Can topological invariants alone (without explicit metric or flux
+     computation) discriminate real SM vacua?
+
+  Edge vocabulary: filters_to, requires, obstructs, breaks_to, embeds_in,
+  stabilizes, destabilizes, generates, forbids, constrains, predicts,
+  discriminates, is_compatible_with, is_necessary_for, is_sufficient_for,
+  survives, eliminates
+
+sources: [arxiv, s2]
+queries:
+  # Core question: what makes it the SM?
+  - "Standard Model gauge group F-theory compactification Calabi-Yau selection criteria"
+  - "chirality three generations elliptic fibration Calabi-Yau Euler characteristic"
+  - "hypercharge flux breaking SU5 GUT Standard Model F-theory"
+  - "Yukawa coupling rank texture Calabi-Yau compactification fermion mass hierarchy"
+
+  # Filtering methodology from major groups
+  - "heterotic line bundle Standard Model systematic scan CICY Calabi-Yau"
+  - "F-theory Weierstrass model gauge algebra toric base classification"
+  - "spectral cover SU5 Wilson line Standard Model heterotic Calabi-Yau"
+  - "string landscape vacuum selection Standard Model criteria filter"
+
+  # The structural question: does chi=-6 force it?
+  - "Euler characteristic Calabi-Yau elliptic fibration Kodaira fiber type gauge algebra"
+  - "Kodaira classification singular fiber gauge group Calabi-Yau threefold"
+
+  # Beyond gauge group: proton decay, moduli, cosmology
+  - "proton decay suppression string compactification discrete symmetry B-L"
+  - "moduli stabilization large volume scenario Yukawa coupling compatibility"
+  - "machine learning Calabi-Yau Standard Model identification Hodge numbers"
+  - "swampland conjecture de Sitter string landscape viable vacuum"
+
+  # Computational approaches
+  - "CyTools Kreuzer-Skarke polytope scan toric Calabi-Yau fibration"
+  - "systematic classification string vacua Standard Model landscape statistics"
+
+max_papers: 30
+max_gaps: 25
+claude_model: claude-haiku-4-5

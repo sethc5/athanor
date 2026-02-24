@@ -23,6 +23,7 @@ from pathlib import Path
 
 import click
 from rich.console import Console
+from rich.markup import escape as _esc
 from rich.panel import Panel
 from rich.table import Table
 
@@ -254,7 +255,7 @@ def run(
         top = hyp_report.top(3)
         if top:
             best = top[0]
-            console.print(f"\n[bold green]Top hypothesis:[/] {best.statement}")
+            console.print(f"\n[bold green]Top hypothesis:[/] {_esc(best.statement)}")
             console.print(f"[dim]Score: {best.composite_score:.2f} gen", end="")
             if best.critic_novelty is not None:
                 console.print(f" → {best.final_score:.2f} blended[/]")
@@ -485,10 +486,10 @@ def approve(domain: str, show_all: bool) -> None:
             f"[bold]#{i}/{len(candidates)}  Score {hyp.final_score:.1f}  "
             f"N:{hyp.novelty} R:{hyp.rigor} I:{hyp.impact}[/]"
         )
-        console.print(f"[cyan bold]{hyp.gap_concept_a} ↔ {hyp.gap_concept_b}[/]")
-        console.print(f"\n[bold]Hypothesis:[/] {hyp.statement}\n")
-        console.print(f"[bold]Mechanism:[/]  {hyp.mechanism}\n")
-        console.print(f"[bold]Falsify if:[/] {hyp.falsification_criteria}\n")
+        console.print(f"[cyan bold]{_esc(hyp.gap_concept_a)} ↔ {_esc(hyp.gap_concept_b)}[/]")
+        console.print(f"\n[bold]Hypothesis:[/] {_esc(hyp.statement)}\n")
+        console.print(f"[bold]Mechanism:[/]  {_esc(hyp.mechanism)}\n")
+        console.print(f"[bold]Falsify if:[/] {_esc(hyp.falsification_criteria)}\n")
         if hyp.experiment:
             tag = "Computational ✓" if hyp.experiment.computational else "Wet-lab"
             risk = getattr(hyp, "replication_risk", "medium")
