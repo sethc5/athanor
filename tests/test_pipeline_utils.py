@@ -174,3 +174,63 @@ class TestEdgeTypePreserved:
         }
         g = GraphBuilder().build_from_raw(raw)
         assert g.edges[0].edge_type == "causal"
+
+
+# ── _extend_unique helper ────────────────────────────────────────────────────
+
+class TestExtendUnique:
+    def test_no_duplicates(self):
+        from athanor.pipeline import _extend_unique
+        p1 = Paper(arxiv_id="1", title="Alpha", abstract="A",
+                   authors=[], categories=[], published="2024", url="http://a")
+        p2 = Paper(arxiv_id="2", title="Beta", abstract="B",
+                   authors=[], categories=[], published="2024", url="http://b")
+        target: list = [p1]
+        _extend_unique(target, [p2])
+        assert len(target) == 2
+
+    def test_deduplicates_by_title(self):
+        from athanor.pipeline import _extend_unique
+        p1 = Paper(arxiv_id="1", title="Same Title", abstract="A",
+                   authors=[], categories=[], published="2024", url="http://a")
+        p2 = Paper(arxiv_id="2", title="same title", abstract="B",
+                   authors=[], categories=[], published="2024", url="http://b")
+        target: list = [p1]
+        _extend_unique(target, [p2])
+        assert len(target) == 1
+
+    def test_empty_new_papers(self):
+        from athanor.pipeline import _extend_unique
+        p1 = Paper(arxiv_id="1", title="T", abstract="A",
+                   authors=[], categories=[], published="2024", url="http://a")
+        target: list = [p1]
+        _extend_unique(target, [])
+        assert len(target) == 1
+
+
+# ── workspace_root in config ─────────────────────────────────────────────────
+
+class TestWorkspaceRootConfig:
+    def test_no_workspace_returns_project_root(self, tmp_path, monkeypatch):
+        import athanor.config as _cfg
+        monkeypatch.setattr(_cfg, "project_root", tmp_path)
+        monkeypatch.setenv("ATHANOR_WORKSPACE", "")
+        from athanor.config import workspace_root
+        assert workspace_root() == tmp_path
+
+    def test_workspace_returns_subdir(self, tmp_path, monkeypatch):
+        import athanor.config as _cfg
+        ws = tmp_path / "workspaces" / "test_ws"
+        ws.mkdir(parents=True)
+        monkeypatch.setattr(_cfg, "project_root", tmp_path)
+        monkeypatch.setenv("ATHANOR_WORKSPACE", "test_ws")
+        from athanor.config import workspace_root
+        assert workspace_root() == ws
+
+    def test_missing_workspace_raises(self, tmp_path, monkeypatch):
+        import athanor.config as _cfg
+        monkeypatch.setattr(_cfg, "project_root", tmp_path)
+        monkeypatch.setenv("ATHANOR_WORKSPACE", "nonexistent")
+        from athanor.config import workspace_root
+        with pytest.raises(FileNotFoundError):
+            workspace_root()

@@ -14,9 +14,7 @@ import os
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-from sklearn.metrics.pairwise import cosine_similarity
-
-from athanor.config import cfg, project_root as _root
+from athanor.config import cfg, project_root as _root, workspace_root
 from athanor.domains import load_domain
 from athanor.embed import Embedder
 from athanor.gaps import GapFinder, deduplicate_gaps
@@ -48,18 +46,16 @@ def _get_api_key() -> str:
     return key
 
 
+def _extend_unique(target: list, new_papers: list) -> None:
+    """Append *new_papers* to *target*, skipping titles already present."""
+    existing = {p.title.lower() for p in target}
+    for p in new_papers:
+        if p.title.lower() not in existing:
+            target.append(p)
+            existing.add(p.title.lower())
+
+
 # ── workspace helpers (testable, no Rich) ────────────────────────────────────
-
-def workspace_root() -> Path:
-    """Return the active workspace root (workspaces/<name>/ or repo root)."""
-    ws = os.environ.get("ATHANOR_WORKSPACE", "").strip()
-    if ws:
-        p = _root / "workspaces" / ws
-        if not p.exists():
-            raise FileNotFoundError(f"Workspace '{ws}' not found at {p}")
-        return p
-    return _root
-
 
 def output_paths(domain: str) -> Dict[str, Path]:
     """Return ``{graphs, gaps, hyps}`` output directories for *domain*."""
@@ -141,8 +137,7 @@ def run_stage_1(
         _fetched = arxiv_client.fetch(
             _q, max_results=dom["max_papers"], use_cache=not no_cache,
         )
-        _existing = {p.title.lower() for p in papers}
-        papers.extend(p for p in _fetched if p.title.lower() not in _existing)
+        _extend_unique(papers, _fetched)
 
     # Semantic Scholar (optional)
     if s2 or "semantic_scholar" in dom.get("sources", []):
@@ -157,12 +152,8 @@ def run_stage_1(
             _s2_fetched = s2_client.fetch(
                 _q, max_results=dom["max_papers"], use_cache=not no_cache,
             )
-            _existing_s2 = {p.title.lower() for p in s2_papers}
-            s2_papers.extend(
-                p for p in _s2_fetched if p.title.lower() not in _existing_s2
-            )
-        existing_titles = {p.title.lower() for p in papers}
-        papers.extend(p for p in s2_papers if p.title.lower() not in existing_titles)
+            _extend_unique(s2_papers, _s2_fetched)
+        _extend_unique(papers, s2_papers)
 
     # Seed papers
     seed_ids = [
@@ -172,10 +163,8 @@ def run_stage_1(
     ]
     if seed_ids:
         seed = arxiv_client.fetch_by_ids(seed_ids)
-        existing_titles = {p.title.lower() for p in papers}
-        added = [p for p in seed if p.title.lower() not in existing_titles]
-        papers.extend(added)
-        log.info("Added %d seed paper(s)", len(added))
+        _extend_unique(papers, seed)
+        log.info("Added seed paper(s)")
 
     log.info("Fetched %d papers total", len(papers))
 
@@ -205,7 +194,16 @@ def run_stage_1(
         enrich_papers_with_fulltext(papers, max_papers=dom["max_papers"])
 
     parsed = parse_papers(papers)
-    builder = GraphBuilder()
+
+    # Explicit extractor so Stage 1 uses the domain's claude_model and a
+    # fresh API key (not the stale cfg.anthropic_api_key class attribute).
+    from athanor.graph.extractor import ConceptExtractor
+
+    extractor = ConceptExtractor(
+        model=dom.get("claude_model", cfg.model),
+        api_key=_get_api_key(),
+    )
+    builder = GraphBuilder(extractor=extractor)
     _primary_query = (dom.get("queries") or [dom.get("arxiv_query", "")])[0]
     concept_graph = builder.build(
         parsed,
@@ -424,6 +422,8 @@ def run_cross_domain(
     embs_a = embedder.embed(texts_a, center=False)
     embs_b = embedder.embed(texts_b, center=False)
 
+    from sklearn.metrics.pairwise import cosine_similarity
+
     sim = cosine_similarity(embs_a, embs_b)
 
     bridges: list[tuple[float, Any, Any]] = []
@@ -465,9 +465,16 @@ def run_cross_domain(
     )
     combined_display = f"{dom_a['display']} ↔ {dom_b['display']}"
 
+    # Prefer the more capable model when domains disagree.
+    # claude-sonnet < claude-opus ordering (alphabetical happens to work for
+    # the Anthropic naming scheme: "opus" > "sonnet" > "haiku").
+    model_a = dom_a.get("claude_model", cfg.model)
+    model_b = dom_b.get("claude_model", cfg.model)
+    cross_model = max(model_a, model_b)
+
     finder = GapFinder(
         domain=combined_display,
-        model=dom_a.get("claude_model", cfg.model),
+        model=cross_model,
         api_key=_get_api_key(),
         max_gaps=top,
         max_workers=4,

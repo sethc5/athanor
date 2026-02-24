@@ -9,29 +9,24 @@ Load one with: athanor.domains.load_domain("information_theory")
 """
 from __future__ import annotations
 
-import os
 from pathlib import Path
 from typing import Any, Dict
 
 import yaml
 
-from athanor.config import project_root as _REPO_ROOT
+from athanor.config import workspace_root
 
 
 def _domains_dir() -> Path:
     """Return the domains directory for the active workspace."""
-    ws = os.environ.get("ATHANOR_WORKSPACE", "").strip()
-    if ws:
-        ws_path = _REPO_ROOT / "workspaces" / ws
-        ws_domains = ws_path / "domains"
-        if ws_domains.exists():
-            return ws_domains
-        # Workspace exists but no domains/ subdir yet
+    root = workspace_root()
+    dom_dir = root / "domains"
+    if not dom_dir.exists():
         raise FileNotFoundError(
-            f"Workspace '{ws}' has no domains/ folder: {ws_domains}\n"
+            f"No domains/ folder at {dom_dir}\n"
             f"Create it or check ATHANOR_WORKSPACE."
         )
-    return _REPO_ROOT / "domains"
+    return dom_dir
 
 
 def load_domain(name_or_path: str) -> Dict[str, Any]:
@@ -57,3 +52,6 @@ def load_domain(name_or_path: str) -> Dict[str, Any]:
 def list_domains() -> list[str]:
     """Return names of all available domain configs in the active workspace."""
     return [p.stem for p in sorted(_domains_dir().glob("*.yaml"))]
+
+
+__all__ = ["load_domain", "list_domains"]

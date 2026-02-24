@@ -103,8 +103,6 @@ def workspace_with_data(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
     import athanor.config as _cfg_mod
     monkeypatch.setattr(_cfg_mod, "project_root", tmp_path)
     monkeypatch.setattr(pipeline, "_root", tmp_path)
-    import athanor.domains as _dom_mod
-    monkeypatch.setattr(_dom_mod, "_REPO_ROOT", tmp_path)
     monkeypatch.setenv("ATHANOR_WORKSPACE", ws_name)
 
     return ws

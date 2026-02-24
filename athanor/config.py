@@ -50,3 +50,18 @@ cfg = Config()
 # Create cache directories eagerly
 for _p in (cfg.data_raw, cfg.data_processed):
     _p.mkdir(parents=True, exist_ok=True)
+
+
+def workspace_root() -> Path:
+    """Return the active workspace root (workspaces/<name>/ or repo root).
+
+    Reads ``ATHANOR_WORKSPACE`` env var.  Raises ``FileNotFoundError`` if the
+    workspace directory doesn't exist.
+    """
+    ws = os.environ.get("ATHANOR_WORKSPACE", "").strip()
+    if ws:
+        p = project_root / "workspaces" / ws
+        if not p.exists():
+            raise FileNotFoundError(f"Workspace '{ws}' not found at {p}")
+        return p
+    return project_root
