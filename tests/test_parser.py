@@ -70,3 +70,21 @@ class TestPaperToText:
         p = _paper(title="My Paper", full_text="body")
         result = paper_to_text(p)
         assert "Title: My Paper" in result
+
+
+# ── display math $$...$$ ─────────────────────────────────────────────────────
+
+class TestCleanTextDisplayMath:
+    def test_preserves_display_math(self):
+        result = clean_text(r"The equation $$\frac{a}{b} = c$$ holds")
+        assert r"\frac{a}{b}" in result
+
+    def test_strips_outside_display_math(self):
+        result = clean_text(r"\textbf{bold} then $$\sqrt{x}$$ end")
+        assert "textbf" not in result
+        assert r"\sqrt{x}" in result
+
+    def test_mixed_inline_and_display(self):
+        result = clean_text(r"Inline $a$ and display $$\int f$$ done")
+        assert "$a$" in result
+        assert r"\int f" in result

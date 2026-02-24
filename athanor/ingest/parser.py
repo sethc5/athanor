@@ -15,19 +15,19 @@ from athanor.ingest.arxiv_client import Paper
 def clean_text(text: str) -> str:
     """Normalise whitespace and strip arXiv LaTeX artefacts.
 
-    Math expressions ($...$) are kept as-is so downstream models
-    (Claude, embedders) can use the mathematical content.
-    Only non-math LaTeX commands outside of $...$ are stripped.
+    Math expressions (``$...$`` and ``$$...$$``) are kept as-is so downstream
+    models (Claude, embedders) can use the mathematical content.
+    Only non-math LaTeX commands outside of math delimiters are stripped.
     """
     # collapse newlines and extra spaces
     text = re.sub(r"\s+", " ", text)
-    # strip non-math LaTeX commands that survive into abstracts,
-    # but only OUTSIDE $...$ math delimiters
-    parts = re.split(r"(\$[^$]+\$)", text)
+    # split on both $$...$$ (display) and $...$ (inline) math,
+    # trying $$ first so it doesn't get consumed as two $'s
+    parts = re.split(r"(\$\$[^$]+\$\$|\$[^$]+\$)", text)
     cleaned = []
     for i, part in enumerate(parts):
         if i % 2 == 1:
-            # Inside $...$  — keep as-is
+            # Inside math delimiters — keep as-is
             cleaned.append(part)
         else:
             # Outside math — strip LaTeX commands

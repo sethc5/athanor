@@ -124,7 +124,6 @@ class ConceptExtractor:
         api_key: str = cfg.anthropic_api_key,
         max_tokens: int = 3000,  # was 2048; math/physics papers need more headroom
     ) -> None:
-        cfg.validate()
         self._client = anthropic.Anthropic(api_key=api_key)
         self._model = model
         self._max_tokens = max_tokens

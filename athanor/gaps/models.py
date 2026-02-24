@@ -109,7 +109,6 @@ class GapReport(BaseModel):
         """Return analyses sorted by composite_score descending."""
         return sorted(self.analyses, key=lambda a: a.composite_score, reverse=True)
 
-    @property
-    def top(self) -> List[GapAnalysis]:
-        """Top 5 by composite score."""
-        return self.ranked[:5]
+    def top(self, n: int = 5) -> List[GapAnalysis]:
+        """Return the top-*n* analyses by composite score."""
+        return self.ranked[:n]

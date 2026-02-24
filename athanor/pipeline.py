@@ -376,7 +376,7 @@ def run_critic(
     _s3_workers = max(1, workers)
     critic = HypothesisCritic(
         model=dom.get("claude_model", cfg.model),
-        api_key=os.environ.get("ANTHROPIC_API_KEY", ""),
+        api_key=_get_api_key(),
         max_workers=_s3_workers,
     )
     report = critic.critique(report)

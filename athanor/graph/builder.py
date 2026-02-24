@@ -30,6 +30,12 @@ from athanor.graph.models import Concept, ConceptGraph, Edge
 
 log = logging.getLogger(__name__)
 
+# Pre-compute the set of valid Edge model field names (including aliases)
+# so build_from_raw() can filter unknown keys without per-call overhead.
+_EDGE_FIELDS: frozenset[str] = frozenset(
+    f.alias or f_name for f_name, f in Edge.model_fields.items()
+)
+
 
 def normalize_label(s: str) -> str:
     """Canonical dedup key: lowercase, collapse hyphens/underscores/spaces.
@@ -140,10 +146,9 @@ class GraphBuilder:
             A ConceptGraph with centrality and structural-hole fields populated.
         """
         concepts = [Concept(**c) for c in raw.get("concepts", [])]
-        _edge_fields = {f.alias or f_name for f_name, f in Edge.model_fields.items()}
         edges = []
         for e in raw.get("edges", []):
-            filtered = {k: v for k, v in e.items() if k in _edge_fields}
+            filtered = {k: v for k, v in e.items() if k in _EDGE_FIELDS}
             filtered.setdefault("relation", "related_to")
             edges.append(Edge(**filtered))
         graph = ConceptGraph(
@@ -332,6 +337,7 @@ class GraphBuilder:
                     source=src,
                     target=tgt,
                     relation=e.relation,
+                    edge_type=e.edge_type,
                     weight=e.weight,
                     evidence=e.evidence,
                     source_papers=e.source_papers,

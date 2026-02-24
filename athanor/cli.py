@@ -27,7 +27,7 @@ from rich.panel import Panel
 from rich.table import Table
 
 from athanor import pipeline
-from athanor.config import cfg, project_root as _root
+from athanor.config import cfg
 from athanor.domains import list_domains, load_domain
 from athanor.hypotheses.models import HypothesisReport
 

@@ -111,7 +111,6 @@ class GapFinder:
         domain_context: str = "",
         prior_approved: Optional[List[str]] = None,
     ) -> None:
-        cfg.validate()
         self._client = anthropic.Anthropic(api_key=api_key)
         self._domain = domain
         self._model = model

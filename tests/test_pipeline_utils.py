@@ -125,3 +125,52 @@ class TestDedupEdgeCases:
         result, clusters = deduplicate_gaps([])
         assert result == []
         assert clusters == {}
+
+
+# ── GapReport.top() parameterised ────────────────────────────────────────────
+
+class TestGapReportTop:
+    def test_top_is_callable_with_n(self):
+        from athanor.gaps.models import GapReport, GapAnalysis
+        analyses = [
+            GapAnalysis(
+                concept_a="A", concept_b="B",
+                research_question="Q?", why_unexplored="W",
+                intersection_opportunity="O", methodology="M",
+                computational=True, novelty=i, tractability=3, impact=3,
+            )
+            for i in range(1, 6)
+        ]
+        gr = GapReport(domain="t", query="q", analyses=analyses)
+        assert len(gr.top(2)) == 2
+        assert len(gr.top(10)) == 5  # capped at available
+        assert gr.top(1)[0].composite_score >= gr.top(2)[1].composite_score
+
+
+# ── _EDGE_FIELDS module-level constant ───────────────────────────────────────
+
+class TestEdgeFieldsConstant:
+    def test_edge_fields_is_frozenset(self):
+        from athanor.graph.builder import _EDGE_FIELDS
+        assert isinstance(_EDGE_FIELDS, frozenset)
+        assert "source" in _EDGE_FIELDS
+        assert "target" in _EDGE_FIELDS
+        assert "relation" in _EDGE_FIELDS
+
+
+# ── edge_type preserved through merge ────────────────────────────────────────
+
+class TestEdgeTypePreserved:
+    def test_build_from_raw_preserves_edge_type(self):
+        raw = {
+            "concepts": [
+                {"label": "A", "description": "a"},
+                {"label": "B", "description": "b"},
+            ],
+            "edges": [
+                {"source": "A", "target": "B", "relation": "causes",
+                 "edge_type": "causal"},
+            ],
+        }
+        g = GraphBuilder().build_from_raw(raw)
+        assert g.edges[0].edge_type == "causal"

@@ -142,7 +142,6 @@ class HypothesisGenerator:
         max_workers: int = 4,
         domain_context: str = "",
     ) -> None:
-        cfg.validate()
         self._client = anthropic.Anthropic(api_key=api_key)
         self._domain = domain
         self._model = model
