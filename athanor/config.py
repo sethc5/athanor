@@ -1,8 +1,8 @@
 """
 athanor.config — centralised configuration via environment variables.
 
-All external knobs live here. Import `cfg` everywhere else.
-`project_root` is the single source of truth for the repository root path.
+All external knobs live here. Import ``cfg`` everywhere else.
+``project_root`` is the single source of truth for the repository root path.
 """
 from __future__ import annotations
 
@@ -10,40 +10,49 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
+from pydantic import Field
+from pydantic_settings import BaseSettings
 
 # Load .env from the project root (two levels up from this file)
 project_root = Path(__file__).resolve().parent.parent
 load_dotenv(project_root / ".env", override=False)
 
 
-class Config:
+class Config(BaseSettings):
+    """Application settings populated from environment variables.
+
+    pydantic-settings reads env vars automatically:  field ``foo_bar`` maps to
+    env var ``FOO_BAR`` (uppercased).  The ``model`` field uses a
+    ``validation_alias`` because the env var is ``ANTHROPIC_MODEL``, not
+    ``MODEL``.
+    """
+
     # ── Anthropic ────────────────────────────────────────────────────────────
-    anthropic_api_key: str = os.environ.get("ANTHROPIC_API_KEY", "")
-    model: str = os.environ.get("ANTHROPIC_MODEL", "claude-opus-4-5")
+    anthropic_api_key: str = ""
+    model: str = Field(default="claude-opus-4-5", validation_alias="ANTHROPIC_MODEL")
 
     # ── arXiv ────────────────────────────────────────────────────────────────
-    arxiv_max_results: int = int(os.environ.get("ARXIV_MAX_RESULTS", "20"))
-    arxiv_sort_by: str = os.environ.get("ARXIV_SORT_BY", "relevance")
+    arxiv_max_results: int = 20
+    arxiv_sort_by: str = "relevance"
 
     # ── Semantic Scholar ─────────────────────────────────────────────────────
-    s2_api_key: str = os.environ.get("S2_API_KEY", "")  # optional; raises rate limit
+    s2_api_key: str = ""
 
     # ── Embedding ────────────────────────────────────────────────────────────
-    embedding_model: str = os.environ.get(
-        "EMBEDDING_MODEL", "all-MiniLM-L6-v2"
-    )
+    embedding_model: str = "all-MiniLM-L6-v2"
 
-    # ── Paths ────────────────────────────────────────────────────────────────
-    project_root: Path = project_root
-    data_raw: Path = project_root / "data" / "raw"
-    data_processed: Path = project_root / "data" / "processed"
+    # ── Paths (derived from project_root, not env vars) ──────────────────────
+    @property
+    def project_root(self) -> Path:               # noqa: D401
+        return project_root
 
-    def validate(self) -> None:
-        if not self.anthropic_api_key:
-            raise EnvironmentError(
-                "ANTHROPIC_API_KEY is not set. "
-                "Copy .env.example to .env and add your key."
-            )
+    @property
+    def data_raw(self) -> Path:                    # noqa: D401
+        return project_root / "data" / "raw"
+
+    @property
+    def data_processed(self) -> Path:              # noqa: D401
+        return project_root / "data" / "processed"
 
 
 cfg = Config()

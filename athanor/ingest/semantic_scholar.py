@@ -9,6 +9,7 @@ No API key required for low-volume use; set S2_API_KEY in .env for higher limits
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import time
@@ -157,8 +158,9 @@ class SemanticScholarClient:
         )
 
     def _cache_path(self, prefix: str, query: str) -> Path:
-        slug = query.lower().replace(" ", "_")[:60]
-        return self._cache_dir / f"{prefix}_{slug}.json"
+        h = hashlib.sha256(query.lower().encode()).hexdigest()[:12]
+        slug = query.lower().replace(" ", "_")[:40]
+        return self._cache_dir / f"{prefix}_{slug}_{h}.json"
 
     def _save_cache(self, path: Path, papers: List[Paper]) -> None:
         path.write_text(

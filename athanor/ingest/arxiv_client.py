@@ -8,6 +8,7 @@ Design goals:
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 from dataclasses import dataclass, field, asdict
@@ -125,8 +126,9 @@ class ArxivClient:
     # ── private ──────────────────────────────────────────────────────────────
 
     def _cache_path(self, query: str) -> Path:
-        slug = query.lower().replace(" ", "_")[:60]
-        return self._cache_dir / f"arxiv_{slug}.json"
+        h = hashlib.sha256(query.lower().encode()).hexdigest()[:12]
+        prefix = query.lower().replace(" ", "_")[:40]
+        return self._cache_dir / f"arxiv_{prefix}_{h}.json"
 
     def _save_cache(self, path: Path, papers: List[Paper]) -> None:
         path.write_text(

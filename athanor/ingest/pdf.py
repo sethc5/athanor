@@ -81,54 +81,71 @@ def arxiv_pdf_url(arxiv_id: str) -> str:
     return _ARXIV_PDF.format(arxiv_id=base_id)
 
 
+def _fetch_one(paper: Paper, sleep: float) -> tuple[Paper, Optional[str]]:
+    """Download and extract text for a single paper (thread-safe)."""
+    if paper.full_text:
+        return paper, paper.full_text
+
+    url = paper.pdf_url or arxiv_pdf_url(paper.arxiv_id)
+    log.info("Fetching PDF for %s from %s", paper.arxiv_id, url[:60])
+
+    pdf_bytes = fetch_pdf_bytes(url)
+    text: Optional[str] = None
+    if pdf_bytes:
+        extracted = extract_pdf_text(pdf_bytes)
+        if len(extracted) > 500:  # sanity check
+            text = extracted
+            log.info("✓ Extracted %d chars from %s", len(extracted), paper.arxiv_id)
+        else:
+            log.debug("Extraction too short for %s — keeping abstract", paper.arxiv_id)
+
+    time.sleep(sleep)  # politeness delay even on failure
+    return paper, text
+
+
 def enrich_papers_with_fulltext(
     papers: List[Paper],
     max_papers: Optional[int] = None,
     sleep: float = 1.0,
+    max_workers: int = 4,
 ) -> List[Paper]:
     """Attempt to download and extract full text for each paper in-place.
 
     Papers that already have full_text (e.g. from Semantic Scholar PDF URL)
     are skipped. Papers where extraction fails retain their abstract.
 
+    Downloads run in parallel using a bounded thread pool; each worker
+    sleeps *sleep* seconds between requests for API politeness.
+
     Args:
-        papers:     list to enrich (modified in-place, also returned)
-        max_papers: cap for API politeness; None = all
-        sleep:      seconds between requests
+        papers:      list to enrich (modified in-place, also returned)
+        max_papers:  cap for API politeness; None = all
+        sleep:       seconds between requests per worker
+        max_workers: parallel download threads (default 4)
 
     Returns:
         The same list with .full_text populated where possible.
     """
-    session = requests.Session()
-    session.headers["User-Agent"] = "athanor/1.0 (open-source research tool)"
-
     targets = papers[:max_papers] if max_papers else papers
+    to_fetch = [p for p in targets if not p.full_text]
+
+    if not to_fetch:
+        log.info("Full-text extraction: nothing to fetch")
+        return papers
+
     succeeded = 0
-
-    for paper in targets:
-        # Skip papers that already have extracted full text
-        if paper.full_text:
-            continue
-
-        # Determine URL: prefer explicit pdf_url (from S2), fall back to arXiv
-        url = paper.pdf_url or arxiv_pdf_url(paper.arxiv_id)
-
-        log.info("Fetching PDF for %s from %s", paper.arxiv_id, url[:60])
-        pdf_bytes = fetch_pdf_bytes(url, session)
-
-        if pdf_bytes:
-            text = extract_pdf_text(pdf_bytes)
-            if len(text) > 500:  # sanity check
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        futures = {
+            pool.submit(_fetch_one, paper, sleep): paper
+            for paper in to_fetch
+        }
+        for future in as_completed(futures):
+            paper, text = future.result()
+            if text:
                 paper.full_text = text
                 succeeded += 1
-                log.info("✓ Extracted %d chars from %s", len(text), paper.arxiv_id)
             else:
-                log.debug("Extraction too short for %s — keeping abstract", paper.arxiv_id)
                 paper.full_text = None
-        else:
-            paper.full_text = None
 
-        time.sleep(sleep)
-
-    log.info("Full-text extraction: %d/%d succeeded", succeeded, len(targets))
+    log.info("Full-text extraction: %d/%d succeeded", succeeded, len(to_fetch))
     return papers

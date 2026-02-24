@@ -196,7 +196,7 @@ def run_stage_1(
     parsed = parse_papers(papers)
 
     # Explicit extractor so Stage 1 uses the domain's claude_model and a
-    # fresh API key (not the stale cfg.anthropic_api_key class attribute).
+    # validated API key from the environment.
     from athanor.graph.extractor import ConceptExtractor
 
     extractor = ConceptExtractor(

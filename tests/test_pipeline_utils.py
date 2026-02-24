@@ -234,3 +234,43 @@ class TestWorkspaceRootConfig:
         from athanor.config import workspace_root
         with pytest.raises(FileNotFoundError):
             workspace_root()
+
+
+# ── Config BaseSettings ─────────────────────────────────────────────────────
+
+class TestConfigBaseSettings:
+    def test_config_is_basesettings(self):
+        from pydantic_settings import BaseSettings
+        from athanor.config import Config
+        assert issubclass(Config, BaseSettings)
+
+    def test_defaults(self, monkeypatch):
+        from athanor.config import Config
+        monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+        monkeypatch.delenv("ANTHROPIC_MODEL", raising=False)
+        monkeypatch.delenv("ARXIV_MAX_RESULTS", raising=False)
+        monkeypatch.delenv("ARXIV_SORT_BY", raising=False)
+        monkeypatch.delenv("EMBEDDING_MODEL", raising=False)
+        monkeypatch.delenv("S2_API_KEY", raising=False)
+        c = Config()
+        assert c.model == "claude-opus-4-5"
+        assert c.arxiv_max_results == 20
+        assert c.arxiv_sort_by == "relevance"
+        assert c.embedding_model == "all-MiniLM-L6-v2"
+
+    def test_env_override(self, monkeypatch):
+        from athanor.config import Config
+        monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-test")
+        monkeypatch.setenv("ANTHROPIC_MODEL", "claude-sonnet-4-20250514")
+        monkeypatch.setenv("ARXIV_MAX_RESULTS", "42")
+        c = Config()
+        assert c.anthropic_api_key == "sk-test"
+        assert c.model == "claude-sonnet-4-20250514"
+        assert c.arxiv_max_results == 42
+
+    def test_path_properties(self):
+        from athanor.config import Config, project_root
+        c = Config()
+        assert c.project_root == project_root
+        assert c.data_raw == project_root / "data" / "raw"
+        assert c.data_processed == project_root / "data" / "processed"
